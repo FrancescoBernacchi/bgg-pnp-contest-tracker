@@ -1,0 +1,22 @@
+# Database operativo e relativi file temporanei
+database/*.sqlite3
+database/*.sqlite3-*
+
+# Libreria locale dei materiali PnP: può contenere file grandi e opere di terzi
+library/*
+!library/README.md
+!library/.gitkeep
+
+# Output rigenerabili
+outputs/*
+!outputs/README.md
+!outputs/.gitkeep
+
+# Runtime e cache locali
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.DS_Store
+Thumbs.db
+

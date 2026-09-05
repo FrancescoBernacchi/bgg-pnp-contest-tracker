@@ -1,0 +1,92 @@
+# PnP Collection
+
+## Scopo
+
+Costruire un archivio locale consultabile di giochi Print and Play, iniziando dai contest di design pubblicati su BoardGameGeek. Il sistema deve aiutare a scoprire tempestivamente i giochi, conservarne le informazioni e preservare i materiali più rilevanti prima che diventino indisponibili.
+
+## Scope
+
+Nella prima fase la fonte è esclusivamente BoardGameGeek. Il progetto cataloga tutte le entries individuate nei contest inclusi nel perimetro e scarica i materiali soltanto per i giochi selezionati. La ricerca di ulteriori fonti richiederà un task dedicato.
+
+I contest affini che non producono necessariamente giochi PnP autonomi possono essere inclusi come `adiacenti`, mantenendo esplicita la loro tipologia e le dipendenze esterne. Le varianti Solomode, in particolare, dipendono normalmente da un gioco base e devono restare distinguibili dai giochi PnP autonomi, così da poter ricevere filtri e trattamenti differenti in futuro.
+
+Nel database questa distinzione usa `contests.scope_type` e `contests.treatment_profile`; la natura delle singole entry usa `entries.entry_kind` e `entries.base_game_dependency`. Le note originali restano conservate e questi campi rappresentano soltanto la classificazione operativa normalizzata.
+
+Le viste `v_contests_monitoring_all`, `v_contests_pnp_core`, `v_contests_adjacent`, `v_entries_standalone` e `v_entries_dependent_variants` costituiscono l'interfaccia di lettura stabile per report e applicazione. La vista generale calcola i conteggi correnti e la prossima fase non trascorsa al momento della consultazione.
+
+## Attività previste
+
+- individuazione dei contest PnP attivi, dando precedenza ai più recenti;
+- ricostruzione delle relazioni tra forum, thread del contest, GeekList, entry, WIP e file;
+- estrazione e normalizzazione dei metadati;
+- conservazione dello stato specifico dichiarato dal creatore e dello stato normalizzato;
+- acquisizione selettiva e versionata dei materiali;
+- registrazione di classifiche, categorie, votazioni e piazzamenti;
+- consultazione tramite interfaccia locale con ricerca e filtri;
+- produzione di esportazioni e report riproducibili.
+- pianificazione dei controlli mediante un taccuino versionabile delle scadenze e delle finestre di riesame.
+
+Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
+
+## Input e fonti
+
+Fonte iniziale autorevole esterna: BoardGameGeek. Punti di ingresso noti:
+
+- forum Design Contests;
+- Guild 4326, “Tabletop Game Designers”;
+- thread principali dei contest;
+- GeekList delle entries e dei risultati;
+- thread WIP dei singoli giochi;
+- pagine file BGG e collegamenti pubblici a servizi esterni.
+
+Ogni dato volatile deve riportare URL di provenienza e data dell'ultima verifica.
+
+Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources/MONITORING_CALENDAR.md`. Il monitoraggio evita rilevamenti duplicati nella stessa giornata e distingue i controlli tecnici locali dalle nuove osservazioni dello stato pubblicato su BGG.
+
+## Deliverable
+
+- applicazione locale di consultazione;
+- database operativo SQLite;
+- schema e migrazioni riproducibili;
+- catalogo ed esportazioni testuali versionabili;
+- libreria locale dei materiali selezionati;
+- manifest con versione, provenienza, data di acquisizione, dimensione e hash dei file;
+- report su contest, disponibilità, classifiche e priorità di acquisizione.
+
+## Stakeholder / destinatari
+
+Uso personale del proprietario del progetto. Nessuna pubblicazione o redistribuzione dei materiali è inclusa nello scope iniziale.
+
+## Conoscenza condivisa
+
+Il modello concettuale distingue contest, entry, gioco, persona/credito, stato, classifica, risorsa remota, acquisizione e file locale. I valori normalizzati non sostituiscono mai il testo originale da cui derivano.
+
+## Vincoli
+
+- conservare integri gli originali e non sovrascrivere versioni precedenti;
+- non includere materiali PnP o altri binari voluminosi in Git;
+- registrare rinomini, ritiri, indisponibilità e variazioni di stato;
+- rispettare condizioni d'uso, licenze e diritti dei creatori;
+- non interpretare `WIP` isolatamente: lo stato giocabile può essere dichiarato anche come `Playtest Ready`, `Components Ready`, `Contest Ready` o equivalente;
+- non automatizzare accessi che richiedono credenziali o aggirano limitazioni del sito.
+
+## Razionale dell'architettura
+
+`database/` contiene la verità operativa interrogabile, mentre `catalog/` conserva manifest ed esportazioni leggibili e adatte a Git. `library/` ha governance separata perché contiene copie locali, potenzialmente grandi, di opere di terzi. `sources/` rende verificabile la provenienza senza confondere evidenza e dato normalizzato. `tasks/` isola il lavoro e le decisioni di ogni iniziativa.
+
+## Strategia di realizzazione incrementale
+
+1. PoC su un contest attivo recente e un piccolo campione di entries.
+2. Prima versione del modello dati, importazione e interfaccia di consultazione.
+3. Acquisizione selettiva con manifest e controllo di integrità.
+4. Estensione graduale ad altri contest BGG e monitoraggio prudente guidato da scadenze.
+
+## Priorità correnti
+
+Per il monitoraggio la priorità è determinata dal taccuino: eventi di fase imminenti o appena trascorsi, poi controllo settimanale dei contest attivi. La priorità dei giochi sarà determinata autonomamente soprattutto da classifiche e votazioni degli utenti; in assenza di risultati ufficiali, eventuali segnali sostitutivi dovranno essere dichiarati come tali.
+
+## Domande aperte
+
+- stack tecnico definitivo dell'interfaccia locale;
+- soglie operative per l'acquisizione quando un contest non dispone ancora di votazioni;
+- eventuali limiti massimi di spazio occupato dalla libreria.

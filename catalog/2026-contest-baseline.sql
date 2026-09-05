@@ -1,0 +1,71 @@
+-- Baseline esplorativa dei contest PnP BGG 2026.
+-- Verifica: 2026-09-04. Non include né scarica materiali dei giochi.
+
+BEGIN IMMEDIATE;
+
+INSERT INTO contest_series (id, canonical_name, description, scope_notes, first_seen_at, last_verified_at) VALUES
+  (1, 'Solitaire Print and Play Contest', 'Contest annuale per giochi solitari Print and Play.', 'Incluso: PnP esplicito.', '2026-09-04', '2026-09-04'),
+  (2, '54-Card Game Design Contest', 'Contest annuale per giochi con un massimo di 54 carte.', 'Incluso: disponibilità PnP richiesta durante il contest.', '2026-09-04', '2026-09-04'),
+  (3, 'Traditional Deck Game Design Contest', 'Contest per giochi basati su mazzi tradizionali.', 'Incluso come affine: non richiede componenti PnP personalizzati.', '2026-09-04', '2026-09-04'),
+  (4, 'Print and Play Wargame Design Contest', 'Contest Print and Play dedicato ai wargame.', 'Incluso: PnP esplicito.', '2026-09-04', '2026-09-04'),
+  (5, 'Turkish Print and Play Design Contest', 'Contest PnP in lingua turca.', 'Incluso: PnP esplicito, ambito linguistico specifico.', '2026-09-04', '2026-09-04'),
+  (6, 'In-Hand Game Design Contest', 'Contest per giochi utilizzabili interamente in mano.', 'Incluso: richiede componenti disponibili gratuitamente, con eccezione per mazzi tradizionali.', '2026-09-04', '2026-09-04'),
+  (7, 'Two-Player Print and Play Game Design Contest', 'Contest annuale per giochi PnP a due giocatori.', 'Incluso: PnP esplicito.', '2026-09-04', '2026-09-04'),
+  (8, '9-Card Nanogame Print and Play Design Contest', 'Contest annuale per nanogame stampabili su nove carte.', 'Incluso: PnP esplicito.', '2026-09-04', '2026-09-04');
+
+INSERT INTO contests (id, series_id, bgg_thread_id, name, year, edition_label, language, geographic_scope, status_raw, status_normalized, organizer, entries_url, results_url, starts_at, submissions_close_at, voting_opens_at, voting_closes_at, source_url, first_seen_at, last_verified_at) VALUES
+  (1, 1, 3716853, '2026 Solitaire Print and Play Contest', 2026, '2026', 'English', 'international', 'Submissions closed; development period', 'development', 'Ben Morayta (@bmorayta1)', NULL, NULL, '2026-06-01', '2026-08-31', '2026-10-16', '2026-11-15', 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', '2026-09-04', '2026-09-04'),
+  (2, 2, 3746297, '2026 54-Card Game Design Contest', 2026, '2026', 'English', 'international', 'The contest has started', 'entries_open', 'Edin (@edvinus)', NULL, NULL, '2026-08-01', '2026-10-16T23:59:00-05:00', '2026-12-01', '2026-12-31T23:59:00-05:00', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', '2026-09-04', '2026-09-04'),
+  (3, 3, NULL, '2026 Traditional Deck Game Design Contest', 2026, '2026', 'English', 'international', 'Contest started September 1', 'entries_open', 'Edin (@edvinus)', NULL, NULL, '2026-09-01', '2026-12-01', '2026-12-15', '2026-12-31', 'https://boardgamegeek.com/thread/3724943/discussion-thread-2026-traditional-deck-game-desig', '2026-09-04', '2026-09-04'),
+  (4, 4, 3627732, '2026 Print and Play Wargame Design Contest', 2026, '2026', 'English', 'international', '[CONTEST OPEN]', 'announced', '@quantumpotato', 'https://boardgamegeek.com/geeklist/369157/2026-wargame-design-contest-entries', NULL, NULL, '2026-10-01', NULL, NULL, 'https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co', '2026-09-04', '2026-09-04'),
+  (5, 5, 3701420, '2026 Türkçe Yazdır ve Oyna (PNP) Kutu Oyunu Tasarım Yarışması', 2026, '2026', 'Turkish', 'Turkish-speaking community', 'Voting and Jury Evaluation Period', 'voting', 'Onur Tosun', NULL, NULL, '2026-05-01T00:00:00+03:00', '2026-06-30T23:59:00+03:00', '2026-09-01T00:00:00+03:00', '2026-09-30T23:59:00+03:00', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04'),
+  (6, 6, 3591416, '2026 In-Hand Game Design Contest', 2026, 'Fifth edition', 'English', 'international', 'Voting deadline passed; results link present in thread', 'complete', 'Cy (@CyBadger), Igor Zuber', NULL, 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2025-10-01', '2026-01-01T23:59:59-07:00', '2026-03-17', '2026-03-31T23:59:59-07:00', 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', '2026-09-04'),
+  (7, 7, 3620917, '2026 Two-Player Print and Play Game Design Contest', 2026, '2026', 'English', 'international', 'Entry list available; current contest phase requires verification', 'unknown', 'Charles Ward (@ex1st)', 'https://boardgamegeek.com/geeklist/368300/entries-for-the-2026-two-player-pnp-game-design-co', NULL, NULL, NULL, NULL, NULL, 'https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest', '2026-09-04', '2026-09-04'),
+  (8, 8, 3648226, '2026 9-Card Nanogame Print and Play Design Contest', 2026, '2026', 'English', 'international', 'Results visible on entry threads; official result details require verification', 'complete', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest', '2026-09-04', '2026-09-04');
+
+UPDATE contests SET scope_type='adjacent', treatment_profile='format_adjacent' WHERE id=3;
+
+INSERT INTO contest_sources (contest_id, kind, url, label, bgg_object_type, bgg_object_id, is_official, first_seen_at, last_verified_at) VALUES
+  (1, 'main_thread', 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', 'Main contest thread', 'thread', 3716853, 1, '2026-09-04', '2026-09-04'),
+  (2, 'main_thread', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', 'Main contest thread', 'thread', 3746297, 1, '2026-09-04', '2026-09-04'),
+  (3, 'discussion_thread', 'https://boardgamegeek.com/thread/3724943/discussion-thread-2026-traditional-deck-game-desig', 'Preliminary discussion and source link', 'thread', 3724943, 1, '2026-09-04', '2026-09-04'),
+  (4, 'main_thread', 'https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co', 'Main contest thread', 'thread', 3627732, 1, '2026-09-04', '2026-09-04'),
+  (4, 'entries_geeklist', 'https://boardgamegeek.com/geeklist/369157/2026-wargame-design-contest-entries', 'Official entries GeekList', 'geeklist', 369157, 1, '2026-09-04', '2026-09-04'),
+  (5, 'main_thread', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', 'Main contest thread', 'thread', 3701420, 1, '2026-09-04', '2026-09-04'),
+  (6, 'main_thread', 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', 'Main contest thread and entry list', 'thread', 3591416, 1, '2026-09-04', '2026-09-04'),
+  (7, 'main_thread', 'https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest', 'Main contest thread', 'thread', 3620917, 1, '2026-09-04', '2026-09-04'),
+  (7, 'entries_geeklist', 'https://boardgamegeek.com/geeklist/368300/entries-for-the-2026-two-player-pnp-game-design-co', 'Official entries GeekList', 'geeklist', 368300, 1, '2026-09-04', '2026-09-04'),
+  (8, 'main_thread', 'https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest', 'Main contest thread', 'thread', 3648226, 1, '2026-09-04', '2026-09-04');
+
+INSERT INTO contest_phases (contest_id, phase_type, label_raw, sequence_number, status_raw, status_normalized, starts_at, ends_at, timezone, date_precision, source_url, first_seen_at, last_verified_at, notes) VALUES
+  (1, 'submissions', 'Submissions', 1, 'June 1st to August 31st, 2026', 'complete', '2026-06-01', '2026-08-31', 'BGG time', 'day', 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', '2026-09-04', '2026-09-04', NULL),
+  (1, 'development', 'Development period', 2, 'September 1 to October 15', 'active', '2026-09-01', '2026-10-15T23:59:00-05:00', 'BGG time', 'day', 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', '2026-09-04', '2026-09-04', NULL),
+  (1, 'voting', 'Voting period', 3, 'October 16 to November 15', 'planned', '2026-10-16', '2026-11-15T23:59:00-05:00', 'BGG time', 'day', 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', '2026-09-04', '2026-09-04', 'Freeze begins October 21 according to the published calendar.'),
+  (2, 'submissions', 'Entry Deadline', 1, 'Entry Deadline: October 16th, 2026', 'active', '2026-08-01', '2026-10-16T23:59:00-05:00', 'BGG time (labelled CST)', 'minute', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (2, 'component_ready', 'Component Ready', 2, 'November 1st, 2026', 'planned', NULL, '2026-11-01T23:59:00-05:00', 'BGG time (labelled CST)', 'minute', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (2, 'contest_ready', 'Contest Ready', 3, 'November 15th, 2026', 'planned', NULL, '2026-11-15T23:59:00-05:00', 'BGG time (labelled CST)', 'minute', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (2, 'voting', 'Voting', 4, 'December 1st to December 31st', 'planned', '2026-12-01', '2026-12-31T23:59:00-05:00', 'BGG time (labelled CST)', 'minute', 'https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (3, 'submissions', 'Submission period', 1, 'September 1st to December 1st', 'active', '2026-09-01', '2026-12-01', 'BGG time', 'day', 'https://boardgamegeek.com/thread/3724943/discussion-thread-2026-traditional-deck-game-desig', '2026-09-04', '2026-09-04', 'Preliminary schedule; verify against main contest thread.'),
+  (3, 'voting', 'Voting', 2, 'December 15th to December 31st', 'planned', '2026-12-15', '2026-12-31', 'BGG time', 'day', 'https://boardgamegeek.com/thread/3724943/discussion-thread-2026-traditional-deck-game-desig', '2026-09-04', '2026-09-04', 'Preliminary schedule; verify against main contest thread.'),
+  (5, 'entries', 'Early Entry / Thread Opening Period', 1, 'May 1 to June 30', 'complete', '2026-05-01T00:00:00+03:00', '2026-06-30T23:59:00+03:00', 'TRT', 'minute', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04', 'Deadline extended from June 15 to June 30.'),
+  (5, 'component_ready', 'Component Ready / Playable Draft Upload Period', 2, 'July 1 to August 7', 'complete', '2026-07-01T00:00:00+03:00', '2026-08-07T23:59:00+03:00', 'TRT', 'minute', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04', 'Deadline extended to August 7; thread tag instruction also mentions August 9.'),
+  (5, 'playtest', 'Contest Ready / Playtest Period', 3, 'August 7 to August 31', 'complete', '2026-08-07T00:00:00+03:00', '2026-08-31T23:59:00+03:00', 'TRT', 'minute', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04', NULL),
+  (5, 'voting', 'Voting and Jury Evaluation Period', 4, 'September 1 to September 30', 'active', '2026-09-01T00:00:00+03:00', '2026-09-30T23:59:00+03:00', 'TRT', 'minute', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04', NULL),
+  (5, 'results', 'Evaluation and Announcement of Results', 5, 'October 1 to October 15', 'planned', '2026-10-01T00:00:00+03:00', '2026-10-15T23:59:00+03:00', 'TRT', 'minute', 'https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim', '2026-09-04', '2026-09-04', NULL),
+  (6, 'submissions', 'Submissions and Idea Phase Deadline', 1, 'January 01, 2026', 'complete', '2025-10-01', '2026-01-01T23:59:59-07:00', 'BGG time (MT)', 'second', 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (6, 'development', 'Development Deadline', 2, 'February 26, 2026', 'complete', NULL, '2026-02-26T23:59:59-07:00', 'BGG time (MT)', 'second', 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', '2026-09-04', NULL),
+  (6, 'voting', 'Voting', 3, 'March 17 to March 31', 'complete', '2026-03-17', '2026-03-31T23:59:59-07:00', 'BGG time (MT)', 'second', 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', '2026-09-04', NULL);
+
+INSERT INTO contest_checks (id, contest_id, checked_at, source_url, check_kind, outcome, notes)
+SELECT id, id, '2026-09-04', source_url, 'manual_web_baseline', CASE WHEN status_normalized = 'unknown' THEN 'partial' ELSE 'complete' END, 'Prima ricognizione 2026; nessun materiale di gioco aperto o scaricato.' FROM contests;
+
+INSERT INTO contest_status_history (contest_id, check_id, status_raw, status_normalized, observed_at, source_url, confidence, notes)
+SELECT id, id, status_raw, status_normalized, '2026-09-04', source_url, CASE WHEN status_normalized = 'unknown' THEN 'low' ELSE 'medium' END, 'Baseline iniziale.' FROM contests;
+
+INSERT INTO contest_metric_observations (contest_id, check_id, metric_key, metric_label_raw, numeric_value, unit, method, is_official, source_url, observed_at, notes) VALUES
+  (1, 1, 'entries_total', '56 ENTRIES', 56, 'entries', 'reported', 1, 'https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest', '2026-09-04', 'Conteggio dichiarato nel thread principale.'),
+  (6, 6, 'entries_active', 'Games List excluding Withdrawn', 23, 'entries', 'counted_from_reported_list', 1, 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', 'Conteggio della lista visibile nel thread.'),
+  (6, 6, 'entries_withdrawn', 'Withdrawn', 3, 'entries', 'counted_from_reported_list', 1, 'https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest', '2026-09-04', NULL),
+  (7, 7, 'entries_total', '46 Items', 46, 'entries', 'reported_by_geeklist', 1, 'https://boardgamegeek.com/geeklist/368300/entries-for-the-2026-two-player-pnp-game-design-co', '2026-09-04', 'Il numero include gli item correnti della GeekList; stati da censire nel prossimo passaggio.');
+
+COMMIT;

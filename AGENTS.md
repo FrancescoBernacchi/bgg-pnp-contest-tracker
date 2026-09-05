@@ -1,0 +1,70 @@
+# AGENTS.md
+
+## Missione del progetto
+
+Costruire e mantenere una collezione locale, ricercabile e tracciabile di giochi Print and Play scoperti inizialmente nei contest di BoardGameGeek.
+
+## Modello operativo
+
+Catalogare tutte le entries comprese nel perimetro del task e acquisire i materiali soltanto per i giochi selezionati. Partire dai contest attivi più recenti. Basare la priorità principalmente su classifiche e votazioni BGG, distinguendo sempre risultati ufficiali da segnali sostitutivi.
+
+Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzati. Per le varianti dipendenti da un gioco base, registrare tale dipendenza e non presumere che esistano componenti PnP aggiuntivi.
+
+## Mappa del progetto
+
+- `PROJECT.md`: scopo, vincoli e architettura autorevole.
+- `.workspace/PROJECT_STATE.md`: stato di inizializzazione e allineamento PWS.
+- `app/`: codice dell'interfaccia locale.
+- `database/schema.sql`: modello relazionale autorevole iniziale.
+- `database/migrations/`: evoluzioni ordinate dello schema.
+- `catalog/`: manifest ed esportazioni testuali versionabili.
+- `library/`: materiali PnP acquisiti; contenuto escluso da Git.
+- `sources/`: registri e note di provenienza riutilizzabili.
+- `sources/MONITORING_CALENDAR.md`: taccuino autorevole delle prossime finestre di controllo BGG e degli ultimi rilevamenti.
+- `tasks/`: workspace auditabili delle attività non banali.
+- `outputs/`: risultati rigenerabili, esclusi da Git salvo documentazione.
+
+## Workflow dei task
+
+Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/TASK.md`. Il task di bootstrap usa eccezionalmente `2026-09-04 - SETUP INIZIALE PROGETTO`. Definire scope, input, deliverable e criteri di successo prima di operare; lavorare per incrementi verificabili; chiudere registrando verifiche, decisioni e risultati riutilizzabili.
+
+## Regole della conoscenza
+
+Conservare separatamente dati originali, valori normalizzati e inferenze. Ogni informazione volatile deve includere fonte e data di verifica. Una nota di task diventa conoscenza condivisa solo dopo verifica e promozione deliberata. Non perdere nomi o stati storici quando un gioco viene rinominato, ritirato o aggiornato.
+
+## Regole degli output
+
+Il database SQLite è operativo e locale. Schema, migrazioni, manifest ed esportazioni testuali sono versionabili. Materiali scaricati e output rigenerabili non entrano in Git. Non modificare i file originali acquisiti; eventuali derivati devono essere chiaramente separati e riconducibili alla fonte.
+
+## Protocollo di monitoraggio
+
+- Prima di un controllo periodico consultare `sources/MONITORING_CALENDAR.md` e privilegiare la prima finestra scaduta o l'evento più vicino.
+- Non ripetere un rilevamento esterno nello stesso giorno, salvo correzione di un errore, nuovo annuncio BGG o richiesta esplicita dell'utente.
+- Distinguere una verifica tecnica di importazione o consistenza da un rilevamento dello stato esterno; soltanto il secondo alimenta la cadenza periodica.
+- Per contest con entry o sviluppo aperti usare normalmente una cadenza settimanale, intensificata nei sette giorni prima delle scadenze e il giorno successivo agli eventi di fase.
+- Non ricontrollare ordinariamente i contest conclusi, salvo risultati incompleti, rettifiche o nuovi riferimenti autorevoli.
+- Registrare anche gli esiti `no_change`, ma soltanto quando il controllo era dovuto; aggiornare sempre il taccuino con esito e prossima finestra.
+- Nei task di solo monitoraggio non aprire né scaricare file di gioco: usare thread, GeekList, Hub, titoli, tabelle e metadati pubblici.
+- Al termine di ogni incremento indicare autonomamente il prossimo controllo o approfondimento utile, senza attendere che venga richiesto.
+
+## Evoluzione strutturale
+
+Cambiare la struttura solo quando emerge un ciclo di vita distinto o un pattern stabile. Aggiornare insieme `PROJECT.md`, questa mappa e lo stato del progetto quando una modifica architetturale diventa permanente.
+
+## Relazione con lo Standard
+
+Questo progetto segue Project Workspace Standard versione 1.3.0. Consultare lo Standard per metodologia, governance, evoluzione e migrazioni. Non modificare lo Standard da questo progetto.
+
+## Vincoli specifici
+
+- BoardGameGeek è l'unica fonte iniziale; aggiungerne altre solo tramite task esplicito.
+- Non aggirare autenticazione, limitazioni tecniche o condizioni di accesso.
+- Verificare liceità e condizioni applicabili prima di acquisire o utilizzare materiali.
+- Non redistribuire opere di terzi.
+- Calcolare un hash per ogni file acquisito e preservare tutte le versioni.
+- Mantenere lo stato specifico dichiarato oltre allo stato normalizzato.
+- Preservare i conteggi precedenti quando una rilevazione successiva li corregge; marcare chiaramente quale osservazione è operativa.
+
+## Definition of Done
+
+Un task è concluso quando i deliverable sono verificati, fonti e date sono registrate, i materiali acquisiti hanno manifest e hash, le decisioni durevoli sono promosse nei file autorevoli e `TASK.md` documenta la chiusura.
