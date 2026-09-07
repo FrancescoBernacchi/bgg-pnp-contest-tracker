@@ -4,12 +4,14 @@ Archivio locale per monitorare contest di game design Print and Play pubblicati 
 
 ## Stato attuale
 
-- 11 contest 2026 monitorati: 8 PnP principali e 3 adiacenti autorizzati;
-- 365 entry censite: 344 giochi autonomi e 21 varianti dipendenti da un gioco base;
+- 22 edizioni monitorate: 11 del 2026 e una baseline di 11 contest del 2025;
+- 13 serie individuate; per il 2025 si aggiungono 1-Card e Roll & Write;
+- 392 entry censite: le 365 del 2026 e le prime 27 del 2025 (In-Hand);
 - cronologia di stati, metriche, entry, fasi e scadenze;
 - cruscotto Markdown rigenerabile con confronto fra rilevamenti periodici;
 - applicazione locale di consultazione in sola lettura, con ricerca, filtri, dettagli e confronto conservativo degli snapshot;
-- prossimo controllo mirato: 8 settembre 2026, contest Turkish PnP.
+- prossimo controllo mirato del task 2026: 8 settembre 2026, contest Turkish PnP;
+- censimento storico in corso nel task dedicato al 2025.
 
 I contest adiacenti hanno trattamenti distinti: Traditional Deck (`format_adjacent`), Bad Comet (`selective_entries`) e Solomode (`dependent_variants`).
 
