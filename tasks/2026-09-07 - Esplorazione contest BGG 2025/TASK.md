@@ -48,3 +48,11 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 Preparato `catalog/2025-in-hand-entries-results.sql` con tutte le 27 entry elencate dal thread: 15 finaliste e 12 ritirate. Registrati 55 piazzamenti di gioco in otto categorie; la categoria Traditional Card/Tarot/Decktet non aveva entry e il premio Best Playtester resta una classifica di persone, non di giochi. Gli ancoraggi interni del thread espongono i titoli ma non gli URL individuali dei WIP, quindi le entry conservano per ora il thread ufficiale come evidenza comune senza inventare collegamenti.
 
 Lo script In-Hand è stato verificato su una copia e applicato al database operativo: 392 entry complessive, di cui 27 nel 2025, e 55 classifiche In-Hand. Integrità e chiavi esterne sono valide; il cruscotto è stato rigenerato e gli otto test dell'applicazione sono superati.
+
+### Censimento 9-Card Nanogame 2025
+
+Preparato `catalog/2025-9-card-nanogame-entries-results.sql` dalla lista conclusiva e dai risultati pubblicati nel thread ufficiale. Il censimento comprende 94 entry: 63 indicate come `Contest Ready` e 31 ritirate. Due righe ritirate riportano `N/A` come titolo: il valore originale è conservato in `entry_text_raw`, mentre i titoli canonici tecnici le distinguono senza inventare nomi di gioco.
+
+Registrati 56 piazzamenti di gioco in undici categorie. La classifica generale conserva il primo posto di Math Knight, il pari merito al secondo posto di Bullet Run e Fall of the Republic e le posizioni successive fino al settimo posto. In `Best New Designer`, il primo posto personale di Scott è associato a entrambe le sue entry, Into the Arcanum e Tower of Babel. Il premio Best Playtester è escluso dalle classifiche di gioco. Non sono stati aperti materiali delle entry; gli autori non univocamente associabili dalla tabella impaginata non sono stati trasformati in crediti certi.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 486 entry complessive, 121 delle quali appartengono al 2025. Per 9-Card risultano 94 entry e 56 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni, `PRAGMA integrity_check` restituisce `ok` e gli otto test dell'applicazione sono superati. Il cruscotto locale è stato rigenerato.
