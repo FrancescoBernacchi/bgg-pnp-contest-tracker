@@ -30,6 +30,10 @@ La baseline 2026 corrente comprende 11 contest, dei quali 8 PnP principali e 3 a
 
 Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
 
+Dal 7 settembre 2026 l'interfaccia di consultazione è realizzata con Python 3.12+ e sola libreria standard (`app/server.py`), asset HTML/CSS/JavaScript locali (`app/static/`) e launcher PowerShell (`app/start.ps1`). Non richiede build o dipendenze aggiuntive. Il server è limitato a `127.0.0.1`; ogni richiesta usa una transazione SQLite in sola lettura (`mode=ro`, `query_only`). Ricerca, filtri, navigazione e aggiornamento sono operazioni locali sui metadati; la libreria dei materiali non è esposta né consultata. La guida operativa è `app/README.md`.
+
+La UI confronta due controlli periodici del medesimo contest, escludendo da entrambi baseline, census e consistency. Le transizioni riguardano soltanto entità comuni ai rispettivi snapshot collegati tramite `check_id`. Poiché lo schema non certifica la completezza per entità, le presenze esclusive sono mostrate senza inferire aggiunte o rimozioni; gli insiemi vuoti sono dati insufficienti. Il motore del report Markdown preesistente resta separato e invariato.
+
 I confronti del cruscotto considerano soltanto rilevamenti periodici o legati a una scadenza. Baseline, completamenti di censimento e verifiche tecniche restano nello storico ma non sono presentati come evoluzioni successive. Nuove entry, rimozioni e transizioni sono attendibili soltanto fra snapshot completi collegati ai rispettivi controlli.
 
 ## Input e fonti
@@ -95,6 +99,6 @@ Per il monitoraggio la priorità è determinata dal taccuino: eventi di fase imm
 
 ## Domande aperte
 
-- stack tecnico definitivo dell'interfaccia locale;
+- eventuale evoluzione dello stack solo qualora la scala o nuovi flussi la richiedano;
 - soglie operative per l'acquisizione quando un contest non dispone ancora di votazioni;
 - eventuali limiti massimi di spazio occupato dalla libreria.

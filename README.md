@@ -8,6 +8,7 @@ Archivio locale per monitorare contest di game design Print and Play pubblicati 
 - 365 entry censite: 344 giochi autonomi e 21 varianti dipendenti da un gioco base;
 - cronologia di stati, metriche, entry, fasi e scadenze;
 - cruscotto Markdown rigenerabile con confronto fra rilevamenti periodici;
+- applicazione locale di consultazione in sola lettura, con ricerca, filtri, dettagli e confronto conservativo degli snapshot;
 - prossimo controllo mirato: 8 settembre 2026, contest Turkish PnP.
 
 I contest adiacenti hanno trattamenti distinti: Traditional Deck (`format_adjacent`), Bad Comet (`selective_entries`) e Solomode (`dependent_variants`).
@@ -24,9 +25,22 @@ Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest 
 - `database/`: schema, migrazioni e database SQLite locale escluso da Git;
 - `catalog/`: importazioni e snapshot testuali versionabili;
 - `app/generate_monitoring_report.py`: generatore del cruscotto;
+- `app/server.py`, `app/static/`, `app/start.ps1`: applicazione locale e avvio PowerShell;
 - `tasks/`: decisioni ed evidenze auditabili;
 - `outputs/`: report rigenerabili esclusi da Git;
 - `library/`: eventuali materiali acquisiti in flussi separati, esclusi da Git.
+
+## Consultazione nell'app locale
+
+Da PowerShell, nella cartella del progetto:
+
+```powershell
+.\app\start.ps1
+```
+
+Aprire [PnP Collection](http://127.0.0.1:8765). Il launcher usa Python disponibile nel PATH o il runtime integrato di Codex; non occorre installare pacchetti. `Ctrl+C` arresta il server. Guida completa, alternative di avvio e test in `app/README.md`.
+
+Sono disponibili contest principali/adiacenti, ricerca delle entry, fasi, statistiche, risultati e cronologia. Non vengono aperti o scaricati materiali. Il confronto richiede due rilevamenti periodici: la baseline attuale non li contiene ancora; assenze da snapshot non certificati non vengono interpretate come rimozioni.
 
 ## Rigenerazione del cruscotto
 

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>PnP Collection · Archivio contest</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <aside class="sidebar">
+    <a class="brand" href="#contests"><span class="brand-icon">P<span>n</span>P</span><span>Collection<small>IL TUO ARCHIVIO DI IDEE</small></span></a>
+    <p class="nav-label">ESPLORA L’ARCHIVIO</p>
+    <nav aria-label="Navigazione principale">
+      <a href="#contests" data-nav="contests"><span aria-hidden="true">▦</span> Contest <span id="contest-count" class="nav-count"></span></a>
+      <a href="#entries" data-nav="entries"><span aria-hidden="true">▤</span> Tutte le entry <span id="entry-count" class="nav-count"></span></a>
+      <a href="#deadlines" data-nav="deadlines"><span aria-hidden="true">◷</span> Scadenze</a>
+    </nav>
+    <div class="sidebar-note"><span class="dot"></span> Archivio locale<p>Metadati BoardGameGeek<br>SQLite · sola lettura</p><small>Nessun materiale di gioco viene aperto o scaricato.</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>BGG / <strong id="breadcrumb">Contest di design</strong></span><button id="refresh" class="quiet">↻ Rileggi database</button></header>
+    <main id="main" tabindex="-1"><div class="empty" role="status">Caricamento del catalogo locale…</div></main>
+    <footer>PNP COLLECTION <span id="freshness">Consultazione locale</span></footer>
+  </div>
+</body>
+</html>

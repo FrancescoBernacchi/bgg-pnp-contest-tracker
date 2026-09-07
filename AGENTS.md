@@ -16,7 +16,7 @@ Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzat
 - `GIT_GUIDE.md`: guida semplice e protocollo di supporto Git/GitHub per l'utente.
 - `PROJECT.md`: scopo, vincoli e architettura autorevole.
 - `.workspace/PROJECT_STATE.md`: stato di inizializzazione e allineamento PWS.
-- `app/`: codice dell'interfaccia locale.
+- `app/`: interfaccia locale Python/HTML/CSS/JavaScript in sola lettura; `server.py`, asset in `static/`, launcher `start.ps1`, test e guida `README.md`; include il generatore Markdown preesistente.
 - `database/schema.sql`: modello relazionale autorevole iniziale.
 - `database/migrations/`: evoluzioni ordinate dello schema.
 - `catalog/`: manifest ed esportazioni testuali versionabili.
