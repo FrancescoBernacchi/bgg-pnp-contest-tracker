@@ -30,6 +30,8 @@ Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzat
 
 Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/TASK.md`. Il task di bootstrap usa eccezionalmente `2026-09-04 - SETUP INIZIALE PROGETTO`. Definire scope, input, deliverable e criteri di successo prima di operare; lavorare per incrementi verificabili; chiudere registrando verifiche, decisioni e risultati riutilizzabili.
 
+Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descrizione`, con la data di apertura del task e una descrizione breve che ne rappresenti lo scopo effettivo. Appena il compito è sufficientemente compreso, verificare autonomamente il titolo e rinominare il task se non rispetta la convenzione o non riflette più correttamente il perimetro concordato; non attendere una richiesta specifica dell’utente. Soltanto per l’esplorazione dei contest organizzata in un task distinto per ciascun anno usare `YYYY-MM-DD - Esplorazione contest BGG AAAA`: `YYYY-MM-DD` è la data di apertura del task, mentre `AAAA` è l’anno dei contest esplorati e in generale è diverso dall’anno della data di apertura.
+
 ## Regole della conoscenza
 
 Conservare separatamente dati originali, valori normalizzati e inferenze. Ogni informazione volatile deve includere fonte e data di verifica. Una nota di task diventa conoscenza condivisa solo dopo verifica e promozione deliberata. Non perdere nomi o stati storici quando un gioco viene rinominato, ritirato o aggiornato.
