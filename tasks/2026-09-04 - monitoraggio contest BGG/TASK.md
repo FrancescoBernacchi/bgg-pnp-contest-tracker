@@ -106,6 +106,10 @@ Per i contest attivi, ogni rilevazione può registrare le entry presenti nella l
 - 2026-09-04: l'utente ribadisce che il task riguarda esclusivamente monitoraggio e gestione del database dei contest e della loro evoluzione; download e gestione dei giochi sono fuori scope.
 - 2026-09-04: l'utente include il Bad Comet Cozy Game Design Contest nel monitoraggio; per questo contest esterno le entry sono registrate selettivamente solo quando caratterizzate come PnP o similari archiviabili.
 - 2026-09-04: il perimetro viene esteso al monitoraggio leggero delle entry per misurare numero di giochi caricati e relativo stato nei contest attivi, senza acquisizione o analisi dei materiali.
+- 2026-09-05: l'utente autorizza l'inclusione stabile di Solomode come contest adiacente, mantenendo le varianti dipendenti separate dai giochi PnP autonomi e predisposte a trattamenti differenti.
+- 2026-09-05: l'utente approva un taccuino delle scadenze e la promozione delle regole apprese nella documentazione generale del progetto.
+- 2026-09-05: il cruscotto deve distinguere i cambiamenti fra rilevamenti effettivi da baseline, completamenti di censimento e verifiche tecniche dello stesso giorno.
+- 2026-09-07: codice e documentazione sono collegati al repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker`, branch `main`; database, output e materiali restano locali.
 
 ## Evidenze iniziali
 
@@ -113,9 +117,10 @@ Per i contest attivi, ogni rilevazione può registrare le entry presenti nella l
 
 ## Prossimi incrementi
 
-1. Censire le serie attive e le edizioni 2026, quindi procedere a ritroso.
-2. Produrre il primo report di stato e la coda di ricontrollo.
-3. Eseguire un secondo rilevamento per verificare la ricostruzione delle variazioni.
+1. Eseguire l'8 settembre 2026 il controllo post-playtest del Turkish PnP, verificando calendario del voto, stato ed entry ammesse.
+2. Usare quel controllo come primo snapshot periodico reale per collaudare la sezione differenziale del cruscotto.
+3. Eseguire l'11 settembre il controllo settimanale dei contest 2026 ancora attivi.
+4. Dopo la stabilizzazione del ciclo 2026, procedere a ritroso con le edizioni storiche.
 
 ## Incrementi completati
 
@@ -142,3 +147,4 @@ Per i contest attivi, ogni rilevazione può registrare le entry presenti nella l
 - 2026-09-05: creata la migrazione `003_monitoring_views.sql` con cinque viste di consultazione per quadro generale, PnP principali, contest adiacenti, giochi autonomi e varianti dipendenti. La vista generale espone conteggi e prossima fase utile. Verificati 11 contest (8 core, 3 adiacenti), 344 entry autonome e 21 dipendenti sia su ricostruzione pulita sia su copia migrata, senza violazioni referenziali.
 - 2026-09-05: aggiunto `app/generate_monitoring_report.py`, che produce un cruscotto Markdown dal solo database locale usando le viste operative. La migrazione `004_monitoring_view_schedule.sql` rende disponibile la data iniziale per l'ordinamento dal più recente al più vecchio; nessun accesso a BGG o ai materiali è coinvolto nella generazione.
 - 2026-09-05: aggiunta al cruscotto la sezione differenziale fra rilevamenti periodici. La migrazione `005_contest_phase_history.sql` storicizza fasi e scadenze e crea la baseline corrente; baseline, completamenti di censimento e verifiche tecniche dello stesso giorno non vengono presentati come cambiamenti periodici.
+- 2026-09-07: consolidate nei documenti autorevoli tutte le decisioni e le regole durevoli emerse finora. Aggiunto il README del repository, precisato il contratto degli snapshot confrontabili e registrato lo stato GitHub; nessun accesso a BGG o cambiamento del database operativo.

@@ -14,6 +14,8 @@ Nel database questa distinzione usa `contests.scope_type` e `contests.treatment_
 
 Le viste `v_contests_monitoring_all`, `v_contests_pnp_core`, `v_contests_adjacent`, `v_entries_standalone` e `v_entries_dependent_variants` costituiscono l'interfaccia di lettura stabile per report e applicazione. La vista generale calcola i conteggi correnti e la prossima fase non trascorsa al momento della consultazione.
 
+La baseline 2026 corrente comprende 11 contest, dei quali 8 PnP principali e 3 adiacenti autorizzati, con 344 entry autonome e 21 varianti dipendenti. Traditional Deck usa `format_adjacent`, Bad Comet `selective_entries` e Solomode `dependent_variants`.
+
 ## Attività previste
 
 - individuazione dei contest PnP attivi, dando precedenza ai più recenti;
@@ -27,6 +29,8 @@ Le viste `v_contests_monitoring_all`, `v_contests_pnp_core`, `v_contests_adjacen
 - pianificazione dei controlli mediante un taccuino versionabile delle scadenze e delle finestre di riesame.
 
 Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
+
+I confronti del cruscotto considerano soltanto rilevamenti periodici o legati a una scadenza. Baseline, completamenti di censimento e verifiche tecniche restano nello storico ma non sono presentati come evoluzioni successive. Nuove entry, rimozioni e transizioni sono attendibili soltanto fra snapshot completi collegati ai rispettivi controlli.
 
 ## Input e fonti
 
@@ -56,6 +60,10 @@ Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources
 ## Stakeholder / destinatari
 
 Uso personale del proprietario del progetto. Nessuna pubblicazione o redistribuzione dei materiali è inclusa nello scope iniziale.
+
+Il codice e la documentazione sono conservati anche nel repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker`, branch `main`. Database operativo, output rigenerabili e materiali di terzi restano esclusi dal repository.
+
+Poiché l'utente sta acquisendo familiarità con Git e GitHub, l'agente fornisce supporto proattivo sulle azioni di versionamento: indica quando conviene creare commit, branch o push, ne spiega la motivazione e verifica l'esito. Le operazioni non vengono eseguite senza una richiesta o autorizzazione chiara. Il riferimento operativo è `GIT_GUIDE.md`.
 
 ## Conoscenza condivisa
 

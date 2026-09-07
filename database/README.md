@@ -12,6 +12,18 @@ La migrazione `004_monitoring_view_schedule.sql` espone anche `starts_at` nella 
 
 La migrazione `005_contest_phase_history.sql` introduce gli snapshot storici delle fasi e delle scadenze. La migrazione registra come baseline i valori correnti; i controlli successivi devono collegare i nuovi snapshot al relativo `contest_checks.id`.
 
+## Contratto dei rilevamenti differenziali
+
+Un controllo periodico confrontabile deve:
+
+1. creare un record in `contest_checks` con un `check_kind` contenente `monitor`, `scheduled`, `deadline` o `follow_up`;
+2. collegare tramite `check_id` lo stato osservato e gli snapshot completi di entry, metriche e fasi disponibili;
+3. registrare anche `no_change` quando il controllo era dovuto;
+4. non usare l'assenza da un insieme parziale come prova di rimozione;
+5. preservare tutti i valori precedenti nelle tabelle storiche.
+
+I controlli con finalità di `baseline`, `census` o `consistency` possono arricchire il database, ma non costituiscono da soli una nuova finestra periodica. Il database SQLite operativo è locale e non viene pubblicato su GitHub.
+
 Gli stati normalizzati iniziali previsti sono `unknown`, `wip`, `playtest_ready`, `components_ready`, `contest_ready`, `contest_complete`, `withdrawn` e `unavailable`. Il valore originale e la relativa evidenza devono sempre essere conservati.
 
 Per i contest si usano inizialmente `announced`, `entries_open`, `development`, `freeze`, `voting`, `awaiting_results`, `complete`, `suspended`, `cancelled` e `unknown`. Per le entry si usano `idea`, `wip`, `components_available`, `playtest_ready`, `contest_ready`, `withdrawn`, `incomplete`, `disqualified` e `unknown`. Il testo originale della fonte resta sempre separato dal valore normalizzato.

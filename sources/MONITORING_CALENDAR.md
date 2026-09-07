@@ -1,8 +1,10 @@
 # Taccuino dei controlli BGG
 
-Ultimo aggiornamento: 2026-09-05.
+Ultimo aggiornamento documentale: 2026-09-07. Ultimo rilevamento BGG: 2026-09-05.
 
 Questo registro governa i controlli periodici sui contest. Le date sono finestre operative: un controllo può essere anticipato soltanto in presenza di un annuncio BGG, di un errore da correggere o di una richiesta esplicita. I controlli tecnici di consistenza non costituiscono nuovi rilevamenti dello stato esterno.
+
+La revisione del 7 settembre ha consolidato le regole del progetto senza consultare BGG e non costituisce un rilevamento. La finestra Turkish PnP dell'8 settembre resta quindi il prossimo controllo dovuto.
 
 ## Prossimi controlli mirati
 
@@ -44,3 +46,5 @@ Questo registro governa i controlli periodici sui contest. Le date sono finestre
 ## Regola di manutenzione
 
 Dopo ogni rilevamento aggiornare questo file indicando data, esito e prossima finestra utile. Se una fonte annuncia una proroga o modifica una scadenza, preservare la data precedente nello storico del database e sostituire qui la prossima azione operativa.
+
+Nel database classificare il controllo con un `check_kind` confrontabile (`monitor`, `scheduled`, `deadline` o `follow_up`) e collegare tramite `check_id` gli snapshot completi disponibili. Le attività `baseline`, `census` e `consistency` non avanzano la cadenza periodica.
