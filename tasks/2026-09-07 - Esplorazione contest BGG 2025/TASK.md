@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con 9-Card Nanogame e Children & Family, già conclusi e corredati di risultati ufficiali.
-2. Completare a seguire 1-Card, Solomode, Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write.
+1. Proseguire con Solomode, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -64,3 +64,11 @@ Preparato `catalog/2025-children-family-entries-results.sql` dalla GeekList uffi
 Registrati 36 piazzamenti ufficiali in cinque categorie: Best Children’s Game, Best Family Game, Best Rulebook, Best Theme e Best Art. Il titolo `Squirelly`, usato nella rosa finale e nei risultati, è canonico; `Squirrelly`, presente nell’intestazione WIP della GeekList, è conservato come alias storico. Le differenze di età o numero di giocatori tra alcune schede WIP e la rosa finale non sono state riconciliate per inferenza: i campi strutturati seguono la rosa finale e il testo della fonte resta tracciato.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 513 entry complessive, 148 delle quali appartengono al 2025. Per Children & Family risultano 27 entry e 36 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati.
+
+### Censimento 1-Card 2025
+
+Preparato `catalog/2025-1-card-entries-results.sql` dalla GeekList ufficiale chiusa e dalla sezione dei risultati nel thread principale. Il censimento comprende tutte le 38 entry ancora elencate; il thread dichiara che tutte le entry della GeekList sono rimaste nel contest, quindi non è stata inferita una sezione di ritiri. Sono registrati posizione, identificativo GeekList, collegamento WIP e credito del designer pubblicato. Non sono stati aperti o scaricati materiali di gioco.
+
+Registrati 84 piazzamenti ufficiali in nove categorie di gioco: Best Overall Game, Best Solitaire Game, Best Multiplayer Game, Best Game Name, Most Innovative Mechanic Involving the 1 Card, Best Rule Book, Best Artist, Best New Designer e la sfida tematica Switching of Roles: Dystopia. Best Playtester è una classifica di persone ed è esclusa da `rankings`. `Finger Twister` e `Matching Socks`, usati nei risultati, sono i titoli canonici; le precedenti grafie `Operation D-2` e `Shapelink` restano come alias storici.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 551 entry complessive, 186 delle quali appartengono al 2025. Per 1-Card risultano 38 entry e 84 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati.
