@@ -14,7 +14,7 @@ Nel database questa distinzione usa `contests.scope_type` e `contests.treatment_
 
 Le viste `v_contests_monitoring_all`, `v_contests_pnp_core`, `v_contests_adjacent`, `v_entries_standalone` e `v_entries_dependent_variants` costituiscono l'interfaccia di lettura stabile per report e applicazione. La vista generale calcola i conteggi correnti e la prossima fase non trascorsa al momento della consultazione.
 
-La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distribuite su 13 serie. Sono censite 589 entry: 365 del 2026 e 224 del 2025, relative a In-Hand, 9-Card Nanogame, Children & Family, 1-Card e Solomode. Nel complesso risultano 530 giochi autonomi e 59 varianti dipendenti: 21 varianti Solomode del 2026 e 38 del 2025. Traditional Deck usa `format_adjacent`, Bad Comet `selective_entries` e Solomode `dependent_variants`. Il censimento delle altre entry 2025 procede per incrementi separati.
+La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distribuite su 13 serie. Sono censite 663 entry: 365 del 2026 e 298 del 2025, relative a In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode e Solitaire. Nel complesso risultano 604 giochi autonomi e 59 varianti dipendenti: 21 varianti Solomode del 2026 e 38 del 2025. Traditional Deck usa `format_adjacent`, Bad Comet `selective_entries` e Solomode `dependent_variants`. Il censimento delle altre entry 2025 procede per incrementi separati.
 
 ## Attività previste
 

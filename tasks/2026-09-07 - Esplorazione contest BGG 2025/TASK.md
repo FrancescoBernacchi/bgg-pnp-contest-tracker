@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con Solitaire, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write.
+1. Proseguire con Two-Player, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire 54-Card, Traditional Deck, Wargame e Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -80,3 +80,11 @@ Preparato `catalog/2025-solomode-adjacent-entries-results.sql` dalle due pagine 
 Registrati 55 piazzamenti ufficiali in nove categorie di gioco. `Best Name` conserva il pari merito al secondo posto fra `b-AI-rista` e `Florek & Florka`. Most Valuable Playtester è registrato come metrica testuale di persone, non come classifica di giochi.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 589 entry complessive, 224 delle quali appartengono al 2025. Per Solomode risultano 38 varianti dipendenti e 55 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati. Il prossimo censimento annuale è Solitaire 2025.
+
+### Censimento Solitaire 2025
+
+Preparato `catalog/2025-solitaire-entries-results.sql` dalle tre pagine della GeekList ufficiale chiusa e dai post dei risultati nel thread principale. Il censimento comprende tutte le 74 entry ancora elencate. Il thread dichiara che tutte le entry sono rimaste nella GeekList e che ogni gioco non ritirato entro la scadenza di sviluppo è considerato `Contest Ready`; per questo lo stato finale prevale sulle poche righe descrittive obsolete che riportano ancora `Idea phase` o `Prototype phase`, conservate comunque nel testo originale. Non sono stati aperti o scaricati materiali di gioco.
+
+Registrati 167 piazzamenti ufficiali in 16 categorie associate ai giochi, comprese le categorie personali Best New Solo Designer, Best Artist e Best New Artist, che indicano esplicitamente anche il gioco premiato. Best Playtester è invece una classifica esclusivamente di persone ed è conservata come metrica testuale, con i pari merito pubblicati, senza inserirla in `rankings`.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 663 entry complessive, 298 delle quali appartengono al 2025. Per Solitaire risultano 74 entry e 167 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati. Il prossimo censimento annuale è Two-Player 2025.
