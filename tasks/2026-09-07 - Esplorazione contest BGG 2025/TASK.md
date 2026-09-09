@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con 54-Card, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire Traditional Deck, Wargame e Roll & Write.
+1. Proseguire con Traditional Deck, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire Wargame e Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -96,3 +96,11 @@ La GeekList ufficiale contiene 41 elementi: il primo presenta il contest e i suc
 Il post ufficiale dei risultati pubblica 41 piazzamenti complessivi nelle categorie Best Theme, Best Graphics, Best Rule Book, Best Mechanics e Best Overall. L'organizzatore dichiara che i voti ricevuti non erano sufficienti a determinare i vincitori delle altre categorie annunciate; questa incompletezza resta esplicita nel censimento. `Roll and Pull`, nome usato nel WIP e nei risultati, è il titolo canonico; `Tractor Pull`, presente nella GeekList, è conservato come alias storico.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 703 entry complessive, 338 delle quali appartengono al 2025. Per Two-Player risultano 40 entry e 41 piazzamenti in cinque categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è 54-Card 2025.
+
+### Censimento 54-Card 2025
+
+La GeekList ufficiale e la lista nel thread, aggiornata il 1 novembre 2025, identificano 28 entry finali. Il thread conserva inoltre una sezione distinta con 9 giochi ritirati: il conteggio storico è registrato nelle metriche, mentre questi giochi non entrano nel catalogo operativo. La presenza nella lista finale e l'obbligo di raggiungere lo stato Contest Ready entro il 15 ottobre sostengono lo stato normalizzato delle entry; i file non sono stati aperti né scaricati.
+
+I risultati ufficiali comprendono 48 piazzamenti in nove categorie votate, inclusi i pari merito. Il premio della giuria assegna un primo e un secondo posto, oltre a quattro menzioni d'onore pubblicate senza ordine; queste ultime mantengono quindi un rango nullo. `Hack the Planet` vince il premio della giuria e `Braggarts` il Best Overall Game.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 731 entry complessive, 366 delle quali appartengono al 2025. Per 54-Card risultano 28 entry e 54 riconoscimenti complessivi; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Traditional Deck 2025.
