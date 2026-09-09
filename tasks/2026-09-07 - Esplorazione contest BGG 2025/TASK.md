@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con Two-Player, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire 54-Card, Traditional Deck, Wargame e Roll & Write.
+1. Proseguire con 54-Card, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire Traditional Deck, Wargame e Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -88,3 +88,11 @@ Preparato `catalog/2025-solitaire-entries-results.sql` dalle tre pagine della Ge
 Registrati 167 piazzamenti ufficiali in 16 categorie associate ai giochi, comprese le categorie personali Best New Solo Designer, Best Artist e Best New Artist, che indicano esplicitamente anche il gioco premiato. Best Playtester è invece una classifica esclusivamente di persone ed è conservata come metrica testuale, con i pari merito pubblicati, senza inserirla in `rankings`.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 663 entry complessive, 298 delle quali appartengono al 2025. Per Solitaire risultano 74 entry e 167 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati. Il prossimo censimento annuale è Two-Player 2025.
+
+### Censimento Two-Player 2025
+
+La GeekList ufficiale contiene 41 elementi: il primo presenta il contest e i successivi 40 sono i giochi ammessi. Poiché le regole richiedevano di rimuovere dalla GeekList i progetti ritirati, i 40 giochi rimasti sono registrati come entry finali. I materiali non sono stati aperti né scaricati.
+
+Il post ufficiale dei risultati pubblica 41 piazzamenti complessivi nelle categorie Best Theme, Best Graphics, Best Rule Book, Best Mechanics e Best Overall. L'organizzatore dichiara che i voti ricevuti non erano sufficienti a determinare i vincitori delle altre categorie annunciate; questa incompletezza resta esplicita nel censimento. `Roll and Pull`, nome usato nel WIP e nei risultati, è il titolo canonico; `Tractor Pull`, presente nella GeekList, è conservato come alias storico.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 703 entry complessive, 338 delle quali appartengono al 2025. Per Two-Player risultano 40 entry e 41 piazzamenti in cinque categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è 54-Card 2025.
