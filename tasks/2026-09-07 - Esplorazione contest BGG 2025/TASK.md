@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con Solomode, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write.
+1. Proseguire con Solitaire, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -72,3 +72,11 @@ Preparato `catalog/2025-1-card-entries-results.sql` dalla GeekList ufficiale chi
 Registrati 84 piazzamenti ufficiali in nove categorie di gioco: Best Overall Game, Best Solitaire Game, Best Multiplayer Game, Best Game Name, Most Innovative Mechanic Involving the 1 Card, Best Rule Book, Best Artist, Best New Designer e la sfida tematica Switching of Roles: Dystopia. Best Playtester è una classifica di persone ed è esclusa da `rankings`. `Finger Twister` e `Matching Socks`, usati nei risultati, sono i titoli canonici; le precedenti grafie `Operation D-2` e `Shapelink` restano come alias storici.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 551 entry complessive, 186 delle quali appartengono al 2025. Per 1-Card risultano 38 entry e 84 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati.
+
+### Censimento Solomode 2025
+
+Preparato `catalog/2025-solomode-adjacent-entries-results.sql` dalle due pagine della GeekList ufficiale e dall’annuncio finale dell’organizzatore. Il censimento comprende tutte le 38 proposte pubblicate. Ogni record è classificato come `dependent_variant` con dipendenza obbligatoria dal gioco base; il nome della variante, il titolo originale della GeekList, il gioco base, l’autore o username disponibile, l’identificativo dell’item e il collegamento WIP sono conservati separatamente. Due item puntano per errore alle pagine generali del contest e restano quindi senza un WIP individuale inventato. Non sono stati aperti o scaricati materiali di gioco.
+
+Registrati 55 piazzamenti ufficiali in nove categorie di gioco. `Best Name` conserva il pari merito al secondo posto fra `b-AI-rista` e `Florek & Florka`. Most Valuable Playtester è registrato come metrica testuale di persone, non come classifica di giochi.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 589 entry complessive, 224 delle quali appartengono al 2025. Per Solomode risultano 38 varianti dipendenti e 55 piazzamenti; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il cruscotto locale è stato rigenerato; gli otto test Python dell’applicazione e i quattro test JavaScript del frontend sono superati. Il prossimo censimento annuale è Solitaire 2025.
