@@ -34,6 +34,8 @@ Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest 
 
 ## Consultazione nell'app locale
 
+Il modo più semplice è fare doppio clic sul collegamento **PnP Collection** creato sul Desktop. L'app si apre automaticamente nel browser; la finestra del server deve restare aperta durante l'uso.
+
 Da PowerShell, nella cartella del progetto:
 
 ```powershell

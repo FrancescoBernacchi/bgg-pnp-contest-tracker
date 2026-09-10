@@ -4,6 +4,14 @@ Prima versione dell'interfaccia locale: Python 3.12+ e sola libreria standard, H
 
 ## Avvio dell'applicazione
 
+### Avvio rapido dal Desktop
+
+Fare doppio clic sul collegamento **PnP Collection** presente sul Desktop. Il launcher trova automaticamente Python, avvia il server e apre l'app nel browser predefinito. La finestra nera che appare deve restare aperta durante l'uso; per arrestare l'app, selezionarla e premere `Ctrl+C`, quindi confermare se Windows lo richiede.
+
+Il collegamento richiama `app/launch.cmd`, che non è soggetto alla Execution Policy di PowerShell, e usa l'icona PnP conservata in `app/assets/pnp-collection.ico`. Se il progetto viene spostato o rinominato, occorre ricreare il collegamento. Il launcher resta disponibile anche direttamente con un doppio clic nella cartella `app`.
+
+### Avvio dal terminale
+
 Da PowerShell nella radice del progetto:
 
 ```powershell
@@ -24,7 +32,7 @@ Oppure, su questo computer:
 & "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" app/server.py
 ```
 
-Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il server accetta `--database` e `--port`; il launcher accetta `-Database` e `-Port`. Il database predefinito è `database/pnp_collection.sqlite3`, risolto dalla posizione dello script anche quando la directory corrente è diversa. Se manca, l'app segnala l'errore senza crearlo. Per uno schema incompatibile consultare `database/README.md`: l'app non applica migrazioni. Una porta occupata richiede la chiusura dell'istanza precedente o una porta diversa.
+Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il server accetta `--database`, `--port` e `--open-browser`; il launcher PowerShell accetta `-Database` e `-Port`. Il database predefinito è `database/pnp_collection.sqlite3`, risolto dalla posizione dello script anche quando la directory corrente è diversa. Se manca, l'app segnala l'errore senza crearlo. Per uno schema incompatibile consultare `database/README.md`: l'app non applica migrazioni. Una porta occupata richiede la chiusura dell'istanza precedente o una porta diversa.
 
 ## Consultazione
 

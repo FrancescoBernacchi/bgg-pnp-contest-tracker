@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import re
 import sqlite3
+import webbrowser
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -227,6 +228,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--database", type=Path, default=DEFAULT_DATABASE)
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--open-browser", action="store_true", help="Apre l'app nel browser predefinito dopo l'avvio")
     args = parser.parse_args()
     if not 1 <= args.port <= 65535:
         parser.error("La porta deve essere compresa fra 1 e 65535.")
@@ -241,6 +243,8 @@ def main():
     except (sqlite3.Error, OSError) as error:
         parser.exit(1, f"Avvio non riuscito: {error}\nVerificare database, schema e porta (vedere app/README.md).\n")
     print(f"PnP Collection: http://127.0.0.1:{args.port} — SQLite in sola lettura. Ctrl+C per terminare.", flush=True)
+    if args.open_browser:
+        webbrowser.open(f"http://127.0.0.1:{args.port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
