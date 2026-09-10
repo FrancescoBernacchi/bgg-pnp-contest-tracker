@@ -6,7 +6,7 @@ Archivio locale per monitorare contest di game design Print and Play pubblicati 
 
 - 22 edizioni monitorate: 11 del 2026 e una baseline di 11 contest del 2025;
 - 13 serie individuate; per il 2025 si aggiungono 1-Card e Roll & Write;
-- 731 entry censite: le 365 del 2026 e 366 del 2025 (In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode, Solitaire, Two-Player e 54-Card);
+- 773 entry censite: le 365 del 2026 e 408 del 2025 (In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode, Solitaire, Two-Player, 54-Card e Traditional Deck);
 - cronologia di stati, metriche, entry, fasi e scadenze;
 - cruscotto Markdown rigenerabile con confronto fra rilevamenti periodici;
 - applicazione locale di consultazione in sola lettura, con ricerca, filtri, dettagli e confronto conservativo degli snapshot;

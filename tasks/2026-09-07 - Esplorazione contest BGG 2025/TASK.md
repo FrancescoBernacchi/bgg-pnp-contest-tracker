@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con Traditional Deck, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire Wargame e Roll & Write.
+1. Proseguire con Wargame, già concluso e corredato di risultati ufficiali.
+2. Completare a seguire Roll & Write.
 3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
@@ -104,3 +104,11 @@ La GeekList ufficiale e la lista nel thread, aggiornata il 1 novembre 2025, iden
 I risultati ufficiali comprendono 48 piazzamenti in nove categorie votate, inclusi i pari merito. Il premio della giuria assegna un primo e un secondo posto, oltre a quattro menzioni d'onore pubblicate senza ordine; queste ultime mantengono quindi un rango nullo. `Hack the Planet` vince il premio della giuria e `Braggarts` il Best Overall Game.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 731 entry complessive, 366 delle quali appartengono al 2025. Per 54-Card risultano 28 entry e 54 riconoscimenti complessivi; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Traditional Deck 2025.
+
+### Censimento Traditional Deck 2025
+
+La Entries List ufficiale contiene 42 proposte in ordine d'iscrizione. Il thread documenta ritiri e squalifiche, ma non presenta una rosa finale separata che consenta di attribuire con certezza uno stato conclusivo a ciascuna proposta. Tutte le 42 entry sono quindi conservate con lo stato normalizzato `unknown`, insieme all'evidenza originale; il contest rimane adiacente perché usa mazzi tradizionali e vieta componenti stampabili personalizzati con funzione di gioco.
+
+Il post ufficiale del 3 gennaio 2026 pubblica dieci posizioni per Best Solo Game, Best Rulebook, Best Use of Theme e Most Innovative Mechanic, e nove per Best Multiplayer Game: 49 piazzamenti di gioco complessivi. Most Valuable Playtester riguarda persone ed è esclusa da `rankings`. `Jack's Dream` vince Solo e Rulebook, `Olm` vince Multiplayer, `Against The Clock` vince Theme e `Soluna` vince Innovative Mechanic.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 773 entry complessive, 408 delle quali appartengono al 2025. Per Traditional Deck risultano 42 entry e 49 piazzamenti in cinque categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Wargame 2025.
