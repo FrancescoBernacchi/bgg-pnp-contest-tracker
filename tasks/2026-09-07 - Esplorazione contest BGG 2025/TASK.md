@@ -39,8 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Completare Roll & Write.
-2. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
+1. Riesaminare eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
+2. Chiudere il task dopo la verifica complessiva di copertura, consistenza e documentazione.
 
 ### Censimento In-Hand 2025
 
@@ -119,3 +119,11 @@ La GeekList ufficiale, pubblicata il 14 dicembre 2025 dopo la conclusione del vo
 I post ufficiali pubblicano 93 piazzamenti in otto categorie. Best Overall Wargame conserva il pari merito al primo posto tra `Armées de Papier` e `Armored Fury`, seguito direttamente dal terzo posto. Le grafie abbreviate o discordanti dei risultati, tra cui `Ukranian F-16`, `Ferrum Front` e `Night Strike`, sono conservate come alias dei titoli della GeekList.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 792 entry complessive, 427 delle quali appartengono al 2025. Per Wargame risultano 19 entry e 93 piazzamenti in otto categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Roll & Write 2025.
+
+### Censimento Roll & Write 2025
+
+Il thread ufficiale mantiene due elenchi separati: 21 giochi finali e 16 ritirati. Tutte le 37 proposte sono state censite con titolo, autore pubblicato, stato originale e stato normalizzato. I collegamenti dei titoli nel post non espongono destinazioni individuali utilizzabili, quindi ciascuna entry conserva come evidenza il post ufficiale della propria lista senza inventare URL WIP. Nessun materiale è stato aperto o scaricato.
+
+Gli spoiler ufficiali pubblicano 107 piazzamenti di gioco in undici categorie, inclusi tutti i pari merito. Best Playtester classifica sei persone ed è conservata come metrica testuale, non in `rankings`. Le grafie varianti dei risultati, come `Doodlebash`, `Spellwright Codex` e la capitalizzazione di `The Leaning Tower Of Pisa`, sono conservate come alias storici.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 829 entry complessive, 464 delle quali appartengono al 2025. Per Roll & Write risultano 21 entry finali, 16 ritirate e 107 piazzamenti in undici categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Tutte le undici edizioni 2025 della baseline hanno ora un censimento dedicato; resta la ricognizione conclusiva di copertura.
