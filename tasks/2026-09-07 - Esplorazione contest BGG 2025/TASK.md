@@ -1,7 +1,7 @@
 # Esplorazione contest BGG 2025
 
 ## Stato
-Chiuso il 10 settembre 2026. Completati baseline, undici censimenti e ricognizione conclusiva di copertura.
+Riaperto il 10 settembre 2026 per estendere l'esplorazione annuale a WIP BGG e collegamenti alle risorse dichiarati nei primi post. Baseline, undici censimenti e ricognizione dei contest sono completati.
 
 ## Scopo e confini
 Esplorare i contest di game design PnP dell'edizione 2025 su BoardGameGeek, quindi censire entry, fasi e risultati per incrementi verificati. L'anno è quello dichiarato dall'edizione, anche quando il calendario attraversa due anni. Nessuna apertura o acquisizione di materiali di gioco. I nuovi casi adiacenti dubbi restano da valutare.
@@ -134,3 +134,15 @@ La verifica finale conferma 22 contest complessivi, 11 dei quali attribuiti al 2
 ## Esito e seguito
 
 Il perimetro 2025 è completo secondo le fonti BGG disponibili alla data di chiusura. Un eventuale censimento delle challenge da 24 ore richiederà un task autonomo, perché segue un ciclo episodico diverso. La successiva esplorazione annuale a ritroso può iniziare dal 2024 in un nuovo task dedicato.
+
+### Sondaggio WIP e risorse Roll & Write
+
+Su richiesta dell'utente, il 10 settembre 2026 è stato avviato un sondaggio per estendere la profondità dei task annuali. Il modello distingue ora concettualmente l'evidenza di iscrizione, il thread WIP BGG dedicato e le molteplici risorse che il primo post può dichiarare. Il sondaggio non ha aperto né scaricato i materiali esterni.
+
+Il campione Roll & Write mostra casi diversi: `Rolling Fiefdoms` dichiara una pagina gratuita corrente su PnP Stash e collegamenti separati per regolamento, fogli, sfide solitarie e versione online; `Word Builders` dichiara una cartella di file e un video; per `Doodle Bash!` e `The Leaning Tower of Pisa` il WIP è stato individuato ma i collegamenti ai materiali non erano esposti dai risultati indicizzati; per la ritirata `A Dragon's Die` non è stato verificato un WIP dedicato. I risultati e la proposta di modello sono documentati in `sources/2025-ROLL-WRITE-RESOURCE-SURVEY.md`.
+
+Lo schema corrente ha già `entries.wip_thread_url` e la relazione uno-a-molti `remote_resources`, ma non conserva adeguatamente la menzione del collegamento nella specifica entry né la storia delle osservazioni. La migrazione `006_entry_resource_provenance.sql` aggiunge `entry_resource_scans`, `entry_resource_mentions`, `remote_resource_observations` e il tipo tecnico di accesso alla risorsa.
+
+La scansione è stata estesa a tutte le 37 entry mediante `catalog/2025-roll-write-wips-resources.sql`: 18 WIP BGG sono stati individuati e 19 non sono emersi dalla ricognizione. Per 17 WIP le destinazioni dei collegamenti non erano osservabili attraverso l'accesso indicizzato disponibile. Per `Rolling Fiefdoms` il primo post dichiara cinque gruppi di risorse; è stato acquisito l'URL completo della pagina PnP Stash, mentre le destinazioni delle quattro etichette residue non erano esposte. `Word Builders` dichiara una cartella di file e un video, anch'essi senza destinazione esposta. Nessun servizio esterno è stato aperto e nessun file è stato scaricato.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Sono presenti 37 scansioni, 18 `wip_thread_url`, una risorsa remota, una menzione e una osservazione `declared_in_wip` con disponibilità `not_checked`. Integrità SQLite e chiavi esterne sono valide. Il dettaglio tabellare è conservato in `sources/2025-ROLL-WRITE-WIPS-RESOURCES.md`.

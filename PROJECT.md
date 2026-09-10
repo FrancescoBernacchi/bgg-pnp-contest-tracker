@@ -49,6 +49,8 @@ Fonte iniziale autorevole esterna: BoardGameGeek. Punti di ingresso noti:
 
 Ogni dato volatile deve riportare URL di provenienza e data dell'ultima verifica.
 
+L'esplorazione annuale raccoglie anche il thread WIP BGG dedicato e i collegamenti alle risorse dichiarati nel primo post, senza aprire le destinazioni esterne. `entry_resource_scans` conserva anche gli esiti negativi o non osservabili; `entry_resource_mentions` collega la risorsa alla specifica entry e alla fonte BGG; `remote_resource_observations` distingue la dichiarazione nel WIP dalla successiva verifica di disponibilità.
+
 Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources/MONITORING_CALENDAR.md`. Il monitoraggio evita rilevamenti duplicati nella stessa giornata e distingue i controlli tecnici locali dalle nuove osservazioni dello stato pubblicato su BGG.
 
 ## Deliverable

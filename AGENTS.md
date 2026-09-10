@@ -8,6 +8,8 @@ Costruire e mantenere una collezione locale, ricercabile e tracciabile di giochi
 
 Catalogare tutte le entries comprese nel perimetro del task e acquisire i materiali soltanto per i giochi selezionati. Partire dai contest attivi più recenti. Basare la priorità principalmente su classifiche e votazioni BGG, distinguendo sempre risultati ufficiali da segnali sostitutivi.
 
+Nei task annuali di esplorazione, per ogni entry cercare anche il thread WIP BGG dedicato e registrare i collegamenti alle risorse dichiarati nel primo post senza seguirli o scaricare file. Distinguere sempre WIP non individuato, risorse non osservabili, nessuna risorsa dichiarata e risorse dichiarate ma non verificate. La verifica degli host esterni e l'acquisizione appartengono al task dedicato alle singole entry.
+
 Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzati. Per le varianti dipendenti da un gioco base, registrare tale dipendenza e non presumere che esistano componenti PnP aggiuntivi.
 
 ## Mappa del progetto

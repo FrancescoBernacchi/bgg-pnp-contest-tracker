@@ -12,6 +12,8 @@ La migrazione `004_monitoring_view_schedule.sql` espone anche `starts_at` nella 
 
 La migrazione `005_contest_phase_history.sql` introduce gli snapshot storici delle fasi e delle scadenze. La migrazione registra come baseline i valori correnti; i controlli successivi devono collegare i nuovi snapshot al relativo `contest_checks.id`.
 
+La migrazione `006_entry_resource_provenance.sql` distingue la scansione del WIP, la menzione di una risorsa nella specifica entry e la successiva verifica della risorsa. `remote_resources.access_type` separa file diretti, cartelle, pagine di distribuzione, giochi nel browser e moduli per simulatori.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:
