@@ -1,7 +1,7 @@
 # Esplorazione contest BGG 2025
 
 ## Stato
-Attivo. Primo incremento: ricognizione delle fonti e baseline delle edizioni 2025.
+Chiuso il 10 settembre 2026. Completati baseline, undici censimenti e ricognizione conclusiva di copertura.
 
 ## Scopo e confini
 Esplorare i contest di game design PnP dell'edizione 2025 su BoardGameGeek, quindi censire entry, fasi e risultati per incrementi verificati. L'anno è quello dichiarato dall'edizione, anche quando il calendario attraversa due anni. Nessuna apertura o acquisizione di materiali di gioco. I nuovi casi adiacenti dubbi restano da valutare.
@@ -36,11 +36,6 @@ Creato `catalog/2025-contest-baseline.sql`, destinato ad aggiungere 11 contest, 
 Lo script è stato prima applicato a una copia del database e poi al database operativo. Risultato: 22 contest complessivi, equamente distribuiti fra 2025 e 2026; 13 serie; 32 fasi 2025; le 365 entry 2026 preesistenti sono rimaste invariate. `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Gli otto test dell'applicazione sono superati.
 
 Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile la nuova baseline senza presentare le entry 2025 come già censite.
-
-## Prossimi incrementi
-
-1. Riesaminare eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
-2. Chiudere il task dopo la verifica complessiva di copertura, consistenza e documentazione.
 
 ### Censimento In-Hand 2025
 
@@ -127,3 +122,15 @@ Il thread ufficiale mantiene due elenchi separati: 21 giochi finali e 16 ritirat
 Gli spoiler ufficiali pubblicano 107 piazzamenti di gioco in undici categorie, inclusi tutti i pari merito. Best Playtester classifica sei persone ed è conservata come metrica testuale, non in `rankings`. Le grafie varianti dei risultati, come `Doodlebash`, `Spellwright Codex` e la capitalizzazione di `The Leaning Tower Of Pisa`, sono conservate come alias storici.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 829 entry complessive, 464 delle quali appartengono al 2025. Per Roll & Write risultano 21 entry finali, 16 ritirate e 107 piazzamenti in undici categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Tutte le undici edizioni 2025 della baseline hanno ora un censimento dedicato; resta la ricognizione conclusiva di copertura.
+
+### Ricognizione conclusiva di copertura
+
+Il 10 settembre 2026 sono stati riesaminati il forum BGG Design Contests, la ricerca interna per `2025`, i thread e le GeekList indicizzati e i riferimenti incrociati presenti nei contest censiti. Non è emerso un ulteriore contest annuale PnP ospitato su BGG con evidenza sufficiente per ampliare la baseline delle undici edizioni.
+
+La serie `2025 Bi-Monthly 24-Hour Design Challenges` è stata confermata come insieme di challenge brevi ed episodiche con un ciclo distinto e resta fuori dal task annuale. La `2025 Print and Play Challenge` è una challenge di gioco, non un contest di design. I concorsi esterni soltanto annunciati nel forum restano esclusi dal perimetro iniziale BGG. Non è stata trovata evidenza sufficiente per edizioni 2025 di Turkish PnP o Bad Comet Cozy. Metodo, fonti e limiti della conclusione sono registrati in `sources/2025-CONTEST-COVERAGE.md`.
+
+La verifica finale conferma 22 contest complessivi, 11 dei quali attribuiti al 2025, e 829 entry complessive, 464 delle quali del 2025. Tutti gli undici contest 2025 dispongono di baseline e censimento dedicato. Integrità SQLite, chiavi esterne, generazione del cruscotto e test dell'applicazione sono stati rieseguiti con esito positivo.
+
+## Esito e seguito
+
+Il perimetro 2025 è completo secondo le fonti BGG disponibili alla data di chiusura. Un eventuale censimento delle challenge da 24 ore richiederà un task autonomo, perché segue un ciclo episodico diverso. La successiva esplorazione annuale a ritroso può iniziare dal 2024 in un nuovo task dedicato.

@@ -11,7 +11,7 @@ Archivio locale per monitorare contest di game design Print and Play pubblicati 
 - cruscotto Markdown rigenerabile con confronto fra rilevamenti periodici;
 - applicazione locale di consultazione in sola lettura, con ricerca, filtri, dettagli e confronto conservativo degli snapshot;
 - prossimo controllo mirato del task 2026: 8 settembre 2026, contest Turkish PnP;
-- censimento storico in corso nel task dedicato al 2025.
+- esplorazione storica 2025 completata: tutte le undici edizioni individuate hanno baseline e censimento dedicato; challenge brevi, challenge di gioco e concorsi esterni restano separati.
 
 I contest adiacenti hanno trattamenti distinti: Traditional Deck (`format_adjacent`), Bad Comet (`selective_entries`) e Solomode (`dependent_variants`).
 
