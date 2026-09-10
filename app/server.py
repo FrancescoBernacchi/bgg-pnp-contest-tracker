@@ -52,6 +52,7 @@ def catalog(db):
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "contests": contests,
+        "rankings": ranking_rows(db),
         "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
             e.status_raw,e.status_normalized,e.materials_status_normalized,e.last_verified_at,
             g.canonical_title,c.name AS contest_name,c.scope_type,c.year,
@@ -60,6 +61,19 @@ def catalog(db):
             FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id
             ORDER BY g.canonical_title COLLATE NOCASE,e.id"""),
     }
+
+
+def ranking_rows(db, contest_id=None, game_id=None):
+    """Una riga per osservazione: niente deduplicazione o graduatorie inferite."""
+    return rows(db, """SELECT r.*,g.canonical_title,c.name AS contest_name,c.year,c.scope_type,
+        (SELECT group_concat(p.display_name, ', ') FROM game_credits gc
+         JOIN people p ON p.id=gc.person_id WHERE gc.game_id=r.game_id) AS credits,
+        (SELECT min(e.id) FROM entries e
+         WHERE e.game_id=r.game_id AND e.contest_id=r.contest_id) AS entry_id
+        FROM rankings r JOIN games g ON g.id=r.game_id JOIN contests c ON c.id=r.contest_id
+        WHERE (? IS NULL OR r.contest_id=?) AND (? IS NULL OR r.game_id=?)
+        ORDER BY c.year DESC,r.contest_id,r.category,r.rank IS NULL,r.rank,r.id""",
+        (contest_id, contest_id, game_id, game_id))
 
 
 def contest_detail(db, contest_id):
@@ -79,9 +93,7 @@ def contest_detail(db, contest_id):
         "contest": contest, "checks": checks, "metrics": metrics,
         "phases": rows(db, "SELECT * FROM contest_phases WHERE contest_id=? ORDER BY sequence_number,id", (contest_id,)),
         "status_history": rows(db, "SELECT * FROM contest_status_history WHERE contest_id=? ORDER BY julianday(observed_at) DESC,id DESC", (contest_id,)),
-        "rankings": rows(db, """SELECT r.*,g.canonical_title,e.id AS entry_id FROM rankings r
-            JOIN games g ON g.id=r.game_id LEFT JOIN entries e ON e.game_id=r.game_id AND e.contest_id=r.contest_id
-            WHERE r.contest_id=? ORDER BY r.category,r.rank IS NULL,r.rank,r.id""", (contest_id,)),
+        "rankings": ranking_rows(db, contest_id),
     }
 
 
@@ -96,7 +108,7 @@ def entry_detail(db, entry_id):
         "history": rows(db, """SELECT h.*,cc.check_kind FROM entry_status_history h
             LEFT JOIN contest_checks cc ON cc.id=h.check_id WHERE h.entry_id=?
             ORDER BY julianday(h.observed_at) DESC,h.id DESC""", (entry_id,)),
-        "rankings": rows(db, "SELECT * FROM rankings WHERE contest_id=? AND game_id=? ORDER BY category,rank", (entry["contest_id"], entry["game_id"])),
+        "rankings": ranking_rows(db, entry["contest_id"], entry["game_id"]),
     }
 
 

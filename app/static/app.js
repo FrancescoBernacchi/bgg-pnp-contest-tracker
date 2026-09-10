@@ -26,7 +26,7 @@ function source(url, date) {
   return `<div class="source">${link || 'Fonte non registrata'}${date ? `<br>Verificato: ${esc(day(date))}` : ''}</div>`;
 }
 const fact = (title, value) => `<div class="fact"><small>${esc(title)}</small><span>${esc(value ?? 'Non registrato')}</span></div>`;
-const table = (headers, body) => body.length ? `<div class="table-wrap"><table><thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${body.join('')}</tbody></table></div>` : '<div class="empty">Nessun dato registrato per questa sezione.</div>';
+const table = (headers, body) => body.length ? `<div class="table-wrap" tabindex="0" role="region" aria-label="Tabella scorrevole"><table><thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${body.join('')}</tbody></table></div>` : '<div class="empty">Nessun dato registrato per questa sezione.</div>';
 const heading = (eyebrow, title, subtitle) => `<div class="page-heading"><div><p class="eyebrow">${esc(eyebrow)}</p><h1>${esc(title)}</h1><p class="subtitle">${esc(subtitle)}</p></div><span class="stamp">● Sola lettura</span></div>`;
 const options = (values, first) => `<option value="">${esc(first)}</option>` + [...new Set(values.filter(v=>v!==null && v!==undefined))].sort().map(v=>`<option value="${esc(v)}">${esc(label(v))}</option>`).join('');
 let data = null, routeVersion = 0;
@@ -102,8 +102,62 @@ function entryResults(contestId=null) {
   $('#prev').onclick=()=>{filters.page--;entryResults(contestId);};
   $('#next').onclick=()=>{filters.page++;entryResults(contestId);};
 }
-function rankingTable(rankings, titles=false) {
-  return table(titles?['Entry','Categoria','Piazzamento / punteggio','Natura e fonte']:['Categoria','Piazzamento / punteggio','Natura e fonte'],rankings.map(r=>`<tr>${titles?`<td>${r.entry_id?`<a href="#entry/${r.entry_id}">${esc(r.canonical_title)}</a>`:esc(r.canonical_title)}</td>`:''}<td>${esc(r.category)}</td><td>${r.rank==null?'—':`#${r.rank}`}<small>Punteggio: ${esc(r.score)} · Voti: ${esc(r.vote_count)}</small></td><td>${r.is_official?'Risultato ufficiale':'Segnale sostitutivo · non ufficiale'}${source(r.evidence_url,r.verified_at)}</td></tr>`));
+const rankingFilters={query:'',contest:'',year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1};
+const rankingGroupKey=r=>JSON.stringify([r.contest_id,r.category,r.is_official,r.evidence_url,r.verified_at]);
+const rankingNature=r=>r.is_official===1?'Risultato ufficiale':'Segnale sostitutivo · non ufficiale';
+const rankingLink=r=>r.entry_id?`<a href="#entry/${r.entry_id}">${esc(r.canonical_title)}</a>`:`${esc(r.canonical_title)}<small>Entry non collegata</small>`;
+function selectRankings(all,f) {
+  const q=f.query.trim().toLocaleLowerCase('it');
+  const selected=all.filter(r=>(!f.contest||String(r.contest_id)===f.contest)&&(!f.year||String(r.year)===f.year)&&(!f.scope||r.scope_type===f.scope)&&(!f.category||r.category===f.category)&&(f.official===''||String(r.is_official)===f.official)&&(!f.position||(f.position==='missing'?r.rank==null:f.position==='podium'?r.rank!=null&&r.rank>=1&&r.rank<=3:String(r.rank)===f.position))&&`${r.canonical_title} ${r.credits||''}`.toLocaleLowerCase('it').includes(q));
+  const position=(a,b)=>a.rank==null?(b.rank==null?0:1):b.rank==null?-1:(f.sort==='rank-desc'?b.rank-a.rank:a.rank-b.rank);
+  return selected.sort((a,b)=>{
+    const group=String(b.year??'').localeCompare(String(a.year??''))||a.contest_name.localeCompare(b.contest_name,'it')||a.category.localeCompare(b.category,'it')||b.is_official-a.is_official||String(b.verified_at).localeCompare(String(a.verified_at))||a.evidence_url.localeCompare(b.evidence_url);
+    return (f.sort.startsWith('rank')?position(a,b)||group:f.sort==='title'?a.canonical_title.localeCompare(b.canonical_title,'it')||group:group||position(a,b))||a.id-b.id;
+  });
+}
+function rankingTable(rankings, titles=false, universe=rankings) {
+  const ties=new Map();
+  universe.forEach(r=>{if(r.rank!=null){const k=rankingGroupKey(r)+'/'+r.rank;if(!ties.has(k))ties.set(k,new Set());ties.get(k).add(r.game_id);}});
+  return table([...(titles?['Entry / autore','Contest']:[]),'Categoria','Posizione','Punteggio','Voti','Natura e provenienza'],rankings.map(r=>`<tr>${titles?`<td>${rankingLink(r)}<small>${esc(r.credits||'Autore non registrato')}</small></td><td><a href="#contest/${r.contest_id}">${esc(r.contest_name)}</a><small>${esc(r.year)} · ${esc(label(r.scope_type))}</small></td>`:''}<td>${esc(r.category)}</td><td>${r.rank==null?'Non registrata':`#${esc(r.rank)}${ties.get(rankingGroupKey(r)+'/'+r.rank)?.size>1?'<small>Ex aequo registrato</small>':''}`}</td><td>${esc(r.score??'Non registrato')}</td><td>${esc(r.vote_count??'Non registrati')}</td><td>${rankingNature(r)}${source(r.evidence_url,r.verified_at)}<small>Osservazione #${r.id}</small></td></tr>`));
+}
+function renderRankings(contestId='') {
+  if(contestId) {
+    if(!data.contests.some(c=>String(c.contest_id)===contestId))throw new Error('Contest non trovato.');
+    Object.assign(rankingFilters,{query:'',contest:contestId,year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1});
+  }
+  const all=data.rankings;
+  const select=(key,title,content)=>`<label class="field">${title}<select id="ranking-${key}">${content}</select></label>`;
+  $('#main').innerHTML=heading('RISULTATI BGG','Classifiche dei contest','Piazzamenti registrati, categorie originali e provenienza delle osservazioni.')+`<p class="notice">Posizione, punteggio e voti sono dati distinti. I valori mancanti non equivalgono a zero. L’ordine per posizione non è un confronto di merito fra categorie o contest.</p><div class="filters"><label class="field grow">Cerca titolo o autore<input id="ranking-query" type="search" value="${esc(rankingFilters.query)}"></label>${select('contest','Contest','<option value="">Tutti i contest</option>'+data.contests.map(c=>`<option value="${c.contest_id}">${esc(c.contest_name)}</option>`).join(''))}${select('year','Anno',options(all.map(r=>r.year),'Tutti gli anni'))}${select('scope','Perimetro',options(['pnp_core','adjacent'],'Tutti'))}${select('category','Categoria',options(all.map(r=>r.category),'Tutte le categorie'))}${select('official','Natura','<option value="">Tutte</option><option value="1">Ufficiali</option><option value="0">Non ufficiali / sostitutivi</option>')}${select('position','Posizione','<option value="">Tutte</option><option value="podium">Da 1 a 3</option><option value="missing">Non registrata</option>'+[...new Set(all.map(r=>r.rank).filter(r=>r!=null))].sort((a,b)=>a-b).map(r=>`<option value="${r}">#${r}</option>`).join(''))}${select('sort','Ordina','<option value="category">Contest e categoria</option><option value="rank-asc">Posizione crescente</option><option value="rank-desc">Posizione decrescente</option><option value="title">Titolo A–Z</option>')}<button class="quiet" id="ranking-reset">Azzera filtri</button></div><div id="ranking-results" tabindex="-1" aria-live="polite"></div>`;
+  for(const key of ['contest','year','scope','category','official','position','sort']) {
+    const element=$('#ranking-'+key);
+    if(![...element.options].some(o=>o.value===rankingFilters[key]))rankingFilters[key]=key==='sort'?'category':'';
+    element.value=rankingFilters[key];
+    element.onchange=()=>{rankingFilters[key]=element.value;rankingFilters.page=1;rankingResults();};
+  }
+  $('#ranking-query').oninput=e=>{rankingFilters.query=e.target.value;rankingFilters.page=1;rankingResults();};
+  $('#ranking-reset').onclick=()=>{Object.assign(rankingFilters,{query:'',contest:'',year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1});renderRankings();};
+  rankingResults();
+}
+function rankingResults() {
+  const results=selectRankings(data.rankings,rankingFilters),pages=Math.max(1,Math.ceil(results.length/30));
+  rankingFilters.page=Math.min(rankingFilters.page,pages);
+  const c=data.contests.find(c=>String(c.contest_id)===rankingFilters.contest);
+  $('#ranking-results').innerHTML=`<div class="section-heading"><h2>${results.length} risultati</h2>${c?`<a href="#results/${c.contest_id}">Sintesi risultati del contest →</a>`:''}</div>`+rankingTable(results.slice((rankingFilters.page-1)*30,rankingFilters.page*30),true,data.rankings)+`<div class="pager"><span>Pagina ${rankingFilters.page} di ${pages} · 30 risultati per pagina</span><div><button id="ranking-prev" class="quiet" ${rankingFilters.page===1?'disabled':''}>← Precedente</button><button id="ranking-next" class="quiet" ${rankingFilters.page===pages?'disabled':''}>Successiva →</button></div></div>`;
+  for(const [id,delta] of [['ranking-prev',-1],['ranking-next',1]]) $('#'+id).onclick=()=>{rankingFilters.page+=delta;rankingResults();$('#ranking-results').focus({preventScroll:true});$('#ranking-results').scrollIntoView({block:'start'});};
+}
+function rankingSummary(rankings) {
+  const groups=new Map();
+  rankings.forEach(r=>{const k=rankingGroupKey(r);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r);});
+  return `<p class="notice">Sintesi delle sole osservazioni registrate, separate per categoria, ufficialità, fonte e data. Vincitori solo con posizione esplicita #1; nessun vincitore dedotto da punteggi o dalla prima posizione disponibile. La distribuzione conta osservazioni, non certifica una classifica completa. Nessun totale dei punteggi tra categorie.</p>`+(groups.size?[...groups.values()].map(group=>{
+    const r=group[0],winners=group.filter(r=>r.rank===1),counts=new Map();
+    group.forEach(r=>counts.set(r.rank,(counts.get(r.rank)||0)+1));
+    return `<section class="panel"><h2>${esc(r.category)}</h2><p>${rankingNature(r)}</p>${source(r.evidence_url,r.verified_at)}<h3>${r.is_official===1?'Vincitori registrati':'Primi posti non ufficiali'}</h3>${winners.length?`<ul>${winners.map(w=>`<li>${rankingLink(w)}</li>`).join('')}</ul>`:'<p>Nessuna posizione #1 registrata.</p>'}<h3>Distribuzione dei piazzamenti</h3><div class="distribution">${[...counts].sort(([a],[b])=>a==null?1:b==null?-1:a-b).map(([rank,n])=>`<span>${rank==null?'Posizione non registrata':'#'+esc(rank)}<b>${n}</b></span>`).join('')}</div><details><summary>Tutti i risultati della categoria (${group.length})</summary>${rankingTable(group,true)}</details></section>`;
+  }).join(''):'<div class="empty">Nessun risultato registrato per questo contest.</div>');
+}
+function renderContestResults(id) {
+  const c=data.contests.find(c=>c.contest_id===Number(id));
+  if(!c)throw new Error('Contest non trovato.');
+  $('#main').innerHTML=`<a class="back" href="#contest/${c.contest_id}">← Scheda contest</a>`+heading('SINTESI RISULTATI',c.contest_name,'Vincitori per categoria e distribuzione dei piazzamenti registrati.')+`<a href="#rankings/${c.contest_id}">Consulta e filtra le classifiche →</a>`+rankingSummary(data.rankings.filter(r=>r.contest_id===c.contest_id));
 }
 function metricsTable(metrics) {
   return table(['Metrica','Valore','Metodo / natura','Provenienza'],metrics.map(m=>`<tr><td>${esc(m.metric_label_raw||m.metric_key)}<small>${esc(m.metric_key)} · ${m.latest?'Più recente':'Storica'}</small></td><td>${esc(m.numeric_value??m.text_value)} ${esc(m.unit||'')}</td><td>${esc(m.method)}<small>${m.is_official?'Ufficiale':'Non ufficiale · segnale sostitutivo'}</small>${m.notes?`<small>${esc(m.notes)}</small>`:''}</td><td>${source(m.source_url,m.observed_at)}</td></tr>`));
@@ -119,7 +173,7 @@ function renderContest(detail) {
     const target=$('#contest-section');
     if(name==='entries'){ target.innerHTML=entryFilters(c.contest_id);bindEntryFilters(c.contest_id); }
     if(name==='schedule') target.innerHTML=`<h2>Calendario registrato</h2><p class="subtitle">Le date e i fusi orari mantengono la precisione della fonte. Il superamento di una data non cambia automaticamente lo stato del contest.</p><div class="panel facts">${fact('Chiusura entry',day(c.schedule.submissions_close_at))}${fact('Apertura voto',day(c.schedule.voting_opens_at))}${fact('Chiusura voto',day(c.schedule.voting_closes_at))}</div>`+table(['Fase','Stato dichiarato','Intervallo','Precisione e fonte'],detail.phases.map(p=>`<tr><td>${esc(p.label_raw)}<small>${esc(p.phase_type)}</small>${p.notes?`<small>${esc(p.notes)}</small>`:''}</td><td>${badge(p.status_normalized)}<small>${esc(p.status_raw)}</small></td><td>${esc(day(p.starts_at))}<br>→ ${esc(day(p.ends_at))}</td><td>${esc(p.date_precision)} · ${esc(p.timezone||'Fuso non registrato')}${source(p.source_url,p.last_verified_at)}</td></tr>`));
-    if(name==='statistics') target.innerHTML=`<h2>Statistiche più recenti</h2><p class="subtitle">Una sola osservazione per metrica, ordinata per data e identificativo. Eventuali correzioni restano nello storico.</p>${metricsTable(detail.metrics.filter(m=>m.latest))}<details><summary>Tutte le osservazioni delle metriche (${detail.metrics.length})</summary>${metricsTable(detail.metrics)}</details><h2>Classifiche e votazioni</h2>${rankingTable(detail.rankings,true)}`;
+    if(name==='statistics') target.innerHTML=`<h2>Statistiche più recenti</h2><p class="subtitle">Una sola osservazione per metrica, ordinata per data e identificativo. Eventuali correzioni restano nello storico.</p>${metricsTable(detail.metrics.filter(m=>m.latest))}<details><summary>Tutte le osservazioni delle metriche (${detail.metrics.length})</summary>${metricsTable(detail.metrics)}</details><h2>Classifiche e votazioni</h2><p><a href="#results/${c.contest_id}">Sintesi dei vincitori e piazzamenti →</a> · <a href="#rankings/${c.contest_id}">Filtra i risultati →</a></p>${rankingTable(detail.rankings,true)}`;
     if(name==='history') renderHistory(detail);
   }
   document.querySelectorAll('[data-section]').forEach(b=>b.onclick=()=>section(b.dataset.section));
@@ -146,7 +200,7 @@ function renderComparison(result) {
 }
 function renderEntry(detail) {
   const e=detail.entry;
-  $('#main').innerHTML=`<a class="back" href="#contest/${e.contest_id}">← ${esc(e.contest_name)}</a>`+heading(label(e.scope_type),e.canonical_title,label(e.entry_kind))+`${e.base_game_dependency==='required'?'<div class="notice">Questa entry richiede un gioco base. La disponibilità di componenti PnP aggiuntivi non è presunta.</div>':''}<section class="panel"><h2>Identità e stato</h2>${badge(e.status_normalized)}<div class="facts">${fact('Stato originale',e.status_raw)}${fact('Stato normalizzato',e.status_normalized)}${fact('Materiali · dichiarazione registrata',e.materials_status_raw)}${fact('Materiali · stato normalizzato',e.materials_status_normalized)}${fact('Dipendenza dal gioco base',label(e.base_game_dependency))}${fact('Posizione nella lista (non classifica)',e.position)}${fact('Prima osservazione',day(e.first_seen_at))}${fact('Ultima verifica',day(e.last_verified_at))}</div>${source(e.entry_url,e.last_verified_at)}${e.wip_thread_url?source(e.wip_thread_url):''}<p class="source">Gli stati dei materiali sono metadati registrati: nessun file è verificato o aperto dall’applicazione.</p>${e.summary?`<p>${esc(e.summary)}</p>`:''}</section><h2>Autori e crediti</h2>${table(['Nome','Ruolo','Credito originale'],detail.credits.map(c=>`<tr><td>${esc(c.display_name)}<small>${esc(c.bgg_username)}</small></td><td>${esc(c.role)}</td><td>${esc(c.credit_raw)}</td></tr>`))}<h2>Classifiche di questa entry</h2>${rankingTable(detail.rankings)}<h2>Cronologia degli stati</h2>${table(['Osservazione','Stato','Materiali','Provenienza'],detail.history.map(h=>`<tr><td>${esc(day(h.observed_at))}<small>#${esc(h.check_id)} · ${esc(h.check_kind)}</small></td><td>${badge(h.status_normalized)}<small>${esc(h.status_raw)}</small></td><td>${esc(label(h.materials_status_normalized))}<small>${esc(h.materials_status_raw)}</small></td><td>${source(h.source_url,h.observed_at)}${h.notes?`<small>${esc(h.notes)}</small>`:''}</td></tr>`))}<details><summary>Nomi e titoli storici (${detail.names.length})</summary>${table(['Nome','Osservato','Stato / provenienza'],detail.names.map(n=>`<tr><td>${esc(n.name)}</td><td>${esc(day(n.observed_at))}</td><td>${n.is_current?'Corrente':'Storico'}<small>${esc(n.observed_from)}</small></td></tr>`))}</details>${e.entry_text_raw?`<details><summary>Testo originale registrato</summary><div class="raw">${esc(e.entry_text_raw)}</div></details>`:''}`;
+  $('#main').innerHTML=`<a class="back" href="#contest/${e.contest_id}">← ${esc(e.contest_name)}</a>`+heading(label(e.scope_type),e.canonical_title,label(e.entry_kind))+`${e.base_game_dependency==='required'?'<div class="notice">Questa entry richiede un gioco base. La disponibilità di componenti PnP aggiuntivi non è presunta.</div>':''}<section class="panel"><h2>Identità e stato</h2>${badge(e.status_normalized)}<div class="facts">${fact('Stato originale',e.status_raw)}${fact('Stato normalizzato',e.status_normalized)}${fact('Materiali · dichiarazione registrata',e.materials_status_raw)}${fact('Materiali · stato normalizzato',e.materials_status_normalized)}${fact('Dipendenza dal gioco base',label(e.base_game_dependency))}${fact('Posizione nella lista (non classifica)',e.position)}${fact('Prima osservazione',day(e.first_seen_at))}${fact('Ultima verifica',day(e.last_verified_at))}</div>${source(e.entry_url,e.last_verified_at)}${e.wip_thread_url?source(e.wip_thread_url):''}<p class="source">Gli stati dei materiali sono metadati registrati: nessun file è verificato o aperto dall’applicazione.</p>${e.summary?`<p>${esc(e.summary)}</p>`:''}</section><h2>Autori e crediti</h2>${table(['Nome','Ruolo','Credito originale'],detail.credits.map(c=>`<tr><td>${esc(c.display_name)}<small>${esc(c.bgg_username)}</small></td><td>${esc(c.role)}</td><td>${esc(c.credit_raw)}</td></tr>`))}<h2>Classifiche di questa entry</h2><p><a href="#rankings/${e.contest_id}">Tutte le classifiche del contest →</a></p>${rankingTable(detail.rankings,false,data.rankings)}<h2>Cronologia degli stati</h2>${table(['Osservazione','Stato','Materiali','Provenienza'],detail.history.map(h=>`<tr><td>${esc(day(h.observed_at))}<small>#${esc(h.check_id)} · ${esc(h.check_kind)}</small></td><td>${badge(h.status_normalized)}<small>${esc(h.status_raw)}</small></td><td>${esc(label(h.materials_status_normalized))}<small>${esc(h.materials_status_raw)}</small></td><td>${source(h.source_url,h.observed_at)}${h.notes?`<small>${esc(h.notes)}</small>`:''}</td></tr>`))}<details><summary>Nomi e titoli storici (${detail.names.length})</summary>${table(['Nome','Osservato','Stato / provenienza'],detail.names.map(n=>`<tr><td>${esc(n.name)}</td><td>${esc(day(n.observed_at))}</td><td>${n.is_current?'Corrente':'Storico'}<small>${esc(n.observed_from)}</small></td></tr>`))}</details>${e.entry_text_raw?`<details><summary>Testo originale registrato</summary><div class="raw">${esc(e.entry_text_raw)}</div></details>`:''}`;
 }
 function renderDeadlines() {
   const upcoming=data.contests.filter(c=>c.next_deadline).sort((a,b)=>new Date(a.next_deadline)-new Date(b.next_deadline));
@@ -156,12 +210,14 @@ async function route() {
   if(!data) return;
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'contests';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||(hash.startsWith('entry/')&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='entries'?'Tutte le entry':hash==='deadlines'?'Scadenze':'Contest di design';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||(hash.startsWith('entry/')&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati':hash==='entries'?'Tutte le entry':hash==='deadlines'?'Scadenze':'Contest di design';
   try {
     if(hash==='contests') renderContests();
     else if(hash==='entries') {$('#main').innerHTML=heading('IL CATALOGO','Ogni gioco, una nuova idea.','Cerca fra tutte le entry, comprese quelle ritirate e le varianti dipendenti.')+entryFilters();bindEntryFilters();}
     else if(hash==='deadlines') renderDeadlines();
+    else if(/^rankings(?:\/[1-9]\d*)?$/.test(hash)) renderRankings(hash.split('/')[1]||'');
+    else if(/^results\/[1-9]\d*$/.test(hash)) renderContestResults(hash.split('/')[1]);
     else if(/^contest\/[1-9]\d*$/.test(hash)||/^entry\/[1-9]\d*$/.test(hash)) {
       const [kind,id]=hash.split('/');
       $('#main').innerHTML='<div class="empty" role="status">Lettura del dettaglio…</div>';

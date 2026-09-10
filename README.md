@@ -44,7 +44,7 @@ Da PowerShell, nella cartella del progetto:
 
 Aprire [PnP Collection](http://127.0.0.1:8765). Il launcher usa Python disponibile nel PATH o il runtime integrato di Codex; non occorre installare pacchetti. `Ctrl+C` arresta il server. Guida completa, alternative di avvio e test in `app/README.md`.
 
-Sono disponibili contest principali/adiacenti, ricerca delle entry, fasi, statistiche, risultati e cronologia. Non vengono aperti o scaricati materiali. Il confronto richiede due rilevamenti periodici: la baseline attuale non li contiene ancora; assenze da snapshot non certificati non vengono interpretate come rimozioni.
+Sono disponibili contest principali/adiacenti, ricerca delle entry, fasi, statistiche e cronologia. La vista **Risultati** permette di filtrare tutte le classifiche, aprire le entry e consultare vincitori e distribuzione dei piazzamenti per categoria nella sintesi del contest; posizione, punteggio, voti e ufficialità restano distinti. Non vengono aperti o scaricati materiali. Il confronto richiede due rilevamenti periodici: la baseline attuale non li contiene ancora; assenze da snapshot non certificati non vengono interpretate come rimozioni.
 
 ## Rigenerazione del cruscotto
 

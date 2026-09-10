@@ -8,7 +8,7 @@ import tempfile
 import threading
 import unittest
 
-from server import ROOT, catalog, compare, connect, contest_detail, entry_detail, make_server, periodic
+from server import ROOT, DEFAULT_DATABASE, catalog, compare, connect, contest_detail, entry_detail, make_server, periodic, ranking_rows
 
 
 class ApplicationTests(unittest.TestCase):
@@ -88,6 +88,64 @@ class ApplicationTests(unittest.TestCase):
             self.assertTrue(periodic({"check_kind":kind}))
         for kind in ("baseline","monitor_baseline","scheduled_census","monitor_consistency","manual_entry_census"):
             self.assertFalse(periodic({"check_kind":kind}))
+
+    def test_rankings_preserve_observations_nulls_credits_and_entry_links(self):
+        db = sqlite3.connect(self.database)
+        self.insert(db, "people", id=1, display_name="Autrice à")
+        self.insert(db, "people", id=2, display_name="Coautore")
+        for person in (1, 2):
+            self.insert(db, "game_credits", game_id=1, person_id=person, role="designer")
+        samples = [
+            (1, 1, 1, "Overall", 1, None, None, 1),
+            (2, 1, 2, "Overall", 1, 0, 0, 1),
+            (3, 1, 1, "Jury Prize", None, 8.5, None, 1),
+            (4, 1, 1, "Overall", 3, None, 12, 0),
+            (5, 1, 1, "Overall", 2, None, None, 1),
+            (6, 2, 3, "Overall", 2, None, None, 1),
+            (7, 2, 1, "No entry", None, None, None, 0),
+        ]
+        for rid, contest, game, category, rank, score, votes, official in samples:
+            self.insert(db, "rankings", id=rid, contest_id=contest, game_id=game,
+                        category=category, rank=rank, score=score, vote_count=votes,
+                        is_official=official, evidence_url="https://boardgamegeek.com/thread/123",
+                        verified_at="2026-09-02" if rid==5 else "2026-09-01")
+        db.commit(); db.close()
+        before = hashlib.sha256(self.database.read_bytes()).hexdigest()
+        with connect(self.database) as db:
+            result = catalog(db)["rankings"]
+            self.assertEqual(len(result), len(samples))
+            by_id = {r["id"]:r for r in result}
+            self.assertEqual(by_id[1]["credits"], "Autrice à, Coautore")
+            self.assertIsNone(by_id[7]["entry_id"])
+            self.assertEqual(by_id[6]["scope_type"], "adjacent")
+            self.assertEqual(by_id[2]["score"], 0)
+            self.assertEqual(by_id[2]["vote_count"], 0)
+            self.assertIsNone(by_id[3]["rank"])
+            self.assertEqual(by_id[3]["score"], 8.5)
+            self.assertEqual({r["id"] for r in contest_detail(db,1)["rankings"]}, {1,2,3,4,5})
+            self.assertEqual({r["id"] for r in entry_detail(db,1)["rankings"]}, {1,3,4,5})
+            self.assertEqual(ranking_rows(db,999), [])
+        self.assertEqual(before, hashlib.sha256(self.database.read_bytes()).hexdigest())
+
+    @unittest.skipUnless(DEFAULT_DATABASE.exists(), "Database locale non disponibile")
+    def test_real_ranking_coverage_and_integrity(self):
+        before = hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest()
+        with connect(DEFAULT_DATABASE) as db:
+            actual = catalog(db)["rankings"]
+            expected = {r["id"]: dict(r) for r in db.execute("SELECT * FROM rankings")}
+            self.assertEqual(len(actual), len(expected))
+            for r in actual:
+                self.assertEqual({k:r[k] for k in expected[r["id"]]}, expected[r["id"]])
+                if r["entry_id"] is not None:
+                    entry = db.execute("SELECT contest_id,game_id FROM entries WHERE id=?", (r["entry_id"],)).fetchone()
+                    self.assertEqual(tuple(entry), (r["contest_id"],r["game_id"]))
+            for cid in {r["contest_id"] for r in actual}:
+                self.assertEqual({r["id"] for r in contest_detail(db,cid)["rankings"]},
+                                 {r["id"] for r in actual if r["contest_id"]==cid})
+            for eid in {r["entry_id"] for r in actual if r["entry_id"] is not None}:
+                self.assertEqual({r["id"] for r in entry_detail(db,eid)["rankings"]},
+                                 {r["id"] for r in actual if r["entry_id"]==eid})
+        self.assertEqual(before, hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest())
 
     def test_partial_snapshot_has_transitions_but_no_inferred_removals(self):
         with connect(self.database) as db:

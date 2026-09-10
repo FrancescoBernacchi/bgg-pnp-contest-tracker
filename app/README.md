@@ -1,6 +1,6 @@
 # Applicazione locale
 
-Prima versione dell'interfaccia locale: Python 3.12+ e sola libreria standard, HTML/CSS/JavaScript senza compilazione o pacchetti da installare. Il server è vincolato a `127.0.0.1`; il database è aperto con URI `mode=ro`, `PRAGMA query_only=ON` e una transazione di lettura per richiesta.
+Interfaccia locale: Python 3.12+ e sola libreria standard, HTML/CSS/JavaScript senza compilazione o pacchetti da installare. Il server è vincolato a `127.0.0.1`; il database è aperto con URI `mode=ro`, `PRAGMA query_only=ON` e una transazione di lettura per richiesta.
 
 ## Avvio dell'applicazione
 
@@ -37,13 +37,14 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 ## Consultazione
 
 - **Contest**: schede separate per PnP principali e adiacenti; ricerca per nome, filtri di anno e stato, conteggi comprensivi dei ritiri.
+- **Risultati**: tutte le classifiche registrate, ricerca per titolo e crediti, filtri combinabili e pagine da 30 osservazioni; sintesi per contest con vincitori e distribuzione dei piazzamenti per categoria.
 - **Tutte le entry**: ricerca per titolo o autore, filtri per contest, perimetro, stato e tipologia; ordinamento e pagine da 30 risultati.
 - **Dettaglio contest**: stati originali/normalizzati, dipendenze, distribuzione degli stati, fasi/scadenze con precisione e fuso registrati, metriche correnti e storiche, classifiche ufficiali o segnali sostitutivi.
 - **Dettaglio entry**: crediti, stato dei materiali come semplice metadato, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
 - **Scadenze**: prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura. Non sostituisce il calendario dei controlli `sources/MONITORING_CALENDAR.md`.
 - **Rileggi database**: aggiorna i dati senza effettuare nuovi controlli BGG. La data di lettura dell'app è distinta dalle date di verifica delle fonti.
 
-La ricerca e i filtri restano in memoria durante la consultazione, senza preferenze scritte su disco. Gli URL con frammento, per esempio `#contest/11` e `#entry/362`, permettono di ritrovare una scheda. La prima versione carica in memoria tutti i metadati leggeri del catalogo; è adeguata alle 365 entry attuali, senza introdurre un motore di ricerca separato.
+La ricerca e i filtri restano in memoria durante la consultazione, senza preferenze scritte su disco. Gli URL con frammento, per esempio `#contest/11` e `#entry/362`, permettono di ritrovare una scheda. La prima versione carica in memoria tutti i metadati leggeri del catalogo; è stata verificata sulle 829 entry e 1.054 osservazioni di classifica presenti il 10 settembre 2026, senza introdurre un motore di ricerca separato.
 
 ## Confronti e limiti dei dati
 
@@ -66,7 +67,24 @@ python -m unittest discover -s app -p test_server.py -v
 node --test app/test_frontend.cjs
 ```
 
-Python è sufficiente per usare l'app; Node serve soltanto ai quattro test dei formatter e delle protezioni del frontend. Gli otto test Python costruiscono un database temporaneo dallo schema versionato e verificano letture, blocco scritture, isolamento HTTP e confronti. Nessun test modifica il database operativo.
+Python è sufficiente per usare l'app; Node serve soltanto ai test del frontend. I 10 test Python verificano letture, blocco scritture, isolamento HTTP, confronti e classifiche su un database temporaneo, più la copertura del database reale quando disponibile. Il test reale viene saltato se il database operativo è assente. I 10 test JavaScript verificano formatter, protezioni, filtri e ordinamenti, null/zero, ex aequo e sintesi. Nessun test modifica il database operativo.
+
+## Classifiche e sintesi dei risultati
+
+Aprire **Risultati** nella navigazione principale (`#rankings`). I filtri combinano contest, anno, perimetro principale/adiacente, categoria originale, ufficialità, posizione e ricerca per titolo o nomi nei crediti. Sono disponibili posizione esatta, intervallo 1–3 e posizione non registrata; ordinamento per contest/categoria, titolo oppure posizione crescente/decrescente. I valori di posizione mancanti restano in fondo negli ordinamenti numerici; gli ex aequo non vengono rinumerati. **Azzera filtri** ripristina tutte le osservazioni.
+
+Le colonne separano posizione, punteggio e voti. `Non registrato` non significa zero; nessun punteggio è ricavato dalla posizione e nessun voto dalle metriche aggregate del contest. La ricerca per autore usa esclusivamente i crediti presenti: dove mancano, viene mostrato `Autore non registrato`. Le categorie mantengono la grafia originale, senza equiparare etichette simili.
+
+Ogni riga contiene natura, fonte e data di verifica, oltre all'identificativo dell'osservazione. Titolo e contest aprono le rispettive schede. Il dettaglio entry mostra tutte le sue categorie e i suoi piazzamenti nel contest di appartenenza. `#rankings/ID` apre tutti i risultati di un contest e azzera gli altri filtri; `#results/ID` apre la sua sintesi. La sintesi è raggiungibile anche da **Statistiche e risultati** nella scheda contest. I normali filtri della vista generale restano in memoria fino al ricaricamento della pagina; non sono salvati su disco né serializzati nell'URL.
+
+La sintesi separa categoria, ufficialità, URL della fonte e data di verifica. Mostra come vincitori soltanto i risultati ufficiali con posizione esplicita 1; per i segnali sostitutivi usa `Primi posti non ufficiali`. Se manca il primo posto, non sceglie il minimo disponibile né il punteggio più alto. La distribuzione conta osservazioni per posizione all'interno del gruppo, incluse quelle senza posizione, e non certifica la completezza della graduatoria. I dettagli espandibili contengono tutte le righe del gruppo.
+
+Lo schema `rankings` non registra metodo/unità del voto, identificativo di edizione della classifica o stato di sostituzione di una precedente osservazione. L'app pertanto non somma né confronta punteggi tra categorie, non sceglie una versione operativa e non elimina osservazioni storiche. Un ex aequo è segnalato quando giochi distinti condividono posizione, contest, categoria, natura, fonte e data; viene riconosciuto anche se il filtro, la pagina o la scheda mostrano uno solo dei giochi. Fonti o date diverse restano separate: non si presume un ex aequo fra osservazioni non confrontabili.
+
+Il 10 settembre 2026 la verifica tecnica locale ha rilevato 1.054 righe in `rankings`, relative a 140 coppie contest/categoria e 16 contest. Tutte sono ufficiali e collegate a una entry; quattro menzioni non hanno posizione. Punteggi e voti non sono registrati per nessuna riga. La gestione dei risultati non ufficiali e dei punteggi/voti è verificata con dati sintetici. Questa è una verifica del catalogo, non un nuovo rilevamento BGG.
+
+L'API `/api/catalog` include `rankings`; le API dei dettagli usano la medesima query con filtri parametrici. Filtri, ordinamento e paginazione sono locali nel frontend. Sulla baseline corrente il catalogo JSON pesa circa 864 KB e la lettura misurata è circa 22 ms su questo computer: non serve cambiare stack. Nessuna migrazione o dipendenza aggiunta. Le tabelle sono scorrevoli anche da tastiera, i filtri hanno etichette e i risultati un'area di annuncio; il layout è stato verificato a 320, 390, 768 pixel e desktop. Le tabelle estese scorrono orizzontalmente nel proprio contenitore su schermi piccoli.
+
 
 ## Cruscotto Markdown preesistente
 
