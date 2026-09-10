@@ -39,9 +39,8 @@ Aggiornati `README.md`, `PROJECT.md` e `catalog/README.md` per rendere visibile 
 
 ## Prossimi incrementi
 
-1. Proseguire con Wargame, già concluso e corredato di risultati ufficiali.
-2. Completare a seguire Roll & Write.
-3. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
+1. Completare Roll & Write.
+2. Riesaminare a fine censimento eventuali contest PnP 2025 non appartenenti alle serie individuate, mantenendo separati i candidati adiacenti.
 
 ### Censimento In-Hand 2025
 
@@ -112,3 +111,11 @@ La Entries List ufficiale contiene 42 proposte in ordine d'iscrizione. Il thread
 Il post ufficiale del 3 gennaio 2026 pubblica dieci posizioni per Best Solo Game, Best Rulebook, Best Use of Theme e Most Innovative Mechanic, e nove per Best Multiplayer Game: 49 piazzamenti di gioco complessivi. Most Valuable Playtester riguarda persone ed è esclusa da `rankings`. `Jack's Dream` vince Solo e Rulebook, `Olm` vince Multiplayer, `Against The Clock` vince Theme e `Soluna` vince Innovative Mechanic.
 
 Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 773 entry complessive, 408 delle quali appartengono al 2025. Per Traditional Deck risultano 42 entry e 49 piazzamenti in cinque categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Wargame 2025.
+
+### Censimento Wargame 2025
+
+La GeekList ufficiale, pubblicata il 14 dicembre 2025 dopo la conclusione del voto, contiene 19 entry. Le regole richiedevano esplicitamente agli autori di rimuovere dalla GeekList i giochi ritirati; le 19 righe rimaste sono quindi registrate come roster finale. Sono conservati identificativo dell’item, titolo, autore o username disponibile e collegamento alla pagina del gioco o al WIP. I materiali non sono stati aperti né scaricati.
+
+I post ufficiali pubblicano 93 piazzamenti in otto categorie. Best Overall Wargame conserva il pari merito al primo posto tra `Armées de Papier` e `Armored Fury`, seguito direttamente dal terzo posto. Le grafie abbreviate o discordanti dei risultati, tra cui `Ukranian F-16`, `Ferrum Front` e `Night Strike`, sono conservate come alias dei titoli della GeekList.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Il database contiene ora 792 entry complessive, 427 delle quali appartengono al 2025. Per Wargame risultano 19 entry e 93 piazzamenti in otto categorie; `PRAGMA foreign_key_check` non segnala violazioni e `PRAGMA integrity_check` restituisce `ok`. Il prossimo censimento annuale è Roll & Write 2025.
