@@ -64,6 +64,17 @@ Il database SQLite è operativo e locale. Schema, migrazioni, manifest ed esport
 
 Cambiare la struttura solo quando emerge un ciclo di vita distinto o un pattern stabile. Aggiornare insieme `PROJECT.md`, questa mappa e lo stato del progetto quando una modifica architetturale diventa permanente.
 
+## Salvaguardia del sandbox Windows Codex
+
+- Trattare `.agents`, `.git`, `.codex` e le altre directory di controllo riconosciute dal runtime come percorsi speciali. Non eliminare, rinominare o ricreare queste directory come rimedio a problemi di accesso.
+- Se `.agents` non esiste e occorre introdurre una skill locale, non crearne la directory radice tramite `apply_patch` o un altro processo eseguito nel sandbox. Verificare prima esistenza, proprietario e ACL; predisporre la directory sotto l'identità dell'utente Windows mediante un'operazione fuori sandbox esplicitamente autorizzata, quindi verificare il proprietario prima di aggiungere `.agents/skills/...`.
+- Se `.agents` esiste, modificarne soltanto i file interni richiesti e non sostituire la directory radice. Prima di una manutenzione strutturale della skill verificare che il proprietario della radice sia l'utente Windows interattivo, non `CodexSandboxOffline`.
+- Dopo un ripristino da usage limit, un riavvio o aggiornamento di Codex oppure la ripresa di un task interrotto, eseguire nel sandbox ordinario un preflight leggero: `Get-Location`, `git status --short --branch` e una breve lettura di un file del workspace. Per i task che richiedono CUA verificare anche l'inizializzazione del browser con una pagina neutra prima del lavoro esterno esteso.
+- Se un comando banale fallisce con `setup refresh had errors`, interrompere il lavoro sostanziale: non reiterare indiscriminatamente i comandi e non usare `require_escalated` per proseguire il workflow come soluzione permanente.
+- In caso di tale errore, verificare prima `~/.codex/.sandbox/setup_error.json`, la coda del log sandbox giornaliero, il percorso indicato da `SetNamedSecurityInfoW` e proprietario/ACL di quel percorso rispetto alla directory padre. Distinguere il wrapper generico dall'errore Windows concreto.
+- Usare `require_escalated` soltanto per diagnosi in sola lettura o per una correzione minima esplicitamente autorizzata. Non modificare ACL e non cancellare cache, configurazioni, plugin, sessioni o cronologia senza evidenza specifica e autorizzazione dell'utente.
+- Dopo una correzione verificare separatamente: comando sandbox banale, lettura locale, scrittura temporanea e sua rimozione, inizializzazione CUA, pagina neutra e pagina di lavoro. Un comando riuscito fuori sandbox non dimostra che il sandbox sia ripristinato.
+
 ## Supporto Git e GitHub
 
 - Assumere che l'utente non sia esperto di Git. Quando un'azione Git diventa opportuna, segnalarla autonomamente e spiegarne in linguaggio semplice scopo, vantaggio e possibile effetto.
