@@ -83,6 +83,35 @@ class ApplicationTests(unittest.TestCase):
             with self.assertRaises(LookupError):
                 entry_detail(db,999)
 
+    def test_entry_resources_follow_mentions_and_preserve_provenance(self):
+        db = sqlite3.connect(self.database)
+        self.insert(db, "remote_resources", id=1, game_id=1, kind="game_files", access_type="folder",
+                    url="https://drive.example/files", host="drive.example", label="File", version_raw="1.2",
+                    availability_status="unknown")
+        self.insert(db, "remote_resources", id=2, game_id=1, kind="video", access_type="video",
+                    url="https://video.example/watch", host="video.example", label="Video")
+        self.insert(db, "entry_resource_scans", id=1, entry_id=1, checked_at="2026-09-02",
+                    source_url="https://boardgamegeek.com/thread/123", wip_status="found",
+                    resource_listing_status="observed", notes="Primo post")
+        self.insert(db, "entry_resource_mentions", id=1, entry_id=1, remote_resource_id=1,
+                    source_url="https://boardgamegeek.com/thread/123", label_raw="Scarica i file",
+                    content_role="game_files", is_primary=1, first_seen_at="2026-09-01", last_seen_at="2026-09-02")
+        self.insert(db, "entry_resource_mentions", id=2, entry_id=1, remote_resource_id=2,
+                    source_url="https://boardgamegeek.com/thread/123", label_raw="Come si gioca",
+                    content_role="video", first_seen_at="2026-09-01", last_seen_at="2026-09-02")
+        self.insert(db, "remote_resource_observations", id=1, remote_resource_id=1,
+                    observed_at="2026-09-03", evidence_url="https://boardgamegeek.com/thread/123",
+                    observation_kind="availability_check", availability_status="available", version_raw="1.2")
+        db.commit(); db.close()
+        with connect(self.database) as db:
+            detail = entry_detail(db,1)
+            self.assertEqual([r["id"] for r in detail["resources"]], [1,2])
+            self.assertEqual(detail["resources"][0]["label_raw"], "Scarica i file")
+            self.assertEqual(detail["resources"][0]["observations"][0]["availability_status"], "available")
+            self.assertEqual(detail["resources"][1]["observations"], [])
+            self.assertEqual(detail["resource_scans"][0]["resource_listing_status"], "observed")
+            self.assertEqual(entry_detail(db,2)["resources"], [])
+
     def test_periodic_classification(self):
         for kind in ("scheduled","manual_monitor","deadline_follow_up"):
             self.assertTrue(periodic({"check_kind":kind}))
@@ -145,6 +174,19 @@ class ApplicationTests(unittest.TestCase):
             for eid in {r["entry_id"] for r in actual if r["entry_id"] is not None}:
                 self.assertEqual({r["id"] for r in entry_detail(db,eid)["rankings"]},
                                  {r["id"] for r in actual if r["entry_id"]==eid})
+        self.assertEqual(before, hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest())
+
+    @unittest.skipUnless(DEFAULT_DATABASE.exists(), "Database locale non disponibile")
+    def test_real_resource_coverage_and_entry_ownership(self):
+        before = hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest()
+        with connect(DEFAULT_DATABASE) as db:
+            expected = {r["id"]:r["entry_id"] for r in db.execute("SELECT remote_resource_id id,entry_id FROM entry_resource_mentions")}
+            actual = {}
+            for entry_id in set(expected.values()):
+                for resource in entry_detail(db,entry_id)["resources"]:
+                    self.assertNotIn(resource["id"], actual)
+                    actual[resource["id"]] = entry_id
+            self.assertEqual(actual, expected)
         self.assertEqual(before, hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest())
 
     def test_partial_snapshot_has_transitions_but_no_inferred_removals(self):

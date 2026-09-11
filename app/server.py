@@ -100,6 +100,19 @@ def contest_detail(db, contest_id):
 def entry_detail(db, entry_id):
     entry = one(db, """SELECT e.*,g.canonical_title,g.summary,c.name AS contest_name,c.scope_type
         FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id WHERE e.id=?""", (entry_id,))
+    resources = rows(db, """SELECT r.*,m.label_raw,m.content_role,m.is_primary,
+        m.source_url AS mention_source_url,m.first_seen_at AS mention_first_seen_at,
+        m.last_seen_at AS mention_last_seen_at
+        FROM entry_resource_mentions m
+        JOIN remote_resources r ON r.id=m.remote_resource_id
+        WHERE m.entry_id=?
+        ORDER BY m.is_primary DESC,m.content_role COLLATE NOCASE,
+                 COALESCE(m.label_raw,r.label,r.url) COLLATE NOCASE,r.id""", (entry_id,))
+    for resource in resources:
+        resource["observations"] = rows(db, """SELECT observed_at,evidence_url,
+            observation_kind,availability_status,version_raw,notes
+            FROM remote_resource_observations WHERE remote_resource_id=?
+            ORDER BY julianday(observed_at) DESC,id DESC""", (resource["id"],))
     return {
         "entry": entry,
         "names": rows(db, "SELECT * FROM game_names WHERE game_id=? ORDER BY observed_at DESC,id DESC", (entry["game_id"],)),
@@ -109,6 +122,9 @@ def entry_detail(db, entry_id):
             LEFT JOIN contest_checks cc ON cc.id=h.check_id WHERE h.entry_id=?
             ORDER BY julianday(h.observed_at) DESC,h.id DESC""", (entry_id,)),
         "rankings": ranking_rows(db, entry["contest_id"], entry["game_id"]),
+        "resource_scans": rows(db, """SELECT * FROM entry_resource_scans WHERE entry_id=?
+            ORDER BY julianday(checked_at) DESC,id DESC""", (entry_id,)),
+        "resources": resources,
     }
 
 
@@ -249,7 +265,9 @@ def main():
             catalog(db)
             # Verifica anche le tabelle di dettaglio prima di dichiarare l'avvio riuscito.
             for table in ("contest_checks", "contest_phases", "contest_phase_history", "contest_status_history",
-                          "contest_metric_observations", "entry_status_history", "game_names", "rankings"):
+                          "contest_metric_observations", "entry_status_history", "game_names", "rankings",
+                          "remote_resources", "entry_resource_scans", "entry_resource_mentions",
+                          "remote_resource_observations"):
                 db.execute(f"SELECT * FROM {table} LIMIT 0")
         server = make_server(args.database, args.port)
     except (sqlite3.Error, OSError) as error:

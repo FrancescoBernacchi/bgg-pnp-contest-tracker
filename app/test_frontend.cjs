@@ -16,6 +16,25 @@ test('solo link BGG di metadati, nessun download o host esterno',()=>{
   }
   assert.match(run('source("https://boardgamegeek.com/thread/123/title","2026-09-07")'),/rel="noopener noreferrer"/);
 });
+test('le risorse accettano solo HTTPS senza credenziali e si aprono in modo isolato',()=>{
+  for(const url of ['javascript:alert(1)','http://example.com/file','file:///tmp/game.pdf','https://user:pass@example.com/file'])
+    assert.ok(!run(`externalLink(${JSON.stringify(url)},'Apri')`).includes('<a '));
+  const html=run(`externalLink('https://drive.google.com/file/d/123/view?x=1','Regole <PDF>')`);
+  assert.match(html,/target="_blank"/);assert.match(html,/rel="noopener noreferrer"/);
+  assert.match(html,/Regole &lt;PDF&gt; ↗/);
+});
+test('sezione risorse distingue scansione, provenienza, tipo, accesso e disponibilità',()=>{
+  const detail={resource_scans:[{checked_at:'2026-09-02',source_url:'https://boardgamegeek.com/thread/123',resource_listing_status:'observed',notes:'Primo post'}],resources:[{id:1,url:'https://drive.google.com/file/d/123/view',host:'drive.google.com',label:'Fallback',label_raw:'File di gioco',kind:'game_files',content_role:'game_files',access_type:'file',availability_status:'unknown',version_raw:'1.2',is_primary:1,mention_source_url:'https://boardgamegeek.com/thread/123',mention_first_seen_at:'2026-09-01',mention_last_seen_at:'2026-09-02',observations:[{observed_at:'2026-09-03',observation_kind:'availability_check',availability_status:'available'}]}]};
+  const html=run(`resourceSection(${JSON.stringify(detail)})`);
+  for(const text of ['File di gioco ↗','Materiali di gioco','Risorsa principale dichiarata','File','Disponibile','Fonte BGG della risorsa ↗','Fonte della scansione BGG ↗','Versione: 1.2']) assert.ok(html.includes(text));
+});
+test('stati senza risorse restano distinti e non inventano link',()=>{
+  for(const [status,text] of [['none_declared','non ha rilevato risorse dichiarate'],['not_observable','non era osservabile'],['not_checked','non sono ancora state controllate']]) {
+    const html=run(`resourceSection({resource_scans:[{resource_listing_status:${JSON.stringify(status)},source_url:'https://boardgamegeek.com/thread/123',checked_at:'2026-09-02'}],resources:[]})`);
+    assert.ok(html.includes(text));
+  }
+  assert.match(run(`resourceSection({resource_scans:[],resources:[]})`),/Nessuna scansione/);
+});
 test('le date preservano giorno, orario e offset originali',()=>{
   assert.equal(run('day("2026-10-16T23:59:00-05:00")'),'16/10/2026 · 23:59 UTC-05:00');
   assert.equal(run('day("2026-09-07")'),'07/09/2026');

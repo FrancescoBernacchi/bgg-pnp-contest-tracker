@@ -39,6 +39,7 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 - **Contest**: schede separate per PnP principali e adiacenti; ricerca per nome, filtri di anno e stato, conteggi comprensivi dei ritiri.
 - **Risultati**: tutte le classifiche registrate, ricerca per titolo e crediti, filtri combinabili e pagine da 30 osservazioni; sintesi per contest con vincitori e distribuzione dei piazzamenti per categoria.
 - **Tutte le entry**: ricerca per titolo o autore, filtri per contest, perimetro, stato e tipologia; ordinamento e pagine da 30 risultati.
+- **Dettaglio entry e risorse**: collegamenti espliciti alla pagina dell’entry e al WIP BGG; risorse dichiarate con etichetta, funzione, forma di accesso, stato e provenienza, apribili in una nuova scheda soltanto su click.
 - **Dettaglio contest**: stati originali/normalizzati, dipendenze, distribuzione degli stati, fasi/scadenze con precisione e fuso registrati, metriche correnti e storiche, classifiche ufficiali o segnali sostitutivi.
 - **Dettaglio entry**: crediti, stato dei materiali come semplice metadato, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
 - **Scadenze**: prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura. Non sostituisce il calendario dei controlli `sources/MONITORING_CALENDAR.md`.
@@ -58,7 +59,9 @@ Nel database verificato il 7 settembre 2026 esistono soltanto baseline, censimen
 
 ## Confini tecnici e verifica
 
-Nessuna dipendenza esterna, CDN, telemetria, richiesta di rete esterna, consultazione di `library/`, `remote_resources`, `acquisitions` o `acquired_files`. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali. I dati vengono escapati; i soli link attivi verso l'esterno sono pagine BGG di metadati (thread, GeekList, giochi, forum e guild), aperte soltanto su clic dell'utente. I link a file/download e host esterni restano testo. Il server è destinato all'uso personale locale, non alla pubblicazione o all'esposizione in LAN.
+Nessuna dipendenza esterna, CDN, telemetria o richiesta di rete automatica. L’app consulta `remote_resources`, `entry_resource_scans`, `entry_resource_mentions` e `remote_resource_observations` in sola lettura; non consulta `library/`, `acquisitions` o `acquired_files`. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali.
+
+I dati vengono escapati. Le pagine BGG di metadati e le destinazioni delle risorse diventano link soltanto se hanno una forma ammessa; le risorse richiedono HTTPS e non possono contenere credenziali nell’URL. Tutti i link esterni si aprono in una nuova scheda con isolamento `noopener noreferrer`, esclusivamente dopo il click dell’utente. L’app non segue redirect, controlla disponibilità, apre o scarica materiali durante la lettura della scheda. Il server è destinato all’uso personale locale, non alla pubblicazione o all’esposizione in LAN.
 
 Verifiche riproducibili dalla radice (Python e Node disponibili nel PATH, oppure usare i rispettivi percorsi):
 
@@ -67,7 +70,15 @@ python -m unittest discover -s app -p test_server.py -v
 node --test app/test_frontend.cjs
 ```
 
-Python è sufficiente per usare l'app; Node serve soltanto ai test del frontend. I 10 test Python verificano letture, blocco scritture, isolamento HTTP, confronti e classifiche su un database temporaneo, più la copertura del database reale quando disponibile. Il test reale viene saltato se il database operativo è assente. I 10 test JavaScript verificano formatter, protezioni, filtri e ordinamenti, null/zero, ex aequo e sintesi. Nessun test modifica il database operativo.
+Python è sufficiente per usare l'app; Node serve soltanto ai test del frontend. I test Python verificano letture, blocco scritture, isolamento HTTP, confronti, classifiche e associazioni entry-risorsa su un database temporaneo, più la copertura del database reale quando disponibile. I test reali vengono saltati se il database operativo è assente. I test JavaScript verificano formatter, protezioni URL, stati delle scansioni, filtri e ordinamenti, null/zero, ex aequo e sintesi. Nessun test modifica il database operativo.
+
+## Navigazione di pagine e risorse
+
+La scheda contest collega la propria pagina BGG. Dalla lista delle entry si apre la scheda individuale, che distingue la pagina che prova l’iscrizione dal thread WIP. La sezione **Risorse dichiarate** usa le associazioni di `entry_resource_mentions`, evitando di attribuire automaticamente a un’entry tutte le risorse dello stesso gioco. Il testo del collegamento privilegia `label_raw`, quindi l’etichetta normalizzata e infine il ruolo della risorsa.
+
+Per ciascuna risorsa sono mostrati ruolo, eventuale indicazione primaria, `access_type`, host, versione, disponibilità registrata, fonte BGG e date. L’ultima osservazione di disponibilità, quando esiste, prevale sullo stato riepilogativo senza eliminare la cronologia sottostante. `unknown` e `not_checked` sono presentati come **Non verificata** e non come indisponibilità.
+
+Se non esistono link, l’interfaccia distingue `none_declared`, `not_observable`, `not_checked` e assenza di scansione. In particolare, `not_observable` chiarisce che il post originale non era leggibile e che l’assenza di un URL non dimostra l’assenza della risorsa. L’app non ricostruisce destinazioni mancanti.
 
 ## Classifiche e sintesi dei risultati
 
