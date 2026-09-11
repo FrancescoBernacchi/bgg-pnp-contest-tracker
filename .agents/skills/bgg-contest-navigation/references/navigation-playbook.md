@@ -84,3 +84,9 @@ Un thread WIP può restare raggiungibile dopo la rimozione del post originale. I
 **Osservato:** Roll & Write, In-Hand e Children & Family 2025, 11 settembre 2026.
 
 Il primo post può dichiarare requisiti necessari o alternativi che non compaiono fra le risorse URL: dadi comuni o personalizzati, mazzi standard, penne, matite, meeple, fiches, monete, fermagli, strumenti di montaggio e dispositivi digitali. Estrarli dall'intero primo post e conservarli separatamente dalle risorse remote. Registrare la frase originale e mantenere distinti quantità, categoria funzionale, obbligatorietà e approvvigionamento. Alternative domestiche come “monete, caramelle o fiches” non vanno fuse con il componente stampabile che sostituiscono. Se le regole non sono state consultate, marcare la copertura `first_post_only`; `none_declared` significa soltanto assenza di una dichiarazione sufficientemente esplicita nel post.
+
+## Pattern: immagine BGG dichiarata come componente stampabile
+
+**Osservato:** `Lucky Words`, 1-Card 2025, 11 settembre 2026.
+
+Un collegamento `/image/...` non è sempre decorativo. Se il primo post associa esplicitamente l'immagine a un'istruzione operativa come “Tap the image above to print your copy”, conservarla come risorsa BGG del gioco con etichetta e contesto. L'eccezione richiede evidenza testuale esplicita: immagini di copertina, anteprime, esempi e illustrazioni prive di tale dichiarazione restano escluse.

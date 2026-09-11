@@ -1,6 +1,6 @@
 # Materiali di gioco dichiarati nei primi post — contest 2025
 
-Rilevazione dell’11 settembre 2026 limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand e Children & Family. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.
+Rilevazione dell’11 settembre 2026 limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand, Children & Family e 1-Card. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.
 
 Le categorie sono provvisorie. `printable_component` indica elementi di gioco descritti come stampabili; le altre categorie distinguono randomizzatori, strumenti di scrittura, mazzi standard, segnalini, oggetti domestici, accessori, strumenti di montaggio e dispositivi digitali.
 
@@ -48,6 +48,39 @@ Le categorie sono provvisorie. `printable_component` indica elementi di gioco de
 | 510 | 4 |
 | 511 | 6 |
 | 513 | 7 |
+| 514 | 3 |
+| 516 | 1 |
+| 517 | 2 |
+| 518 | 4 |
+| 520 | 5 |
+| 522 | 2 |
+| 524 | 1 |
+| 525 | 1 |
+| 526 | 5 |
+| 527 | 8 |
+| 528 | 3 |
+| 529 | 4 |
+| 530 | 2 |
+| 531 | 2 |
+| 532 | 4 |
+| 533 | 1 |
+| 534 | 3 |
+| 535 | 3 |
+| 536 | 4 |
+| 537 | 4 |
+| 538 | 2 |
+| 539 | 2 |
+| 540 | 2 |
+| 541 | 2 |
+| 542 | 2 |
+| 543 | 1 |
+| 544 | 4 |
+| 545 | 5 |
+| 546 | 4 |
+| 547 | 5 |
+| 548 | 4 |
+| 549 | 1 |
+| 550 | 10 |
 | 793 | 3 |
 | 794 | 4 |
 | 795 | 3 |
@@ -281,6 +314,112 @@ Le categorie sono provvisorie. `printable_component` indica elementi di gioco de
 | 513 | `token_marker` | segnalino giocatore | 4 | `required` | `common` | 4 player markers |
 | 513 | `token_marker` | segnalino round | 1 | `required` | `common` | 1 round marker |
 | 513 | `token_marker` | segnalino primo giocatore | 1 | `required` | `common` | 1 first player marker |
+| 514 | `printable_component` | carta formato poker | 1 | `required` | `printable` | [1] - Póker size card |
+| 514 | `randomizer` | dado d6 | 10 (4 rossi, 4 blu, 1 viola, 1 giallo) | `required` | `common` | [10] - D6 dice : 4 Red, 4 Blue, 1 Purple, 1 Yellow |
+| 514 | `token_marker` | cubetto | 9 (1 rosso, 4 blu, 4 gialli) | `required` | `common` | [9] - Cubes : 1 Red, 4 Blue, 4 Yellow |
+| 516 | `printable_component` | carta labirinto | 1 | `required` | `printable` | a 2+ player one-card maze-race |
+| 517 | `printable_component` | carta personalizzata | 1 | `required` | `printable` | 1 custom card or a 6 of Hearts |
+| 517 | `standard_deck` | sei di cuori | 1 | `alternative` | `common` | 1 custom card or a 6 of Hearts |
+| 518 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1 card (both sides) |
+| 518 | `randomizer` | dado d6 di colori diversi | 2 | `required` | `common` | 2d6 of different colors |
+| 518 | `accessory` | bustina protettiva | 1 | `optional` | `common` | It's recommended to use a sleeve for the card |
+| 518 | `writing_tool` | pennarello cancellabile | 1 | `optional` | `common` | you can use a dry-erase marker to better visualize the elements |
+| 520 | `printable_component` | carta camion | 1 | `required` | `printable` | Components: Truck card |
+| 520 | `timer` | cronometro o timer | 1 | `required` | `household` | Stopwatch/Timer |
+| 520 | `household_item` | piccolo oggetto casuale | 20 | `required` | `household` | 20 random small items, no bigger than a d20 |
+| 520 | `token_marker` | segnalino partenza e arrivo | 1 | `required` | `common` | A marker for start and finish |
+| 520 | `printable_component` | foglio punteggio | 1 | `required` | `printable` | Score sheet |
+| 522 | `printable_component` | carta Snaked! | 1 | `required` | `printable` | 1 Snaked! Card |
+| 522 | `standard_deck` | carta qualsiasi | 1 | `alternative` | `common` | the game can be played with any card |
+| 524 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 card |
+| 525 | `randomizer` | dadi nascosti |  | `unclear` | `common` | battling your hidden dice against your opponent |
+| 526 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1x Card |
+| 526 | `token_marker` | cubetto blu | 1 | `required` | `common` | 1x Blue Cube (Dragonfly) |
+| 526 | `token_marker` | cubetto giallo pieno | 1 | `required` | `common` | 1x Solid Yellow Cube (Honeybee) |
+| 526 | `token_marker` | cubetto giallo trasparente | 20 | `required` | `specialized` | 20x Clear Yellow Cubes (Pollen) |
+| 526 | `randomizer` | dado d6 | 2 | `required` | `common` | 2x D6 Dice (Honeybee Movement) |
+| 527 | `printable_component` | carta hovercraft | 1 | `required` | `printable` | 1x Hovercraft Card |
+| 527 | `printable_component` | foglio di riferimento | 1 | `required` | `printable` | 1x Rulebook w/ Reference Sheet |
+| 527 | `token_marker` | cubetto tracciatore blu 8 mm | 2 | `required` | `specialized` | 2x 8mm blue tracker cubes |
+| 527 | `randomizer` | dado d6 rosso 16 mm | 9 | `required` | `specialized` | 9x red 16mm d6 mine dice |
+| 527 | `randomizer` | dado d6 arancione 16 mm | 3 | `required` | `specialized` | 3x orange 16mm d6 mine dice |
+| 527 | `randomizer` | dado d6 verde 16 mm | 6 | `required` | `specialized` | 6x green 16mm d6 alligator dice |
+| 527 | `randomizer` | dado d6 bianco 16 mm | 1 | `required` | `specialized` | 1x white 16mm d6 fire-extinguisher die |
+| 527 | `randomizer` | dado d12 | 1 | `required` | `common` | 1x d12 gasoline die |
+| 528 | `printable_component` | carta di gioco | 1 | `required` | `printable` | In The Trench is a micro tactical battle card game |
+| 528 | `printable_component` | carta tracciamento punti vita | 1 | `required` | `printable` | A Track HP card has been added |
+| 528 | `token_marker` | gettone unità |  | `required` | `supplied_or_printable` | along with the unit tokens |
+| 529 | `printable_component` | carta formato poker | 1 | `required` | `printable` | Components: 1x Poker Size Card |
+| 529 | `household_item` | clip fermadocumenti o graffetta | 1 | `required` | `household` | 1x document clip (or paper clip) |
+| 529 | `randomizer` | dado d6 | 1 | `required` | `common` | 1x D6 dice |
+| 529 | `token_marker` | piccolo segnalino | 12 (2 per ciascuno di 6 colori) | `required` | `common` | 12x small markers ... two markers in each of six different colors |
+| 530 | `printable_component` | carta di gioco | 1 | `required` | `printable` | The Laced Up game card |
+| 530 | `household_item` | laccio da scarpa o cordino | 2 di colori diversi | `required` | `household` | Two differently coloured shoelaces, or string |
+| 531 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 Card (one-sided) |
+| 531 | `randomizer` | dado d6 da 12 mm | 9–10 | `required` | `common` | 9-10 six-sided dice (12mm) |
+| 532 | `randomizer` | dado d6 | 2 | `required` | `common` | LUCKY 4 WORDS REQUIRES: Two D6 dice |
+| 532 | `writing_tool` | pennarello cancellabile | 2 di colori diversi | `required` | `common` | two dry erase markers |
+| 532 | `randomizer` | dado d6 | 1 | `required` | `common` | LUCKY LETTERS REQUIRES: One D6 die |
+| 532 | `writing_tool` | pennarello cancellabile | 1 | `required` | `common` | a dry erase marker |
+| 533 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1 double-sided card |
+| 534 | `printable_component` | carta fortezza | 1 | `required` | `printable` | Set the fortress card in its OUT position |
+| 534 | `randomizer` | dado d4 azione | 2 | `required` | `common` | Roll the 2 Action Dice (d4) |
+| 534 | `token_marker` | cubetti colorati |  | `unclear` | `common` | Place all the colored cubes on their respective positions |
+| 535 | `printable_component` | carta | 1 | `required` | `printable` | Components: 6 dice ... and 1 card |
+| 535 | `randomizer` | dado bianco 16 mm | 3 | `required` | `common` | 6 dice (3 white + 3 black) 16mm size |
+| 535 | `randomizer` | dado nero 16 mm | 3 | `required` | `common` | 6 dice (3 white + 3 black) 16mm size |
+| 536 | `printable_component` | carta campo di battaglia | 1 | `required` | `printable` | components: 1 battle ground card |
+| 536 | `randomizer` | dado rosso | 5 | `required` | `common` | 5 red dice |
+| 536 | `randomizer` | dado blu | 5 | `required` | `common` | 5 blue dice |
+| 536 | `randomizer` | dado bianco | 5 | `required` | `common` | 5 white dice |
+| 537 | `printable_component` | carta PnP | 1 | `required` | `printable` | PnP Card |
+| 537 | `randomizer` | dado d20 | 1 | `alternative` | `common` | track the Guard's Health (d20) |
+| 537 | `randomizer` | dado d8 | 2 | `alternative` | `common` | your Focus (d8), and ... Attack location (d8) |
+| 537 | `digital_device` | companion web per dadi | 1 | `alternative` | `digital_device` | Dice Companion Web App |
+| 538 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 card |
+| 538 | `randomizer` | dado in quattro colori | 20 (5 per colore) | `required` | `common` | 20 dice (5 of each 4 colours) |
+| 539 | `printable_component` | carta formato poker fronte-retro | 1 | `required` | `printable` | 1 poker size card (2 sided) |
+| 539 | `randomizer` | dado d6 | 6 | `required` | `common` | 6x D6 dice |
+| 540 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1 card (two sided) |
+| 540 | `randomizer` | dado | 1 | `required` | `common` | Components: ... 1 die |
+| 541 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1 card (two sided) |
+| 541 | `household_item` | torta o sua porzione | 1 | `unclear` | `household` | The aim of the game is to steal the cake ... The cake is kept somewhere known |
+| 542 | `printable_component` | carta formato poker | 1 | `required` | `printable` | Components: 1 Card (Poker Size) |
+| 542 | `randomizer` | dado d6 colorato | 5 | `required` | `common` | 5 Colored Dice (d6) |
+| 543 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Component Description: 1 Double-Sided Card |
+| 544 | `printable_component` | carta buffet | 1 | `required` | `printable` | 1 open buffet card |
+| 544 | `randomizer` | dado | 4 | `required` | `common` | 4 dice (any color) |
+| 544 | `token_marker` | meeple | 16 (4 per 4 colori) | `required` | `common` | 16 meeples (4 red, 4 black, 4 green, 4 white) |
+| 544 | `token_marker` | cubetto | 4 (1 per colore giocatore) | `required` | `common` | 4 cubes (1 in each player's color) |
+| 545 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 card |
+| 545 | `randomizer` | dado d6 | 2 | `required` | `common` | 2 D6 dice |
+| 545 | `token_marker` | gettone telecamera | 5 | `required` | `supplied_or_printable` | 5 tokens for camera |
+| 545 | `token_marker` | gettone opera d'arte | 5 | `required` | `supplied_or_printable` | 5 tokens for work of art |
+| 545 | `token_marker` | gettone giocatore | 3 | `required` | `supplied_or_printable` | 3 tokens for players |
+| 546 | `printable_component` | carta astronave | 1 | `required` | `printable` | List of Components: 1 spaceship card |
+| 546 | `token_marker` | membro equipaggio identificabile | 10 | `required` | `common` | 10 crewmembers (anything that fits on the card and is easily identifiable works) |
+| 546 | `token_marker` | gettone compito o sabotaggio | 5 | `required` | `common` | 5 task/sabotage tokens (ie. cubes) |
+| 546 | `writing_tool` | strumento per annotazioni | 1 per giocatore | `required` | `common` | Note taking tools for both players |
+| 547 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 card |
+| 547 | `randomizer` | dado d6 | 2 | `required` | `common` | 2 D6 dice |
+| 547 | `token_marker` | gettone giocatore | 6 in 2 colori | `required` | `supplied_or_printable` | 6 tokens of 2 colors (3 for each player) |
+| 547 | `token_marker` | gettone cibo | 8 | `required` | `supplied_or_printable` | 8 tokens of food |
+| 547 | `token_marker` | gettone avanzamento | 2 | `required` | `supplied_or_printable` | 2 tokens for track of progress |
+| 548 | `printable_component` | carta | 1 | `required` | `printable` | Components: 1 card |
+| 548 | `household_item` | cordino | 2 distinguibili | `required` | `household` | 2 strings (yarn, twine, cord, wire, ribbon, shoe laces,...) |
+| 548 | `assembly_material` | carta robusta o cartone |  | `alternative` | `household` | glue it on strong paper or cardboard |
+| 548 | `assembly_material` | colla |  | `alternative` | `household` | glue it on strong paper or cardboard |
+| 549 | `printable_component` | carta fronte-retro | 1 | `required` | `printable` | Components: 1 Card (two-sided for variations) |
+| 550 | `token_marker` | meeple | 2 | `required` | `common` | Components: 2 meeple pieces |
+| 550 | `household_item` | matita usata come bacchetta | 4 | `optional` | `household` | 4 pencils (optional – use as chopsticks for challenge mode!) |
+| 550 | `randomizer` | dado d6 | 2 | `required` | `common` | 2 dice (D6) |
+| 550 | `token_marker` | cubetto marrone | 8 | `required` | `common` | 8 brown cubes |
+| 550 | `token_marker` | cubetto verde | 2 | `required` | `common` | 2 green cubes |
+| 550 | `token_marker` | cubetto giallo | 5 | `required` | `common` | 5 yellow cubes |
+| 550 | `printable_component` | segmento ponte | 4 da una carta | `required` | `printable` | 1 card cut into 4 bridge segments |
+| 550 | `household_item` | tavolo o superficie piana | 1 | `required` | `household` | A table or flat surface |
+| 550 | `assembly_material` | vecchia carta da gioco e colla |  | `optional` | `household` | glueing them onto an old card |
+| 550 | `assembly_material` | nastro adesivo o laminazione |  | `optional` | `household` | sticky tape or laminate |
 
 ## Limiti
 

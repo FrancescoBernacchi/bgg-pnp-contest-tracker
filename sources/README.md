@@ -14,4 +14,6 @@ BoardGameGeek è l'unica fonte esterna autorizzata nella fase corrente. L'ordine
 
 `2025-DECLARED-MATERIALS.md` documenta i materiali di gioco dichiarati nei primi post dei WIP 2025 già esaminati; la copertura è esplicitamente limitata al primo post e potrà essere integrata dalle regole in un task successivo.
 
+`2025-ONE-CARD-WIPS-RESOURCES.md` espone la scansione completa delle 38 entry 1-Card, comprese assenze e post non osservabili, con 72 risorse distinte conservate senza aprirne le destinazioni.
+
 `OPEN-VERIFICATION-POINTS.md` conserva le anomalie e le lacune che richiedono verifica umana o fonti future, con evidenza, azione prevista e criterio di chiusura. I punti risolti non vengono cancellati.

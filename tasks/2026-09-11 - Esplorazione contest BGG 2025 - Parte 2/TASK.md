@@ -112,3 +112,17 @@ La migrazione e l'incremento sono stati applicati al database operativo. Il veri
 Le anomalie non risolvibili con le sole evidenze correnti sono state promosse nel registro versionato `sources/OPEN-VERIFICATION-POINTS.md`. Il registro distingue problemi di provenienza, post non osservabili, WIP assenti e inventari materiali incompleti; per ciascun punto conserva evidenza, azione futura e criterio di chiusura. Non vi sono confluite anomalie tecniche già risolte e verificate.
 
 I dieci punti iniziali riguardano `Allmende`, `Potions Master Tournament`, `Black Market`, `Duel: Clash of Metal`, `Yadoya`, `Crab Boil`, `On-LINE Kasino`, `Hex Hive: Skirmish`, `Peng Wins!` e `Librarian's Cat`. Le verifiche che richiedono regole o file PnP restano differite al futuro task di acquisizione; nessuna destinazione esterna è stata aperta in questo incremento.
+
+## Incremento 1-Card
+
+Sono stati aperti direttamente tutti i 38 WIP della GeekList ufficiale 1-Card 2025 e letti integralmente i primi post tramite DOM effettivo. Il primo caricamento di alcune pagine restituiva temporaneamente un corpo vuoto: la classificazione è stata effettuata solo dopo il montaggio del `post-body`, senza interpretare il ritardo come assenza. Sono stati estratti anchor, collegamenti dinamici e media incorporati senza aprire destinazioni esterne.
+
+Il censimento conserva 72 collegamenti distinti: 35 WIP dichiarano almeno una risorsa, `The Moving Fortress` e `Zombie Apocalypse` non mostrano collegamenti pertinenti, mentre il post originale di `Disturbance at Darkholm Manor` non è più osservabile. Il primo articolo residuo appartiene a un altro utente; le risorse discusse nelle risposte non sono state attribuite al primo post e la situazione è stata registrata come `OVP-2025-011`.
+
+L'immagine BGG di `Lucky Words` è stata inclusa come risorsa perché il testo ordina esplicitamente di stamparla; questa eccezione verificata rispetto all'esclusione delle immagini decorative è stata promossa nel playbook. Per `Finger Twister` è preservata l'etichetta storica `Operation D-2`; `Flip Fart`, `Shadow Heist` e `Sliminal Pursuit` dichiarano la stessa cartella dell'autore, mantenuta separatamente nella provenienza di ciascuna entry.
+
+Il censimento materiali è stato esteso a 1-Card. La copertura trasversale dei quattro contest ora comprende 129 entry e 307 requisiti distinti per 102 entry; per 1-Card sono 106 requisiti in 33 entry. La copertura rimane `first_post_only`: non sono state aperte regole esterne né scaricati file.
+
+Oltre al post non osservabile, il registro dei punti aperti conserva tre ambiguità da integrare con le regole: quantità e tipo dei dadi di `Going the Difference!`, distinta dei cubetti di `The Moving Fortress` e natura letterale o sostituibile della torta in `Piece of Cake`.
+
+File riproducibili dell'incremento: `catalog/build_2025_one_card_resources.py`, `catalog/2025-one-card-wips-resources.sql`, `catalog/verify_2025_one_card_resources.py` e `sources/2025-ONE-CARD-WIPS-RESOURCES.md`; il generatore e verificatore trasversali dei materiali sono stati aggiornati. Gli script sono stati applicati al database operativo dopo la verifica su copia; `PRAGMA integrity_check` restituisce `ok` e le foreign key non presentano violazioni.
