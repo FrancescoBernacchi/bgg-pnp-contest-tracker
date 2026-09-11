@@ -35,6 +35,11 @@ test('stati senza risorse restano distinti e non inventano link',()=>{
   }
   assert.match(run(`resourceSection({resource_scans:[],resources:[]})`),/Nessuna scansione/);
 });
+test('materiali dichiarati mostrano quantità, classificazione, evidenza e limite di copertura',()=>{
+  const detail={material_scans:[{checked_at:'2026-09-11',source_url:'https://boardgamegeek.com/thread/123',material_listing_status:'observed',coverage_scope:'first_post_only',notes:'Regole non aperte'}],materials:[{name_normalized:'dado d6',name_raw:'2 D6 dice',material_kind:'randomizer',supply_mode:'common',quantity_raw:'2',requirement_level:'required',context_raw:'Components: 2 D6 dice',source_url:'https://boardgamegeek.com/thread/123',last_seen_at:'2026-09-11'}]};
+  const html=run(`materialSection(${JSON.stringify(detail)})`);
+  for(const text of ['dado d6','Randomizzatore','Comune','Components: 2 D6 dice','Solo primo post','potrà essere integrato']) assert.ok(html.includes(text));
+});
 test('le date preservano giorno, orario e offset originali',()=>{
   assert.equal(run('day("2026-10-16T23:59:00-05:00")'),'16/10/2026 · 23:59 UTC-05:00');
   assert.equal(run('day("2026-09-07")'),'07/09/2026');

@@ -41,7 +41,7 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 - **Tutte le entry**: ricerca per titolo o autore, filtri per contest, perimetro, stato e tipologia; ordinamento e pagine da 30 risultati.
 - **Dettaglio entry e risorse**: collegamenti espliciti alla pagina dell’entry e al WIP BGG; risorse dichiarate con etichetta, funzione, forma di accesso, stato e provenienza, apribili in una nuova scheda soltanto su click.
 - **Dettaglio contest**: stati originali/normalizzati, dipendenze, distribuzione degli stati, fasi/scadenze con precisione e fuso registrati, metriche correnti e storiche, classifiche ufficiali o segnali sostitutivi.
-- **Dettaglio entry**: crediti, stato dei materiali come semplice metadato, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
+- **Dettaglio entry**: crediti, stato dei materiali, risorse collegate, requisiti fisici dichiarati con quantità ed evidenza, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
 - **Scadenze**: prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura. Non sostituisce il calendario dei controlli `sources/MONITORING_CALENDAR.md`.
 - **Rileggi database**: aggiorna i dati senza effettuare nuovi controlli BGG. La data di lettura dell'app è distinta dalle date di verifica delle fonti.
 
@@ -59,7 +59,7 @@ Nel database verificato il 7 settembre 2026 esistono soltanto baseline, censimen
 
 ## Confini tecnici e verifica
 
-Nessuna dipendenza esterna, CDN, telemetria o richiesta di rete automatica. L’app consulta `remote_resources`, `entry_resource_scans`, `entry_resource_mentions` e `remote_resource_observations` in sola lettura; non consulta `library/`, `acquisitions` o `acquired_files`. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali.
+Nessuna dipendenza esterna, CDN, telemetria o richiesta di rete automatica. L’app consulta `remote_resources`, `entry_resource_scans`, `entry_resource_mentions`, `remote_resource_observations`, `entry_material_scans` e `entry_material_requirements` in sola lettura; non consulta `library/`, `acquisitions` o `acquired_files`. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali.
 
 I dati vengono escapati. Le pagine BGG di metadati e le destinazioni delle risorse diventano link soltanto se hanno una forma ammessa; le risorse richiedono HTTPS e non possono contenere credenziali nell’URL. Tutti i link esterni si aprono in una nuova scheda con isolamento `noopener noreferrer`, esclusivamente dopo il click dell’utente. L’app non segue redirect, controlla disponibilità, apre o scarica materiali durante la lettura della scheda. Il server è destinato all’uso personale locale, non alla pubblicazione o all’esposizione in LAN.
 
@@ -98,6 +98,8 @@ L'API `/api/catalog` include `rankings`; le API dei dettagli usano la medesima q
 
 
 ## Cruscotto Markdown preesistente
+
+La scheda entry separa **Risorse dichiarate** (destinazioni URL) e **Materiali richiesti** (componenti e strumenti dichiarati nel primo post). La seconda sezione mostra quantità, classificazione provvisoria, approvvigionamento ed evidenza originale, dichiarando se la copertura è limitata al primo post o integrata dalle regole.
 
 `generate_monitoring_report.py` legge in sola lettura il database operativo e genera `outputs/contest-monitoring-dashboard.md` usando le viste di monitoraggio. Non effettua accessi di rete e non legge la libreria dei materiali.
 

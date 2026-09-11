@@ -125,6 +125,10 @@ def entry_detail(db, entry_id):
         "resource_scans": rows(db, """SELECT * FROM entry_resource_scans WHERE entry_id=?
             ORDER BY julianday(checked_at) DESC,id DESC""", (entry_id,)),
         "resources": resources,
+        "material_scans": rows(db, """SELECT * FROM entry_material_scans WHERE entry_id=?
+            ORDER BY julianday(checked_at) DESC,id DESC""", (entry_id,)),
+        "materials": rows(db, """SELECT * FROM entry_material_requirements WHERE entry_id=?
+            ORDER BY material_kind COLLATE NOCASE,name_normalized COLLATE NOCASE,id""", (entry_id,)),
     }
 
 
@@ -267,7 +271,8 @@ def main():
             for table in ("contest_checks", "contest_phases", "contest_phase_history", "contest_status_history",
                           "contest_metric_observations", "entry_status_history", "game_names", "rankings",
                           "remote_resources", "entry_resource_scans", "entry_resource_mentions",
-                          "remote_resource_observations"):
+                          "remote_resource_observations", "entry_material_scans",
+                          "entry_material_requirements"):
                 db.execute(f"SELECT * FROM {table} LIMIT 0")
         server = make_server(args.database, args.port)
     except (sqlite3.Error, OSError) as error:

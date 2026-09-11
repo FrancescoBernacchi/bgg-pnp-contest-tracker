@@ -112,6 +112,25 @@ class ApplicationTests(unittest.TestCase):
             self.assertEqual(detail["resource_scans"][0]["resource_listing_status"], "observed")
             self.assertEqual(entry_detail(db,2)["resources"], [])
 
+    def test_entry_materials_preserve_first_post_evidence_and_scope(self):
+        db = sqlite3.connect(self.database)
+        self.insert(db, "entry_material_scans", id=1, entry_id=1, checked_at="2026-09-11",
+                    source_url="https://boardgamegeek.com/thread/123", wip_status="found",
+                    material_listing_status="observed", coverage_scope="first_post_only",
+                    notes="Regole non aperte")
+        self.insert(db, "entry_material_requirements", id=1, entry_id=1,
+                    material_kind="randomizer", name_normalized="dado d6", name_raw="D6 dice",
+                    quantity_raw="2", requirement_level="required", supply_mode="common",
+                    context_raw="Components: 2 D6 dice", source_url="https://boardgamegeek.com/thread/123",
+                    first_seen_at="2026-09-11", last_seen_at="2026-09-11")
+        db.commit(); db.close()
+        with connect(self.database) as db:
+            detail = entry_detail(db, 1)
+            self.assertEqual(detail["material_scans"][0]["coverage_scope"], "first_post_only")
+            self.assertEqual(detail["materials"][0]["quantity_raw"], "2")
+            self.assertEqual(detail["materials"][0]["context_raw"], "Components: 2 D6 dice")
+            self.assertEqual(entry_detail(db, 2)["materials"], [])
+
     def test_periodic_classification(self):
         for kind in ("scheduled","manual_monitor","deadline_follow_up"):
             self.assertTrue(periodic({"check_kind":kind}))

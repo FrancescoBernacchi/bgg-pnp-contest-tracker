@@ -55,3 +55,7 @@ Il compito continuativo dell'agente è migliorare la competenza nella navigazion
 8. Registra l'assenza soltanto dopo questi controlli.
 
 Non chiudere la tassonomia prima del confronto di tutti i contest dell'anno.
+
+## Materiali di gioco dichiarati nel WIP
+
+Durante la lettura integrale del primo post, censisci separatamente anche i requisiti materiali che non dipendono da un URL: dadi, mazzi standard, strumenti di scrittura, pedine, segnalini, oggetti domestici, dispositivi e materiali di montaggio. Conserva testo originale, quantità, contesto, obbligatorietà e modalità di approvvigionamento; assegna categorie soltanto provvisorie. Distingui esplicitamente la copertura `first_post_only` da un futuro inventario integrato dalle regole. Non dedurre un componente dalla sola descrizione della meccanica e non interpretare il silenzio del primo post come prova che il gioco non richieda materiali.

@@ -11,3 +11,7 @@ BoardGameGeek è l'unica fonte esterna autorizzata nella fase corrente. L'ordine
 `2025-ROLL-WRITE-RESOURCE-SURVEY.md` distingue URL dell'entry, WIP BGG e risorse esterne e propone il modello dati per conservarne provenienza e storia.
 
 `2025-ROLL-WRITE-WIPS-RESOURCES.md` espone la scansione completa delle 37 entry Roll & Write e rende visibili anche gli esiti negativi o non osservabili.
+
+`2025-DECLARED-MATERIALS.md` documenta i materiali di gioco dichiarati nei primi post dei WIP 2025 già esaminati; la copertura è esplicitamente limitata al primo post e potrà essere integrata dalle regole in un task successivo.
+
+`OPEN-VERIFICATION-POINTS.md` conserva le anomalie e le lacune che richiedono verifica umana o fonti future, con evidenza, azione prevista e criterio di chiusura. I punti risolti non vengono cancellati.

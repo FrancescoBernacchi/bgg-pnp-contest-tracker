@@ -14,6 +14,8 @@ La migrazione `005_contest_phase_history.sql` introduce gli snapshot storici del
 
 La migrazione `006_entry_resource_provenance.sql` distingue la scansione del WIP, la menzione di una risorsa nella specifica entry e la successiva verifica della risorsa. `remote_resources.kind` conserva la funzione attribuita dal contesto e `remote_resources.access_type` la forma tecnica. I valori usati durante l’esplorazione annuale sono provvisori: categorie ed enumerazioni saranno consolidate soltanto dopo il confronto di tutti i contest 2025. URL identici rappresentano una risorsa unica, mentre descrizioni e contesto della specifica entry restano nelle menzioni.
 
+La migrazione `007_entry_declared_materials.sql` separa le scansioni dei requisiti materiali dai singoli materiali dichiarati. Conserva la copertura (`first_post_only` o `rules_integrated`), gli esiti negativi o non osservabili e, per ogni requisito, testo originale, normalizzazione provvisoria, quantità, obbligatorietà, modalità di approvvigionamento, contesto e fonte. Una scansione limitata al primo post resta integrabile dalle regole e non certifica l'inventario completo del gioco.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:

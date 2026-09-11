@@ -94,3 +94,21 @@ File riproducibili dell'incremento:
 - `sources/2025-CHILDREN-FAMILY-WIPS-RESOURCES.md`.
 
 Il generatore produce 43 risorse per 27 entry. Il verificatore su copia temporanea restituisce `integrity=ok`, zero violazioni delle foreign key, 26 WIP, 27 scansioni, 43 menzioni e 43 risorse distinte. Lo script è stato applicato al database operativo, che restituisce a sua volta `integrity=ok`, zero violazioni delle foreign key, 27 entry, 26 WIP e 43 menzioni. Sono superati i 12 test Python dell’applicazione e i 13 test JavaScript del frontend.
+
+## Estensione: materiali dichiarati senza collegamento
+
+È stato aggiunto un censimento distinto dei requisiti materiali leggibili direttamente nel primo post. Sono stati riesaminati tramite DOM effettivo 89 WIP dei tre contest già approfonditi: 37 Roll & Write, 26 In-Hand e 26 Children & Family. `Duel: Clash of Metal` e `Potions Master Tournament` restano senza WIP; il post originale di `Black Market` non è osservabile.
+
+Il nuovo modello separa la scansione (`entry_material_scans`) dai requisiti (`entry_material_requirements`) e conserva categoria provvisoria, nome originale e normalizzato, quantità dichiarata, obbligatorietà, modalità di approvvigionamento, evidenza testuale, fonte e date. La copertura corrente è marcata `first_post_only`: nessun regolamento esterno è stato aperto o scaricato e un futuro incremento `rules_integrated` potrà completare o correggere l’inventario preservando la provenienza.
+
+Sono stati registrati 201 requisiti distinti per 69 entry. Le categorie provvisorie comprendono componenti stampabili, randomizzatori, strumenti di scrittura, mazzi standard, pedine e segnalini, oggetti domestici, accessori, strumenti e materiali di montaggio, timer, strumenti segnapunti e dispositivi digitali. Per 19 WIP non è emerso un requisito sufficientemente esplicito; questo stato non certifica l’assenza di materiali.
+
+File riproducibili: `database/migrations/007_entry_declared_materials.sql`, `catalog/build_2025_declared_materials.py`, `catalog/2025-declared-materials.sql`, `catalog/verify_2025_declared_materials.py` e `sources/2025-DECLARED-MATERIALS.md`. L’interfaccia locale mostra ora una sezione separata “Materiali richiesti”, con quantità, classificazione, evidenza e avviso sul limite del primo post.
+
+La migrazione e l'incremento sono stati applicati al database operativo. Il verificatore restituisce `integrity=ok`, zero violazioni delle foreign key, 91 scansioni, 201 requisiti e nessun requisito attribuito a entry senza WIP. Sono superati i 13 test Python e i 14 test JavaScript dell'interfaccia.
+
+## Punti aperti per verifica umana
+
+Le anomalie non risolvibili con le sole evidenze correnti sono state promosse nel registro versionato `sources/OPEN-VERIFICATION-POINTS.md`. Il registro distingue problemi di provenienza, post non osservabili, WIP assenti e inventari materiali incompleti; per ciascun punto conserva evidenza, azione futura e criterio di chiusura. Non vi sono confluite anomalie tecniche già risolte e verificate.
+
+I dieci punti iniziali riguardano `Allmende`, `Potions Master Tournament`, `Black Market`, `Duel: Clash of Metal`, `Yadoya`, `Crab Boil`, `On-LINE Kasino`, `Hex Hive: Skirmish`, `Peng Wins!` e `Librarian's Cat`. Le verifiche che richiedono regole o file PnP restano differite al futuro task di acquisizione; nessuna destinazione esterna è stata aperta in questo incremento.
