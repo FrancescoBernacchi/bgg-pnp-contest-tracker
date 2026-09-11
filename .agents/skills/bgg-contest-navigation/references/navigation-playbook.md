@@ -72,3 +72,9 @@ Per ogni pattern aggiungere:
 **Osservato:** Roll & Write 2025, 10 settembre 2026.
 
 I WIP combinano anchor ordinari, `gg-item-link`, video incorporati, cartelle, file, pagine di distribuzione, piattaforme giocabili e strumenti. Estrarre dal primo post renderizzato e non dalla sola indicizzazione. Skyfall ripete la stessa cartella; Thieves of Bandervon usa lo stesso URL video con due descrizioni; Leaning Tower contiene Vimeo in `iframe`; i player YouTube aggiungono collegamenti tecnici al canale da escludere. Funzione e forma tecnica restano provvisorie fino alla revisione completa del 2025.
+
+## Pattern: post originale non più osservabile
+
+**Osservato:** Black Market, In-Hand 2025, 11 settembre 2026.
+
+Un thread WIP può restare raggiungibile dopo la rimozione del post originale. Il primo `article.post` renderizzato è allora una risposta successiva e non prova né l'assenza di risorse né il contenuto completo dichiarato dall'autore. Verificare autore, timestamp e testo del primo articolo residuo. Se una risposta attesta una risorsa ma non ne espone l'URL, registrare `not_observable`, conservare l'evidenza testuale e non inventare o ricostruire la destinazione. Questa casistica è distinta sia da `none_declared` sia da WIP non individuato.
