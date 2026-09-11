@@ -6,7 +6,7 @@ In corso dall'11 settembre 2026, in continuità con il task `2026-09-07 - Esplor
 
 ## Scopo
 
-Completare il censimento dei collegamenti alle risorse dichiarati nei primi post dei WIP dell'In-Hand Game Design Contest 2025, senza aprire le destinazioni esterne né scaricare materiali.
+Completare per incrementi il censimento dei collegamenti alle risorse dichiarati nei primi post dei WIP dei contest BGG 2025, senza aprire le destinazioni esterne né scaricare materiali. Dopo In-Hand, l'incremento corrente riguarda Children & Family 2025.
 
 ## Input
 
@@ -70,3 +70,27 @@ Il generatore produce 63 risorse per 27 entry. Il verificatore sulla copia tempo
 Lo script SQL è stato applicato al database operativo dopo la verifica su copia. Il controllo successivo restituisce `PRAGMA integrity_check=ok`, zero violazioni delle foreign key, 26 WIP, 63 risorse distinte e questa distribuzione completa delle scansioni: 23 `observed`, 2 `none_declared`, 1 `not_observable`, 1 `not_checked`.
 
 Il cruscotto locale è stato rigenerato. Sono superati gli 8 test Python dell’applicazione e i 4 test JavaScript del frontend. Nessun commit o push è stato eseguito.
+
+## Incremento Children & Family
+
+La GeekList ufficiale conferma 27 entry e 26 collegamenti WIP. `Potions Master Tournament` non possiede un WIP: la sua voce contiene tre risorse dirette, mantenute come evidenza separata e non attribuite a un primo post inesistente.
+
+I 26 WIP sono stati aperti direttamente in BGG. Per ciascuno è stato atteso il montaggio effettivo del primo `article .post-body`, letto integralmente il DOM ed estratti anchor, `gg-item-link`, iframe, `video` e `source`. I collegamenti dinamici sono stati portati nel viewport e attesi prima di stabilirne la destinazione. Non sono state aperte destinazioni esterne e non sono stati scaricati materiali.
+
+Risultato:
+
+- 27 entry coperte: 26 WIP osservati e 1 WIP non individuato;
+- 21 WIP con almeno una risorsa dichiarata;
+- 5 WIP senza collegamenti pertinenti: `Pirate Treasures`, `Pets Rescue`, `Hex Hive: Skirmish`, `Head In The Clouds`, `Guesstrictions`;
+- 43 URL distinti conservati.
+
+Sono stati esclusi navigazione, profili, immagini decorative, riferimenti al contest, pagine BGG del gioco non presentate come risorse e canali YouTube automatici. Il link testuale e l'incorporamento di `Allmende` indicavano lo stesso video e sono stati accorpati. L'URL Google Drive di `Allmende` contiene due prefissi concatenati: è conservato esattamente come dichiarato e marcato non verificato.
+
+File riproducibili dell'incremento:
+
+- `catalog/build_2025_children_family_resources.py`;
+- `catalog/2025-children-family-wips-resources.sql`;
+- `catalog/verify_2025_children_family_resources.py`;
+- `sources/2025-CHILDREN-FAMILY-WIPS-RESOURCES.md`.
+
+Il generatore produce 43 risorse per 27 entry. Il verificatore su copia temporanea restituisce `integrity=ok`, zero violazioni delle foreign key, 26 WIP, 27 scansioni, 43 menzioni e 43 risorse distinte. Lo script è stato applicato al database operativo, che restituisce a sua volta `integrity=ok`, zero violazioni delle foreign key, 27 entry, 26 WIP e 43 menzioni. Sono superati i 12 test Python dell’applicazione e i 13 test JavaScript del frontend.
