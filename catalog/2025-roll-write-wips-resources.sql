@@ -1,101 +1,135 @@
--- Ricognizione completa dei WIP e delle risorse dichiarate per Roll & Write 2025.
--- Verifica: 2026-09-10. Nessuna risorsa esterna aperta e nessun file scaricato.
-
+-- Full first-post resource census for 2025 Roll & Write. Destinations were not opened.
 PRAGMA foreign_keys = ON;
 BEGIN IMMEDIATE;
-
-CREATE TEMP TABLE roll_write_2025_resource_scan (
-    title TEXT PRIMARY KEY,
-    wip_thread_url TEXT,
-    resource_listing_status TEXT NOT NULL,
-    notes TEXT NOT NULL
-);
-
-INSERT INTO roll_write_2025_resource_scan VALUES
-('Ancient World','https://boardgamegeek.com/thread/3614076','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Compass & Ink',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Dawn Chorus',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Dicease Control: The 4.D-10 Pathogen','https://boardgamegeek.com/thread/3603070','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Doodle Bash!','https://boardgamegeek.com/thread/3606967','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Fortify!','https://boardgamegeek.com/thread/3615315','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Labyrinth of Shadows','https://boardgamegeek.com/thread/3584529','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Lithomacy','https://boardgamegeek.com/thread/3617600','not_observable','WIP BGG individuato con grafia Lithomachy nello slug; risorse non osservabili dalla fonte indicizzata.'),
-('Mainframe: System Shutdown',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Master of Thievery',NULL,'not_checked','WIP dedicato non individuato su BGG nella ricognizione; riferimenti esterni non usati come fonte sostitutiva.'),
-('Natura','https://boardgamegeek.com/thread/3621278','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('On-LINE Kasino','https://boardgamegeek.com/thread/3619168','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Rolling Fiefdoms','https://boardgamegeek.com/thread/3596654','observed','Il primo post indicizzato dichiara PnP Stash come versione corrente e link distinti a Rulebook, Print Sheet, Solo Challenges e Online Version; soltanto la destinazione PnP Stash è esposta integralmente.'),
-('Rolling Parks','https://boardgamegeek.com/thread/3619248','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Spellwrights Codex','https://boardgamegeek.com/thread/3617539','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('Skyfall',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('The Leaning Tower of Pisa','https://boardgamegeek.com/thread/3613315','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('The Legend of Whispervale',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Thieves of Bandervon',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Vanguard Multi Asset Global Command',NULL,'not_checked','WIP dedicato non individuato nella ricognizione.'),
-('Word Builders','https://boardgamegeek.com/thread/3620974','not_observable','Il primo post indicizzato dichiara Folder with Files e un video di playthrough, ma non espone integralmente le destinazioni.'),
-('1899 - 1907 Black Death Brazil','https://boardgamegeek.com/thread/3600465','not_observable','WIP BGG individuato; le destinazioni dei collegamenti del primo post non sono esposte dalla fonte indicizzata consultabile.'),
-('A Dragon''s Die',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('City Lights',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Fortune Script',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('INFRARED',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Necromancy: Roll Them Bones!','https://boardgamegeek.com/thread/3592805','not_observable','Entry ritirata; WIP BGG individuato, risorse non osservabili dalla fonte indicizzata.'),
-('On the Trail of Bigfoot','https://boardgamegeek.com/thread/3592032','not_observable','Entry ritirata; WIP BGG individuato, risorse non osservabili dalla fonte indicizzata.'),
-('PIXIX',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Ringleader',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Roll & Pose','https://boardgamegeek.com/thread/3620499','not_observable','Entry ritirata; WIP BGG individuato, risorse non osservabili dalla fonte indicizzata.'),
-('The Thirteenth Dimension',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Scribe',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('STRATOS',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Wizard''s Tutelage',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('U2: Flights of the Dragon Lady',NULL,'not_checked','Entry ritirata; WIP dedicato non individuato nella ricognizione.'),
-('Yadoya','https://boardgamegeek.com/thread/3618848','not_observable','Entry ritirata; WIP BGG individuato, risorse non osservabili dalla fonte indicizzata.');
-
-UPDATE entries
-SET wip_thread_url = (
-    SELECT s.wip_thread_url
-    FROM roll_write_2025_resource_scan s
-    JOIN games g ON g.canonical_title = s.title
-    WHERE g.id = entries.game_id
-)
-WHERE contest_id = 22
-  AND EXISTS (
-    SELECT 1 FROM roll_write_2025_resource_scan s
-    JOIN games g ON g.canonical_title = s.title
-    WHERE g.id = entries.game_id AND s.wip_thread_url IS NOT NULL
-  );
-
-INSERT INTO entry_resource_scans
-    (entry_id,checked_at,source_url,wip_status,resource_listing_status,notes)
-SELECT e.id,'2026-09-10',COALESCE(s.wip_thread_url,e.entry_url),
-       CASE WHEN s.wip_thread_url IS NULL THEN 'not_found' ELSE 'found' END,
-       s.resource_listing_status,s.notes
-FROM roll_write_2025_resource_scan s
-JOIN games g ON g.canonical_title=s.title
-JOIN entries e ON e.game_id=g.id AND e.contest_id=22;
-
-INSERT INTO remote_resources
-    (game_id,kind,access_type,url,host,label,version_raw,availability_status,first_seen_at,last_verified_at)
-SELECT g.id,'combined_pnp','landing_page','https://pnpstash.com/product/rolling-fiefdoms/','pnpstash.com',
-       'Rolling Fiefdoms on PnP Stash',NULL,'unknown','2026-09-10','2026-09-10'
-FROM games g
-JOIN entries e ON e.game_id=g.id AND e.contest_id=22
-WHERE g.canonical_title='Rolling Fiefdoms';
-
-INSERT INTO entry_resource_mentions
-    (entry_id,remote_resource_id,source_url,label_raw,content_role,is_primary,first_seen_at,last_seen_at)
-SELECT e.id,r.id,'https://boardgamegeek.com/thread/3596654','latest version on PnP Stash','combined_pnp',1,'2026-09-10','2026-09-10'
-FROM entries e
-JOIN games g ON g.id=e.game_id
-JOIN remote_resources r ON r.game_id=g.id AND r.url='https://pnpstash.com/product/rolling-fiefdoms/'
-WHERE e.contest_id=22 AND g.canonical_title='Rolling Fiefdoms';
-
-INSERT INTO remote_resource_observations
-    (remote_resource_id,observed_at,evidence_url,observation_kind,availability_status,version_raw,notes)
-SELECT r.id,'2026-09-10','https://boardgamegeek.com/thread/3596654','declared_in_wip','not_checked',NULL,
-       'Il WIP dichiara questa pagina come sede della versione più recente; destinazione non aperta durante la ricognizione annuale.'
-FROM remote_resources r
-JOIN games g ON g.id=r.game_id
-WHERE g.canonical_title='Rolling Fiefdoms' AND r.url='https://pnpstash.com/product/rolling-fiefdoms/';
-
-DROP TABLE roll_write_2025_resource_scan;
+CREATE TEMP TABLE rw_wip(title TEXT PRIMARY KEY,url TEXT NOT NULL);
+CREATE TEMP TABLE rw_resource(title TEXT,url TEXT,role TEXT,access_type TEXT,label TEXT,PRIMARY KEY(title,url));
+INSERT INTO rw_wip VALUES('Ancient World','https://boardgamegeek.com/thread/3614076');
+INSERT INTO rw_wip VALUES('Compass & Ink','https://boardgamegeek.com/thread/3593066');
+INSERT INTO rw_wip VALUES('Dawn Chorus','https://boardgamegeek.com/thread/3618849');
+INSERT INTO rw_wip VALUES('Dicease Control: The 4.D-10 Pathogen','https://boardgamegeek.com/thread/3603070');
+INSERT INTO rw_wip VALUES('Doodle Bash!','https://boardgamegeek.com/thread/3606967');
+INSERT INTO rw_wip VALUES('Fortify!','https://boardgamegeek.com/thread/3615315');
+INSERT INTO rw_wip VALUES('Labyrinth of Shadows','https://boardgamegeek.com/thread/3584529');
+INSERT INTO rw_wip VALUES('Lithomacy','https://boardgamegeek.com/thread/3617600');
+INSERT INTO rw_wip VALUES('Mainframe: System Shutdown','https://boardgamegeek.com/thread/3617159');
+INSERT INTO rw_wip VALUES('Master of Thievery','https://boardgamegeek.com/thread/3620403');
+INSERT INTO rw_wip VALUES('Natura','https://boardgamegeek.com/thread/3621278');
+INSERT INTO rw_wip VALUES('On-LINE Kasino','https://boardgamegeek.com/thread/3619168');
+INSERT INTO rw_wip VALUES('Rolling Fiefdoms','https://boardgamegeek.com/thread/3596654');
+INSERT INTO rw_wip VALUES('Rolling Parks','https://boardgamegeek.com/thread/3619248');
+INSERT INTO rw_wip VALUES('Spellwrights Codex','https://boardgamegeek.com/thread/3617539');
+INSERT INTO rw_wip VALUES('Skyfall','https://boardgamegeek.com/thread/3600730');
+INSERT INTO rw_wip VALUES('The Leaning Tower of Pisa','https://boardgamegeek.com/thread/3613315');
+INSERT INTO rw_wip VALUES('The Legend of Whispervale','https://boardgamegeek.com/thread/3621367');
+INSERT INTO rw_wip VALUES('Thieves of Bandervon','https://boardgamegeek.com/thread/3596433');
+INSERT INTO rw_wip VALUES('Vanguard Multi Asset Global Command','https://boardgamegeek.com/thread/3619638');
+INSERT INTO rw_wip VALUES('Word Builders','https://boardgamegeek.com/thread/3620974');
+INSERT INTO rw_wip VALUES('1899 - 1907 Black Death Brazil','https://boardgamegeek.com/thread/3600465');
+INSERT INTO rw_wip VALUES('A Dragon''s Die','https://boardgamegeek.com/thread/3607359');
+INSERT INTO rw_wip VALUES('City Lights','https://boardgamegeek.com/thread/3621048');
+INSERT INTO rw_wip VALUES('Fortune Script','https://boardgamegeek.com/thread/3621017');
+INSERT INTO rw_wip VALUES('INFRARED','https://boardgamegeek.com/thread/3593194');
+INSERT INTO rw_wip VALUES('Necromancy: Roll Them Bones!','https://boardgamegeek.com/thread/3592805');
+INSERT INTO rw_wip VALUES('On the Trail of Bigfoot','https://boardgamegeek.com/thread/3592032');
+INSERT INTO rw_wip VALUES('PIXIX','https://boardgamegeek.com/thread/3620811');
+INSERT INTO rw_wip VALUES('Ringleader','https://boardgamegeek.com/thread/3617946');
+INSERT INTO rw_wip VALUES('Roll & Pose','https://boardgamegeek.com/thread/3620499');
+INSERT INTO rw_wip VALUES('The Thirteenth Dimension','https://boardgamegeek.com/thread/3595192');
+INSERT INTO rw_wip VALUES('Scribe','https://boardgamegeek.com/thread/3592781');
+INSERT INTO rw_wip VALUES('STRATOS','https://boardgamegeek.com/thread/3592669');
+INSERT INTO rw_wip VALUES('Wizard''s Tutelage','https://boardgamegeek.com/thread/3592976');
+INSERT INTO rw_wip VALUES('U2: Flights of the Dragon Lady','https://boardgamegeek.com/thread/3585469');
+INSERT INTO rw_wip VALUES('Yadoya','https://boardgamegeek.com/thread/3618848');
+INSERT INTO rw_resource VALUES('Ancient World','https://youtu.be/SSfnGiL8l4U?si=kcSUWZ9H0OxN3O6D','video','video','VIDEO (5 MIN.)');
+INSERT INTO rw_resource VALUES('Ancient World','https://drive.google.com/drive/folders/1LT2NuygvjFM4TK2PpVEjfimda-PeUsUv?usp=sharing','game_files','folder','DRIVE FOLDER');
+INSERT INTO rw_resource VALUES('Compass & Ink','https://drive.google.com/drive/folders/1icJtKE9s9PUFTcqbd9oPQAIpqqMEaOeo?usp=sharing','game_files','folder','Google Drive folder: rulebook, maps/reference sheet and adventure packs');
+INSERT INTO rw_resource VALUES('Dawn Chorus','https://drive.google.com/drive/folders/1wfUVeCDBbDqYSdhvJXCyLMX14vwhbwRs?usp=drive_link','game_files','folder','Download the files here to start playing');
+INSERT INTO rw_resource VALUES('Dicease Control: The 4.D-10 Pathogen','https://drive.google.com/drive/folders/1O6w9MmXsEKVJVnCQXTeV2cx4sRSifx5e?usp=sharing','game_files','folder','DICEASE CONTROL PnP');
+INSERT INTO rw_resource VALUES('Dicease Control: The 4.D-10 Pathogen','https://screentop.gg/@ComplianceBG/DICEASECONTROL','online_play','web_app','Digital Implementation on screentop.gg');
+INSERT INTO rw_resource VALUES('Dicease Control: The 4.D-10 Pathogen','https://youtu.be/7JwTLza_vRY','video','video','How to play Video');
+INSERT INTO rw_resource VALUES('Doodle Bash!','https://drive.google.com/file/d/1fi_7pHijJFd8W6UNCCZz3x2KYOEmzxXU/view?usp=sharing','game_files','file','Doodle Bash Rules and Game Sheets 1.1');
+INSERT INTO rw_resource VALUES('Fortify!','https://www.dropbox.com/scl/fo/cq9s96o8bb6bl0e8782b9/AFDI9UKqth0eXLo6fv6FABg?rlkey=i7o5u9nw9449zon124kvzrqfn&st=6vt3dvb9&dl=0','game_files','folder','Rules and player sheets');
+INSERT INTO rw_resource VALUES('Labyrinth of Shadows','https://docs.google.com/document/d/1O9kkAPNDsoiOCSiQelxjMt1U621_NQWIQyy-gsIK0yI/edit?tab=t.0#heading=h.l2qc3xnbycgp','rules','document','Rules (google doc)');
+INSERT INTO rw_resource VALUES('Labyrinth of Shadows','https://otherwisegames.substack.com/p/links','project_page','download_page','US Letter or A4 game sheets and maze sheets');
+INSERT INTO rw_resource VALUES('Labyrinth of Shadows','https://www.youtube.com/watch?v=L7i_du2iqKM','video','video','Overview Video');
+INSERT INTO rw_resource VALUES('Mainframe: System Shutdown','https://drive.google.com/file/d/1ijWnAQ8O7UbpfbhreAuvF9BEG6IkveRQ/view?usp=sharing','game_files','file','Complete game and rules');
+INSERT INTO rw_resource VALUES('Mainframe: System Shutdown','https://www.dropbox.com/scl/fi/pf42he958j6q922q5qrow/Mainframe6.pdf?rlkey=uoloz2i3hcu2xvraeuhoqfxsp&st=djltkdfk&dl=0','component','file','Helper card');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/board-games/master-of-thievery/','project_page','download_page','Download site with instructions on file content');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/board-games/master-of-thievery/master-of-thievery-full-color-downloads/','project_page','download_page','Full color download site');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/board-games/master-of-thievery/master-of-thievery-low-ink-downloads/','project_page','download_page','Low ink download site');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/?sdm_process_download=1&download_id=614','rules','file','Rulebook');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/?sdm_process_download=1&download_id=622','component','file','Thief sheets');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/?sdm_process_download=1&download_id=624','component','file','Thievery opportunity cards');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://wannabeboardgamedesigner.com/?sdm_process_download=1&download_id=626','component','file','Marker tokens');
+INSERT INTO rw_resource VALUES('Master of Thievery','https://steamcommunity.com/sharedfiles/filedetails/?id=3624575400','online_play','workshop_module','Unlisted Tabletop Simulator module');
+INSERT INTO rw_resource VALUES('Natura','https://drive.google.com/file/d/1Uqx2nCFXGQbchsb-ziamMvWpd-wjafHW/view?usp=drive_link','rules','file','Rules');
+INSERT INTO rw_resource VALUES('Natura','https://drive.google.com/file/d/1ziL6k4ADeBZcIGLi7LZo8n6Qudae9lw7/view?usp=drive_link','component','file','Player sheet');
+INSERT INTO rw_resource VALUES('Natura','https://drive.google.com/file/d/1lewGSVxHj2OjCQ7yvixCb_yKYpvcD1Ck/view?usp=drive_link','component','file','Goal cards');
+INSERT INTO rw_resource VALUES('On-LINE Kasino','https://drive.google.com/drive/folders/1OwFeoKoQhDkRlW3fdvD3BZDae0y4XjDK?usp=drive_link','game_files','folder','RULE & SHEET');
+INSERT INTO rw_resource VALUES('Rolling Fiefdoms','https://pnpstash.com/product/rolling-fiefdoms/','project_page','download_page','Latest version on PnP Stash');
+INSERT INTO rw_resource VALUES('Rolling Fiefdoms','https://drive.google.com/file/d/1uNVAlpQyDdZB5h6m7oe5Jk63wIFA1i1m/view','rules','file','Rulebook');
+INSERT INTO rw_resource VALUES('Rolling Fiefdoms','https://drive.google.com/drive/folders/12LFRdiDYX3YPq_QMl4JbCRk5JcG5dSNw','component','folder','Print Sheet: A4/US Letter, color/low ink');
+INSERT INTO rw_resource VALUES('Rolling Fiefdoms','https://drive.google.com/file/d/1HkYNoAXEncwHN2H8Out1KNG8IFpO_XP8/view','component','folder','Solo Challenges');
+INSERT INTO rw_resource VALUES('Rolling Fiefdoms','https://rolling-fiefdoms.edno.io/','online_play','web_app','Online Version');
+INSERT INTO rw_resource VALUES('Rolling Parks','https://drive.google.com/drive/folders/16v7VTo5twgoR7vqxphBPwZzgKzwatlS4?usp=sharing','game_files','folder','PnP files and rules');
+INSERT INTO rw_resource VALUES('Spellwrights Codex','https://drive.google.com/file/d/1Id7717KvewORCzAQwAaeKcmp2Eix6dZ3/view?usp=drive_link','component','file','Player sheets 2.0');
+INSERT INTO rw_resource VALUES('Spellwrights Codex','https://drive.google.com/file/d/1bs67oFp8FZcuJoyKzsQooV4ialp5O7oG/view?usp=drive_link','component','file','54 word cards original');
+INSERT INTO rw_resource VALUES('Spellwrights Codex','https://drive.google.com/file/d/1JBe884ojsF674bq--1aQXP3LAS1EG-UJ/view?usp=drive_link','component','file','54 word cards wizard themed');
+INSERT INTO rw_resource VALUES('Spellwrights Codex','https://drive.google.com/file/d/1c1lIjSTEv6XqG64kFFdFqvJz7gBTx76M/view?usp=drive_link','rules','file','Rules 2.0');
+INSERT INTO rw_resource VALUES('Skyfall','https://drive.google.com/drive/folders/1Px7jxTJUpDScf550HS8SErdUt4ocrgTs','game_files','folder','Game Rules and PNP Files; also repeated as Current game files');
+INSERT INTO rw_resource VALUES('Skyfall','https://clarkander-hash.github.io/SkyfallLevelGenerator/Level%20Generator.html','tool','web_app','Skyfall Level Generator');
+INSERT INTO rw_resource VALUES('Skyfall','https://youtube.com/watch?v=SMdtOxxhCgY','video','video','Skyfall Playthrough');
+INSERT INTO rw_resource VALUES('The Leaning Tower of Pisa','https://www.dropbox.com/scl/fo/4emb93d1osif1acs29n1q/AD_R0dTRVa_O8D57ryXOW98?rlkey=ja4fvc417fa6qpk9i4slpmjza&st=hdpsr7k2&dl=0','game_files','folder','Fan-made Christmas Tree version');
+INSERT INTO rw_resource VALUES('The Leaning Tower of Pisa','https://player.vimeo.com/video/1091452176?title=0&byline=0&portrait=0&dnt=1','video','video','Embedded Vimeo video 1091452176');
+INSERT INTO rw_resource VALUES('The Leaning Tower of Pisa','https://player.vimeo.com/video/743773116?title=0&byline=0&portrait=0&dnt=1','video','video','Embedded Vimeo video 743773116');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/a2617gy6dbiv6b17uybd7/Starter_Cards.pdf?rlkey=5osj435xky12crrtkcvb1gr2a&e=1&dl=0','component','file','Starter Cards');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/0bbwg1hacp88t2e4c8mla/Upgraded_Experience_Cards.pdf?rlkey=mdbg4lbohgxbexic0hsqpufdz&e=1&dl=0','component','file','Upgraded Cards');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/4q0h6vr2wml8zkbo0rkkp/Bachelor_Sheets.pdf?rlkey=rsnjtm7eh0z7gq78h7y9jkc5t&e=1&dl=0as','component','file','Bachelor Sheets');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/ew4wia81ck5829klkusjp/Protagonist_Sheets.pdf?rlkey=8lg7g3t3rs38hnsrs5qr3znfv&e=1&dl=0','component','file','Protagonist Sheets');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/pa3q63o5w8xwnappocijx/Objective-and-Encounter-Cards.pdf?rlkey=jawuie91n7k2e5tm9wk3jq32d&e=1&dl=0','component','file','Objective and Encounter Cards');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://www.dropbox.com/scl/fi/lcnc4pgxf1yzdyku2ffbd/Legend-of-Whispervale-Rulebook.pdf?rlkey=vud6o3cfqyjdtyqy7j9s1reic&e=1&dl=0','rules','file','Rulebook');
+INSERT INTO rw_resource VALUES('The Legend of Whispervale','https://steamcommunity.com/sharedfiles/filedetails/?id=3613719264','online_play','workshop_module','TTS build');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1OB1SbvQRsOCVylqVN5yP1xJ3-Doz7_RU/view?usp=drivesdk','video','video','How To Play Solo 2.1 Video; also labelled How To Play 2-4P 2.1 Video');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1IfcnfCqsKiBdPGKHP6ScXqZwqi0-CUUB/view?usp=drivesdk','component','file','Color Print Solo: Page 1');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1AdEsQzL8LDPoBG0ABpahQMObszwWD73J/view?usp=drivesdk','component','file','Color Print 2-4 Player: Page 2');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1VqXbtxgDy1xbddipv3AIxP6RfW-0tUWP/view?usp=drivesdk','component','file','Color Print 2-4 Player: Page 3');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1vH818mzHyd8-NlJDNA-F3rVmcWnhNogy/view?usp=drivesdk','component','file','Color Print 2-4 Player: Page 4');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1xjrDTGLHnmmXg3FotkdWvNi1-VQDDTmY/view?usp=drivesdk','component','file','Low Ink Page 1');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1ORqNfg0QHR87Tci93utVortP-qyLuvSW/view?usp=drivesdk','component','file','Low Ink Page 2');
+INSERT INTO rw_resource VALUES('Thieves of Bandervon','https://drive.google.com/file/d/1o7CH-39FfMEXBSj4c9qDbHR5TELCNjvR/view?usp=drivesdk','rules','file','Rules v2.2');
+INSERT INTO rw_resource VALUES('Vanguard Multi Asset Global Command','https://drive.google.com/file/d/1tMKdthSjCSzsjx0rrQnc9BbivVVeEUCx/view?usp=sharing','component','file','Map');
+INSERT INTO rw_resource VALUES('Vanguard Multi Asset Global Command','https://drive.google.com/file/d/1TKzlPMNyurFMRjBYvoa9y7dUwZKiVX4m/view?usp=sharing','rules','file','Rules');
+INSERT INTO rw_resource VALUES('Word Builders','https://youtube.com/watch?v=cLO06-8h8AQ','video','video','Half game playthrough (8 mins)');
+INSERT INTO rw_resource VALUES('Word Builders','https://drive.google.com/drive/folders/1tK3jz8ZSrt6tntLVFALqkWUU8EU9iajS?usp=sharing','game_files','folder','Folder with Files');
+INSERT INTO rw_resource VALUES('1899 - 1907 Black Death Brazil','https://drive.google.com/drive/folders/16P6w2n3rmFJcMQZ-2X7g_fndjbs8BAD0?usp=sharing','game_files','folder','Components and rules in Portuguese and English');
+INSERT INTO rw_resource VALUES('1899 - 1907 Black Death Brazil','https://www.youtube.com/watch?v=3uRoX0PhvWs&t=1607s','video','video','Instructional video/full game in Portuguese');
+INSERT INTO rw_resource VALUES('1899 - 1907 Black Death Brazil','https://www.youtube.com/watch?v=I-qKT57L6ZQ','video','video','Second video declared in WIP');
+INSERT INTO rw_resource VALUES('City Lights','https://drive.google.com/file/d/1yTFZPFPNMEPDbr34J8nzLc_ldEFjTc6Q/view?usp=sharing','game_files','file','Rules & Sheet v1.4');
+INSERT INTO rw_resource VALUES('City Lights','https://playingcards.io/4df8jf','online_play','web_app','PlayingCards.io Table 1');
+INSERT INTO rw_resource VALUES('City Lights','https://playingcards.io/dyv83d','online_play','web_app','PlayingCards.io Table 2');
+INSERT INTO rw_resource VALUES('City Lights','https://playingcards.io/vapbhq','online_play','web_app','PlayingCards.io Table 3');
+INSERT INTO rw_resource VALUES('Fortune Script','https://drive.google.com/drive/folders/1MD9Xfr2LPEfX-g2f2ScBpIBBDNvSvSoX?usp=drive_link','game_files','folder','PnP Files');
+INSERT INTO rw_resource VALUES('Fortune Script','https://steamcommunity.com/sharedfiles/filedetails/?id=3616294299','online_play','workshop_module','TTS mod');
+INSERT INTO rw_resource VALUES('On the Trail of Bigfoot','https://drive.google.com/file/d/1rR_yhkN3wN6K2fW9laBfJodqgM10A41h/view?usp=drive_link','rules','file','ENG Rulebook');
+INSERT INTO rw_resource VALUES('On the Trail of Bigfoot','https://drive.google.com/file/d/1aF2rC_ieFxC0vALVG1wQHgkbfljIwY0P/view?usp=drive_link','game_files','file','P&P files');
+INSERT INTO rw_resource VALUES('PIXIX','https://drive.google.com/drive/folders/1xZGWAgmjVLudHdxFVTCI_j-rky5O5Jow?usp=sharing','game_files','folder','PIXIX Rules and Files');
+INSERT INTO rw_resource VALUES('Ringleader','https://drive.google.com/drive/folders/1d0N0N-dS7UOyqc6vhie0PnvdShEy1DeD?usp=drive_link','game_files','folder','Playtest Files');
+INSERT INTO rw_resource VALUES('Roll & Pose','https://drive.google.com/drive/folders/12etbmJRyHHCBx_6PhYJtoOSymWijLuzh?usp=sharing','game_files','folder','Roll and Pose files');
+INSERT INTO rw_resource VALUES('Scribe','https://drive.google.com/file/d/1VBpCjnHAU15VUcGJK1dioHW8BtigDzvL/view?usp=drive_link','rules','file','Rules');
+INSERT INTO rw_resource VALUES('Scribe','https://youtu.be/lnFXsEHMNyc','video','video','Video Rules');
+INSERT INTO rw_resource VALUES('Scribe','https://drive.google.com/drive/folders/1eJVGpcnRZM-xleAPtdflkRq2lVlCf80k?usp=drive_link','game_files','folder','PnP files');
+INSERT INTO rw_resource VALUES('Scribe','https://steamcommunity.com/sharedfiles/filedetails/?id=3571308098','online_play','workshop_module','TTS Mod');
+INSERT INTO rw_resource VALUES('U2: Flights of the Dragon Lady','https://drive.google.com/file/d/1xeXUwyj2mRCD8KbvJ1b8ICOIR7m1wX4n/view?usp=sharing','rules','file','PDF v1015 rules');
+INSERT INTO rw_resource VALUES('U2: Flights of the Dragon Lady','https://drive.google.com/file/d/1CWeZiqywGpwObBCNP9dgElA90MIrmm_q/view?usp=sharing','component','file','18x18 Gameboard');
+INSERT INTO rw_resource VALUES('Yadoya','https://drive.proton.me/urls/8YHBB1NZ88#E3aEkB65vNxw','game_files','folder','Project folder: first draft rules and sheet');
+UPDATE entries SET wip_thread_url=(SELECT w.url FROM rw_wip w JOIN games g ON g.canonical_title=w.title WHERE g.id=entries.game_id) WHERE contest_id=22;
+DELETE FROM entry_resource_scans WHERE checked_at='2026-09-10' AND entry_id IN (SELECT id FROM entries WHERE contest_id=22);
+INSERT INTO entry_resource_scans(entry_id,checked_at,source_url,wip_status,resource_listing_status,notes) SELECT e.id,'2026-09-10',e.wip_thread_url,'found',CASE WHEN g.canonical_title IN ('Lithomacy','A Dragon''s Die','INFRARED','Necromancy: Roll Them Bones!','The Thirteenth Dimension','STRATOS','Wizard''s Tutelage') THEN 'none_declared' ELSE 'observed' END,CASE WHEN g.canonical_title IN ('Lithomacy','A Dragon''s Die','INFRARED','Necromancy: Roll Them Bones!','The Thirteenth Dimension','STRATOS','Wizard''s Tutelage') THEN 'Primo post renderizzato: nessun collegamento pertinente dichiarato osservato.' ELSE 'Primo post renderizzato: anchor, link dinamici e media incorporati censiti; destinazioni non aperte.' END FROM entries e JOIN games g ON g.id=e.game_id WHERE e.contest_id=22;
+INSERT OR IGNORE INTO remote_resources(game_id,kind,access_type,url,host,label,version_raw,availability_status,first_seen_at,last_verified_at) SELECT g.id,r.role,r.access_type,r.url,substr(substr(r.url,instr(r.url,'//')+2),1,instr(substr(r.url,instr(r.url,'//')+2),'/')-1),r.label,NULL,'unknown','2026-09-10','2026-09-10' FROM rw_resource r JOIN games g ON g.canonical_title=r.title;
+UPDATE remote_resources SET kind=(SELECT r.role FROM rw_resource r JOIN games g ON g.canonical_title=r.title WHERE g.id=remote_resources.game_id AND r.url=remote_resources.url), access_type=(SELECT r.access_type FROM rw_resource r JOIN games g ON g.canonical_title=r.title WHERE g.id=remote_resources.game_id AND r.url=remote_resources.url), label=(SELECT r.label FROM rw_resource r JOIN games g ON g.canonical_title=r.title WHERE g.id=remote_resources.game_id AND r.url=remote_resources.url), last_verified_at='2026-09-10' WHERE EXISTS(SELECT 1 FROM rw_resource r JOIN games g ON g.canonical_title=r.title WHERE g.id=remote_resources.game_id AND r.url=remote_resources.url);
+DELETE FROM entry_resource_mentions WHERE entry_id IN (SELECT id FROM entries WHERE contest_id=22);
+INSERT INTO entry_resource_mentions(entry_id,remote_resource_id,source_url,label_raw,content_role,is_primary,first_seen_at,last_seen_at) SELECT e.id,rr.id,e.wip_thread_url,r.label,r.role,CASE WHEN r.role='game_files' THEN 1 ELSE 0 END,'2026-09-10','2026-09-10' FROM rw_resource r JOIN games g ON g.canonical_title=r.title JOIN entries e ON e.game_id=g.id AND e.contest_id=22 JOIN remote_resources rr ON rr.game_id=g.id AND rr.url=r.url;
+INSERT INTO remote_resource_observations(remote_resource_id,observed_at,evidence_url,observation_kind,availability_status,version_raw,notes) SELECT rr.id,'2026-09-10',e.wip_thread_url,'declared_in_wip','not_checked',NULL,'Dichiarata nel primo post BGG; destinazione non aperta. Classificazione funzionale e tecnica provvisoria fino alla revisione completa del 2025.' FROM rw_resource r JOIN games g ON g.canonical_title=r.title JOIN entries e ON e.game_id=g.id AND e.contest_id=22 JOIN remote_resources rr ON rr.game_id=g.id AND rr.url=r.url WHERE NOT EXISTS(SELECT 1 FROM remote_resource_observations o WHERE o.remote_resource_id=rr.id AND o.observed_at='2026-09-10' AND o.evidence_url=e.wip_thread_url AND o.observation_kind='declared_in_wip');
+DROP TABLE rw_resource;
+DROP TABLE rw_wip;
 COMMIT;

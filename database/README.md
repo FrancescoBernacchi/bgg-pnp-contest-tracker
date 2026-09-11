@@ -12,7 +12,7 @@ La migrazione `004_monitoring_view_schedule.sql` espone anche `starts_at` nella 
 
 La migrazione `005_contest_phase_history.sql` introduce gli snapshot storici delle fasi e delle scadenze. La migrazione registra come baseline i valori correnti; i controlli successivi devono collegare i nuovi snapshot al relativo `contest_checks.id`.
 
-La migrazione `006_entry_resource_provenance.sql` distingue la scansione del WIP, la menzione di una risorsa nella specifica entry e la successiva verifica della risorsa. `remote_resources.access_type` separa file diretti, cartelle, pagine di distribuzione, giochi nel browser e moduli per simulatori.
+La migrazione `006_entry_resource_provenance.sql` distingue la scansione del WIP, la menzione di una risorsa nella specifica entry e la successiva verifica della risorsa. `remote_resources.kind` conserva la funzione attribuita dal contesto e `remote_resources.access_type` la forma tecnica. I valori usati durante l’esplorazione annuale sono provvisori: categorie ed enumerazioni saranno consolidate soltanto dopo il confronto di tutti i contest 2025. URL identici rappresentano una risorsa unica, mentre descrizioni e contesto della specifica entry restano nelle menzioni.
 
 ## Contratto dei rilevamenti differenziali
 
