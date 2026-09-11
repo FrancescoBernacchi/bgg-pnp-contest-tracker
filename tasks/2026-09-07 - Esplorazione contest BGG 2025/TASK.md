@@ -1,7 +1,7 @@
 # Esplorazione contest BGG 2025
 
 ## Stato
-Chiuso il 10 settembre 2026. Completati baseline, undici censimenti e ricognizione conclusiva di copertura.
+Riaperto il 10 settembre 2026 per estendere l'esplorazione annuale a WIP BGG e collegamenti alle risorse dichiarati nei primi post. Baseline, undici censimenti e ricognizione dei contest sono completati.
 
 ## Scopo e confini
 Esplorare i contest di game design PnP dell'edizione 2025 su BoardGameGeek, quindi censire entry, fasi e risultati per incrementi verificati. L'anno è quello dichiarato dall'edizione, anche quando il calendario attraversa due anni. Nessuna apertura o acquisizione di materiali di gioco. I nuovi casi adiacenti dubbi restano da valutare.
@@ -134,3 +134,25 @@ La verifica finale conferma 22 contest complessivi, 11 dei quali attribuiti al 2
 ## Esito e seguito
 
 Il perimetro 2025 è completo secondo le fonti BGG disponibili alla data di chiusura. Un eventuale censimento delle challenge da 24 ore richiederà un task autonomo, perché segue un ciclo episodico diverso. La successiva esplorazione annuale a ritroso può iniziare dal 2024 in un nuovo task dedicato.
+
+### Sondaggio WIP e risorse Roll & Write
+
+Su richiesta dell'utente, il 10 settembre 2026 è stato avviato un sondaggio per estendere la profondità dei task annuali. Il modello distingue ora concettualmente l'evidenza di iscrizione, il thread WIP BGG dedicato e le molteplici risorse che il primo post può dichiarare. Il sondaggio non ha aperto né scaricato i materiali esterni.
+
+Il campione Roll & Write mostra casi diversi: `Rolling Fiefdoms` dichiara una pagina gratuita corrente su PnP Stash e collegamenti separati per regolamento, fogli, sfide solitarie e versione online; `Word Builders` dichiara una cartella di file e un video; per `Doodle Bash!` e `The Leaning Tower of Pisa` il WIP è stato individuato ma i collegamenti ai materiali non erano esposti dai risultati indicizzati; per la ritirata `A Dragon's Die` non è stato verificato un WIP dedicato. I risultati e la proposta di modello sono documentati in `sources/2025-ROLL-WRITE-RESOURCE-SURVEY.md`.
+
+Lo schema corrente ha già `entries.wip_thread_url` e la relazione uno-a-molti `remote_resources`, ma non conserva adeguatamente la menzione del collegamento nella specifica entry né la storia delle osservazioni. La migrazione `006_entry_resource_provenance.sql` aggiunge `entry_resource_scans`, `entry_resource_mentions`, `remote_resource_observations` e il tipo tecnico di accesso alla risorsa.
+
+La scansione è stata estesa a tutte le 37 entry mediante `catalog/2025-roll-write-wips-resources.sql`. Una prima ricerca basata sui risultati indicizzati aveva individuato soltanto 18 WIP. La procedura corretta usa il roster originale come elenco di controllo, porta ogni componente dinamico nell'area visibile, attende la risoluzione BGG e legge quindi l'URL effettivo. Sono ora verificati tutti i 37 WIP. In questo incremento correttivo non sono stati esaminati i materiali esterni.
+
+Lo script è stato verificato su una copia e applicato al database operativo. Dopo la correzione sono presenti 37 scansioni e 37 `wip_thread_url`; il censimento delle risorse sarà rieseguito separatamente. Integrità SQLite e chiavi esterne sono valide. Il dettaglio tabellare è conservato in `sources/2025-ROLL-WRITE-WIPS-RESOURCES.md`.
+
+### Esperienza promossa: navigazione BGG adattiva
+
+L'errore iniziale non dipendeva dall'assenza dei collegamenti nel roster: i componenti BGG `gg-item-link` esponevano inizialmente `href="#"` e risolvevano la destinazione soltanto quando entravano nell'area visibile. La ricerca indicizzata usata come sostituto aveva quindi prodotto una copertura incompleta e costosa. Portando sistematicamente nell'area visibile tutti i componenti dei due post autorevoli e verificando il risultato contro le 21 entry finali e le 16 ritirate, sono stati ottenuti 37 URL WIP univoci su 37.
+
+Questa esperienza è stata promossa nella skill locale `.agents/skills/bgg-contest-navigation/SKILL.md` e nel relativo playbook. La regola permanente è partire dalla struttura renderizzata e dalla fonte autorevole, estrarre l'intero roster in blocco e misurare la completezza; i fallback interni o web sono riservati agli scarti residui. Il playbook dovrà evolvere quando contest più vecchi o serie diverse presenteranno post multipli, GeekList, Hub, spoiler, paginazione, link cancellati o altri meccanismi.
+
+### Censimento completo delle risorse dichiarate Roll & Write
+
+Il 10 settembre 2026 sono stati analizzati i primi post renderizzati di tutte le 37 WIP, senza seguire destinazioni esterne. Il censimento registra 82 risorse distinte in 30 entry; 7 WIP non dichiarano collegamenti pertinenti osservabili. Sono stati considerati anchor ordinari, link dinamici e media incorporati, con deduplicazione degli URL e conservazione delle descrizioni. La tassonomia funzionale e tecnica rimane provvisoria fino alla scansione di tutti i contest 2025.

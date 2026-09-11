@@ -8,7 +8,11 @@ Costruire e mantenere una collezione locale, ricercabile e tracciabile di giochi
 
 Catalogare tutte le entries comprese nel perimetro del task e acquisire i materiali soltanto per i giochi selezionati. Partire dai contest attivi più recenti. Basare la priorità principalmente su classifiche e votazioni BGG, distinguendo sempre risultati ufficiali da segnali sostitutivi.
 
+Nei task annuali di esplorazione, per ogni entry cercare anche il thread WIP BGG dedicato e registrare i collegamenti alle risorse dichiarati nel primo post senza seguirli o scaricare file. Distinguere sempre WIP non individuato, risorse non osservabili, nessuna risorsa dichiarata e risorse dichiarate ma non verificate. La verifica degli host esterni e l'acquisizione appartengono al task dedicato alle singole entry.
+
 Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzati. Per le varianti dipendenti da un gioco base, registrare tale dipendenza e non presumere che esistano componenti PnP aggiuntivi.
+
+L'agente deve sviluppare progressivamente competenza specialistica nella navigazione delle pagine BGG relative a contest, roster, entry, WIP, risultati e risorse. Per queste attività applicare la skill locale `.agents/skills/bgg-contest-navigation/SKILL.md`. Quando emerge una struttura nuova o una strategia migliore, registrare nel task l'evidenza specifica e promuovere il pattern riutilizzabile nel playbook della skill dopo verifica. Preferire l'estrazione completa dalla fonte BGG autorevole; usare ricerche sostitutive soltanto per anomalie residue.
 
 ## Mappa del progetto
 
@@ -22,6 +26,7 @@ Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzat
 - `catalog/`: manifest ed esportazioni testuali versionabili.
 - `library/`: materiali PnP acquisiti; contenuto escluso da Git.
 - `sources/`: registri e note di provenienza riutilizzabili.
+- `.agents/skills/bgg-contest-navigation/`: skill locale e playbook evolutivo per esplorare contest, roster, entry, WIP, risultati e risorse BGG.
 - `sources/MONITORING_CALENDAR.md`: taccuino autorevole delle prossime finestre di controllo BGG e degli ultimi rilevamenti.
 - `tasks/`: workspace auditabili delle attività non banali.
 - `outputs/`: risultati rigenerabili, esclusi da Git salvo documentazione.
@@ -33,6 +38,8 @@ Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/
 Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descrizione`, con la data di apertura del task e una descrizione breve che ne rappresenti lo scopo effettivo. Appena il compito è sufficientemente compreso, verificare autonomamente il titolo e rinominare il task se non rispetta la convenzione o non riflette più correttamente il perimetro concordato; non attendere una richiesta specifica dell’utente. Soltanto per l’esplorazione dei contest organizzata in un task distinto per ciascun anno usare `YYYY-MM-DD - Esplorazione contest BGG AAAA`: `YYYY-MM-DD` è la data di apertura del task, mentre `AAAA` è l’anno dei contest esplorati e in generale è diverso dall’anno della data di apertura.
 
 ## Regole della conoscenza
+
+La tassonomia dei collegamenti resta provvisoria durante l'esplorazione annuale. Conservare separatamente funzione dichiarata, forma tecnica ed evidenza; accorpare URL identici senza perdere le diverse menzioni. Chiudere categorie ed enumerazioni soltanto dopo il confronto di tutti i contest dell'anno.
 
 Conservare separatamente dati originali, valori normalizzati e inferenze. Ogni informazione volatile deve includere fonte e data di verifica. Una nota di task diventa conoscenza condivisa solo dopo verifica e promozione deliberata. Non perdere nomi o stati storici quando un gioco viene rinominato, ritirato o aggiornato.
 
@@ -56,6 +63,17 @@ Il database SQLite è operativo e locale. Schema, migrazioni, manifest ed esport
 ## Evoluzione strutturale
 
 Cambiare la struttura solo quando emerge un ciclo di vita distinto o un pattern stabile. Aggiornare insieme `PROJECT.md`, questa mappa e lo stato del progetto quando una modifica architetturale diventa permanente.
+
+## Salvaguardia del sandbox Windows Codex
+
+- Trattare `.agents`, `.git`, `.codex` e le altre directory di controllo riconosciute dal runtime come percorsi speciali. Non eliminare, rinominare o ricreare queste directory come rimedio a problemi di accesso.
+- Se `.agents` non esiste e occorre introdurre una skill locale, non crearne la directory radice tramite `apply_patch` o un altro processo eseguito nel sandbox. Verificare prima esistenza, proprietario e ACL; predisporre la directory sotto l'identità dell'utente Windows mediante un'operazione fuori sandbox esplicitamente autorizzata, quindi verificare il proprietario prima di aggiungere `.agents/skills/...`.
+- Se `.agents` esiste, modificarne soltanto i file interni richiesti e non sostituire la directory radice. Prima di una manutenzione strutturale della skill verificare che il proprietario della radice sia l'utente Windows interattivo, non `CodexSandboxOffline`.
+- Dopo un ripristino da usage limit, un riavvio o aggiornamento di Codex oppure la ripresa di un task interrotto, eseguire nel sandbox ordinario un preflight leggero: `Get-Location`, `git status --short --branch` e una breve lettura di un file del workspace. Per i task che richiedono CUA verificare anche l'inizializzazione del browser con una pagina neutra prima del lavoro esterno esteso.
+- Se un comando banale fallisce con `setup refresh had errors`, interrompere il lavoro sostanziale: non reiterare indiscriminatamente i comandi e non usare `require_escalated` per proseguire il workflow come soluzione permanente.
+- In caso di tale errore, verificare prima `~/.codex/.sandbox/setup_error.json`, la coda del log sandbox giornaliero, il percorso indicato da `SetNamedSecurityInfoW` e proprietario/ACL di quel percorso rispetto alla directory padre. Distinguere il wrapper generico dall'errore Windows concreto.
+- Usare `require_escalated` soltanto per diagnosi in sola lettura o per una correzione minima esplicitamente autorizzata. Non modificare ACL e non cancellare cache, configurazioni, plugin, sessioni o cronologia senza evidenza specifica e autorizzazione dell'utente.
+- Dopo una correzione verificare separatamente: comando sandbox banale, lettura locale, scrittura temporanea e sua rimozione, inizializzazione CUA, pagina neutra e pagina di lavoro. Un comando riuscito fuori sandbox non dimostra che il sandbox sia ripristinato.
 
 ## Supporto Git e GitHub
 

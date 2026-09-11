@@ -27,6 +27,7 @@ La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distr
 - consultazione tramite interfaccia locale con ricerca e filtri;
 - produzione di esportazioni e report riproducibili.
 - pianificazione dei controlli mediante un taccuino versionabile delle scadenze e delle finestre di riesame.
+- sviluppo incrementale di strategie verificabili per navigare le diverse strutture storiche di contest, roster, entry, WIP e risorse BGG.
 
 Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
 
@@ -50,6 +51,10 @@ Fonte iniziale autorevole esterna: BoardGameGeek. Punti di ingresso noti:
 - pagine file BGG e collegamenti pubblici a servizi esterni.
 
 Ogni dato volatile deve riportare URL di provenienza e data dell'ultima verifica.
+
+La navigazione BGG segue la skill locale `.agents/skills/bgg-contest-navigation/SKILL.md` e il relativo playbook evolutivo. Ogni roster viene estratto anzitutto dalla fonte BGG autorevole e verificato quantitativamente; ricerche interne o web intervengono solo sugli scarti residui. I nuovi pattern di pagina vengono documentati con contesto, metodo, verifica e limiti, così che le esplorazioni successive possano adattarsi anche a organizzazioni storiche differenti.
+
+L'esplorazione annuale raccoglie anche il thread WIP BGG dedicato e i collegamenti alle risorse dichiarati nel primo post, senza aprire le destinazioni esterne. `entry_resource_scans` conserva anche gli esiti negativi o non osservabili; `entry_resource_mentions` collega la risorsa alla specifica entry e alla fonte BGG; `remote_resource_observations` distingue la dichiarazione nel WIP dalla successiva verifica di disponibilità.
 
 Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources/MONITORING_CALENDAR.md`. Il monitoraggio evita rilevamenti duplicati nella stessa giornata e distingue i controlli tecnici locali dalle nuove osservazioni dello stato pubblicato su BGG.
 
@@ -104,3 +109,7 @@ Per il monitoraggio la priorità è determinata dal taccuino: eventi di fase imm
 - eventuale evoluzione dello stack solo qualora la scala o nuovi flussi la richiedano;
 - soglie operative per l'acquisizione quando un contest non dispone ancora di votazioni;
 - eventuali limiti massimi di spazio occupato dalla libreria.
+
+## Classificazione evolutiva delle risorse dichiarate
+
+La classificazione dei collegamenti dichiarati nei WIP evolve per osservazione. Funzione, forma tecnica e stato dell'evidenza restano dimensioni separate. I valori usati durante il censimento sono provvisori e saranno consolidati soltanto dopo la scansione trasversale di tutti i contest 2025; testo e contesto originali restano preservati.
