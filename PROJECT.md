@@ -31,6 +31,8 @@ La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distr
 
 Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
 
+`PROJECT_PROGRESS.md` è invece il cruscotto trasversale versionabile: integra copertura informativa, pipeline, acquisizioni, attività aperte e salute degli strumenti. Le viste annuali per tipologia e per entry sono rigenerate dal database con `app/generate_project_progress.py`; le parti qualitative sono aggiornate dall'agente nello stesso incremento che modifica dati o stato. Il documento non sostituisce il report tecnico rigenerabile né il calendario dei controlli.
+
 Dal 7 settembre 2026 l'interfaccia di consultazione è realizzata con Python 3.12+ e sola libreria standard (`app/server.py`), asset HTML/CSS/JavaScript locali (`app/static/`) e launcher PowerShell (`app/start.ps1`). Non richiede build o dipendenze aggiuntive. Il server è limitato a `127.0.0.1`; ogni richiesta usa una transazione SQLite in sola lettura (`mode=ro`, `query_only`). Ricerca, filtri, navigazione e aggiornamento sono operazioni locali sui metadati; la libreria dei materiali non è esposta né consultata. La guida operativa è `app/README.md`.
 
 La scheda entry espone separatamente i collegamenti alle risorse e i requisiti materiali descritti testualmente. Per questi ultimi conserva testo e contesto originali accanto a normalizzazione, quantità, obbligatorietà e modalità di approvvigionamento; fonte, data e copertura precisano se la rilevazione riguarda soltanto il primo post o include anche le regole. Stati negativi e dati mancanti non vengono trasformati in assenze certe.
@@ -71,6 +73,7 @@ Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources
 - libreria locale dei materiali selezionati;
 - manifest con versione, provenienza, data di acquisizione, dimensione e hash dei file;
 - report su contest, disponibilità, classifiche e priorità di acquisizione.
+- cruscotto Markdown versionabile dell'avanzamento complessivo.
 
 ## Stakeholder / destinatari
 

@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+"""Aggiorna le viste annuali generate in PROJECT_PROGRESS.md dal database locale."""
+
+from __future__ import annotations
+
+import argparse
+import re
+import sqlite3
+from collections import defaultdict
+from pathlib import Path
+
+
+START_MARKER = "<!-- BEGIN GENERATED ANNUAL PROGRESS -->"
+END_MARKER = "<!-- END GENERATED ANNUAL PROGRESS -->"
+EMPTY_CELL = "\u00a0"
+
+
+def escape_cell(value: object) -> str:
+    return str(value).replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+
+
+def markdown_link(label: object, url: object) -> str:
+    text = escape_cell(label).replace("[", "\\[").replace("]", "\\]")
+    target = str(url or "").strip().replace(" ", "%20").replace("(", "%28").replace(")", "%29")
+    return f"[{text}]({target})" if target else text
+
+
+def short_entry_title(value: object) -> str:
+    """Riduce un titolo WIP descrittivo a un nome breve per la sola visualizzazione."""
+    original = str(value).strip()
+    descriptive = bool(re.search(
+        r"(?:\bwip\b|20\d{2}.*contest|components?\s+(?:available|ready)|playtest\s+ready)",
+        original, flags=re.IGNORECASE,
+    ))
+    title = original
+    title = re.sub(r"^\s*(?:\[[^\]]+\]\s*)+", "", title)
+    title = re.sub(
+        r"^\s*\((?:[^)]*(?:wip|playtest|component|contest|ready)[^)]*)\)\s*",
+        "", title, flags=re.IGNORECASE,
+    )
+    title = re.sub(r"^\s*wip\s*[:}\]-]*\s*", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*\[[^\]]+\]\s*", " ", title)
+    title = re.split(r"\s+\|\s+|\s+--+\s+", title, maxsplit=1)[0]
+    title = re.sub(r"\s+[-–—]\s+.*$", "", title)
+    title = re.sub(
+        r"\s+\((?:[^)]*(?:20\d{2}|contest|submission|component|ready)[^)]*)\).*$",
+        "", title, flags=re.IGNORECASE,
+    )
+    if descriptive:
+        title = re.sub(r"\s*\(.*$", "", title)
+        title = re.sub(r"\s+20\d{2}\s+.*$", "", title, flags=re.IGNORECASE)
+        title = re.sub(r",\s+(?:an?\b|the\b|solo\b|entry\b|revised\b|\d).*$", "", title,
+                       flags=re.IGNORECASE)
+        title = re.sub(
+            r":\s+(?=[^:]*\b(?:abstract|card|dice|game|puzzle|roll|solo|strategy|wargame)\b).*$",
+            "", title, flags=re.IGNORECASE,
+        )
+        title = re.sub(r"\s+(?:components?|rules?)\s+(?:available|ready).*$", "", title,
+                       flags=re.IGNORECASE)
+    title = re.sub(r"\s+", " ", title).strip(" -–—:[]")
+    return title or original
+
+
+def short_status(value: str) -> str:
+    labels = {
+        "idea": "Idea", "wip": "WIP", "components_available": "Components",
+        "playtest_ready": "Playtest", "contest_ready": "Ready",
+        "withdrawn": "Withdrawn", "incomplete": "Incomplete",
+        "disqualified": "Disqualified",
+    }
+    return labels.get(value, "")
+
+
+def choose_main_category(categories: list[tuple[str, int]]) -> str | None:
+    """Sceglie una classifica generale riproducibile, privilegiando i piazzamenti."""
+    if not categories:
+        return None
+
+    def score(item: tuple[str, int]) -> tuple[int, int, str]:
+        category, ranked_count = item
+        name = category.casefold()
+        excluded = ("art", "theme", "rule", "playtest", "designer", "jury")
+        if "overall" in name:
+            priority = 0
+        elif name in {"best game", "main", "grand prize"}:
+            priority = 1
+        elif "best game" in name:
+            priority = 2
+        elif any(token in name for token in excluded):
+            priority = 5
+        else:
+            priority = 3
+        return priority, -ranked_count, name
+
+    return min(categories, key=score)[0]
+
+
+def bullet(done: int, total: int, partial: int = 0) -> str:
+    if total > 0 and done >= total:
+        return "🟢"
+    if done > 0 or partial > 0:
+        return "🟡"
+    return "🔴"
+
+
+def build_generated_section(db: sqlite3.Connection) -> str:
+    db.row_factory = sqlite3.Row
+    contests = db.execute(
+        """SELECT c.id,c.year,c.name,c.status_normalized,c.source_url,
+                  cs.canonical_name,COUNT(e.id) entry_count
+           FROM contests c JOIN contest_series cs ON cs.id=c.series_id
+           LEFT JOIN entries e ON e.contest_id=c.id GROUP BY c.id
+           ORDER BY cs.canonical_name COLLATE NOCASE,c.year"""
+    ).fetchall()
+    years = sorted({r["year"] for r in contests if r["year"] is not None}, reverse=True)
+    contest_count_by_year = {
+        year: sum(1 for contest in contests if contest["year"] == year) for year in years
+    }
+    series = sorted({r["canonical_name"] for r in contests}, key=str.casefold)
+    contest_by_series_year = {(r["canonical_name"], r["year"]): r for r in contests}
+    latest_contest_by_series = {
+        series_name: max((r for r in contests if r["canonical_name"] == series_name),
+                         key=lambda r: (r["year"] or 0, r["id"]))
+        for series_name in series
+    }
+
+    category_counts: dict[int, list[tuple[str, int]]] = defaultdict(list)
+    for row in db.execute(
+        """SELECT contest_id,category,SUM(CASE WHEN rank IS NOT NULL THEN 1 ELSE 0 END) ranked
+           FROM rankings GROUP BY contest_id,category"""
+    ):
+        category_counts[row["contest_id"]].append((row["category"], row["ranked"]))
+
+    summary: dict[int, dict[str, int | str | None]] = {}
+    for contest in contests:
+        cid, total = contest["id"], contest["entry_count"]
+        full_reads = db.execute(
+            """SELECT COUNT(DISTINCT entry_id) FROM entry_material_scans
+               WHERE entry_id IN (SELECT id FROM entries WHERE contest_id=?)
+               AND coverage_scope='rules_integrated'""", (cid,)
+        ).fetchone()[0]
+        any_reads = db.execute(
+            """SELECT COUNT(DISTINCT entry_id) FROM entry_material_scans
+               WHERE entry_id IN (SELECT id FROM entries WHERE contest_id=?)""", (cid,)
+        ).fetchone()[0]
+        ranking_categories = db.execute(
+            "SELECT COUNT(DISTINCT category) FROM rankings WHERE contest_id=?", (cid,)
+        ).fetchone()[0]
+        downloaded = db.execute(
+            """SELECT COUNT(DISTINCT e.id) FROM entries e
+               JOIN acquisitions a ON a.game_id=e.game_id
+               JOIN acquired_files af ON af.acquisition_id=a.id WHERE e.contest_id=?""", (cid,)
+        ).fetchone()[0]
+        status_rows = db.execute(
+            """SELECT status_normalized,COUNT(*) count FROM entries
+               WHERE contest_id=? GROUP BY status_normalized
+               ORDER BY count DESC,status_normalized COLLATE NOCASE""", (cid,)
+        ).fetchall()
+        known_statuses = sum(row["count"] for row in status_rows if row["status_normalized"] != "unknown")
+        entry_statuses = ", ".join(f"{row['status_normalized']} {row['count']}" for row in status_rows)
+        summary[cid] = dict(total=total, full_reads=full_reads, any_reads=any_reads,
+                            ranking_categories=ranking_categories, downloaded=downloaded,
+                            known_statuses=known_statuses, entry_statuses=entry_statuses,
+                            main_category=choose_main_category(category_counts[cid]))
+
+    lines = [
+        START_MARKER,
+        "## A. Sintesi immediata per anno",
+        "",
+        "Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti.",
+        "",
+        "| N. | Tipologia e indicatore | " + " | ".join(map(str, years)) + " |",
+        "|---:|:---|" + ":---|" * len(years),
+        f"| {EMPTY_CELL} | {EMPTY_CELL} | "
+        + " | ".join(f"**{contest_count_by_year[year]} contest**" for year in years)
+        + " |",
+    ]
+    for contest_number, series_name in enumerate(series, start=1):
+        metrics = {"Stati entry": [], "Censimento entry": [], "Classifiche": [],
+                   "Lettura materiali": [], "Download materiali": []}
+        for year in years:
+            contest = contest_by_series_year.get((series_name, year))
+            if contest is None:
+                for cells in metrics.values():
+                    cells.append("—")
+                continue
+            values = summary[contest["id"]]
+            total = int(values["total"])
+            is_closed = contest["status_normalized"] in {"complete", "cancelled"}
+            entry_icon = "🔴" if total == 0 else ("🟢" if is_closed else "🟡")
+            ranking_count = int(values["ranking_categories"])
+            reading_icon = bullet(int(values["any_reads"]), total)
+            downloaded = int(values["downloaded"])
+            known_statuses = int(values["known_statuses"])
+            status_icon = "🔴" if known_statuses == 0 else ("🟢" if known_statuses == total else "🟡")
+            metrics["Stati entry"].append(f"{status_icon} {escape_cell(values['entry_statuses'])}")
+            metrics["Censimento entry"].append(f"{entry_icon} {total}")
+            metrics["Classifiche"].append(f"{'🟢' if ranking_count else '🔴'} {ranking_count}")
+            metrics["Lettura materiali"].append(
+                f"{reading_icon} {values['any_reads']}/{total} entry"
+            )
+            metrics["Download materiali"].append(f"{bullet(downloaded, total)} {downloaded}/{total} entry")
+        latest_contest = latest_contest_by_series[series_name]
+        series_link = markdown_link(series_name, latest_contest["source_url"])
+        lines.append(f"| {contest_number} | **{series_link}** | "
+                     + " | ".join(EMPTY_CELL for _ in years) + " |")
+        for metric, cells in metrics.items():
+            label = "\u00a0\u00a0\u00a0\u00a0" + metric
+            lines.append(f"| {EMPTY_CELL} | {label} | " + " | ".join(cells) + " |")
+
+    lines.extend(["", "## B. Dettaglio delle entry per anno", "",
+                  "Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione registrata, `🔴` non iniziata); **D** = download (`🟢` tutte le risorse dichiarate associate a file acquisiti, `🟡` solo una parte, `🔴` nessun file). Le entry sono ordinate per la classifica principale scelta; quelle senza posizione seguono in ordine alfabetico. Se non esiste una classifica adatta, l'intero contest è alfabetico. La classifica usata è indicata sotto la tabella.", ""])
+
+    detail_years = sorted(years)
+    for year in detail_years:
+        year_contests = sorted((r for r in contests if r["year"] == year), key=lambda r: r["name"].casefold())
+        lines.extend([f"### {year}", ""])
+        entries_by_contest: dict[int, list[tuple[str, str]]] = {}
+        category_by_contest: dict[int, str] = {}
+        for contest in year_contests:
+            cid = contest["id"]
+            main_category = summary[cid]["main_category"]
+            rows = db.execute(
+                """SELECT e.id,e.game_id,e.status_normalized,e.wip_thread_url,e.entry_url,
+                          g.canonical_title,
+                   (SELECT MAX(CASE s.coverage_scope WHEN 'rules_integrated' THEN 2 ELSE 1 END)
+                    FROM entry_material_scans s WHERE s.entry_id=e.id) read_level,
+                   (SELECT COUNT(DISTINCT rr.id) FROM entry_resource_mentions erm
+                    JOIN remote_resources rr ON rr.id=erm.remote_resource_id WHERE erm.entry_id=e.id) resource_count,
+                   (SELECT COUNT(DISTINCT af.remote_resource_id) FROM acquisitions a
+                    JOIN acquired_files af ON af.acquisition_id=a.id
+                    WHERE a.game_id=e.game_id AND af.remote_resource_id IS NOT NULL) downloaded_resources,
+                   (SELECT COUNT(*) FROM acquisitions a JOIN acquired_files af ON af.acquisition_id=a.id
+                    WHERE a.game_id=e.game_id) file_count,
+                   (SELECT MIN(r.rank) FROM rankings r WHERE r.contest_id=e.contest_id
+                    AND r.game_id=e.game_id AND r.category=?) main_rank
+                   FROM entries e JOIN games g ON g.id=e.game_id WHERE e.contest_id=?
+                   ORDER BY main_rank IS NULL,main_rank,g.canonical_title COLLATE NOCASE,e.id""",
+                (main_category, cid),
+            ).fetchall()
+            entry_cells = []
+            for entry in rows:
+                read_icon = "🟢" if entry["read_level"] is not None else "🔴"
+                if entry["file_count"] == 0:
+                    download_icon = "🔴"
+                elif entry["resource_count"] > 0 and entry["downloaded_resources"] >= entry["resource_count"]:
+                    download_icon = "🟢"
+                else:
+                    download_icon = "🟡"
+                rank = f"#{entry['main_rank']} " if entry["main_rank"] is not None else ""
+                status_label = short_status(entry["status_normalized"])
+                status_suffix = f" — {status_label}" if status_label else ""
+                entry_link = markdown_link(
+                    short_entry_title(entry["canonical_title"]),
+                    entry["wip_thread_url"] or entry["entry_url"],
+                )
+                entry_cells.append((
+                    f"{rank}{entry_link}{status_suffix}",
+                    f"L {read_icon} · D {download_icon}",
+                ))
+            entries_by_contest[cid] = entry_cells
+            category_note = escape_cell(main_category) if main_category else "ordine alfabetico"
+            category_by_contest[cid] = category_note
+        block_size = 6
+        blocks = [year_contests[index:index + block_size]
+                  for index in range(0, len(year_contests), block_size)]
+        for block_number, block in enumerate(blocks, start=1):
+            if len(blocks) > 1:
+                lines.extend([f"#### Gruppo {block_number} di {len(blocks)}", ""])
+            lines.extend([
+                "| N. | " + " | ".join(markdown_link(r["name"], r["source_url"]) for r in block) + " |",
+                "|---:|" + ":---|" * len(block),
+                "| **Classifica utilizzata per l'ordinamento delle Entry** | "
+                + " | ".join(f"**{category_by_contest[contest['id']]}**" for contest in block)
+                + " |",
+            ])
+            max_entries = max((len(entries_by_contest[c["id"]]) for c in block), default=0)
+            for index in range(max_entries):
+                name_cells = [entries_by_contest[contest["id"]][index][0]
+                              if index < len(entries_by_contest[contest["id"]]) else EMPTY_CELL
+                              for contest in block]
+                status_cells = [entries_by_contest[contest["id"]][index][1]
+                                if index < len(entries_by_contest[contest["id"]]) else EMPTY_CELL
+                                for contest in block]
+                lines.append(f"| {index + 1} | " + " | ".join(name_cells) + " |")
+                lines.append(f"| {EMPTY_CELL} | " + " | ".join(status_cells) + " |")
+            lines.append("")
+        lines.append("")
+    lines.append(END_MARKER)
+    return "\n".join(lines)
+
+
+def update_document(document: Path, generated: str) -> None:
+    text = document.read_text(encoding="utf-8")
+    if START_MARKER in text and END_MARKER in text:
+        before, remainder = text.split(START_MARKER, 1)
+        _, after = remainder.split(END_MARKER, 1)
+        updated = before.rstrip() + "\n\n" + generated + after
+    else:
+        anchor = "\n## Legenda\n"
+        if anchor not in text:
+            raise ValueError("Sezione 'Legenda' non trovata nel documento")
+        before, after = text.split(anchor, 1)
+        updated = before.rstrip() + "\n\n" + generated + "\n\n## Legenda\n" + after
+    document.write_text(updated, encoding="utf-8", newline="\n")
+
+
+def main() -> None:
+    project_root = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--database", type=Path, default=project_root / "database" / "pnp_collection.sqlite3")
+    parser.add_argument("--output", type=Path, default=project_root / "PROJECT_PROGRESS.md")
+    args = parser.parse_args()
+    uri = f"file:{args.database.resolve().as_posix()}?mode=ro"
+    with sqlite3.connect(uri, uri=True) as db:
+        generated = build_generated_section(db)
+    update_document(args.output, generated)
+
+
+if __name__ == "__main__":
+    main()

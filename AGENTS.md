@@ -28,12 +28,17 @@ L'agente deve sviluppare progressivamente competenza specialistica nella navigaz
 - `sources/`: registri e note di provenienza riutilizzabili.
 - `.agents/skills/bgg-contest-navigation/`: skill locale e playbook evolutivo per esplorare contest, roster, entry, WIP, risultati e risorse BGG.
 - `sources/MONITORING_CALENDAR.md`: taccuino autorevole delle prossime finestre di controllo BGG e degli ultimi rilevamenti.
+- `PROJECT_PROGRESS.md`: cruscotto autorevole e versionabile dell'avanzamento trasversale su copertura, pipeline, attività, acquisizioni e strumenti.
 - `tasks/`: workspace auditabili delle attività non banali.
 - `outputs/`: risultati rigenerabili, esclusi da Git salvo documentazione.
 
 ## Workflow dei task
 
 Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/TASK.md`. Il task di bootstrap usa eccezionalmente `2026-09-04 - SETUP INIZIALE PROGETTO`. Definire scope, input, deliverable e criteri di successo prima di operare; lavorare per incrementi verificabili; chiudere registrando verifiche, decisioni e risultati riutilizzabili.
+
+Quando un incremento modifica copertura, conteggi, fase della pipeline, priorità, blocchi, acquisizioni o stato degli strumenti, aggiornare nello stesso incremento `PROJECT_PROGRESS.md` secondo il suo protocollo di manutenzione, prima di chiudere `TASK.md`. Non aggiornare il cruscotto per una mera rigenerazione di output priva di cambiamenti ai dati o allo stato.
+
+Se cambiano contest, entry, classifiche, scansioni dei materiali, acquisizioni o file acquisiti, rigenerare prima le sezioni annuali A e B con `app/generate_project_progress.py`; non modificare manualmente il contenuto compreso tra i marcatori HTML generati.
 
 Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descrizione`, con la data di apertura del task e una descrizione breve che ne rappresenti lo scopo effettivo. Appena il compito è sufficientemente compreso, verificare autonomamente il titolo e rinominare il task se non rispetta la convenzione o non riflette più correttamente il perimetro concordato; non attendere una richiesta specifica dell’utente. Soltanto per l’esplorazione dei contest organizzata in un task distinto per ciascun anno usare `YYYY-MM-DD - Esplorazione contest BGG AAAA`: `YYYY-MM-DD` è la data di apertura del task, mentre `AAAA` è l’anno dei contest esplorati e in generale è diverso dall’anno della data di apertura.
 

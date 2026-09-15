@@ -2,6 +2,8 @@
 
 Archivio locale per monitorare contest di game design Print and Play pubblicati su BoardGameGeek: stato, fasi, scadenze, statistiche ed evoluzione delle entry.
 
+Lo stato operativo complessivo è raccolto in [`PROJECT_PROGRESS.md`](PROJECT_PROGRESS.md); calendario e finestre dei controlli BGG restano in [`sources/MONITORING_CALENDAR.md`](sources/MONITORING_CALENDAR.md).
+
 ## Stato attuale
 
 - 22 edizioni monitorate: 11 del 2026 e una baseline di 11 contest del 2025;
@@ -22,6 +24,7 @@ Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest 
 ## Struttura
 
 - `PROJECT.md`: scopo e architettura autorevole;
+- `PROJECT_PROGRESS.md`: cruscotto operativo dell'avanzamento complessivo;
 - `GIT_GUIDE.md`: guida pratica per commit, branch, push e sincronizzazione;
 - `sources/MONITORING_CALENDAR.md`: taccuino dei controlli;
 - `database/`: schema, migrazioni e database SQLite locale escluso da Git;
