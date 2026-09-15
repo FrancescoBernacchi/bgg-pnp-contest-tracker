@@ -126,9 +126,12 @@ def entry_detail(db, entry_id):
             ORDER BY julianday(checked_at) DESC,id DESC""", (entry_id,)),
         "resources": resources,
         "material_scans": rows(db, """SELECT * FROM entry_material_scans WHERE entry_id=?
-            ORDER BY julianday(checked_at) DESC,id DESC""", (entry_id,)),
+            ORDER BY julianday(checked_at) DESC,
+                     CASE coverage_scope WHEN 'rules_integrated' THEN 0 ELSE 1 END,id DESC""", (entry_id,)),
         "materials": rows(db, """SELECT * FROM entry_material_requirements WHERE entry_id=?
-            ORDER BY material_kind COLLATE NOCASE,name_normalized COLLATE NOCASE,id""", (entry_id,)),
+            ORDER BY CASE requirement_level WHEN 'required' THEN 0 WHEN 'alternative' THEN 1
+                          WHEN 'optional' THEN 2 ELSE 3 END,
+                     material_kind COLLATE NOCASE,name_normalized COLLATE NOCASE,id""", (entry_id,)),
     }
 
 

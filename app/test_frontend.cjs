@@ -35,6 +35,20 @@ test('stati senza risorse restano distinti e non inventano link',()=>{
   }
   assert.match(run(`resourceSection({resource_scans:[],resources:[]})`),/Nessuna scansione/);
 });
+test('materiali dichiarati preservano originale, classificazione, necessità e provenienza',()=>{
+  const detail={material_scans:[{checked_at:'2026-09-11',source_url:'https://boardgamegeek.com/thread/123',material_listing_status:'observed',coverage_scope:'rules_integrated',notes:'Primo post e regolamento'}],materials:[{name_normalized:'dado d6',name_raw:'2 D6 <dice>',material_kind:'randomizer',supply_mode:'common',quantity_raw:null,requirement_level:'alternative',context_raw:'Use <two> dice',source_url:'https://boardgamegeek.com/thread/123',first_seen_at:'2026-09-10',last_seen_at:'2026-09-11'}]};
+  const html=run(`materialSection(${JSON.stringify(detail)})`);
+  for(const text of ['2 D6 &lt;dice&gt;','Normalizzato: dado d6','Randomizzatore','Comune','Non specificata','Alternativa','Copertura: Integrato dalle regole','Fonte BGG del requisito ↗','ultimo riscontro']) assert.ok(html.includes(text));
+  assert.ok(!html.includes('Use <two> dice'));
+  assert.match(html,/include le regole/);
+});
+test('stati dei materiali restano distinti e la copertura non viene inventata',()=>{
+  for(const [status,text] of [['none_declared','non espone requisiti'],['not_observable','non era osservabile'],['not_checked','non sono stati controllati']]) {
+    const html=run(`materialSection({material_scans:[{material_listing_status:${JSON.stringify(status)},coverage_scope:'first_post_only',source_url:'https://boardgamegeek.com/thread/123',checked_at:'2026-09-11'}],materials:[]})`);
+    assert.ok(html.includes(text));
+  }
+  assert.match(run(`materialSection({material_scans:[],materials:[]})`),/Nessuna scansione/);
+});
 test('materiali dichiarati mostrano quantità, classificazione, evidenza e limite di copertura',()=>{
   const detail={material_scans:[{checked_at:'2026-09-11',source_url:'https://boardgamegeek.com/thread/123',material_listing_status:'observed',coverage_scope:'first_post_only',notes:'Regole non aperte'}],materials:[{name_normalized:'dado d6',name_raw:'2 D6 dice',material_kind:'randomizer',supply_mode:'common',quantity_raw:'2',requirement_level:'required',context_raw:'Components: 2 D6 dice',source_url:'https://boardgamegeek.com/thread/123',last_seen_at:'2026-09-11'}]};
   const html=run(`materialSection(${JSON.stringify(detail)})`);

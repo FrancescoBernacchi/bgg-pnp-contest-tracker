@@ -17,7 +17,7 @@ I contest adiacenti hanno trattamenti distinti: Traditional Deck (`format_adjace
 
 ## Confini
 
-Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest non apre, analizza o scarica file di gioco: conserva esclusivamente metadati pubblici utili a descrivere contest ed entry. L'eventuale acquisizione futura di materiali selezionati appartiene a un flusso separato.
+Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest non apre, analizza o scarica file di gioco: conserva esclusivamente metadati pubblici utili a descrivere contest ed entry. L’app rende consultabili anche i requisiti materiali descritti nel primo post o nelle regole già censite, mantenendoli separati dai collegamenti alle risorse. L'eventuale acquisizione futura di materiali selezionati appartiene a un flusso separato.
 
 ## Struttura
 

@@ -39,7 +39,7 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 - **Contest**: schede separate per PnP principali e adiacenti; ricerca per nome, filtri di anno e stato, conteggi comprensivi dei ritiri.
 - **Risultati**: tutte le classifiche registrate, ricerca per titolo e crediti, filtri combinabili e pagine da 30 osservazioni; sintesi per contest con vincitori e distribuzione dei piazzamenti per categoria.
 - **Tutte le entry**: ricerca per titolo o autore, filtri per contest, perimetro, stato e tipologia; ordinamento e pagine da 30 risultati.
-- **Dettaglio entry e risorse**: collegamenti espliciti alla pagina dell’entry e al WIP BGG; risorse dichiarate con etichetta, funzione, forma di accesso, stato e provenienza, apribili in una nuova scheda soltanto su click.
+- **Dettaglio entry, risorse e materiali**: collegamenti espliciti alla pagina dell’entry e al WIP BGG; risorse dichiarate con URL apribili soltanto su click; requisiti materiali descritti testualmente con nome originale e normalizzato, quantità, necessità, approvvigionamento, contesto e provenienza.
 - **Dettaglio contest**: stati originali/normalizzati, dipendenze, distribuzione degli stati, fasi/scadenze con precisione e fuso registrati, metriche correnti e storiche, classifiche ufficiali o segnali sostitutivi.
 - **Dettaglio entry**: crediti, stato dei materiali, risorse collegate, requisiti fisici dichiarati con quantità ed evidenza, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
 - **Scadenze**: prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura. Non sostituisce il calendario dei controlli `sources/MONITORING_CALENDAR.md`.
@@ -79,6 +79,12 @@ La scheda contest collega la propria pagina BGG. Dalla lista delle entry si apre
 Per ciascuna risorsa sono mostrati ruolo, eventuale indicazione primaria, `access_type`, host, versione, disponibilità registrata, fonte BGG e date. L’ultima osservazione di disponibilità, quando esiste, prevale sullo stato riepilogativo senza eliminare la cronologia sottostante. `unknown` e `not_checked` sono presentati come **Non verificata** e non come indisponibilità.
 
 Se non esistono link, l’interfaccia distingue `none_declared`, `not_observable`, `not_checked` e assenza di scansione. In particolare, `not_observable` chiarisce che il post originale non era leggibile e che l’assenza di un URL non dimostra l’assenza della risorsa. L’app non ricostruisce destinazioni mancanti.
+
+## Materiali dichiarati senza collegamento
+
+La scheda entry presenta **Materiali richiesti** separatamente dalle risorse dotate di URL. I dati provengono da `entry_material_requirements`: il testo `name_raw` e il contesto originale restano visibili, mentre nome normalizzato, categoria, modalità di approvvigionamento e livello `required`, `optional`, `alternative` o `unclear` sono indicati come classificazioni distinte. Una quantità assente viene mostrata come **Non specificata** e non come zero.
+
+La più recente `entry_material_scans` dichiara fonte, data ed estensione della copertura. `first_post_only` indica che le regole possono ancora integrare l’elenco; `rules_integrated` indica che la rilevazione registrata comprende anche le regole. A parità di data prevale la copertura integrata. Gli esiti `none_declared`, `not_observable`, `not_checked` e l’assenza di scansione producono messaggi diversi e non fanno dedurre che il gioco non richieda materiali.
 
 ## Classifiche e sintesi dei risultati
 

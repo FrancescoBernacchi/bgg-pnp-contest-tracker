@@ -228,14 +228,17 @@ function resourceSection(detail) {
 }
 function materialSection(detail) {
   const scan=detail.material_scans?.[0], status=scan?.material_listing_status;
+  const coverage=scan?.coverage_scope, integrated=coverage==='rules_integrated';
+  const origin=integrated?'nelle fonti censite, incluse le regole':'nel primo post';
   let intro='Nessuna scansione dei requisiti materiali registrata per questa entry.';
-  if(status==='observed') intro=`${detail.materials.length} requisiti materiali dichiarati nel primo post.`;
-  if(status==='none_declared') intro='Il primo post non espone requisiti materiali sufficientemente espliciti; le regole potranno integrare il dato.';
-  if(status==='not_observable') intro='Il primo post originale non era osservabile: nessun requisito materiale è stato inventato.';
+  if(status==='observed') intro=`${detail.materials.length} requisiti materiali dichiarati ${origin}.`;
+  if(status==='none_declared') intro=integrated?'Le fonti censite non espongono requisiti materiali sufficientemente espliciti.':'Il primo post non espone requisiti materiali sufficientemente espliciti; le regole potranno integrare il dato.';
+  if(status==='not_observable') intro=integrated?'Le fonti previste non erano osservabili: nessun requisito materiale è stato inventato.':'Il primo post originale non era osservabile: nessun requisito materiale è stato inventato.';
   if(status==='not_checked') intro='Il WIP non è disponibile o i requisiti materiali non sono stati controllati.';
-  const provenance=scan?`${source(scan.source_url,scan.checked_at,'Fonte della scansione BGG ↗')}<small>Copertura: ${esc(materialLabel(scan.coverage_scope))}. ${esc(scan.notes||'')}</small>`:'';
+  const provenance=scan?`<div class="material-provenance">${source(scan.source_url,scan.checked_at,'Fonte della rilevazione BGG ↗')}<small>Copertura: ${esc(materialLabel(coverage))}${scan.notes?` · ${esc(scan.notes)}`:''}</small></div>`:'';
   if(!detail.materials?.length) return `<div class="empty"><p>${esc(intro)}</p>${provenance}</div>`;
-  return `<p class="subtitle">${esc(intro)} L’elenco è limitato a quanto dichiarato nel primo post e potrà essere integrato dopo l’acquisizione delle regole.</p>${table(['Materiale','Categoria','Quantità / requisito','Evidenza'],detail.materials.map(m=>`<tr><td><strong>${esc(m.name_normalized)}</strong><small>${esc(m.name_raw)}</small></td><td>${esc(materialLabel(m.material_kind))}<small>${esc(materialLabel(m.supply_mode))}</small></td><td>${esc(m.quantity_raw||'Non specificata')}<small>${esc(materialLabel(m.requirement_level))}</small></td><td>${esc(m.context_raw)}${source(m.source_url,m.last_seen_at,'Primo post BGG ↗')}</td></tr>`))}${provenance}`;
+  const limit=integrated?'La copertura include le regole indicate dalla rilevazione.':'L’elenco è limitato al primo post e potrà essere integrato quando le regole saranno censite.';
+  return `<p class="subtitle">${esc(intro)} ${esc(limit)} Quantità non specificata non significa quantità zero.</p>${table(['Materiale dichiarato','Tipo / approvvigionamento','Quantità / necessità','Evidenza e provenienza'],detail.materials.map(m=>`<tr><td><strong>${esc(m.name_raw)}</strong>${m.name_normalized!==m.name_raw?`<small>Normalizzato: ${esc(m.name_normalized)}</small>`:''}</td><td>${esc(materialLabel(m.material_kind))}<small>${esc(materialLabel(m.supply_mode))}</small></td><td>${esc(m.quantity_raw||'Non specificata')}<small>${esc(materialLabel(m.requirement_level))}</small></td><td>${esc(m.context_raw)}${source(m.source_url,m.last_seen_at,'Fonte BGG del requisito ↗')}<small>Osservato: ${esc(day(m.first_seen_at))}${m.last_seen_at!==m.first_seen_at?` · ultimo riscontro: ${esc(day(m.last_seen_at))}`:''}</small></td></tr>`))}${provenance}`;
 }
 function renderEntry(detail) {
   const e=detail.entry;

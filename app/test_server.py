@@ -131,6 +131,26 @@ class ApplicationTests(unittest.TestCase):
             self.assertEqual(detail["materials"][0]["context_raw"], "Components: 2 D6 dice")
             self.assertEqual(entry_detail(db, 2)["materials"], [])
 
+    def test_entry_materials_prioritize_requirement_and_integrated_scan(self):
+        db = sqlite3.connect(self.database)
+        for scan_id, scope in ((1, "first_post_only"), (2, "rules_integrated")):
+            self.insert(db, "entry_material_scans", id=scan_id, entry_id=1, checked_at="2026-09-11",
+                        source_url="https://boardgamegeek.com/thread/123", wip_status="found",
+                        material_listing_status="observed", coverage_scope=scope)
+        for material_id, level, name in ((1, "optional", "segnalino"), (2, "required", "dado"),
+                                         (3, "alternative", "moneta"), (4, "unclear", "timer")):
+            self.insert(db, "entry_material_requirements", id=material_id, entry_id=1,
+                        material_kind="accessory", name_normalized=name, name_raw=name,
+                        requirement_level=level, supply_mode="common", context_raw=name,
+                        source_url="https://boardgamegeek.com/thread/123",
+                        first_seen_at="2026-09-11", last_seen_at="2026-09-11")
+        db.commit(); db.close()
+        with connect(self.database) as db:
+            detail = entry_detail(db, 1)
+            self.assertEqual(detail["material_scans"][0]["coverage_scope"], "rules_integrated")
+            self.assertEqual([m["requirement_level"] for m in detail["materials"]],
+                             ["required", "alternative", "optional", "unclear"])
+
     def test_periodic_classification(self):
         for kind in ("scheduled","manual_monitor","deadline_follow_up"):
             self.assertTrue(periodic({"check_kind":kind}))
@@ -206,6 +226,18 @@ class ApplicationTests(unittest.TestCase):
                     self.assertNotIn(resource["id"], actual)
                     actual[resource["id"]] = entry_id
             self.assertEqual(actual, expected)
+        self.assertEqual(before, hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest())
+
+    @unittest.skipUnless(DEFAULT_DATABASE.exists(), "Database locale non disponibile")
+    def test_real_material_coverage_and_read_only_integrity(self):
+        before = hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest()
+        with connect(DEFAULT_DATABASE) as db:
+            expected = db.execute("SELECT count(*) FROM entry_material_requirements").fetchone()[0]
+            entry_ids = [row[0] for row in db.execute("SELECT DISTINCT entry_id FROM entry_material_requirements")]
+            actual = sum(len(entry_detail(db, entry_id)["materials"]) for entry_id in entry_ids)
+            self.assertEqual(actual, expected)
+            self.assertGreater(expected, 0)
+            self.assertEqual(db.execute("PRAGMA integrity_check").fetchone()[0], "ok")
         self.assertEqual(before, hashlib.sha256(DEFAULT_DATABASE.read_bytes()).hexdigest())
 
     def test_partial_snapshot_has_transitions_but_no_inferred_removals(self):
