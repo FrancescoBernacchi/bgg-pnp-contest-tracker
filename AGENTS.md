@@ -44,7 +44,7 @@ Quando un incremento modifica copertura, conteggi, fase della pipeline, priorit�
 
 Se cambiano contest, entry, classifiche, scansioni dei materiali, acquisizioni o file acquisiti, rigenerare prima le sezioni annuali A e B con `app/generate_project_progress.py`; non modificare manualmente il contenuto compreso tra i marcatori HTML generati.
 
-Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descrizione`, con la data di apertura del task e una descrizione breve che ne rappresenti lo scopo effettivo. Appena il compito è sufficientemente compreso, verificare autonomamente il titolo e rinominare il task se non rispetta la convenzione o non riflette più correttamente il perimetro concordato; non attendere una richiesta specifica dell’utente. Soltanto per l’esplorazione dei contest organizzata in un task distinto per ciascun anno usare `YYYY-MM-DD - Esplorazione contest BGG AAAA`: `YYYY-MM-DD` è la data di apertura del task, mentre `AAAA` è l’anno dei contest esplorati e in generale è diverso dall’anno della data di apertura.
+Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descrizione`, con la data di apertura del task e una descrizione breve che ne rappresenti lo scopo effettivo. Appena il compito è sufficientemente compreso, verificare autonomamente il titolo e rinominare il task se non rispetta la convenzione o non riflette più correttamente il perimetro concordato; non attendere una richiesta specifica dell’utente. Il titolo aggiornato deve sintetizzare l'intero contenuto della conversazione e preservare i temi precedenti ancora rilevanti, non soltanto l'ultimo focus. Per i cinque tipi BGG usare le convenzioni definite in `PROJECT.md`, mantenendo distinta la data di apertura dall'anno del censimento o dal nome del contest.
 
 ## Regole della conoscenza
 
@@ -98,7 +98,7 @@ Cambiare la struttura solo quando emerge un ciclo di vita distinto o un pattern 
 
 ## Relazione con lo Standard
 
-Questo progetto segue Project Workspace Standard versione 1.3.0. Consultare lo Standard per metodologia, governance, evoluzione e migrazioni. Non modificare lo Standard da questo progetto.
+Questo progetto segue Project Workspace Standard versione 1.5.0. All'inizio di ogni nuovo task confrontare `aligned_version` in `.workspace/PROJECT_STATE.md` con `C:\PROGETTI CODEX\PROJECT_WORKSPACE_STANDARD\VERSION`; se la versione canonica è più recente, informare l'utente, leggere le migrazioni intermedie e non modificare il progetto finché l'adozione non viene deliberata. Consultare lo Standard per metodologia, governance, evoluzione e migrazioni. Non modificare lo Standard da questo progetto.
 
 ## Vincoli specifici
 

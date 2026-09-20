@@ -2,16 +2,16 @@
 standard_id: project-workspace-standard
 status: initialized
 initialized_with: 1.3.0
-aligned_version: 1.3.0
+aligned_version: 1.5.0
 initialized_at: 2026-09-04
-last_alignment_at: 2026-09-07
+last_alignment_at: 2026-09-20
 ---
 
 # Stato del Project Workspace
 
 ## Sintesi dell'architettura
 
-Archivio locale di giochi Print and Play individuati su BoardGameGeek, con catalogazione completa delle entries e acquisizione selettiva dei materiali. Il progetto separa applicazione (`app/`), persistenza operativa (`database/`), metadati versionabili (`catalog/`), materiali binari locali (`library/`), provenienza e calendario di monitoraggio (`sources/`), task auditabili (`tasks/`) e risultati rigenerabili (`outputs/`).
+Archivio locale di giochi nato dalla raccolta Print and Play individuata su BoardGameGeek e in evoluzione deliberata verso un catalogo personale multifonte. Il PnP resta una forma di fruizione, mentre la direzione futura comprende scoperta, catalogazione, interesse personale, collezione, risorse ed esperienze di gioco. Il progetto separa applicazione (`app/`), persistenza operativa (`database/`), metadati versionabili (`catalog/`), materiali binari locali (`library/`), provenienza e calendario di monitoraggio (`sources/`), task auditabili (`tasks/`) e risultati rigenerabili (`outputs/`).
 
 ## Deviazioni locali dallo Standard
 
@@ -33,3 +33,6 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 - 2026-09-10: estesa la consultazione locale con vista Risultati, filtri e ordinamenti delle classifiche, schede collegate e sintesi per contest/categoria/fonte/data/ufficialità. Tutte le osservazioni mantenute, senza inferire punteggi o versioni operative. Stack e schema invariati; verifiche su dati sintetici e copertura del database reale in `tasks/2026-09-10 - Navigazione classifiche app/TASK.md`. Nessun rilevamento esterno o acquisizione.
 - 2026-09-11: estesa la scheda entry con pagine BGG e risorse dichiarate navigabili, mantenendo funzione, forma di accesso, stato, provenienza e date. Apertura esterna esclusivamente su click; nessun controllo o download automatico. Gli stati di scansione incompleta o non osservabile restano espliciti. Stack e schema invariati; verifiche in `tasks/2026-09-11 - Navigazione risorse entry/TASK.md`.
 - 2026-09-15: introdotto `PROJECT_PROGRESS.md` come cruscotto versionabile dell'avanzamento trasversale. Le viste annuali per tipologia e per tutte le entry sono rigenerate dal database con indicatori colorati; copertura, pipeline, attività aperte, acquisizioni e salute degli strumenti sono mantenute nello stesso incremento che cambia dati o stato. Database, calendario e task restano le fonti di dettaglio. Decisioni e verifiche in `tasks/2026-09-15 - Cruscotto avanzamento raccolta/TASK.md`.
+- 2026-09-18: standardizzati cinque tipi di attività BGG con unità non sovrapponibili: censimento globale dei contest, censimento annuale delle entry, analisi materiali di un singolo contest, acquisizione materiali di un singolo contest e monitoraggio di un singolo contest. Le richieste e le proposte di prossime attività devono essere ricondotte esplicitamente a questi workflow; download e acquisizioni non possono attraversare più contest.
+- 2026-09-20: adottate deliberatamente in ordine le migrazioni PWS 1.4.0 e 1.5.0, entrambe retroattive ove possibile. Integrati il controllo dinamico del titolo visibile, il criterio cumulativo di adeguatezza e la verifica della versione canonica a ogni nuovo task; `initialized_with` resta 1.3.0. Il task corrente era già stato rinominato coerentemente; nessun riesame massivo dei task storici è stato eseguito in questo incremento.
+- 2026-09-20: deliberata la direzione evolutiva verso un catalogo personale multifonte di giochi, con Kanare_Abstract come prima nuova fonte e BGG come fonte specializzata. Simulatore interno e prototipazione 3D sono registrati come idee future trasversali da trattare in task separati; nessuna implementazione o migrazione dati è stata ancora eseguita.

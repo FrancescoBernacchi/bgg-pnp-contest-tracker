@@ -8,6 +8,10 @@ Costruire un archivio locale consultabile di giochi Print and Play, iniziando da
 
 Nella prima fase la fonte è esclusivamente BoardGameGeek. Il progetto cataloga tutte le entries individuate nei contest inclusi nel perimetro e scarica i materiali soltanto per i giochi selezionati. La ricerca di ulteriori fonti richiederà un task dedicato.
 
+Dal 20 settembre 2026 è deliberata l'evoluzione verso un catalogo personale multifonte di giochi. Lo stato implementato resta inizialmente quello centrato sui contest BGG; l'estensione sarà introdotta tramite task separati e migrazioni verificabili. Nel modello obiettivo il gioco è l'entità canonica trasversale, BGG e Kanare_Abstract sono fonti specializzate e il Print and Play è una forma di accesso o realizzazione, non il perimetro esclusivo dell'app.
+
+La direzione funzionale comprende gradualmente scoperta, catalogazione, interesse personale, desiderio di acquisto o realizzazione, possesso o accesso, organizzazione di materiali e regolamenti, partite, valutazioni e note. Completezza informativa e rapporto personale con il gioco restano dimensioni distinte.
+
 I contest affini che non producono necessariamente giochi PnP autonomi possono essere inclusi come `adiacenti`, mantenendo esplicita la loro tipologia e le dipendenze esterne. Le varianti Solomode, in particolare, dipendono normalmente da un gioco base e devono restare distinguibili dai giochi PnP autonomi, così da poter ricevere filtri e trattamenti differenti in futuro.
 
 Nel database questa distinzione usa `contests.scope_type` e `contests.treatment_profile`; la natura delle singole entry usa `entries.entry_kind` e `entries.base_game_dependency`. Le note originali restano conservate e questi campi rappresentano soltanto la classificazione operativa normalizzata.
@@ -132,6 +136,40 @@ Per il monitoraggio la priorità è determinata dal taccuino: eventi di fase imm
 - eventuale evoluzione dello stack solo qualora la scala o nuovi flussi la richiedano;
 - soglie operative per l'acquisizione quando un contest non dispone ancora di votazioni;
 - eventuali limiti massimi di spazio occupato dalla libreria.
+
+## Evoluzione multifonte deliberata
+
+La prima nuova fonte prevista è **Kanare_Abstract**. Il relativo task dovrà progettare schema, scraping e interfaccia senza introdurre colonne o copie del modello specifiche della fonte quando il concetto è riutilizzabile. Il nucleo comune dovrà supportare ricerca multifonte; i dati realmente specifici resteranno tipizzati, attribuiti ed etichettati con la relativa fonte.
+
+Decisioni già raccolte per il futuro task Kanare_Abstract:
+
+- vista generale **Giochi** come ingresso al catalogo canonico, con ricerca e filtri su tutte le fonti; ogni fonte mantiene una voce di menu e viste specializzate;
+- gioco distinto da prodotto, edizione, implementazione digitale e record nativo della fonte; prodotti o confezioni possono includere più giochi;
+- catalogo Kanare esteso a giochi attuali, fuori produzione, varianti nominate, classici, giochi con componenti comuni e titoli dichiarati sulle piattaforme online; accessori e set generici non sono elementi di catalogo, ma i singoli giochi supportati sono censiti e collegati al set come riferimento tecnico;
+- titoli ufficiali conservati come principali, alias e grafie giapponesi ricercabili, traduzione italiana interna secondaria quando utile e chiaramente distinta da un titolo ufficiale;
+- descrizioni brevi e dettagliate in italiano; se manca la breve può essere derivata dalla dettagliata, mentre una descrizione dettagliata assente non viene inventata. Testi giapponesi usati solo transitoriamente per tradurre e non censiti; la provenienza resta registrata;
+- un'immagine rappresentativa viene acquisita durante il censimento; le immagini secondarie sono inizialmente censite tramite URL e scaricate soltanto dopo selezione manuale. Originali e derivati restano separati, versionati e fuori da Git;
+- tutti i regolamenti sono censiti per lingua, ma dopo selezione manuale si scaricano soltanto quelli italiani o inglesi. I regolamenti giapponesi non vengono acquisiti o analizzati;
+- inventario completo dei materiali ricostruito da regolamenti, elenchi ufficiali, descrizioni e immagini, separando contenuto della confezione, requisiti di gioco, sostituzioni, dati dichiarati e inferenze;
+- presenze su BGG e piattaforme di gioco distinte fra dichiarate da Kanare, da verificare e verificate; la verifica esterna appartiene a un incremento successivo;
+- nessun prezzo o dato promozionale; si registra invece la forma di accesso gratuita o a pagamento, distinguendo prodotto fisico, PnP, digitale, componenti comuni e giochi utilizzabili con il solo regolamento;
+- autori gestiti come persone condivise con nome, alias, ruoli, collegamenti essenziali e riconciliazione tra fonti; biografie e ritratti non sono prioritari;
+- classificazione interna multidimensionale con categorie gerarchiche dove appropriate e relazioni trasversali. Il primo nucleo comprende natura ludica, obiettivo, meccanismi, componenti, forma di accesso, informazione/casualità e struttura dei giocatori; dichiarazioni, importazioni e inferenze restano distinguibili e revisionabili;
+- riconciliazione automatica fra fonti solo con evidenza forte; corrispondenze ambigue richiedono approvazione manuale;
+- primo censimento limitato alle informazioni Kanare attualmente accessibili, comprese pagine di giochi fuori commercio ancora online; nessun recupero automatico da archivi web;
+- aggiornamenti avviati manualmente, storicizzati e non distruttivi. Un elemento non più osservato non viene cancellato automaticamente;
+- conservazione selettiva delle evidenze: dati strutturati e metadati per tutte le pagine, snapshot completi soltanto per anomalie o casi motivati;
+- copertura del censimento separata dagli stati personali del gioco.
+
+## Idee evolutive da trattare in task separati
+
+### Simulatore di giochi
+
+Valutare un motore interno che permetta al progetto di implementare in modo modulare simulazioni digitali di giochi selezionati. Il motore non è destinato alla programmazione da parte dell'utente finale. I giochi dovranno poter esporre, senza confonderlo con le presenze su piattaforme esterne, uno stato specifico relativo alla disponibilità e maturità della simulazione nell'app. Architettura, formato delle implementazioni, verifica delle regole e interfaccia saranno definiti in un task autonomo.
+
+### Prototipazione 3D per la stampa
+
+Valutare un'area trasversale per progettare componenti stampabili in 3D di giochi selezionati: plance, board, pedine, schede o supporti di gioco, scatole e organizer. I progetti dovranno essere collegati al gioco e, quando necessario, alla specifica edizione; sorgenti modificabili, STL derivati, versioni, misure, dipendenze, licenze e profili di stampa dovranno restare tracciabili. La funzionalità sfrutterà l'inventario completo dei materiali, ma sarà progettata e implementata in task dedicati.
 
 ## Classificazione evolutiva delle risorse dichiarate
 
