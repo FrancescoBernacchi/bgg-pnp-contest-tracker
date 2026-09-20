@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sqlite3
 from collections import defaultdict
@@ -13,6 +14,54 @@ from pathlib import Path
 START_MARKER = "<!-- BEGIN GENERATED ANNUAL PROGRESS -->"
 END_MARKER = "<!-- END GENERATED ANNUAL PROGRESS -->"
 EMPTY_CELL = "\u00a0"
+GLOBAL_CENSUS_FIRST_YEAR = 2008
+GLOBAL_CENSUS_LAST_YEAR = 2026
+SUMMARY_YEAR_BLOCK_SIZE = 4
+DETAIL_CONTEST_BLOCK_SIZE = 6
+
+
+def challenge_titles() -> dict[int, list[str]]:
+    months = ["January", "February", "March", "April", "May", "June",
+              "July", "August", "September", "October", "November", "December"]
+    result = {
+        2012: [f"{month} 2012 — 24 Hour Game Design Contest"
+               for month in ("June", "July", "August", "October", "November", "December")],
+        2013: [f"{month} 2013 — 24 Hour Game Design Contest" for month in months],
+        2014: [f"{month} 2014 — 24 Hour Game Design Contest" for month in months],
+        2015: [f"{month} 2015 — 24 Hour Game Design Contest" for month in months],
+    }
+    themes = {
+        2016: "food beverages attention Atlantis six kitten moon-landing wedding divorce pasta music charcoal",
+        2017: "discipline honey march puns gold nightfall book procrastination island toy solo reindeer",
+        2018: "hope technique rune egg delay queen heat clown bunny eight leaf rod",
+        2019: "pitchfork bureaucracy mask electronics bug miniature sun tag school spirit parody frost",
+        2020: "eccentric palindrome crown home heart beaver dam hoover orc family advent",
+    }
+    for year, values in themes.items():
+        used_months = months if year != 2020 else [month for month in months if month != "September"]
+        result[year] = [f"{month} {year} — 24 Hour Game Design Contest ({theme.replace('-', ' ')})"
+                        for month, theme in zip(used_months, values.split())]
+    result[2023] = [
+        "January 2023 — 24 Hour Design Challenge (Temperature)", "February 2023 — 24 Hour Design Challenge (Outfit)",
+        "March 2023 — 24 Hour Design Challenge (Fence)", "April 2023 — 24 Hour Design Challenge (Terminal)",
+        "May 2023 — 24 Hour Design Challenge (Leftover)", "June 2023 — 24 Hour Design Challenge (Lobby)",
+        "July 2023 — 24 Hour Design Challenge (Host)", "September–October 2023 — 24 Hour Design Challenge (Scatter)",
+        "November–December 2023 — 24 Hour Design Challenge (Order)",
+    ]
+    result[2024] = [f"{period} 2024 — 24 Hour Design Challenge ({theme})" for period, theme in
+                    [("January–February", "Jam"), ("March–April", "Three"), ("May–June", "Party"),
+                     ("July–August", "Rome"), ("September–October", "Trick"), ("November–December", "Letter")]]
+    result[2025] = [f"{period} 2025 — 24 Hour Design Challenge ({theme})" for period, theme in
+                    [("January–February", "GUARD"), ("March–April", "REVEAL"), ("May–June", "GREEN"),
+                     ("July–August", "PAD"), ("September–October", "PATCH"), ("November–December", "_ _ _ ANKS")]]
+    result[2026] = [f"{period} 2026 — 24 Hour Design Challenge ({theme})" for period, theme in
+                    [("January–February", "CULTURE"), ("March–April", "CLASSIC"), ("May–June", "STICK"),
+                     ("July–August", "DRAW"), ("September–October", "NINE")]]
+    return result
+
+
+def normalized_contest_name(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", re.sub(r"\b20\d{2}\b", "", value.casefold()))
 
 
 def escape_cell(value: object) -> str:
@@ -105,6 +154,11 @@ def bullet(done: int, total: int, partial: int = 0) -> str:
 
 def build_generated_section(db: sqlite3.Connection) -> str:
     db.row_factory = sqlite3.Row
+    census_path = Path(__file__).resolve().parents[1] / "catalog" / "bgg_contest_census_titles.json"
+    census_titles = {int(year): titles for year, titles in
+                     json.loads(census_path.read_text(encoding="utf-8")).items()}
+    for year, titles in challenge_titles().items():
+        census_titles.setdefault(year, []).extend(titles)
     contests = db.execute(
         """SELECT c.id,c.year,c.name,c.status_normalized,c.source_url,
                   cs.canonical_name,COUNT(e.id) entry_count
@@ -112,7 +166,8 @@ def build_generated_section(db: sqlite3.Connection) -> str:
            LEFT JOIN entries e ON e.contest_id=c.id GROUP BY c.id
            ORDER BY cs.canonical_name COLLATE NOCASE,c.year"""
     ).fetchall()
-    years = sorted({r["year"] for r in contests if r["year"] is not None}, reverse=True)
+    database_years = sorted({r["year"] for r in contests if r["year"] is not None}, reverse=True)
+    years = list(range(GLOBAL_CENSUS_LAST_YEAR, GLOBAL_CENSUS_FIRST_YEAR - 1, -1))
     contest_count_by_year = {
         year: sum(1 for contest in contests if contest["year"] == year) for year in years
     }
@@ -167,54 +222,76 @@ def build_generated_section(db: sqlite3.Connection) -> str:
         START_MARKER,
         "## A. Sintesi immediata per anno",
         "",
-        "Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti.",
+        "Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. Gli anni sono divisi in gruppi di massimo quattro. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti. Un trattino indica che l'annualità non è ancora stata importata nel database.",
         "",
-        "| N. | Tipologia e indicatore | " + " | ".join(map(str, years)) + " |",
-        "|---:|:---|" + ":---|" * len(years),
-        f"| {EMPTY_CELL} | {EMPTY_CELL} | "
-        + " | ".join(f"**{contest_count_by_year[year]} contest**" for year in years)
-        + " |",
     ]
-    for contest_number, series_name in enumerate(series, start=1):
-        metrics = {"Stati entry": [], "Censimento entry": [], "Classifiche": [],
-                   "Lettura materiali": [], "Download materiali": []}
-        for year in years:
-            contest = contest_by_series_year.get((series_name, year))
-            if contest is None:
-                for cells in metrics.values():
-                    cells.append("—")
+    year_blocks = [years[index:index + SUMMARY_YEAR_BLOCK_SIZE]
+                   for index in range(0, len(years), SUMMARY_YEAR_BLOCK_SIZE)]
+    for block_number, block_years in enumerate(year_blocks, start=1):
+        lines.extend([
+            f"### Gruppo anni {block_number} di {len(year_blocks)}",
+            "",
+            "| N. | Tipologia e indicatore | " + " | ".join(map(str, block_years)) + " |",
+            "|---:|:---|" + ":---|" * len(block_years),
+            f"| {EMPTY_CELL} | {EMPTY_CELL} | "
+            + " | ".join(f"**{contest_count_by_year.get(year, 0)} contest nel database**"
+                         for year in block_years) + " |",
+        ])
+        for contest_number, series_name in enumerate(series, start=1):
+            if not any((series_name, year) in contest_by_series_year for year in block_years):
                 continue
-            values = summary[contest["id"]]
-            total = int(values["total"])
-            is_closed = contest["status_normalized"] in {"complete", "cancelled"}
-            entry_icon = "🔴" if total == 0 else ("🟢" if is_closed else "🟡")
-            ranking_count = int(values["ranking_categories"])
-            reading_icon = bullet(int(values["any_reads"]), total)
-            downloaded = int(values["downloaded"])
-            known_statuses = int(values["known_statuses"])
-            status_icon = "🔴" if known_statuses == 0 else ("🟢" if known_statuses == total else "🟡")
-            metrics["Stati entry"].append(f"{status_icon} {escape_cell(values['entry_statuses'])}")
-            metrics["Censimento entry"].append(f"{entry_icon} {total}")
-            metrics["Classifiche"].append(f"{'🟢' if ranking_count else '🔴'} {ranking_count}")
-            metrics["Lettura materiali"].append(
-                f"{reading_icon} {values['any_reads']}/{total} entry"
-            )
-            metrics["Download materiali"].append(f"{bullet(downloaded, total)} {downloaded}/{total} entry")
-        latest_contest = latest_contest_by_series[series_name]
-        series_link = markdown_link(series_name, latest_contest["source_url"])
-        lines.append(f"| {contest_number} | **{series_link}** | "
-                     + " | ".join(EMPTY_CELL for _ in years) + " |")
-        for metric, cells in metrics.items():
-            label = "\u00a0\u00a0\u00a0\u00a0" + metric
-            lines.append(f"| {EMPTY_CELL} | {label} | " + " | ".join(cells) + " |")
+            metrics = {"Stati entry": [], "Censimento entry": [], "Classifiche": [],
+                       "Lettura materiali": [], "Download materiali": []}
+            for year in block_years:
+                contest = contest_by_series_year.get((series_name, year))
+                if contest is None:
+                    for cells in metrics.values():
+                        cells.append("—")
+                    continue
+                values = summary[contest["id"]]
+                total = int(values["total"])
+                is_closed = contest["status_normalized"] in {"complete", "cancelled"}
+                entry_icon = "🔴" if total == 0 else ("🟢" if is_closed else "🟡")
+                ranking_count = int(values["ranking_categories"])
+                reading_icon = bullet(int(values["any_reads"]), total)
+                downloaded = int(values["downloaded"])
+                known_statuses = int(values["known_statuses"])
+                status_icon = "🔴" if known_statuses == 0 else ("🟢" if known_statuses == total else "🟡")
+                metrics["Stati entry"].append(f"{status_icon} {escape_cell(values['entry_statuses'])}")
+                metrics["Censimento entry"].append(f"{entry_icon} {total}")
+                metrics["Classifiche"].append(f"{'🟢' if ranking_count else '🔴'} {ranking_count}")
+                metrics["Lettura materiali"].append(f"{reading_icon} {values['any_reads']}/{total} entry")
+                metrics["Download materiali"].append(
+                    f"{bullet(downloaded, total)} {downloaded}/{total} entry"
+                )
+            latest_contest = latest_contest_by_series[series_name]
+            series_link = markdown_link(series_name, latest_contest["source_url"])
+            lines.append(f"| {contest_number} | **{series_link}** | "
+                         + " | ".join(EMPTY_CELL for _ in block_years) + " |")
+            for metric, cells in metrics.items():
+                label = "\u00a0\u00a0\u00a0\u00a0" + metric
+                lines.append(f"| {EMPTY_CELL} | {label} | " + " | ".join(cells) + " |")
+        lines.append("")
 
     lines.extend(["", "## B. Dettaglio delle entry per anno", "",
                   "Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione registrata, `🔴` non iniziata); **D** = download (`🟢` tutte le risorse dichiarate associate a file acquisiti, `🟡` solo una parte, `🔴` nessun file). Le entry sono ordinate per la classifica principale scelta; quelle senza posizione seguono in ordine alfabetico. Se non esiste una classifica adatta, l'intero contest è alfabetico. La classifica usata è indicata sotto la tabella.", ""])
 
-    detail_years = sorted(years)
+    detail_years = years
     for year in detail_years:
         year_contests = sorted((r for r in contests if r["year"] == year), key=lambda r: r["name"].casefold())
         lines.extend([f"### {year}", ""])
+        imported_names = {normalized_contest_name(r["name"]) for r in year_contests}
+        pending_names = [name for name in census_titles.get(year, [])
+                         if normalized_contest_name(name) not in imported_names]
+        if not year_contests:
+            blocks = [pending_names[index:index + DETAIL_CONTEST_BLOCK_SIZE]
+                      for index in range(0, len(pending_names), DETAIL_CONTEST_BLOCK_SIZE)]
+            for block_number, block in enumerate(blocks, start=1):
+                if len(blocks) > 1:
+                    lines.extend([f"#### Gruppo {block_number} di {len(blocks)}", ""])
+                lines.extend(["| N. | " + " | ".join(escape_cell(name) for name in block) + " |",
+                              "|---:|" + ":---|" * len(block), ""])
+            continue
         entries_by_contest: dict[int, list[tuple[str, str]]] = {}
         category_by_contest: dict[int, str] = {}
         for contest in year_contests:
@@ -261,20 +338,23 @@ def build_generated_section(db: sqlite3.Connection) -> str:
             entries_by_contest[cid] = entry_cells
             category_note = escape_cell(main_category) if main_category else "ordine alfabetico"
             category_by_contest[cid] = category_note
-        block_size = 6
-        blocks = [year_contests[index:index + block_size]
-                  for index in range(0, len(year_contests), block_size)]
+        blocks = [year_contests[index:index + DETAIL_CONTEST_BLOCK_SIZE]
+                  for index in range(0, len(year_contests), DETAIL_CONTEST_BLOCK_SIZE)]
+        pending_blocks = [pending_names[index:index + DETAIL_CONTEST_BLOCK_SIZE]
+                          for index in range(0, len(pending_names), DETAIL_CONTEST_BLOCK_SIZE)]
+        total_blocks = len(blocks) + len(pending_blocks)
         for block_number, block in enumerate(blocks, start=1):
-            if len(blocks) > 1:
-                lines.extend([f"#### Gruppo {block_number} di {len(blocks)}", ""])
+            if total_blocks > 1:
+                lines.extend([f"#### Gruppo {block_number} di {total_blocks}", ""])
             lines.extend([
                 "| N. | " + " | ".join(markdown_link(r["name"], r["source_url"]) for r in block) + " |",
                 "|---:|" + ":---|" * len(block),
-                "| **Classifica utilizzata per l'ordinamento delle Entry** | "
-                + " | ".join(f"**{category_by_contest[contest['id']]}**" for contest in block)
-                + " |",
             ])
             max_entries = max((len(entries_by_contest[c["id"]]) for c in block), default=0)
+            if max_entries:
+                lines.append("| **Classifica utilizzata per l'ordinamento delle Entry** | "
+                             + " | ".join(f"**{category_by_contest[contest['id']]}**" for contest in block)
+                             + " |")
             for index in range(max_entries):
                 name_cells = [entries_by_contest[contest["id"]][index][0]
                               if index < len(entries_by_contest[contest["id"]]) else EMPTY_CELL
@@ -285,6 +365,11 @@ def build_generated_section(db: sqlite3.Connection) -> str:
                 lines.append(f"| {index + 1} | " + " | ".join(name_cells) + " |")
                 lines.append(f"| {EMPTY_CELL} | " + " | ".join(status_cells) + " |")
             lines.append("")
+        for pending_number, block in enumerate(pending_blocks, start=len(blocks) + 1):
+            if total_blocks > 1:
+                lines.extend([f"#### Gruppo {pending_number} di {total_blocks}", ""])
+            lines.extend(["| N. | " + " | ".join(escape_cell(name) for name in block) + " |",
+                          "|---:|" + ":---|" * len(block), ""])
         lines.append("")
     lines.append(END_MARKER)
     return "\n".join(lines)

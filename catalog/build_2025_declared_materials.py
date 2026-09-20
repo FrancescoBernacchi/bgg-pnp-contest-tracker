@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATE = "2026-09-11"
-CONTEST_IDS = (12, 14, 15, 22)
+CONTEST_IDS = (12, 14, 15, 16, 22)
 MATERIALS = []
 
 
@@ -326,6 +326,42 @@ m(550,"household_item","tavolo o superficie piana","1","household","A table or f
 m(550,"assembly_material","vecchia carta da gioco e colla",None,"household","glueing them onto an old card","optional")
 m(550,"assembly_material","nastro adesivo o laminazione",None,"household","sticky tape or laminate","optional")
 
+# Solomode 2025 — solo materiali aggiuntivi richiesti dalla variante.
+# I componenti del gioco base restano rappresentati dalla dipendenza della entry
+# e non vengono duplicati in questo inventario.
+m(552,"randomizer","dado d6 aggiuntivo","3","common","For Florek you need 3 additional d6.")
+m(553,"standard_deck","carte da gioco",None,"common","playtest using playing cards, pawns and three markers","alternative")
+m(553,"token_marker","pedina",None,"common","playtest using playing cards, pawns and three markers","alternative")
+m(553,"token_marker","segnalino","3","common","playtest using playing cards, pawns and three markers","alternative")
+m(553,"household_item","fiches da poker",None,"household","poker chips can be used in place of markers","alternative")
+m(555,"printable_component","carte della variante",None,"printable","rules and cards are available")
+m(556,"printable_component","carte della variante",None,"printable","rules and cards are available")
+m(558,"printable_component","aiuto giocatore",None,"printable","Player Aid","optional")
+m(559,"printable_component","carte aggiuntive","8","printable","Do you like the 8 extra cards")
+m(561,"randomizer","dado d6","2, idealmente di colori diversi","common","2 six-sided dice, ideally in different colors")
+m(562,"randomizer","dado d6","4","common","Roll the 4 dice for the Automa")
+m(563,"household_item","foglio di carta","1","household","a piece of paper and a pencil")
+m(563,"writing_tool","matita","1","common","a piece of paper and a pencil")
+m(565,"household_item","foglio di carta","1","household","a piece of paper, a pencil, and a 10 minute timer")
+m(565,"writing_tool","matita","1","common","a piece of paper, a pencil, and a 10 minute timer")
+m(565,"timer","timer da 10 minuti","1","household","a piece of paper, a pencil, and a 10 minute timer")
+m(566,"randomizer","dado d6","1","common","a single d6 can be used","optional")
+m(566,"digital_device","generatore di numeri casuali","1","digital_device","random number generator","alternative")
+m(570,"printable_component","mazzo Automa",None,"printable","Automa deck")
+m(573,"printable_component","carte del mazzo solo","13","printable","13-card solo deck")
+m(573,"printable_component","plancia Cathy","1","printable","Cathy board")
+m(574,"printable_component","carte del mazzo solo","17","printable","17 card solo deck")
+m(576,"printable_component","aiuto giocatore sperimentale",None,"printable","experimental player aid","optional")
+m(576,"printable_component","mazzo carte azione",None,"printable","action card deck","optional")
+m(582,"randomizer","dado d6 aggiuntivo","1","common","one additional d6")
+m(583,"standard_deck","carte standard da 1 a 10 in quattro semi","40 carte","common","standard deck cards 1–10 in four suits")
+m(585,"household_item","sacchetto","1","household","I use a bag to randomize the black tile","optional")
+m(587,"printable_component","carte bot","16","printable","16 bot cards")
+m(588,"digital_device","tablet o computer portatile","1","digital_device","tablet or laptop for the browser applet")
+m(589,"printable_component","carte RuneBot","15","printable","15 RuneBot cards")
+m(589,"printable_component","carta evento casuale","1","printable","1 Random Event Card")
+m(589,"randomizer","dado d10","1","common","one d10")
+
 assert len({(e,k,n,q,l) for e,k,n,_,q,l,_,_ in MATERIALS}) == len(MATERIALS)
 
 
@@ -341,16 +377,16 @@ for row in MATERIALS:
 ids = ",".join(map(str, CONTEST_IDS))
 sql += [
     f"DELETE FROM entry_material_requirements WHERE entry_id IN (SELECT id FROM entries WHERE contest_id IN ({ids}));",
-    "INSERT INTO entry_material_requirements(entry_id,material_kind,name_normalized,name_raw,quantity_raw,requirement_level,supply_mode,context_raw,source_url,first_seen_at,last_seen_at) SELECT d.entry_id,d.material_kind,d.name_normalized,d.name_raw,d.quantity_raw,d.requirement_level,d.supply_mode,d.context_raw,e.wip_thread_url,'2026-09-11','2026-09-11' FROM dm d JOIN entries e ON e.id=d.entry_id;",
-    f"DELETE FROM entry_material_scans WHERE checked_at='2026-09-11' AND coverage_scope='first_post_only' AND entry_id IN (SELECT id FROM entries WHERE contest_id IN ({ids}));",
-    f"INSERT INTO entry_material_scans(entry_id,checked_at,source_url,wip_status,material_listing_status,coverage_scope,notes) SELECT e.id,'2026-09-11',COALESCE(e.wip_thread_url,e.entry_url),CASE WHEN e.wip_thread_url IS NULL THEN 'not_found' ELSE 'found' END,CASE WHEN e.id IN (391,521) THEN 'not_observable' WHEN e.wip_thread_url IS NULL THEN 'not_checked' WHEN EXISTS(SELECT 1 FROM dm WHERE dm.entry_id=e.id) THEN 'observed' ELSE 'none_declared' END,'first_post_only',CASE WHEN e.id IN (391,521) THEN 'Post originale non osservabile; nessun requisito inventato.' WHEN e.wip_thread_url IS NULL THEN 'WIP non individuato; la voce di roster non sostituisce il primo post.' WHEN EXISTS(SELECT 1 FROM dm WHERE dm.entry_id=e.id) THEN 'Materiali di gioco esplicitamente dichiarati nel primo post; le regole non sono state aperte né scaricate.' ELSE 'Nessun requisito materiale sufficientemente esplicito osservato nel primo post; le regole potranno integrare il censimento.' END FROM entries e WHERE e.contest_id IN ({ids});",
+    "INSERT INTO entry_material_requirements(entry_id,material_kind,name_normalized,name_raw,quantity_raw,requirement_level,supply_mode,context_raw,source_url,first_seen_at,last_seen_at) SELECT d.entry_id,d.material_kind,d.name_normalized,d.name_raw,d.quantity_raw,d.requirement_level,d.supply_mode,d.context_raw,e.wip_thread_url,CASE WHEN e.contest_id=16 THEN '2026-09-15' ELSE '2026-09-11' END,CASE WHEN e.contest_id=16 THEN '2026-09-15' ELSE '2026-09-11' END FROM dm d JOIN entries e ON e.id=d.entry_id;",
+    f"DELETE FROM entry_material_scans WHERE coverage_scope='first_post_only' AND entry_id IN (SELECT id FROM entries WHERE contest_id IN ({ids}));",
+    f"INSERT INTO entry_material_scans(entry_id,checked_at,source_url,wip_status,material_listing_status,coverage_scope,notes) SELECT e.id,CASE WHEN e.contest_id=16 THEN '2026-09-15' ELSE '2026-09-11' END,COALESCE(e.wip_thread_url,e.entry_url),CASE WHEN e.wip_thread_url IS NULL THEN 'not_found' ELSE 'found' END,CASE WHEN e.id IN (391,521) THEN 'not_observable' WHEN e.wip_thread_url IS NULL THEN 'not_checked' WHEN EXISTS(SELECT 1 FROM dm WHERE dm.entry_id=e.id) THEN 'observed' ELSE 'none_declared' END,'first_post_only',CASE WHEN e.id IN (391,521) THEN 'Post originale non osservabile; nessun requisito inventato.' WHEN e.wip_thread_url IS NULL THEN 'WIP non individuato; la voce di roster non sostituisce il primo post.' WHEN EXISTS(SELECT 1 FROM dm WHERE dm.entry_id=e.id) THEN 'Materiali di gioco esplicitamente dichiarati nel primo post; le regole non sono state aperte né scaricate.' ELSE 'Nessun requisito materiale sufficientemente esplicito osservato nel primo post; le regole potranno integrare il censimento.' END FROM entries e WHERE e.contest_id IN ({ids});",
     "DROP TABLE dm;", "COMMIT;"
 ]
 (ROOT / "catalog" / "2025-declared-materials.sql").write_text("\n".join(sql)+"\n",encoding="utf-8")
 
 counts = Counter(row[0] for row in MATERIALS)
 md = ["# Materiali di gioco dichiarati nei primi post — contest 2025", "",
-      "Rilevazione dell’11 settembre 2026 limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand, Children & Family e 1-Card. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.", "",
+      "Rilevazione avviata l’11 settembre 2026 e integrata il 15 settembre 2026, limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand, Children & Family, Solomode e 1-Card. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.", "",
       "Le categorie sono provvisorie. `printable_component` indica elementi di gioco descritti come stampabili; le altre categorie distinguono randomizzatori, strumenti di scrittura, mazzi standard, segnalini, oggetti domestici, accessori, strumenti di montaggio e dispositivi digitali.", "",
       "| Entry ID | Requisiti distinti |", "|---:|---:|"]
 for entry_id in sorted(counts): md.append(f"| {entry_id} | {counts[entry_id]} |")

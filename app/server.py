@@ -52,15 +52,68 @@ def catalog(db):
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "contests": contests,
+        "progress": progress_rows(db),
         "rankings": ranking_rows(db),
         "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
             e.status_raw,e.status_normalized,e.materials_status_normalized,e.last_verified_at,
             g.canonical_title,c.name AS contest_name,c.scope_type,c.year,
+            EXISTS(SELECT 1 FROM entry_material_scans ems WHERE ems.entry_id=e.id) AS materials_read,
+            EXISTS(SELECT 1 FROM acquisitions a JOIN acquired_files af ON af.acquisition_id=a.id
+                   WHERE a.game_id=e.game_id) AS materials_downloaded,
             (SELECT group_concat(p.display_name, ', ') FROM game_credits gc
              JOIN people p ON p.id=gc.person_id WHERE gc.game_id=e.game_id) AS credits
             FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id
             ORDER BY g.canonical_title COLLATE NOCASE,e.id"""),
     }
+
+
+def progress_rows(db):
+    """Indicatori del cruscotto calcolati dal catalogo, senza leggere il Markdown."""
+    contests = rows(db, """SELECT c.id AS contest_id,c.year,c.name AS contest_name,c.scope_type,
+        c.status_normalized,c.source_url,COUNT(DISTINCT e.id) AS entry_count,
+        COUNT(DISTINCT CASE WHEN e.status_normalized!='unknown' THEN e.id END) AS known_status_count,
+        COUNT(DISTINCT r.category) AS ranking_category_count,
+        (SELECT COUNT(DISTINCT ranked_entry.id) FROM entries ranked_entry
+         WHERE ranked_entry.contest_id=c.id AND EXISTS(
+             SELECT 1 FROM rankings ranked
+             WHERE ranked.contest_id=c.id AND ranked.game_id=ranked_entry.game_id
+         )) AS ranked_entry_count,
+        COUNT(DISTINCT ems.entry_id) AS materials_read_count,
+        COUNT(DISTINCT CASE WHEN af.id IS NOT NULL THEN e.id END) AS downloaded_entry_count
+        FROM contests c
+        LEFT JOIN entries e ON e.contest_id=c.id
+        LEFT JOIN rankings r ON r.contest_id=c.id
+        LEFT JOIN entry_material_scans ems ON ems.entry_id=e.id
+        LEFT JOIN acquisitions a ON a.game_id=e.game_id
+        LEFT JOIN acquired_files af ON af.acquisition_id=a.id
+        GROUP BY c.id ORDER BY c.year DESC,c.name COLLATE NOCASE,c.id""")
+    years = []
+    for year in range(2026, 2007, -1):
+        current = [contest for contest in contests if contest["year"] == year]
+        def scope_summary(scope_type):
+            scoped = [contest for contest in current if contest["scope_type"] == scope_type]
+            return {
+                "contest_count": len(scoped),
+                "contests_with_entries_count": sum(1 for row in scoped if row["entry_count"] > 0),
+                "entry_count": sum(row["entry_count"] for row in scoped),
+                "ranked_entry_count": sum(row["ranked_entry_count"] for row in scoped),
+                "materials_read_count": sum(row["materials_read_count"] for row in scoped),
+                "downloaded_entry_count": sum(row["downloaded_entry_count"] for row in scoped),
+            }
+        years.append({
+            "year": year,
+            "contest_count": len(current),
+            "contests_with_entries_count": sum(1 for row in current if row["entry_count"] > 0),
+            "entry_count": sum(row["entry_count"] for row in current),
+            "known_status_count": sum(row["known_status_count"] for row in current),
+            "ranking_category_count": sum(row["ranking_category_count"] for row in current),
+            "ranked_entry_count": sum(row["ranked_entry_count"] for row in current),
+            "materials_read_count": sum(row["materials_read_count"] for row in current),
+            "downloaded_entry_count": sum(row["downloaded_entry_count"] for row in current),
+            "pnp_core": scope_summary("pnp_core"),
+            "adjacent": scope_summary("adjacent"),
+        })
+    return {"years": years, "contests": contests}
 
 
 def ranking_rows(db, contest_id=None, game_id=None):

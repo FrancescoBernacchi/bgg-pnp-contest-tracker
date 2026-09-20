@@ -1,6 +1,8 @@
 # Database operativo e relativi file temporanei
 database/*.sqlite3
 database/*.sqlite3-*
+database/*.sqlite
+database/*.sqlite-*
 
 # Libreria locale dei materiali PnP: può contenere file grandi e opere di terzi
 library/*
@@ -19,4 +21,3 @@ __pycache__/
 .env
 .DS_Store
 Thumbs.db
-

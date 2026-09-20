@@ -38,7 +38,7 @@ const table = (headers, body) => body.length ? `<div class="table-wrap" tabindex
 const heading = (eyebrow, title, subtitle) => `<div class="page-heading"><div><p class="eyebrow">${esc(eyebrow)}</p><h1>${esc(title)}</h1><p class="subtitle">${esc(subtitle)}</p></div><span class="stamp">● Sola lettura</span></div>`;
 const options = (values, first) => `<option value="">${esc(first)}</option>` + [...new Set(values.filter(v=>v!==null && v!==undefined))].sort().map(v=>`<option value="${esc(v)}">${esc(label(v))}</option>`).join('');
 let data = null, routeVersion = 0;
-const filters = {scope:'',contestState:'',year:'',query:'',entryQuery:'',entryState:'',entryKind:'',entryScope:'',entryContest:'',entrySort:'title',page:1};
+const filters = {scope:'',contestState:'',year:'',query:'',entryQuery:'',entryState:'',entryKind:'',entryScope:'',entryContest:'',entryYear:'',entryMaterials:'',entrySort:'title',page:1};
 async function api(path) {
   const response = await fetch(path, {cache:'no-store'});
   const result = await response.json();
@@ -65,6 +65,39 @@ function stats() {
   const dependent = data.entries.filter(e=>e.entry_kind==='dependent_variant').length;
   return `<div class="stats"><div class="stat"><span>Contest nell’archivio</span><strong>${data.contests.length}</strong><small>Edizioni catalogate</small></div><div class="stat"><span>PnP principali</span><strong>${core}</strong><small>${data.contests.length-core} contest adiacenti separati</small></div><div class="stat"><span>Entry censite</span><strong>${data.entries.length}</strong><small>Include le entry ritirate</small></div><div class="stat"><span>Varianti dipendenti</span><strong>${dependent}</strong><small>Da un gioco base</small></div></div>`;
 }
+const progressState={year:''};
+const progressMark=(value,total,kind='count')=>{
+  const tone=total>0&&value>=total?'done':value>0?'partial':'empty';
+  return `<span class="progress-mark ${tone}"><i aria-hidden="true"></i>${kind==='ratio'?`${value}/${total}`:value}</span>`;
+};
+const progressPercent=(value,total)=>total?Math.round(value*100/total):0;
+const pipelineRow=(labelText,value,total,tone='green')=>`<div class="pipeline-row"><div><span>${esc(labelText)}</span><strong>${value}/${total} · ${progressPercent(value,total)}%</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(labelText)}" value="${value}" max="${total||1}">${progressPercent(value,total)}%</progress></div>`;
+const scopePipeline=(scope,labelText,tone='green')=>`<section class="pipeline-scope"><div class="pipeline-scope-title"><strong>${esc(labelText)}</strong><span>${scope.entry_count} entry · ${scope.contest_count} contest</span></div>${pipelineRow('Contest con entry censite',scope.contests_with_entries_count,scope.contest_count,tone)}${pipelineRow('Entry in classifica',scope.ranked_entry_count,scope.entry_count,'blue')}${pipelineRow('Lettura materiali',scope.materials_read_count,scope.entry_count,'amber')}${pipelineRow('File acquisiti',scope.downloaded_entry_count,scope.entry_count,tone)}</section>`;
+const scopeSummary=(year,scopeType)=>{
+  if(year[scopeType]) return year[scopeType];
+  const contests=(data?.progress?.contests||[]).filter(c=>c.year===year.year&&c.scope_type===scopeType);
+  return {
+    contest_count:contests.length,
+    contests_with_entries_count:contests.filter(c=>c.entry_count>0).length,
+    entry_count:contests.reduce((sum,c)=>sum+c.entry_count,0),
+    ranked_entry_count:contests.reduce((sum,c)=>sum+c.ranked_entry_count,0),
+    materials_read_count:contests.reduce((sum,c)=>sum+c.materials_read_count,0),
+    downloaded_entry_count:contests.reduce((sum,c)=>sum+c.downloaded_entry_count,0),
+  };
+};
+function renderProgress() {
+  const years=data.progress.years;
+  const selected=progressState.year||String(years.find(y=>y.contest_count)?.year||years[0]?.year||'');
+  progressState.year=selected;
+  const activeYears=years.filter(y=>y.contest_count);
+  const emptyYears=years.filter(y=>!y.contest_count);
+  const annual=activeYears.map(y=>`<button class="year-pipeline ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><div class="pipeline-title"><span><strong>${y.year}</strong><small>Avanzamento separato per perimetro</small></span><b>${y.entry_count}<small> entry complessive</small></b></div>${scopePipeline(scopeSummary(y,'pnp_core'),'PnP principali')}${scopePipeline(scopeSummary(y,'adjacent'),'Adiacenti','violet')}</button>`).join('');
+  const pending=emptyYears.map(y=>`<button class="year-pending ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><strong>${y.year}</strong><span>Non importato</span></button>`).join('');
+  const contests=data.progress.contests.filter(c=>String(c.year)===selected);
+  const detail=contests.length?table(['Contest','Entry','Stati noti','Classifiche','Lettura materiali','Download'],contests.map(c=>`<tr><td><a href="#contest/${c.contest_id}">${esc(c.contest_name)}</a><small>${esc(label(c.scope_type))} · ${esc(label(c.status_normalized))}</small></td><td><a href="#entries/contest/${c.contest_id}">${progressMark(c.entry_count,c.entry_count)}</a></td><td>${progressMark(c.known_status_count,c.entry_count,'ratio')}</td><td><a href="#rankings/${c.contest_id}">${progressMark(c.ranking_category_count,1)}</a><small>categorie</small></td><td><a href="#entries/contest/${c.contest_id}/read">${progressMark(c.materials_read_count,c.entry_count,'ratio')}</a></td><td><a href="#entries/contest/${c.contest_id}/downloaded">${progressMark(c.downloaded_entry_count,c.entry_count,'ratio')}</a></td></tr>`)):`<div class="empty">L’annualità ${esc(selected)} non è ancora importata nel database operativo.</div>`;
+  $('#main').innerHTML=heading('CRUSCOTTO','Avanzamento per anno.','Una seconda via di accesso a contest, entry, classifiche e materiali, calcolata direttamente dal catalogo locale.')+`<div class="notice">PnP principali e contest adiacenti hanno conteggi e indicatori indipendenti. Le challenge da 24 ore appartengono agli adiacenti e non alterano più l’avanzamento dei PnP principali.</div><div class="year-pipeline-grid" aria-label="Annualità presenti nel database">${annual}</div><details class="pending-years"><summary>Annualità non ancora importate (${emptyYears.length})</summary><div class="year-pending-grid">${pending}</div></details><div class="section-heading"><h2>${esc(selected)}</h2><span>${contests.length} contest nel database · <a href="#entries/year/${esc(selected)}">Apri tutte le entry dell’anno →</a></span></div>${detail}`;
+  document.querySelectorAll('[data-progress-year]').forEach(button=>button.onclick=()=>{progressState.year=button.dataset.progressYear;renderProgress();});
+}
 function renderContests() {
   $('#main').innerHTML = heading('SCOPRI · CONSULTA · SEGUI','Dalle idee al tavolo.','Esplora i contest di design BGG, segui le scadenze e ritrova ogni entry nel tuo archivio.') + stats() + `
     <div class="filters"><label class="field grow">Cerca un contest<input id="search" type="search" placeholder="Nome del contest…" value="${esc(filters.query)}"></label><label class="field">Stato<select id="state">${options(data.contests.map(c=>c.status_normalized),'Tutti gli stati')}</select></label><label class="field">Edizione<select id="year">${options(data.contests.map(c=>c.year),'Tutti gli anni')}</select></label></div>
@@ -89,10 +122,10 @@ function contestResults() {
 }
 function entryFilters(contestId=null) {
   const entries = contestId ? data.entries.filter(e=>e.contest_id===contestId) : data.entries;
-  return `<div class="filters"><label class="field grow">Cerca entry o autore<input type="search" id="entry-search" placeholder="Titolo, nome o autore…" value="${esc(filters.entryQuery)}"></label><label class="field">Stato entry<select id="entry-state">${options(entries.map(e=>e.status_normalized),'Tutti gli stati')}</select></label><label class="field">Tipologia<select id="entry-kind">${options(entries.map(e=>e.entry_kind),'Tutte le tipologie')}</select></label>${contestId?'':`<label class="field">Perimetro<select id="entry-scope">${options(['pnp_core','adjacent'],'Tutti')}</select></label><label class="field">Contest<select id="entry-contest"><option value="">Tutti i contest</option>${data.contests.map(c=>`<option value="${c.contest_id}">${esc(c.contest_name)}</option>`).join('')}</select></label>`}<label class="field">Ordina<select id="entry-sort"><option value="title">Titolo A–Z</option><option value="position">Posizione nella lista</option><option value="verified">Verifica più recente</option></select></label></div><div id="entry-results" aria-live="polite"></div>`;
+  return `<div class="filters"><label class="field grow">Cerca entry o autore<input type="search" id="entry-search" placeholder="Titolo, nome o autore…" value="${esc(filters.entryQuery)}"></label><label class="field">Stato entry<select id="entry-state">${options(entries.map(e=>e.status_normalized),'Tutti gli stati')}</select></label><label class="field">Tipologia<select id="entry-kind">${options(entries.map(e=>e.entry_kind),'Tutte le tipologie')}</select></label>${contestId?'':`<label class="field">Anno<select id="entry-year">${options(data.entries.map(e=>e.year),'Tutti gli anni')}</select></label><label class="field">Perimetro<select id="entry-scope">${options(['pnp_core','adjacent'],'Tutti')}</select></label><label class="field">Contest<select id="entry-contest"><option value="">Tutti i contest</option>${data.contests.map(c=>`<option value="${c.contest_id}">${esc(c.contest_name)}</option>`).join('')}</select></label>`}<label class="field">Materiali<select id="entry-materials"><option value="">Tutti</option><option value="read">Lettura registrata</option><option value="unread">Lettura non iniziata</option><option value="downloaded">File acquisiti</option></select></label><label class="field">Ordina<select id="entry-sort"><option value="title">Titolo A–Z</option><option value="position">Posizione nella lista</option><option value="verified">Verifica più recente</option></select></label></div><div id="entry-results" aria-live="polite"></div>`;
 }
 function bindEntryFilters(contestId=null) {
-  for (const [id,key] of [['entry-state','entryState'],['entry-kind','entryKind'],['entry-scope','entryScope'],['entry-contest','entryContest'],['entry-sort','entrySort']]) {
+  for (const [id,key] of [['entry-state','entryState'],['entry-kind','entryKind'],['entry-year','entryYear'],['entry-scope','entryScope'],['entry-contest','entryContest'],['entry-materials','entryMaterials'],['entry-sort','entrySort']]) {
     if (!$('#'+id)) continue;
     if (![...$('#'+id).options].some(o=>o.value===filters[key])) filters[key]='';
     $('#'+id).value=filters[key];
@@ -102,13 +135,29 @@ function bindEntryFilters(contestId=null) {
   entryResults(contestId);
 }
 function entryResults(contestId=null) {
-  let entries=data.entries.filter(e=>(!contestId||e.contest_id===contestId)&&(!filters.entryState||e.status_normalized===filters.entryState)&&(!filters.entryKind||e.entry_kind===filters.entryKind)&&(contestId||!filters.entryScope||e.scope_type===filters.entryScope)&&(contestId||!filters.entryContest||String(e.contest_id)===filters.entryContest)&&`${e.canonical_title} ${e.credits||''}`.toLocaleLowerCase().includes(filters.entryQuery.toLocaleLowerCase().trim()));
+  let entries=data.entries.filter(e=>(!contestId||e.contest_id===contestId)&&(!filters.entryState||e.status_normalized===filters.entryState)&&(!filters.entryKind||e.entry_kind===filters.entryKind)&&(contestId||!filters.entryYear||String(e.year)===filters.entryYear)&&(contestId||!filters.entryScope||e.scope_type===filters.entryScope)&&(contestId||!filters.entryContest||String(e.contest_id)===filters.entryContest)&&(!filters.entryMaterials||(filters.entryMaterials==='read'?e.materials_read===1:filters.entryMaterials==='unread'?e.materials_read===0:e.materials_downloaded===1))&&`${e.canonical_title} ${e.credits||''}`.toLocaleLowerCase().includes(filters.entryQuery.toLocaleLowerCase().trim()));
   entries.sort((a,b)=>filters.entrySort==='position'?(a.position??Infinity)-(b.position??Infinity)||a.id-b.id:filters.entrySort==='verified'?String(b.last_verified_at).localeCompare(String(a.last_verified_at))||a.id-b.id:a.canonical_title.localeCompare(b.canonical_title,'it')||a.id-b.id);
   const pages=Math.max(1,Math.ceil(entries.length/30)); filters.page=Math.min(filters.page,pages);
   const shown=entries.slice((filters.page-1)*30,filters.page*30);
-  $('#entry-results').innerHTML=`<div class="section-heading"><h2>${entries.length} entry</h2><span>Stati registrati, senza verifica dei file</span></div>`+table(['Entry','Contest','Stato','Tipologia','Verifica'],shown.map(e=>`<tr><td><a href="#entry/${e.id}">${esc(e.canonical_title)}</a><small>${e.position==null?'':`#${e.position} · `}${esc(e.credits||'Autore non registrato')}</small></td><td><a href="#contest/${e.contest_id}">${esc(e.contest_name)}</a><small>${esc(label(e.scope_type))}</small></td><td>${badge(e.status_normalized)}<small>${esc(e.status_raw)}</small></td><td>${esc(label(e.entry_kind))}<small>${e.base_game_dependency!=='none'?esc(label(e.base_game_dependency)):''}</small></td><td>${esc(day(e.last_verified_at))}</td></tr>`))+`<div class="pager"><span>Pagina ${filters.page} di ${pages} · fino a 30 entry per pagina</span><div><button id="prev" class="quiet" ${filters.page===1?'disabled':''}>← Precedente</button><button id="next" class="quiet" ${filters.page===pages?'disabled':''}>Successiva →</button></div></div>`;
+  $('#entry-results').innerHTML=`<div class="section-heading"><h2>${entries.length} entry</h2><span>L = lettura registrata · D = file acquisiti</span></div>`+table(['Entry','Contest','Stato','Materiali','Verifica'],shown.map(e=>`<tr><td><a href="#entry/${e.id}">${esc(e.canonical_title)}</a><small>${e.position==null?'':`#${e.position} · `}${esc(e.credits||'Autore non registrato')}</small></td><td><a href="#contest/${e.contest_id}">${esc(e.contest_name)}</a><small>${esc(e.year)} · ${esc(label(e.scope_type))}</small></td><td>${badge(e.status_normalized)}<small>${esc(e.status_raw)}</small></td><td>${e.materials_read?'L 🟢':'L 🔴'} · ${e.materials_downloaded?'D 🟢':'D 🔴'}<small>${esc(label(e.entry_kind))}</small></td><td>${esc(day(e.last_verified_at))}</td></tr>`))+`<div class="pager"><span>Pagina ${filters.page} di ${pages} · fino a 30 entry per pagina</span><div><button id="prev" class="quiet" ${filters.page===1?'disabled':''}>← Precedente</button><button id="next" class="quiet" ${filters.page===pages?'disabled':''}>Successiva →</button></div></div>`;
   $('#prev').onclick=()=>{filters.page--;entryResults(contestId);};
   $('#next').onclick=()=>{filters.page++;entryResults(contestId);};
+}
+function renderEntriesRoute(hash) {
+  let contestId=null;
+  const parts=hash.split('/');
+  if(parts[1]==='year'&&/^\d{4}$/.test(parts[2]||'')) {
+    filters.entryYear=parts[2]; filters.entryContest=''; filters.entryMaterials='';
+  } else if(parts[1]==='contest'&&/^[1-9]\d*$/.test(parts[2]||'')) {
+    contestId=Number(parts[2]); filters.entryYear=''; filters.entryContest='';
+    filters.entryMaterials=['read','unread','downloaded'].includes(parts[3])?parts[3]:'';
+  } else if(parts.length===1) {
+    filters.entryYear=''; filters.entryContest=''; filters.entryMaterials='';
+  }
+  filters.page=1;
+  const context=contestId?data.contests.find(c=>c.contest_id===contestId):null;
+  $('#main').innerHTML=heading('IL CATALOGO',context?context.contest_name:'Ogni gioco, una nuova idea.',context?'Entry del contest con accesso diretto allo stato dei materiali.':'Cerca fra tutte le entry, comprese quelle ritirate e le varianti dipendenti.')+entryFilters(contestId);
+  bindEntryFilters(contestId);
 }
 const rankingFilters={query:'',contest:'',year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1};
 const rankingGroupKey=r=>JSON.stringify([r.contest_id,r.category,r.is_official,r.evidence_url,r.verified_at]);
@@ -252,11 +301,12 @@ async function route() {
   if(!data) return;
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'contests';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||(hash.startsWith('entry/')&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati':hash==='entries'?'Tutte le entry':hash==='deadlines'?'Scadenze':'Contest di design';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=hash==='progress'?'Avanzamento':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati':hash.startsWith('entries')?'Tutte le entry':hash==='deadlines'?'Scadenze':'Contest di design';
   try {
-    if(hash==='contests') renderContests();
-    else if(hash==='entries') {$('#main').innerHTML=heading('IL CATALOGO','Ogni gioco, una nuova idea.','Cerca fra tutte le entry, comprese quelle ritirate e le varianti dipendenti.')+entryFilters();bindEntryFilters();}
+    if(hash==='progress') renderProgress();
+    else if(hash==='contests') renderContests();
+    else if(/^entries(?:\/year\/\d{4}|\/contest\/[1-9]\d*(?:\/(?:read|unread|downloaded))?)?$/.test(hash)) renderEntriesRoute(hash);
     else if(hash==='deadlines') renderDeadlines();
     else if(/^rankings(?:\/[1-9]\d*)?$/.test(hash)) renderRankings(hash.split('/')[1]||'');
     else if(/^results\/[1-9]\d*$/.test(hash)) renderContestResults(hash.split('/')[1]);

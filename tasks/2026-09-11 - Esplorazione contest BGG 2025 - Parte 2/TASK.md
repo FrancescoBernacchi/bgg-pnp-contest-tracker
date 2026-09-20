@@ -126,3 +126,15 @@ Il censimento materiali è stato esteso a 1-Card. La copertura trasversale dei q
 Oltre al post non osservabile, il registro dei punti aperti conserva tre ambiguità da integrare con le regole: quantità e tipo dei dadi di `Going the Difference!`, distinta dei cubetti di `The Moving Fortress` e natura letterale o sostituibile della torta in `Piece of Cake`.
 
 File riproducibili dell'incremento: `catalog/build_2025_one_card_resources.py`, `catalog/2025-one-card-wips-resources.sql`, `catalog/verify_2025_one_card_resources.py` e `sources/2025-ONE-CARD-WIPS-RESOURCES.md`; il generatore e verificatore trasversali dei materiali sono stati aggiornati. Gli script sono stati applicati al database operativo dopo la verifica su copia; `PRAGMA integrity_check` restituisce `ok` e le foreign key non presentano violazioni.
+
+## Incremento Solomode
+
+Il 15 settembre 2026 sono state coperte tutte le 38 proposte della GeekList ufficiale. Sono stati aperti direttamente e letti integralmente tramite DOM effettivo i 36 WIP individuali; `Pharaoh Code Solo Mode` e `Splendor Solo Mode` rimandano soltanto alle pagine generali del contest e restano quindi senza WIP. Non sono state aperte destinazioni esterne e non sono stati scaricati materiali.
+
+Il censimento conserva 67 collegamenti distinti: 34 WIP espongono almeno una risorsa; `Codenames Rush` non presenta collegamenti pertinenti; `Solisauron` dichiara la rimozione delle proprie risorse da BGG e non è quindi osservabile come assenza. Sono stati estratti anchor, `gg-item-link` e media incorporati, escludendo navigazione, profili, immagini decorative, duplicati tecnici e collegamenti automatici ai canali YouTube.
+
+La lettura dei primi post ha aggiunto 32 requisiti materiali per 21 varianti. Poiché tutte le entry Solomode dipendono da un gioco base, l'inventario registra solo componenti aggiuntivi, sostitutivi o kit alternativi dichiarati e non duplica la dotazione del gioco base. La copertura trasversale dei cinque contest comprende ora 167 entry, 339 requisiti e 123 entry con almeno un requisito osservato; resta `first_post_only` e potrà essere integrata dopo la futura acquisizione delle regole.
+
+Quattro situazioni sono state aggiunte al registro umano: risorse rimosse di `Solisauron`, URL BGG troncato di `Felipe I / Felipe II` e assenza di WIP individuale per `Pharaoh Code Solo Mode` e `Splendor Solo Mode`. Il criterio riutilizzabile sui materiali delle varianti dipendenti è stato promosso nella skill e nel playbook.
+
+File riproducibili dell'incremento: `catalog/build_2025_solomode_resources.py`, `catalog/2025-solomode-wips-resources.sql`, `catalog/verify_2025_solomode_resources.py` e `sources/2025-SOLOMODE-WIPS-RESOURCES.md`; sono stati aggiornati anche il generatore e il verificatore trasversali dei materiali.

@@ -1,6 +1,6 @@
 # Taccuino dei controlli BGG
 
-Ultimo aggiornamento documentale: 2026-09-07. Ultimo rilevamento BGG: 2026-09-05.
+Ultimo aggiornamento documentale: 2026-09-20. Ultimo rilevamento BGG: 2026-09-05.
 
 Questo registro governa i controlli periodici sui contest. Le date sono finestre operative: un controllo può essere anticipato soltanto in presenza di un annuncio BGG, di un errore da correggere o di una richiesta esplicita. I controlli tecnici di consistenza non costituiscono nuovi rilevamenti dello stato esterno.
 
@@ -16,6 +16,7 @@ La revisione del 7 settembre ha consolidato le regole del progetto senza consult
 | 2026-10-02 | Wargame PnP | primo controllo dopo la chiusura del 1 ottobre | lista congelata e fase successiva | pianificato |
 | 2026-10-16 | Solitaire PnP | apertura voto dopo il termine sviluppo del 15 ottobre | entry finali, ritiri, modulo e calendario voto | pianificato |
 | 2026-10-17 | 54-Card | primo controllo dopo la chiusura entry del 16 ottobre | totale definitivo provvisorio, ritiri e stati | pianificato |
+| 2026-11-01 | 24 Hour NINE | primo controllo dopo la fine del bimestre | roster finale, eventuali ritiri, apertura del voto e prossimo tema | pianificato |
 | 2026-11-02 | 54-Card | dopo la scadenza Component Ready del 1 novembre | entry giocabili e ritiri | pianificato |
 | 2026-11-12 | Wargame PnP | dopo il freeze previsto dell'11 novembre | finalisti e apertura/finestra voto | pianificato |
 | 2026-11-16 | Solitaire PnP | dopo la chiusura voto del 15 novembre | risultati o data prevista di pubblicazione | pianificato |

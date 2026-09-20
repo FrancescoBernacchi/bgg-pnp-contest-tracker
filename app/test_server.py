@@ -83,6 +83,28 @@ class ApplicationTests(unittest.TestCase):
             with self.assertRaises(LookupError):
                 entry_detail(db,999)
 
+    def test_progress_and_entry_material_flags_are_derived_from_database(self):
+        db = sqlite3.connect(self.database)
+        db.execute("UPDATE contests SET year=2026,status_normalized='complete' WHERE id IN (1,2)")
+        db.execute("UPDATE entries SET status_normalized='contest_ready' WHERE id=1")
+        self.insert(db, "entry_material_scans", id=1, entry_id=1, checked_at="2026-09-11",
+                    wip_status="found", material_listing_status="observed", coverage_scope="first_post_only")
+        self.insert(db, "acquisitions", id=1, game_id=1, acquired_at="2026-09-12",
+                    selection_reason="Test", game_status_at_acquisition="contest_ready")
+        self.insert(db, "acquired_files", id=1, acquisition_id=1, relative_path="game/file.pdf",
+                    original_filename="file.pdf", byte_size=12, sha256="0" * 64)
+        db.commit(); db.close()
+        with connect(self.database) as db:
+            result = catalog(db)
+        year = next(row for row in result["progress"]["years"] if row["year"] == 2026)
+        contest = next(row for row in result["progress"]["contests"] if row["contest_id"] == 1)
+        entry = next(row for row in result["entries"] if row["id"] == 1)
+        self.assertEqual((year["contest_count"], year["contests_with_entries_count"], year["entry_count"], year["known_status_count"], year["materials_read_count"]), (2, 2, 3, 1, 1))
+        self.assertEqual((year["pnp_core"]["contest_count"], year["pnp_core"]["entry_count"]), (1, 2))
+        self.assertEqual((year["adjacent"]["contest_count"], year["adjacent"]["entry_count"]), (1, 1))
+        self.assertEqual((contest["known_status_count"], contest["downloaded_entry_count"]), (1, 1))
+        self.assertEqual((entry["materials_read"], entry["materials_downloaded"]), (1, 1))
+
     def test_entry_resources_follow_mentions_and_preserve_provenance(self):
         db = sqlite3.connect(self.database)
         self.insert(db, "remote_resources", id=1, game_id=1, kind="game_files", access_type="folder",

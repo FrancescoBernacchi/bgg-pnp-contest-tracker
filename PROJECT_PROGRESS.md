@@ -1,105 +1,1194 @@
 # Cruscotto di avanzamento della raccolta
 
-Ultimo aggiornamento: 2026-09-15. Fonte dello stato: repository e database locale verificati il 2026-09-15. Ultimo rilevamento BGG registrato: 2026-09-10.
+Ultimo aggiornamento: 2026-09-20. Fonte dello stato: repository e database locale verificati il 2026-09-20. Ultimo rilevamento BGG registrato: 2026-09-10.
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
 
-Le sezioni A e B sono rigenerate dal database con `app/generate_project_progress.py`. Il contenuto compreso tra i marcatori HTML non deve essere modificato manualmente. Poiché Markdown non controlla larghezza, bordi o scorrimento delle tabelle, il dettaglio annuale viene suddiviso automaticamente in gruppi di massimo sei contest.
+## Censimento globale dei contest BGG
+
+Questa è la vista pertinente al task globale: comprende tutte le annualità osservate. Le 305 unità sono state deduplicate e importate nel database come baseline di censimento; la verifica puntuale dei thread e degli stati prudenziali resta aperta.
+
+| Anno | Contest/challenge candidate | Stato dei titoli | Stato di consolidamento |
+|---:|---:|---|---|
+| 2026 | 17 | estratti; 5 challenge individualizzate | baseline finalizzata; NINE attiva e un'anomalia storica fuori dall'anno |
+| 2025 | 17 | estratti; 6 challenge individualizzate | baseline finalizzata |
+| 2024 | 17 | estratti; 6 challenge individualizzate | baseline finalizzata |
+| 2023 | 21 | estratti; 9 challenge individualizzate | baseline finalizzata |
+| 2022 | 12 | estratti | baseline finalizzata |
+| 2021 | 14 | estratti | baseline finalizzata |
+| 2020 | 24 | estratti; 11 challenge individualizzate | baseline finalizzata |
+| 2019 | 23 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2018 | 22 | estratti; 12 challenge individualizzate | baseline finalizzata; League of Designers resta unknown |
+| 2017 | 20 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2016 | 21 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2015 | 24 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2014 | 22 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2013 | 18 | estratti; 12 challenge individualizzate | baseline finalizzata |
+| 2012 | 12 | estratti; 6 challenge individualizzate | baseline finalizzata |
+| 2011 | 9 | estratti | baseline finalizzata |
+| 2010 | 5 | estratti | baseline finalizzata |
+| 2009 | 6 | estratti | baseline finalizzata |
+| 2008 | 1 | estratto | baseline finalizzata |
+
+Fonti operative: `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md`, `sources/BGG-PNP-24H-CHALLENGES.md` e `catalog/global-contest-census.sql`.
+
+## Avanzamento dettagliato dei contest già nel database
+
+Le sezioni A e B sottostanti sono rigenerate dal database con `app/generate_project_progress.py` e coprono il 2008–2026. Il contenuto compreso tra i marcatori HTML non deve essere modificato manualmente.
 
 <!-- BEGIN GENERATED ANNUAL PROGRESS -->
 ## A. Sintesi immediata per anno
 
-Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti.
+Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. Gli anni sono divisi in gruppi di massimo quattro. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti. Un trattino indica che l'annualità non è ancora stata importata nel database.
 
-| N. | Tipologia e indicatore | 2026 | 2025 |
-|---:|:---|:---|:---|
-|   |   | **11 contest** | **11 contest** |
-| 1 | **[1-Card Print and Play Design Contest](https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest)** |   |   |
-|   |     Stati entry | — | 🟢 contest_ready 38 |
-|   |     Censimento entry | — | 🟢 38 |
-|   |     Classifiche | — | 🟢 9 |
-|   |     Lettura materiali | — | 🟢 38/38 entry |
-|   |     Download materiali | — | 🔴 0/38 entry |
-| 2 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |
-|   |     Stati entry | 🟡 unknown 8, wip 4, components_available 2, idea 2, contest_ready 1 | 🟢 contest_ready 28 |
-|   |     Censimento entry | 🟡 17 | 🟢 28 |
-|   |     Classifiche | 🔴 0 | 🟢 11 |
-|   |     Lettura materiali | 🔴 0/17 entry | 🔴 0/28 entry |
-|   |     Download materiali | 🔴 0/17 entry | 🔴 0/28 entry |
-| 3 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |
-|   |     Stati entry | 🟢 contest_ready 44, components_available 11, idea 8, withdrawn 6 | 🟢 contest_ready 63, withdrawn 31 |
-|   |     Censimento entry | 🟢 69 | 🟢 94 |
-|   |     Classifiche | 🟢 11 | 🟢 11 |
-|   |     Lettura materiali | 🔴 0/69 entry | 🔴 0/94 entry |
-|   |     Download materiali | 🔴 0/69 entry | 🔴 0/94 entry |
-| 4 | **[Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design)** |   |   |
-|   |     Stati entry | 🟡 contest_ready 2, components_available 1, playtest_ready 1, unknown 1 | — |
-|   |     Censimento entry | 🟢 5 | — |
-|   |     Classifiche | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/5 entry | — |
-|   |     Download materiali | 🔴 0/5 entry | — |
-| 5 | **[Children & Family Game Design Contest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest)** |   |   |
-|   |     Stati entry | 🟢 contest_ready 36, withdrawn 2 | 🟢 contest_ready 27 |
-|   |     Censimento entry | 🟢 38 | 🟢 27 |
-|   |     Classifiche | 🟢 5 | 🟢 5 |
-|   |     Lettura materiali | 🔴 0/38 entry | 🟢 27/27 entry |
-|   |     Download materiali | 🔴 0/38 entry | 🔴 0/27 entry |
-| 6 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |
-|   |     Stati entry | 🟢 contest_ready 22, withdrawn 3 | 🟢 contest_ready 15, withdrawn 12 |
-|   |     Censimento entry | 🟢 25 | 🟢 27 |
-|   |     Classifiche | 🟢 9 | 🟢 9 |
-|   |     Lettura materiali | 🔴 0/25 entry | 🟢 27/27 entry |
-|   |     Download materiali | 🔴 0/25 entry | 🔴 0/27 entry |
-| 7 | **[Print and Play Wargame Design Contest](https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co)** |   |   |
-|   |     Stati entry | 🟢 playtest_ready 8, wip 7, idea 2, components_available 1 | 🟢 contest_ready 19 |
-|   |     Censimento entry | 🟡 18 | 🟢 19 |
-|   |     Classifiche | 🔴 0 | 🟢 8 |
-|   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/19 entry |
-|   |     Download materiali | 🔴 0/18 entry | 🔴 0/19 entry |
-| 8 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest)** |   |   |
-|   |     Stati entry | — | 🟢 contest_ready 21, withdrawn 16 |
-|   |     Censimento entry | — | 🟢 37 |
-|   |     Classifiche | — | 🟢 11 |
-|   |     Lettura materiali | — | 🟢 37/37 entry |
-|   |     Download materiali | — | 🔴 0/37 entry |
-| 9 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |
-|   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 |
-|   |     Censimento entry | 🟡 89 | 🟢 74 |
-|   |     Classifiche | 🔴 0 | 🟢 16 |
-|   |     Lettura materiali | 🔴 0/89 entry | 🔴 0/74 entry |
-|   |     Download materiali | 🔴 0/89 entry | 🔴 0/74 entry |
-| 10 | **[Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest)** |   |   |
-|   |     Stati entry | 🟢 contest_ready 21 | 🟢 contest_ready 38 |
-|   |     Censimento entry | 🟢 21 | 🟢 38 |
-|   |     Classifiche | 🟢 8 | 🟢 9 |
-|   |     Lettura materiali | 🔴 0/21 entry | 🔴 0/38 entry |
-|   |     Download materiali | 🔴 0/21 entry | 🔴 0/38 entry |
-| 11 | **[Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest)** |   |   |
-|   |     Stati entry | 🟡 unknown 11, components_available 7 | 🔴 unknown 42 |
-|   |     Censimento entry | 🟡 18 | 🟢 42 |
-|   |     Classifiche | 🔴 0 | 🟢 5 |
-|   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/42 entry |
-|   |     Download materiali | 🔴 0/18 entry | 🔴 0/42 entry |
-| 12 | **[Turkish Print and Play Design Contest](https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim)** |   |   |
-|   |     Stati entry | 🟢 components_available 14, withdrawn 6 | — |
-|   |     Censimento entry | 🟡 20 | — |
-|   |     Classifiche | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/20 entry | — |
-|   |     Download materiali | 🔴 0/20 entry | — |
-| 13 | **[Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest)** |   |   |
-|   |     Stati entry | 🟢 components_available 32, contest_ready 7, playtest_ready 4, wip 1, withdrawn 1 | 🟢 contest_ready 40 |
-|   |     Censimento entry | 🟢 45 | 🟢 40 |
-|   |     Classifiche | 🟢 8 | 🟢 5 |
-|   |     Lettura materiali | 🔴 0/45 entry | 🔴 0/40 entry |
-|   |     Download materiali | 🔴 0/45 entry | 🔴 0/40 entry |
+### Gruppo anni 1 di 5
+
+| N. | Tipologia e indicatore | 2026 | 2025 | 2024 | 2023 |
+|---:|:---|:---|:---|:---|:---|
+|   |   | **17 contest nel database** | **17 contest nel database** | **17 contest nel database** | **21 contest nel database** |
+| 2 | **[1-Card Print and Play Contest](https://boardgamegeek.com/thread/3686290/2026-1-card-print-and-play-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 30 | — | — | — |
+|   |     Censimento entry | 🟢 30 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/30 entry | — | — | — |
+|   |     Download materiali | 🔴 0/30 entry | — | — | — |
+| 3 | **[1-Card Print and Play Design Contest](https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest)** |   |   |   |   |
+|   |     Stati entry | — | 🟢 contest_ready 38 | — | — |
+|   |     Censimento entry | — | 🟢 38 | — | — |
+|   |     Classifiche | — | 🟢 9 | — | — |
+|   |     Lettura materiali | — | 🟢 38/38 entry | — | — |
+|   |     Download materiali | — | 🔴 0/38 entry | — | — |
+| 10 | **[14th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 11 | **[15th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 3 | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🟡 3 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/3 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/3 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟡 unknown 8, wip 4, components_available 2, idea 2, contest_ready 1 | 🟢 contest_ready 28 | 🔴  | 🔴  |
+|   |     Censimento entry | 🟡 17 | 🟢 28 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🟢 11 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/17 entry | 🔴 0/28 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/17 entry | 🔴 0/28 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 44, components_available 11, idea 8, withdrawn 6 | 🟢 contest_ready 63, withdrawn 31 | — | — |
+|   |     Censimento entry | 🟢 69 | 🟢 94 | — | — |
+|   |     Classifiche | 🟢 11 | 🟢 11 | — | — |
+|   |     Lettura materiali | 🔴 0/69 entry | 🔴 0/94 entry | — | — |
+|   |     Download materiali | 🔴 0/69 entry | 🔴 0/94 entry | — | — |
+| 31 | **[Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design)** |   |   |   |   |
+|   |     Stati entry | 🟡 contest_ready 2, components_available 1, playtest_ready 1, unknown 1 | — | — | — |
+|   |     Censimento entry | 🟢 5 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/5 entry | — | — | — |
+|   |     Download materiali | 🔴 0/5 entry | — | — | — |
+| 35 | **[Children & Family Game Design Contest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 36, withdrawn 2 | 🟢 contest_ready 27 | 🟢 contest_complete 29 | 🔴  |
+|   |     Censimento entry | 🟢 38 | 🟢 27 | 🟢 29 | 🔴 0 |
+|   |     Classifiche | 🟢 5 | 🟢 5 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/38 entry | 🟢 27/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/38 entry | 🔴 0/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
+| 55 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 22, withdrawn 3 | 🟢 contest_ready 15, withdrawn 12 | 🔴  | 🔴  |
+|   |     Censimento entry | 🟢 25 | 🟢 27 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🟢 9 | 🟢 9 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/25 entry | 🟢 27/27 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/25 entry | 🔴 0/27 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 65 | **[Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+| 66 | **[One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 67 | **[One Card Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 75 | **[Print and Play Wargame Design Contest](https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co)** |   |   |   |   |
+|   |     Stati entry | 🟢 playtest_ready 8, wip 7, idea 2, components_available 1 | 🟢 contest_ready 19 | — | — |
+|   |     Censimento entry | 🟡 18 | 🟢 19 | — | — |
+|   |     Classifiche | 🔴 0 | 🟢 8 | — | — |
+|   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/19 entry | — | — |
+|   |     Download materiali | 🔴 0/18 entry | 🔴 0/19 entry | — | — |
+| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | — | 🟢 contest_ready 21, withdrawn 16 | 🔴  | — |
+|   |     Censimento entry | — | 🟢 37 | 🔴 0 | — |
+|   |     Classifiche | — | 🟢 11 | 🔴 0 | — |
+|   |     Lettura materiali | — | 🟢 37/37 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/37 entry | 🔴 0/0 entry | — |
+| 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
+|   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 | — | — |
+|   |     Censimento entry | 🟡 89 | 🟢 74 | — | — |
+|   |     Classifiche | 🔴 0 | 🟢 16 | — | — |
+|   |     Lettura materiali | 🔴 0/89 entry | 🔴 0/74 entry | — | — |
+|   |     Download materiali | 🔴 0/89 entry | 🔴 0/74 entry | — | — |
+| 82 | **[Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+| 83 | **[Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 contest_ready 21 | 🟢 contest_ready 38 | 🟢 contest_complete 28 | 🔴  |
+|   |     Censimento entry | 🟢 21 | 🟢 38 | 🟢 28 | 🔴 0 |
+|   |     Classifiche | 🟢 8 | 🟢 9 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/21 entry | 🟢 38/38 entry | 🔴 0/28 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/21 entry | 🔴 0/38 entry | 🔴 0/28 entry | 🔴 0/0 entry |
+| 90 | **[Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟡 unknown 11, components_available 7 | 🔴 unknown 42 | 🔴  | 🔴  |
+|   |     Censimento entry | 🟡 18 | 🟢 42 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🟢 5 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/42 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/18 entry | 🔴 0/42 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 92 | **[Turkish Print and Play Design Contest](https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim)** |   |   |   |   |
+|   |     Stati entry | 🟢 components_available 14, withdrawn 6 | — | — | — |
+|   |     Censimento entry | 🟡 20 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/20 entry | — | — | — |
+|   |     Download materiali | 🔴 0/20 entry | — | — | — |
+| 96 | **[Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🟢 components_available 32, contest_ready 7, playtest_ready 4, wip 1, withdrawn 1 | 🟢 contest_ready 40 | 🔴  | 🔴  |
+|   |     Censimento entry | 🟢 45 | 🟢 40 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🟢 8 | 🟢 5 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/45 entry | 🔴 0/40 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/45 entry | 🔴 0/40 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 102 | **[Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+
+### Gruppo anni 2 di 5
+
+| N. | Tipologia e indicatore | 2022 | 2021 | 2020 | 2019 |
+|---:|:---|:---|:---|:---|:---|
+|   |   | **12 contest nel database** | **14 contest nel database** | **24 contest nel database** | **23 contest nel database** |
+| 5 | **[10th anniversary Christmas Print and Play Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 6 | **[10th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 7 | **[11th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 8 | **[12th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 9 | **[13th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+| 18 | **[2nd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 19 | **[3rd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 21 | **[4th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 23 | **[5th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 24 | **[6th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 25 | **[7th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 26 | **[8th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 27 | **[9 Card Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+| 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 29 | **[9th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 36 | **[Children and Family Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 37 | **[Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 38 | **[Children's Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 46 | **[DTR Pewter Heroes Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 55 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 65 | **[Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 66 | **[One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+| 70 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 74 | **[Postcard Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 79 | **[Single Page Solo Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 82 | **[Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 83 | **[Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+| 90 | **[Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | — | — |
+| 94 | **[Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 96 | **[Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 99 | **[Video Stream Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 101 | **[Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 102 | **[Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+
+### Gruppo anni 3 di 5
+
+| N. | Tipologia e indicatore | 2018 | 2017 | 2016 | 2015 |
+|---:|:---|:---|:---|:---|:---|
+|   |   | **22 contest nel database** | **20 contest nel database** | **21 contest nel database** | **24 contest nel database** |
+| 12 | **[18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 13 | **[2 Player PnP Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 14 | **[2 Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 15 | **[2015-16 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 16 | **[2016-17 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+| 32 | **[Badger Rainbow Deck Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 37 | **[Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 48 | **[Eff the Rules Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 51 | **[Gamer Deck 1 Mechanics Design Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 57 | **[League of Designers Workshop and Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 59 | **[M80 World Languages Card Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 63 | **[MicroGame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+| 64 | **[Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 69 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 84 | **[Starfarm! Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 85 | **[Summer 2018 Green Box of Games Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 87 | **[The Pug Life Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 91 | **[Travel Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 94 | **[Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 95 | **[Two-Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 100 | **[War Game Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 103 | **[Wibbell++ Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+
+### Gruppo anni 4 di 5
+
+| N. | Tipologia e indicatore | 2014 | 2013 | 2012 | 2011 |
+|---:|:---|:---|:---|:---|:---|
+|   |   | **22 contest nel database** | **18 contest nel database** | **12 contest nel database** | **9 contest nel database** |
+| 4 | **[10d12 Dice Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 12 | **[18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+| 20 | **[4 Year Old D12 Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 30 | **[Art and Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 34 | **[Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 40 | **[Classic Novel Microgame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 43 | **[Dexterity Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 44 | **[Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 47 | **[Easy Builds Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 50 | **[Four Poppels and Six Dice Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 52 | **[Gimme a Hand contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 53 | **[Historical Themed Board Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | 🔴  | — |
+|   |     Censimento entry | — | — | 🔴 0 | — |
+|   |     Classifiche | — | — | 🔴 0 | — |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+| 54 | **[In-A-Tin / Express Print-and-Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 56 | **[Iron Game Designer Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 58 | **[Little Box Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 61 | **[Mashup Game Design and Artwork Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+| 62 | **[MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 72 | **[PNP Hidden Role / Bluffing Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 73 | **[PnP Postcard Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 76 | **[Quick Print and Play contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 77 | **[Randall's Dice Or No Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
+|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
+|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+| 86 | **[Synergy Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | — | — | 🔴  |
+|   |     Censimento entry | — | — | — | 🔴 0 |
+|   |     Classifiche | — | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+| 93 | **[Two Player PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | — | 🔴  | — | — |
+|   |     Censimento entry | — | 🔴 0 | — | — |
+|   |     Classifiche | — | 🔴 0 | — | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+| 97 | **[Two-Player Print-and-Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+| 98 | **[Unique Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Stati entry | 🔴  | — | — | — |
+|   |     Censimento entry | 🔴 0 | — | — | — |
+|   |     Classifiche | 🔴 0 | — | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+
+### Gruppo anni 5 di 5
+
+| N. | Tipologia e indicatore | 2010 | 2009 | 2008 |
+|---:|:---|:---|:---|:---|
+|   |   | **5 contest nel database** | **6 contest nel database** | **1 contest nel database** |
+| 1 | **[$1,000 Budget Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+| 33 | **[BoardGameCreate Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | — | 🔴  |
+|   |     Censimento entry | — | — | 🔴 0 |
+|   |     Classifiche | — | — | 🔴 0 |
+|   |     Lettura materiali | — | — | 🔴 0/0 entry |
+|   |     Download materiali | — | — | 🔴 0/0 entry |
+| 39 | **[Christmas Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — |
+| 41 | **[Co-Operative Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+| 42 | **[Confuse a Gamer Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — |
+| 45 | **[Dicefest Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — |
+| 49 | **[Four Cards or Tiles contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+| 60 | **[Many Monster Dice Game Competition](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — |
+| 71 | **[PnP Dice contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+| 80 | **[Sneaky Sci-Fi Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | 🔴  | — | — |
+|   |     Censimento entry | 🔴 0 | — | — |
+|   |     Classifiche | 🔴 0 | — | — |
+|   |     Lettura materiali | 🔴 0/0 entry | — | — |
+|   |     Download materiali | 🔴 0/0 entry | — | — |
+| 88 | **[Themed Rummy Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+| 89 | **[Traditional Card Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
+|   |     Stati entry | — | 🔴  | — |
+|   |     Censimento entry | — | 🔴 0 | — |
+|   |     Classifiche | — | 🔴 0 | — |
+|   |     Lettura materiali | — | 🔴 0/0 entry | — |
+|   |     Download materiali | — | 🔴 0/0 entry | — |
+
 
 ## B. Dettaglio delle entry per anno
 
 Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione registrata, `🔴` non iniziata); **D** = download (`🟢` tutte le risorse dichiarate associate a file acquisiti, `🟡` solo una parte, `🔴` nessun file). Le entry sono ordinate per la classifica principale scelta; quelle senza posizione seguono in ordine alfabetico. Se non esiste una classifica adatta, l'intero contest è alfabetico. La classifica usata è indicata sotto la tabella.
 
+### 2026
+
+#### Gruppo 1 di 4
+
+| N. | [1-Card Print and Play Contest](https://boardgamegeek.com/thread/3686290/2026-1-card-print-and-play-contest) | [2026 54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | [2026 9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) | [2026 Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design) | [2026 Children & Family Game Design Contest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) | [2026 In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) |
+|---:|:---|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **Best Overall Game** | **ordine alfabetico** | **Best Family Game** | **Best Overall Solo Game** |
+| 1 | [3 Dice on Mount Olympus](https://boardgamegeek.com/thread/3691866/wip-3-dice-on-mount-olympus-2026-1-card-print-and) — Ready | [A Tale of Two Cities](https://boardgamegeek.com/thread/3755558/wip-a-tale-of-two-cities-rising-rivals-a-complex-t) — WIP | #1 [OBOLUS](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [AYLA](https://boardgamegeek.com/thread/3726647/wip-ayla-bad-comet-cozy-contest-finalist) — Ready | #1 [Oh My Gods!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #1 [Glyph Knight](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 2 | [ALT](https://boardgamegeek.com/thread/3715534/wipalt2026-1-card-game-design-contestcomponents-av) — Ready | [All You Can Draft](https://boardgamegeek.com/thread/3747598/all-you-can-draft-54-card-contest-2026-components) — Components | #2 [SEPTEM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Firmament: The Valley's Atlas](https://boardgamegeek.com/thread/3691200/wip-firmament-bad-comet-cozy-contest) — Components | #2 [Daikoro: Elemental Dice Duel](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #2 [Turbo Tactics](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 3 | [Archeologist vs Temple](https://boardgamegeek.com/thread/3713118/archeologist-vs-temple-2026-1-card-print-and-play) — Ready | [Desire FOR Colors](https://boardgamegeek.com/thread/3744281/desire-for-colors-2026-54-card-game-design-contest) | #2 [Shifting Islands](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Lanternwood](https://boardgamegeek.com/thread/3685657/wip-lanternwood-bad-comet-cozy-contest) — Playtest | #3 [The Cheese Stands Alone](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #3 [The Cult](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 4 | [BeltDashCzar](https://boardgamegeek.com/thread/3716313/wip-beltdashczar-2026-1-card-print-and-play-contes) — Ready | [Exclamation!](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) — Components | #3 [DOKUSU](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Rare Sight](https://boardgamegeek.com/thread/3683796/finalists-announced-2026-bad-comet-cozy-game-desig/page/2) | #4 [Cookmates](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #4 [Fool's Journey: from Zero to Twenty One](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 5 | [Branch Line](https://boardgamegeek.com/thread/3715617/wip-branch-line-2026-1-card-print-and-play-contest) — Ready | [Flirt](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #4 [1st Hero](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Stone Skipping](https://boardgamegeek.com/thread/3685593/wip-stone-skipping-bad-comet-cozy-contest) — Ready | #5 [The Abyss](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #5 [Train Conductor](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 6 | [Bump it!](https://boardgamegeek.com/thread/3709500/bump-it-2026-1-card-print-and-play-pnp-design-cont) — Ready | [Karda](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #5 [Sector 9: The Void Anomaly](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #6 [Alien Tongue](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #6 [Robot Wipeout](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 7 | [Cardboat Legend](https://boardgamegeek.com/thread/3700003/wip-cardboat-legend-2026-1-card-pnp-contest-contes) — Ready | [Line O' Dinos](https://boardgamegeek.com/thread/3746991/line-o-dinos-co-op-set-building-2026-54-card-conte) | #6 [Ninefold Surgeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #7 [Graffito](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #7 [Puzzlin' Pawns](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 8 | [Colorfill](https://boardgamegeek.com/thread/3695473/wip-colorfill-2026-1-card-print-and-play-contest-c) — Ready | [Maremmas](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #7 [CAPTCHA all robots!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #8 [Animal Roundup](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #8 [Summoner of Winding Wood](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 9 | [CR!S!S](https://boardgamegeek.com/thread/3696427/wip-crss-a-2-player-superhero-game-submission-to-t) — Ready | [Runic](https://boardgamegeek.com/thread/3760327/contest-ready-runic-a-trick-taking-press-your-luck) — Ready | #7 [Dreamstone](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #9 [IRANIKA](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Aetherwood](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 10 | [Dauntless Squad](https://boardgamegeek.com/thread/3716261/wip-dauntless-squad-2026-1-card-print-and-play-con) — Ready | [Samarra](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #7 [Ninefold Murder](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #10 [Juicy Fruit Salad](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [BIGFOOT AND YETI](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 11 | [Dice Volley](https://boardgamegeek.com/thread/3703035/wip-dice-volley-2p-abstract-strategy-game-2026-1-c) — Ready | [Shelter](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) — WIP | #7 [PLAGA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #11 [Cherries](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Handcraft](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 12 | [Emmet and the Zombie Ant](https://boardgamegeek.com/thread/3687680/emmet-and-the-zombie-ant-entry-into-the-2026-1-car) — Ready | [Signum](https://boardgamegeek.com/thread/3754094/wip-signum-2026-54-card-game-design-contest-idea-p) — Idea | [A.D.A.](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #12 [Sandwich Stackers](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Hellhand](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 13 | [Flippin' Bomber](https://boardgamegeek.com/thread/3707964/wip-flippin-bomber-chaotic-1-card-maze-bomber-for) — Ready | [Tailor Made](https://boardgamegeek.com/thread/3752852/wip-tailor-made-2026-54-card-contest-idea-phase) — Idea | [Accursed's Village](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #13 [RoboRacers](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [HeroHold](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 14 | [Hitman Leaderboard](https://boardgamegeek.com/thread/3716965/wip-hitman-leaderboard-1-card-design-contest-2026) — Ready | [The Acrobat of Transluciania](https://boardgamegeek.com/thread/3756058/wip-the-acrobats-of-transluciania-54-cards-contest) — WIP | [Aim the Orcs!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #14 [Storyboard Heroes](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [LOCKSTEP](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 15 | [hoop.exe](https://boardgamegeek.com/thread/3703841/wip-hoopexe-2-player-tactical-programming-game-202) — Ready | [The Nine Lives of the Bureaucat](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | [Altar of the New Witch](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | #15 [Size the Cows](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Memories](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 16 | [Kaos Karts](https://boardgamegeek.com/thread/3706052/wip-kaos-karts-drive-through-portals-and-release-b) — Ready | [The Window Seat](https://boardgamegeek.com/thread/3753549/) | [Animons Card Battle 9](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Arctic Rush](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Monk's Cat: The Book of](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 17 | [LÜMEN: Eternal Night](https://boardgamegeek.com/thread/3708298/wip-lumen-eternal-night-solo-game-2026-1-card-prin) — Ready | [Wild Chorus](https://boardgamegeek.com/thread/3746665/wip-wild-chorus-2-8-player-party-game-2026-54-card) — WIP | [Arlo & Bliss](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Bag Drop](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Paddle Pals](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 18 | [Node Links](https://boardgamegeek.com/thread/3710606/wip-node-links-2026-1-card-print-and-play-contest) — Ready |   | [Assault on the Citadel](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Battle of the Mouse King](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Pocket Forge](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 19 | [One Card Hacker](https://boardgamegeek.com/thread/3706845/wip-one-card-hacker-2026-1-card-print-and-play-con) — Ready |   | [Asturquest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Bee Friendly](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Shining Spirits](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 20 | [Ripples](https://boardgamegeek.com/thread/3713561/wip-ripples-2026-1-card-print-and-play-contest-con) — Ready |   | [Backpack Struggle](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Bit and Bob's SCRAPYARD SHOWCASE](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Show of Hands](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 21 | [Slapstick](https://boardgamegeek.com/thread/3707495/wipslapstickdual-entry-24-hour-and-1-card-design-c) — Ready |   | [BALBÚRDIA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Cash Grab](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [SkyHold](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 22 | [Snake](https://boardgamegeek.com/thread/3709948/wip-snake-1-card-print-and-play-contest-2026-compo) — Ready |   | [Bunny Bomb Blaster](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   | [Colour Collab](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Strut](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 23 | [Space Shooter 1C](https://boardgamegeek.com/thread/3713304/wip-space-shooter-1c-2026-1-card-print-and-play-co) — Ready |   | [Calaverita](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Creative City Blocks](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Super Shot: Tennis SX](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 24 | [Sugar and Splice](https://boardgamegeek.com/thread/3717072/sugar-and-splice-entry-for-the-2026-one-card-conte) — Ready |   | [CHARM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Desire FOR Mods](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Veles vs Perun](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 25 | [Sword To Table](https://boardgamegeek.com/thread/3717003/wip-sword-to-table-a-monster-cooking-dungeon-crawl) — Ready |   | [Cheese Chase](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Excuse Me, Bear!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Wild Photo](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 26 | [Teseliatron](https://boardgamegeek.com/thread/3715614/wip-teseliatron-2026-1-card-print-and-play-contest) — Ready |   | [City Ghost](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [FLOWER FEAST](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 27 | [The Boy in the Cornfield](https://boardgamegeek.com/thread/3663168/wip-the-boy-in-the-cornfield-2p-hidden-movement-ga) — Ready |   | [Cloudbound Colossus Dice Game](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Fruit Stacks!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 28 | [Tic-Tac-Finger](https://boardgamegeek.com/thread/3713002/wip-tic-tac-finger-2026-1-card-print-and-play-cont) — Ready |   | [COLORI](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Gold Rush: Unplugged](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 29 | [Time Looper](https://boardgamegeek.com/thread/3702446/wip-time-looper-2026-1-card-print-and-play-contest) — Ready |   | [Crafting Crawler](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Invisible words](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 30 | [Trials and Tribulations](https://boardgamegeek.com/thread/3708498/wip-trials-and-tribulations-a-lotr-adventure-on-on) — Ready |   | [Der Kommandant](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Math for Ladybugs!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 31 |   |   | [Dice of War](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Patently Absurd](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 32 |   |   | [Diefectors](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Pivot](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 33 |   |   | [Dingers](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   | [RoboBots: Kaiju Hunters](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 34 |   |   | [Feldspar](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Seven Stones](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 35 |   |   | [FLAMES OF DOOM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Survival of the Middlest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 36 |   |   | [Flipping Little Dinos](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Terra Incognita](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Withdrawn |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 37 |   |   | [Foolish Wizards](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [The Travel Bug Card Game](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Withdrawn |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 38 |   |   | [Habitat](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Uftro Tomb](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |
+|   |   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 39 |   |   | [Heretic](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 40 |   |   | [HOPPE](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 41 |   |   | [HOT CARS](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 42 |   |   | [Mata's Inhabitants](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 43 |   |   | [Morpho Dungeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 44 |   |   | [Mountaineer's Challenge](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 45 |   |   | [My Hat Definitely Doesn't Have an Explosive Under It](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 46 |   |   | [ParallOn](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 47 |   |   | [Penny-cle Accelerator](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 48 |   |   | [PREDATORIA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 49 |   |   | [RAVIVAR](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 50 |   |   | [Ritual 12](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 51 |   |   | [Saci's Orchard](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 52 |   |   | [Scout's Dishonor: A Game of Snack-tical Warfare](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 53 |   |   | [Seeds of Wars](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 54 |   |   | [Shaolin Soccer](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 55 |   |   | [SKY SPY](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 56 |   |   | [Stack Dungeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 57 |   |   | [Supercolony](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 58 |   |   | [Test of Time](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 59 |   |   | [The Buttering Cat Paradox](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 60 |   |   | [The Legend of Demon Island](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 61 |   |   | [The Wanted Doodle-Doo](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 62 |   |   | [THE WORST PART OF BEING CAUGHT IN A TIME LOOP](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 63 |   |   | [Three Henrys](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 64 |   |   | [TILXi](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 65 |   |   | [Time Theft](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 66 |   |   | [Tribulations in Serpabale](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 67 |   |   | [Two Gods](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 68 |   |   | [World Search](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+| 69 |   |   | [Your Easter Bunny needs YOU!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |
+|   |   |   | L 🔴 · D 🔴 |   |   |   |
+
+#### Gruppo 2 di 4
+
+| N. | [2026 Print and Play Wargame Design Contest](https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co) | [2026 Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest) | [2026 Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) | [2026 Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [2026 Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest) | [2026 Türkçe Yazdır ve Oyna (PNP) Kutu Oyunu Tasarım Yarışması](https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim) |
+|---:|:---|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **Best Light Game Solo Mode** | **ordine alfabetico** | **Best Game** | **ordine alfabetico** |
+| 1 | [Slipstream Raiders](https://boardgamegeek.com/thread/3668290/wip-slipstream-raiders-robbing-at-redline-2026-pnp) — WIP | [Take her to daycare!](https://boardgamegeek.com/thread/3735336/pciotts-available-wip-take-her-to-daycare-2026-sol) — Playtest | #1 [Solo mode for Humans!!!](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Affair](https://boardgamegeek.com/thread/3761909/affair-wip-rules-av) — Components | #1 [Migoyugo](https://boardgamegeek.com/thread/3655964/wip-migoyugo-2026-two-player-print-and-play-design) — WIP | [666](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 2 | [Hybrid War](https://boardgamegeek.com/thread/3628081/playtest-ready-hybrid-war-2026-print-and-play-warg) — Playtest | [We Regret to Inform](https://boardgamegeek.com/thread/3738710/wip-rules-available-we-regret-to-inform-manage-six) — WIP | #2 [The Blind Watchmaker, a solo mode for Take Time](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Bubbles Burst](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | #2 [Baju](https://boardgamegeek.com/thread/3633058/wip-baju-2026-two-player-print-and-play-design-con) — Components | [Akasha: Elementlerin Döngüsü](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 3 | [OSSA- bones that decide fate](https://boardgamegeek.com/thread/3631421/playtest-ready-ossa-bones-that-decide-fate-2026-pr) — Playtest | [How The Tides Turn](https://boardgamegeek.com/thread/3761729/wip-how-the-tides-turn-fantasy-themed-roll-and-wri) — Components | #3 [Onoda Solitude](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Card Invaders](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | #3 [fourmidable](https://boardgamegeek.com/thread/3636227/wip-fourmidable-2026-two-player-print-and-play-des) — Components | [Arkaso Kartlar](https://boardgamegeek.com/thread/3730642/contest-ready-arkaso-kartlar-2026-turkce-yazdir-ve) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 4 | [Warhammer 40,000: Battle line](https://boardgamegeek.com/thread/3669693/wip-playtest-ready-warhammer-40000-battle-line) — Playtest | [13 Came Callin'](https://boardgamegeek.com/thread/3721425/wip-13-came-callin-2026-solitaire-pnp-contest-pnpp) — WIP | #4 [R-Eco Solo Variant](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Clash of the Magi](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | ['Mancer: Gems of Power](https://boardgamegeek.com/thread/3642734/wip-mancer-gems-of-power-2026-two-player-print-and) — Components | [Büyük Loncalar](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 5 | [A silent war at the end of the world](https://boardgamegeek.com/thread/3640690/wip-a-silent-war-at-the-end-of-the-world-2026-warg) — Idea | [638 Squadron](https://boardgamegeek.com/thread/3761120/wip-638-squadron-a-solo-wwii-aerial-bombing-game-2) — WIP | #5 [Skull King solomode](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Earthlings!](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Breach](https://boardgamegeek.com/thread/3657193/wip-breach-2026-two-player-print-and-play-design-c) — Components | [Cadı Çemberi](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 6 | [CYBERAIDER](https://boardgamegeek.com/thread/3756688/wip-cyberaider-2026-wargames-pnp-competition-submi) — WIP | [A Better Yesterday](https://boardgamegeek.com/thread/3728191/wip-a-better-yesterday-time-travel-solo-card-game) — WIP | #6 [Pocket Piquet](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Foolish Faces](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Cookmates](https://boardgamegeek.com/thread/3644212/wip-cookmates-2026-two-player-print-and-play-desig) — Ready | [David's vs Goliath](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 7 | [Gilgamesh vs. Enkidu](https://boardgamegeek.com/thread/3708703/wip-gilgamesh-vs-enkidu) — WIP | [Abandon Gamma Sector](https://boardgamegeek.com/thread/3731817/wip-abandon-gamma-sector-18-card-spatial-puzzle-so) — Components | #7 [Solodraftus](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Gob Crawl](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [DiceStrike](https://boardgamegeek.com/thread/3636028/wip-dicestrike-an-arcade-inspired-dice-fighter-202) — Playtest | [DESIRE FOR CHAOS](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 8 | [Gladiator](https://boardgamegeek.com/thread/3745494/wip-gladiator-2026-wargames-pnp-competition-submis) — Components | [Ankle Breakers](https://boardgamegeek.com/thread/3753581/wip-ankle-breakers) — WIP | #8 [Castle Solo](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Jokers & Thieves](https://boardgamegeek.com/thread/3761871/wipjokers-and-thieves-2026-traditional-deck-contes) — Components | [DRY CHICAGO](https://boardgamegeek.com/thread/3630771/wip-dry-chicago-a-60-minutes-wargame-like-boardgam) — Components | [Evdeyiz](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 9 | [Mekamui.](https://boardgamegeek.com/thread/3762455/wip-mekamui-2026-print-and-play-wargame-design-con) — WIP | [Athens Alone](https://boardgamegeek.com/thread/3717393/wip-athens-alone-2026-solitaire-print-and-play-con) — WIP | #9 [Hobbit There and Back Again](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Nobilitea](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Everyday Ramen](https://boardgamegeek.com/thread/3658093/wip-everyday-ramen-2026-two-player-print-and-play) — Components | [Fast & Tasty](https://boardgamegeek.com/thread/3701873/fast-and-tasty-2026-turkce-yazdir-ve-oyna-pnp-tasa) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 10 | [Operation BARDSEA](https://boardgamegeek.com/thread/3649842/wip-operation-bardsea-2026-wargames-pnp-submission) — WIP | [Beating Beneath the Boards](https://boardgamegeek.com/thread/3708801/wip-beating-beneath-the-boards-1p-bag-building-dic) — Components | #10 [SOLO MODE](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Poker Tricktaker](https://boardgamegeek.com/thread/3761843/wip-poker-tricktaker-trick-taking-with-poker-melds) — Components | [Fishing With Fishes](https://boardgamegeek.com/thread/3662353/wip-fishing-with-fishes-2026-two-player-print-and) — Components | [Kovan](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 11 | [The Battle of Stepney](https://boardgamegeek.com/thread/3669635/wip-the-battle-of-stepney-2026-wargames-pnp-contes) — WIP | [Beaver Dam](https://boardgamegeek.com/thread/3751892/wip-beaver-dam-solo-pnp-design-contest-2026-entry) — Playtest | [Automa SWars](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Red River Duel](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [Flip to Talk](https://boardgamegeek.com/thread/3641834/wip-flip-to-talk-2026-two-player-print-and-play-de) — Components | [Kozmik Kaos](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 12 | [The Ground Fortified](https://boardgamegeek.com/thread/3655068/wip-the-ground-fortified-2026-print-and-play-warga) — Playtest | [Behind The Curtain](https://boardgamegeek.com/thread/3730152/wip-behind-the-curtain-worker-placement-tableaueng) — Components | [Betting Bots for Solo Play! (WIN)](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Root & Branch](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Frutas](https://boardgamegeek.com/thread/3634290/wip-frutas-abstract-strategy-game-for-2-players-ag) — Components | [Pervasız Sergüzeşt](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 13 | [Valour](https://boardgamegeek.com/thread/3649727/wip-valour-2026-wargames-pnp-competition-submissio) — Playtest | [Below Zero](https://boardgamegeek.com/thread/3760334/wip-below-zero-action-point-system-hand-and-resour) — Components | [Cosmotrons](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Sweet Shop](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Gourmet Duel](https://boardgamegeek.com/thread/3637879/wip-gourmet-duel-2026-two-player-print-and-play-de) — Components | [Plaza Savaşları](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 14 | [WARRING KINGDOMS](https://boardgamegeek.com/thread/3737758/wip-warring-kingdoms-2026-wargame-design-contestt) — Playtest | [Blockhead Adventures](https://boardgamegeek.com/thread/3731556/wip-blockhead-adventures-2026-solo-pnp-contest-com) — Components | [Free Ride Fanmade Solo Mode](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [The Chase on Nine](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Gran Tavola](https://boardgamegeek.com/thread/3627701/wip-gran-tavola-2026-two-player-print-and-play-des) — Components | [Prestij Galerisi](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 15 | [Warring States: West Africa](https://boardgamegeek.com/thread/3638470/wip-warring-states-west-africa-2026-wargames-pnp-c) — Playtest | [Cape Cod Visit](https://boardgamegeek.com/thread/3730542/wip-cape-cod-visit-a-solo-tableau-builder-and-opti) — Components | [Infamy: The Syndicate](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Three Tiers for Sweet Revenge](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Grimoire War](https://boardgamegeek.com/thread/3651871/wip-grimoire-war-2026-two-player-print-and-play-de) — Playtest | [Sevkiyat Ustası](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 16 | [Cocci Wars](https://boardgamegeek.com/thread/3634677/wipplaytest-ready-cocci-wars-emergence-simulator-2) — Playtest | [Captain Crash!](https://boardgamegeek.com/thread/3723756/wip-captain-crash-1p-command-cards-deduction-compo) — Components | [Lord High and Master Lowe](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [TOWER DEFENDER](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [HELLHAND /2 PLAYER/ COOPERATIVE/ 15 MIN/](https://boardgamegeek.com/thread/3657579/wip-hellhand-2-player-cooperative-15-min-component) — Components | [Shrouded Skyline (Örtülü Ufuk)](https://boardgamegeek.com/thread/3723715/contest-ready-shrouded-skyline-ortulu-ufuk-2026-tu) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 17 | [Balled Moves](https://boardgamegeek.com/thread/3763647/balled-moves-a-snowball-fight-in-kindergarden-for) — Idea | [Carnage Core](https://boardgamegeek.com/thread/3717549/wip-carnage-core-a-solo-1v1v1-mech-builder-and-fig) — Components | [Mobilis in Mobili](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Virus](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Hextract](https://boardgamegeek.com/thread/3641938/wip-hextract-2026-two-player-print-and-play-design) — Components | [Tarihi Komutanlar & Savaşçılar](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 18 | [Out of the Limelights](https://boardgamegeek.com/thread/3692245/wip-out-of-the-limelights-entry-to-2026-pnp-wargam) — WIP | [Cliff Dwellers](https://boardgamegeek.com/thread/3761593/wip-cliff-dwellers-compact-tile-layer-2026-solitai) — Components | [Play-I, a solo mode for Compile](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Witan](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [Hidden Village](https://boardgamegeek.com/thread/3616011/wip-hidden-village-2026-two-player-print-and-play) — Components | [What A Match! / Ne Maç Ama!](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 19 |   | [Corsairs & Krakens](https://boardgamegeek.com/thread/3722475/wip-corsairs-and-krakens-a-micro-solo-game-entry-f) — Components | [SECOND WAVE](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Infirmarium](https://boardgamegeek.com/thread/3661821/wip-infirmarium-2026-two-player-print-and-play-des) — Ready | [Zhud](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 20 |   | [Croaking by the Pond](https://boardgamegeek.com/thread/3752465/wip-croaking-by-the-pond-18-cards-2026-solitaire-p) — Components | [Torchlit](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Jewel eXchange](https://boardgamegeek.com/thread/3531550/wip-jewel-exchange-2026-two-player-print-and-play) — Ready | [Zombiler, Kız Grubu, Aşçı, Oxford Virgülü, ve Taşınabilir Tek Delikli Delgeç](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 21 |   | [Cursed Bingo](https://boardgamegeek.com/thread/3757640/wip-cursed-bingo-1-page-solo-roll-and-write-2026-s) — Components | [Two Trips to Japan, please!](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Jin](https://boardgamegeek.com/thread/3661741/wip-jin-2026-two-player-print-and-play-design-cont) — Components |   |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
+| 22 |   | [Darkness Falls](https://boardgamegeek.com/thread/3725215/wip-darkness-falls-a-solo-sci-fi-survival-board-ga) — WIP |   |   | [Katapultoj](https://boardgamegeek.com/thread/3657835/wip-katapultoj-2026-two-player-print-and-play-desi) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 23 |   | [Defense of Helm's Deep](https://boardgamegeek.com/thread/3721903/wip-defense-of-helms-deep-a-draw-and-draw-tower-de) — Components |   |   | [Khagan](https://boardgamegeek.com/thread/3661791/wip-khagan-2026-two-player-print-and-play-design-c) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 24 |   | [Don't Play This Game](https://boardgamegeek.com/thread/3740100/wip-dont-play-this-game-2026-solitaire-pnp-contest) — Components |   |   | [Last Donut in the Breakroom](https://boardgamegeek.com/thread/3648989/wip-last-donut-in-the-breakroom-2026-two-player-pr) — Withdrawn |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 25 |   | [Dream Stone](https://boardgamegeek.com/thread/3758499/wip-dream-stone-a-9-card-in-hand-game-that-require) — Components |   |   | [Let's Take Over the HOA](https://boardgamegeek.com/thread/3661285/wip-lets-take-over-the-hoa-2026-two-player-print-a) — Ready |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 26 |   | [Final Shift](https://boardgamegeek.com/thread/3745573/wip-final-shift-a-response-driven-deckbuilder-2026) — Components |   |   | [Mint Souls](https://boardgamegeek.com/thread/3622663/wip-mint-souls-2026-two-player-print-and-play-desi) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 27 |   | [Fool Mouse Playable](https://boardgamegeek.com/thread/3718135/wip-fool-mouse-2026-solitaire-print-and-play-conte) — Playtest |   |   | [Patently Absurd](https://boardgamegeek.com/thread/3655760/wip-patently-absurd-set-collection-plus-spatial-pu) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 28 |   | [Friend-Ship](https://boardgamegeek.com/thread/3761676/wip-friend-ship-a-7-cards-dice-placement-entry-to) — WIP |   |   | [Pocket Zoo](https://boardgamegeek.com/thread/3609939/wip-pocket-zoo-a-gateway-euro-for-2-5-players-2026) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 29 |   | [Hero of Rome: Usurper](https://boardgamegeek.com/thread/3761089/wip-hero-of-rome-usurper-solo-low-ink-pnp-ancient) — Playtest |   |   | [PRISMA](https://boardgamegeek.com/thread/3620996/wip-prisma-components-ready) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 30 |   | [JOUST](https://boardgamegeek.com/thread/3733326/wip-joust-a-solo-jousting-tournament-board-game-pe) — WIP |   |   | [Pyramids](https://boardgamegeek.com/thread/3645589/wip-pyramids-2026-two-player-print-and-play-design) — Ready |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 31 |   | [Knights Aberrant](https://boardgamegeek.com/thread/3720855/wip-knights-aberrant-a-solitaire-game-of-procedura) — Components |   |   | [Ra-Duel](https://boardgamegeek.com/thread/3609272/wip-ra-duel-2026-two-player-print-and-play-design) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 32 |   | [Last Prime Minister Playable,](https://boardgamegeek.com/thread/3733831/wip-last-prime-minister-2026-solitaire-print-and-p) — Playtest |   |   | [Room For Dessert](https://boardgamegeek.com/thread/3662608/wip-room-for-dessert-2026-two-player-print-and-pla) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 33 |   | [Lawman](https://boardgamegeek.com/thread/3758908/wip-lawman-solo-card-and-dice-game) — WIP |   |   | [Sazon Criollo](https://boardgamegeek.com/thread/3637910/wip-sazon-criollo-2026-two-player-print-and-play-d) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 34 |   | [Legends of Dark Lands](https://boardgamegeek.com/thread/3710076/wip-legends-of-dark-lands-2026-solitaire-contest-c) — Playtest |   |   | [Scrapyard Tinkers](https://boardgamegeek.com/thread/3264080/wip-scrapyard-tinkers-2026-two-player-print-and-pl) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 35 |   | [Lights Out](https://boardgamegeek.com/thread/3744707/wip-lights-out-2026-solo-pnp-game-design-contest-p) — Playtest |   |   | [Shadow Convoy](https://boardgamegeek.com/thread/3646369/wip-shadow-convoy-2026-two-player-print-and-play-d) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 36 |   | [Lock Pick](https://boardgamegeek.com/thread/3719518/wip-lock-pick-2026-solitaire-print-and-play-contes) — Components |   |   | [Superhero Smash](https://boardgamegeek.com/thread/3650079/wip-superhero-smash-2026-two-player-print-and-play) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 37 |   | [MOW](https://boardgamegeek.com/thread/3725071/wip-mow-solo-roll-and-write-components-and-online) — Components |   |   | [Taxi 375](https://boardgamegeek.com/thread/3649812/wip-taxi-375-2026-two-player-print-and-play-design) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 38 |   | [Mugs of Madness](https://boardgamegeek.com/thread/3756311/wip-mugs-of-madness-1p-15-30-min-ages-14-plus-a-20) — Components |   |   | [TECTONIC](https://boardgamegeek.com/thread/3639481/wip-tectonic-2026-two-player-print-and-play-design) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 39 |   | [Nailhead 24](https://boardgamegeek.com/thread/3761042/wip-nailhead-24-2026-solo-pnp-game-design-contest) — Components |   |   | [The Inner Circle](https://boardgamegeek.com/thread/3657264/wip-the-inner-circle-2026-two-player-print-and-pla) — Playtest |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 40 |   | [One More Card?!](https://boardgamegeek.com/thread/3761527/wip-one-more-card-solo-push-your-luck-with-a-stand) — Playtest |   |   | [Tic TacTics](https://boardgamegeek.com/thread/3662621/wip-tic-tactics-cats-vs-dogs-2026-two-player-print) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 41 |   | [One More Gear](https://boardgamegeek.com/thread/3757916/wip-one-more-gear-2026-solitaire-pnp-contest-compo) — Components |   |   | [Uftro Wilds](https://boardgamegeek.com/thread/3638150/wip-uftro-wilds-2026-two-player-print-and-play-des) — Playtest |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 42 |   | [Pecunia Sanguinus](https://boardgamegeek.com/thread/3753902/wip-pecunia-sanguinus-the-lobbyist-s-game-solo-eur) — Components |   |   | [Unlucky Spirits](https://boardgamegeek.com/thread/3640989/wip-unlucky-spirits-revised-edition-1-4-players-60) — Ready |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 43 |   | [Perpetual](https://boardgamegeek.com/thread/3722897/wip-perpetual-2026-solitaire-print-and-play-contes) — WIP |   |   | [Vigilante Mansion](https://boardgamegeek.com/thread/3662089/wip-vigilante-mansion-2026-two-player-print-and-pl) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 44 |   | [Pivot Pilot](https://boardgamegeek.com/thread/3737333/wip-pivot-pilot-loop-deck-builder-2026-solo-pnp-ga) — Idea |   |   | [Peak Duel](https://boardgamegeek.com/thread/3638844/peak-duel-completed) — Ready |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 45 |   | [Please Be Patient](https://boardgamegeek.com/thread/3753626/wip-please-be-patient-1p-card-placement-dice-assig) — Components |   |   | [Countess Bathory's Beasts](https://boardgamegeek.com/thread/3635652/wip-countess-bathorys-beasts-2026-two-player-print) — Components |   |
+|   |   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
+| 46 |   | [Please Don’t Feed The Bears](https://boardgamegeek.com/thread/3760815/wip-please-don-t-feed-the-bears-2026-pnp-solo) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 47 |   | [Pocket Spire: a shrunk version of StS](https://boardgamegeek.com/thread/3647926/wip-pocket-spire-a-shrunk-version-of-sts-2026-soli) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 48 |   | [RE: Retrieve, Repair, Return](https://boardgamegeek.com/thread/3695614/wip-re-retrieve-repair-return-engine-building-poly) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 49 |   | [Reef Revival Solo](https://boardgamegeek.com/thread/3760841/wip-reef-revival-solo) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 50 |   | [Ring of Rakshasas](https://boardgamegeek.com/thread/3722961/wip-ring-of-rakshasas-2026-solitaire-contest-spati) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 51 |   | [Route Won](https://boardgamegeek.com/thread/3717278/wip-route-won-2026-solitaire-print-and-play-contes) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 52 |   | [Signal & Noise](https://boardgamegeek.com/thread/3722153/wip-signal-and-noise-2026-solitaire-pnp-contest-co) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 53 |   | [Snip, Snip, BOOM!](https://boardgamegeek.com/thread/3684827/wip-snip-snip-boom-a-solitaire-defuse-the-bomb-dic) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 54 |   | [Story Quilt](https://boardgamegeek.com/thread/3761424/wip-story-quilt-cozy-roll-and-color-game-2026-solo) — Playtest |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 55 |   | [Strike Twelve](https://boardgamegeek.com/thread/3758945/wip-strike-twelve-an-entry-into-the-2026-solitaire) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 56 |   | [Summoning Demons](https://boardgamegeek.com/thread/3740856/wip-summoning-demons-2026-solitaire-pnp-contest-co) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 57 |   | [Survive the Mist](https://boardgamegeek.com/thread/3727500/wip-survive-the-mist-a-solitaire-game-of-post-apoc) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 58 |   | [Tales of the Windward Sea](https://boardgamegeek.com/thread/3757339/wip-tales-of-the-windward-sea-one-page-pirate-adve) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 59 |   | [The awakaned 3](https://boardgamegeek.com/thread/3646147/wip-the-awakaned-3-a-solo-space-pnp-survival-game) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 60 |   | [The Castle In The Clouds](https://boardgamegeek.com/thread/3757894/wip-the-castle-in-the-clouds-solo-stealth-focused) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 61 |   | [The Hidden World](https://boardgamegeek.com/thread/3743402/wip-the-hidden-world-a-solo-dice-adventure-game-20) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 62 |   | [Tidepool Teaparty](https://boardgamegeek.com/thread/3709724/wip-tidepool-teaparty-10-min-cozy-card-fishing-sol) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 63 |   | [Too Many Vikings](https://boardgamegeek.com/thread/3717939/wip-too-many-vikings-2026-solitaire-print-and-play) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 64 |   | [Troubled Sands](https://boardgamegeek.com/thread/3761539/wip-troubled-sands-a-solo-cozy-temple-crawler-2026) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 65 |   | [Upholder](https://boardgamegeek.com/thread/3719232/wip-upholder-malta-s-ace-2026-solitaire-print-and) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 66 |   | [Vertical Overlines Solitaire Snowboarding](https://boardgamegeek.com/thread/3739127/wip-vertical-overlines-solitaire-snowboarding-dice) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 67 |   | [Vice and Virtue](https://boardgamegeek.com/thread/3719862/wip-vice-and-virtue-2026-solitaire-print-and-play) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 68 |   | [War of the Worlds: The Journey](https://boardgamegeek.com/thread/3727954/wip-war-of-the-worlds-the-journey-2026-solitaire-p) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 69 |   | [WARRING KINGDOMS](https://boardgamegeek.com/thread/3737430/wip-warring-kingdoms-2026-solitaire-pnp-contest-pl) — Playtest |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 70 |   | [Wormhole Report](https://boardgamegeek.com/thread/3725222/wip-wormhole-report-2026-solitaire-print-and-play) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 71 |   | [Zerax Clinic](https://boardgamegeek.com/thread/3749243/wip-zerax-clinic-a-small-9-card-dice-placement-sol) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 72 |   | [Not·ro](https://boardgamegeek.com/thread/3694850/wip-notro-54-card-solo-print-and-play-originally-a) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 73 |   | [Code of Caligos](https://boardgamegeek.com/thread/3749828/wipcode-of-caligos2026-solitaire-game-design-conte) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 74 |   | [The Most Magnificent, Utterly Important, Highly Official, Absolutely True Chronicle of ... Wilfred the Pink Lion...](https://boardgamegeek.com/thread/3718644/wipthe-most-magnificent-utterly-important-highly-o) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 75 |   | [Treasure, in Spades](https://boardgamegeek.com/thread/3717627/wiptreasure-in-spades-2026-solitaire-contest-tradi) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 76 |   | [WIP} Tomb Tin](https://boardgamegeek.com/thread/3744985/wip-tomb-tin-2026-solitaire-print-and-play-design) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 77 |   | [Ant Farm](https://boardgamegeek.com/thread/3747098/ant-farm-an-entry-into-the-2026-solitaire-game-des) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 78 |   | [Dice Delve](https://boardgamegeek.com/thread/3727736/dice-delve-a-component-light-dungeon-crawler-using) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 79 |   | [Doodle-inks](https://boardgamegeek.com/thread/3742948/doodle-inks-a-rolln-writen-play-golf-game-2026-pnp) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 80 |   | [Hanging Gardens](https://boardgamegeek.com/thread/3760494/hanging-gardens-an-entry-for-the-2026-solitaire-pr) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 81 |   | [Midnight Confessions](https://boardgamegeek.com/thread/3724336/midnight-confessions-the-case-of-dr-black-web-app) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 82 |   | [Monster Inside Me](https://boardgamegeek.com/thread/3723673/monster-inside-me-2026-solitaire-pnp-contest-compo) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 83 |   | [Omens & Bones: The Curse of Zaryth](https://boardgamegeek.com/thread/3716966/omens-and-bones-the-curse-of-zaryth-1p-20min-stand) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 84 |   | [Seventeen!!!](https://boardgamegeek.com/thread/3757052/seventeen-2026-solitaire-print-and-play-contest) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 85 |   | [Unicellular](https://boardgamegeek.com/thread/3757581/unicellular-a-9-cards-roll-n-write-resource-manage) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 86 |   | [Utopia Express](https://boardgamegeek.com/thread/3759385/utopia-express-2026-solitaire-print-and-play-conte) — Idea |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 87 |   | [Component Ready](https://boardgamegeek.com/thread/3759763/wip-component-ready-re-chronicle-an-entry-in-the-2) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 88 |   | [Wuul Farm: Frostbreak](https://boardgamegeek.com/thread/3754624/wuul-farm-frostbreak-2026-solitaire-contest-compet) — Components |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 89 |   | [{WIP\] Restore the Reef!](https://boardgamegeek.com/thread/3760556/wip-restore-the-reef-2026-solo-pnp-contest-entry) — WIP |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+
+#### Gruppo 3 di 4
+
+| N. | [January–February 2026 — 24 Hour Design Challenge (CULTURE)](https://boardgamegeek.com/thread/3642254/january-february-2026-bi-monthly-24-hour-design-ch) | [July–August 2026 — 24 Hour Design Challenge (DRAW)](https://boardgamegeek.com/thread/3734535/july-august-2026-bi-monthly-24-hour-design-challen) | [March–April 2026 — 24 Hour Design Challenge (CLASSIC)](https://boardgamegeek.com/thread/3675743/march-april-2026-bi-monthly-24-hour-design-challen) | [May–June 2026 — 24 Hour Design Challenge (STICK)](https://boardgamegeek.com/thread/3706306/may-june-2026-bi-monthly-24-hour-design-challenge) | [September–October 2026 — 24 Hour Design Challenge (NINE)](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c) |
+|---:|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** |
+| 1 | [Cloudbound Kingdon](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Communal Comics](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Boneyard Gin](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Kindling](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Dressed to the Nines](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 2 | [Cozy Harvest](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Connectrons](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Classic Car Show](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Slapstick](https://boardgamegeek.com/thread/3707495/wipslapstickdual-entry-24-hour-and-1-card-design-c) — Ready | [Naoi](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 3 | [Get the Play on the Stage!](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Desperados Duel](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Clincher](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Stick'em Up](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Pittas](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 4 | [Minutes to Majesty](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Drawing from Memory](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Closing the Gap](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 5 | [MUTT](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Neon Divide](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Quirlen](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 6 | [Poser](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Obfuscation](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Starward Shield](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 7 | [Random Traces](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Pip Draw](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 8 | [SEWN](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [The Fastest Gun in the West](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 9 | [Uncultured Swine](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Umbrella](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+
+#### Gruppo 4 di 4
+
+| N. | Turkish Print and Play Design Contest |
+|---:|:---|
+
+
 ### 2025
 
-#### Gruppo 1 di 2
+#### Gruppo 1 di 4
 
 | N. | [2025 1-Card Print and Play Design Contest](https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest) | [2025 54-Card Game Design Contest](https://boardgamegeek.com/thread/3536713/2025-54-card-game-design-contest) | [2025 9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) | [2025 Children & Family Game Design Contest](https://boardgamegeek.com/thread/3441385/2025-children-and-family-game-design-contest) | [2025 In-Hand Game Design Contest](https://boardgamegeek.com/thread/3378403/2025-in-hand-game-design-contest) | [2025 Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3520713/2025-solitaire-print-and-play-contest) |
 |---:|:---|:---|:---|:---|:---|:---|
@@ -293,426 +1382,591 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 | 94 |   |   | [Yattactics](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   |   |
 |   |   |   | L 🔴 · D 🔴 |   |   |   |
 
-#### Gruppo 2 di 2
+#### Gruppo 2 di 4
 
-| N. | [2025 Solomode Contest](https://boardgamegeek.com/thread/3470244/2025-solomode-contest) | [2025 Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [2025 Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3530940/2025-two-player-print-and-play-game-design-contest) | [2025 Wargame Print and Play Design Contest](https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont) | [The 2025 Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest) |
+| N. | [2025 Solomode Contest](https://boardgamegeek.com/thread/3470244/2025-solomode-contest) | [2025 Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [2025 Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3530940/2025-two-player-print-and-play-game-design-contest) | [2025 Wargame Print and Play Design Contest](https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont) | [January–February 2025 — 24 Hour Design Challenge (GUARD)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [July–August 2025 — 24 Hour Design Challenge (PAD)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) |
+|---:|:---|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **Best AI System** | **Best Solo Game** | **Best Overall** | **Best Overall Wargame** | **ordine alfabetico** | **ordine alfabetico** |
+| 1 | #1 [Throne Alone](https://boardgamegeek.com/thread/3383061) — Ready | #1 [Jack's Dream](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [Scissor Wizards](https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play) — Ready | #1 [Armored Fury](https://boardgamegeek.com/thread/3539132/playtest-ready-armored-fury-2025-wargame-print-and) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 2 | #2 [Sabi](https://boardgamegeek.com/thread/3466096) — Ready | #2 [Shadow Solitaire: Gambit for the City](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [WordStorm](https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game) — Ready | #1 [Armées de Papier: Combined Arms Battles in the Napoleonic Era](https://boardgamegeek.com/thread/3548198/complete-armees-de-papier-combined-arms-battles-in) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 3 | #3 [YRO Solo Campaign](https://boardgamegeek.com/thread/3422271) — Ready | #3 [Against The Clock](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #2 [Quickdraw: Battle for Silver City](https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy) — Ready | #3 [Monster Cross](https://boardgamegeek.com/thread/3582983/playtest-ready-monster-cross-2025-wargame-print-an) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 4 | #4 [boop. Solo Mode](https://boardgamegeek.com/thread/3478437) — Ready | #4 [Soluna](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #3 [Narrow Seas](https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play) — Ready | #4 [Rough & Tumble Multilateral](https://boardgamegeek.com/thread/3576203/playtest-ready-rough-and-tumble-multilateral-2025) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 5 | #5 [SUPERCAT](https://boardgamegeek.com/thread/3425290) — Ready | #5 [Swamp](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #4 [Collapsi](https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design) — Ready | #5 [1453: Siege of Constantinople](https://boardgamegeek.com/thread/3495795/wip-1453-siege-of-constantinople-2025-wargames-pnp) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 6 | #6 [Lord d'Automa](https://boardgamegeek.com/thread/3512047) — Ready | #6 [River Black](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #5 [OiSH!i](https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp) — Ready | #6 [StrikeFirstNow](https://boardgamegeek.com/thread/3585042/wip-strikefirstnow-from-hexstorical-playtest-ready) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 7 | #7 [Solisauron](https://boardgamegeek.com/thread/3486373) — Ready | #7 [The Four Musketeers](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Automon](https://boardgamegeek.com/thread/3548268/wip-automon-2025-two-player-game-design-contest) — Ready | #7 [The Ground Between](https://boardgamegeek.com/thread/3491589/released-the-ground-between-2025-wargame-pnp-desig) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 8 | #8 [Cavemono](https://boardgamegeek.com/thread/3344024) — Ready | #8 [Alchemy](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Bone Machine](https://boardgamegeek.com/thread/3556560/bone-machine-tile-laying-hand-management-2025-2-pl) — Ready | #8 [Finger Guns: A Wargame Played Using Only Fingers](https://boardgamegeek.com/thread/3555005/playtest-ready-finger-guns-a-wargame-played-using) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 9 | #9 [Junk Punk](https://boardgamegeek.com/thread/3446309) — Ready | #9 [S.O.L. SIX ORBIT LOCKDOWN](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Constellate](https://boardgamegeek.com/thread/3531905/wip-constellate-1-to-4-players-30-to-45-minutes-ti) — Ready | #9 [Fortuna & Virtu](https://boardgamegeek.com/thread/3564942/playtest-ready-fortuna-and-virtu-medieval-themed-w) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 10 | #10 [Nemesis](https://boardgamegeek.com/thread/3504827) — Ready | #10 [Candles & Cannons](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Heartseekers](https://boardgamegeek.com/thread/3532140/wip-heartseekers-2p-print-and-play-contest-2025) — Ready | #10 [Deadlock!](https://boardgamegeek.com/boardgame/446550/deadlock) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 11 | [b-AI-rista](https://boardgamegeek.com/thread/3490914) — Ready | [Arsenal: Duel of Kings](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Momentum](https://boardgamegeek.com/thread/3566864/wip-momentum-2-players) — Ready | #11 [In the Trench](https://boardgamegeek.com/thread/3530510/in-the-trench-war-game) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 12 | [Bot Families](https://boardgamegeek.com/thread/3480600) — Ready | [Beanstalks](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Mush Puppies](https://boardgamegeek.com/thread/3532583/wip-mush-puppies-18-cards-2025-2-player-pnp-design) — Ready | #12 [Night Strike: 418 Squadron RCAF](https://boardgamegeek.com/thread/3441750/night-strike-2025-cmc-war-game-pnp-contest-play-te) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 13 | [Cathy](https://boardgamegeek.com/thread/3327279) — Ready | [Cardello](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Parry](https://boardgamegeek.com/thread/3542787/wip-parry) — Ready | [Battle Stations!](https://boardgamegeek.com/thread/3522597/wip-battle-stations-a-space-dogfight-cardgame-2025) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 14 | [Codenames Rush](https://boardgamegeek.com/thread/3475523) — Ready | [Council of Dragons](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [PAWND](https://boardgamegeek.com/thread/3547608/wip-pawnd-entry-for-2025-bgg-2-player-pnp-game-des) — Ready | [Project 01: Ferrum Front](https://boardgamegeek.com/thread/3582082/playtest-ready-project-01-ferrum-front-2025-wargam) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 15 | [Enchanted Forest Solo Variant](https://boardgamegeek.com/thread/3406119) — Ready | [Court & Crown](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Roll and Pull](https://boardgamegeek.com/thread/3542280/wip-tractor-pull-2025-two-player-print-and-play-de) — Ready | [S.P.A.T.](https://boardgamegeek.com/thread/3461799/wip-spat-2025-wargame-print-and-play-game-design-c) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 16 | [Felipe I / Felipe II](https://boardgamegeek.com/thread/3490911) — Ready | [Divide](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Senjin](https://boardgamegeek.com/thread/3534862/wip-senjin-2025-two-player-pnp-contest-components) — Ready | [Shootout in the Bardo](https://boardgamegeek.com/boardgame/417655/shootout-in-the-bardo) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 17 | [Florek & Florka](https://boardgamegeek.com/thread/3454362) — Ready | [Edgar Shovelhands](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Unlucky Spirits](https://boardgamegeek.com/thread/3544761/wip-unlucky-spirits-original-edition-1-3-players-6) — Ready | [Star Carrier Assault](https://boardgamegeek.com/thread/3542290/wip-star-carrier-assault-2025-wargame-print-and-pl) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 18 | [Forest Link](https://boardgamegeek.com/thread/3496730) — Ready | [Feuda Rivalia](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [War Weavers: Vikings](https://boardgamegeek.com/thread/3567825/wip-war-weavers-vikings-2025-two-player-print-and) — Ready | [Tank Board Game II: Hex](https://boardgamegeek.com/boardgame/440996/tank-board-game-ii-hex) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 19 | [Full Auto](https://boardgamegeek.com/thread/3483643) — Ready | [FIRE](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Word Dungeon Duel](https://boardgamegeek.com/thread/3551113/wip-word-dungeon-duel-2-player-pnp-contest-compone) — Ready | [Ukrainian F-16: Peace has a price](https://boardgamegeek.com/boardgame/424102/ukrainian-f-16-peace-has-a-price) — Ready |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 20 | [Grandma & Grandpa](https://boardgamegeek.com/thread/3511290) — Ready | [Flock Rocks: Sheep vs. Wolves](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [World Trip](https://boardgamegeek.com/thread/3531092/playtest-ready-world-trip-2p-18-cardspnp-pcio-avai) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 21 | [Humanoid Monsters Have Brains](https://boardgamegeek.com/thread/3471610) — Ready | [Grazer](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [5 Spells](https://boardgamegeek.com/thread/3553927/wip-5-spells-2025-two-player-pnp-contest-2-player) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 22 | [Lone Digger](https://boardgamegeek.com/thread/3474645) — Ready | [Hedgerow](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Cloud's Edge](https://boardgamegeek.com/thread/3568231/wip-clouds-edge-2025-2-player-pnp-contest-entry-pl) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 23 | [M. KloneUs](https://boardgamegeek.com/thread/3511300) — Ready | [Hightower](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Cube Wars](https://boardgamegeek.com/thread/3538610/wip-cube-wars-a-compact-4x-for-the-2025-two-player) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 24 | [Malakar](https://boardgamegeek.com/thread/3398741) — Ready | [Hocken](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Diskochet](https://boardgamegeek.com/thread/3545142/wip-diskochet-a-two-player-paddle-sport-card-game) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 25 | [Midnight Racetrack](https://boardgamegeek.com/thread/3472592) — Ready | [Necromancer](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Duel of Fates](https://boardgamegeek.com/thread/3563553/wip-duel-of-fates-two-player-pnp-contest) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 26 | [Pharaoh Code Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11794744#11794744) — Ready | [Olm](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Florentine Towers](https://boardgamegeek.com/thread/3567502/wip-florentine-towers) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 27 | [RuneBot](https://boardgamegeek.com/thread/3510981) — Ready | [Pippins Aplenty](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Goal Rush](https://boardgamegeek.com/thread/3533918/goal-rush-wip) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 28 | [Shrimpy](https://boardgamegeek.com/thread/3502388) — Ready | [Polarité](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [GRDNN](https://boardgamegeek.com/thread/3567200/wip-grdnn-entry-for-2025-bgg-2-player-pnp-game-des) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 29 | [Solo Automa for Avignon](https://boardgamegeek.com/thread/3472563) — Ready | [Relic Solitaire](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Hex Barons](https://boardgamegeek.com/thread/3566327/hex-barons-a-crunchy-streamlined-old-school-hex-sk) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 30 | [Splendor Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11799886#11799886) — Ready | [Rules of Engagement](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Intramural](https://boardgamegeek.com/thread/3536316/wip-intramural-the-soccer-trick-taking-poker-game) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 31 | [The Bus Conspiracy](https://boardgamegeek.com/thread/3445556) — Ready | [Safes](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [KONSPIRO](https://boardgamegeek.com/thread/3538971/wip-konspiro-2025-two-player-pnp-reverse-deck-buil) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 32 | [The Wily Widow](https://boardgamegeek.com/thread/3455165) — Ready | [Shadow Market](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [KORxSOL](https://boardgamegeek.com/thread/3537614/wip-korxsol-fantasy-tabletop-pvp-card-and-dice-ski) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 33 | [Unfinished Window](https://boardgamegeek.com/thread/3350683) — Ready | [Share Tactics](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Lemonade Stand](https://boardgamegeek.com/thread/3533425/wip-lemonade-stand-designed-by-lance-schricke-2025) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 34 | [Unofficial Automa for Deep Regrets](https://boardgamegeek.com/thread/3503201) — Ready | [Sniper](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Orbits](https://boardgamegeek.com/thread/3552316/orbits-an-entry-into-the-two-player-game-design-co) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 35 | [Unofficial Solo Mode & Campaign Mode](https://boardgamegeek.com/thread/3385154) — Ready | [Super Snap Showdown](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Perfect Gardens](https://boardgamegeek.com/thread/3568111/wip-perfect-gardens-2025-2-player-pnp-contest-entr) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 36 | [Up Front Browser Automa](https://boardgamegeek.com/thread/3512452) — Ready | [The Four Winds](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Pond Pals](https://boardgamegeek.com/thread/3563455/wip-pond-pals-2025-two-player-pnp-contest-digital) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 37 | [Veteran Solo Mode](https://boardgamegeek.com/thread/3418473) — Ready | [The House Always Wins](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [SubMerge](https://boardgamegeek.com/thread/3557308/wip-submerge-pnp-components-available-and-pcio-202) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 38 | [War Against the Chtorr](https://boardgamegeek.com/thread/3471614) — Ready | [This Ol' Cowboy](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [The Greatest Unknown Artist Beneath the Moonlight](https://boardgamegeek.com/thread/3568011/the-greatest-unknown-artist-beneath-the-moonlight) — Ready |   |   |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 39 |   | [Train Trekker](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Under One Sky](https://boardgamegeek.com/thread/3436540/wip-under-one-sky) — Ready |   |   |   |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 40 |   | [Trick Tac Foe](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Voidsmiths](https://boardgamegeek.com/thread/3544288/wip-voidsmiths-2025-two-player-print-and-play-desi) — Ready |   |   |   |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 41 |   | [Undergrowth](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 42 |   | [Winner Take All!](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+
+#### Gruppo 3 di 4
+
+| N. | [March–April 2025 — 24 Hour Design Challenge (REVEAL)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [May–June 2025 — 24 Hour Design Challenge (GREEN)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [November–December 2025 — 24 Hour Design Challenge (_ _ _ ANKS)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [September–October 2025 — 24 Hour Design Challenge (PATCH)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [The 2025 Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest) |
 |---:|:---|:---|:---|:---|:---|
-| **Classifica utilizzata per l'ordinamento delle Entry** | **Best AI System** | **Best Solo Game** | **Best Overall** | **Best Overall Wargame** | **Best Overall Game** |
-| 1 | #1 [Throne Alone](https://boardgamegeek.com/thread/3383061/2025-solomode-5th-place-overall-throne-alone-a-sim) — Ready | #1 [Jack's Dream](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [Scissor Wizards](https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play) — Ready | #1 [Armored Fury](https://boardgamegeek.com/thread/3539132/playtest-ready-armored-fury-2025-wargame-print-and) — Ready | #1 [Rolling Fiefdoms](https://boardgamegeek.com/thread/3596654) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 2 | #2 [Sabi](https://boardgamegeek.com/thread/3466096/2025-solomode-sabi-solo-mode-for-kintsugi) — Ready | #2 [Shadow Solitaire: Gambit for the City](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [WordStorm](https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game) — Ready | #1 [Armées de Papier: Combined Arms Battles in the Napoleonic Era](https://boardgamegeek.com/thread/3548198/complete-armees-de-papier-combined-arms-battles-in) — Ready | #2 [Doodle Bash!](https://boardgamegeek.com/thread/3606967) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 3 | #3 [YRO Solo Campaign](https://boardgamegeek.com/thread/3422271/2025-solomode-yro-solo-campaign) — Ready | #3 [Against The Clock](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #2 [Quickdraw: Battle for Silver City](https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy) — Ready | #3 [Monster Cross](https://boardgamegeek.com/thread/3582983/playtest-ready-monster-cross-2025-wargame-print-an) — Ready | #3 [The Leaning Tower of Pisa](https://boardgamegeek.com/thread/3613315) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 4 | #4 [boop. Solo Mode](https://boardgamegeek.com/thread/3478437/2025-solomode-boop-solo-mode) — Ready | #4 [Soluna](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #3 [Narrow Seas](https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play) — Ready | #4 [Rough & Tumble Multilateral](https://boardgamegeek.com/thread/3576203/playtest-ready-rough-and-tumble-multilateral-2025) — Ready | #4 [Dawn Chorus](https://boardgamegeek.com/thread/3618849) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 5 | #5 [SUPERCAT](https://boardgamegeek.com/thread/3425290/supercat-a-procedural-non-player-system-for-solo-a) — Ready | #5 [Swamp](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #4 [Collapsi](https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design) — Ready | #5 [1453: Siege of Constantinople](https://boardgamegeek.com/thread/3495795/wip-1453-siege-of-constantinople-2025-wargames-pnp) — Ready | #4 [Mainframe: System Shutdown](https://boardgamegeek.com/thread/3617159) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 6 | #6 [Lord d'Automa](https://boardgamegeek.com/thread/3512047/2025-solomode-lord-dautoma-a-simple-bot-for-castle) — Ready | #6 [River Black](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #5 [OiSH!i](https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp) — Ready | #6 [StrikeFirstNow](https://boardgamegeek.com/thread/3585042/wip-strikefirstnow-from-hexstorical-playtest-ready) — Ready | #6 [Natura](https://boardgamegeek.com/thread/3621278) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 7 | #7 [Solisauron](https://boardgamegeek.com/thread/3486373/2025-solomode-solisauron) — Ready | #7 [The Four Musketeers](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Automon](https://boardgamegeek.com/thread/3548268/wip-automon-2025-two-player-game-design-contest) — Ready | #7 [The Ground Between](https://boardgamegeek.com/thread/3491589/released-the-ground-between-2025-wargame-pnp-desig) — Ready | #7 [Ancient World](https://boardgamegeek.com/thread/3614076) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 8 | #8 [Cavemono](https://boardgamegeek.com/thread/3344024/2025-solomode-cavemono-unofficial-solo-mode-for-ho) — Ready | #8 [Alchemy](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Bone Machine](https://boardgamegeek.com/thread/3556560/bone-machine-tile-laying-hand-management-2025-2-pl) — Ready | #8 [Finger Guns: A Wargame Played Using Only Fingers](https://boardgamegeek.com/thread/3555005/playtest-ready-finger-guns-a-wargame-played-using) — Ready | #8 [Skyfall](https://boardgamegeek.com/thread/3600730) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 9 | #9 [Junk Punk](https://boardgamegeek.com/thread/3446309/2025-solomode-radlands-solo-automa-junk-punk) — Ready | #9 [S.O.L. SIX ORBIT LOCKDOWN](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Constellate](https://boardgamegeek.com/thread/3531905/wip-constellate-1-to-4-players-30-to-45-minutes-ti) — Ready | #9 [Fortuna & Virtu](https://boardgamegeek.com/thread/3564942/playtest-ready-fortuna-and-virtu-medieval-themed-w) — Ready | #9 [Vanguard Multi Asset Global Command](https://boardgamegeek.com/thread/3619638) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 10 | #10 [Nemesis](https://boardgamegeek.com/thread/3504827/2025-solomode-nemesis-a-solo-bot-for-elysium) — Ready | #10 [Candles & Cannons](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Heartseekers](https://boardgamegeek.com/thread/3532140/wip-heartseekers-2p-print-and-play-contest-2025) — Ready | #10 [Deadlock!](https://boardgamegeek.com/boardgame/446550/deadlock) — Ready | #10 [Labyrinth of Shadows](https://boardgamegeek.com/thread/3584529) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 11 | [b-AI-rista](https://boardgamegeek.com/thread/3490914/2025-solomode-unofficial-solo-against-1-or-2-b-ai) — Ready | [Arsenal: Duel of Kings](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Momentum](https://boardgamegeek.com/thread/3566864/wip-momentum-2-players) — Ready | #11 [In the Trench](https://boardgamegeek.com/thread/3530510/in-the-trench-war-game) — Ready | [1899](https://boardgamegeek.com/thread/3600465) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 12 | [Bot Families](https://boardgamegeek.com/thread/3480600/2025-solomode-bot-families-for-for-a-crown) — Ready | [Beanstalks](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Mush Puppies](https://boardgamegeek.com/thread/3532583/wip-mush-puppies-18-cards-2025-2-player-pnp-design) — Ready | #12 [Night Strike: 418 Squadron RCAF](https://boardgamegeek.com/thread/3441750/night-strike-2025-cmc-war-game-pnp-contest-play-te) — Ready | [A Dragon's Die](https://boardgamegeek.com/thread/3607359) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 13 | [Cathy](https://boardgamegeek.com/thread/3327279/calico-unofficial-solo-variant-against-cathy) — Ready | [Cardello](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Parry](https://boardgamegeek.com/thread/3542787/wip-parry) — Ready | [Battle Stations!](https://boardgamegeek.com/thread/3522597/wip-battle-stations-a-space-dogfight-cardgame-2025) — Ready | [City Lights](https://boardgamegeek.com/thread/3621048) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 14 | [Codenames Rush](https://boardgamegeek.com/thread/3475523/2025-solomode-codenames-rush-solo-variant) — Ready | [Council of Dragons](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [PAWND](https://boardgamegeek.com/thread/3547608/wip-pawnd-entry-for-2025-bgg-2-player-pnp-game-des) — Ready | [Project 01: Ferrum Front](https://boardgamegeek.com/thread/3582082/playtest-ready-project-01-ferrum-front-2025-wargam) — Ready | [Compass & Ink](https://boardgamegeek.com/thread/3593066) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 15 | [Enchanted Forest Solo Variant](https://boardgamegeek.com/thread/3406119/2025-solomode-enchanted-forest-solo-variant) — Ready | [Court & Crown](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Roll and Pull](https://boardgamegeek.com/thread/3542280/wip-tractor-pull-2025-two-player-print-and-play-de) — Ready | [S.P.A.T.](https://boardgamegeek.com/thread/3461799/wip-spat-2025-wargame-print-and-play-game-design-c) — Ready | [Dicease Control: The 4.D-10 Pathogen](https://boardgamegeek.com/thread/3603070) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 16 | [Felipe I / Felipe II](https://boardgamegeek.com/thread/3490911/2025-solomode-unofficial-solo-against-felipe-i-sin) — Ready | [Divide](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Senjin](https://boardgamegeek.com/thread/3534862/wip-senjin-2025-two-player-pnp-contest-components) — Ready | [Shootout in the Bardo](https://boardgamegeek.com/boardgame/417655/shootout-in-the-bardo) — Ready | [Fortify!](https://boardgamegeek.com/thread/3615315) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 17 | [Florek & Florka](https://boardgamegeek.com/thread/3454362/florek-and-florka-the-automas-artificial-opponents) — Ready | [Edgar Shovelhands](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Unlucky Spirits](https://boardgamegeek.com/thread/3544761/wip-unlucky-spirits-original-edition-1-3-players-6) — Ready | [Star Carrier Assault](https://boardgamegeek.com/thread/3542290/wip-star-carrier-assault-2025-wargame-print-and-pl) — Ready | [Fortune Script](https://boardgamegeek.com/thread/3621017) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 18 | [Forest Link](https://boardgamegeek.com/thread/3496730/2025-solomode-forest-link) — Ready | [Feuda Rivalia](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [War Weavers: Vikings](https://boardgamegeek.com/thread/3567825/wip-war-weavers-vikings-2025-two-player-print-and) — Ready | [Tank Board Game II: Hex](https://boardgamegeek.com/boardgame/440996/tank-board-game-ii-hex) — Ready | [INFRARED](https://boardgamegeek.com/thread/3593194) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 19 | [Full Auto](https://boardgamegeek.com/thread/3483643/2025-solomode-joyride-full-auto-self-driving-cars) — Ready | [FIRE](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Word Dungeon Duel](https://boardgamegeek.com/thread/3551113/wip-word-dungeon-duel-2-player-pnp-contest-compone) — Ready | [Ukrainian F-16: Peace has a price](https://boardgamegeek.com/boardgame/424102/ukrainian-f-16-peace-has-a-price) — Ready | [Lithomacy](https://boardgamegeek.com/thread/3617600) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
-| 20 | [Grandma & Grandpa](https://boardgamegeek.com/thread/3511290/2025-solomode-that-old-wallpaper-solo-mode-solo-vs) — Ready | [Flock Rocks: Sheep vs. Wolves](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [World Trip](https://boardgamegeek.com/thread/3531092/playtest-ready-world-trip-2p-18-cardspnp-pcio-avai) — Ready |   | [Master of Thievery](https://boardgamegeek.com/thread/3620403) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 21 | [Humanoid Monsters Have Brains](https://boardgamegeek.com/thread/3471610/2025-solomode-quest-for-the-lost-pixel-humanoid-mo) — Ready | [Grazer](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [5 Spells](https://boardgamegeek.com/thread/3553927/wip-5-spells-2025-two-player-pnp-contest-2-player) — Ready |   | [Necromancy: Roll Them Bones!](https://boardgamegeek.com/thread/3592805) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 22 | [Lone Digger](https://boardgamegeek.com/thread/3474645/2025-solomode-super-motherload-lone-digger) — Ready | [Hedgerow](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Cloud's Edge](https://boardgamegeek.com/thread/3568231/wip-clouds-edge-2025-2-player-pnp-contest-entry-pl) — Ready |   | [On the Trail of Bigfoot](https://boardgamegeek.com/thread/3592032) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 23 | [M. KloneUs](https://boardgamegeek.com/thread/3511300/2025-solomode-m-kloneus) — Ready | [Hightower](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Cube Wars](https://boardgamegeek.com/thread/3538610/wip-cube-wars-a-compact-4x-for-the-2025-two-player) — Ready |   | [On-LINE Kasino](https://boardgamegeek.com/thread/3619168) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 24 | [Malakar](https://boardgamegeek.com/thread/3398741/inferno-unofficial-solo-mode-against-malakar) — Ready | [Hocken](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Diskochet](https://boardgamegeek.com/thread/3545142/wip-diskochet-a-two-player-paddle-sport-card-game) — Ready |   | [PIXIX](https://boardgamegeek.com/thread/3620811) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 25 | [Midnight Racetrack](https://boardgamegeek.com/thread/3472592/2025-solomode-midnight-racetrack) — Ready | [Necromancer](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Duel of Fates](https://boardgamegeek.com/thread/3563553/wip-duel-of-fates-two-player-pnp-contest) — Ready |   | [Ringleader](https://boardgamegeek.com/thread/3617946) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 26 | [Pharaoh Code Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11794744#11794744) — Ready | [Olm](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Florentine Towers](https://boardgamegeek.com/thread/3567502/wip-florentine-towers) — Ready |   | [Roll & Pose](https://boardgamegeek.com/thread/3620499) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 27 | [RuneBot](https://boardgamegeek.com/thread/3510981/solomode-design-contest-runebot-solo-card-bot) — Ready | [Pippins Aplenty](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Goal Rush](https://boardgamegeek.com/thread/3533918/goal-rush-wip) — Ready |   | [Rolling Parks](https://boardgamegeek.com/thread/3619248) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 28 | [Shrimpy](https://boardgamegeek.com/thread/3502388/2025-solomode-mantis-automa-shrimpy) — Ready | [Polarité](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [GRDNN](https://boardgamegeek.com/thread/3567200/wip-grdnn-entry-for-2025-bgg-2-player-pnp-game-des) — Ready |   | [Scribe](https://boardgamegeek.com/thread/3592781) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 29 | [Solo Automa for Avignon](https://boardgamegeek.com/thread/3472563/2025-solomode-solo-automa-for-avignon-a-clash-of-p) — Ready | [Relic Solitaire](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Hex Barons](https://boardgamegeek.com/thread/3566327/hex-barons-a-crunchy-streamlined-old-school-hex-sk) — Ready |   | [Spellwrights Codex](https://boardgamegeek.com/thread/3617539) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 30 | [Splendor Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11799886#11799886) — Ready | [Rules of Engagement](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Intramural](https://boardgamegeek.com/thread/3536316/wip-intramural-the-soccer-trick-taking-poker-game) — Ready |   | [STRATOS](https://boardgamegeek.com/thread/3592669) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 31 | [The Bus Conspiracy](https://boardgamegeek.com/thread/3445556/2025-solomode-bus-solo-mode-the-bus-conspiracy) — Ready | [Safes](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [KONSPIRO](https://boardgamegeek.com/thread/3538971/wip-konspiro-2025-two-player-pnp-reverse-deck-buil) — Ready |   | [The Legend of Whispervale](https://boardgamegeek.com/thread/3621367) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 32 | [The Wily Widow](https://boardgamegeek.com/thread/3455165/2025-solomode-the-wily-widow-a-deadly-dowagers-sol) — Ready | [Shadow Market](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [KORxSOL](https://boardgamegeek.com/thread/3537614/wip-korxsol-fantasy-tabletop-pvp-card-and-dice-ski) — Ready |   | [The Thirteenth Dimension](https://boardgamegeek.com/thread/3595192) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 33 | [Unfinished Window](https://boardgamegeek.com/thread/3350683/2025-solomode-sagrada-solomode-unfinished-window) — Ready | [Share Tactics](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Lemonade Stand](https://boardgamegeek.com/thread/3533425/wip-lemonade-stand-designed-by-lance-schricke-2025) — Ready |   | [Thieves of Bandervon](https://boardgamegeek.com/thread/3596433) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 34 | [Unofficial Automa for Deep Regrets](https://boardgamegeek.com/thread/3503201/2025-solomode-unofficial-automa-for-deep-regrets) — Ready | [Sniper](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Orbits](https://boardgamegeek.com/thread/3552316/orbits-an-entry-into-the-two-player-game-design-co) — Ready |   | [U2: Flights of the Dragon Lady](https://boardgamegeek.com/thread/3585469) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 35 | [Unofficial Solo Mode & Campaign Mode](https://boardgamegeek.com/thread/3385154/2025-solomode-unofficial-solo-mode-and-campaign-mo) — Ready | [Super Snap Showdown](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Perfect Gardens](https://boardgamegeek.com/thread/3568111/wip-perfect-gardens-2025-2-player-pnp-contest-entr) — Ready |   | [Wizard's Tutelage](https://boardgamegeek.com/thread/3592976) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 36 | [Up Front Browser Automa](https://boardgamegeek.com/thread/3512452/2025-solomode-browser-based-automa-for-up-front) — Ready | [The Four Winds](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Pond Pals](https://boardgamegeek.com/thread/3563455/wip-pond-pals-2025-two-player-pnp-contest-digital) — Ready |   | [Word Builders](https://boardgamegeek.com/thread/3620974) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 37 | [Veteran Solo Mode](https://boardgamegeek.com/thread/3418473/2025-solomode-creature-caravan-veteran-solo-mode) — Ready | [The House Always Wins](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [SubMerge](https://boardgamegeek.com/thread/3557308/wip-submerge-pnp-components-available-and-pcio-202) — Ready |   | [Yadoya](https://boardgamegeek.com/thread/3618848) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🟢 · D 🔴 |
-| 38 | [War Against the Chtorr](https://boardgamegeek.com/thread/3471614/2025-solomode-warfighter-chtorr-war-against-the-ch) — Ready | [This Ol' Cowboy](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [The Greatest Unknown Artist Beneath the Moonlight](https://boardgamegeek.com/thread/3568011/the-greatest-unknown-artist-beneath-the-moonlight) — Ready |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 39 |   | [Train Trekker](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Under One Sky](https://boardgamegeek.com/thread/3436540/wip-under-one-sky) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 40 |   | [Trick Tac Foe](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [Voidsmiths](https://boardgamegeek.com/thread/3544288/wip-voidsmiths-2025-two-player-print-and-play-desi) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 41 |   | [Undergrowth](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) |   |   |   |
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **Best Overall Game** |
+| 1 |   |   |   |   | #1 [Rolling Fiefdoms](https://boardgamegeek.com/thread/3596654) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 2 |   |   |   |   | #2 [Doodle Bash!](https://boardgamegeek.com/thread/3606967) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 3 |   |   |   |   | #3 [The Leaning Tower of Pisa](https://boardgamegeek.com/thread/3613315) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 4 |   |   |   |   | #4 [Dawn Chorus](https://boardgamegeek.com/thread/3618849) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 5 |   |   |   |   | #4 [Mainframe: System Shutdown](https://boardgamegeek.com/thread/3617159) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 6 |   |   |   |   | #6 [Natura](https://boardgamegeek.com/thread/3621278) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 7 |   |   |   |   | #7 [Ancient World](https://boardgamegeek.com/thread/3614076) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 8 |   |   |   |   | #8 [Skyfall](https://boardgamegeek.com/thread/3600730) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 9 |   |   |   |   | #9 [Vanguard Multi Asset Global Command](https://boardgamegeek.com/thread/3619638) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 10 |   |   |   |   | #10 [Labyrinth of Shadows](https://boardgamegeek.com/thread/3584529) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 11 |   |   |   |   | [1899](https://boardgamegeek.com/thread/3600465) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 12 |   |   |   |   | [A Dragon's Die](https://boardgamegeek.com/thread/3607359) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 13 |   |   |   |   | [City Lights](https://boardgamegeek.com/thread/3621048) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 14 |   |   |   |   | [Compass & Ink](https://boardgamegeek.com/thread/3593066) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 15 |   |   |   |   | [Dicease Control: The 4.D-10 Pathogen](https://boardgamegeek.com/thread/3603070) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 16 |   |   |   |   | [Fortify!](https://boardgamegeek.com/thread/3615315) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 17 |   |   |   |   | [Fortune Script](https://boardgamegeek.com/thread/3621017) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 18 |   |   |   |   | [INFRARED](https://boardgamegeek.com/thread/3593194) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 19 |   |   |   |   | [Lithomacy](https://boardgamegeek.com/thread/3617600) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 20 |   |   |   |   | [Master of Thievery](https://boardgamegeek.com/thread/3620403) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 21 |   |   |   |   | [Necromancy: Roll Them Bones!](https://boardgamegeek.com/thread/3592805) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 22 |   |   |   |   | [On the Trail of Bigfoot](https://boardgamegeek.com/thread/3592032) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 23 |   |   |   |   | [On-LINE Kasino](https://boardgamegeek.com/thread/3619168) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 24 |   |   |   |   | [PIXIX](https://boardgamegeek.com/thread/3620811) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 25 |   |   |   |   | [Ringleader](https://boardgamegeek.com/thread/3617946) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 26 |   |   |   |   | [Roll & Pose](https://boardgamegeek.com/thread/3620499) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 27 |   |   |   |   | [Rolling Parks](https://boardgamegeek.com/thread/3619248) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 28 |   |   |   |   | [Scribe](https://boardgamegeek.com/thread/3592781) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 29 |   |   |   |   | [Spellwrights Codex](https://boardgamegeek.com/thread/3617539) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 30 |   |   |   |   | [STRATOS](https://boardgamegeek.com/thread/3592669) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 31 |   |   |   |   | [The Legend of Whispervale](https://boardgamegeek.com/thread/3621367) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 32 |   |   |   |   | [The Thirteenth Dimension](https://boardgamegeek.com/thread/3595192) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 33 |   |   |   |   | [Thieves of Bandervon](https://boardgamegeek.com/thread/3596433) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 34 |   |   |   |   | [U2: Flights of the Dragon Lady](https://boardgamegeek.com/thread/3585469) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 35 |   |   |   |   | [Wizard's Tutelage](https://boardgamegeek.com/thread/3592976) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 36 |   |   |   |   | [Word Builders](https://boardgamegeek.com/thread/3620974) — Ready |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+| 37 |   |   |   |   | [Yadoya](https://boardgamegeek.com/thread/3618848) — Withdrawn |
+|   |   |   |   |   | L 🟢 · D 🔴 |
+
+#### Gruppo 4 di 4
+
+| N. | Solomode Design Contest | Roll & Write Game Design Contest |
+|---:|:---|:---|
+
+
+### 2024
+
+#### Gruppo 1 di 3
+
+| N. | [54 Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children & Family Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [In-Hand Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January–February 2024 — 24 Hour Design Challenge (Jam)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July–August 2024 — 24 Hour Design Challenge (Rome)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March–April 2024 — 24 Hour Design Challenge (Three)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** |
+| 1 |   | [Alley Cat Ninjas](https://boardgamegeek.com/thread/3243385/alley-cat-ninjas) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 2 |   | [Battle Hex](https://boardgamegeek.com/thread/3244974/battle-hex-an-entry-to-the-2024-children-and-famil) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 3 |   | [Birds vs Fey](https://boardgamegeek.com/thread/3276586/birds-vs-fey) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 4 |   | [Bramblewood Bash](https://boardgamegeek.com/thread/3267995/wip-bramblewood-bash-contest-ready) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 5 |   | [Buffalo Buffalo Buffalo Buffalo Buffalo](https://boardgamegeek.com/thread/3247659/wip-buffalo-buffalo-buffalo-buffalo-buffalo-compon) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 6 |   | [Build a Playground with Bill & Gary](https://boardgamegeek.com/thread/3238127/wipbuild-a-playground-with-bill-and-garyformerly-k) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 7 |   | [Chariots of Dice](https://boardgamegeek.com/thread/3227038/wip-chariots-of-dice-4p-20min-pnp-components-avail) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 8 |   | [Dibs!](https://boardgamegeek.com/thread/3240744/wip-dibs-the-family-game-of-reading-minds-ranking) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 9 |   | [Fast Food](https://boardgamegeek.com/thread/3252876/wip-fast-food-cook-and-deliver-your-food-first-fam) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 10 |   | [Finders Keepers](https://boardgamegeek.com/thread/3283122/wip-finders-keepers-1-4p-10-30-min-push-your-luck) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 11 |   | [Forbidden Finals](https://boardgamegeek.com/thread/3254258/wip-forbidden-finals-components-ready-an-entry-to) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 12 |   | [Geleé on tour!](https://boardgamegeek.com/thread/3276793/wip-gelee-on-tour-contest-ready-an-entry-to-the-20) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 13 |   | [Joy's Bakery](https://boardgamegeek.com/thread/3281904/wip-joys-bakery-2-6-players-age-8-plus-20-25-mins) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 14 |   | [Karang Guni](https://boardgamegeek.com/thread/3267607/wip-karang-guni-component-ready-2024-children-boar) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 15 |   | [Mandai Tactics](https://boardgamegeek.com/thread/3271763/wip-mandai-tactics-2024-children-and-family-game-d) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 16 |   | [Mother's Errands](https://boardgamegeek.com/thread/3267602/wip-mothers-errands-2024-children-and-family-games) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 17 |   | [Mushroom Mages](https://boardgamegeek.com/thread/3251700/wip-mushroom-mages-2-5p-6-plus-dice-rolling-set-co) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 18 |   | [New Choice: Improv Your Life! 2.0](https://boardgamegeek.com/thread/3284087/wip-new-choice-improv-your-life-20-2-30-players-8) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 19 |   | [Number Explorers](https://boardgamegeek.com/thread/3253658/wip-number-explorers-a-space-adventure-2024-childr) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 20 |   | [Pixel Golf](https://boardgamegeek.com/thread/3228002/wip-pixel-golf-components-available) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 21 |   | [Save the Moon-eyed Loris](https://boardgamegeek.com/thread/3281527/wip-save-the-moon-eyed-loris-2-4p-pnp-components-a) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 22 |   | [SLAP Monster](https://boardgamegeek.com/thread/3255136/wip-slap-monster-a-slap-bracelet-game-2-4p-2024-ch) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 23 |   | [Squidbeard Island](https://boardgamegeek.com/thread/3253571/wip-squidbeard-island-a-treasure-hunting-game-2024) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 24 |   | [The Tortoise & The Hare](https://boardgamegeek.com/thread/3284076/the-tortoise-and-the-hare-entry-for-bgg-2024-child) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 25 |   | [Three Alarm Fire](https://boardgamegeek.com/thread/3260522/three-alarm-fire) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 26 |   | [Toastie Toss Smash](https://boardgamegeek.com/thread/3265982/wip-toastie-toss-smash-a-sandwich-making-speed-gam) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 27 |   | [VLKNO](https://boardgamegeek.com/thread/3278336/vlkno-entry-for-bgg-2024-children-and-family-game) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 28 |   | [Wallaby](https://boardgamegeek.com/thread/3259566/wip-wallaby-2024-children-and-family-game-design-c) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+| 29 |   | [Woodland Maze](https://boardgamegeek.com/thread/3279229/woodland-maze) |   |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |   |
+
+#### Gruppo 2 di 3
+
+| N. | [May–June 2024 — 24 Hour Design Challenge (Party)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November–December 2024 — 24 Hour Design Challenge (Letter)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Card Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Roll & Write Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [September–October 2024 — 24 Hour Design Challenge (Trick)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 3
+
+| N. | [Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solo Mode Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Traditional Deck Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** |
+| 1 |   | [Adventurous Indiana](https://boardgamegeek.com/thread/3264548/2024-solomode-adventurous-indiana-for-artifacts-in) |   |   |   |
 |   |   | L 🔴 · D 🔴 |   |   |   |
-| 42 |   | [Winner Take All!](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) |   |   |   |
+| 2 |   | [Autohunters](https://boardgamegeek.com/thread/3301580/2024-solomode-autohunters-a-lightweight-solo-mode) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 3 |   | [Autopirate](https://boardgamegeek.com/thread/3269468/2024-solomode-autopirate-solomode-for-ahoy) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 4 |   | [Autosaurs!](https://boardgamegeek.com/thread/3288438/2024-solomode-autosaurs-add-automated-players-to-e) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 5 |   | [Borgo Automa](https://boardgamegeek.com/thread/3301392/2024-solomode-borgo-automa-for-the-new-era-solo-pl) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 6 |   | [Breeze](https://boardgamegeek.com/thread/3282756/2024-solomode-breeze) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 7 |   | [Capek](https://boardgamegeek.com/thread/3290545/2024-solomode-capek) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 8 |   | [Captain Blackwhisker](https://boardgamegeek.com/thread/3244422/2024-solomode-captain-blackwhisker-the-pirat-bot) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 9 |   | [Carcassonne against Jacques](https://boardgamegeek.com/thread/3288753/2024-solomode-carcassonne-against-jacques) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 10 |   | [Cat Factor and Bee Market](https://boardgamegeek.com/thread/3283876/2024-solomode-cat-factor-and-bee-market-variant-fo) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 11 |   | [Coffee Rush Solo Mode](https://boardgamegeek.com/thread/3244337/2024-solomode-solo-mode-for-coffee-rush) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 12 |   | [Compact Mahjong Solo Variant](https://boardgamegeek.com/thread/3290793/2024-solomode-compact-mahjong-solo-variant-only-50) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 13 |   | [Forest Shuffle Automa](https://boardgamegeek.com/thread/3299926/2024-solomode-unofficial-solo-mode-contest-entry) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 14 |   | [Frankly Simple Vikings SoloBot](https://boardgamegeek.com/thread/3284241/frankly-simple-vikings-solobot) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 15 |   | [Harmonies: Solo Scenarios](https://boardgamegeek.com/thread/3286220/2024-solomode-harmonies-solo-scenarios) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 16 |   | [Harmonies: Steve Automa](https://boardgamegeek.com/thread/3299923/2024-solomode-unofficial-solo-mode-contest-entry) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 17 |   | [Keyforge Adventures: Escape from Selva Oscura](https://boardgamegeek.com/thread/3278092/2024-solomode-keyforge-adventures-escape-from-selv) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 18 |   | [Medina (Second Edition) Solomode](https://boardgamegeek.com/thread/3257849/2024-solomode-medina-second-edition-solomode) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 19 |   | [My Octobot Teacher](https://boardgamegeek.com/thread/3301073/2024-solomode-my-octobot-teacher-unofficial-solomo) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 20 |   | [Neobot](https://boardgamegeek.com/thread/3300684/neotopia-unofficial-solo-mode-against-the-neobot) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 21 |   | [Non-Player Racers](https://boardgamegeek.com/thread/3288299/2024-solomode-non-player-racers) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 22 |   | [Ragtag Rescuers](https://boardgamegeek.com/thread/3272588/2024-solomode-ragtag-rescuers-a-mlem-space-agency) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 23 |   | [Sea Salt and Solo](https://boardgamegeek.com/thread/3171959/2024-solomode-sea-salt-and-solo) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 24 |   | [Simple Six](https://boardgamegeek.com/thread/3123687/simple-six-solomode-for-rainforest-city) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 25 |   | [Solo Shuffle](https://boardgamegeek.com/thread/3294885/2024-solomode-solo-shuffle-a-scenario-based-solomo) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 26 |   | [STARDUST](https://boardgamegeek.com/thread/3287913/mode-solo-2024-stardust-invaders-solo-mode-with-cd) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 27 |   | [The Council of Naqala](https://boardgamegeek.com/thread/3267665/2024-solomode-five-tribes-the-council-of-naqala-v1) |   |   |   |
+|   |   | L 🔴 · D 🔴 |   |   |   |
+| 28 |   | [Tritone Solo Mode](https://boardgamegeek.com/thread/3283558/2024-solomode-tritone-solo-mode) |   |   |   |
 |   |   | L 🔴 · D 🔴 |   |   |   |
 
 
-### 2026
+### 2023
+
+#### Gruppo 1 di 4
+
+| N. | [14th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [15th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2023 — 24 Hour Design Challenge (Terminal)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children & Family Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2023 — 24 Hour Design Challenge (Outfit)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [In-Hand Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2023 — 24 Hour Design Challenge (Temperature)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2023 — 24 Hour Design Challenge (Host)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2023 — 24 Hour Design Challenge (Lobby)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2023 — 24 Hour Design Challenge (Fence)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2023 — 24 Hour Design Challenge (Leftover)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November–December 2023 — 24 Hour Design Challenge (Order)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [September–October 2023 — 24 Hour Design Challenge (Scatter)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solomode Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [Traditional Deck Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|
+
+
+### 2022
 
 #### Gruppo 1 di 2
 
-| N. | [2026 54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | [2026 9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) | [2026 Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design) | [2026 Children & Family Game Design Contest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) | [2026 In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) | [2026 Print and Play Wargame Design Contest](https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co) |
+| N. | [11th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [12th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [13th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children and Family Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [In-Hand Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
 |---:|:---|:---|:---|:---|:---|:---|
-| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **Best Overall Game** | **ordine alfabetico** | **Best Family Game** | **Best Overall Solo Game** | **ordine alfabetico** |
-| 1 | [A Tale of Two Cities](https://boardgamegeek.com/thread/3755558/wip-a-tale-of-two-cities-rising-rivals-a-complex-t) — WIP | #1 [OBOLUS](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [AYLA](https://boardgamegeek.com/thread/3726647/wip-ayla-bad-comet-cozy-contest-finalist) — Ready | #1 [Oh My Gods!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #1 [Glyph Knight](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Slipstream Raiders](https://boardgamegeek.com/thread/3668290/wip-slipstream-raiders-robbing-at-redline-2026-pnp) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 2 | [All You Can Draft](https://boardgamegeek.com/thread/3747598/all-you-can-draft-54-card-contest-2026-components) — Components | #2 [SEPTEM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Firmament: The Valley's Atlas](https://boardgamegeek.com/thread/3691200/wip-firmament-bad-comet-cozy-contest) — Components | #2 [Daikoro: Elemental Dice Duel](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #2 [Turbo Tactics](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Hybrid War](https://boardgamegeek.com/thread/3628081/playtest-ready-hybrid-war-2026-print-and-play-warg) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 3 | [Desire FOR Colors](https://boardgamegeek.com/thread/3744281/desire-for-colors-2026-54-card-game-design-contest) | #2 [Shifting Islands](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Lanternwood](https://boardgamegeek.com/thread/3685657/wip-lanternwood-bad-comet-cozy-contest) — Playtest | #3 [The Cheese Stands Alone](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #3 [The Cult](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [OSSA- bones that decide fate](https://boardgamegeek.com/thread/3631421/playtest-ready-ossa-bones-that-decide-fate-2026-pr) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 4 | [Exclamation!](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) — Components | #3 [DOKUSU](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Rare Sight](https://boardgamegeek.com/thread/3683796/finalists-announced-2026-bad-comet-cozy-game-desig/page/2) | #4 [Cookmates](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #4 [Fool's Journey: from Zero to Twenty One](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Warhammer 40,000: Battle line](https://boardgamegeek.com/thread/3669693/wip-playtest-ready-warhammer-40000-battle-line) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 5 | [Flirt](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #4 [1st Hero](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready | [Stone Skipping](https://boardgamegeek.com/thread/3685593/wip-stone-skipping-bad-comet-cozy-contest) — Ready | #5 [The Abyss](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #5 [Train Conductor](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [A silent war at the end of the world](https://boardgamegeek.com/thread/3640690/wip-a-silent-war-at-the-end-of-the-world-2026-warg) — Idea |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 6 | [Karda](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #5 [Sector 9: The Void Anomaly](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #6 [Alien Tongue](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #6 [Robot Wipeout](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [CYBERAIDER](https://boardgamegeek.com/thread/3756688/wip-cyberaider-2026-wargames-pnp-competition-submi) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 7 | [Line O' Dinos](https://boardgamegeek.com/thread/3746991/line-o-dinos-co-op-set-building-2026-54-card-conte) | #6 [Ninefold Surgeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #7 [Graffito](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #7 [Puzzlin' Pawns](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Gilgamesh vs. Enkidu](https://boardgamegeek.com/thread/3708703/wip-gilgamesh-vs-enkidu) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 8 | [Maremmas](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #7 [CAPTCHA all robots!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #8 [Animal Roundup](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | #8 [Summoner of Winding Wood](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Gladiator](https://boardgamegeek.com/thread/3745494/wip-gladiator-2026-wargames-pnp-competition-submis) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 9 | [Runic](https://boardgamegeek.com/thread/3760327/contest-ready-runic-a-trick-taking-press-your-luck) — Ready | #7 [Dreamstone](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #9 [IRANIKA](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Aetherwood](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Mekamui.](https://boardgamegeek.com/thread/3762455/wip-mekamui-2026-print-and-play-wargame-design-con) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 10 | [Samarra](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | #7 [Ninefold Murder](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #10 [Juicy Fruit Salad](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [BIGFOOT AND YETI](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Operation BARDSEA](https://boardgamegeek.com/thread/3649842/wip-operation-bardsea-2026-wargames-pnp-submission) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 11 | [Shelter](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) — WIP | #7 [PLAGA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #11 [Cherries](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Handcraft](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [The Battle of Stepney](https://boardgamegeek.com/thread/3669635/wip-the-battle-of-stepney-2026-wargames-pnp-contes) — WIP |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 12 | [Signum](https://boardgamegeek.com/thread/3754094/wip-signum-2026-54-card-game-design-contest-idea-p) — Idea | [A.D.A.](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #12 [Sandwich Stackers](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Hellhand](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn | [The Ground Fortified](https://boardgamegeek.com/thread/3655068/wip-the-ground-fortified-2026-print-and-play-warga) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 13 | [Tailor Made](https://boardgamegeek.com/thread/3752852/wip-tailor-made-2026-54-card-contest-idea-phase) — Idea | [Accursed's Village](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #13 [RoboRacers](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [HeroHold](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Valour](https://boardgamegeek.com/thread/3649727/wip-valour-2026-wargames-pnp-competition-submissio) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 14 | [The Acrobat of Transluciania](https://boardgamegeek.com/thread/3756058/wip-the-acrobats-of-transluciania-54-cards-contest) — WIP | [Aim the Orcs!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | #14 [Storyboard Heroes](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [LOCKSTEP](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [WARRING KINGDOMS](https://boardgamegeek.com/thread/3737758/wip-warring-kingdoms-2026-wargame-design-contestt) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 15 | [The Nine Lives of the Bureaucat](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest) | [Altar of the New Witch](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | #15 [Size the Cows](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Memories](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn | [Warring States: West Africa](https://boardgamegeek.com/thread/3638470/wip-warring-states-west-africa-2026-wargames-pnp-c) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 16 | [The Window Seat](https://boardgamegeek.com/thread/3753549/) | [Animons Card Battle 9](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Arctic Rush](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Monk's Cat: The Book of](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Cocci Wars](https://boardgamegeek.com/thread/3634677/wipplaytest-ready-cocci-wars-emergence-simulator-2) — Playtest |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 17 | [Wild Chorus](https://boardgamegeek.com/thread/3746665/wip-wild-chorus-2-8-player-party-game-2026-54-card) — WIP | [Arlo & Bliss](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Bag Drop](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Paddle Pals](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Balled Moves](https://boardgamegeek.com/thread/3763647/balled-moves-a-snowball-fight-in-kindergarden-for) — Idea |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 18 |   | [Assault on the Citadel](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Battle of the Mouse King](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Pocket Forge](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready | [Out of the Limelights](https://boardgamegeek.com/thread/3692245/wip-out-of-the-limelights-entry-to-2026-pnp-wargam) — WIP |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 19 |   | [Asturquest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Bee Friendly](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Shining Spirits](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 20 |   | [Backpack Struggle](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Bit and Bob's SCRAPYARD SHOWCASE](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Show of Hands](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 21 |   | [BALBÚRDIA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Cash Grab](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [SkyHold](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 22 |   | [Bunny Bomb Blaster](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   | [Colour Collab](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Strut](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Withdrawn |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 23 |   | [Calaverita](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Creative City Blocks](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Super Shot: Tennis SX](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 24 |   | [CHARM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Desire FOR Mods](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Veles vs Perun](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 25 |   | [Cheese Chase](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Excuse Me, Bear!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready | [Wild Photo](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest) — Ready |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
-| 26 |   | [City Ghost](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [FLOWER FEAST](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 27 |   | [Cloudbound Colossus Dice Game](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Fruit Stacks!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 28 |   | [COLORI](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Gold Rush: Unplugged](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 29 |   | [Crafting Crawler](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Invisible words](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 30 |   | [Der Kommandant](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Math for Ladybugs!](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 31 |   | [Dice of War](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Patently Absurd](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 32 |   | [Diefectors](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Pivot](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 33 |   | [Dingers](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   | [RoboBots: Kaiju Hunters](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 34 |   | [Feldspar](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   | [Seven Stones](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 35 |   | [FLAMES OF DOOM](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Survival of the Middlest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 36 |   | [Flipping Little Dinos](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [Terra Incognita](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Withdrawn |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 37 |   | [Foolish Wizards](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   | [The Travel Bug Card Game](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Withdrawn |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 38 |   | [Habitat](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   | [Uftro Tomb](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest) — Ready |   |   |
-|   |   | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |   |
-| 39 |   | [Heretic](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 40 |   | [HOPPE](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 41 |   | [HOT CARS](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 42 |   | [Mata's Inhabitants](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 43 |   | [Morpho Dungeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 44 |   | [Mountaineer's Challenge](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 45 |   | [My Hat Definitely Doesn't Have an Explosive Under It](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 46 |   | [ParallOn](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 47 |   | [Penny-cle Accelerator](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 48 |   | [PREDATORIA](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 49 |   | [RAVIVAR](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 50 |   | [Ritual 12](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 51 |   | [Saci's Orchard](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 52 |   | [Scout's Dishonor: A Game of Snack-tical Warfare](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 53 |   | [Seeds of Wars](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 54 |   | [Shaolin Soccer](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 55 |   | [SKY SPY](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 56 |   | [Stack Dungeon](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 57 |   | [Supercolony](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 58 |   | [Test of Time](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 59 |   | [The Buttering Cat Paradox](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 60 |   | [The Legend of Demon Island](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 61 |   | [The Wanted Doodle-Doo](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Idea |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 62 |   | [THE WORST PART OF BEING CAUGHT IN A TIME LOOP](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 63 |   | [Three Henrys](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 64 |   | [TILXi](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Components |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 65 |   | [Time Theft](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 66 |   | [Tribulations in Serpabale](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 67 |   | [Two Gods](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 68 |   | [World Search](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
-| 69 |   | [Your Easter Bunny needs YOU!](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest) — Ready |   |   |   |   |
-|   |   | L 🔴 · D 🔴 |   |   |   |   |
 
 #### Gruppo 2 di 2
 
-| N. | [2026 Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest) | [2026 Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) | [2026 Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [2026 Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest) | [2026 Türkçe Yazdır ve Oyna (PNP) Kutu Oyunu Tasarım Yarışması](https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim) |
+| N. | [Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Traditional Deck Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2021
+
+#### Gruppo 1 di 3
+
+| N. | [10th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [6th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [7th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [8th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9 Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 3
+
+| N. | [9th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [DTR Pewter Heroes Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solomode Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Traditional Deck Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 3
+
+| N. | [Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|
+
+
+### 2020
+
+#### Gruppo 1 di 4
+
+| N. | [10th anniversary Christmas Print and Play Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [3rd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [4th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [5th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9 Card Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [April 2020 — 24 Hour Game Design Contest (home)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2020 — 24 Hour Game Design Contest (hoover)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children's Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2020 — 24 Hour Game Design Contest (advent)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2020 — 24 Hour Game Design Contest (palindrome)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2020 — 24 Hour Game Design Contest (eccentric)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [July 2020 — 24 Hour Game Design Contest (dam)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2020 — 24 Hour Game Design Contest (beaver)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2020 — 24 Hour Game Design Contest (crown)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2020 — 24 Hour Game Design Contest (heart)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2020 — 24 Hour Game Design Contest (family)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2020 — 24 Hour Game Design Contest (orc)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solomode Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Video Stream Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2019
+
+#### Gruppo 1 di 4
+
+| N. | [2nd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9 Card Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2019 — 24 Hour Game Design Contest (electronics)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2019 — 24 Hour Game Design Contest (tag)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [December 2019 — 24 Hour Game Design Contest (frost)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2019 — 24 Hour Game Design Contest (bureaucracy)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2019 — 24 Hour Game Design Contest (pitchfork)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2019 — 24 Hour Game Design Contest (sun)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2019 — 24 Hour Game Design Contest (miniature)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2019 — 24 Hour Game Design Contest (mask)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [May 2019 — 24 Hour Game Design Contest (bug)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2019 — 24 Hour Game Design Contest (parody)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2019 — 24 Hour Game Design Contest (spirit)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Postcard Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [September 2019 — 24 Hour Game Design Contest (school)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Single Page Solo Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
 |---:|:---|:---|:---|:---|:---|
-| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **Best Light Game Solo Mode** | **ordine alfabetico** | **Best Game** | **ordine alfabetico** |
-| 1 | [Take her to daycare!](https://boardgamegeek.com/thread/3735336/pciotts-available-wip-take-her-to-daycare-2026-sol) — Playtest | #1 [Solo mode for Humans!!!](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Affair](https://boardgamegeek.com/thread/3761909/affair-wip-rules-av) — Components | #1 [Migoyugo](https://boardgamegeek.com/thread/3655964/wip-migoyugo-2026-two-player-print-and-play-design) — WIP | [666](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 2 | [We Regret to Inform](https://boardgamegeek.com/thread/3738710/wip-rules-available-we-regret-to-inform-manage-six) — WIP | #2 [The Blind Watchmaker, a solo mode for Take Time](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Bubbles Burst](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | #2 [Baju](https://boardgamegeek.com/thread/3633058/wip-baju-2026-two-player-print-and-play-design-con) — Components | [Akasha: Elementlerin Döngüsü](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 3 | [How The Tides Turn](https://boardgamegeek.com/thread/3761729/wip-how-the-tides-turn-fantasy-themed-roll-and-wri) — Components | #3 [Onoda Solitude](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Card Invaders](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | #3 [fourmidable](https://boardgamegeek.com/thread/3636227/wip-fourmidable-2026-two-player-print-and-play-des) — Components | [Arkaso Kartlar](https://boardgamegeek.com/thread/3730642/contest-ready-arkaso-kartlar-2026-turkce-yazdir-ve) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 4 | [13 Came Callin'](https://boardgamegeek.com/thread/3721425/wip-13-came-callin-2026-solitaire-pnp-contest-pnpp) — WIP | #4 [R-Eco Solo Variant](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Clash of the Magi](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | ['Mancer: Gems of Power](https://boardgamegeek.com/thread/3642734/wip-mancer-gems-of-power-2026-two-player-print-and) — Components | [Büyük Loncalar](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 5 | [638 Squadron](https://boardgamegeek.com/thread/3761120/wip-638-squadron-a-solo-wwii-aerial-bombing-game-2) — WIP | #5 [Skull King solomode](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Earthlings!](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Breach](https://boardgamegeek.com/thread/3657193/wip-breach-2026-two-player-print-and-play-design-c) — Components | [Cadı Çemberi](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 6 | [A Better Yesterday](https://boardgamegeek.com/thread/3728191/wip-a-better-yesterday-time-travel-solo-card-game) — WIP | #6 [Pocket Piquet](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Foolish Faces](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Cookmates](https://boardgamegeek.com/thread/3644212/wip-cookmates-2026-two-player-print-and-play-desig) — Ready | [David's vs Goliath](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 7 | [Abandon Gamma Sector](https://boardgamegeek.com/thread/3731817/wip-abandon-gamma-sector-18-card-spatial-puzzle-so) — Components | #7 [Solodraftus](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Gob Crawl](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [DiceStrike](https://boardgamegeek.com/thread/3636028/wip-dicestrike-an-arcade-inspired-dice-fighter-202) — Playtest | [DESIRE FOR CHAOS](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 8 | [Ankle Breakers](https://boardgamegeek.com/thread/3753581/wip-ankle-breakers) — WIP | #8 [Castle Solo](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Jokers & Thieves](https://boardgamegeek.com/thread/3761871/wipjokers-and-thieves-2026-traditional-deck-contes) — Components | [DRY CHICAGO](https://boardgamegeek.com/thread/3630771/wip-dry-chicago-a-60-minutes-wargame-like-boardgam) — Components | [Evdeyiz](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 9 | [Athens Alone](https://boardgamegeek.com/thread/3717393/wip-athens-alone-2026-solitaire-print-and-play-con) — WIP | #9 [Hobbit There and Back Again](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Nobilitea](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Everyday Ramen](https://boardgamegeek.com/thread/3658093/wip-everyday-ramen-2026-two-player-print-and-play) — Components | [Fast & Tasty](https://boardgamegeek.com/thread/3701873/fast-and-tasty-2026-turkce-yazdir-ve-oyna-pnp-tasa) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 10 | [Beating Beneath the Boards](https://boardgamegeek.com/thread/3708801/wip-beating-beneath-the-boards-1p-bag-building-dic) — Components | #10 [SOLO MODE](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Poker Tricktaker](https://boardgamegeek.com/thread/3761843/wip-poker-tricktaker-trick-taking-with-poker-melds) — Components | [Fishing With Fishes](https://boardgamegeek.com/thread/3662353/wip-fishing-with-fishes-2026-two-player-print-and) — Components | [Kovan](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 11 | [Beaver Dam](https://boardgamegeek.com/thread/3751892/wip-beaver-dam-solo-pnp-design-contest-2026-entry) — Playtest | [Automa SWars](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Red River Duel](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [Flip to Talk](https://boardgamegeek.com/thread/3641834/wip-flip-to-talk-2026-two-player-print-and-play-de) — Components | [Kozmik Kaos](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 12 | [Behind The Curtain](https://boardgamegeek.com/thread/3730152/wip-behind-the-curtain-worker-placement-tableaueng) — Components | [Betting Bots for Solo Play! (WIN)](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Root & Branch](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Frutas](https://boardgamegeek.com/thread/3634290/wip-frutas-abstract-strategy-game-for-2-players-ag) — Components | [Pervasız Sergüzeşt](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 13 | [Below Zero](https://boardgamegeek.com/thread/3760334/wip-below-zero-action-point-system-hand-and-resour) — Components | [Cosmotrons](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Sweet Shop](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Gourmet Duel](https://boardgamegeek.com/thread/3637879/wip-gourmet-duel-2026-two-player-print-and-play-de) — Components | [Plaza Savaşları](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 14 | [Blockhead Adventures](https://boardgamegeek.com/thread/3731556/wip-blockhead-adventures-2026-solo-pnp-contest-com) — Components | [Free Ride Fanmade Solo Mode](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [The Chase on Nine](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Gran Tavola](https://boardgamegeek.com/thread/3627701/wip-gran-tavola-2026-two-player-print-and-play-des) — Components | [Prestij Galerisi](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 15 | [Cape Cod Visit](https://boardgamegeek.com/thread/3730542/wip-cape-cod-visit-a-solo-tableau-builder-and-opti) — Components | [Infamy: The Syndicate](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Three Tiers for Sweet Revenge](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Grimoire War](https://boardgamegeek.com/thread/3651871/wip-grimoire-war-2026-two-player-print-and-play-de) — Playtest | [Sevkiyat Ustası](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 16 | [Captain Crash!](https://boardgamegeek.com/thread/3723756/wip-captain-crash-1p-command-cards-deduction-compo) — Components | [Lord High and Master Lowe](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [TOWER DEFENDER](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [HELLHAND /2 PLAYER/ COOPERATIVE/ 15 MIN/](https://boardgamegeek.com/thread/3657579/wip-hellhand-2-player-cooperative-15-min-component) — Components | [Shrouded Skyline (Örtülü Ufuk)](https://boardgamegeek.com/thread/3723715/contest-ready-shrouded-skyline-ortulu-ufuk-2026-tu) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 17 | [Carnage Core](https://boardgamegeek.com/thread/3717549/wip-carnage-core-a-solo-1v1v1-mech-builder-and-fig) — Components | [Mobilis in Mobili](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Virus](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) | [Hextract](https://boardgamegeek.com/thread/3641938/wip-hextract-2026-two-player-print-and-play-design) — Components | [Tarihi Komutanlar & Savaşçılar](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 18 | [Cliff Dwellers](https://boardgamegeek.com/thread/3761593/wip-cliff-dwellers-compact-tile-layer-2026-solitai) — Components | [Play-I, a solo mode for Compile](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready | [Witan](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest) — Components | [Hidden Village](https://boardgamegeek.com/thread/3616011/wip-hidden-village-2026-two-player-print-and-play) — Components | [What A Match! / Ne Maç Ama!](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 19 | [Corsairs & Krakens](https://boardgamegeek.com/thread/3722475/wip-corsairs-and-krakens-a-micro-solo-game-entry-f) — Components | [SECOND WAVE](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Infirmarium](https://boardgamegeek.com/thread/3661821/wip-infirmarium-2026-two-player-print-and-play-des) — Ready | [Zhud](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Withdrawn |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 20 | [Croaking by the Pond](https://boardgamegeek.com/thread/3752465/wip-croaking-by-the-pond-18-cards-2026-solitaire-p) — Components | [Torchlit](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Jewel eXchange](https://boardgamegeek.com/thread/3531550/wip-jewel-exchange-2026-two-player-print-and-play) — Ready | [Zombiler, Kız Grubu, Aşçı, Oxford Virgülü, ve Taşınabilir Tek Delikli Delgeç](https://boardgamegeek.com/thread/3701420/article/48032459#48032459) — Components |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 21 | [Cursed Bingo](https://boardgamegeek.com/thread/3757640/wip-cursed-bingo-1-page-solo-roll-and-write-2026-s) — Components | [Two Trips to Japan, please!](https://boardgamegeek.com/thread/3670686/2026-solomode-contest) — Ready |   | [Jin](https://boardgamegeek.com/thread/3661741/wip-jin-2026-two-player-print-and-play-design-cont) — Components |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   | L 🔴 · D 🔴 |   |
-| 22 | [Darkness Falls](https://boardgamegeek.com/thread/3725215/wip-darkness-falls-a-solo-sci-fi-survival-board-ga) — WIP |   |   | [Katapultoj](https://boardgamegeek.com/thread/3657835/wip-katapultoj-2026-two-player-print-and-play-desi) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 23 | [Defense of Helm's Deep](https://boardgamegeek.com/thread/3721903/wip-defense-of-helms-deep-a-draw-and-draw-tower-de) — Components |   |   | [Khagan](https://boardgamegeek.com/thread/3661791/wip-khagan-2026-two-player-print-and-play-design-c) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 24 | [Don't Play This Game](https://boardgamegeek.com/thread/3740100/wip-dont-play-this-game-2026-solitaire-pnp-contest) — Components |   |   | [Last Donut in the Breakroom](https://boardgamegeek.com/thread/3648989/wip-last-donut-in-the-breakroom-2026-two-player-pr) — Withdrawn |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 25 | [Dream Stone](https://boardgamegeek.com/thread/3758499/wip-dream-stone-a-9-card-in-hand-game-that-require) — Components |   |   | [Let's Take Over the HOA](https://boardgamegeek.com/thread/3661285/wip-lets-take-over-the-hoa-2026-two-player-print-a) — Ready |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 26 | [Final Shift](https://boardgamegeek.com/thread/3745573/wip-final-shift-a-response-driven-deckbuilder-2026) — Components |   |   | [Mint Souls](https://boardgamegeek.com/thread/3622663/wip-mint-souls-2026-two-player-print-and-play-desi) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 27 | [Fool Mouse Playable](https://boardgamegeek.com/thread/3718135/wip-fool-mouse-2026-solitaire-print-and-play-conte) — Playtest |   |   | [Patently Absurd](https://boardgamegeek.com/thread/3655760/wip-patently-absurd-set-collection-plus-spatial-pu) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 28 | [Friend-Ship](https://boardgamegeek.com/thread/3761676/wip-friend-ship-a-7-cards-dice-placement-entry-to) — WIP |   |   | [Pocket Zoo](https://boardgamegeek.com/thread/3609939/wip-pocket-zoo-a-gateway-euro-for-2-5-players-2026) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 29 | [Hero of Rome: Usurper](https://boardgamegeek.com/thread/3761089/wip-hero-of-rome-usurper-solo-low-ink-pnp-ancient) — Playtest |   |   | [PRISMA](https://boardgamegeek.com/thread/3620996/wip-prisma-components-ready) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 30 | [JOUST](https://boardgamegeek.com/thread/3733326/wip-joust-a-solo-jousting-tournament-board-game-pe) — WIP |   |   | [Pyramids](https://boardgamegeek.com/thread/3645589/wip-pyramids-2026-two-player-print-and-play-design) — Ready |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 31 | [Knights Aberrant](https://boardgamegeek.com/thread/3720855/wip-knights-aberrant-a-solitaire-game-of-procedura) — Components |   |   | [Ra-Duel](https://boardgamegeek.com/thread/3609272/wip-ra-duel-2026-two-player-print-and-play-design) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 32 | [Last Prime Minister Playable,](https://boardgamegeek.com/thread/3733831/wip-last-prime-minister-2026-solitaire-print-and-p) — Playtest |   |   | [Room For Dessert](https://boardgamegeek.com/thread/3662608/wip-room-for-dessert-2026-two-player-print-and-pla) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 33 | [Lawman](https://boardgamegeek.com/thread/3758908/wip-lawman-solo-card-and-dice-game) — WIP |   |   | [Sazon Criollo](https://boardgamegeek.com/thread/3637910/wip-sazon-criollo-2026-two-player-print-and-play-d) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 34 | [Legends of Dark Lands](https://boardgamegeek.com/thread/3710076/wip-legends-of-dark-lands-2026-solitaire-contest-c) — Playtest |   |   | [Scrapyard Tinkers](https://boardgamegeek.com/thread/3264080/wip-scrapyard-tinkers-2026-two-player-print-and-pl) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 35 | [Lights Out](https://boardgamegeek.com/thread/3744707/wip-lights-out-2026-solo-pnp-game-design-contest-p) — Playtest |   |   | [Shadow Convoy](https://boardgamegeek.com/thread/3646369/wip-shadow-convoy-2026-two-player-print-and-play-d) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 36 | [Lock Pick](https://boardgamegeek.com/thread/3719518/wip-lock-pick-2026-solitaire-print-and-play-contes) — Components |   |   | [Superhero Smash](https://boardgamegeek.com/thread/3650079/wip-superhero-smash-2026-two-player-print-and-play) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 37 | [MOW](https://boardgamegeek.com/thread/3725071/wip-mow-solo-roll-and-write-components-and-online) — Components |   |   | [Taxi 375](https://boardgamegeek.com/thread/3649812/wip-taxi-375-2026-two-player-print-and-play-design) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 38 | [Mugs of Madness](https://boardgamegeek.com/thread/3756311/wip-mugs-of-madness-1p-15-30-min-ages-14-plus-a-20) — Components |   |   | [TECTONIC](https://boardgamegeek.com/thread/3639481/wip-tectonic-2026-two-player-print-and-play-design) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 39 | [Nailhead 24](https://boardgamegeek.com/thread/3761042/wip-nailhead-24-2026-solo-pnp-game-design-contest) — Components |   |   | [The Inner Circle](https://boardgamegeek.com/thread/3657264/wip-the-inner-circle-2026-two-player-print-and-pla) — Playtest |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 40 | [One More Card?!](https://boardgamegeek.com/thread/3761527/wip-one-more-card-solo-push-your-luck-with-a-stand) — Playtest |   |   | [Tic TacTics](https://boardgamegeek.com/thread/3662621/wip-tic-tactics-cats-vs-dogs-2026-two-player-print) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 41 | [One More Gear](https://boardgamegeek.com/thread/3757916/wip-one-more-gear-2026-solitaire-pnp-contest-compo) — Components |   |   | [Uftro Wilds](https://boardgamegeek.com/thread/3638150/wip-uftro-wilds-2026-two-player-print-and-play-des) — Playtest |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 42 | [Pecunia Sanguinus](https://boardgamegeek.com/thread/3753902/wip-pecunia-sanguinus-the-lobbyist-s-game-solo-eur) — Components |   |   | [Unlucky Spirits](https://boardgamegeek.com/thread/3640989/wip-unlucky-spirits-revised-edition-1-4-players-60) — Ready |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 43 | [Perpetual](https://boardgamegeek.com/thread/3722897/wip-perpetual-2026-solitaire-print-and-play-contes) — WIP |   |   | [Vigilante Mansion](https://boardgamegeek.com/thread/3662089/wip-vigilante-mansion-2026-two-player-print-and-pl) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 44 | [Pivot Pilot](https://boardgamegeek.com/thread/3737333/wip-pivot-pilot-loop-deck-builder-2026-solo-pnp-ga) — Idea |   |   | [Peak Duel](https://boardgamegeek.com/thread/3638844/peak-duel-completed) — Ready |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 45 | [Please Be Patient](https://boardgamegeek.com/thread/3753626/wip-please-be-patient-1p-card-placement-dice-assig) — Components |   |   | [Countess Bathory's Beasts](https://boardgamegeek.com/thread/3635652/wip-countess-bathorys-beasts-2026-two-player-print) — Components |   |
-|   | L 🔴 · D 🔴 |   |   | L 🔴 · D 🔴 |   |
-| 46 | [Please Don’t Feed The Bears](https://boardgamegeek.com/thread/3760815/wip-please-don-t-feed-the-bears-2026-pnp-solo) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 47 | [Pocket Spire: a shrunk version of StS](https://boardgamegeek.com/thread/3647926/wip-pocket-spire-a-shrunk-version-of-sts-2026-soli) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 48 | [RE: Retrieve, Repair, Return](https://boardgamegeek.com/thread/3695614/wip-re-retrieve-repair-return-engine-building-poly) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 49 | [Reef Revival Solo](https://boardgamegeek.com/thread/3760841/wip-reef-revival-solo) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 50 | [Ring of Rakshasas](https://boardgamegeek.com/thread/3722961/wip-ring-of-rakshasas-2026-solitaire-contest-spati) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 51 | [Route Won](https://boardgamegeek.com/thread/3717278/wip-route-won-2026-solitaire-print-and-play-contes) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 52 | [Signal & Noise](https://boardgamegeek.com/thread/3722153/wip-signal-and-noise-2026-solitaire-pnp-contest-co) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 53 | [Snip, Snip, BOOM!](https://boardgamegeek.com/thread/3684827/wip-snip-snip-boom-a-solitaire-defuse-the-bomb-dic) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 54 | [Story Quilt](https://boardgamegeek.com/thread/3761424/wip-story-quilt-cozy-roll-and-color-game-2026-solo) — Playtest |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 55 | [Strike Twelve](https://boardgamegeek.com/thread/3758945/wip-strike-twelve-an-entry-into-the-2026-solitaire) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 56 | [Summoning Demons](https://boardgamegeek.com/thread/3740856/wip-summoning-demons-2026-solitaire-pnp-contest-co) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 57 | [Survive the Mist](https://boardgamegeek.com/thread/3727500/wip-survive-the-mist-a-solitaire-game-of-post-apoc) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 58 | [Tales of the Windward Sea](https://boardgamegeek.com/thread/3757339/wip-tales-of-the-windward-sea-one-page-pirate-adve) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 59 | [The awakaned 3](https://boardgamegeek.com/thread/3646147/wip-the-awakaned-3-a-solo-space-pnp-survival-game) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 60 | [The Castle In The Clouds](https://boardgamegeek.com/thread/3757894/wip-the-castle-in-the-clouds-solo-stealth-focused) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 61 | [The Hidden World](https://boardgamegeek.com/thread/3743402/wip-the-hidden-world-a-solo-dice-adventure-game-20) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 62 | [Tidepool Teaparty](https://boardgamegeek.com/thread/3709724/wip-tidepool-teaparty-10-min-cozy-card-fishing-sol) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 63 | [Too Many Vikings](https://boardgamegeek.com/thread/3717939/wip-too-many-vikings-2026-solitaire-print-and-play) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 64 | [Troubled Sands](https://boardgamegeek.com/thread/3761539/wip-troubled-sands-a-solo-cozy-temple-crawler-2026) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 65 | [Upholder](https://boardgamegeek.com/thread/3719232/wip-upholder-malta-s-ace-2026-solitaire-print-and) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 66 | [Vertical Overlines Solitaire Snowboarding](https://boardgamegeek.com/thread/3739127/wip-vertical-overlines-solitaire-snowboarding-dice) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 67 | [Vice and Virtue](https://boardgamegeek.com/thread/3719862/wip-vice-and-virtue-2026-solitaire-print-and-play) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 68 | [War of the Worlds: The Journey](https://boardgamegeek.com/thread/3727954/wip-war-of-the-worlds-the-journey-2026-solitaire-p) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 69 | [WARRING KINGDOMS](https://boardgamegeek.com/thread/3737430/wip-warring-kingdoms-2026-solitaire-pnp-contest-pl) — Playtest |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 70 | [Wormhole Report](https://boardgamegeek.com/thread/3725222/wip-wormhole-report-2026-solitaire-print-and-play) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 71 | [Zerax Clinic](https://boardgamegeek.com/thread/3749243/wip-zerax-clinic-a-small-9-card-dice-placement-sol) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 72 | [Not·ro](https://boardgamegeek.com/thread/3694850/wip-notro-54-card-solo-print-and-play-originally-a) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 73 | [Code of Caligos](https://boardgamegeek.com/thread/3749828/wipcode-of-caligos2026-solitaire-game-design-conte) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 74 | [The Most Magnificent, Utterly Important, Highly Official, Absolutely True Chronicle of ... Wilfred the Pink Lion...](https://boardgamegeek.com/thread/3718644/wipthe-most-magnificent-utterly-important-highly-o) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 75 | [Treasure, in Spades](https://boardgamegeek.com/thread/3717627/wiptreasure-in-spades-2026-solitaire-contest-tradi) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 76 | [WIP} Tomb Tin](https://boardgamegeek.com/thread/3744985/wip-tomb-tin-2026-solitaire-print-and-play-design) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 77 | [Ant Farm](https://boardgamegeek.com/thread/3747098/ant-farm-an-entry-into-the-2026-solitaire-game-des) |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 78 | [Dice Delve](https://boardgamegeek.com/thread/3727736/dice-delve-a-component-light-dungeon-crawler-using) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 79 | [Doodle-inks](https://boardgamegeek.com/thread/3742948/doodle-inks-a-rolln-writen-play-golf-game-2026-pnp) |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 80 | [Hanging Gardens](https://boardgamegeek.com/thread/3760494/hanging-gardens-an-entry-for-the-2026-solitaire-pr) |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 81 | [Midnight Confessions](https://boardgamegeek.com/thread/3724336/midnight-confessions-the-case-of-dr-black-web-app) |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 82 | [Monster Inside Me](https://boardgamegeek.com/thread/3723673/monster-inside-me-2026-solitaire-pnp-contest-compo) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 83 | [Omens & Bones: The Curse of Zaryth](https://boardgamegeek.com/thread/3716966/omens-and-bones-the-curse-of-zaryth-1p-20min-stand) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 84 | [Seventeen!!!](https://boardgamegeek.com/thread/3757052/seventeen-2026-solitaire-print-and-play-contest) |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 85 | [Unicellular](https://boardgamegeek.com/thread/3757581/unicellular-a-9-cards-roll-n-write-resource-manage) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 86 | [Utopia Express](https://boardgamegeek.com/thread/3759385/utopia-express-2026-solitaire-print-and-play-conte) — Idea |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 87 | [Component Ready](https://boardgamegeek.com/thread/3759763/wip-component-ready-re-chronicle-an-entry-in-the-2) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 88 | [Wuul Farm: Frostbreak](https://boardgamegeek.com/thread/3754624/wuul-farm-frostbreak-2026-solitaire-contest-compet) — Components |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
-| 89 | [{WIP\] Restore the Reef!](https://boardgamegeek.com/thread/3760556/wip-restore-the-reef-2026-solo-pnp-contest-entry) — WIP |   |   |   |   |
-|   | L 🔴 · D 🔴 |   |   |   |   |
+
+
+### 2018
+
+#### Gruppo 1 di 4
+
+| N. | [54-Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2018 — 24 Hour Game Design Contest (egg)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2018 — 24 Hour Game Design Contest (clown)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2018 — 24 Hour Game Design Contest (rod)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [February 2018 — 24 Hour Game Design Contest (technique)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2018 — 24 Hour Game Design Contest (hope)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2018 — 24 Hour Game Design Contest (heat)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2018 — 24 Hour Game Design Contest (queen)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [League of Designers Workshop and Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2018 — 24 Hour Game Design Contest (rune)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [May 2018 — 24 Hour Game Design Contest (delay)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2018 — 24 Hour Game Design Contest (leaf)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2018 — 24 Hour Game Design Contest (eight)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [September 2018 — 24 Hour Game Design Contest (bunny)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [Starfarm! Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Summer 2018 Green Box of Games Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [War Game Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|
+
+
+### 2017
+
+#### Gruppo 1 di 4
+
+| N. | [18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [2 Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2017 — 24 Hour Game Design Contest (puns)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2017 — 24 Hour Game Design Contest (procrastination)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [December 2017 — 24 Hour Game Design Contest (reindeer)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Eff the Rules Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2017 — 24 Hour Game Design Contest (honey)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Gamer Deck 1 Mechanics Design Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2017 — 24 Hour Game Design Contest (discipline)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2017 — 24 Hour Game Design Contest (book)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [June 2017 — 24 Hour Game Design Contest (nightfall)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2017 — 24 Hour Game Design Contest (march)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2017 — 24 Hour Game Design Contest (gold)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2017 — 24 Hour Game Design Contest (solo)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2017 — 24 Hour Game Design Contest (toy)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [September 2017 — 24 Hour Game Design Contest (island)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|
+
+
+### 2016
+
+#### Gruppo 1 di 4
+
+| N. | [18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [2 Player PnP Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [2016-17 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2016 — 24 Hour Game Design Contest (Atlantis)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2016 — 24 Hour Game Design Contest (wedding)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2016 — 24 Hour Game Design Contest (charcoal)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2016 — 24 Hour Game Design Contest (beverages)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2016 — 24 Hour Game Design Contest (food)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2016 — 24 Hour Game Design Contest (moon landing)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2016 — 24 Hour Game Design Contest (kitten)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [March 2016 — 24 Hour Game Design Contest (attention)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2016 — 24 Hour Game Design Contest (six)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [MicroGame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2016 — 24 Hour Game Design Contest (music)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2016 — 24 Hour Game Design Contest (pasta)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [September 2016 — 24 Hour Game Design Contest (divorce)](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|
+
+
+### 2015
+
+#### Gruppo 1 di 4
+
+| N. | [18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [2015-16 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Badger Rainbow Deck Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [December 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [M80 World Languages Card Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [March 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [MicroGame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [September 2015 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [The Pug Life Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Travel Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two-Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Wibbell++ Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2014
+
+#### Gruppo 1 di 4
+
+| N. | [18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [April 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Classic Novel Microgame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 4
+
+| N. | [Dexterity Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [July 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 4
+
+| N. | [March 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Randall's Dice Or No Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 4 di 4
+
+| N. | [September 2014 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two-Player Print-and-Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Unique Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|
+
+
+### 2013
+
+#### Gruppo 1 di 3
+
+| N. | [April 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [February 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [In-A-Tin / Express Print-and-Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [January 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 3
+
+| N. | [July 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [March 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mashup Game Design and Artwork Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [May 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 3 di 3
+
+| N. | [October 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [PNP Hidden Role / Bluffing Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [PnP Postcard Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [September 2013 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Two Player PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2012
+
+#### Gruppo 1 di 2
+
+| N. | [4 Year Old D12 Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Art and Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [August 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [December 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Gimme a Hand contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Historical Themed Board Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 2
+
+| N. | [July 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [June 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Mashup Game Design and Artwork Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [November 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [October 2012 — 24 Hour Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2011
+
+#### Gruppo 1 di 2
+
+| N. | [10d12 Dice Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Easy Builds Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Four Poppels and Six Dice Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Iron Game Designer Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Little Box Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+#### Gruppo 2 di 2
+
+| N. | [Quick Print and Play contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Solitaire Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Synergy Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|
+
+
+### 2010
+
+| N. | [Christmas Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Confuse a Gamer Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Dicefest Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Many Monster Dice Game Competition](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Sneaky Sci-Fi Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|
+
+
+### 2009
+
+| N. | [$1,000 Budget Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Co-Operative Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Four Cards or Tiles contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [PnP Dice contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Themed Rummy Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) | [Traditional Card Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|:---|:---|:---|:---|:---|
+
+
+### 2008
+
+| N. | [BoardGameCreate Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024) |
+|---:|:---|
 
 
 <!-- END GENERATED ANNUAL PROGRESS -->
@@ -736,9 +1990,9 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 | Area | Stato | Evidenza corrente | Prossimo risultato verificabile | Riferimento |
 |---|---|---|---|---|
 | Perimetro e architettura | completo | Scope, modello operativo e separazione PnP/adiacenti formalizzati | Riesame solo se emerge un nuovo ciclo di vita | `PROJECT.md` |
-| Contest ed entry | parziale | 22 contest e 829 entry censiti per 2025-2026 | Aggiornare i contest 2026 nelle finestre scadute | database; `sources/MONITORING_CALENDAR.md` |
-| WIP e risorse dichiarate | parziale | 129/829 entry scansionate; 260 risorse e menzioni | Estendere la scansione alle entry 2025 residue, poi al 2026 | database; registri in `sources/` |
-| Requisiti materiali | parziale | 129/829 entry scansionate; 307 requisiti | Completare il primo post e integrare le regole solo nei task dedicati | database; registri in `sources/` |
+| Contest ed entry | parziale | 305 contest e 829 entry nel database; censimento globale 2008–2026 finalizzato | Completare i censimenti annuali delle entry senza riaprire il censimento globale | database; registri globali in `sources/` |
+| WIP e risorse dichiarate | parziale | 167/829 entry scansionate; 327 risorse e menzioni | Estendere la scansione alle entry 2025 residue, poi al 2026 | database; registri in `sources/` |
+| Requisiti materiali | parziale | 167/829 entry scansionate; 339 requisiti | Completare il primo post e integrare le regole solo nei task dedicati | database; registri in `sources/` |
 | Risultati e priorità | parziale | 1.054 osservazioni di classifica; risultati disponibili navigabili | Colmare risultati mancanti e definire la regola di priorità acquisizioni | database; app locale |
 | Monitoraggio periodico | da aggiornare | Calendario presente; ultimo rilevamento registrato 2026-09-10 | Eseguire la prima finestra scaduta senza duplicare controlli giornalieri | `sources/MONITORING_CALENDAR.md` |
 | Selezione e acquisizione | non iniziato | 0 acquisizioni e 0 file acquisiti | Definire criteri di selezione, liceità e primo lotto | database; `library/README.md` |
@@ -750,9 +2004,26 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 
 | Anno | Contest censiti | Entry censite | Scansioni WIP/risorse | Copertura risorse | Scansioni materiali | Copertura materiali | Stato annualità | Ultima verifica del quadro |
 |---:|---:|---:|---:|---:|---:|---:|---|---|
-| 2025 | 11 | 464 | 129 | 27,8% | 129 | 27,8% | parziale | 2026-09-15 |
-| 2026 | 11 | 365 | 0 | 0,0% | 0 | 0,0% | parziale; roster presenti ma contest attivi da monitorare | 2026-09-15 |
-| **Totale** | **22** | **829** | **129** | **15,6%** | **129** | **15,6%** | **parziale** | **2026-09-15** |
+| 2026 | 17 | 365 | 0 | 0,0% | 0 | 0,0% | contest importati; entry parziali | 2026-09-18 |
+| 2025 | 17 | 464 | 167 | 36,0% | 167 | 36,0% | contest importati; entry parziali | 2026-09-18 |
+| 2024 | 17 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2023 | 21 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2022 | 12 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2021 | 14 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2020 | 24 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2019 | 23 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2018 | 22 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2017 | 20 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2016 | 21 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2015 | 24 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2014 | 22 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2013 | 18 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2012 | 12 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2011 | 9 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2010 | 5 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2009 | 6 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| 2008 | 1 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
+| **Totale** | **305** | **829** | **167** | **20,1% delle entry** | **167** | **20,1% delle entry** | **baseline contest importata** | **2026-09-18** |
 
 La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle edizioni e il censimento delle entry, non implica che ogni WIP, risorsa o requisito materiale sia già stato esaminato.
 
@@ -760,12 +2031,12 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 
 | Oggetto informativo | Unità registrate | Denominatore utile | Stato | Criterio di completamento | Fonte del conteggio |
 |---|---:|---:|---|---|---|
-| Contest | 22 | Perimetro annuale autorizzato | completo per 2025; dinamico per 2026 | Tutte le edizioni individuate e classificate | `contests` |
+| Contest | 305 | Baseline globale 2008–2026 | importato e finalizzato; un'anomalia storica `unknown` documentata | Ogni edizione ha titolo, anno, stato prudenziale e fonte BGG | `contests`, `contest_sources` |
 | Entry | 829 | Roster dei 22 contest | completo per la baseline; dinamico per contest attivi | Ogni item autorevole riconciliato e stato preservato | `entries` |
-| Scansioni WIP/risorse | 129 | 829 entry | parziale | Ogni entry ha un esito esplicito, incluso WIP non trovato o non osservabile | `entry_resource_scans` |
-| Risorse dichiarate | 260 | Nessun denominatore certo | parziale | Ogni menzione è collegata a entry e fonte; nessuna destinazione esterna è presunta verificata | `remote_resources`, `entry_resource_mentions` |
-| Scansioni materiali | 129 | 829 entry | parziale | Ogni entry ha copertura ed esito espliciti | `entry_material_scans` |
-| Requisiti materiali | 307 | Nessun denominatore certo | parziale | Testo originale, normalizzazione, quantità e provenienza preservati quando osservabili | `entry_material_requirements` |
+| Scansioni WIP/risorse | 167 | 829 entry | parziale | Ogni entry ha un esito esplicito, incluso WIP non trovato o non osservabile | `entry_resource_scans` |
+| Risorse dichiarate | 327 | Nessun denominatore certo | parziale | Ogni menzione è collegata a entry e fonte; nessuna destinazione esterna è presunta verificata | `remote_resources`, `entry_resource_mentions` |
+| Scansioni materiali | 167 | 829 entry | parziale | Ogni entry ha copertura ed esito espliciti | `entry_material_scans` |
+| Requisiti materiali | 339 | Nessun denominatore certo | parziale | Testo originale, normalizzazione, quantità e provenienza preservati quando osservabili | `entry_material_requirements` |
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
 | Acquisizioni | 0 | Selezione ancora da definire | non iniziato | Ogni gioco selezionato ha decisione, fonte, condizioni e data | `acquisitions` |
 | File acquisiti | 0 | Acquisizioni riuscite | non applicabile | Ogni file ha versione, dimensione, hash e collegamento alla fonte | `acquired_files` |
@@ -774,14 +2045,14 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 
 | Fase | Input minimo | Output atteso | Stato complessivo | Controllo di qualità | Prossima azione |
 |---:|---|---|---|---|---|
-| 1. Scoperta contest | Pagine BGG autorevoli | Edizione candidata con fonte e data | completo 2025; continuo 2026 | Ricognizione finale e anomalie documentate | Riprendere dalle finestre scadute del calendario |
+| 1. Scoperta contest | Pagine BGG autorevoli | Edizione candidata con fonte e data | baseline globale importata | Ricognizione finale e anomalie documentate | Verificare fonti dirette e stati ancora `unknown` |
 | 2. Classificazione perimetro | Evidenza sul tipo di contest | `scope_type` e `treatment_profile` | completo per i contest noti | PnP autonomi separati dagli adiacenti | Riesame soltanto su nuova evidenza |
 | 3. Censimento entry | Roster o fonte equivalente | Entry, gioco, stato originale e normalizzato | completo per baseline; dinamico sui contest attivi | Totali riconciliati con la fonte | Nuovi snapshot completi nei controlli periodici |
 | 4. WIP e risorse dichiarate | Entry censita e primo post WIP | Esito scansione, menzioni e provenienza | parziale | Stati negativi distinti; URL identici deduplicati | Completare i contest 2025 non ancora scansionati |
 | 5. Requisiti materiali | Primo post; regole solo se autorizzate | Requisiti originali e normalizzati | parziale | Copertura `first_post_only` distinta da `rules_integrated` | Proseguire insieme alla scansione WIP |
 | 6. Risultati e segnali | Risultati BGG o segnale sostitutivo | Posizione, categoria, voto, ufficialità e fonte | parziale | Nessuna inferenza di vincitore senza posizione esplicita | Verificare contest conclusi con risultati incompleti |
 | 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | non iniziato | Segnali ufficiali distinti dai sostitutivi | Definire soglie e primo lotto |
-| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | non iniziato come campagna | Nessun aggiramento di accessi o autenticazione | Avviare soltanto nel task della singola entry |
+| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | non iniziato come campagna | Nessun aggiramento di accessi o autenticazione | Avviare soltanto nel task di acquisizione del singolo contest |
 | 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | non iniziato | Nessuna redistribuzione; originali immutabili | Acquisire soltanto giochi selezionati |
 | 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | non applicabile | Hash per ogni file; versioni precedenti preservate | Attivare con la prima acquisizione |
 | 11. Consultazione e report | Database locale | App e output rigenerabili | completo per le funzioni correnti | Lettura SQLite in sola lettura; nessuna rete implicita | Evolvere solo con requisiti concreti |
@@ -792,20 +2063,21 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 
 | Priorità | Attività | Stato | Motivo | Dipendenze | Prossimo passo | Riferimento |
 |---:|---|---|---|---|---|---|
-| 1 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
-| 2 | Completare WIP, risorse e materiali 2025 | parziale | Solo 129 di 464 entry 2025 hanno scansione registrata | Skill BGG; task annuale | Proseguire dal prossimo contest 2025 non coperto | `sources/2025-CONTEST-COVERAGE.md` |
-| 3 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
-| 4 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
-| 5 | Eseguire il primo lotto di acquisizione | bloccato | Richiede prima criteri di selezione e verifica delle condizioni | Attività 4 | Selezionare entry e verificare host nel task dedicato | `library/README.md` |
+| 1 | Completare il censimento globale dei contest PnP BGG | completo | 305 contest importati; quattro stati 2026 finalizzati; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; non riaprire il censimento salvo nuove fonti | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
+| 2 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
+| 3 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
+| 4 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
+| 5 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
+| 6 | Eseguire il primo lotto di acquisizione | bloccato | Richiede prima criteri di selezione e verifica delle condizioni | Attività 5 | Aprire `Acquisizione materiali del contest` per un solo contest | `library/README.md` |
 
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
 | Schema e migrazioni | completo | Migrazioni 001-007 presenti | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | File locale interrogato il 2026-09-15 | Non versionare; preservare cronologia e provenienza |
+| Database operativo | completo | 305 contest, 19 annualità, integrità e chiavi esterne verificate il 2026-09-18 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | completo per dataset correnti | Script e SQL annuali presenti | Aggiornare insieme ai dati autorevoli |
-| App locale | completo | Test documentati nell'ultimo incremento UI | Mantenere sola lettura e assenza di richieste esterne automatiche |
+| App locale | completo | Vista Avanzamento a pipeline e filtri materiali verificati il 2026-09-18; 16 test backend e 18 frontend superati | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | da aggiornare | Ultimo aggiornamento documentale 2026-09-07 | Aggiornare dopo ogni rilevamento dovuto |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
@@ -816,6 +2088,17 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | Data | Task | Modifica registrata | Evidenza |
 |---|---|---|---|
 | 2026-09-15 | Cruscotto avanzamento raccolta | Creato il quadro iniziale e aggiunte viste annuali generate per tipologia, contest e tutte le entry | Query in sola lettura al database; `app/generate_project_progress.py` |
+| 2026-09-15 | Censimento globale contest PnP BGG | Avviata la ricognizione 2008–2026; estratti 191 record indice prima di deduplicazione ed espansione delle challenge brevi | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md`; task dedicato |
+| 2026-09-15 | Censimento globale contest PnP BGG | Espansi i meta-record in 127 challenge brevi e integrati i contest 2026 mancanti dalla GeekList; bacino preliminare successivamente corretto a 305 unità includendo Solomode 2026 | `sources/BGG-PNP-24H-CHALLENGES.md`; forum BGG |
+| 2026-09-16 | Censimento globale contest PnP BGG | Estratti i titoli di 166/166 record storici e 26/26 elementi recenti; chiarito che i conteggi non sostituiscono il registro nominativo | GeekList BGG renderizzate; task dedicato |
+| 2026-09-16 | Cruscotto avanzamento raccolta | Ordinato il censimento globale per anno decrescente ed estesa la sezione A al 2008–2026 in cinque gruppi di massimo quattro anni | `app/generate_project_progress.py`; database locale |
+| 2026-09-16 | Cruscotto avanzamento raccolta | Ordinata la sezione B dal 2026 al 2008 e aggiunte tabelle di stato per le annualità non ancora importate, senza inventare entry | `app/generate_project_progress.py`; database locale |
+| 2026-09-16 | Cruscotto avanzamento raccolta | Nella sezione A omesse le tipologie interamente vuote per gruppo; nella sezione B aggiunte intestazioni nominative dei contest in gruppi di massimo sei, senza righe di entry per i contest non importati | `catalog/bgg_contest_census_titles.json`; `app/generate_project_progress.py` |
+| 2026-09-18 | Cruscotto navigabile nell'app | Integrata una vista annuale interattiva con accessi a contest, entry, classifiche, letture materiali e download; aggiunti filtri per anno e stato materiali | API SQLite in sola lettura; test backend e frontend dell'app |
+| 2026-09-18 | Cruscotto navigabile nell'app | Adottata la veste grafica Pipeline per le annualità importate; aggiunto il conteggio delle entry presenti in almeno una classifica e raccolti separatamente gli anni non importati | API SQLite in sola lettura; 16 test backend e 18 frontend |
+| 2026-09-18 | Censimento globale contest PnP BGG | Importata nel database la baseline deduplicata di 305 contest per 19 annualità; nessuna entry storica aggiunta | `catalog/global-contest-census.sql`; verifica su copia; integrità SQLite |
+| 2026-09-18 | Censimento globale contest PnP BGG | Finalizzati quattro stati 2026; mantenuto `unknown` per l'anomalia storica 2018; escluse nuove discussioni e concorsi esterni non appartenenti al perimetro | `catalog/global-contest-census-finalization.sql`; controllo fonti BGG e calendario |
+| 2026-09-18 | Standardizzazione esplorazioni BGG | Definiti cinque workflow non sovrapponibili; entry per anno, analisi e acquisizione per singolo contest, monitoraggio separato | `PROJECT.md`; `AGENTS.md`; skill BGG |
 
 ## Protocollo di manutenzione automatica
 

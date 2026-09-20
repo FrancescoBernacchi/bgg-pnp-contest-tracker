@@ -1,6 +1,6 @@
 # Materiali di gioco dichiarati nei primi post — contest 2025
 
-Rilevazione dell’11 settembre 2026 limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand, Children & Family e 1-Card. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.
+Rilevazione avviata l’11 settembre 2026 e integrata il 15 settembre 2026, limitata al primo post renderizzato dei WIP di Roll & Write, In-Hand, Children & Family, Solomode e 1-Card. I regolamenti esterni non sono stati aperti o scaricati: l’inventario è quindi esplicitamente integrabile in seguito.
 
 Le categorie sono provvisorie. `printable_component` indica elementi di gioco descritti come stampabili; le altre categorie distinguono randomizzatori, strumenti di scrittura, mazzi standard, segnalini, oggetti domestici, accessori, strumenti di montaggio e dispositivi digitali.
 
@@ -81,6 +81,27 @@ Le categorie sono provvisorie. `printable_component` indica elementi di gioco de
 | 548 | 4 |
 | 549 | 1 |
 | 550 | 10 |
+| 552 | 1 |
+| 553 | 4 |
+| 555 | 1 |
+| 556 | 1 |
+| 558 | 1 |
+| 559 | 1 |
+| 561 | 1 |
+| 562 | 1 |
+| 563 | 2 |
+| 565 | 3 |
+| 566 | 2 |
+| 570 | 1 |
+| 573 | 2 |
+| 574 | 1 |
+| 576 | 2 |
+| 582 | 1 |
+| 583 | 1 |
+| 585 | 1 |
+| 587 | 1 |
+| 588 | 1 |
+| 589 | 3 |
 | 793 | 3 |
 | 794 | 4 |
 | 795 | 3 |
@@ -420,6 +441,38 @@ Le categorie sono provvisorie. `printable_component` indica elementi di gioco de
 | 550 | `household_item` | tavolo o superficie piana | 1 | `required` | `household` | A table or flat surface |
 | 550 | `assembly_material` | vecchia carta da gioco e colla |  | `optional` | `household` | glueing them onto an old card |
 | 550 | `assembly_material` | nastro adesivo o laminazione |  | `optional` | `household` | sticky tape or laminate |
+| 552 | `randomizer` | dado d6 aggiuntivo | 3 | `required` | `common` | For Florek you need 3 additional d6. |
+| 553 | `standard_deck` | carte da gioco |  | `alternative` | `common` | playtest using playing cards, pawns and three markers |
+| 553 | `token_marker` | pedina |  | `alternative` | `common` | playtest using playing cards, pawns and three markers |
+| 553 | `token_marker` | segnalino | 3 | `alternative` | `common` | playtest using playing cards, pawns and three markers |
+| 553 | `household_item` | fiches da poker |  | `alternative` | `household` | poker chips can be used in place of markers |
+| 555 | `printable_component` | carte della variante |  | `required` | `printable` | rules and cards are available |
+| 556 | `printable_component` | carte della variante |  | `required` | `printable` | rules and cards are available |
+| 558 | `printable_component` | aiuto giocatore |  | `optional` | `printable` | Player Aid |
+| 559 | `printable_component` | carte aggiuntive | 8 | `required` | `printable` | Do you like the 8 extra cards |
+| 561 | `randomizer` | dado d6 | 2, idealmente di colori diversi | `required` | `common` | 2 six-sided dice, ideally in different colors |
+| 562 | `randomizer` | dado d6 | 4 | `required` | `common` | Roll the 4 dice for the Automa |
+| 563 | `household_item` | foglio di carta | 1 | `required` | `household` | a piece of paper and a pencil |
+| 563 | `writing_tool` | matita | 1 | `required` | `common` | a piece of paper and a pencil |
+| 565 | `household_item` | foglio di carta | 1 | `required` | `household` | a piece of paper, a pencil, and a 10 minute timer |
+| 565 | `writing_tool` | matita | 1 | `required` | `common` | a piece of paper, a pencil, and a 10 minute timer |
+| 565 | `timer` | timer da 10 minuti | 1 | `required` | `household` | a piece of paper, a pencil, and a 10 minute timer |
+| 566 | `randomizer` | dado d6 | 1 | `optional` | `common` | a single d6 can be used |
+| 566 | `digital_device` | generatore di numeri casuali | 1 | `alternative` | `digital_device` | random number generator |
+| 570 | `printable_component` | mazzo Automa |  | `required` | `printable` | Automa deck |
+| 573 | `printable_component` | carte del mazzo solo | 13 | `required` | `printable` | 13-card solo deck |
+| 573 | `printable_component` | plancia Cathy | 1 | `required` | `printable` | Cathy board |
+| 574 | `printable_component` | carte del mazzo solo | 17 | `required` | `printable` | 17 card solo deck |
+| 576 | `printable_component` | aiuto giocatore sperimentale |  | `optional` | `printable` | experimental player aid |
+| 576 | `printable_component` | mazzo carte azione |  | `optional` | `printable` | action card deck |
+| 582 | `randomizer` | dado d6 aggiuntivo | 1 | `required` | `common` | one additional d6 |
+| 583 | `standard_deck` | carte standard da 1 a 10 in quattro semi | 40 carte | `required` | `common` | standard deck cards 1–10 in four suits |
+| 585 | `household_item` | sacchetto | 1 | `optional` | `household` | I use a bag to randomize the black tile |
+| 587 | `printable_component` | carte bot | 16 | `required` | `printable` | 16 bot cards |
+| 588 | `digital_device` | tablet o computer portatile | 1 | `required` | `digital_device` | tablet or laptop for the browser applet |
+| 589 | `printable_component` | carte RuneBot | 15 | `required` | `printable` | 15 RuneBot cards |
+| 589 | `printable_component` | carta evento casuale | 1 | `required` | `printable` | 1 Random Event Card |
+| 589 | `randomizer` | dado d10 | 1 | `required` | `common` | one d10 |
 
 ## Limiti
 

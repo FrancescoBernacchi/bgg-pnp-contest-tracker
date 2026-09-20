@@ -8,7 +8,9 @@ Costruire e mantenere una collezione locale, ricercabile e tracciabile di giochi
 
 Catalogare tutte le entries comprese nel perimetro del task e acquisire i materiali soltanto per i giochi selezionati. Partire dai contest attivi più recenti. Basare la priorità principalmente su classifiche e votazioni BGG, distinguendo sempre risultati ufficiali da segnali sostitutivi.
 
-Nei task annuali di esplorazione, per ogni entry cercare anche il thread WIP BGG dedicato e registrare i collegamenti alle risorse dichiarati nel primo post senza seguirli o scaricare file. Distinguere sempre WIP non individuato, risorse non osservabili, nessuna risorsa dichiarata e risorse dichiarate ma non verificate. La verifica degli host esterni e l'acquisizione appartengono al task dedicato alle singole entry.
+Il lavoro BGG segue i cinque tipi standard definiti in `PROJECT.md`: censimento globale dei contest, censimento annuale delle entry, analisi dei materiali di un singolo contest, acquisizione dei materiali di un singolo contest e monitoraggio di un singolo contest. Non combinarli nello stesso task salvo una migrazione esplicitamente deliberata.
+
+Nel censimento annuale registrare le entry di tutti i contest dell'anno senza analizzarne WIP, risorse o requisiti materiali. Cercare WIP, collegamenti dichiarati e requisiti materiali soltanto nel task dedicato a un singolo contest. Distinguere sempre WIP non individuato, risorse non osservabili, nessuna risorsa dichiarata e risorse dichiarate ma non verificate. Verifica degli host esterni, selezione e download appartengono a un successivo task di acquisizione dedicato allo stesso singolo contest, mai a un'annualità intera o a più contest.
 
 Conservare separatamente i contest PnP autonomi e i contest adiacenti autorizzati. Per le varianti dipendenti da un gioco base, registrare tale dipendenza e non presumere che esistano componenti PnP aggiuntivi.
 
@@ -36,6 +38,8 @@ L'agente deve sviluppare progressivamente competenza specialistica nella navigaz
 
 Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/TASK.md`. Il task di bootstrap usa eccezionalmente `2026-09-04 - SETUP INIZIALE PROGETTO`. Definire scope, input, deliverable e criteri di successo prima di operare; lavorare per incrementi verificabili; chiudere registrando verifiche, decisioni e risultati riutilizzabili.
 
+Prima di aprire o proseguire un'attività BGG, classificarla in uno dei cinque tipi standard di `PROJECT.md` e applicarne unità di lavoro ed esclusioni. Se la richiesta dell'utente adotta un perimetro diverso, avvisarlo della divergenza, indicare il tipo e il task corretti e non estendere silenziosamente il perimetro. Applicare lo stesso controllo quando l'utente chiede «che facciamo ora?», «quali sono le prossime attività?» o formule equivalenti: proporre i passi successivi come task separati e conformi, indicando chiaramente anno o singolo contest richiesto da ciascun tipo.
+
 Quando un incremento modifica copertura, conteggi, fase della pipeline, priorità, blocchi, acquisizioni o stato degli strumenti, aggiornare nello stesso incremento `PROJECT_PROGRESS.md` secondo il suo protocollo di manutenzione, prima di chiudere `TASK.md`. Non aggiornare il cruscotto per una mera rigenerazione di output priva di cambiamenti ai dati o allo stato.
 
 Se cambiano contest, entry, classifiche, scansioni dei materiali, acquisizioni o file acquisiti, rigenerare prima le sezioni annuali A e B con `app/generate_project_progress.py`; non modificare manualmente il contenuto compreso tra i marcatori HTML generati.
@@ -44,7 +48,7 @@ Anche il titolo visibile del task Codex usa la convenzione `YYYY-MM-DD - descriz
 
 ## Regole della conoscenza
 
-La tassonomia dei collegamenti resta provvisoria durante l'esplorazione annuale. Conservare separatamente funzione dichiarata, forma tecnica ed evidenza; accorpare URL identici senza perdere le diverse menzioni. Chiudere categorie ed enumerazioni soltanto dopo il confronto di tutti i contest dell'anno.
+La tassonomia dei collegamenti resta provvisoria durante l'analisi materiali del singolo contest. Conservare separatamente funzione dichiarata, forma tecnica ed evidenza; accorpare URL identici senza perdere le diverse menzioni. Consolidare categorie ed enumerazioni soltanto dopo il confronto dei task di analisi di tutti i contest dell'anno, senza riunire per questo le analisi in un unico task annuale.
 
 Conservare separatamente dati originali, valori normalizzati e inferenze. Ogni informazione volatile deve includere fonte e data di verifica. Una nota di task diventa conoscenza condivisa solo dopo verifica e promozione deliberata. Non perdere nomi o stati storici quando un gioco viene rinominato, ritirato o aggiornato.
 

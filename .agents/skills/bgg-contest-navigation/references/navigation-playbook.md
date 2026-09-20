@@ -58,6 +58,14 @@ Per ogni fallback verifica titolo, autore, appartenenza al contest e identificat
 
 ## Registrazione di un nuovo pattern
 
+## Pattern: GeekList paginata con caricamento progressivo
+
+**Osservato:** `Community PnP contests and winners (2008 to 2024)`, 16 settembre 2026.
+
+Una pagina può dichiarare 25 elementi ma materializzarne nel DOM soltanto quelli vicini alla posizione corrente. Scorrere progressivamente l'intera pagina, accumulare i record per indice, deduplicare e verificare esplicitamente l'assenza di lacune da `1` al totale dichiarato. Saltare direttamente in fondo può perdere gli elementi intermedi. Nel caso osservato il DOM iniziale restituiva 21 record complessivi; il controllo progressivo ha prodotto 166 record su 166.
+
+## Registrazione di un nuovo pattern
+
 Per ogni pattern aggiungere:
 
 - contest e data di osservazione;
@@ -90,3 +98,9 @@ Il primo post può dichiarare requisiti necessari o alternativi che non compaion
 **Osservato:** `Lucky Words`, 1-Card 2025, 11 settembre 2026.
 
 Un collegamento `/image/...` non è sempre decorativo. Se il primo post associa esplicitamente l'immagine a un'istruzione operativa come “Tap the image above to print your copy”, conservarla come risorsa BGG del gioco con etichetta e contesto. L'eccezione richiede evidenza testuale esplicita: immagini di copertina, anteprime, esempi e illustrazioni prive di tale dichiarazione restano escluse.
+
+## Pattern: materiali aggiuntivi nelle varianti dipendenti
+
+**Osservato:** Solomode 2025, 15 settembre 2026.
+
+Nei contest di varianti il primo post può elencare insieme componenti del gioco base e materiali introdotti dalla modalità. La dipendenza dal gioco base non deve trasformarsi nella duplicazione del suo intero inventario: conservare come requisiti della variante soltanto carte, dadi, fogli, timer, dispositivi o sostituzioni esplicitamente aggiuntivi. Una dichiarazione come “no extra components” è evidenza utile per la scansione ma non genera un requisito materiale. Se il post propone un kit alternativo per provare la variante senza il gioco base, registrarlo come `alternative`, conservando separata la dipendenza principale.

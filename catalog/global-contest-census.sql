@@ -1,0 +1,4 @@
+PRAGMA foreign_keys = ON;
+BEGIN IMMEDIATE;
+
+COMMIT;

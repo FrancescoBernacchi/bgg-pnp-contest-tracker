@@ -10,6 +10,32 @@ const run = text => vm.runInContext(text,context);
 test('testo non fidato reso come testo, mai markup',()=>{
   assert.equal(run('esc(`<img src=x onerror="alert(1)">`)'),'&lt;img src=x onerror=&quot;alert(1)&quot;&gt;');
 });
+test('indicatori avanzamento distinguono completo, parziale e non iniziato',()=>{
+  assert.match(run("progressMark(4,4,'ratio')"),/progress-mark done/);
+  assert.match(run("progressMark(2,4,'ratio')"),/progress-mark partial/);
+  assert.match(run("progressMark(0,4,'ratio')"),/progress-mark empty/);
+  assert.match(run("progressMark(2,4,'ratio')"),/>2\/4<\/span>/);
+});
+test('pipeline annuale calcola percentuali senza dividere per zero',()=>{
+  assert.equal(run('progressPercent(3,4)'),75);
+  assert.equal(run('progressPercent(0,0)'),0);
+  const html=run("pipelineRow('Lettura materiali',3,4,'amber')");
+  assert.match(html,/3\/4 · 75%/);
+  assert.match(html,/<progress class="pipeline-progress amber"/);
+  assert.match(html,/value="3" max="4"/);
+  assert.ok(!html.includes('style='));
+});
+test('pipeline annuale separa PnP principali e adiacenti',()=>{
+  const source=fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8');
+  assert.match(source,/Contest con entry censite/);
+  assert.match(source,/scopePipeline\(scopeSummary\(y,'pnp_core'\),'PnP principali'\)/);
+  assert.match(source,/scopePipeline\(scopeSummary\(y,'adjacent'\),'Adiacenti','violet'\)/);
+  assert.ok(!source.includes("pipelineRow('Stati entry noti',y.known_status_count,y.entry_count)"));
+});
+test('riepilogo per perimetro funziona anche con il vecchio formato API',()=>{
+  run("data={progress:{contests:[{year:2024,scope_type:'pnp_core',entry_count:29,ranked_entry_count:2,materials_read_count:1,downloaded_entry_count:0},{year:2024,scope_type:'adjacent',entry_count:0,ranked_entry_count:0,materials_read_count:0,downloaded_entry_count:0}]}};");
+  assert.equal(run("JSON.stringify(scopeSummary({year:2024},'pnp_core'))"),JSON.stringify({contest_count:1,contests_with_entries_count:1,entry_count:29,ranked_entry_count:2,materials_read_count:1,downloaded_entry_count:0}));
+});
 test('solo link BGG di metadati, nessun download o host esterno',()=>{
   for(const url of ['javascript:alert(1)','https://example.com/thread/123','https://boardgamegeek.com/filepage/123','https://boardgamegeek.com/file/download/test','https://boardgamegeek.com.evil.example/thread/123','https://user:pass@boardgamegeek.com/thread/123']){
     assert.ok(!run(`source(${JSON.stringify(url)})`).includes('<a '));

@@ -14,7 +14,7 @@ Nel database questa distinzione usa `contests.scope_type` e `contests.treatment_
 
 Le viste `v_contests_monitoring_all`, `v_contests_pnp_core`, `v_contests_adjacent`, `v_entries_standalone` e `v_entries_dependent_variants` costituiscono l'interfaccia di lettura stabile per report e applicazione. La vista generale calcola i conteggi correnti e la prossima fase non trascorsa al momento della consultazione.
 
-La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distribuite su 13 serie. Sono censite 829 entry: 365 del 2026 e 464 del 2025, relative a In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode, Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write. Nel complesso risultano 770 giochi autonomi e 59 varianti dipendenti: 21 varianti Solomode del 2026 e 38 del 2025. Traditional Deck usa `format_adjacent`, Bad Comet `selective_entries` e Solomode `dependent_variants`. L'esplorazione 2025 è conclusa: le undici edizioni individuate hanno un censimento dedicato e la ricognizione finale non ha trovato altri contest annuali PnP con evidenza BGG sufficiente. Le challenge brevi, le challenge di gioco e i concorsi esterni annunciati nel forum rimangono fuori da questa baseline e sono documentati separatamente.
+La baseline globale corrente comprende 305 contest dal 2008 al 2026. Il censimento delle entry è stato completato per 22 contest del 2025–2026 e comprende 829 entry: 365 del 2026 e 464 del 2025, relative a In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode, Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write. Nel complesso risultano 770 giochi autonomi e 59 varianti dipendenti: 21 varianti Solomode del 2026 e 38 del 2025. Traditional Deck usa `format_adjacent`, Bad Comet `selective_entries` e Solomode `dependent_variants`. Le challenge da 24 ore ospitate su BGG sono incluse nel censimento globale ma classificate `adjacent` con profilo `format_adjacent`, così da non alterare le metriche dei PnP principali; challenge di gioco e concorsi esterni soltanto annunciati nel forum restano esclusi e documentati separatamente.
 
 ## Attività previste
 
@@ -28,6 +28,22 @@ La baseline corrente comprende 11 contest del 2026 e 11 edizioni del 2025, distr
 - produzione di esportazioni e report riproducibili.
 - pianificazione dei controlli mediante un taccuino versionabile delle scadenze e delle finestre di riesame.
 - sviluppo incrementale di strategie verificabili per navigare le diverse strutture storiche di contest, roster, entry, WIP e risorse BGG.
+
+## Tipi standard di attività BGG
+
+Ogni attività BGG deve appartenere a uno solo dei cinque tipi seguenti. L'unità di lavoro è parte del contratto del task e non può essere ampliata silenziosamente.
+
+| Tipo standard | Unità di lavoro | Contenuto | Esclusioni obbligatorie | Titolo del task |
+|---|---|---|---|---|
+| **Censimento globale contest** | Tutti gli anni | Identità del contest, serie, anno, stato originale e normalizzato, fonte BGG e data | Entry, WIP, risorse, materiali e download | `YYYY-MM-DD - Censimento globale contest PnP BGG` |
+| **Censimento annuale entry** | Un solo anno | Contest dell'anno e roster completo delle entry: titolo, autore, stato, posizione, URL e appartenenza | Lettura dei WIP, censimento di risorse o requisiti materiali, verifica degli host e download | `YYYY-MM-DD - Esplorazione contest BGG AAAA` |
+| **Analisi materiali del contest** | Un solo contest | WIP delle entry, collegamenti dichiarati, risorse e requisiti materiali osservabili nel perimetro stabilito | Apertura o verifica degli host esterni, download e lavoro su altri contest | `YYYY-MM-DD - Analisi materiali - NOME CONTEST AAAA` |
+| **Acquisizione materiali del contest** | Un solo contest | Selezione delle entry, verifica di liceità e condizioni, controllo degli host, download, manifest, hash e versioni | Acquisizioni trasversali a più contest o a un'intera annualità | `YYYY-MM-DD - Acquisizione materiali - NOME CONTEST AAAA` |
+| **Monitoraggio del contest** | Un solo contest | Snapshot periodico di stato, fasi, roster e metriche secondo il calendario | Nuovo censimento storico, analisi dei materiali e download | `YYYY-MM-DD - Monitoraggio - NOME CONTEST AAAA` |
+
+Il passaggio normale è: censimento globale → censimento annuale delle entry → analisi materiali per singolo contest → acquisizione per lo stesso singolo contest. Il monitoraggio è un flusso ricorrente parallelo, attivato dal calendario per i contest che lo richiedono. L'acquisizione non è automatica dopo l'analisi: richiede selezione esplicita e verifica delle condizioni applicabili.
+
+Quando una richiesta propone un perimetro diverso — per esempio materiali per un intero anno, entry di più anni nello stesso task o download trasversali a più contest — l'agente deve evidenziare la deviazione e indicare la scomposizione corretta prima di procedere. Anche nelle risposte di orientamento generale sulle prossime attività, le proposte devono essere formulate usando questi nomi e queste unità di lavoro.
 
 Il cruscotto Markdown corrente è rigenerabile dal database locale con `app/generate_monitoring_report.py`; legge le viste operative e non accede a BGG né ai materiali delle entry.
 
@@ -60,7 +76,7 @@ Ogni dato volatile deve riportare URL di provenienza e data dell'ultima verifica
 
 La navigazione BGG segue la skill locale `.agents/skills/bgg-contest-navigation/SKILL.md` e il relativo playbook evolutivo. Ogni roster viene estratto anzitutto dalla fonte BGG autorevole e verificato quantitativamente; ricerche interne o web intervengono solo sugli scarti residui. I nuovi pattern di pagina vengono documentati con contesto, metodo, verifica e limiti, così che le esplorazioni successive possano adattarsi anche a organizzazioni storiche differenti.
 
-L'esplorazione annuale raccoglie anche il thread WIP BGG dedicato, i collegamenti alle risorse e i requisiti materiali dichiarati nel primo post, senza aprire le destinazioni esterne. `entry_resource_scans` conserva anche gli esiti negativi o non osservabili; `entry_resource_mentions` collega la risorsa alla specifica entry e alla fonte BGG; `remote_resource_observations` distingue la dichiarazione nel WIP dalla successiva verifica di disponibilità. `entry_material_scans` dichiara la copertura della rilevazione (`first_post_only` o successivamente `rules_integrated`), mentre `entry_material_requirements` conserva nome originale e normalizzato, quantità, categoria provvisoria, obbligatorietà, modalità di approvvigionamento, contesto e fonte. L'inventario tratto dal primo post resta esplicitamente integrabile quando le regole saranno acquisite in un task separato.
+L'analisi materiali del singolo contest raccoglie il thread WIP BGG dedicato di ciascuna entry, i collegamenti alle risorse e i requisiti materiali dichiarati nel primo post, senza aprire le destinazioni esterne. `entry_resource_scans` conserva anche gli esiti negativi o non osservabili; `entry_resource_mentions` collega la risorsa alla specifica entry e alla fonte BGG; `remote_resource_observations` distingue la dichiarazione nel WIP dalla successiva verifica di disponibilità. `entry_material_scans` dichiara la copertura della rilevazione (`first_post_only` o successivamente `rules_integrated`), mentre `entry_material_requirements` conserva nome originale e normalizzato, quantità, categoria provvisoria, obbligatorietà, modalità di approvvigionamento, contesto e fonte. L'inventario tratto dal primo post resta esplicitamente integrabile quando le regole saranno acquisite nel successivo task di acquisizione dello stesso contest.
 
 Le prossime finestre operative e gli ultimi controlli sono mantenuti in `sources/MONITORING_CALENDAR.md`. Il monitoraggio evita rilevamenti duplicati nella stessa giornata e distingue i controlli tecnici locali dalle nuove osservazioni dello stato pubblicato su BGG.
 

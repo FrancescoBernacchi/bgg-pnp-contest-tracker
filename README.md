@@ -6,20 +6,22 @@ Lo stato operativo complessivo è raccolto in [`PROJECT_PROGRESS.md`](PROJECT_PR
 
 ## Stato attuale
 
-- 22 edizioni monitorate: 11 del 2026 e una baseline di 11 contest del 2025;
-- 13 serie individuate; per il 2025 si aggiungono 1-Card e Roll & Write;
+- 305 contest censiti dal 2008 al 2026; 22 contest del 2025–2026 dispongono già del roster delle entry;
+- 19 annualità rappresentate nel database;
 - 829 entry censite: le 365 del 2026 e 464 del 2025 (In-Hand, 9-Card Nanogame, Children & Family, 1-Card, Solomode, Solitaire, Two-Player, 54-Card, Traditional Deck, Wargame e Roll & Write);
 - cronologia di stati, metriche, entry, fasi e scadenze;
 - cruscotto Markdown rigenerabile con confronto fra rilevamenti periodici;
 - applicazione locale di consultazione in sola lettura, con ricerca, filtri, dettagli e confronto conservativo degli snapshot;
 - prossimo controllo mirato del task 2026: 8 settembre 2026, contest Turkish PnP;
-- esplorazione storica 2025 completata: tutte le undici edizioni individuate hanno baseline e censimento dedicato; challenge brevi, challenge di gioco e concorsi esterni restano separati.
+- censimento delle entry 2025 completato per gli undici contest annuali già esplorati; le challenge da 24 ore restano nel censimento globale come contest adiacenti e hanno metriche separate dai PnP principali.
 
 I contest adiacenti hanno trattamenti distinti: Traditional Deck (`format_adjacent`), Bad Comet (`selective_entries`) e Solomode (`dependent_variants`).
 
 ## Confini
 
 Il monitoraggio usa inizialmente solo fonti BGG. Il task ricorrente dei contest non apre, analizza o scarica file di gioco: conserva esclusivamente metadati pubblici utili a descrivere contest ed entry. L’app rende consultabili anche i requisiti materiali descritti nel primo post o nelle regole già censite, mantenendoli separati dai collegamenti alle risorse. L'eventuale acquisizione futura di materiali selezionati appartiene a un flusso separato.
+
+Le attività BGG sono organizzate in cinque workflow non sovrapponibili: censimento globale dei contest, censimento annuale delle entry, analisi materiali di un singolo contest, acquisizione/download di un singolo contest e monitoraggio di un singolo contest. Nomi, unità di lavoro ed esclusioni sono definiti in `PROJECT.md`; in particolare analisi e download non vengono eseguiti trasversalmente su più contest.
 
 ## Struttura
 

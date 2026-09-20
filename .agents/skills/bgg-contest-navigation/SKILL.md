@@ -18,6 +18,12 @@ Costruisci una catena verificabile fra contest, fonte del roster, singola entry,
 
 Non interpretare un collegamento non ancora risolto come assente.
 
+## Instradamento del task
+
+Prima della navigazione classifica il lavoro secondo uno dei cinque tipi definiti in `PROJECT.md`: censimento globale dei contest, censimento annuale delle entry, analisi materiali di un singolo contest, acquisizione materiali di un singolo contest o monitoraggio di un singolo contest. Applica soltanto le fasi pertinenti al tipo scelto. In particolare, il censimento annuale si ferma al roster delle entry; WIP, risorse e requisiti appartengono all'analisi del singolo contest; verifica degli host e download appartengono all'acquisizione dello stesso singolo contest.
+
+Se la richiesta combina unità diverse o propone analisi o download trasversali a più contest, segnala la deviazione e indica la scomposizione conforme prima di procedere. Usa lo stesso instradamento quando viene chiesto genericamente quale sia il prossimo passo.
+
 ## Procedura
 
 1. Identifica la fonte BGG autorevole per il perimetro: post del thread principale, GeekList, Hub, risultati o altra lista mantenuta dall'organizzatore.
@@ -58,4 +64,4 @@ Non chiudere la tassonomia prima del confronto di tutti i contest dell'anno.
 
 ## Materiali di gioco dichiarati nel WIP
 
-Durante la lettura integrale del primo post, censisci separatamente anche i requisiti materiali che non dipendono da un URL: dadi, mazzi standard, strumenti di scrittura, pedine, segnalini, oggetti domestici, dispositivi e materiali di montaggio. Conserva testo originale, quantità, contesto, obbligatorietà e modalità di approvvigionamento; assegna categorie soltanto provvisorie. Distingui esplicitamente la copertura `first_post_only` da un futuro inventario integrato dalle regole. Non dedurre un componente dalla sola descrizione della meccanica e non interpretare il silenzio del primo post come prova che il gioco non richieda materiali.
+Durante la lettura integrale del primo post, censisci separatamente anche i requisiti materiali che non dipendono da un URL: dadi, mazzi standard, strumenti di scrittura, pedine, segnalini, oggetti domestici, dispositivi e materiali di montaggio. Conserva testo originale, quantità, contesto, obbligatorietà e modalità di approvvigionamento; assegna categorie soltanto provvisorie. Per una variante dipendente da un gioco base, registra come requisiti della variante soltanto i componenti aggiuntivi o sostitutivi esplicitamente dichiarati e conserva separatamente la dipendenza, senza duplicare l'intera dotazione del gioco base. Distingui esplicitamente la copertura `first_post_only` da un futuro inventario integrato dalle regole. Non dedurre un componente dalla sola descrizione della meccanica e non interpretare il silenzio del primo post come prova che il gioco non richieda materiali.

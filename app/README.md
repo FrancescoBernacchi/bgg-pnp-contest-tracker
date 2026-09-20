@@ -36,9 +36,11 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 
 ## Consultazione
 
+- **Avanzamento**: schede annuali in forma di pipeline per gli anni importati, con barre per stati noti, entry presenti nelle classifiche, letture materiali e file acquisiti; le annualità non importate restano raccolte separatamente e il dettaglio per contest collega alle viste filtrate e alle schede esistenti.
 - **Contest**: schede separate per PnP principali e adiacenti; ricerca per nome, filtri di anno e stato, conteggi comprensivi dei ritiri.
 - **Risultati**: tutte le classifiche registrate, ricerca per titolo e crediti, filtri combinabili e pagine da 30 osservazioni; sintesi per contest con vincitori e distribuzione dei piazzamenti per categoria.
 - **Tutte le entry**: ricerca per titolo o autore, filtri per contest, perimetro, stato e tipologia; ordinamento e pagine da 30 risultati.
+- **Filtri materiali**: dalla vista entry si possono isolare letture registrate, letture non iniziate e giochi con file acquisiti; le colonne `L` e `D` mantengono separati censimento dei requisiti e acquisizione.
 - **Dettaglio entry, risorse e materiali**: collegamenti espliciti alla pagina dell’entry e al WIP BGG; risorse dichiarate con URL apribili soltanto su click; requisiti materiali descritti testualmente con nome originale e normalizzato, quantità, necessità, approvvigionamento, contesto e provenienza.
 - **Dettaglio contest**: stati originali/normalizzati, dipendenze, distribuzione degli stati, fasi/scadenze con precisione e fuso registrati, metriche correnti e storiche, classifiche ufficiali o segnali sostitutivi.
 - **Dettaglio entry**: crediti, stato dei materiali, risorse collegate, requisiti fisici dichiarati con quantità ed evidenza, dipendenza da gioco base, cronologia degli stati, nomi storici e testo originale visualizzato senza interpretare HTML.
@@ -109,7 +111,7 @@ La scheda entry separa **Risorse dichiarate** (destinazioni URL) e **Materiali r
 
 `generate_monitoring_report.py` legge in sola lettura il database operativo e genera `outputs/contest-monitoring-dashboard.md` usando le viste di monitoraggio. Non effettua accessi di rete e non legge la libreria dei materiali.
 
-`generate_project_progress.py` aggiorna le sezioni annuali generate di `PROJECT_PROGRESS.md`: sintesi per tipologia e dettaglio di tutte le entry, con indicatori colorati per censimento, classifiche, lettura e download. Il resto del documento viene preservato. Anche questo comando legge SQLite in sola lettura e non accede alla rete.
+`generate_project_progress.py` aggiorna le sezioni annuali generate di `PROJECT_PROGRESS.md`: la sintesi per tipologia copre il 2008–2026 in gruppi di massimo quattro anni; il dettaglio è ordinato dal 2026 al 2008, elenca le entry degli anni già importati e mostra una tabella di stato esplicita per quelli ancora da consolidare. Il resto del documento viene preservato. Anche questo comando legge SQLite in sola lettura e non accede alla rete.
 
 La sezione `Cambiamenti dall'ultimo rilevamento` considera come confronto soltanto controlli periodici o legati a scadenze, escludendo baseline, completamenti del censimento e verifiche tecniche. Per alimentarla, un nuovo controllo deve registrare un `contest_checks.check_kind` contenente `monitor`, `scheduled`, `deadline` o `follow_up` e collegare tramite `check_id` gli snapshot di stato, entry, metriche e fasi.
 

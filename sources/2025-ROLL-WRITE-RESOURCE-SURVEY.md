@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Sondaggio metodologico del 10 settembre 2026 per definire quali collegamenti raccogliere durante l'esplorazione annuale dei contest. Il sondaggio non apre né scarica i materiali esterni.
+Sondaggio metodologico del 10 settembre 2026, precedente alla standardizzazione dei workflow del 18 settembre 2026. Le indicazioni che assegnavano WIP e risorse all'esplorazione annuale sono superate: questi dati appartengono ora all'`Analisi materiali del contest` dedicata a un singolo contest. Il sondaggio non apre né scarica i materiali esterni.
 
 ## Distinzioni necessarie
 
@@ -65,7 +65,7 @@ Una riga per ciascuna osservazione storica della risorsa:
 - `availability_status`: `not_checked`, `available`, `unavailable`, `access_restricted` o `unknown`;
 - `version_raw` e `notes`.
 
-Durante l'esplorazione annuale si registra normalmente `declared_in_wip` con disponibilità `not_checked`. La verifica dell'host esterno e il download appartengono al task dedicato alle singole entry.
+Durante l'analisi materiali del singolo contest si registra normalmente `declared_in_wip` con disponibilità `not_checked`. La verifica dell'host esterno e il download appartengono al successivo task di acquisizione dello stesso singolo contest.
 
 ### Estensione di `remote_resources`
 
@@ -77,14 +77,14 @@ Separare il tipo tecnico dal contenuto:
 
 ## Conseguenza operativa
 
-L'esplorazione annuale dovrebbe mirare a censire per ogni entry l'URL WIP BGG e tutti i collegamenti dichiarati nel primo post, senza seguirli. Il risultato può legittimamente essere:
+L'analisi materiali del singolo contest deve censire per ogni sua entry l'URL WIP BGG e tutti i collegamenti dichiarati nel primo post, senza seguirli. Il risultato può legittimamente essere:
 
 - WIP non individuato;
 - WIP individuato, risorse non osservabili;
 - WIP individuato, nessuna risorsa dichiarata;
 - una o più risorse dichiarate ma non verificate.
 
-Questi stati devono restare distinti. La successiva attività sulle singole entry potrà verificare disponibilità, licenza, versione e contenuto, quindi decidere l'acquisizione e calcolare gli hash.
+Questi stati devono restare distinti. Il successivo task di acquisizione del medesimo contest potrà verificare disponibilità, licenza, versione e contenuto delle entry selezionate, quindi decidere i download e calcolare gli hash.
 
 ## Applicazione del sondaggio
 
