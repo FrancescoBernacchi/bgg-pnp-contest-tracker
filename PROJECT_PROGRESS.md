@@ -2040,6 +2040,7 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
 | Acquisizioni | 0 | Selezione ancora da definire | non iniziato | Ogni gioco selezionato ha decisione, fonte, condizioni e data | `acquisitions` |
 | File acquisiti | 0 | Acquisizioni riuscite | non applicabile | Ogni file ha versione, dimensione, hash e collegamento alla fonte | `acquired_files` |
+| Titoli Kanare_Abstract | 64 candidati gioco/variante | Tre superfici Kanare osservate il 2026-09-20 | censimento preliminare completo; non ancora importato | Indice, prodotti e pagina online riconciliati; alias, versioni e prodotti mantenuti distinti | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md` |
 
 ## Pipeline operativa
 
@@ -2065,10 +2066,11 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 |---:|---|---|---|---|---|---|
 | 1 | Completare il censimento globale dei contest PnP BGG | completo | 305 contest importati; quattro stati 2026 finalizzati; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; non riaprire il censimento salvo nuove fonti | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
-| 3 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
-| 4 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
-| 5 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
-| 6 | Eseguire il primo lotto di acquisizione | bloccato | Richiede prima criteri di selezione e verifica delle condizioni | Attività 5 | Aprire `Acquisizione materiali del contest` per un solo contest | `library/README.md` |
+| 3 | Introdurre Kanare_Abstract nel modello multifonte | censimento preliminare completo | 64 candidati gioco/variante sono documentati ma lo schema corrente non separa ancora record di fonte, prodotti, alias e implementazioni | Censimento Kanare; progettazione del modello multifonte | Progettare e verificare una migrazione minima, poi importare senza fusioni automatiche | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md` |
+| 4 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
+| 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
+| 6 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
+| 7 | Eseguire il primo lotto di acquisizione | bloccato | Richiede prima criteri di selezione e verifica delle condizioni | Attività 6 | Aprire `Acquisizione materiali del contest` per un solo contest | `library/README.md` |
 
 ## Salute degli strumenti e della governance
 
@@ -2076,7 +2078,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 |---|---|---|---|
 | Schema e migrazioni | completo | Migrazioni 001-007 presenti | Ogni modifica passa da nuova migrazione numerata |
 | Database operativo | completo | 305 contest, 19 annualità, integrità e chiavi esterne verificate il 2026-09-18 | Non versionare; preservare cronologia e provenienza |
-| Catalogo versionabile | completo per dataset correnti | Script e SQL annuali presenti | Aggiornare insieme ai dati autorevoli |
+| Catalogo versionabile | completo per i dataset importati; Kanare censito ma non importato | Roster preliminare Kanare di 64 candidati documentato il 2026-09-20 | Progettare il modello multifonte prima dell'importazione |
 | App locale | completo | Vista Avanzamento a pipeline e filtri materiali verificati il 2026-09-18; 16 test backend e 18 frontend superati | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | da aggiornare | Ultimo aggiornamento documentale 2026-09-07 | Aggiornare dopo ogni rilevamento dovuto |
@@ -2099,6 +2101,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-18 | Censimento globale contest PnP BGG | Importata nel database la baseline deduplicata di 305 contest per 19 annualità; nessuna entry storica aggiunta | `catalog/global-contest-census.sql`; verifica su copia; integrità SQLite |
 | 2026-09-18 | Censimento globale contest PnP BGG | Finalizzati quattro stati 2026; mantenuto `unknown` per l'anomalia storica 2018; escluse nuove discussioni e concorsi esterni non appartenenti al perimetro | `catalog/global-contest-census-finalization.sql`; controllo fonti BGG e calendario |
 | 2026-09-18 | Standardizzazione esplorazioni BGG | Definiti cinque workflow non sovrapponibili; entry per anno, analisi e acquisizione per singolo contest, monitoraggio separato | `PROJECT.md`; `AGENTS.md`; skill BGG |
+| 2026-09-20 | Censimento Kanare Abstract | Riconciliati indice opere, 39 prodotti e pagina Online Play; separati 64 candidati gioco/variante da prodotti, raccolte e accessori | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; task dedicato |
 
 ## Protocollo di manutenzione automatica
 
