@@ -165,7 +165,9 @@ Decisioni già raccolte per il futuro task Kanare_Abstract:
 
 ### Stato implementato del modello
 
-La migrazione `009_multisource_catalog.sql` realizza il nucleo relazionale generale. Le fonti e i loro record nativi sono separati dai giochi canonici; gli stati di matching impediscono fusioni automatiche. Il modello comprende prodotti e contenuti molti-a-molti, relazioni fra giochi, alias multilingue, risorse attribuibili, piattaforme e implementazioni online, alias delle persone e asserzioni di credito con evidenza. Nessuna riga Kanare è importata in questo incremento e le destinazioni esterne restano non verificate.
+La migrazione `009_multisource_catalog.sql` realizza il nucleo relazionale generale. Le fonti e i loro record nativi sono separati dai giochi canonici; gli stati di matching impediscono fusioni automatiche. Il modello comprende prodotti e contenuti molti-a-molti, relazioni fra giochi, alias multilingue, risorse attribuibili, piattaforme e implementazioni online, alias delle persone e asserzioni di credito con evidenza.
+
+Il censimento Kanare_Abstract osservato il 2026-09-20 è importato nel database operativo mediante `catalog/import_kanare_abstract.py` e verificabile con `catalog/verify_kanare_abstract_import.py`. Comprende 64 identità canoniche conservative, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 2 alias, 2 relazioni fra giochi, 28 implementazioni dichiarate, 13 persone e 62 asserzioni di credito. Ventisei riconciliazioni ambigue restano `candidate`. Regolamenti e immagini privi di URL puntuale nel documento locale sono conservati come presenze dichiarate nei metadati dei record nativi, senza creare URL o righe risorsa fittizie. Nessuna destinazione esterna è stata verificata e nessun materiale è stato acquisito.
 
 ## Idee evolutive da trattare in task separati
 

@@ -2,6 +2,8 @@
 
 Contiene importazioni SQL, esportazioni testuali e manifest che rendono riproducibili i dati conservati nel database operativo. I file sono versionabili, leggibili e privi dei materiali binari originali.
 
+`import_kanare_abstract.py` importa offline il censimento Kanare_Abstract documentato il 2026-09-20 dopo l'applicazione della migrazione 009. Conserva record nativi, prodotti, giochi, alias, relazioni, implementazioni e crediti senza aprire destinazioni esterne o inventare URL mancanti. `verify_kanare_abstract_import.py` esegue la riconciliazione quantitativa 38/39/64, verifica le cardinalità e conferma che i dati BGG legacy siano invariati.
+
 `bgg_contest_census_titles.json` conserva per anno i titoli dei contest non brevi estratti dagli indici BGG. `app/generate_project_progress.py` li combina con le challenge individualizzate per costruire nella sezione B del cruscotto le intestazioni degli anni non ancora importati, senza creare entry inesistenti.
 
 `global-contest-census.sql` importa la baseline globale di 305 contest per il 2008–2026 senza aggiungere entry. `build_global_contest_census.py` rigenera l'incremento dal manifest e dalle challenge individualizzate; `verify_global_contest_census.py` lo applica a una copia e controlla totale, annualità, integrità e chiavi esterne.

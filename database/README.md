@@ -26,6 +26,8 @@ Stato di verifica e provenienza sono registrati sul dato o sulla relazione perti
 
 La prova riproducibile `database/test_multisource_migration.py` applica la migrazione a un database legacy temporaneo, verifica la preservazione delle righe preesistenti, inserisce fixture sintetiche per le cardinalità principali ed esegue `foreign_key_check` e `integrity_check`.
 
+L'importazione offline del censimento Kanare_Abstract del 2026-09-20 è definita in `catalog/import_kanare_abstract.py`. Lo script richiede la migrazione 009, opera in una transazione atomica e rifiuta una seconda esecuzione quando la fonte è già presente. `catalog/verify_kanare_abstract_import.py` riconcilia 38 titoli dell'indice, 39 prodotti e 64 candidati complessivi; controlla cardinalità, matching `candidate`, conteggi BGG legacy, chiavi esterne e integrità. Entrambi gli script sono esclusivamente locali e non effettuano richieste di rete.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:

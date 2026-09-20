@@ -2040,7 +2040,7 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
 | Acquisizioni | 0 | Selezione ancora da definire | non iniziato | Ogni gioco selezionato ha decisione, fonte, condizioni e data | `acquisitions` |
 | File acquisiti | 0 | Acquisizioni riuscite | non applicabile | Ogni file ha versione, dimensione, hash e collegamento alla fonte | `acquired_files` |
-| Titoli Kanare_Abstract | 64 candidati gioco/variante | Tre superfici Kanare osservate il 2026-09-20 | censimento preliminare completo; non ancora importato | Indice, prodotti e pagina online riconciliati; alias, versioni e prodotti mantenuti distinti | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md` |
+| Titoli Kanare_Abstract | 64 giochi canonici conservativi, 58 record nativi e 39 prodotti importati | Tre superfici Kanare osservate il 2026-09-20 | censimento preliminare importato; destinazioni esterne non verificate | Indice 38, prodotti 39 e candidati 64 riconciliati; 26 matching ambigui restano `candidate` | `catalog/verify_kanare_abstract_import.py` |
 
 ## Pipeline operativa
 
@@ -2066,7 +2066,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 |---:|---|---|---|---|---|---|
 | 1 | Completare il censimento globale dei contest PnP BGG | completo | 305 contest importati; quattro stati 2026 finalizzati; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; non riaprire il censimento salvo nuove fonti | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
-| 3 | Introdurre Kanare_Abstract nel modello multifonte | modello pronto; import non iniziato | La migrazione 009 separa record di fonte, giochi, prodotti, alias, relazioni, risorse, implementazioni e crediti; i 64 candidati non sono ancora importati | Censimento Kanare e migrazione 009 verificata | Importare il censimento con matching esplicito e senza fusioni automatiche | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; `database/migrations/009_multisource_catalog.sql` |
+| 3 | Introdurre Kanare_Abstract nel modello multifonte | import preliminare completo | Migrazione 009 applicata; 64 giochi, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco e 28 implementazioni dichiarate importati senza fusioni ambigue | Censimento Kanare, migrazione 009, importatore e verificatore offline | Separare in task successivi l'esplorazione esterna aggiornata, la verifica delle destinazioni e l'acquisizione selettiva | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; `catalog/import_kanare_abstract.py` |
 | 4 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
 | 6 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
@@ -2076,10 +2076,10 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
-| Schema e migrazioni | completo | Migrazioni 001-007 presenti | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 305 contest, 19 annualità, integrità e chiavi esterne verificate il 2026-09-18 | Non versionare; preservare cronologia e provenienza |
-| Catalogo versionabile | modello multifonte pronto; Kanare censito ma non importato | Migrazione 009 verificata su database temporaneo; roster Kanare di 64 candidati documentato il 2026-09-20 | Importare record di fonte e relazioni Kanare senza acquisire materiali né verificare destinazioni esterne |
-| App locale | completo | Compatibilità con lo schema multifonte verificata il 2026-09-20; suite backend di 16 casi senza errori (3 skip attesi) e 20 test frontend superati | Mantenere sola lettura e assenza di richieste esterne automatiche |
+| Schema e migrazioni | completo | Migrazioni 001-009 presenti; 009 applicata all'operativo il 2026-09-20 | Ogni modifica passa da nuova migrazione numerata |
+| Database operativo | completo | 305 contest BGG invariati; Kanare: 64 giochi, 58 record, 39 prodotti; integrità e chiavi esterne verificate il 2026-09-20 | Non versionare; preservare cronologia e provenienza |
+| Catalogo versionabile | import Kanare preliminare completo | Importatore e verificatore offline riconciliano 38 titoli indice, 39 prodotti e 64 candidati | Evolvere con task distinti per esplorazione, verifica destinazioni e acquisizione |
+| App locale | completo | Compatibilità con lo schema multifonte e database operativo verificata il 2026-09-20; 16 test backend e 20 frontend superati senza skip | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | da aggiornare | Ultimo aggiornamento documentale 2026-09-07 | Aggiornare dopo ogni rilevamento dovuto |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
@@ -2103,6 +2103,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-18 | Standardizzazione esplorazioni BGG | Definiti cinque workflow non sovrapponibili; entry per anno, analisi e acquisizione per singolo contest, monitoraggio separato | `PROJECT.md`; `AGENTS.md`; skill BGG |
 | 2026-09-20 | Censimento Kanare Abstract | Riconciliati indice opere, 39 prodotti e pagina Online Play; separati 64 candidati gioco/variante da prodotti, raccolte e accessori | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; task dedicato |
 | 2026-09-20 | Modello dati multifonte Kanare Abstract | Aggiunto e verificato il nucleo additivo per fonti, record nativi, prodotti, relazioni, risorse, implementazioni e crediti; nessun record Kanare importato | `database/migrations/009_multisource_catalog.sql`; task dedicato |
+| 2026-09-20 | Importazione censimento Kanare Abstract | Applicata la migrazione 009 dopo backup verificato e importati 64 giochi, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 28 implementazioni e 62 crediti; 26 matching ambigui restano `candidate` | `catalog/import_kanare_abstract.py`; `catalog/verify_kanare_abstract_import.py`; task dedicato |
 
 ## Protocollo di manutenzione automatica
 
