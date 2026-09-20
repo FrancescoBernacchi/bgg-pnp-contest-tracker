@@ -16,6 +16,16 @@ La migrazione `006_entry_resource_provenance.sql` distingue la scansione del WIP
 
 La migrazione `007_entry_declared_materials.sql` separa le scansioni dei requisiti materiali dai singoli materiali dichiarati. Conserva la copertura (`first_post_only` o `rules_integrated`), gli esiti negativi o non osservabili e, per ogni requisito, testo originale, normalizzazione provvisoria, quantità, obbligatorietà, modalità di approvvigionamento, contesto e fonte. Una scansione limitata al primo post resta integrabile dalle regole e non certifica l'inventario completo del gioco.
 
+La migrazione `008_24h_challenges_adjacent.sql` riallinea le challenge da 24 ore al perimetro `adjacent` senza alterare roster o storico.
+
+La migrazione `009_multisource_catalog.sql` aggiunge il nucleo generale del catalogo multifonte senza modificare le tabelle o le viste BGG esistenti. `catalog_sources` identifica una fonte; `source_records` conserva il record nativo osservato e non coincide con il gioco canonico. `game_source_records` e `product_source_records` rendono esplicita la riconciliazione e accettano `candidate`, `confirmed` o `rejected`, così una corrispondenza ambigua non produce una fusione automatica.
+
+`products` e `product_games` modellano confezioni, raccolte e set con relazione molti-a-molti ai giochi. `game_relationships` rappresenta varianti, derivazioni e dipendenze tipizzate. `catalog_resources` e `resource_links` gestiscono regole, immagini e altre risorse attribuendole a un gioco, prodotto o record nativo; le precedenti `remote_resources` restano il contratto legacy delle entry BGG. `online_platforms` e `game_implementations` separano le implementazioni digitali dai giochi. `person_names` e `credit_assertions` aggiungono alias e crediti provenienti da più fonti senza sostituire i crediti BGG già presenti.
+
+Stato di verifica e provenienza sono registrati sul dato o sulla relazione pertinente. I valori ammessi per la verifica sono `not_checked`, `declared`, `verified`, `rejected` e `uncertain`; una dichiarazione della fonte non equivale a verifica della destinazione esterna. `game_names` mantiene tutte le colonne precedenti e aggiunge tipo, lingua, scrittura, ufficialità, record di origine e verifica.
+
+La prova riproducibile `database/test_multisource_migration.py` applica la migrazione a un database legacy temporaneo, verifica la preservazione delle righe preesistenti, inserisce fixture sintetiche per le cardinalità principali ed esegue `foreign_key_check` e `integrity_check`.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:

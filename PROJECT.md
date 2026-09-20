@@ -107,6 +107,8 @@ Poiché l'utente sta acquisendo familiarità con Git e GitHub, l'agente fornisce
 
 Il modello concettuale distingue contest, entry, gioco, persona/credito, stato, classifica, risorsa remota, acquisizione e file locale. I valori normalizzati non sostituiscono mai il testo originale da cui derivano.
 
+Dal 20 settembre 2026 il nucleo multifonte distingue inoltre il gioco canonico dal record nativo osservato in una fonte. La riconciliazione fra i due è una relazione con esito esplicito e non una fusione implicita. Prodotti e confezioni hanno identità propria e relazione molti-a-molti con i giochi; varianti e dipendenze sono relazioni tipizzate fra giochi. Nomi, risorse, implementazioni online e crediti conservano provenienza e stato di verifica. Le tabelle BGG preesistenti restano compatibili e continuano a servire l'app corrente; il nucleo generale sarà il punto di ingresso per le future importazioni multifonte.
+
 ## Vincoli
 
 - conservare integri gli originali e non sovrascrivere versioni precedenti;
@@ -160,6 +162,10 @@ Decisioni già raccolte per il futuro task Kanare_Abstract:
 - aggiornamenti avviati manualmente, storicizzati e non distruttivi. Un elemento non più osservato non viene cancellato automaticamente;
 - conservazione selettiva delle evidenze: dati strutturati e metadati per tutte le pagine, snapshot completi soltanto per anomalie o casi motivati;
 - copertura del censimento separata dagli stati personali del gioco.
+
+### Stato implementato del modello
+
+La migrazione `009_multisource_catalog.sql` realizza il nucleo relazionale generale. Le fonti e i loro record nativi sono separati dai giochi canonici; gli stati di matching impediscono fusioni automatiche. Il modello comprende prodotti e contenuti molti-a-molti, relazioni fra giochi, alias multilingue, risorse attribuibili, piattaforme e implementazioni online, alias delle persone e asserzioni di credito con evidenza. Nessuna riga Kanare è importata in questo incremento e le destinazioni esterne restano non verificate.
 
 ## Idee evolutive da trattare in task separati
 
