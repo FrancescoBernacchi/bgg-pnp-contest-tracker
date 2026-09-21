@@ -30,6 +30,8 @@ L'importazione offline del censimento Kanare_Abstract del 2026-09-20 è definita
 
 Il completamento del censimento è applicato da `catalog/enrich_kanare_abstract.py`: limita le richieste HTML ai due host ufficiali Kanare in allowlist, non apre PDF, immagini o destinazioni esterne e aggiorna idempotentemente i record esistenti. Il rilevamento del 2026-09-20 porta il catalogo Kanare a 76 record nativi, 39 prodotti con scheda puntuale, 141 risorse URL, 162 legami di provenienza e 54 implementazioni attribuite a 9 piattaforme dichiarate.
 
+La verifica esterna del 2026-09-21 è applicata offline e idempotentemente da `catalog/verify_kanare_abstract_destinations.py`, a partire da un insieme esplicito di osservazioni raccolte nel browser. Non effettua richieste di rete: aggiorna URL, disponibilità, evidenza e stati soltanto per le destinazioni osservate. Il risultato corrente comprende 14 implementazioni `verified`, 40 `uncertain`, 15 matching ancora `candidate` e un matching `rejected` per l'omonimo BGG `Ripples`. Il verificatore Kanare controlla questi conteggi senza assumere che più record di fonte confermati per lo stesso gioco siano duplicazioni canoniche.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:

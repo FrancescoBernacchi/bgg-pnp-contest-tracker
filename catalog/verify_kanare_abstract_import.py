@@ -86,36 +86,32 @@ def verify(path: Path) -> dict:
     expected = {
         "source_records": 76, "work_index_titles": 38, "catalog_products_documented": 39,
         "canonical_games": 64, "index_candidates": 38, "product_candidates": 25,
-        "online_only_candidates": 1, "products": 39, "ludic_products": 31,
+        "online_only_candidates": 11, "products": 39, "ludic_products": 31,
         "generic_accessories": 8, "product_game_relations": 56,
         "included_game_relations": 35, "supported_game_relations": 21,
-        "game_relationships": 2, "aliases": 2, "candidate_matches": 26,
-        "implementations": 54, "implementations_declared": 54,
+        "game_relationships": 2, "aliases": 2, "candidate_matches": 15,
+        "implementations": 54, "implementations_declared": 0,
         "catalog_resources": 141, "resource_links": 162, "online_platforms_named": 9,
         "people_inserted": 13, "credit_assertions": 62,
         "declared_image_presences": 73, "declared_rule_presences": 73,
     }
     assert checks == expected, {k: (checks.get(k), v) for k, v in expected.items() if checks.get(k) != v}
 
-    # Every ambiguous cross-surface/cross-source reconciliation stays candidate.
-    non_candidate_online = con.execute(
-        """SELECT g.canonical_title,gsr.match_status FROM game_source_records gsr
-           JOIN source_records sr ON sr.id=gsr.source_record_id JOIN games g ON g.id=gsr.game_id
-           WHERE sr.source_id=? AND sr.record_type='online_play_index'
-             AND g.canonical_title <> 'Swarm' AND gsr.match_status <> 'candidate'""", (source_id,)).fetchall()
-    assert not non_candidate_online, non_candidate_online
+    implementation_statuses = dict(con.execute(
+        "SELECT verification_status,count(*) FROM game_implementations GROUP BY verification_status"))
+    assert implementation_statuses == {"uncertain": 40, "verified": 14}, implementation_statuses
     ripples = con.execute(
         """SELECT g.source_url,gsr.match_status FROM game_source_records gsr
            JOIN source_records sr ON sr.id=gsr.source_record_id JOIN games g ON g.id=gsr.game_id
            WHERE sr.source_id=? AND sr.record_type='game_page' AND lower(sr.title_raw)='ripples'""",
         (source_id,),).fetchall()
-    assert sorted(r["match_status"] for r in ripples) == ["candidate", "confirmed"]
+    assert sorted(r["match_status"] for r in ripples) == ["confirmed", "rejected"]
 
     imported_duplicate_titles = con.execute(
-        """SELECT g.canonical_title,count(*) n FROM games g
+        """SELECT g.canonical_title,count(DISTINCT g.id) n FROM games g
            JOIN game_source_records gsr ON gsr.game_id=g.id JOIN source_records sr ON sr.id=gsr.source_record_id
            WHERE sr.source_id=? AND gsr.match_status='confirmed'
-           GROUP BY lower(g.canonical_title) HAVING count(*)>1""", (source_id,)).fetchall()
+           GROUP BY lower(g.canonical_title) HAVING count(DISTINCT g.id)>1""", (source_id,)).fetchall()
     assert not imported_duplicate_titles, imported_duplicate_titles
 
     legacy_actual = {table: scalar(con, f"SELECT count(*) FROM {table}") for table in LEGACY_COUNTS}

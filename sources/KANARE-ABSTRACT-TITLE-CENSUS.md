@@ -135,3 +135,21 @@ Sono state riesaminate esclusivamente le tre pagine del catalogo, le 39 schede p
 - preservati alias, versioni qualificate e 26 matching `candidate`; cardinalità prodotto–gioco invariata a 35 `included_game` e 21 `supported_game`.
 
 I metadati delle immagini provengono dal markup HTML: file, dimensione effettiva, hash e destinazione restano non verificati. Verifica delle destinazioni e acquisizione dei materiali restano incrementi distinti.
+
+## Verifica delle destinazioni — 2026-09-21
+
+Il rilevamento ha aperto soltanto destinazioni già dichiarate da Kanare, senza archivi web, account, installazioni, avvio di partite o acquisizione di materiali. La pagina Kanare Online Play è stata riconfermata come matrice grezza delle 54 presenze attribuite a 9 piattaforme. La verifica esterna ha distinto raggiungibilità della piattaforma, individuazione dell'implementazione e riconciliazione col gioco.
+
+### Matching
+
+- `confirmed` (10): Abande, Attangle, Carpniches, Enso, Flower Shop, Meridians, Slyde, Stairs, Tori Shogi, Trike. Una pagina o un catalogo ufficiale della piattaforma identifica il titolo e fornisce evidenza sufficiente per collegarlo al gioco Kanare.
+- `rejected` (1): Ripples. Il thread BGG registrato è un WIP del contest 1-Card 2026, distinto dal gioco Kanare descritto come gioco territoriale con pezzi reversibili; l'uguaglianza del titolo non basta e non è stata effettuata alcuna fusione.
+- ancora `candidate` (15): Accasta Pari, Apart, Comune, Estate, heXentafl, LAG, Make Muster, Onager, Paintscape, Residuel, RosenKreuz, Saiju, Shape Chess, Vault, Volo.
+
+### Implementazioni online
+
+Le 54 righe storiche sono state preservate: 14 `verified` e 40 `uncertain`; nessuna è stata marcata `rejected`. Fra le incerte, 18 sono `not_observable` (13 Ai Ai, 3 BoardSpace.net e 2 dichiarazioni storiche prive di piattaforma) e 22 sono `unconfirmed` perché la piattaforma era raggiungibile o indicizzata ma non è stata osservata una pagina ufficiale abbastanza specifica.
+
+Sono state verificate pagine nominative o cataloghi ufficiali per: Abstract Play (Abande, Enso, Meridians, Stairs, Trike), Board Game Arena (Carpniches, Meridians, Trike), Mindsports (Flower Shop, Slyde), Spielstein (Abande, Attangle, Enso) e Tabletopia (Tori Shogi). I qualificatori `Accasta (original)`, `RosenKreuz (7×7)`, `Residuel (old rules)`, `Tori Shogi (no extra pieces)` e `Swarm (unpublished)` sono rimasti invariati; soltanto Tori Shogi disponeva di evidenza esterna sufficiente sul gioco, senza trasformare il qualificatore in alias.
+
+Ai Ai ha presentato un certificato TLS non verificabile nel browser e non è stato aggirato. BoardSpace.net non è risultato osservabile in modo sicuro nella sessione. I risultati indicizzati possono segnalare una presenza, ma non sono stati usati come prova automatica di disponibilità corrente.

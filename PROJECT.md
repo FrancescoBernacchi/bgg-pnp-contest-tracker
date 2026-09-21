@@ -171,6 +171,8 @@ Il censimento Kanare_Abstract osservato il 2026-09-20 è importato nel database 
 
 Il secondo rilevamento controllato dello stesso giorno ha completato gli URL puntuali mediante `catalog/enrich_kanare_abstract.py`: 76 record nativi, 39 prodotti con scheda diretta, 141 risorse URL dichiarate e 54 implementazioni attribuite a 9 piattaforme. I 26 matching ambigui restano `candidate`; destinazioni, file e materiali non sono stati aperti né acquisiti.
 
+Il 21 settembre 2026 un incremento separato ha verificato le destinazioni già dichiarate: 14 delle 54 implementazioni dispongono di evidenza ufficiale sufficiente e sono `verified`, mentre 40 restano `uncertain` (18 non osservabili e 22 non confermate puntualmente). Dieci matching della pagina Online Play sono `confirmed`, l'omonimo BGG `Ripples` è `rejected` e 15 matching restano `candidate`. Nessun materiale è stato acquisito e nessun qualificatore è stato trasformato automaticamente in alias.
+
 ## Idee evolutive da trattare in task separati
 
 ### Simulatore di giochi
