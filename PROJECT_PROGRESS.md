@@ -2104,6 +2104,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-20 | Censimento Kanare Abstract | Riconciliati indice opere, 39 prodotti e pagina Online Play; separati 64 candidati gioco/variante da prodotti, raccolte e accessori | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; task dedicato |
 | 2026-09-20 | Modello dati multifonte Kanare Abstract | Aggiunto e verificato il nucleo additivo per fonti, record nativi, prodotti, relazioni, risorse, implementazioni e crediti; nessun record Kanare importato | `database/migrations/009_multisource_catalog.sql`; task dedicato |
 | 2026-09-20 | Importazione censimento Kanare Abstract | Applicata la migrazione 009 dopo backup verificato e importati 64 giochi, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 28 implementazioni e 62 crediti; 26 matching ambigui restano `candidate` | `catalog/import_kanare_abstract.py`; `catalog/verify_kanare_abstract_import.py`; task dedicato |
+| 2026-09-20 | Completamento censimento Kanare Abstract | Completati gli URL dei 39 prodotti e registrati 141 collegamenti dichiarati; 54 implementazioni attribuite a 9 piattaforme senza aprire destinazioni; 26 matching restano `candidate` | `catalog/enrich_kanare_abstract.py`; fonte e task dedicati |
 
 ## Protocollo di manutenzione automatica
 

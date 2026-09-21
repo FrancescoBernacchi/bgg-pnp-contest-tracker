@@ -70,6 +70,8 @@ def verify(path: Path) -> dict:
     checks["implementations_declared"] = scalar(
         con, "SELECT count(*) FROM game_implementations WHERE verification_status='declared'")
     checks["catalog_resources"] = scalar(con, "SELECT count(*) FROM catalog_resources")
+    checks["resource_links"] = scalar(con, "SELECT count(*) FROM resource_links")
+    checks["online_platforms_named"] = scalar(con, "SELECT count(*) FROM online_platforms WHERE canonical_name <> 'Unspecified platform (Kanare declaration)'")
     checks["people_inserted"] = scalar(con, "SELECT count(*) FROM people") - 322
     checks["credit_assertions"] = scalar(con, "SELECT count(*) FROM credit_assertions")
 
@@ -82,15 +84,16 @@ def verify(path: Path) -> dict:
     )
 
     expected = {
-        "source_records": 58, "work_index_titles": 38, "catalog_products_documented": 39,
+        "source_records": 76, "work_index_titles": 38, "catalog_products_documented": 39,
         "canonical_games": 64, "index_candidates": 38, "product_candidates": 25,
         "online_only_candidates": 1, "products": 39, "ludic_products": 31,
         "generic_accessories": 8, "product_game_relations": 56,
         "included_game_relations": 35, "supported_game_relations": 21,
         "game_relationships": 2, "aliases": 2, "candidate_matches": 26,
-        "implementations": 28, "implementations_declared": 28,
-        "catalog_resources": 0, "people_inserted": 13, "credit_assertions": 62,
-        "declared_image_presences": 55, "declared_rule_presences": 59,
+        "implementations": 54, "implementations_declared": 54,
+        "catalog_resources": 141, "resource_links": 162, "online_platforms_named": 9,
+        "people_inserted": 13, "credit_assertions": 62,
+        "declared_image_presences": 73, "declared_rule_presences": 73,
     }
     assert checks == expected, {k: (checks.get(k), v) for k, v in expected.items() if checks.get(k) != v}
 

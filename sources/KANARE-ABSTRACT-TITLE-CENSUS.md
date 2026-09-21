@@ -123,3 +123,15 @@ La stessa pagina dichiara implementazioni per numerosi titoli già censiti. Fra 
 ## Copertura e limiti
 
 Il roster è completo rispetto alle tre superfici osservate il 2026-09-20. Non è ancora una riconciliazione canonica definitiva: titoli storici, alias, versioni e giochi inclusi in prodotti multipli richiedono il futuro modello multifonte. Non sono stati consultati archivi web, regolamenti, destinazioni BGG o piattaforme esterne.
+
+## Secondo rilevamento controllato — 2026-09-20
+
+Sono state riesaminate esclusivamente le tre pagine del catalogo, le 39 schede prodotto, le 34 pagine gioco HTML, l'indice opere e Online Play sui due host ufficiali Kanare. Nessun PDF, immagine o collegamento esterno è stato aperto o scaricato.
+
+- confermati 38 titoli, 39 prodotti e 64 candidati;
+- individuata una scheda URL per tutti i prodotti, inclusi 8 set/accessori;
+- registrati 141 URL dichiarati: 39 immagini rappresentative e 102 regolamenti (62 `en`, 37 `ja`, 2 `es`, 1 `zh`), collegati 162 volte ai record di provenienza;
+- attribuite 54 presenze online a 9 piattaforme nominate da Kanare, tutte ancora `declared`;
+- preservati alias, versioni qualificate e 26 matching `candidate`; cardinalità prodotto–gioco invariata a 35 `included_game` e 21 `supported_game`.
+
+I metadati delle immagini provengono dal markup HTML: file, dimensione effettiva, hash e destinazione restano non verificati. Verifica delle destinazioni e acquisizione dei materiali restano incrementi distinti.

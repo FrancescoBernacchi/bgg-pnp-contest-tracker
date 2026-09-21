@@ -169,6 +169,8 @@ La migrazione `009_multisource_catalog.sql` realizza il nucleo relazionale gener
 
 Il censimento Kanare_Abstract osservato il 2026-09-20 è importato nel database operativo mediante `catalog/import_kanare_abstract.py` e verificabile con `catalog/verify_kanare_abstract_import.py`. Comprende 64 identità canoniche conservative, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 2 alias, 2 relazioni fra giochi, 28 implementazioni dichiarate, 13 persone e 62 asserzioni di credito. Ventisei riconciliazioni ambigue restano `candidate`. Regolamenti e immagini privi di URL puntuale nel documento locale sono conservati come presenze dichiarate nei metadati dei record nativi, senza creare URL o righe risorsa fittizie. Nessuna destinazione esterna è stata verificata e nessun materiale è stato acquisito.
 
+Il secondo rilevamento controllato dello stesso giorno ha completato gli URL puntuali mediante `catalog/enrich_kanare_abstract.py`: 76 record nativi, 39 prodotti con scheda diretta, 141 risorse URL dichiarate e 54 implementazioni attribuite a 9 piattaforme. I 26 matching ambigui restano `candidate`; destinazioni, file e materiali non sono stati aperti né acquisiti.
+
 ## Idee evolutive da trattare in task separati
 
 ### Simulatore di giochi

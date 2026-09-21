@@ -28,6 +28,8 @@ La prova riproducibile `database/test_multisource_migration.py` applica la migra
 
 L'importazione offline del censimento Kanare_Abstract del 2026-09-20 è definita in `catalog/import_kanare_abstract.py`. Lo script richiede la migrazione 009, opera in una transazione atomica e rifiuta una seconda esecuzione quando la fonte è già presente. `catalog/verify_kanare_abstract_import.py` riconcilia 38 titoli dell'indice, 39 prodotti e 64 candidati complessivi; controlla cardinalità, matching `candidate`, conteggi BGG legacy, chiavi esterne e integrità. Entrambi gli script sono esclusivamente locali e non effettuano richieste di rete.
 
+Il completamento del censimento è applicato da `catalog/enrich_kanare_abstract.py`: limita le richieste HTML ai due host ufficiali Kanare in allowlist, non apre PDF, immagini o destinazioni esterne e aggiorna idempotentemente i record esistenti. Il rilevamento del 2026-09-20 porta il catalogo Kanare a 76 record nativi, 39 prodotti con scheda puntuale, 141 risorse URL, 162 legami di provenienza e 54 implementazioni attribuite a 9 piattaforme dichiarate.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:
