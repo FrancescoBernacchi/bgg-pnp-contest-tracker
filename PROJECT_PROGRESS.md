@@ -1,16 +1,16 @@
 # Cruscotto di avanzamento della raccolta
 
-Ultimo aggiornamento: 2026-09-20. Fonte dello stato: repository e database locale verificati il 2026-09-20. Ultimo rilevamento BGG registrato: 2026-09-10.
+Ultimo aggiornamento: 2026-10-02. Fonte dello stato: repository e database locale verificati il 2026-10-02. Ultimo rilevamento BGG registrato: 2026-10-02 (censimento globale; non è un controllo periodico di singolo contest).
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
 
 ## Censimento globale dei contest BGG
 
-Questa è la vista pertinente al task globale: comprende tutte le annualità osservate. Le 305 unità sono state deduplicate e importate nel database come baseline di censimento; la verifica puntuale dei thread e degli stati prudenziali resta aperta.
+Questa è la vista pertinente al task globale: comprende tutte le annualità osservate. La baseline di 305 unità è stata integrata il 2 ottobre 2026 con il nuovo Roll & Write, per un totale di 306 contest. La verifica puntuale dei thread e degli stati prudenziali storici resta aperta.
 
 | Anno | Contest/challenge candidate | Stato dei titoli | Stato di consolidamento |
 |---:|---:|---|---|
-| 2026 | 17 | estratti; 5 challenge individualizzate | baseline finalizzata; NINE attiva e un'anomalia storica fuori dall'anno |
+| 2026 | 18 | estratti; 5 challenge individualizzate | baseline integrata con Roll & Write annunciato il 2 ottobre; NINE attiva e un'anomalia storica fuori dall'anno |
 | 2025 | 17 | estratti; 6 challenge individualizzate | baseline finalizzata |
 | 2024 | 17 | estratti; 6 challenge individualizzate | baseline finalizzata |
 | 2023 | 21 | estratti; 9 challenge individualizzate | baseline finalizzata |
@@ -30,7 +30,7 @@ Questa è la vista pertinente al task globale: comprende tutte le annualità oss
 | 2009 | 6 | estratti | baseline finalizzata |
 | 2008 | 1 | estratto | baseline finalizzata |
 
-Fonti operative: `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md`, `sources/BGG-PNP-24H-CHALLENGES.md` e `catalog/global-contest-census.sql`.
+Fonti operative: `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md`, `sources/BGG-PNP-24H-CHALLENGES.md`, `catalog/global-contest-census.sql` e `catalog/global-contest-census-2026-10-02.sql`.
 
 ## Avanzamento dettagliato dei contest già nel database
 
@@ -45,7 +45,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 
 | N. | Tipologia e indicatore | 2026 | 2025 | 2024 | 2023 |
 |---:|:---|:---|:---|:---|:---|
-|   |   | **17 contest nel database** | **17 contest nel database** | **17 contest nel database** | **21 contest nel database** |
+|   |   | **18 contest nel database** | **17 contest nel database** | **17 contest nel database** | **21 contest nel database** |
 | 2 | **[1-Card Print and Play Contest](https://boardgamegeek.com/thread/3686290/2026-1-card-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 30 | — | — | — |
 |   |     Censimento entry | 🟢 30 | — | — | — |
@@ -130,12 +130,12 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🟢 8 | — | — |
 |   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/19 entry | — | — |
 |   |     Download materiali | 🔴 0/18 entry | 🔴 0/19 entry | — | — |
-| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest)** |   |   |   |   |
-|   |     Stati entry | — | 🟢 contest_ready 21, withdrawn 16 | 🔴  | — |
-|   |     Censimento entry | — | 🟢 37 | 🔴 0 | — |
-|   |     Classifiche | — | 🟢 11 | 🔴 0 | — |
-|   |     Lettura materiali | — | 🟢 37/37 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/37 entry | 🔴 0/0 entry | — |
+| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest)** |   |   |   |   |
+|   |     Stati entry | 🔴  | 🟢 contest_ready 21, withdrawn 16 | 🔴  | — |
+|   |     Censimento entry | 🔴 0 | 🟢 37 | 🔴 0 | — |
+|   |     Classifiche | 🔴 0 | 🟢 11 | 🔴 0 | — |
+|   |     Lettura materiali | 🔴 0/0 entry | 🟢 37/37 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🔴 0/37 entry | 🔴 0/0 entry | — |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 | — | — |
 |   |     Censimento entry | 🟡 89 | 🟢 74 | — | — |
@@ -340,7 +340,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | — | — | — | 🔴 0 |
 |   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
 |   |     Download materiali | — | — | — | 🔴 0/0 entry |
-| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest)** |   |   |   |   |
+| 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -508,7 +508,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-| 68 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 69 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
 |   |     Censimento entry | — | — | 🔴 0 | — |
 |   |     Classifiche | — | — | 🔴 0 | — |
@@ -682,7 +682,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | — | — | — |
 |   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
 |   |     Download materiali | 🔴 0/0 entry | — | — | — |
-| 69 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -1158,27 +1158,27 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 
 #### Gruppo 3 di 4
 
-| N. | [January–February 2026 — 24 Hour Design Challenge (CULTURE)](https://boardgamegeek.com/thread/3642254/january-february-2026-bi-monthly-24-hour-design-ch) | [July–August 2026 — 24 Hour Design Challenge (DRAW)](https://boardgamegeek.com/thread/3734535/july-august-2026-bi-monthly-24-hour-design-challen) | [March–April 2026 — 24 Hour Design Challenge (CLASSIC)](https://boardgamegeek.com/thread/3675743/march-april-2026-bi-monthly-24-hour-design-challen) | [May–June 2026 — 24 Hour Design Challenge (STICK)](https://boardgamegeek.com/thread/3706306/may-june-2026-bi-monthly-24-hour-design-challenge) | [September–October 2026 — 24 Hour Design Challenge (NINE)](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c) |
-|---:|:---|:---|:---|:---|:---|
-| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** |
-| 1 | [Cloudbound Kingdon](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Communal Comics](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Boneyard Gin](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Kindling](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Dressed to the Nines](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 2 | [Cozy Harvest](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Connectrons](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Classic Car Show](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Slapstick](https://boardgamegeek.com/thread/3707495/wipslapstickdual-entry-24-hour-and-1-card-design-c) — Ready | [Naoi](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 3 | [Get the Play on the Stage!](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Desperados Duel](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Clincher](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Stick'em Up](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Pittas](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
-| 4 | [Minutes to Majesty](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Drawing from Memory](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Closing the Gap](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 5 | [MUTT](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Neon Divide](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Quirlen](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 6 | [Poser](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Obfuscation](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Starward Shield](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 7 | [Random Traces](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Pip Draw](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
-| 8 | [SEWN](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [The Fastest Gun in the West](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
-| 9 | [Uncultured Swine](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Umbrella](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |
-|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| N. | [January–February 2026 — 24 Hour Design Challenge (CULTURE)](https://boardgamegeek.com/thread/3642254/january-february-2026-bi-monthly-24-hour-design-ch) | [July–August 2026 — 24 Hour Design Challenge (DRAW)](https://boardgamegeek.com/thread/3734535/july-august-2026-bi-monthly-24-hour-design-challen) | [March–April 2026 — 24 Hour Design Challenge (CLASSIC)](https://boardgamegeek.com/thread/3675743/march-april-2026-bi-monthly-24-hour-design-challen) | [May–June 2026 — 24 Hour Design Challenge (STICK)](https://boardgamegeek.com/thread/3706306/may-june-2026-bi-monthly-24-hour-design-challenge) | [September–October 2026 — 24 Hour Design Challenge (NINE)](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c) | [The 2026 Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest) |
+|---:|:---|:---|:---|:---|:---|:---|
+| **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** |
+| 1 | [Cloudbound Kingdon](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Communal Comics](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Boneyard Gin](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Kindling](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Dressed to the Nines](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
+| 2 | [Cozy Harvest](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Connectrons](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Classic Car Show](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Slapstick](https://boardgamegeek.com/thread/3707495/wipslapstickdual-entry-24-hour-and-1-card-design-c) — Ready | [Naoi](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
+| 3 | [Get the Play on the Stage!](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Desperados Duel](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Clincher](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready | [Stick'em Up](https://boardgamegeek.com/thread/3706306/article/47659966#47659966) — Ready | [Pittas](https://boardgamegeek.com/thread/3765638/article/48154812#48154812) — Ready |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
+| 4 | [Minutes to Majesty](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Drawing from Memory](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Closing the Gap](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 5 | [MUTT](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Withdrawn | [Neon Divide](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Quirlen](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 6 | [Poser](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Obfuscation](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready | [Starward Shield](https://boardgamegeek.com/thread/3675743/article/47408545#47408545) — Ready |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+| 7 | [Random Traces](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Pip Draw](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |   |
+| 8 | [SEWN](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [The Fastest Gun in the West](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |   |
+| 9 | [Uncultured Swine](https://boardgamegeek.com/thread/3642254/article/47134017#47134017) — Ready | [Umbrella](https://boardgamegeek.com/thread/3734535/article/47901801#47901801) — Ready |   |   |   |   |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |   |   |
 
 #### Gruppo 4 di 4
 
@@ -1990,7 +1990,7 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 | Area | Stato | Evidenza corrente | Prossimo risultato verificabile | Riferimento |
 |---|---|---|---|---|
 | Perimetro e architettura | completo | Scope, modello operativo e separazione PnP/adiacenti formalizzati | Riesame solo se emerge un nuovo ciclo di vita | `PROJECT.md` |
-| Contest ed entry | parziale | 305 contest e 829 entry nel database; censimento globale 2008–2026 finalizzato | Completare i censimenti annuali delle entry senza riaprire il censimento globale | database; registri globali in `sources/` |
+| Contest ed entry | parziale | 306 contest e 829 entry nel database; nuovo Roll & Write 2026 annunciato | Completare i censimenti annuali delle entry e monitorare i contest attivi con task separati | database; registri globali in `sources/` |
 | WIP e risorse dichiarate | parziale | 167/829 entry scansionate; 327 risorse e menzioni | Estendere la scansione alle entry 2025 residue, poi al 2026 | database; registri in `sources/` |
 | Requisiti materiali | parziale | 167/829 entry scansionate; 339 requisiti | Completare il primo post e integrare le regole solo nei task dedicati | database; registri in `sources/` |
 | Risultati e priorità | parziale | 1.054 osservazioni di classifica; risultati disponibili navigabili | Colmare risultati mancanti e definire la regola di priorità acquisizioni | database; app locale |
@@ -2004,7 +2004,7 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 
 | Anno | Contest censiti | Entry censite | Scansioni WIP/risorse | Copertura risorse | Scansioni materiali | Copertura materiali | Stato annualità | Ultima verifica del quadro |
 |---:|---:|---:|---:|---:|---:|---:|---|---|
-| 2026 | 17 | 365 | 0 | 0,0% | 0 | 0,0% | contest importati; entry parziali | 2026-09-18 |
+| 2026 | 18 | 365 | 0 | 0,0% | 0 | 0,0% | contest importati; entry parziali | 2026-10-02 |
 | 2025 | 17 | 464 | 167 | 36,0% | 167 | 36,0% | contest importati; entry parziali | 2026-09-18 |
 | 2024 | 17 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
 | 2023 | 21 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
@@ -2023,7 +2023,7 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 | 2010 | 5 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
 | 2009 | 6 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
 | 2008 | 1 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
-| **Totale** | **305** | **829** | **167** | **20,1% delle entry** | **167** | **20,1% delle entry** | **baseline contest importata** | **2026-09-18** |
+| **Totale** | **306** | **829** | **167** | **20,1% delle entry** | **167** | **20,1% delle entry** | **baseline contest integrata** | **2026-10-02** |
 
 La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle edizioni e il censimento delle entry, non implica che ogni WIP, risorsa o requisito materiale sia già stato esaminato.
 
@@ -2031,7 +2031,7 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 
 | Oggetto informativo | Unità registrate | Denominatore utile | Stato | Criterio di completamento | Fonte del conteggio |
 |---|---:|---:|---|---|---|
-| Contest | 305 | Baseline globale 2008–2026 | importato e finalizzato; un'anomalia storica `unknown` documentata | Ogni edizione ha titolo, anno, stato prudenziale e fonte BGG | `contests`, `contest_sources` |
+| Contest | 306 | Baseline globale 2008–2026 e aggiornamento del 2 ottobre | importato; nuovo Roll & Write `announced`, un'anomalia storica `unknown` documentata | Ogni edizione ha titolo, anno, stato prudenziale e fonte BGG | `contests`, `contest_sources` |
 | Entry | 829 | Roster dei 22 contest | completo per la baseline; dinamico per contest attivi | Ogni item autorevole riconciliato e stato preservato | `entries` |
 | Scansioni WIP/risorse | 167 | 829 entry | parziale | Ogni entry ha un esito esplicito, incluso WIP non trovato o non osservabile | `entry_resource_scans` |
 | Risorse dichiarate | 327 | Nessun denominatore certo | parziale | Ogni menzione è collegata a entry e fonte; nessuna destinazione esterna è presunta verificata | `remote_resources`, `entry_resource_mentions` |
@@ -2064,7 +2064,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 
 | Priorità | Attività | Stato | Motivo | Dipendenze | Prossimo passo | Riferimento |
 |---:|---|---|---|---|---|---|
-| 1 | Completare il censimento globale dei contest PnP BGG | completo | 305 contest importati; quattro stati 2026 finalizzati; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; non riaprire il censimento salvo nuove fonti | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
+| 1 | Completare il censimento globale dei contest PnP BGG | completo; aggiornamento del 2 ottobre | 306 contest importati, incluso il nuovo Roll & Write 2026; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; aggiornare il censimento se emerge un nuovo contest | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
 | 3 | Introdurre Kanare_Abstract nel modello multifonte | primo lotto acquisito | Migrazioni 009-010 applicate; censimento completo; 3 PDF EN acquisiti; 15 matching ancora candidati | Censimento, manifest e verificatori Kanare | Valutare separatamente un secondo lotto oppure un controllo mirato dei matching residui | fonte e task Kanare |
 | 4 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
@@ -2077,7 +2077,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
 | Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 305 contest BGG invariati; Kanare: 64 giochi, 141 risorse, 3 acquisizioni e 3 file; integrità e chiavi esterne verificate il 2026-09-21 | Non versionare; preservare cronologia e provenienza |
+| Database operativo | completo | 306 contest BGG; Kanare: 64 giochi, 141 risorse, 3 acquisizioni e 3 file; integrità e chiavi esterne verificate il 2026-10-02 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
 | App locale | completo per il primo incremento multifonte | Vista Giochi, ricerca/filtri trasversali, scheda canonica e vista Kanare aggiunte il 2026-10-02; 17 test backend e 23 frontend superati, inclusi controlli sulla fotografia verificata del database operativo | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
@@ -2100,6 +2100,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-18 | Cruscotto navigabile nell'app | Adottata la veste grafica Pipeline per le annualità importate; aggiunto il conteggio delle entry presenti in almeno una classifica e raccolti separatamente gli anni non importati | API SQLite in sola lettura; 16 test backend e 18 frontend |
 | 2026-09-18 | Censimento globale contest PnP BGG | Importata nel database la baseline deduplicata di 305 contest per 19 annualità; nessuna entry storica aggiunta | `catalog/global-contest-census.sql`; verifica su copia; integrità SQLite |
 | 2026-09-18 | Censimento globale contest PnP BGG | Finalizzati quattro stati 2026; mantenuto `unknown` per l'anomalia storica 2018; escluse nuove discussioni e concorsi esterni non appartenenti al perimetro | `catalog/global-contest-census-finalization.sql`; controllo fonti BGG e calendario |
+| 2026-10-02 | Censimento globale contest PnP BGG | Aggiunto il nuovo Roll & Write 2026 annunciato oggi; totale da 305 a 306, senza entry | Thread ufficiale BGG 3776341; `catalog/global-contest-census-2026-10-02.sql` |
 | 2026-09-18 | Standardizzazione esplorazioni BGG | Definiti cinque workflow non sovrapponibili; entry per anno, analisi e acquisizione per singolo contest, monitoraggio separato | `PROJECT.md`; `AGENTS.md`; skill BGG |
 | 2026-09-20 | Censimento Kanare Abstract | Riconciliati indice opere, 39 prodotti e pagina Online Play; separati 64 candidati gioco/variante da prodotti, raccolte e accessori | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; task dedicato |
 | 2026-09-20 | Modello dati multifonte Kanare Abstract | Aggiunto e verificato il nucleo additivo per fonti, record nativi, prodotti, relazioni, risorse, implementazioni e crediti; nessun record Kanare importato | `database/migrations/009_multisource_catalog.sql`; task dedicato |

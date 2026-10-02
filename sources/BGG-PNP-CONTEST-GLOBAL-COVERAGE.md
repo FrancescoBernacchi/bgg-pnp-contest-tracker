@@ -88,3 +88,11 @@ Il primo insieme di 191 record conteneva undici meta-record storici e otto chall
 La baseline tabellare delle 305 unità è stata deduplicata contro i 22 contest 2025–2026 già presenti e importata nel database operativo il 18 settembre 2026, senza aggiungere o analizzare entry. Il controllo finale ha risolto gli stati delle quattro challenge 2026 `CULTURE`, `CLASSIC`, `STICK` e `DRAW`; `League of Designers Workshop and Contest` (2018) resta `unknown` perché la fonte storica non prova né conclusione né cancellazione. Le nuove discussioni BoardSprints, Deck Hand, Tabletop Creator e altri concorsi esterni sono state controllate come esclusioni, non aggiunte al catalogo.
 
 Il censimento globale è concluso. Il prossimo lavoro deve usare i workflow separati: `Censimento annuale entry`, `Analisi materiali del contest`, `Acquisizione materiali del contest` o `Monitoraggio del contest`.
+
+## Aggiornamento del 2 ottobre 2026
+
+Il forum [Design Contests](https://boardgamegeek.com/forum/974620/bgg/design-contests), consultato in una sessione browser autenticata e ordinato per discussioni più recenti, mostra come unica nuova discussione di contest BGG successiva alla baseline del 18 settembre [The 2026 Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest), pubblicata il 2 ottobre. Il primo post dell'organizzatore Martin Melbardis annuncia il contest con Igor Zuber, con iscrizioni dal 15 ottobre al 1° dicembre 2026 e PnP gratuito obbligatorio. Stato normalizzato alla rilevazione: `announced`.
+
+La [GeekList comunitaria corrente](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) espone ancora 26 elementi, senza questa nuova edizione: resta utile come indice, ma in questo aggiornamento il thread ufficiale è la fonte puntuale. La nuova discussione BoardSprints del 12 settembre è un concorso esterno già escluso dal perimetro. Non sono state esaminate entry o risorse.
+
+La baseline di 305 contest diventa **306 unità**, di cui **18 nel 2026**. Incremento riproducibile: `catalog/global-contest-census-2026-10-02.sql`.

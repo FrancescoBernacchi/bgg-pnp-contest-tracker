@@ -33,6 +33,10 @@ La destinazione non è assente. BGG la risolve quando il componente entra nell'a
 
 Questa procedura ha risolto 37 WIP su 37. Leggere il DOM iniziale senza attivare i componenti aveva prodotto soltanto 18 WIP tramite ricerche sostitutive ed era quindi inadeguato.
 
+## Pattern: nuovi contest prima dell'aggiornamento della GeekList
+
+**Osservato:** forum Design Contests, 2 ottobre 2026. La GeekList comunitaria corrente conteneva ancora 26 elementi e non mostrava il nuovo Roll & Write 2026, pubblicato lo stesso giorno. Nel forum, il filtro `Recent` ordina le discussioni per creazione e permette di confrontare i thread successivi alla data della baseline; `Active` ordina invece per attività recente e mescola thread vecchi con annunci nuovi. Verificare ogni candidato nel primo post del thread ufficiale, controllare data, natura del contest e appartenenza al perimetro; escludere discussioni, side event e contest esterni. Il forum non sostituisce l'indice storico per il censimento retrospettivo.
+
 ## Fallback per URL non risolti
 
 Usa i fallback solo dopo l'estrazione sistematica dalla fonte primaria:

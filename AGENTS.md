@@ -36,6 +36,8 @@ L'agente deve sviluppare progressivamente competenza specialistica nella navigaz
 
 ## Workflow dei task
 
+All'inizio di ogni richiesta, anche in un nuovo task Codex, verificare i task locali esistenti e il loro stato. Se il lavoro appartiene a un task ancora aperto, indicare all'utente quale riprendere prima di duplicare l'attività. Se il precedente è concluso, spiegare se il nuovo lavoro costituisce un incremento autonomo e perché il task corrente è appropriato. Applicare il controllo anche alle richieste non BGG: l'utente potrebbe non ricordare attività svolte giorni o settimane prima.
+
 Per ogni attività autonoma o multi-step creare `tasks/YYYY-MM-DD - descrizione/TASK.md`. Il task di bootstrap usa eccezionalmente `2026-09-04 - SETUP INIZIALE PROGETTO`. Definire scope, input, deliverable e criteri di successo prima di operare; lavorare per incrementi verificabili; chiudere registrando verifiche, decisioni e risultati riutilizzabili.
 
 Prima di aprire o proseguire un'attività BGG, classificarla in uno dei cinque tipi standard di `PROJECT.md` e applicarne unità di lavoro ed esclusioni. Se la richiesta dell'utente adotta un perimetro diverso, avvisarlo della divergenza, indicare il tipo e il task corretti e non estendere silenziosamente il perimetro. Applicare lo stesso controllo quando l'utente chiede «che facciamo ora?», «quali sono le prossime attività?» o formule equivalenti: proporre i passi successivi come task separati e conformi, indicando chiaramente anno o singolo contest richiesto da ciascun tipo.
