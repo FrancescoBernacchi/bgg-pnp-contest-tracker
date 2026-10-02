@@ -49,6 +49,28 @@ test('le risorse accettano solo HTTPS senza credenziali e si aprono in modo isol
   assert.match(html,/target="_blank"/);assert.match(html,/rel="noopener noreferrer"/);
   assert.match(html,/Regole &lt;PDF&gt; ↗/);
 });
+test('ricerca giochi attraversa titoli, alias, fonti e ambiguità senza fondere record',()=>{
+  run(`data={games:[
+    {id:1,canonical_title:'River',aliases:['川'],source_keys:['kanare_abstract'],candidate_count:1},
+    {id:2,canonical_title:'Forest',aliases:['Bosco'],source_keys:['boardgamegeek'],candidate_count:0}
+  ]};gameFilters.query='川';gameFilters.source='';gameFilters.ambiguity='';`);
+  assert.equal(run(`matchingGames().map(g=>g.id).join(',')`),'1');
+  run(`gameFilters.query='';gameFilters.source='boardgamegeek';`);
+  assert.equal(run(`matchingGames().map(g=>g.id).join(',')`),'2');
+  run(`gameFilters.source='';gameFilters.ambiguity='candidate';`);
+  assert.equal(run(`matchingGames().map(g=>g.id).join(',')`),'1');
+});
+test('la vista Kanare non eredita il filtro fonte nascosto dalla vista comune',()=>{
+  run(`data={games:[{id:1,canonical_title:'Kanare Game',aliases:[],source_keys:['kanare_abstract'],candidate_count:0}],sources:[]};gameFilters.query='';gameFilters.source='boardgamegeek';gameFilters.ambiguity='';`);
+  run(`applySpecializedSource('kanare_abstract')`);
+  assert.equal(run(`gameFilters.source`),'');
+  assert.equal(run(`matchingGames('kanare_abstract').length`),1);
+});
+test('badge fonti e link multifonte rendono sicuro il testo non fidato',()=>{
+  const html=run(`sourceBadges({source_keys:['kanare_abstract','<script>']})`);
+  assert.match(html,/Kanare_Abstract/);assert.ok(!html.includes('<script>'));
+  assert.match(run(`externalLink('https://kanare-abstract.com/game/1','Pagina Kanare')`),/noopener noreferrer/);
+});
 test('sezione risorse distingue scansione, provenienza, tipo, accesso e disponibilità',()=>{
   const detail={resource_scans:[{checked_at:'2026-09-02',source_url:'https://boardgamegeek.com/thread/123',resource_listing_status:'observed',notes:'Primo post'}],resources:[{id:1,url:'https://drive.google.com/file/d/123/view',host:'drive.google.com',label:'Fallback',label_raw:'File di gioco',kind:'game_files',content_role:'game_files',access_type:'file',availability_status:'unknown',version_raw:'1.2',is_primary:1,mention_source_url:'https://boardgamegeek.com/thread/123',mention_first_seen_at:'2026-09-01',mention_last_seen_at:'2026-09-02',observations:[{observed_at:'2026-09-03',observation_kind:'availability_check',availability_status:'available'}]}]};
   const html=run(`resourceSection(${JSON.stringify(detail)})`);
