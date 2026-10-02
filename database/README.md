@@ -32,6 +32,8 @@ Il completamento del censimento è applicato da `catalog/enrich_kanare_abstract.
 
 La verifica esterna del 2026-09-21 è applicata offline e idempotentemente da `catalog/verify_kanare_abstract_destinations.py`, a partire da un insieme esplicito di osservazioni raccolte nel browser. Non effettua richieste di rete: aggiorna URL, disponibilità, evidenza e stati soltanto per le destinazioni osservate. Il risultato corrente comprende 14 implementazioni `verified`, 40 `uncertain`, 15 matching ancora `candidate` e un matching `rejected` per l'omonimo BGG `Ripples`. Il verificatore Kanare controlla questi conteggi senza assumere che più record di fonte confermati per lo stesso gioco siano duplicazioni canoniche.
 
+La migrazione `010_multisource_acquired_files.sql` estende in modo generale `acquired_files` con il collegamento opzionale a `catalog_resources`, URL finale, lingua, esito, condizioni d'uso e note. Il primo lotto Kanare_Abstract è descritto dal manifest JSON versionabile e applicato idempotentemente da `catalog/apply_kanare_abstract_acquisition.py`; il verificatore dedicato riconcilia database, manifest, file locali, dimensioni, MIME dichiarato e SHA-256.
+
 ## Contratto dei rilevamenti differenziali
 
 Un controllo periodico confrontabile deve:

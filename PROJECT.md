@@ -173,6 +173,8 @@ Il secondo rilevamento controllato dello stesso giorno ha completato gli URL pun
 
 Il 21 settembre 2026 un incremento separato ha verificato le destinazioni già dichiarate: 14 delle 54 implementazioni dispongono di evidenza ufficiale sufficiente e sono `verified`, mentre 40 restano `uncertain` (18 non osservabili e 22 non confermate puntualmente). Dieci matching della pagina Online Play sono `confirmed`, l'omonimo BGG `Ripples` è `rejected` e 15 matching restano `candidate`. Nessun materiale è stato acquisito e nessun qualificatore è stato trasformato automaticamente in alias.
 
+Il 21 settembre 2026 il primo lotto Kanare_Abstract approvato per uso personale ha acquisito tre PDF inglesi direttamente offerti dalla fonte: Pentwall (regole e plancia stampabile), ViceVeresi/ViceVersi e Chess Territorial. Gli originali sono conservati fuori da Git, immutati e associati alle risorse del catalogo mediante la migrazione 010; manifest, dimensioni, MIME, URL e SHA-256 restano versionabili. Non è stata osservata una licenza aperta: nessuna redistribuzione o produzione di derivati è autorizzata.
+
 ## Idee evolutive da trattare in task separati
 
 ### Simulatore di giochi

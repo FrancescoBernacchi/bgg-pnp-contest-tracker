@@ -1,0 +1,50 @@
+{
+  "batch_key": "kanare-abstract-2026-09-21-01",
+  "approved_at": "2026-09-21",
+  "acquired_at": "2026-09-21",
+  "purpose": "Uso personale esclusivo; nessuna redistribuzione o derivato",
+  "items": [
+    {
+      "game_title": "Pentwall",
+      "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Pentwall_EN.pdf?v=1680000395",
+      "final_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Pentwall_EN.pdf?v=1680000395",
+      "original_filename": "Pentwall_EN.pdf",
+      "relative_path": "kanare-abstract/pentwall/originals/Pentwall_EN.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1499855,
+      "sha256": "c96cceee5b7326b7d84877321214e82c3173486656bfe84c407b08ca63481fac",
+      "selection_reason": "Unico titolo classificato esplicitamente Print & Play dalla fonte; regolamento e plancia stampabile nello stesso PDF",
+      "usage_conditions": "File offerto direttamente dalla pagina ufficiale Kanare; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "ViceVeresi",
+      "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/ViceVersi_rules_EN.pdf?v=1679584510",
+      "final_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/ViceVersi_rules_EN.pdf?v=1679584510",
+      "original_filename": "ViceVersi_rules_EN.pdf",
+      "relative_path": "kanare-abstract/viceveresi/originals/ViceVersi_rules_EN.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 189925,
+      "sha256": "88aa59877d6b2f28e0280bc2ede7db2f8e7d9b18f0261bccd7917df6594718da",
+      "selection_reason": "Gioco solo-regole utilizzabile con componenti Othello/Reversi comuni; grafia ViceVersi della pagina preservata nel nome originale",
+      "usage_conditions": "File offerto direttamente dalla pagina ufficiale Kanare; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Chess Territorial",
+      "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Chess_Territorial_EN.pdf?v=1705179788",
+      "final_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Chess_Territorial_EN.pdf?v=1705179788",
+      "original_filename": "Chess_Territorial_EN.pdf",
+      "relative_path": "kanare-abstract/chess-territorial/originals/Chess_Territorial_EN.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 621622,
+      "sha256": "7ef2766a8a47efc4eae22bd09e3738c92b2242b1d40db247ac3ce40920f5e784",
+      "selection_reason": "Gioco solo-regole utilizzabile con un normale set di scacchi; identità e provenienza confermate",
+      "usage_conditions": "File offerto direttamente dalla pagina ufficiale Kanare; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    }
+  ]
+}

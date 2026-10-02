@@ -508,7 +508,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-| 69 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 68 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
 |   |     Censimento entry | — | — | 🔴 0 | — |
 |   |     Classifiche | — | — | 🔴 0 | — |
@@ -682,7 +682,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | — | — | — |
 |   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
 |   |     Download materiali | 🔴 0/0 entry | — | — | — |
-| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 69 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -1995,8 +1995,8 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 | Requisiti materiali | parziale | 167/829 entry scansionate; 339 requisiti | Completare il primo post e integrare le regole solo nei task dedicati | database; registri in `sources/` |
 | Risultati e priorità | parziale | 1.054 osservazioni di classifica; risultati disponibili navigabili | Colmare risultati mancanti e definire la regola di priorità acquisizioni | database; app locale |
 | Monitoraggio periodico | da aggiornare | Calendario presente; ultimo rilevamento registrato 2026-09-10 | Eseguire la prima finestra scaduta senza duplicare controlli giornalieri | `sources/MONITORING_CALENDAR.md` |
-| Selezione e acquisizione | non iniziato | 0 acquisizioni e 0 file acquisiti | Definire criteri di selezione, liceità e primo lotto | database; `library/README.md` |
-| Integrità e versioni dei file | non applicabile | Nessun file acquisito da verificare | Attivare manifest, hash e versionamento con la prima acquisizione | schema; `library/README.md` |
+| Selezione e acquisizione | parziale | Primo lotto Kanare approvato e acquisito: 3 giochi, 3 PDF EN | Valutare un secondo lotto in un task separato | database; manifest Kanare; `library/README.md` |
+| Integrità e versioni dei file | completo per il lotto | 3 originali immutati con URL, dimensione, MIME e SHA-256; 3 hash distinti | Ripetere lo stesso protocollo per ogni lotto futuro | schema; manifest Kanare; verificatore acquisizione |
 | Consultazione locale | completo | Contest, entry, risorse, classifiche e sintesi navigabili in sola lettura | Miglioramenti solo sulla base di bisogni osservati | `app/` |
 | Documentazione e tracciabilità | completo | PWS inizializzato, task auditabili e fonti separate | Aggiornare questo cruscotto alla chiusura di ogni incremento | `.workspace/PROJECT_STATE.md`; `tasks/` |
 
@@ -2038,8 +2038,8 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | Scansioni materiali | 167 | 829 entry | parziale | Ogni entry ha copertura ed esito espliciti | `entry_material_scans` |
 | Requisiti materiali | 339 | Nessun denominatore certo | parziale | Testo originale, normalizzazione, quantità e provenienza preservati quando osservabili | `entry_material_requirements` |
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
-| Acquisizioni | 0 | Selezione ancora da definire | non iniziato | Ogni gioco selezionato ha decisione, fonte, condizioni e data | `acquisitions` |
-| File acquisiti | 0 | Acquisizioni riuscite | non applicabile | Ogni file ha versione, dimensione, hash e collegamento alla fonte | `acquired_files` |
+| Acquisizioni | 3 | Primo lotto Kanare approvato il 2026-09-21 | completo per il lotto | Ogni gioco selezionato ha decisione, fonte, condizioni e data | `acquisitions`; manifest Kanare |
+| File acquisiti | 3 | Tre PDF EN Kanare, uso personale esclusivo | completo per il lotto | Ogni file ha dimensione, MIME, SHA-256 e collegamento alla risorsa | `acquired_files`; verificatore acquisizione |
 | Titoli Kanare_Abstract | 64 giochi canonici conservativi, 76 record nativi, 39 prodotti e 54 implementazioni | Censimento Kanare del 2026-09-20; destinazioni verificate il 2026-09-21 | censimento completo sulle superfici autorizzate; destinazioni parzialmente verificate | 14 implementazioni `verified`, 40 `uncertain`; 10 matching confermati, 1 respinto e 15 ancora `candidate` | `catalog/verify_kanare_abstract_import.py`; task destinazioni |
 
 ## Pipeline operativa
@@ -2054,8 +2054,8 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | 6. Risultati e segnali | Risultati BGG o segnale sostitutivo | Posizione, categoria, voto, ufficialità e fonte | parziale | Nessuna inferenza di vincitore senza posizione esplicita | Verificare contest conclusi con risultati incompleti |
 | 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | non iniziato | Segnali ufficiali distinti dai sostitutivi | Definire soglie e primo lotto |
 | 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | non iniziato come campagna | Nessun aggiramento di accessi o autenticazione | Avviare soltanto nel task di acquisizione del singolo contest |
-| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | non iniziato | Nessuna redistribuzione; originali immutabili | Acquisire soltanto giochi selezionati |
-| 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | non applicabile | Hash per ogni file; versioni precedenti preservate | Attivare con la prima acquisizione |
+| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | parziale; primo lotto Kanare completo | Nessuna redistribuzione; originali immutabili | Valutare un secondo lotto soltanto in un task separato |
+| 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | completo per il primo lotto Kanare | Hash per ogni file; versioni precedenti preservate | Applicare lo stesso protocollo ai lotti futuri |
 | 11. Consultazione e report | Database locale | App e output rigenerabili | completo per le funzioni correnti | Lettura SQLite in sola lettura; nessuna rete implicita | Evolvere solo con requisiti concreti |
 
 ## Attività operative aperte
@@ -2066,18 +2066,18 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 |---:|---|---|---|---|---|---|
 | 1 | Completare il censimento globale dei contest PnP BGG | completo | 305 contest importati; quattro stati 2026 finalizzati; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; non riaprire il censimento salvo nuove fonti | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Recuperare il monitoraggio BGG scaduto | da aggiornare | Le finestre dall'8 settembre risultano superate rispetto alla data corrente | Calendario; accesso pubblico BGG | Eseguire il primo controllo dovuto e aggiornare calendario/database | `sources/MONITORING_CALENDAR.md` |
-| 3 | Introdurre Kanare_Abstract nel modello multifonte | verifica destinazioni parziale | Migrazione 009 e censimento completi; 14/54 implementazioni verificate, 40 incerte; 15 matching ancora candidati | Censimento Kanare, verificatore destinazioni e fonti ufficiali raggiungibili | Affrontare i 15 casi residui in un futuro controllo mirato oppure aprire il task separato di acquisizione selettiva | `sources/KANARE-ABSTRACT-TITLE-CENSUS.md`; task destinazioni |
+| 3 | Introdurre Kanare_Abstract nel modello multifonte | primo lotto acquisito | Migrazioni 009-010 applicate; censimento completo; 3 PDF EN acquisiti; 15 matching ancora candidati | Censimento, manifest e verificatori Kanare | Valutare separatamente un secondo lotto oppure un controllo mirato dei matching residui | fonte e task Kanare |
 | 4 | Completare WIP, risorse e materiali 2025 | parziale | 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2025-CONTEST-COVERAGE.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
 | 6 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
-| 7 | Eseguire il primo lotto di acquisizione | bloccato | Richiede prima criteri di selezione e verifica delle condizioni | Attività 6 | Aprire `Acquisizione materiali del contest` per un solo contest | `library/README.md` |
+| 7 | Eseguire il primo lotto di acquisizione | completo | 3 giochi Kanare approvati; 3 PDF EN acquisiti, verificati e registrati | Nessuna | Chiudere il task corrente; eventuale secondo lotto in un nuovo task | manifest Kanare; `library/README.md` |
 
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
-| Schema e migrazioni | completo | Migrazioni 001-009 presenti; 009 applicata all'operativo il 2026-09-20 | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 305 contest BGG invariati; Kanare: 64 giochi, 76 record, 39 prodotti e 54 implementazioni; integrità e chiavi esterne verificate il 2026-09-21 | Non versionare; preservare cronologia e provenienza |
+| Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
+| Database operativo | completo | 305 contest BGG invariati; Kanare: 64 giochi, 141 risorse, 3 acquisizioni e 3 file; integrità e chiavi esterne verificate il 2026-09-21 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
 | App locale | completo | Compatibilità con lo schema multifonte e database operativo verificata il 2026-09-20; 16 test backend e 20 frontend superati senza skip | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
@@ -2106,6 +2106,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-20 | Importazione censimento Kanare Abstract | Applicata la migrazione 009 dopo backup verificato e importati 64 giochi, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 28 implementazioni e 62 crediti; 26 matching ambigui restano `candidate` | `catalog/import_kanare_abstract.py`; `catalog/verify_kanare_abstract_import.py`; task dedicato |
 | 2026-09-20 | Completamento censimento Kanare Abstract | Completati gli URL dei 39 prodotti e registrati 141 collegamenti dichiarati; 54 implementazioni attribuite a 9 piattaforme senza aprire destinazioni; 26 matching restano `candidate` | `catalog/enrich_kanare_abstract.py`; fonte e task dedicati |
 | 2026-09-21 | Verifica destinazioni Kanare Abstract | Verificate 14 implementazioni; 40 mantenute incerte. Confermati 10 matching, respinto l'omonimo BGG `Ripples` e mantenuti 15 candidati | `catalog/verify_kanare_abstract_destinations.py`; fonte e task dedicati |
+| 2026-09-21 | Acquisizione selettiva materiali Kanare Abstract | Acquisiti per uso personale 3 PDF EN ufficiali relativi a Pentwall, ViceVeresi e Chess Territorial; originali fuori Git con manifest, MIME, dimensioni e SHA-256 | manifest e verificatore acquisizione; task dedicato |
 
 ## Protocollo di manutenzione automatica
 

@@ -153,3 +153,15 @@ Le 54 righe storiche sono state preservate: 14 `verified` e 40 `uncertain`; ness
 Sono state verificate pagine nominative o cataloghi ufficiali per: Abstract Play (Abande, Enso, Meridians, Stairs, Trike), Board Game Arena (Carpniches, Meridians, Trike), Mindsports (Flower Shop, Slyde), Spielstein (Abande, Attangle, Enso) e Tabletopia (Tori Shogi). I qualificatori `Accasta (original)`, `RosenKreuz (7×7)`, `Residuel (old rules)`, `Tori Shogi (no extra pieces)` e `Swarm (unpublished)` sono rimasti invariati; soltanto Tori Shogi disponeva di evidenza esterna sufficiente sul gioco, senza trasformare il qualificatore in alias.
 
 Ai Ai ha presentato un certificato TLS non verificabile nel browser e non è stato aggirato. BoardSpace.net non è risultato osservabile in modo sicuro nella sessione. I risultati indicizzati possono segnalare una presenza, ma non sono stati usati come prova automatica di disponibilità corrente.
+
+## Primo lotto acquisito — 2026-09-21
+
+Dopo approvazione esplicita dell'utente e conferma dell'uso personale esclusivo, sono stati acquisiti tre PDF inglesi collegati direttamente dalle pagine ufficiali Kanare:
+
+| Gioco | Materiale | Esito | Dimensione | SHA-256 |
+|---|---|---|---:|---|
+| Pentwall | regole e plancia stampabile | acquisito | 1.499.855 byte | `c96cceee5b7326b7d84877321214e82c3173486656bfe84c407b08ca63481fac` |
+| ViceVeresi / ViceVersi | regolamento EN | acquisito | 189.925 byte | `88aa59877d6b2f28e0280bc2ede7db2f8e7d9b18f0261bccd7917df6594718da` |
+| Chess Territorial | regolamento EN | acquisito | 621.622 byte | `7ef2766a8a47efc4eae22bd09e3738c92b2242b1d40db247ac3ce40920f5e784` |
+
+Tutti hanno risposto HTTP 200, dichiarato `application/pdf` e superato il controllo della firma PDF. Gli originali sono conservati immutati sotto `library/kanare-abstract/`, fuori da Git. Non è stata osservata una licenza aperta o un'autorizzazione alla redistribuzione: la conservazione è limitata all'uso personale. Nessun matching `candidate`, regolamento giapponese, immagine, implementazione online o variante con attribuzione aggregata è stato acquisito.

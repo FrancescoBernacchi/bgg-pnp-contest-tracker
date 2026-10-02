@@ -364,6 +364,13 @@ CREATE TABLE acquired_files (
     byte_size INTEGER NOT NULL,
     sha256 TEXT NOT NULL,
     version_raw TEXT,
+    catalog_resource_id INTEGER REFERENCES catalog_resources(id),
+    final_url TEXT,
+    language_code TEXT,
+    acquisition_status TEXT NOT NULL DEFAULT 'acquired'
+        CHECK (acquisition_status IN ('acquired', 'failed')),
+    usage_conditions TEXT,
+    notes TEXT,
     UNIQUE (acquisition_id, relative_path)
 );
 
@@ -536,6 +543,7 @@ CREATE INDEX idx_entry_resource_mentions ON entry_resource_mentions(entry_id, co
 CREATE INDEX idx_resource_observations ON remote_resource_observations(remote_resource_id, observed_at DESC);
 CREATE INDEX idx_entry_material_scans ON entry_material_scans(entry_id, checked_at DESC);
 CREATE INDEX idx_entry_material_requirements ON entry_material_requirements(entry_id, material_kind, name_normalized);
+CREATE INDEX idx_acquired_files_catalog_resource ON acquired_files(catalog_resource_id, acquisition_status);
 CREATE INDEX idx_source_records_source ON source_records(source_id, record_type, observed_at DESC);
 CREATE INDEX idx_game_source_records_record ON game_source_records(source_record_id, match_status);
 CREATE INDEX idx_product_source_records_record ON product_source_records(source_record_id, match_status);
