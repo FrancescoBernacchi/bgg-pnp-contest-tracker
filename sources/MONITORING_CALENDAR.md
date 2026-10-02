@@ -1,10 +1,10 @@
 # Taccuino dei controlli BGG
 
-Ultimo aggiornamento documentale: 2026-10-02. Ultimo rilevamento periodico BGG su un singolo contest: 2026-09-05. Il censimento globale del 2026-10-02 ha aggiunto Roll & Write 2026, senza anticiparne il monitoraggio periodico.
+Ultimo aggiornamento documentale: 2026-10-02. Ultimo rilevamento periodico BGG su un singolo contest: 2026-10-02. Il censimento globale dello stesso giorno ha aggiunto Roll & Write 2026 senza confonderlo con il monitoraggio periodico.
 
 Questo registro governa i controlli periodici sui contest. Le date sono finestre operative: un controllo può essere anticipato soltanto in presenza di un annuncio BGG, di un errore da correggere o di una richiesta esplicita. I controlli tecnici di consistenza non costituiscono nuovi rilevamenti dello stato esterno.
 
-La revisione del 7 settembre ha consolidato le regole del progetto senza consultare BGG e non costituisce un rilevamento. La finestra Turkish PnP dell'8 settembre resta quindi il prossimo controllo dovuto.
+La revisione del 7 settembre ha consolidato le regole del progetto senza consultare BGG e non costituisce un rilevamento. Il controllo Wargame del 2 ottobre è il primo snapshot periodico dedicato registrato dopo la baseline; le finestre scadute degli altri contest restano da recuperare in task separati.
 
 ## Prossimi controlli mirati
 
@@ -12,8 +12,8 @@ La revisione del 7 settembre ha consolidato le regole del progetto senza consult
 |---|---|---|---|---|
 | 2026-09-08 | Turkish PnP | giorno successivo alla proroga del playtest | modulo di voto, nuovo calendario, entry ammesse | pianificato |
 | 2026-09-11 | contest 2026 attivi | primo controllo settimanale | nuove entry e cambiamenti di stato in Solitaire, 54-Card, Traditional Deck e Wargame | pianificato |
-| 2026-09-25 | Wargame PnP | avvicinamento alla chiusura entry | WIP/idea diventati giocabili, ritiri e nuove entry | pianificato |
-| 2026-10-02 | Wargame PnP | primo controllo dopo la chiusura del 1 ottobre | lista congelata e fase successiva | pianificato |
+| 2026-09-25 | Wargame PnP | avvicinamento alla chiusura entry | WIP/idea diventati giocabili, ritiri e nuove entry | superato; assorbito dal controllo post-chiusura del 2 ottobre |
+| 2026-10-02 | Wargame PnP | primo controllo dopo la chiusura del 1 ottobre | lista congelata e fase successiva | completato: 23 entry, submission chiuse, sviluppo attivo |
 | 2026-10-16 | Roll & Write 2026 | giorno successivo all'apertura delle iscrizioni del 15 ottobre | confermare fase, eventuale roster e prossima finestra | pianificato |
 | 2026-10-16 | Solitaire PnP | apertura voto dopo il termine sviluppo del 15 ottobre | entry finali, ritiri, modulo e calendario voto | pianificato |
 | 2026-10-17 | 54-Card | primo controllo dopo la chiusura entry del 16 ottobre | totale definitivo provvisorio, ritiri e stati | pianificato |
@@ -40,6 +40,7 @@ La revisione del 7 settembre ha consolidato le regole del progetto senza consult
 
 | Data | Contest | Esito | Nota |
 |---|---|---|---|
+| 2026-10-02 | Wargame PnP | cambiamento confermato | thread `[SUBMISSIONS CLOSED]`; roster completo 23 (+5), CYBERAIDER Playtest Ready, Balled Moves Components Ready; sviluppo fino al voto dell'11 novembre |
 | 2026-09-05 | Children & Family | baseline completata | 36 finali, 2 ritirate e 43 piazzamenti in 5 categorie |
 | 2026-09-05 | Solomode | baseline adiacente completa | 21 modalità dipendenti da giochi base, 63 piazzamenti di gioco e statistiche di voto |
 | 2026-09-04 | 54-Card | verifica di consistenza, nessuna variazione | secondo accesso nello stesso giorno; non vale come rilevamento periodico |
@@ -50,3 +51,5 @@ La revisione del 7 settembre ha consolidato le regole del progetto senza consult
 Dopo ogni rilevamento aggiornare questo file indicando data, esito e prossima finestra utile. Se una fonte annuncia una proroga o modifica una scadenza, preservare la data precedente nello storico del database e sostituire qui la prossima azione operativa.
 
 Nel database classificare il controllo con un `check_kind` confrontabile (`monitor`, `scheduled`, `deadline` o `follow_up`) e collegare tramite `check_id` gli snapshot completi disponibili. Le attività `baseline`, `census` e `consistency` non avanzano la cadenza periodica.
+
+Prossimo controllo Wargame: **12 novembre 2026**, dopo il freeze e l'apertura prevista del voto dell'11 novembre, per verificare roster finale, stati, modulo e finestra di voto senza aprire materiali.
