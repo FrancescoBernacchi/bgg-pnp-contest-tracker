@@ -8,7 +8,7 @@ import tempfile
 import threading
 import unittest
 
-from server import ROOT, DEFAULT_DATABASE, catalog, compare, connect, contest_detail, entry_detail, make_server, periodic, ranking_rows
+from server import ROOT, DEFAULT_DATABASE, catalog, compare, connect, contest_detail, entry_detail, game_detail, make_server, periodic, ranking_rows
 
 
 class ApplicationTests(unittest.TestCase):
@@ -82,6 +82,33 @@ class ApplicationTests(unittest.TestCase):
             self.assertEqual(len(detail["metrics"]),2)  # precedente preservato
             with self.assertRaises(LookupError):
                 entry_detail(db,999)
+
+    def test_multisource_games_preserve_records_products_and_ambiguity(self):
+        db = sqlite3.connect(self.database)
+        self.insert(db, "catalog_sources", id=1, source_key="kanare_abstract", display_name="Kanare_Abstract", source_kind="publisher_catalog", base_url="https://kanare-abstract.com")
+        self.insert(db, "source_records", id=1, source_id=1, record_type="game_page", native_id="k-1", canonical_url="https://kanare-abstract.com/game/1", title_raw="Gioco Uno", verification_status="verified")
+        self.insert(db, "source_records", id=2, source_id=1, record_type="game_page", native_id="k-2", canonical_url="https://kanare-abstract.com/game/2", title_raw="Possibile Due", verification_status="declared")
+        self.insert(db, "game_source_records", game_id=1, source_record_id=1, match_status="confirmed", match_method="manual")
+        self.insert(db, "game_source_records", game_id=1, source_record_id=2, match_status="candidate", match_method="title_similarity")
+        self.insert(db, "game_names", id=1, game_id=1, name="ゲーム一", name_type="original_script", language_code="ja", source_record_id=1, verification_status="declared")
+        self.insert(db, "products", id=1, canonical_name="Scatola Uno", product_kind="physical_product")
+        self.insert(db, "product_games", product_id=1, game_id=1, relationship_type="included_game", verification_status="declared")
+        self.insert(db, "online_platforms", id=1, canonical_name="Board Game Arena", base_url="https://boardgamearena.com")
+        self.insert(db, "game_implementations", id=1, game_id=1, platform_id=1, implementation_url="https://boardgamearena.com/gamepanel?game=one", title_raw="One", declared_by_record_id=1, verification_status="declared")
+        self.insert(db, "catalog_resources", id=1, source_record_id=1, resource_kind="rules", url="https://kanare-abstract.com/rules/1.pdf", label_raw="Rules", verification_status="declared")
+        self.insert(db, "resource_links", id=1, resource_id=1, source_record_id=1, link_role="rules", is_primary=1)
+        db.commit(); db.close()
+        with connect(self.database) as db:
+            result = catalog(db)
+            game = next(item for item in result["games"] if item["id"] == 1)
+            detail = game_detail(db, 1)
+        self.assertEqual(game["source_keys"], ["boardgamegeek", "kanare_abstract"])
+        self.assertEqual(game["candidate_count"], 1)
+        self.assertEqual(game["aliases"], ["ゲーム一"])
+        self.assertEqual(len(detail["source_records"]), 2)
+        self.assertEqual(detail["products"][0]["canonical_name"], "Scatola Uno")
+        self.assertEqual(detail["implementations"][0]["declared_by_source"], "Kanare_Abstract")
+        self.assertEqual(detail["resources"][0]["attributed_via"], "source_record")
 
     def test_progress_and_entry_material_flags_are_derived_from_database(self):
         db = sqlite3.connect(self.database)
@@ -311,13 +338,13 @@ class ApplicationTests(unittest.TestCase):
             connection.close()
             return result
         try:
-            for path in ("/","/app.js","/style.css","/api/catalog","/api/contests/1","/api/entries/1","/api/contests/1/compare?before=2&after=3"):
+            for path in ("/","/app.js","/style.css","/api/catalog","/api/games/1","/api/contests/1","/api/entries/1","/api/contests/1/compare?before=2&after=3"):
                 with self.subTest(path=path):
                     status,body,headers = request(path)
                     self.assertEqual(status,200)
                     self.assertIn("frame-ancestors 'none'",headers["Content-Security-Policy"])
                     self.assertNotIn("Access-Control-Allow-Origin",headers)
-            for path in ("/database/pnp_collection.sqlite3","/library/file.pdf","/../database/schema.sql","/%2e%2e/database/schema.sql","/api/entries/999","/api/entries/1/compare"):
+            for path in ("/database/pnp_collection.sqlite3","/library/file.pdf","/../database/schema.sql","/%2e%2e/database/schema.sql","/api/games/999","/api/entries/999","/api/entries/1/compare"):
                 self.assertEqual(request(path)[0],404)
             self.assertEqual(request("/api/contests/1/compare?before=1&after=2")[0],400)
             self.assertEqual(request("/api/contests/1/compare?before=2%20OR%201=1&after=3")[0],400)

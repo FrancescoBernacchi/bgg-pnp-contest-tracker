@@ -6,6 +6,7 @@ const label = value => labels[value] || value || 'Non noto';
 labels.playtest='Playtest';
 labels.active='In corso';
 labels.planned='Pianificata';
+Object.assign(labels,{candidate:'Corrispondenza da valutare',confirmed:'Corrispondenza confermata',rejected:'Corrispondenza respinta',declared:'Dichiarata dalla fonte',verified:'Verificata',uncertain:'Incerta',not_checked:'Non verificata',boardgamegeek:'BoardGameGeek',kanare_abstract:'Kanare_Abstract'});
 const day = value => {
   if (!value) return 'Non registrata';
   const parts = String(value).match(/^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}:\d{2})(?::\d{2})?(Z|[+-]\d{2}:\d{2})?)?$/);
@@ -39,6 +40,7 @@ const heading = (eyebrow, title, subtitle) => `<div class="page-heading"><div><p
 const options = (values, first) => `<option value="">${esc(first)}</option>` + [...new Set(values.filter(v=>v!==null && v!==undefined))].sort().map(v=>`<option value="${esc(v)}">${esc(label(v))}</option>`).join('');
 let data = null, routeVersion = 0;
 const filters = {scope:'',contestState:'',year:'',query:'',entryQuery:'',entryState:'',entryKind:'',entryScope:'',entryContest:'',entryYear:'',entryMaterials:'',entrySort:'title',page:1};
+const gameFilters={query:'',source:'',ambiguity:'',kind:'all'};
 async function api(path) {
   const response = await fetch(path, {cache:'no-store'});
   const result = await response.json();
@@ -55,10 +57,45 @@ async function load() {
     data = await api('/api/catalog');
     $('#contest-count').textContent = data.contests.length;
     $('#entry-count').textContent = data.entries.length;
+    $('#game-count').textContent = data.games.length;
     $('#freshness').textContent = `Letto il ${day(data.generated_at)}`;
     await route();
   } catch(error) { errorPanel(error); }
   finally { $('#refresh').disabled = false; }
+}
+const sourceBadges=game=>game.source_keys.length?game.source_keys.map(key=>`<span class="badge">${esc(label(key))}</span>`).join(' '):'<span class="badge">Fonte canonica legacy</span>';
+function matchingGames(sourceKey='') {
+  const query=gameFilters.query.toLocaleLowerCase().trim();
+  return data.games.filter(game=>(!sourceKey||game.source_keys.includes(sourceKey))&&(!gameFilters.source||game.source_keys.includes(gameFilters.source))&&(!gameFilters.ambiguity||(gameFilters.ambiguity==='candidate'?game.candidate_count>0:game.candidate_count===0))&&(!query||`${game.canonical_title} ${game.aliases.join(' ')}`.toLocaleLowerCase().includes(query)));
+}
+function gameFiltersHtml(lockSource='') {
+  return `<div class="filters"><label class="field grow">Cerca titolo o alias<input id="game-search" type="search" placeholder="Titolo canonico, alias, grafia alternativa…" value="${esc(gameFilters.query)}"></label>${lockSource?'':`<label class="field">Fonte<select id="game-source"><option value="">Tutte le fonti</option>${data.sources.map(s=>`<option value="${esc(s.source_key)}">${esc(s.display_name)}</option>`).join('')}</select></label>`}<label class="field">Riconciliazione<select id="game-ambiguity"><option value="">Tutte</option><option value="candidate">Con candidati da valutare</option><option value="resolved">Senza candidati aperti</option></select></label></div><div id="game-results" aria-live="polite"></div>`;
+}
+function bindGameFilters(sourceKey='') {
+  const search=$('#game-search'), ambiguity=$('#game-ambiguity'), sourceSelect=$('#game-source');
+  if(sourceSelect)sourceSelect.value=gameFilters.source;
+  ambiguity.value=gameFilters.ambiguity;
+  const update=()=>{gameFilters.query=search.value;gameFilters.ambiguity=ambiguity.value;if(sourceSelect)gameFilters.source=sourceSelect.value;renderGameResults(sourceKey);};
+  search.oninput=update;ambiguity.onchange=update;if(sourceSelect)sourceSelect.onchange=update;renderGameResults(sourceKey);
+}
+function renderGameResults(sourceKey='') {
+  const games=matchingGames(sourceKey);
+  $('#game-results').innerHTML=`<div class="section-heading"><h2>${games.length} giochi canonici</h2><span>Prodotti e record di fonte non sono conteggiati come giochi</span></div>`+table(['Gioco','Fonti','Dati collegati','Riconciliazione'],games.map(game=>`<tr><td><a href="#game/${game.id}">${esc(game.canonical_title)}</a>${game.aliases.length?`<small>Alias: ${esc(game.aliases.join(' · '))}</small>`:''}</td><td>${sourceBadges(game)}</td><td>${game.product_count} prodotti · ${game.implementation_count} implementazioni</td><td>${game.candidate_count?`<span class="badge warn">${game.candidate_count} da valutare</span>`:'Nessun candidato aperto'}</td></tr>`));
+}
+function applySpecializedSource(sourceKey='') {
+  if(sourceKey)gameFilters.source='';
+}
+function renderGames(sourceKey='') {
+  const kanare=sourceKey==='kanare_abstract';
+  // Una vista specializzata impone la propria fonte: non deve ereditare un filtro
+  // nascosto selezionato in precedenza nella vista comune Giochi.
+  applySpecializedSource(sourceKey);
+  $('#main').innerHTML=heading(kanare?'FONTE SPECIALIZZATA':'CATALOGO COMUNE',kanare?'Kanare_Abstract':'Giochi',kanare?'I giochi collegati ai record Kanare, con prodotti, implementazioni e ambiguità conservati separatamente.':'Identità canoniche ricercabili attraverso tutte le fonti e gli alias registrati.')+(kanare?'<div class="notice">Questa vista non apre Kanare né le destinazioni dichiarate. Mostra soltanto dati già presenti nel database locale.</div>':'<div class="notice">Un gioco non coincide con un prodotto, una confezione, una pagina di fonte o una risorsa. I matching candidati restano visibili e non producono fusioni implicite.</div>')+gameFiltersHtml(sourceKey);
+  bindGameFilters(sourceKey);
+}
+function renderGameDetail(detail) {
+  const g=detail.game;
+  $('#main').innerHTML=`<a class="back" href="#games">← Tutti i giochi</a>`+heading('GIOCO CANONICO',g.canonical_title,g.summary||'Descrizione non registrata')+`<div class="facts">${fact('Stato originale',g.status_raw)}${fact('Stato normalizzato',g.status_normalized)}${fact('Giocatori',g.min_players||g.max_players?`${g.min_players??'?'}–${g.max_players??'?'}`:'Non registrati')}${fact('Durata',g.min_play_minutes||g.max_play_minutes?`${g.min_play_minutes??'?'}–${g.max_play_minutes??'?'} min`:'Non registrata')}</div><h2>Record di fonte e riconciliazione</h2><p class="subtitle">Ogni riga è un’osservazione nativa della fonte, non un secondo gioco. Anche corrispondenze candidate o respinte restano documentate.</p>${table(['Fonte / record','Titolo osservato','Matching','Verifica / provenienza'],detail.source_records.map(r=>`<tr><td>${esc(r.source_name)}<small>${esc(r.record_type)} · #${r.id}</small></td><td>${esc(r.title_raw)}</td><td>${esc(label(r.match_status))}<small>${esc(r.match_method)}${r.evidence?` · ${esc(r.evidence)}`:''}</small></td><td>${esc(label(r.verification_status))}<small>${externalLink(r.canonical_url,'Apri la pagina registrata')} · ${esc(day(r.last_verified_at))}</small></td></tr>`))}<h2>Prodotti e confezioni</h2>${table(['Prodotto','Relazione','Stato / provenienza'],detail.products.map(p=>`<tr><td>${esc(p.canonical_name)}<small>${esc(p.product_kind)}</small></td><td>${esc(p.relationship_type)}${p.is_primary?' · principale':''}</td><td>${esc(label(p.verification_status))}<small>${esc(p.source_names||'Fonte non collegata')}</small></td></tr>`))}<h2>Implementazioni online</h2>${table(['Piattaforma','Titolo / disponibilità','Provenienza'],detail.implementations.map(i=>`<tr><td>${esc(i.platform_name)}</td><td>${i.implementation_url?externalLink(i.implementation_url,i.title_raw||g.canonical_title):esc(i.title_raw||g.canonical_title)}<small>${esc(label(i.availability_status))} · ${esc(label(i.verification_status))}</small></td><td>${esc(i.declared_by_source||'Non attribuita')}<small>${esc(i.declared_by_title)}</small></td></tr>`))}<h2>Risorse attribuite al gioco</h2>${table(['Tipo','Risorsa','Stato / attribuzione'],detail.resources.map(r=>`<tr><td>${esc(r.resource_kind)}<small>${esc(r.link_role)}</small></td><td>${externalLink(r.url,r.label_raw||r.url)}</td><td>${esc(label(r.verification_status))}<small>${esc(label(r.availability_status))} · via ${esc(r.attributed_via)}</small></td></tr>`))}<h2>Presenze nei contest BGG</h2>${table(['Entry','Contest','Stato'],detail.entries.map(e=>`<tr><td><a href="#entry/${e.id}">Entry #${e.id}</a></td><td><a href="#contest/${e.contest_id}">${esc(e.contest_name)}</a><small>${esc(e.year)}</small></td><td>${esc(label(e.status_normalized))}<small>${esc(e.status_raw)}</small></td></tr>`))}<details><summary>Nomi e alias (${detail.names.length})</summary>${table(['Nome','Tipo / lingua','Fonte e verifica'],detail.names.map(n=>`<tr><td>${esc(n.name)}</td><td>${esc(n.name_type)}<small>${esc(n.language_code)} · ${n.is_official?'ufficiale':'non ufficiale'}</small></td><td>${esc(n.source_name||n.observed_from)}<small>${esc(label(n.verification_status))}</small></td></tr>`))}</details>`;
 }
 function stats() {
   const core = data.contests.filter(c=>c.scope_type==='pnp_core').length;
@@ -300,11 +337,19 @@ function renderDeadlines() {
 async function route() {
   if(!data) return;
   const version=++routeVersion;
-  const hash=location.hash.slice(1)||'contests';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='progress'?'Avanzamento':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati':hash.startsWith('entries')?'Tutte le entry':hash==='deadlines'?'Scadenze':'Contest di design';
+  const hash=location.hash.slice(1)||'games';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
   try {
-    if(hash==='progress') renderProgress();
+    if(hash==='games') renderGames();
+    else if(hash==='kanare') renderGames('kanare_abstract');
+    else if(/^game\/[1-9]\d*$/.test(hash)) {
+      $('#main').innerHTML='<div class="empty" role="status">Lettura del gioco canonico…</div>';
+      const detail=await api(`/api/games/${hash.split('/')[1]}`);
+      if(version!==routeVersion)return;
+      renderGameDetail(detail);
+    }
+    else if(hash==='progress') renderProgress();
     else if(hash==='contests') renderContests();
     else if(/^entries(?:\/year\/\d{4}|\/contest\/[1-9]\d*(?:\/(?:read|unread|downloaded))?)?$/.test(hash)) renderEntriesRoute(hash);
     else if(hash==='deadlines') renderDeadlines();
@@ -316,7 +361,7 @@ async function route() {
       const detail=await api(`/api/${kind==='contest'?'contests':'entries'}/${id}`);
       if(version!==routeVersion)return;
       (kind==='contest'?renderContest:renderEntry)(detail);
-    } else $('#main').innerHTML='<div class="empty">Pagina non trovata. <a href="#contests">Torna ai contest</a></div>';
+    } else $('#main').innerHTML='<div class="empty">Pagina non trovata. <a href="#games">Torna ai giochi</a></div>';
     document.title=`${$('#main h1')?.textContent||'Archivio'} · PnP Collection`;
     window.scrollTo(0,0);
   } catch(error) {if(version===routeVersion)errorPanel(error);}

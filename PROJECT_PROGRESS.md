@@ -2079,11 +2079,11 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | Schema e migrazioni | completo | Migrazioni 001-009 presenti; 009 applicata all'operativo il 2026-09-20 | Ogni modifica passa da nuova migrazione numerata |
 | Database operativo | completo | 305 contest BGG invariati; Kanare: 64 giochi, 76 record, 39 prodotti e 54 implementazioni; integrità e chiavi esterne verificate il 2026-09-21 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
-| App locale | completo | Compatibilità con lo schema multifonte e database operativo verificata il 2026-09-20; 16 test backend e 20 frontend superati senza skip | Mantenere sola lettura e assenza di richieste esterne automatiche |
+| App locale | completo per il primo incremento multifonte | Vista Giochi, ricerca/filtri trasversali, scheda canonica e vista Kanare aggiunte il 2026-10-02; 17 test backend e 23 frontend superati, inclusi controlli sulla fotografia verificata del database operativo | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | da aggiornare | Ultimo aggiornamento documentale 2026-09-07 | Aggiornare dopo ogni rilevamento dovuto |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
-| Git/GitHub | allineato al preflight | `main...origin/main`, working tree pulita prima di questo incremento | Commit e push solo dopo autorizzazione dell'utente |
+| Git/GitHub | worktree isolata in uso | Detached HEAD pulito prima dell'incremento del 2026-10-02; modifiche Kanare non committate della checkout originale non toccate | Commit e push solo dopo autorizzazione dell'utente |
 
 ## Registro degli aggiornamenti del cruscotto
 
@@ -2106,6 +2106,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-20 | Importazione censimento Kanare Abstract | Applicata la migrazione 009 dopo backup verificato e importati 64 giochi, 58 record nativi, 39 prodotti, 56 relazioni prodotto–gioco, 28 implementazioni e 62 crediti; 26 matching ambigui restano `candidate` | `catalog/import_kanare_abstract.py`; `catalog/verify_kanare_abstract_import.py`; task dedicato |
 | 2026-09-20 | Completamento censimento Kanare Abstract | Completati gli URL dei 39 prodotti e registrati 141 collegamenti dichiarati; 54 implementazioni attribuite a 9 piattaforme senza aprire destinazioni; 26 matching restano `candidate` | `catalog/enrich_kanare_abstract.py`; fonte e task dedicati |
 | 2026-09-21 | Verifica destinazioni Kanare Abstract | Verificate 14 implementazioni; 40 mantenute incerte. Confermati 10 matching, respinto l'omonimo BGG `Ripples` e mantenuti 15 candidati | `catalog/verify_kanare_abstract_destinations.py`; fonte e task dedicati |
+| 2026-10-02 | Interfaccia multifonte BGG e Kanare | Aggiunte vista comune Giochi, ricerca e filtri per fonte/ambiguità, scheda canonica e vista Kanare; preservate le viste specializzate BGG e il contratto offline/read-only | `app/`; 17 test backend e 22 frontend; fotografia del database operativo con hash verificato |
 
 ## Protocollo di manutenzione automatica
 

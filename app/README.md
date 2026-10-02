@@ -36,6 +36,9 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 
 ## Consultazione
 
+- **Giochi**: ingresso comune al catalogo canonico. Ricerca titolo e alias attraverso tutte le fonti, filtro per fonte e per presenza di matching ancora candidati. Il conteggio riguarda identità di gioco, non prodotti o pagine osservate.
+- **Kanare_Abstract**: prima vista specializzata non-BGG, limitata ai giochi collegati a record Kanare non respinti. Espone prodotti, implementazioni e ambiguità già registrati senza interrogare la fonte.
+- **Dettaglio gioco**: record nativi e stato della riconciliazione, alias, prodotti/confezioni, risorse, implementazioni online e presenze nei contest BGG restano sezioni distinte. Un record `candidate` o `rejected` è mostrato come tale e non produce una fusione implicita.
 - **Avanzamento**: schede annuali in forma di pipeline per gli anni importati, con barre per stati noti, entry presenti nelle classifiche, letture materiali e file acquisiti; le annualità non importate restano raccolte separatamente e il dettaglio per contest collega alle viste filtrate e alle schede esistenti.
 - **Contest**: schede separate per PnP principali e adiacenti; ricerca per nome, filtri di anno e stato, conteggi comprensivi dei ritiri.
 - **Risultati**: tutte le classifiche registrate, ricerca per titolo e crediti, filtri combinabili e pagine da 30 osservazioni; sintesi per contest con vincitori e distribuzione dei piazzamenti per categoria.
@@ -47,7 +50,11 @@ Il percorso del runtime integrato può cambiare dopo aggiornamenti di Codex. Il 
 - **Scadenze**: prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura. Non sostituisce il calendario dei controlli `sources/MONITORING_CALENDAR.md`.
 - **Rileggi database**: aggiorna i dati senza effettuare nuovi controlli BGG. La data di lettura dell'app è distinta dalle date di verifica delle fonti.
 
-La ricerca e i filtri restano in memoria durante la consultazione, senza preferenze scritte su disco. Gli URL con frammento, per esempio `#contest/11` e `#entry/362`, permettono di ritrovare una scheda. La prima versione carica in memoria tutti i metadati leggeri del catalogo; è stata verificata sulle 829 entry e 1.054 osservazioni di classifica presenti il 10 settembre 2026, senza introdurre un motore di ricerca separato.
+La ricerca e i filtri restano in memoria durante la consultazione, senza preferenze scritte su disco. Gli URL con frammento, per esempio `#game/1`, `#contest/11` e `#entry/362`, permettono di ritrovare una scheda. La prima versione carica in memoria tutti i metadati leggeri del catalogo; non introduce un motore di ricerca separato.
+
+### Confine fra viste comuni e specializzate
+
+Sono comuni alle fonti l'identità canonica del gioco, titoli e alias, ricerca, parametri di gioco generali, prodotti collegati, risorse, implementazioni, crediti e provenienza. Restano specializzate le strutture che appartengono alla semantica di una fonte: per BGG contest, entry, classifiche, fasi, monitoraggio e materiali dichiarati nei WIP; per Kanare il catalogo dell'editore/designer, le confezioni e le piattaforme dichiarate. Aggiungere una fonte futura richiede un record in `catalog_sources`, record nativi e riconciliazioni; la vista Giochi non richiede colonne dedicate alla nuova fonte. Una nuova voce specializzata è giustificata solo quando esistono funzioni proprie della fonte, non per duplicare la lista comune.
 
 ## Confronti e limiti dei dati
 
@@ -61,7 +68,9 @@ Nel database verificato il 7 settembre 2026 esistono soltanto baseline, censimen
 
 ## Confini tecnici e verifica
 
-Nessuna dipendenza esterna, CDN, telemetria o richiesta di rete automatica. L’app consulta `remote_resources`, `entry_resource_scans`, `entry_resource_mentions`, `remote_resource_observations`, `entry_material_scans` e `entry_material_requirements` in sola lettura; non consulta `library/`, `acquisitions` o `acquired_files`. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali.
+Nessuna dipendenza esterna, CDN, telemetria o richiesta di rete automatica. L’app consulta anche il nucleo multifonte (`catalog_sources`, `source_records`, riconciliazioni, prodotti, risorse e implementazioni) oltre alle tabelle BGG, sempre in sola lettura; non consulta `library/`. `acquisitions` e `acquired_files` sono usate soltanto per indicatori aggregati già esistenti, mai per aprire file. Non sono disponibili comandi di modifica o acquisizione. Il server espone esclusivamente asset elencati e API di lettura; non espone file del progetto e rifiuta metodi di scrittura e Host non locali.
+
+L'API `/api/catalog` include l'elenco leggero `games` e le fonti disponibili. `/api/games/ID` restituisce il dettaglio relazionale del gioco. BoardGameGeek è esposto anche come fonte virtuale per le entry legacy: finché tali entry non avranno record nativi nella migrazione multifonte, questa etichetta deriva dalla loro presenza nelle tabelle BGG e non inventa un `source_record`.
 
 I dati vengono escapati. Le pagine BGG di metadati e le destinazioni delle risorse diventano link soltanto se hanno una forma ammessa; le risorse richiedono HTTPS e non possono contenere credenziali nell’URL. Tutti i link esterni si aprono in una nuova scheda con isolamento `noopener noreferrer`, esclusivamente dopo il click dell’utente. L’app non segue redirect, controlla disponibilità, apre o scarica materiali durante la lettura della scheda. Il server è destinato all’uso personale locale, non alla pubblicazione o all’esposizione in LAN.
 

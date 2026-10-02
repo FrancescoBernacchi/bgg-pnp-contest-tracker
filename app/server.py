@@ -49,11 +49,19 @@ def periodic(check):
 
 def catalog(db):
     contests = rows(db, "SELECT * FROM v_contests_monitoring_all ORDER BY year DESC, julianday(starts_at) DESC, contest_id DESC")
+    sources = rows(db, "SELECT * FROM catalog_sources ORDER BY display_name COLLATE NOCASE,id")
+    if any(contest for contest in contests) and not any(source["source_key"] == "boardgamegeek" for source in sources):
+        sources.insert(0, {"id": None, "source_key": "boardgamegeek", "display_name": "BoardGameGeek",
+                           "source_kind": "legacy_contest_catalog", "base_url": "https://boardgamegeek.com",
+                           "first_seen_at": None, "last_verified_at": None,
+                           "notes": "Fonte legacy rappresentata da contest ed entry; record multifonte non ancora materializzati."})
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "contests": contests,
         "progress": progress_rows(db),
         "rankings": ranking_rows(db),
+        "sources": sources,
+        "games": game_rows(db),
         "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
             e.status_raw,e.status_normalized,e.materials_status_normalized,e.last_verified_at,
             g.canonical_title,c.name AS contest_name,c.scope_type,c.year,
@@ -64,6 +72,84 @@ def catalog(db):
              JOIN people p ON p.id=gc.person_id WHERE gc.game_id=e.game_id) AS credits
             FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id
             ORDER BY g.canonical_title COLLATE NOCASE,e.id"""),
+    }
+
+
+def game_rows(db):
+    """Identità canoniche leggere; fonti e matching restano attributi separati."""
+    games = rows(db, """SELECT g.id,g.canonical_title,g.summary,g.min_players,g.max_players,
+        g.min_play_minutes,g.max_play_minutes,g.minimum_age,g.language,g.status_raw,
+        g.status_normalized,g.source_url,g.first_seen_at,g.last_verified_at,
+        EXISTS(SELECT 1 FROM entries e WHERE e.game_id=g.id) AS has_bgg_entry,
+        (SELECT group_concat(gn.name, char(31)) FROM game_names gn
+         WHERE gn.game_id=g.id AND gn.name<>g.canonical_title) AS aliases,
+        (SELECT COUNT(*) FROM game_source_records gsr
+         WHERE gsr.game_id=g.id AND gsr.match_status='candidate') AS candidate_count,
+        (SELECT COUNT(*) FROM products p JOIN product_games pg ON pg.product_id=p.id
+         WHERE pg.game_id=g.id) AS product_count,
+        (SELECT COUNT(*) FROM game_implementations gi WHERE gi.game_id=g.id) AS implementation_count
+        FROM games g ORDER BY g.canonical_title COLLATE NOCASE,g.id""")
+    for game in games:
+        game["aliases"] = game["aliases"].split(chr(31)) if game["aliases"] else []
+        game["source_links"] = rows(db, """SELECT cs.source_key,cs.display_name,gsr.match_status,
+            sr.id AS source_record_id,sr.record_type,sr.title_raw,sr.canonical_url,
+            sr.verification_status,sr.last_verified_at
+            FROM game_source_records gsr JOIN source_records sr ON sr.id=gsr.source_record_id
+            JOIN catalog_sources cs ON cs.id=sr.source_id WHERE gsr.game_id=?
+            ORDER BY cs.display_name COLLATE NOCASE,sr.id""", (game["id"],))
+        keys = {link["source_key"] for link in game["source_links"] if link["match_status"] != "rejected"}
+        if game["has_bgg_entry"]:
+            keys.add("boardgamegeek")
+        game["source_keys"] = sorted(keys)
+    return games
+
+
+def game_detail(db, game_id):
+    game = one(db, "SELECT * FROM games WHERE id=?", (game_id,))
+    return {
+        "game": game,
+        "names": rows(db, """SELECT gn.*,sr.title_raw AS source_title,cs.source_key,cs.display_name AS source_name
+            FROM game_names gn LEFT JOIN source_records sr ON sr.id=gn.source_record_id
+            LEFT JOIN catalog_sources cs ON cs.id=sr.source_id WHERE gn.game_id=?
+            ORDER BY gn.is_current DESC,gn.is_official DESC,gn.name COLLATE NOCASE,gn.id""", (game_id,)),
+        "source_records": rows(db, """SELECT sr.*,cs.source_key,cs.display_name AS source_name,
+            gsr.match_status,gsr.match_method,gsr.evidence,gsr.decided_at
+            FROM game_source_records gsr JOIN source_records sr ON sr.id=gsr.source_record_id
+            JOIN catalog_sources cs ON cs.id=sr.source_id WHERE gsr.game_id=?
+            ORDER BY cs.display_name COLLATE NOCASE,sr.id""", (game_id,)),
+        "products": rows(db, """SELECT p.*,pg.relationship_type,pg.sequence_number,pg.is_primary,
+            pg.verification_status,
+            (SELECT group_concat(cs.display_name, ', ') FROM product_source_records psr
+             JOIN source_records sr ON sr.id=psr.source_record_id
+             JOIN catalog_sources cs ON cs.id=sr.source_id WHERE psr.product_id=p.id) AS source_names
+            FROM product_games pg JOIN products p ON p.id=pg.product_id
+            WHERE pg.game_id=? ORDER BY pg.is_primary DESC,p.canonical_name COLLATE NOCASE,p.id""", (game_id,)),
+        "resources": rows(db, """SELECT cr.*,rl.link_role,rl.is_primary,'game' AS attributed_via
+            FROM resource_links rl JOIN catalog_resources cr ON cr.id=rl.resource_id WHERE rl.game_id=?
+            UNION ALL
+            SELECT cr.*,rl.link_role,rl.is_primary,'source_record' AS attributed_via
+            FROM resource_links rl JOIN catalog_resources cr ON cr.id=rl.resource_id
+            JOIN game_source_records gsr ON gsr.source_record_id=rl.source_record_id
+            WHERE gsr.game_id=? AND gsr.match_status!='rejected'
+            UNION ALL
+            SELECT cr.*,rl.link_role,rl.is_primary,'product' AS attributed_via
+            FROM resource_links rl JOIN catalog_resources cr ON cr.id=rl.resource_id
+            JOIN product_games pg ON pg.product_id=rl.product_id WHERE pg.game_id=?
+            ORDER BY is_primary DESC,resource_kind,id""", (game_id, game_id, game_id)),
+        "implementations": rows(db, """SELECT gi.*,op.canonical_name AS platform_name,
+            sr.title_raw AS declared_by_title,cs.display_name AS declared_by_source
+            FROM game_implementations gi JOIN online_platforms op ON op.id=gi.platform_id
+            LEFT JOIN source_records sr ON sr.id=gi.declared_by_record_id
+            LEFT JOIN catalog_sources cs ON cs.id=sr.source_id WHERE gi.game_id=?
+            ORDER BY op.canonical_name COLLATE NOCASE,gi.id""", (game_id,)),
+        "relationships": rows(db, """SELECT gr.*,gf.canonical_title AS from_title,gt.canonical_title AS to_title
+            FROM game_relationships gr JOIN games gf ON gf.id=gr.from_game_id
+            JOIN games gt ON gt.id=gr.to_game_id
+            WHERE gr.from_game_id=? OR gr.to_game_id=? ORDER BY gr.relationship_type,gr.from_game_id,gr.to_game_id""",
+            (game_id, game_id)),
+        "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.status_raw,e.status_normalized,
+            c.name AS contest_name,c.year FROM entries e JOIN contests c ON c.id=e.contest_id
+            WHERE e.game_id=? ORDER BY c.year DESC,c.name COLLATE NOCASE,e.id""", (game_id,)),
     }
 
 
@@ -278,6 +364,9 @@ class Handler(BaseHTTPRequestHandler):
             if path.path == "/api/catalog":
                 with connect(self.server.database) as db:
                     data = catalog(db)
+            elif match := re.fullmatch(r"/api/games/([1-9][0-9]*)", path.path):
+                with connect(self.server.database) as db:
+                    data = game_detail(db, int(match.group(1)))
             elif match := re.fullmatch(r"/api/(contests|entries)/([1-9][0-9]*)(/compare)?", path.path):
                 resource, number, comparison = match.groups()
                 with connect(self.server.database) as db:
