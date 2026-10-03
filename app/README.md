@@ -178,3 +178,5 @@ Sono disponibili `--database` e `--output` per usare percorsi differenti. L'outp
 
 APP-001 (2026-10-03): nella vista Classifiche, le categorie sono limitate al contest selezionato. Le etichette contenenti la parola overall (confronto senza distinzione di maiuscole e spazi esterni) precedono le altre, poi ordinate alfabeticamente; valori ed etichette originali restano distinti. Al cambio contest si conserva una categoria valida, altrimenti si sceglie la prima overall disponibile; senza overall si mostrano tutte le categorie. La scelta esplicita Tutte le categorie resta disponibile.
 APP-003 (2026-10-03): la navigazione Kanare_Abstract mostra il totale dei giochi canonici collegati alla fonte, indipendente dai filtri e aggiornato con Rileggi database. Usa lo stile dei contatori esistenti; sotto 720 px il contatore viene nascosto come gli altri.
+
+APP-004 (2026-10-03): nel dettaglio annuale Avanzamento BGG gli indicatori zero usano una classe specifica, evitando il riquadro generico delle sezioni vuote. Restano visibili zero, denominatori e link; valori assenti mostrano Non disponibile. Tabella scorrevole e indicatori positivi preservati.

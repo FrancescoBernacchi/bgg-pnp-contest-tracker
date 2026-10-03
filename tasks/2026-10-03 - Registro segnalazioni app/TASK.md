@@ -78,7 +78,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-004 — Righe compatte nell'avanzamento contest BGG senza riquadri a zero
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa`.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** Avanzamento → dettaglio annuale dei contest BGG.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-da140ab8-4ca3-40f4-a881-886240afe3e8.png`; osservazione dell'utente.
@@ -88,7 +88,8 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Preservazione informativa:** non alterare i conteggi, i denominatori, i link, le etichette delle metriche o la distinzione fra zero, dato mancante e informazione non disponibile; la rimozione riguarda esclusivamente il riquadro visivo sproporzionato associato al valore zero.
 - **Fuori scope del registro:** modifica di componenti, CSS, API, query, calcolo dei progressi o dati del database.
 - **Criteri per la chiusura:** task evolutivo collegato; verifica su righe con uno o più contatori a zero e su righe con valori positivi; verifica che i dati zero/non disponibile restino distinguibili; verifica desktop e schermi stretti; verifica che i link e le etichette restino accessibili.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** `tasks/2026-10-03 - Righe compatte avanzamento BGG/TASK.md`.
+- **Verifica chiusura (2026-10-03):** eliminata la collisione con la classe generica empty; zero e denominatori compatti, assenti espliciti. 41 test frontend/PDF superati, rendering dettaglio con link e valori positivi preservati; responsive e accessibilità verificati strutturalmente su HTML/CSS, senza prova visiva browser.
 - **Note:** la segnalazione riguarda il dettaglio dei contest BGG nell'avanzamento, non i riquadri o contatori di altre viste dell'app.
 - **Prompt task evolutivo:**
 
@@ -125,3 +126,5 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - 2026-10-03: chiusa APP-001 nel task Categorie classifiche per contest; nessuna modifica ai dati storici.
 
 - 2026-10-03: chiusa APP-002 nel task Layout PDF per orientamento dopo verifiche automatiche e screenshot; originali e database operativo invariati.
+
+- 2026-10-03: chiusa APP-004 nel task Righe compatte avanzamento BGG; dati invariati.

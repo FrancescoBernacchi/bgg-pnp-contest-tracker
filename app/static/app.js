@@ -148,8 +148,10 @@ function stats() {
 }
 const progressState={year:''};
 const progressMark=(value,total,kind='count')=>{
-  const tone=total>0&&value>=total?'done':value>0?'partial':'empty';
-  return `<span class="progress-mark ${tone}"><i aria-hidden="true"></i>${kind==='ratio'?`${value}/${total}`:value}</span>`;
+  const missing=value===null||value===undefined;
+  const tone=missing?'unavailable':total>0&&value>=total?'done':value>0?'partial':'zero';
+  const text=missing?'Non disponibile':kind==='ratio'?`${value}/${total===null||total===undefined?'—':total}`:value;
+  return `<span class="progress-mark ${tone}"><i aria-hidden="true"></i>${esc(text)}</span>`;
 };
 const progressPercent=(value,total)=>total?Math.round(value*100/total):0;
 const pipelineRow=(labelText,value,total,tone='green')=>`<div class="pipeline-row"><div><span>${esc(labelText)}</span><strong>${value}/${total} · ${progressPercent(value,total)}%</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(labelText)}" value="${value}" max="${total||1}">${progressPercent(value,total)}%</progress></div>`;

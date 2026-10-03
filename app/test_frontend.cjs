@@ -13,7 +13,7 @@ test('testo non fidato reso come testo, mai markup',()=>{
 test('indicatori avanzamento distinguono completo, parziale e non iniziato',()=>{
   assert.match(run("progressMark(4,4,'ratio')"),/progress-mark done/);
   assert.match(run("progressMark(2,4,'ratio')"),/progress-mark partial/);
-  assert.match(run("progressMark(0,4,'ratio')"),/progress-mark empty/);
+  assert.match(run("progressMark(0,4,'ratio')"),/progress-mark zero/);
   assert.match(run("progressMark(2,4,'ratio')"),/>2\/4<\/span>/);
 });
 test('pipeline annuale calcola percentuali senza dividere per zero',()=>{
@@ -239,6 +239,36 @@ test('APP-001 categorie per contest, overall prima e grafia preservata',()=>{
   assert.equal(run('rankingFilters.category'),'');
   run("reconcileRankingCategory(rankingCategories(data.rankings,'1'),rankingFilters)");
   assert.equal(run('rankingFilters.category'),' Overall ');
+});
+test('APP-004: zero compatto, denominatori e dati assenti distinti',()=>{
+  for(const total of [0,4]){
+    const html=run(`progressMark(0,${total},'ratio')`);
+    assert.match(html,new RegExp(`>0/${total}</span>`));
+    assert.ok(!html.includes('empty'));
+  }
+  assert.match(run('progressMark(0,1)'),/>0<\/span>/);
+  for(const value of ['null','undefined'])
+    assert.match(run(`progressMark(${value},4,'ratio')`),/progress-mark unavailable.*Non disponibile/);
+  assert.match(run("progressMark(0,null,'ratio')"),/>0\/—<\/span>/);
+});
+test('APP-004: dettaglio annuale conserva link, etichette e indicatori positivi',()=>{
+  const main={innerHTML:''};
+  const previous=context.document;
+  context.document={querySelector:()=>main,querySelectorAll:()=>[]};
+  try{
+    run(`data={progress:{years:[{year:2026,contest_count:1,entry_count:4}],contests:[{year:2026,contest_id:7,contest_name:'Contest prova',scope_type:'pnp_core',status_normalized:'open',entry_count:4,known_status_count:4,ranking_category_count:0,materials_read_count:2,downloaded_entry_count:0}]}};progressState.year='2026';renderProgress();`);
+    for(const link of ['#contest/7','#entries/contest/7','#rankings/7','#entries/contest/7/read','#entries/contest/7/downloaded'])
+      assert.ok(main.innerHTML.includes(`href="${link}"`));
+    assert.match(main.innerHTML,/progress-mark zero.*>0\/4<\/span>/);
+    assert.match(main.innerHTML,/progress-mark partial.*>2\/4<\/span>/);
+    assert.match(main.innerHTML,/progress-mark done.*>4\/4<\/span>/);
+    assert.match(main.innerHTML,/<small>categorie<\/small>/);
+    assert.ok(!main.innerHTML.includes('progress-mark empty'));
+    const css=fs.readFileSync(path.join(__dirname,'static/style.css'),'utf8');
+    assert.match(css,/\.progress-mark\{display:inline-flex/);
+    assert.match(css,/@media\(max-width:720px\).*\.table-wrap table\{min-width:640px\}/);
+    assert.match(main.innerHTML,/tabindex="0" role="region" aria-label="Tabella scorrevole"/);
+  }finally{context.document=previous;}
 });
 
 test('APP-001 cambio contest ricostruisce il menu e azzera la pagina',()=>{
