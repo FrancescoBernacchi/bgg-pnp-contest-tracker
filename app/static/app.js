@@ -41,7 +41,7 @@ const options = (values, first) => `<option value="">${esc(first)}</option>` + [
 let data = null, routeVersion = 0;
 const filters = {scope:'',contestState:'',year:'',query:'',entryQuery:'',entryState:'',entryKind:'',entryScope:'',entryContest:'',entryYear:'',entryMaterials:'',entrySort:'title',page:1};
 const gameFilters={query:'',source:'',ambiguity:'',kind:'all'};
-let libraryData=null;
+let libraryData=null, activePdfReader=null;
 const libraryFilters={query:'',game:'',contest:'',source:'',year:'',language:'',type:'',status:'',presence:'',sort:'title',page:1};
 const libraryLabels={present:'File acquisito e presente',missing:'File acquisito ma mancante localmente',invalid_path:'Percorso rifiutato',unverifiable:'Presenza non verificabile',acquired:'Acquisito (completezza non determinabile)',failed:'Acquisizione fallita',partial:'Acquisizione parziale',unavailable:'Risorsa remota indisponibile',not_observable:'Risorsa non osservabile',access_restricted:'Accesso ristretto',excluded:'Materiale escluso',none_declared:'Nessuna risorsa dichiarata',unknown:'Stato non determinabile'};
 const libraryLabel=value=>value==='available'?'Disponibile (dato registrato)':libraryLabels[value]||value||'Non registrato';
@@ -52,12 +52,17 @@ function matchingLibrary() {
   const field={title:'canonical_title',date:'acquired_at',size:'byte_size',name:'original_filename'}[f.sort]||'canonical_title';
   return files.sort((a,b)=>(field==='byte_size'?b[field]-a[field]:field==='acquired_at'?String(b[field]).localeCompare(String(a[field])):String(a[field]||'').localeCompare(String(b[field]||''),'it'))||a.id-b.id);
 }
-function localFileRows(files) {
-  return table(['Gioco / provenienza','File / versione','Acquisizione / presenza','Metadati'],files.map(x=>`<tr><td><a href="#game/${x.game_id}">${esc(x.canonical_title)}</a><small>${esc(x.source_name)}${x.contests.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')}</small></td><td>${esc(x.original_filename)}<small>MIME: ${esc(x.media_type||'Non registrato')} · Lingua: ${esc(x.language_code||'Non registrata')}</small><small>Versione: ${esc(x.version_raw||'Non dichiarata')} · ${esc(bytes(x.byte_size))}</small></td><td>${esc(day(x.acquired_at))}<small>Acquisizione #${x.acquisition_id}: ${esc(libraryLabel(x.acquisition_status))}</small><span class="badge ${x.local_present?'':'warn'}">${esc(libraryLabel(x.local_status))}</span><small>Lotto: ${esc(libraryLabel(x.batch_status||'unknown'))}</small><small>Remoto: ${esc(libraryLabel(x.remote_status))}</small></td><td><details><summary>Hash, fonte e condizioni</summary><p class="file-hash">SHA-256: ${esc(x.sha256||'Non registrato')}</p><p>${x.source_url?externalLink(x.source_url,'Risorsa di provenienza'):'URL non registrato o non sicuro'}</p><p>Condizioni d’uso: ${esc(x.usage_conditions||'Non registrate')}</p></details></td></tr>`));
+function viewerLink(file, origin='library') {
+  if(file.viewer_kind==='pdf'&&file.viewer_status==='ready')return `<a class="pdf-open" href="#pdf/${file.id}/${origin}">Visualizza PDF</a>`;
+  const messages={unsupported:'Formato non ancora supportato',too_large:'PDF oltre il limite di 128 MiB',not_pdf:'Contenuto non PDF',corrupt:'PDF incompleto o danneggiato',invalid_path:'Percorso rifiutato',missing:'File mancante'};
+  return `<small>${esc(messages[file.viewer_status]||'Visualizzazione non disponibile')}</small>`;
+}
+function localFileRows(files,origin='library') {
+  return table(['Gioco / provenienza','File / versione','Acquisizione / presenza','Metadati'],files.map(x=>`<tr><td><a href="#game/${x.game_id}">${esc(x.canonical_title)}</a><small>${esc(x.source_name)}${x.contests.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')}</small></td><td>${esc(x.original_filename)}${viewerLink(x,origin)}<small>MIME: ${esc(x.media_type||'Non registrato')} · Lingua: ${esc(x.language_code||'Non registrata')}</small><small>Versione: ${esc(x.version_raw||'Non dichiarata')} · ${esc(bytes(x.byte_size))}</small></td><td>${esc(day(x.acquired_at))}<small>Acquisizione #${x.acquisition_id}: ${esc(libraryLabel(x.acquisition_status))}</small><span class="badge ${x.local_present?'':'warn'}">${esc(libraryLabel(x.local_status))}</span><small>Lotto: ${esc(libraryLabel(x.batch_status||'unknown'))}</small><small>Remoto: ${esc(libraryLabel(x.remote_status))}</small></td><td><details><summary>Hash, fonte e condizioni</summary><p class="file-hash">SHA-256: ${esc(x.sha256||'Non registrato')}</p><p>${x.source_url?externalLink(x.source_url,'Risorsa di provenienza'):'URL non registrato o non sicuro'}</p><p>Condizioni d’uso: ${esc(x.usage_conditions||'Non registrate')}</p></details></td></tr>`));
 }
 function localMaterials(library) {
   if(!library)return '<h2>Materiali locali</h2><p>Dati non disponibili.</p>';
-  return '<h2>Materiali locali</h2><p class="subtitle">Acquisizioni distinte per ID e data. Completezza non determinabile dal solo numero di file; lo stato remoto è indipendente dalla presenza locale.</p>'+(library.acquisitions.length?library.acquisitions.map(a=>`<details><summary>Acquisizione #${a.id} · ${esc(day(a.acquired_at))} · ${a.files.length} file · ${esc(libraryLabel(a.status||'unknown'))} · completezza non determinabile</summary>${localFileRows(a.files)}</details>`).join(''):'<div class="empty">Nessuna acquisizione registrata per questo gioco.</div>');
+  return '<h2>Materiali locali</h2><p class="subtitle">Acquisizioni distinte per ID e data. Completezza non determinabile dal solo numero di file; lo stato remoto è indipendente dalla presenza locale.</p>'+(library.acquisitions.length?library.acquisitions.map(a=>`<details><summary>Acquisizione #${a.id} · ${esc(day(a.acquired_at))} · ${a.files.length} file · ${esc(libraryLabel(a.status||'unknown'))} · completezza non determinabile</summary>${localFileRows(a.files,`game/${a.game_id}`)}</details>`).join(''):'<div class="empty">Nessuna acquisizione registrata per questo gioco.</div>');
 }
 function libraryResults() {
   const files=matchingLibrary(),pages=Math.max(1,Math.ceil(files.length/50));
@@ -372,14 +377,26 @@ function renderDeadlines() {
   const upcoming=data.contests.filter(c=>c.next_deadline).sort((a,b)=>new Date(a.next_deadline)-new Date(b.next_deadline));
   $('#main').innerHTML=heading('CALENDARIO','Le prossime tappe.','La prima fase non trascorsa di ogni contest, calcolata dalle viste SQLite al momento della lettura.')+`<div class="notice">Queste sono scadenze dei contest, non appuntamenti di monitoraggio. Il taccuino operativo resta in sources/MONITORING_CALENDAR.md. Per vedere anche le fasi passate, apri il calendario del contest.</div>`+table(['Scadenza','Contest','Fase','Perimetro','Ultima verifica'],upcoming.map(c=>`<tr><td><strong>${esc(day(c.next_deadline))}</strong></td><td><a href="#contest/${c.contest_id}">${esc(c.contest_name)}</a></td><td>${esc(c.next_phase_label)}</td><td>${esc(label(c.scope_type))}</td><td>${source(c.source_url,c.last_verified_at)}</td></tr>`));
 }
+
+function renderPdf(hash) {
+  const parts=hash.split('/'),id=parts[1],back=parts[2]==='game'?`game/${parts[3]}`:'library';
+  $('#main').innerHTML=`<a class="back" href="#${back}">← ${back==='library'?'Torna alla Libreria':'Torna al gioco'}</a>`+heading('MATERIALE LOCALE','Visualizzatore PDF','Lettura dell’originale acquisito, senza modifiche.')+`<section id="pdf-reader" aria-label="Lettore PDF"><h2 data-pdf-title>Documento</h2><p class="subtitle" data-pdf-meta></p><div class="filters pdf-toolbar"><button data-pdf-prev disabled>Pagina precedente</button><label class="field">Pagina<input data-pdf-page type="number" min="1" value="1" disabled></label><span data-pdf-count></span><button data-pdf-next disabled>Pagina successiva</button><label class="field">Zoom<select data-pdf-zoom disabled><option value="fit">Adatta alla larghezza</option><option value="0.5">50%</option><option value="0.75">75%</option><option value="1">100%</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="2">200%</option><option value="3">300%</option></select></label></div><p data-pdf-status role="status" aria-live="polite">Caricamento PDF…</p><div class="pdf-surface" data-pdf-surface tabindex="0" role="region" aria-label="Pagina PDF, frecce sinistra e destra per cambiare pagina"><canvas role="img" aria-label="Documento in caricamento"></canvas></div><details><summary>Testo della pagina</summary><pre class="pdf-page-text" data-pdf-text></pre></details></section>`;
+  activePdfReader=new window.PnPViewers.pdf($('#pdf-reader'));
+  activePdfReader.open(id);
+}
+
 async function route() {
   if(!data) return;
+  activePdfReader?.destroy();activePdfReader=null;
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'games';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':hash==='library'?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('pdf/')&&a.dataset.nav==='library')||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':(hash==='library'||hash.startsWith('pdf/'))?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
   try {
     if(hash==='games') renderGames();
+    else if(/^pdf\/[1-9]\d*(?:\/(?:library|game\/[1-9]\d*))?$/.test(hash)) {
+      renderPdf(hash);
+    }
     else if(hash==='library') {
       const library=await api('/api/library');
       if(version!==routeVersion)return;

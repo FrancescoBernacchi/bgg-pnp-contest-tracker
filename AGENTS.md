@@ -22,7 +22,7 @@ L'agente deve sviluppare progressivamente competenza specialistica nella navigaz
 - `GIT_GUIDE.md`: guida semplice e protocollo di supporto Git/GitHub per l'utente.
 - `PROJECT.md`: scopo, vincoli e architettura autorevole.
 - `.workspace/PROJECT_STATE.md`: stato di inizializzazione e allineamento PWS.
-- `app/`: interfaccia locale Python/HTML/CSS/JavaScript in sola lettura; `server.py`, asset in `static/`, launcher `start.ps1`, test e guida `README.md`; include navigazione di contest, entry, risorse e classifiche, sintesi per contest e il generatore Markdown preesistente.
+- `app/`: interfaccia locale Python/HTML/CSS/JavaScript in sola lettura; `server.py`, asset in `static/`, launcher `start.ps1`, test e guida `README.md`; include navigazione di contest, entry, risorse e classifiche, Libreria e lettore PDF per ID registrati (`pdf_files.py`, `static/pdf-viewer.js`, PDF.js locale in `static/vendor/pdfjs/`), sintesi per contest e il generatore Markdown preesistente.
 - `database/schema.sql`: modello relazionale autorevole iniziale.
 - `database/migrations/`: evoluzioni ordinate dello schema.
 - `catalog/`: manifest ed esportazioni testuali versionabili.

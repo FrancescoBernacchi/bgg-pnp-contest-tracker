@@ -219,3 +219,9 @@ test('scheda gioco: materiali locali collegati senza fondere le acquisizioni',()
   const html=run(`libraryNodes['#main'].innerHTML`);
   assert.match(html,/Materiali locali/);assert.match(html,/Acquisizione #21/);assert.match(html,/Acquisizione #22/);
 });
+test('PDF: link nelle due viste solo per file idonei e ritorno al contesto corretto',()=>{
+  const file={id:4,game_id:9,viewer_kind:'pdf',viewer_status:'ready',canonical_title:'Game',contests:[],local_present:true};
+  assert.match(run(`localFileRows([${JSON.stringify(file)}])`),/href="#pdf\/4\/library"/);
+  assert.match(run(`localMaterials({acquisitions:[{id:1,game_id:9,files:[${JSON.stringify(file)}]}]})`),/href="#pdf\/4\/game\/9"/);
+  for(const status of ['missing','unsupported','invalid_path','corrupt'])assert.ok(!run(`viewerLink({id:4,viewer_status:'${status}'})`).includes('href='));
+});

@@ -9,13 +9,22 @@ import json
 from pathlib import Path
 import re
 import sqlite3
+import secrets
+import hmac
 import webbrowser
 from library_catalog import library_catalog
+from pdf_files import open_pdf, PDFError
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATABASE = ROOT / "database" / "pnp_collection.sqlite3"
 STATIC = Path(__file__).resolve().parent / "static"
+try:
+    PDFJS_ASSETS = {name for name in json.loads((STATIC / 'vendor/pdfjs/MANIFEST.json').read_text(encoding='utf-8'))['files']
+                   if re.fullmatch(r'build/pdf(?:\.worker)?\.mjs|(?:cmaps|standard_fonts|iccs|wasm)/[A-Za-z0-9_.-]+', name)
+                   and '..' not in name.split('/')}
+except (OSError, ValueError, KeyError):
+    PDFJS_ASSETS = set()
 
 
 @contextmanager
@@ -328,6 +337,41 @@ def compare(db, contest_id, before, after):
 
 
 class Handler(BaseHTTPRequestHandler):
+    def viewer_access(self, token=False):
+        host = self.headers.get('Host', '')
+        if self.headers.get('Sec-Fetch-Site') != 'same-origin':
+            raise PDFError(403, 'foreign_request', 'Visualizzazione disponibile solo dall’app locale.')
+        origin = self.headers.get('Origin')
+        if origin is not None and origin != f'http://{host}':
+            raise PDFError(403, 'foreign_request', 'Origine della richiesta non autorizzata.')
+        if token and not hmac.compare_digest(self.headers.get('X-PnP-Viewer', '').encode('utf-8'), self.server.viewer_token.encode('ascii')):
+            raise PDFError(403, 'viewer_token', 'Sessione del visualizzatore non valida. Riaprire il documento.')
+
+    def pdf_response(self, file_id, head=False):
+        self.viewer_access(token=True)
+        if self.headers.get('Range'):
+            raise PDFError(416, 'range_unsupported', 'Richieste Range non supportate dal visualizzatore.')
+        with connect(self.server.database) as db:
+            record = one(db, 'SELECT relative_path,media_type,acquisition_status FROM acquired_files WHERE id=?', (file_id,))
+        with open_pdf(self.server.library_root, **record) as (handle, size):
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/pdf')
+            self.send_header('Content-Length', str(size))
+            self.send_header('Accept-Ranges', 'none')
+            self.send_header('Content-Disposition', 'attachment; filename="material.pdf"')
+            self.send_header('Cache-Control', 'no-store')
+            self.send_header('X-Content-Type-Options', 'nosniff')
+            self.send_header('Cross-Origin-Resource-Policy', 'same-origin')
+            self.send_header('Referrer-Policy', 'no-referrer')
+            self.send_header('Content-Security-Policy', "sandbox; default-src 'none'; frame-ancestors 'none'")
+            self.end_headers()
+            if not head:
+                try:
+                    while chunk := handle.read(64 * 1024):
+                        self.wfile.write(chunk)
+                except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+                    pass  # User cancelled loading; no write to originals or database.
+
     def respond(self, status, payload, content_type="application/json; charset=utf-8", head=False):
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8") if isinstance(payload, (dict, list)) else payload
         self.send_response(status)
@@ -336,7 +380,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "no-referrer")
-        self.send_header("Content-Security-Policy", "default-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+        self.send_header("Content-Security-Policy", "default-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; worker-src 'self'; font-src 'self' blob:; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+        self.send_header('Cross-Origin-Resource-Policy', 'same-origin')
         self.end_headers()
         if not head:
             self.wfile.write(body)
@@ -354,16 +399,38 @@ class Handler(BaseHTTPRequestHandler):
             return
         path = urlsplit(self.path)
         assets = {"/": ("index.html", "text/html; charset=utf-8"),
+                  "/pdf-viewer.js": ("pdf-viewer.js", "text/javascript; charset=utf-8"),
                   "/app.js": ("app.js", "text/javascript; charset=utf-8"),
                   "/style.css": ("style.css", "text/css; charset=utf-8"),
                   "/favicon.svg": ("favicon.svg", "image/svg+xml")}
         try:
+            vendor_name = path.path.removeprefix('/vendor/pdfjs/')
+            if path.path.startswith('/vendor/pdfjs/') and vendor_name in PDFJS_ASSETS:
+                mime = 'text/javascript' if vendor_name.endswith(('.js', '.mjs')) else 'application/wasm' if vendor_name.endswith('.wasm') else 'application/octet-stream'
+                self.respond(200, (STATIC / 'vendor/pdfjs' / vendor_name).read_bytes(), mime, head)
+                return
             if path.path in assets:
                 filename, mime = assets[path.path]
                 self.respond(200, (STATIC / filename).read_bytes(), mime, head)
                 return
-            # Nessun file server generico: database e library non sono esposti.
-            if path.path == "/api/catalog":
+            # PDF only by registered ID, guarded session and confined handle; no generic file server.
+            if path.path == '/api/viewer-session':
+                self.viewer_access()
+                if path.query:
+                    raise PDFError(400, 'parameters', 'Parametri non validi.')
+                data = {'token': self.server.viewer_token}
+            elif match := re.fullmatch(r'/api/files/([1-9][0-9]*)(/pdf)?', path.path):
+                self.viewer_access(token=True)
+                if path.query:
+                    raise PDFError(400, 'parameters', 'Parametri non validi.')
+                file_id = int(match.group(1))
+                if match.group(2):
+                    self.pdf_response(file_id, head)
+                    return
+                with connect(self.server.database) as db:
+                    game_id = one(db, 'SELECT a.game_id FROM acquired_files f JOIN acquisitions a ON a.id=f.acquisition_id WHERE f.id=?', (file_id,))['game_id']
+                    data = next(f for f in library_catalog(db, self.server.library_root, game_id)['files'] if f['id'] == file_id)
+            elif path.path == "/api/catalog":
                 with connect(self.server.database) as db:
                     data = catalog(db)
             elif path.path == "/api/library":
@@ -385,6 +452,8 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 raise LookupError()
             self.respond(200, data, head=head)
+        except PDFError as error:
+            self.respond(error.status, {'error': error.message, 'code': error.code}, head=head)
         except (ValueError, OverflowError):
             self.respond(400, {"error": "Parametri non validi: scegliere due controlli periodici in ordine cronologico."}, head=head)
         except LookupError:
@@ -404,6 +473,7 @@ def make_server(database, port=8765, library_root=ROOT / "library"):
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
     server.database = Path(database)
     server.library_root = Path(library_root)
+    server.viewer_token = secrets.token_urlsafe(32)
     return server
 
 

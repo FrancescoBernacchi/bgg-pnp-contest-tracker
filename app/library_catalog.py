@@ -1,7 +1,8 @@
-"""Metadati locali: nessun binario letto o servito, nessuna richiesta remota."""
+"""Metadati locali e idoneità PDF: lettura confinata di header/coda, nessuna rete."""
 from collections import Counter
 from pathlib import Path, PureWindowsPath
 from urllib.parse import urlsplit
+from pdf_files import preview_status
 
 
 def local_presence(root, relative):
@@ -53,7 +54,10 @@ def library_catalog(db, root, game_id=None):
             LEFT JOIN catalog_sources cs ON cs.id=sr.source_id
             WHERE af.acquisition_id=? ORDER BY af.id''', (acquisition['id'],)):
             file = dict(row)
-            file['local_status'] = local_presence(root, file.pop('relative_path'))
+            relative = file.pop('relative_path')
+            file['local_status'] = local_presence(root, relative)
+            file['viewer_status'] = preview_status(root, relative, file['media_type'], file['acquisition_status'])
+            file['viewer_kind'] = 'pdf' if file['viewer_status'] == 'ready' else None
             file['local_present'] = file['local_status'] == 'present'
             file['source_url'] = safe_url(file['source_url'])
             file['contests'] = []
