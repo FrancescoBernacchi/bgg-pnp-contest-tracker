@@ -41,6 +41,43 @@ const options = (values, first) => `<option value="">${esc(first)}</option>` + [
 let data = null, routeVersion = 0;
 const filters = {scope:'',contestState:'',year:'',query:'',entryQuery:'',entryState:'',entryKind:'',entryScope:'',entryContest:'',entryYear:'',entryMaterials:'',entrySort:'title',page:1};
 const gameFilters={query:'',source:'',ambiguity:'',kind:'all'};
+let libraryData=null;
+const libraryFilters={query:'',game:'',contest:'',source:'',year:'',language:'',type:'',status:'',presence:'',sort:'title',page:1};
+const libraryLabels={present:'File acquisito e presente',missing:'File acquisito ma mancante localmente',invalid_path:'Percorso rifiutato',unverifiable:'Presenza non verificabile',acquired:'Acquisito (completezza non determinabile)',failed:'Acquisizione fallita',partial:'Acquisizione parziale',unavailable:'Risorsa remota indisponibile',not_observable:'Risorsa non osservabile',access_restricted:'Accesso ristretto',excluded:'Materiale escluso',none_declared:'Nessuna risorsa dichiarata',unknown:'Stato non determinabile'};
+const libraryLabel=value=>value==='available'?'Disponibile (dato registrato)':libraryLabels[value]||value||'Non registrato';
+function bytes(value) {return value==null?'Non registrata':value<1024?`${value} B`:value<1048576?`${(value/1024).toFixed(1)} KiB`:`${(value/1048576).toFixed(1)} MiB`;}
+function matchingLibrary() {
+  const f=libraryFilters,q=f.query.trim().toLocaleLowerCase();
+  const files=libraryData.files.filter(x=>(!q||[x.canonical_title,x.original_filename,x.version_raw,x.sha256,x.source_name].join(' ').toLocaleLowerCase().includes(q))&&(!f.game||String(x.game_id)===f.game)&&(!f.contest||x.contests.some(c=>String(c.id)===f.contest))&&(!f.source||x.source_key===f.source)&&(!f.year||x.contests.some(c=>String(c.year)===f.year))&&(!f.language||(x.language_code||'Non registrato')===f.language)&&(!f.type||(x.media_type||'Non registrato')===f.type)&&(!f.status||x.acquisition_status===f.status||x.batch_status===f.status)&&(!f.presence||x.local_status===f.presence));
+  const field={title:'canonical_title',date:'acquired_at',size:'byte_size',name:'original_filename'}[f.sort]||'canonical_title';
+  return files.sort((a,b)=>(field==='byte_size'?b[field]-a[field]:field==='acquired_at'?String(b[field]).localeCompare(String(a[field])):String(a[field]||'').localeCompare(String(b[field]||''),'it'))||a.id-b.id);
+}
+function localFileRows(files) {
+  return table(['Gioco / provenienza','File / versione','Acquisizione / presenza','Metadati'],files.map(x=>`<tr><td><a href="#game/${x.game_id}">${esc(x.canonical_title)}</a><small>${esc(x.source_name)}${x.contests.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')}</small></td><td>${esc(x.original_filename)}<small>MIME: ${esc(x.media_type||'Non registrato')} · Lingua: ${esc(x.language_code||'Non registrata')}</small><small>Versione: ${esc(x.version_raw||'Non dichiarata')} · ${esc(bytes(x.byte_size))}</small></td><td>${esc(day(x.acquired_at))}<small>Acquisizione #${x.acquisition_id}: ${esc(libraryLabel(x.acquisition_status))}</small><span class="badge ${x.local_present?'':'warn'}">${esc(libraryLabel(x.local_status))}</span><small>Lotto: ${esc(libraryLabel(x.batch_status||'unknown'))}</small><small>Remoto: ${esc(libraryLabel(x.remote_status))}</small></td><td><details><summary>Hash, fonte e condizioni</summary><p class="file-hash">SHA-256: ${esc(x.sha256||'Non registrato')}</p><p>${x.source_url?externalLink(x.source_url,'Risorsa di provenienza'):'URL non registrato o non sicuro'}</p><p>Condizioni d’uso: ${esc(x.usage_conditions||'Non registrate')}</p></details></td></tr>`));
+}
+function localMaterials(library) {
+  if(!library)return '<h2>Materiali locali</h2><p>Dati non disponibili.</p>';
+  return '<h2>Materiali locali</h2><p class="subtitle">Acquisizioni distinte per ID e data. Completezza non determinabile dal solo numero di file; lo stato remoto è indipendente dalla presenza locale.</p>'+(library.acquisitions.length?library.acquisitions.map(a=>`<details><summary>Acquisizione #${a.id} · ${esc(day(a.acquired_at))} · ${a.files.length} file · ${esc(libraryLabel(a.status||'unknown'))} · completezza non determinabile</summary>${localFileRows(a.files)}</details>`).join(''):'<div class="empty">Nessuna acquisizione registrata per questo gioco.</div>');
+}
+function libraryResults() {
+  const files=matchingLibrary(),pages=Math.max(1,Math.ceil(files.length/50));
+  libraryFilters.page=Math.min(libraryFilters.page,pages);
+  $('#library-results').innerHTML=`<p>${files.length} file corrispondenti · pagina ${libraryFilters.page} di ${pages}</p>`+localFileRows(files.slice((libraryFilters.page-1)*50,libraryFilters.page*50))+`<div class="filters"><button id="library-prev" ${libraryFilters.page===1?'disabled':''}>Precedente</button><button id="library-next" ${libraryFilters.page===pages?'disabled':''}>Successiva</button></div>`;
+  $('#library-prev').onclick=()=>{libraryFilters.page--;libraryResults();};
+  $('#library-next').onclick=()=>{libraryFilters.page++;libraryResults();};
+}
+function renderLibrary(library) {
+  libraryData=library;
+  const s=library.summary;
+  const select=(key,title,values)=>`<label class="field">${esc(title)}<select id="library-${key}"><option value="">Tutti</option>${[...new Map(values.map(v=>[String(v[0]),v])).values()].map(v=>`<option value="${esc(v[0])}">${esc(v[1])}</option>`).join('')}</select></label>`;
+  const values=key=>library.files.map(x=>[x[key]||'Non registrato',x[key]||'Non registrato']);
+  $('#main').innerHTML=heading('MATERIALI ACQUISITI','Libreria','Metadati registrati e presenza verificata sotto library/. Nessuna anteprima o apertura automatica.')+(!library.library_available?'<div class="notice">Libreria locale assente o non disponibile. I record restano consultabili.</div>':'')+`<div class="facts">${fact('Giochi con file',s.games)}${fact('Acquisizioni',s.acquisitions)}${fact('File',s.files)}${fact('Dimensione registrata',bytes(s.bytes))}${fact('Presenti',s.present)}${fact('Mancanti',s.missing)}${fact('Rifiutati / non verificabili',s.unverifiable)}</div><details><summary>Distribuzione dei file per contest, fonte, lingua e tipo</summary>${['contests','sources','languages','types'].map(k=>table([({contests:'Contest',sources:'Fonte',languages:'Lingua',types:'MIME'})[k],'File'],s[k].map(r=>`<tr><td>${esc(r.value)}</td><td>${r.files}</td></tr>`))).join('')}</details><div class="filters"><label class="field grow">Testo<input id="library-query" type="search" value="${esc(libraryFilters.query)}"></label>${select('game','Gioco',library.files.map(x=>[x.game_id,x.canonical_title]))}${select('contest','Contest',library.files.flatMap(x=>x.contests.map(c=>[c.id,c.name])))}${select('source','Fonte',library.files.map(x=>[x.source_key,x.source_name]))}${select('year','Anno contest',library.files.flatMap(x=>x.contests.map(c=>[c.year,c.year])))}${select('language','Lingua',values('language_code'))}${select('type','Tipo MIME',values('media_type'))}${select('status','Stato acquisizione',[...values('acquisition_status'),...values('batch_status')].map(v=>[v[0],libraryLabel(v[0])]))}${select('presence','Presenza locale',['present','missing','invalid_path','unverifiable'].map(v=>[v,libraryLabel(v)]))}${select('sort','Ordina per',[['title','Titolo del gioco'],['date','Data più recente'],['size','Dimensione decrescente'],['name','Nome del file']])}</div><div id="library-results" aria-live="polite"></div>`+`<details><summary>Acquisizioni senza file (${library.acquisitions.filter(a=>!a.files.length).length})</summary>${localMaterials({acquisitions:library.acquisitions.filter(a=>!a.files.length)})}</details>`;
+  for(const key of Object.keys(libraryFilters).filter(k=>k!=='page')) {
+    const el=$(`#library-${key}`);el.value=libraryFilters[key];
+    el[key==='query'?'oninput':'onchange']=()=>{libraryFilters[key]=el.value;libraryFilters.page=1;libraryResults();};
+  }
+  libraryResults();
+}
 async function api(path) {
   const response = await fetch(path, {cache:'no-store'});
   const result = await response.json();
@@ -96,6 +133,7 @@ function renderGames(sourceKey='') {
 function renderGameDetail(detail) {
   const g=detail.game;
   $('#main').innerHTML=`<a class="back" href="#games">← Tutti i giochi</a>`+heading('GIOCO CANONICO',g.canonical_title,g.summary||'Descrizione non registrata')+`<div class="facts">${fact('Stato originale',g.status_raw)}${fact('Stato normalizzato',g.status_normalized)}${fact('Giocatori',g.min_players||g.max_players?`${g.min_players??'?'}–${g.max_players??'?'}`:'Non registrati')}${fact('Durata',g.min_play_minutes||g.max_play_minutes?`${g.min_play_minutes??'?'}–${g.max_play_minutes??'?'} min`:'Non registrata')}</div><h2>Record di fonte e riconciliazione</h2><p class="subtitle">Ogni riga è un’osservazione nativa della fonte, non un secondo gioco. Anche corrispondenze candidate o respinte restano documentate.</p>${table(['Fonte / record','Titolo osservato','Matching','Verifica / provenienza'],detail.source_records.map(r=>`<tr><td>${esc(r.source_name)}<small>${esc(r.record_type)} · #${r.id}</small></td><td>${esc(r.title_raw)}</td><td>${esc(label(r.match_status))}<small>${esc(r.match_method)}${r.evidence?` · ${esc(r.evidence)}`:''}</small></td><td>${esc(label(r.verification_status))}<small>${externalLink(r.canonical_url,'Apri la pagina registrata')} · ${esc(day(r.last_verified_at))}</small></td></tr>`))}<h2>Prodotti e confezioni</h2>${table(['Prodotto','Relazione','Stato / provenienza'],detail.products.map(p=>`<tr><td>${esc(p.canonical_name)}<small>${esc(p.product_kind)}</small></td><td>${esc(p.relationship_type)}${p.is_primary?' · principale':''}</td><td>${esc(label(p.verification_status))}<small>${esc(p.source_names||'Fonte non collegata')}</small></td></tr>`))}<h2>Implementazioni online</h2>${table(['Piattaforma','Titolo / disponibilità','Provenienza'],detail.implementations.map(i=>`<tr><td>${esc(i.platform_name)}</td><td>${i.implementation_url?externalLink(i.implementation_url,i.title_raw||g.canonical_title):esc(i.title_raw||g.canonical_title)}<small>${esc(label(i.availability_status))} · ${esc(label(i.verification_status))}</small></td><td>${esc(i.declared_by_source||'Non attribuita')}<small>${esc(i.declared_by_title)}</small></td></tr>`))}<h2>Risorse attribuite al gioco</h2>${table(['Tipo','Risorsa','Stato / attribuzione'],detail.resources.map(r=>`<tr><td>${esc(r.resource_kind)}<small>${esc(r.link_role)}</small></td><td>${externalLink(r.url,r.label_raw||r.url)}</td><td>${esc(label(r.verification_status))}<small>${esc(label(r.availability_status))} · via ${esc(r.attributed_via)}</small></td></tr>`))}<h2>Presenze nei contest BGG</h2>${table(['Entry','Contest','Stato'],detail.entries.map(e=>`<tr><td><a href="#entry/${e.id}">Entry #${e.id}</a></td><td><a href="#contest/${e.contest_id}">${esc(e.contest_name)}</a><small>${esc(e.year)}</small></td><td>${esc(label(e.status_normalized))}<small>${esc(e.status_raw)}</small></td></tr>`))}<details><summary>Nomi e alias (${detail.names.length})</summary>${table(['Nome','Tipo / lingua','Fonte e verifica'],detail.names.map(n=>`<tr><td>${esc(n.name)}</td><td>${esc(n.name_type)}<small>${esc(n.language_code)} · ${n.is_official?'ufficiale':'non ufficiale'}</small></td><td>${esc(n.source_name||n.observed_from)}<small>${esc(label(n.verification_status))}</small></td></tr>`))}</details>`;
+  $('#main').innerHTML += localMaterials(detail.local_materials);
 }
 function stats() {
   const core = data.contests.filter(c=>c.scope_type==='pnp_core').length;
@@ -339,9 +377,14 @@ async function route() {
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'games';
   document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
+  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':hash==='library'?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
   try {
     if(hash==='games') renderGames();
+    else if(hash==='library') {
+      const library=await api('/api/library');
+      if(version!==routeVersion)return;
+      renderLibrary(library);
+    }
     else if(hash==='kanare') renderGames('kanare_abstract');
     else if(/^game\/[1-9]\d*$/.test(hash)) {
       $('#main').innerHTML='<div class="empty" role="status">Lettura del gioco canonico…</div>';

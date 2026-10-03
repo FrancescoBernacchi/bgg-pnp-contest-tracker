@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 import sqlite3
 import webbrowser
+from library_catalog import library_catalog
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -104,9 +105,10 @@ def game_rows(db):
     return games
 
 
-def game_detail(db, game_id):
+def game_detail(db, game_id, library_root=ROOT / "library"):
     game = one(db, "SELECT * FROM games WHERE id=?", (game_id,))
     return {
+        "local_materials": library_catalog(db, library_root, game_id),
         "game": game,
         "names": rows(db, """SELECT gn.*,sr.title_raw AS source_title,cs.source_key,cs.display_name AS source_name
             FROM game_names gn LEFT JOIN source_records sr ON sr.id=gn.source_record_id
@@ -364,9 +366,12 @@ class Handler(BaseHTTPRequestHandler):
             if path.path == "/api/catalog":
                 with connect(self.server.database) as db:
                     data = catalog(db)
+            elif path.path == "/api/library":
+                with connect(self.server.database) as db:
+                    data = library_catalog(db, self.server.library_root)
             elif match := re.fullmatch(r"/api/games/([1-9][0-9]*)", path.path):
                 with connect(self.server.database) as db:
-                    data = game_detail(db, int(match.group(1)))
+                    data = game_detail(db, int(match.group(1)), self.server.library_root)
             elif match := re.fullmatch(r"/api/(contests|entries)/([1-9][0-9]*)(/compare)?", path.path):
                 resource, number, comparison = match.groups()
                 with connect(self.server.database) as db:
@@ -395,9 +400,10 @@ class Handler(BaseHTTPRequestHandler):
     do_DELETE = do_POST
 
 
-def make_server(database, port=8765):
+def make_server(database, port=8765, library_root=ROOT / "library"):
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
     server.database = Path(database)
+    server.library_root = Path(library_root)
     return server
 
 

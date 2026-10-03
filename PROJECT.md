@@ -179,6 +179,12 @@ Il 21 settembre 2026 il primo lotto Kanare_Abstract approvato per uso personale 
 
 ## Idee evolutive da trattare in task separati
 
+### Visualizzazione multiformato della libreria
+
+Requisito confermato dall'utente il 2026-10-03, dopo l'incremento Libreria: progettare la futura visualizzazione interna come funzionalità estensibile per formato, iniziando dai PDF presenti. Quando vengono introdotti materiali JPG/JPEG, PNG, TXT, DOC/DOCX o altri formati, verificare nello stesso task il supporto di visualizzazione e integrare il visualizzatore appropriato quando tecnicamente fattibile e sicuro; altrimenti registrare il limite e il successivo intervento necessario. Non considerare automaticamente coperto un formato perché il file è acquisito.
+
+La scelta del visualizzatore deve basarsi su tipo verificato e contenuto, non sulla sola estensione. Immagini e testo richiedono rendering controllato; documenti Office possono richiedere conversione locale con derivati separati e tracciabili. Nessuna esecuzione di macro, script o contenuti attivi, nessun caricamento verso servizi esterni, nessuna alterazione degli originali. I formati non supportati devono essere segnalati esplicitamente nell'interfaccia. L'implementazione richiede un task autonomo e una revisione deliberata dell'attuale esclusione di binari HTTP e anteprime; questa decisione registra il requisito futuro e non modifica il contratto di sicurezza dell'app corrente.
+
 ### Simulatore di giochi
 
 Valutare un motore interno che permetta al progetto di implementare in modo modulare simulazioni digitali di giochi selezionati. Il motore non è destinato alla programmazione da parte dell'utente finale. I giochi dovranno poter esporre, senza confonderlo con le presenze su piattaforme esterne, uno stato specifico relativo alla disponibilità e maturità della simulazione nell'app. Architettura, formato delle implementazioni, verifica delle regole e interfaccia saranno definiti in un task autonomo.

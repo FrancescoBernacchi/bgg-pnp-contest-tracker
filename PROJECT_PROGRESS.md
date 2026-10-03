@@ -2083,7 +2083,8 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | aggiornato per Wargame | Rilevamento Wargame del 2026-10-02 registrato; altri contest mantengono finestre scadute separate | Aggiornare dopo ogni rilevamento dovuto; prossimo Wargame 2026-11-12 |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
-| Git/GitHub | worktree isolata in uso | Detached HEAD pulito prima dell'incremento del 2026-10-02; modifiche Kanare non committate della checkout originale non toccate | Commit e push solo dopo autorizzazione dell'utente |
+| Git/GitHub | branch Libreria in verifica locale | 2026-10-03: partenza da main pulito e allineato a origin/main; branch codex/libreria-locale-materiali verificato; commit e push del branch autorizzati dall’utente, senza unione in main. Il precedente incremento del 2026-10-02 usava una worktree isolata | Commit, push e unione solo dopo autorizzazioni distinte dell'utente |
+| Libreria nell’app locale | completo | 2026-10-03: consultazione di 17 acquisizioni e 41 file, tutti presenti; 38 Children & Family e 3 Kanare; filtri, paginazione e schede gioco; 22 test backend e 28 frontend | Conservare sola lettura, confinamento library e separazione degli stati; nessun binario HTTP |
 
 ## Registro degli aggiornamenti del cruscotto
 
@@ -2113,6 +2114,8 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-10-02 | Interfaccia multifonte BGG e Kanare | Aggiunte vista comune Giochi, ricerca e filtri per fonte/ambiguità, scheda canonica e vista Kanare; preservate le viste specializzate BGG e il contratto offline/read-only | `app/`; 17 test backend e 23 frontend; fotografia del database operativo con hash verificato |
 | 2026-10-03 | Acquisizione materiali Children & Family 2025 | Acquisiti 5 PDF originali relativi a ICBRG e Good Breeding; registrati 3 host disponibili e 2 link Zoo Rush scaduti; Pirate Treasures senza risorsa dichiarata verificabile | manifest, applicatore e verificatore dedicati; file locali con dimensioni e SHA-256 |
 | 2026-10-03 | Completamento acquisizione Children & Family 2025 | Verificate tutte le 23 entry residue; acquisiti 33 PDF per 12 giochi e registrati gli esiti negativi, ristretti o parziali; totale contest 14 giochi e 38 PDF | secondo manifest; 26 osservazioni host; hash e database verificati |
+
+| 2026-10-03 | Libreria locale nell’app | Aggiunta consultazione sicura di acquisizioni e file, filtri e schede gioco; 41 file presenti, nessuna modifica operativa | app; task Libreria; 22 test backend e 28 frontend |
 
 ## Protocollo di manutenzione automatica
 

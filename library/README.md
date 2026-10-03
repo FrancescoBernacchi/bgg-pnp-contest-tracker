@@ -1,5 +1,7 @@
 # Libreria locale
 
+Dal 2026-10-03 i metadati sono consultabili nella vista **Libreria** dell'app e in **Materiali locali** nelle schede gioco. Il server verifica la presenza dei file registrati senza servirli, aprirli o modificarli e senza esporre percorsi assoluti. Un record senza file presente resta visibile come mancante; non prova l'indisponibilità remota. Percorsi non confinati alla radice autorizzata sono rifiutati. Per integrità del contenuto usare i verificatori dei lotti: la vista non ricalcola gli hash.
+
 Contiene i materiali originali dei giochi selezionati. Il contenuto è escluso da Git, non deve essere redistribuito e va organizzato senza sovrascrivere versioni precedenti. Ogni file deve essere descritto nel manifest versionabile con provenienza, data di acquisizione, dimensione e SHA-256.
 
 Il task ricorrente di monitoraggio dei contest non popola questa cartella e non apre, analizza o scarica materiali delle entry. Qualunque acquisizione futura richiede un task standard `Acquisizione materiali del contest` dedicato a un solo contest, una selezione esplicita e le verifiche di liceità previste dal progetto. Non sono ammessi download trasversali a più contest o a un'intera annualità nello stesso task.

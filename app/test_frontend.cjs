@@ -171,3 +171,51 @@ test('titoli e categorie non fidati non eseguono markup; entry non collegata esp
     assert.match(html,/Entry non collegata/);assert.ok(!html.includes('href="javascript:'));
   }
 });
+
+test('libreria: filtri combinabili e ordinamenti deterministici',()=>{
+  run(`libraryData={files:[
+    {id:1,game_id:1,canonical_title:'Alpha',original_filename:'z.pdf',acquired_at:'2026-01-01',byte_size:30,source_key:'bgg',contests:[{id:2,year:2025}],language_code:'en',media_type:'application/pdf',acquisition_status:'acquired',local_status:'present'},
+    {id:2,game_id:1,canonical_title:'Alpha',original_filename:'a.pdf',acquired_at:'2026-02-01',byte_size:20,source_key:'bgg',contests:[{id:2,year:2025}],language_code:'en',media_type:'application/pdf',acquisition_status:'acquired',local_status:'missing'},
+    {id:3,game_id:2,canonical_title:'Beta',original_filename:'b.pdf',acquired_at:'2026-03-01',byte_size:10,source_key:'kanare',contests:[],language_code:'ja',media_type:'text/plain',acquisition_status:'failed',local_status:'missing'}]};`);
+  run(`Object.assign(libraryFilters,{query:'Alpha',game:'1',contest:'2',source:'bgg',year:'2025',language:'en',type:'application/pdf',status:'acquired',presence:'present'});`);
+  assert.equal(run('matchingLibrary().map(x=>x.id).join()'),'1');
+  run(`Object.keys(libraryFilters).forEach(k=>libraryFilters[k]='');`);
+  for(const [sort,expected] of [['title','1,2,3'],['date','3,2,1'],['size','1,2,3'],['name','2,3,1']]) {
+    run(`libraryFilters.sort=${JSON.stringify(sort)}`);
+    assert.equal(run('matchingLibrary().map(x=>x.id).join()'),expected);
+  }
+});
+test('libreria: versioni, hash e testo non fidato sono visibili e sicuri',()=>{
+  const f={id:1,game_id:1,acquisition_id:7,canonical_title:'<script>evil</script>',source_name:'Kanare',contests:[],original_filename:'<img src=x>.pdf',acquired_at:'2026-01-01',media_type:'application/pdf',language_code:'en',version_raw:'2.1',byte_size:1024,sha256:'abc',usage_conditions:'Uso <personale>',local_status:'missing',local_present:false,remote_status:'available',acquisition_status:'acquired',source_url:'javascript:evil()'};
+  const html=run(`localFileRows([${JSON.stringify(f)}])`);
+  for(const token of ['&lt;script&gt;','&lt;img','2.1','abc','Uso &lt;personale&gt;','mancante localmente','completezza non determinabile'])assert.ok(html.includes(token),token);
+  assert.ok(!html.includes('<script>'));assert.ok(!html.includes('href="javascript:'));
+  const grouped=run(`localMaterials({acquisitions:[{id:7,acquired_at:'2026-01-01',files:[${JSON.stringify(f)}]},{id:8,acquired_at:'2026-02-01',files:[]}]})`);
+  assert.ok(grouped.includes('Acquisizione #7'));assert.ok(grouped.includes('Acquisizione #8'));
+});
+test('libreria: stati distinti e zero non confuso con dati assenti',()=>{
+  for(const key of ['present','missing','partial','unavailable','not_observable','access_restricted','excluded','none_declared','unknown'])assert.ok(run(`libraryLabel('${key}')`).length);
+  assert.equal(run('bytes(0)'),'0 B');assert.equal(run('bytes(null)'),'Non registrata');
+  assert.match(run('localMaterials({acquisitions:[]})'),/Nessuna acquisizione registrata/);
+});
+
+test('libreria: rendering, filtri da tastiera e paginazione a 50 file',()=>{
+  run(`globalThis.libraryNodes={};document.querySelector=selector=>libraryNodes[selector]||(libraryNodes[selector]={innerHTML:'',value:''});
+    const template={game_id:1,canonical_title:'Game',source_name:'BGG',source_key:'bgg',contests:[{id:2,name:'Contest',year:2025}],original_filename:'file.pdf',acquired_at:'2026-01-01',media_type:'application/pdf',language_code:'en',byte_size:1,local_status:'present',local_present:true,acquisition_status:'acquired',batch_status:'unknown'};
+    const files=Array.from({length:51},(_,i)=>({...template,id:i+1,acquisition_id:1}));
+    Object.assign(libraryFilters,{query:'',game:'',contest:'',source:'',year:'',language:'',type:'',status:'',presence:'',sort:'title',page:1});
+    renderLibrary({files,acquisitions:[],library_available:false,summary:{games:1,acquisitions:1,files:51,bytes:51,present:51,missing:0,unverifiable:0,contests:[],sources:[],languages:[],types:[]}});`);
+  assert.match(run(`libraryNodes['#main'].innerHTML`),/Libreria locale assente/);
+  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/file.pdf/g)||[]).length`),50);
+  run(`libraryNodes['#library-next'].onclick()`);
+  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/file.pdf/g)||[]).length`),1);
+  run(`libraryNodes['#library-query'].value='non esiste';libraryNodes['#library-query'].oninput()`);
+  assert.match(run(`libraryNodes['#library-results'].innerHTML`),/0 file corrispondenti/);
+  assert.equal(run('libraryFilters.page'),1);
+});
+
+test('scheda gioco: materiali locali collegati senza fondere le acquisizioni',()=>{
+  run(`renderGameDetail({game:{id:1,canonical_title:'Test'},source_records:[],products:[],resources:[],implementations:[],relationships:[],entries:[],names:[],local_materials:{acquisitions:[{id:21,acquired_at:'2026-01-01',files:[]},{id:22,acquired_at:'2026-02-01',files:[]}]}})`);
+  const html=run(`libraryNodes['#main'].innerHTML`);
+  assert.match(html,/Materiali locali/);assert.match(html,/Acquisizione #21/);assert.match(html,/Acquisizione #22/);
+});

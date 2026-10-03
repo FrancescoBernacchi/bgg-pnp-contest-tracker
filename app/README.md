@@ -1,5 +1,17 @@
 # Applicazione locale
 
+## Libreria dei materiali acquisiti
+
+La voce **Libreria** consulta `acquisitions` e `acquired_files`: riepiloga giochi, acquisizioni, file, byte registrati, distribuzioni per contest/fonte/lingua/MIME e presenza locale. Offre filtri combinabili per testo, gioco, contest, fonte, anno del contest, lingua, MIME, stato e presenza; ordinamenti per titolo, data recente, dimensione decrescente e nome, con 50 file per pagina. Le schede **Giochi** includono **Materiali locali**, raggruppati per ID di acquisizione e data, mantenendo versioni e fonti separate. Le acquisizioni senza file hanno una sezione distinta.
+
+Il server controlla soltanto l'esistenza dei percorsi relativi registrati sotto la radice `library/` del progetto. Rifiuta assoluti Windows/POSIX, UNC, drive relativi, traversal, stream NTFS e link risolti all'esterno; restituisce `present`, `missing`, `invalid_path` o `unverifiable`, senza restituire il percorso. La verifica non legge il contenuto, non ricalcola hash e non certifica integrità o completezza: SHA-256 e dimensione sono i metadati registrati. Rientrare nella vista o usare **Rileggi database** ripete la verifica. Un file mancante non cambia lo stato remoto registrato.
+
+L'endpoint `GET /api/library` e `local_materials` in `GET /api/games/<id>` sono offline e in sola lettura. Database assente/incompatibile: errore 503 senza creazione; libreria assente: record consultabili e file segnalati mancanti; percorso non valido: stato separato. I binari, le anteprime e l'apertura locale sono esclusi. Un URL HTTPS senza credenziali si apre soltanto su click esplicito.
+
+La completezza dell'acquisizione resta **non determinabile**: lo schema non certifica il perimetro necessario o selezionato. Il lotto è **parziale** soltanto con successi e fallimenti espliciti fra i file registrati. Indisponibilità, non osservabilità e restrizioni remote restano distinte dalla presenza locale. Nessuna acquisizione non equivale a nessuna risorsa dichiarata; esclusioni e assenza dichiarata restano nei metadati di scansione/risorsa delle viste esistenti e nei manifest, senza convertirli in acquisizioni fittizie. La provenienza contest viene attribuita attraverso le menzioni della risorsa BGG, non attraverso qualsiasi contest dello stesso gioco. Un'attribuzione non ricostruibile appare come fonte non determinabile.
+
+La paginazione limita le righe nel DOM; i metadati vengono ancora caricati integralmente, come nelle viste esistenti. Per raccolte molto grandi potrà servire una futura paginazione lato server.
+
 Interfaccia locale: Python 3.12+ e sola libreria standard, HTML/CSS/JavaScript senza compilazione o pacchetti da installare. Il server è vincolato a `127.0.0.1`; il database è aperto con URI `mode=ro`, `PRAGMA query_only=ON` e una transazione di lettura per richiesta.
 
 ## Avvio dell'applicazione
