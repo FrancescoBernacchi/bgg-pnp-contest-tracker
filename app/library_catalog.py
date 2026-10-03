@@ -2,7 +2,7 @@
 from collections import Counter
 from pathlib import Path, PureWindowsPath
 from urllib.parse import urlsplit
-from pdf_files import preview_status
+from material_files import material_status, KINDS
 
 
 def local_presence(root, relative):
@@ -34,6 +34,7 @@ def safe_url(value):
 
 
 def library_catalog(db, root, game_id=None):
+    has_archives = db.execute("SELECT 1 FROM sqlite_master WHERE name='archive_contents'").fetchone() is not None
     acquisitions = [dict(r) for r in db.execute('''SELECT a.id,a.game_id,a.acquired_at,
         a.game_status_at_acquisition,g.canonical_title FROM acquisitions a
         JOIN games g ON g.id=a.game_id ORDER BY g.canonical_title COLLATE NOCASE,a.acquired_at,a.id''')
@@ -56,8 +57,15 @@ def library_catalog(db, root, game_id=None):
             file = dict(row)
             relative = file.pop('relative_path')
             file['local_status'] = local_presence(root, relative)
-            file['viewer_status'] = preview_status(root, relative, file['media_type'], file['acquisition_status'])
-            file['viewer_kind'] = 'pdf' if file['viewer_status'] == 'ready' else None
+            file['viewer_status'] = material_status(root, relative, file['media_type'], file['acquisition_status'])
+            file['viewer_kind'] = KINDS.get(file['media_type']) if file['viewer_status'] == 'ready' else None
+            file['archive_origin'] = None
+            file['extraction'] = None
+            if has_archives:
+                origin = db.execute('SELECT archive_file_id,archive_sha256,member_path,extracted_at FROM archive_contents WHERE file_id=?', (file['id'],)).fetchone()
+                file['archive_origin'] = dict(origin) if origin else None
+                extraction = db.execute('SELECT status,message,checked_at FROM archive_extractions WHERE archive_file_id=? AND archive_sha256=?', (file['id'], file['sha256'])).fetchone()
+                file['extraction'] = dict(extraction) if extraction else None
             file['local_present'] = file['local_status'] == 'present'
             file['source_url'] = safe_url(file['source_url'])
             file['contests'] = []

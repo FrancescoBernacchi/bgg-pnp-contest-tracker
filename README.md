@@ -66,3 +66,5 @@ Il risultato locale è `outputs/contest-monitoring-dashboard.md`. Il generatore 
 Il repository remoto privato è `FrancescoBernacchi/bgg-pnp-contest-tracker`; il branch principale è `main`. Schema, migrazioni, cataloghi e documentazione sono versionati. Database operativo, output rigenerabili e materiali di terzi restano locali.
 
 Codex deve accompagnare le operazioni Git spiegando quando sono utili e perché. La procedura condivisa è descritta in `GIT_GUIDE.md`.
+
+APP-005 estende la Libreria con raggruppamento per gioco, lettori PDF/PNG/DOCX e contenuti ZIP estratti offline con hash e provenienza. Limiti e istruzioni aggiornate in `app/README.md`; esiti nel task `2026-10-03 - Libreria per gioco e visualizzatori APP-005`.

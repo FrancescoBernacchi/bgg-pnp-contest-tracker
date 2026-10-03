@@ -7,6 +7,24 @@ const path = require('node:path');
 const context = vm.createContext({URL,document:{querySelector:()=>({})},window:{addEventListener:()=>{}},fetch:()=>new Promise(()=>{})});
 vm.runInContext(fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8'),context);
 const run = text => vm.runInContext(text,context);
+
+test('APP-005: raggruppa acquisizioni e versioni senza perdere file filtrati',()=>{
+  const files=[{id:1,game_id:7,canonical_title:'A',byte_size:10,acquired_at:'2026-10-01',original_filename:'one',acquisition_id:1},{id:2,game_id:7,canonical_title:'A',byte_size:20,acquired_at:'2026-10-03',original_filename:'two',acquisition_id:2},{id:3,game_id:8,canonical_title:'B',byte_size:25,acquired_at:'2026-10-02',original_filename:'three',acquisition_id:3}];
+  run("libraryFilters.sort='size'");
+  assert.deepEqual(JSON.parse(run(`JSON.stringify(groupedLibrary(${JSON.stringify(files)}).map(g=>[g.id,g.files.map(f=>f.id)]))`)),[[7,[1,2]],[8,[3]]]);
+  run("libraryFilters.sort='date'");
+  assert.equal(run(`groupedLibrary(${JSON.stringify(files)})[0].id`),7);
+  assert.equal(run(`groupedLibrary(${JSON.stringify(files.slice(1))})[0].files.length`),1);
+});
+
+test('APP-005: icone distinte e dettagli non fidati accessibili senza markup',()=>{
+  for(const kind of ['pdf','png','docx']){
+    const file={id:9,viewer_kind:kind,viewer_status:'ready',original_filename:'<img onerror=evil>',byte_size:0,source_name:'Fonte',acquisition_id:4};
+    const html=run(`libraryFileIcon(${JSON.stringify(file)})`);
+    assert.match(html,new RegExp(`href="#${kind}/9/library"`));
+    assert.match(html,/aria-label="Apri/);assert.ok(!html.includes('<img onerror'));assert.match(html,/>0 B<\/span>/);
+  }
+});
 test('testo non fidato reso come testo, mai markup',()=>{
   assert.equal(run('esc(`<img src=x onerror="alert(1)">`)'),'&lt;img src=x onerror=&quot;alert(1)&quot;&gt;');
 });
@@ -199,16 +217,17 @@ test('libreria: stati distinti e zero non confuso con dati assenti',()=>{
   assert.match(run('localMaterials({acquisitions:[]})'),/Nessuna acquisizione registrata/);
 });
 
-test('libreria: rendering, filtri da tastiera e paginazione a 50 file',()=>{
+test('libreria: rendering, filtri da tastiera e paginazione a 50 giochi',()=>{
   run(`globalThis.libraryNodes={};document.querySelector=selector=>libraryNodes[selector]||(libraryNodes[selector]={innerHTML:'',value:''});
     const template={game_id:1,canonical_title:'Game',source_name:'BGG',source_key:'bgg',contests:[{id:2,name:'Contest',year:2025}],original_filename:'file.pdf',acquired_at:'2026-01-01',media_type:'application/pdf',language_code:'en',byte_size:1,local_status:'present',local_present:true,acquisition_status:'acquired',batch_status:'unknown'};
-    const files=Array.from({length:51},(_,i)=>({...template,id:i+1,acquisition_id:1}));
+    document.querySelectorAll=()=>[];
+    const files=Array.from({length:51},(_,i)=>({...template,id:i+1,game_id:i+1,canonical_title:'Game '+String(i).padStart(2,'0'),acquisition_id:1}));
     Object.assign(libraryFilters,{query:'',game:'',contest:'',source:'',year:'',language:'',type:'',status:'',presence:'',sort:'title',page:1});
     renderLibrary({files,acquisitions:[],library_available:false,summary:{games:1,acquisitions:1,files:51,bytes:51,present:51,missing:0,unverifiable:0,contests:[],sources:[],languages:[],types:[]}});`);
   assert.match(run(`libraryNodes['#main'].innerHTML`),/Libreria locale assente/);
-  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/file.pdf/g)||[]).length`),50);
+  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/id="file-details-/g)||[]).length`),50);
   run(`libraryNodes['#library-next'].onclick()`);
-  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/file.pdf/g)||[]).length`),1);
+  assert.equal(run(`(libraryNodes['#library-results'].innerHTML.match(/id="file-details-/g)||[]).length`),1);
   run(`libraryNodes['#library-query'].value='non esiste';libraryNodes['#library-query'].oninput()`);
   assert.match(run(`libraryNodes['#library-results'].innerHTML`),/0 file corrispondenti/);
   assert.equal(run('libraryFilters.page'),1);

@@ -97,7 +97,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-005 — Libreria per gioco, visualizzatori PNG/DOCX e contenuti ZIP
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa` il 2026-10-03.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** Libreria → elenco materiali e visualizzatori.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-7eb969c7-de44-4b02-b403-ff0bb0097c9f.png`; richiesta dell'utente.
@@ -108,11 +108,31 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Punti da definire nel task evolutivo:** semantica dei filtri e della paginazione per gioco; gestione delle diverse acquisizioni/versioni dello stesso gioco; presentazione dei formati non visualizzabili e degli archivi non estraibili; modalità di lettura DOCX e gestione dei contenuti ZIP annidati.
 - **Fuori scope del registro:** raggruppamento effettivo, implementazione dei visualizzatori, estrazione ZIP, registrazione dei contenuti o migrazioni.
 - **Criteri per la chiusura:** task evolutivo collegato; una riga per gioco senza perdita dei file/versioni/provenienze; icone con dimensioni corrette e apertura del file corrispondente; lettura PDF, PNG e DOCX verificata; estrazione ZIP verificata con originali preservati, hash e tracciabilità dei contenuti; filtri e paginazione coerenti; verifica tastiera e schermi stretti. L'estrazione deve impedire percorsi esterni alla destinazione, sovrascritture e decompressioni senza limiti.
-- **Task evolutivo:** da assegnare.
-- **Relazioni:** coordinare il layout dei visualizzatori con `APP-002` senza presumere che sia già implementata.
+- **Task evolutivo:** `tasks/2026-10-03 - Libreria per gioco e visualizzatori APP-005/TASK.md`.
+- **Verifica:** 36 test backend e 43 frontend; Edge a 1400/390 px su fixture e materiali reali, tastiera, filtri e paginazione per gioco. Estratti 11 contenuti da due ZIP, riesecuzione senza duplicati, 187 originali invariati e 198 hash verificati. DOCX semantico senza impaginazione/immagini Word; ZIP annidati non ricorsivi. Evidenze in `VERIFICATION.json` del task.
+- **Relazioni:** layout coordinato con `APP-002`, verificata conclusa prima dell’incremento.
 - **Prompt task evolutivo:**
 
   > Implementa l'evoluzione `APP-005` descritta nel registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`. Nella Libreria sostituisci l'elenco per file con un elenco per gioco: in una colonna raggruppa tutti i file del gioco, ciascuno rappresentato da un'icona cliccabile e dalla sola dimensione come testo visibile ordinario. Mantieni nomi e dettagli consultabili e accessibili, distinguendo file, acquisizioni e versioni. Il clic deve aprire il visualizzatore del file corrispondente; conserva il lettore PDF e aggiungi visualizzatori interni per PNG e DOCX. Scompatta i file ZIP acquisiti nei loro singoli contenuti, associandoli al gioco e rendendoli consultabili per i formati supportati. Preserva gli archivi originali, registra provenienza, relazione archivio–contenuto e hash dei file estratti, senza sovrascrivere versioni esistenti. Definisci filtri, conteggi e paginazione coerenti con il raggruppamento per gioco e una gestione esplicita dei formati non supportati o archivi non estraibili. L'estrazione deve essere confinata e limitata; i visualizzatori devono operare sui file registrati e non eseguire contenuti attivi. Consulta i vincoli architetturali del progetto e coordina il layout con `APP-002`. Verifica raggruppamento, filtri, apertura PDF/PNG/DOCX, estrazione ZIP, tracciabilità, tastiera e schermi stretti. Documenta scelte, verifiche e limiti, aggiorna il cruscotto quando richiesto dal suo protocollo e collega questo task alla segnalazione con il relativo stato ed evidenza di verifica.
+
+### APP-006 — Icone per contenuto, descrizioni e sigle delle varianti in Libreria
+
+- **Stato:** `segnalata`.
+- **Data segnalazione:** 2026-10-03.
+- **Area:** Libreria → materiali raggruppati per gioco.
+- **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-38b66a9a-600e-4783-a248-1702fd66dd85.png`; richiesta dell'utente.
+- **Contesto osservato:** le icone distinguono insufficientemente il contenuto dei file; la sola dimensione non permette di riconoscere materiali e varianti dello stesso gioco.
+- **Comportamento atteso — contenuto:** assegnare icone significative alla funzione ludica/editoriale del materiale, indipendentemente dal formato tecnico. Categorie iniziali richieste: `rule` (regolamento), `cards` (carte), `board` (tabellone), `player board` (plancia giocatore), `altro`. Verificare sul corpus locale se emergono ulteriori categorie standard ricorrenti, prima di consolidarle; gestire file con più tipi di contenuto e casi non determinabili.
+- **Comportamento atteso — descrizione:** accanto all'icona e alla dimensione mostrare una breve descrizione utile a identificare il materiale, mantenendo compatta la vista per gioco.
+- **Comportamento atteso — varianti:** introdurre una convenzione sintetica ma parlante per il nome visualizzato, con flag/sigle per lingua, risoluzione/definizione/qualità e colore o bianco e nero. Distinguere le varianti dello stesso materiale senza confondere tali attributi con versioni editoriali o formato MIME.
+- **Proposta da valutare nel task evolutivo:** nome visualizzato `<descrizione> [<lingua> · <qualità> · <colore>]`, per esempio `Carte [EN · 300dpi · COL]` oppure `Regole [IT · B/N]`. Le sigle sono illustrative: definire una legenda e usare soltanto attributi supportati da evidenza. Non dedurre qualità dalla dimensione del file; mantenere separati DPI, dimensioni in pixel e qualità dichiarata. Omettere attributi ignoti o renderne esplicita l'incertezza.
+- **Preservazione:** conservare nomi originali, file, hash, provenienza e versioni; la convenzione riguarda il nome di presentazione nell'app, senza rinominare gli originali acquisiti. Separare classificazioni verificate e inferenze, registrando la base della classificazione.
+- **Relazioni:** incremento successivo ad `APP-005`, già registrata come chiusa. La richiesta di breve descrizione estende deliberatamente il precedente requisito di sola dimensione visibile; la specifica storica di `APP-005` resta preservata.
+- **Criteri per la chiusura:** task evolutivo collegato; categorie e legenda documentate dopo verifica del corpus; icone semanticamente distinte e accessibili; descrizioni compatte; varianti di lingua/qualità/colore distinguibili; gestione esplicita dei materiali misti e degli attributi ignoti; apertura dei visualizzatori, filtri e layout stretto verificati; originali e hash preservati.
+- **Task evolutivo:** da assegnare.
+- **Prompt task evolutivo:**
+
+  > Implementa l'evoluzione `APP-006` del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`, come incremento della Libreria per gioco introdotta da `APP-005`. Differenzia le icone in base al contenuto, indipendentemente dal formato del file: categorie iniziali rule/regolamento, cards/carte, board/tabellone, player board/plancia giocatore e altro. Esamina i materiali e i metadati locali per verificare se esistono altre categorie standard ricorrenti; documenta la tassonomia adottata e gestisci contenuti misti o non determinabili. Accanto a ciascuna icona mostra dimensione e breve descrizione, mantenendo il layout compatto e l'apertura del visualizzatore. Definisci e implementa una convenzione sintetica e comprensibile per i nomi visualizzati, con sigle per lingua, risoluzione/definizione/qualità e colore o bianco e nero, corredate da legenda. Valuta una forma come “Carte [EN · 300dpi · COL]”, senza trattare questo esempio come tassonomia definitiva. Usa attributi documentati, separa inferenze e valori verificati, non dedurre qualità dalla dimensione e distingui DPI, dimensioni in pixel e qualità dichiarata. Preserva nomi e file originali, hash, provenienza e versioni; applica la convenzione alla presentazione nell'app. Verifica categorie rappresentative, varianti dello stesso materiale, attributi ignoti, accessibilità da tastiera, visualizzatori e schermi stretti. Documenta scelte, verifiche e limiti, aggiorna la documentazione e il cruscotto secondo i protocolli del progetto e collega il task a `APP-006` aggiornandone lo stato con evidenze.
 
 ## Registro cambiamenti
 
@@ -128,3 +148,6 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - 2026-10-03: chiusa APP-002 nel task Layout PDF per orientamento dopo verifiche automatiche e screenshot; originali e database operativo invariati.
 
 - 2026-10-03: chiusa APP-004 nel task Righe compatte avanzamento BGG; dati invariati.
+
+- 2026-10-03: APP-005 implementata e chiusa nel task dedicato, con limiti DOCX/ZIP documentati e verifiche registrate.
+- 2026-10-03: inserita `APP-006` con prompt evolutivo e proposta di convenzione da valutare; nessuna implementazione eseguita in questo registro.

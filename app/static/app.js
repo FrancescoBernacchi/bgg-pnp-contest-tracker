@@ -53,21 +53,37 @@ function matchingLibrary() {
   return files.sort((a,b)=>(field==='byte_size'?b[field]-a[field]:field==='acquired_at'?String(b[field]).localeCompare(String(a[field])):String(a[field]||'').localeCompare(String(b[field]||''),'it'))||a.id-b.id);
 }
 function viewerLink(file, origin='library') {
-  if(file.viewer_kind==='pdf'&&file.viewer_status==='ready')return `<a class="pdf-open" href="#pdf/${file.id}/${origin}">Visualizza PDF</a>`;
-  const messages={unsupported:'Formato non ancora supportato',too_large:'PDF oltre il limite di 128 MiB',not_pdf:'Contenuto non PDF',corrupt:'PDF incompleto o danneggiato',invalid_path:'Percorso rifiutato',missing:'File mancante'};
+  if(['pdf','png','docx'].includes(file.viewer_kind)&&file.viewer_status==='ready')return `<a class="pdf-open" href="#${file.viewer_kind}/${file.id}/${origin}">Visualizza ${esc(file.viewer_kind.toUpperCase())}</a>`;
+  const messages={unsupported:'Formato non visualizzabile',too_large:'File oltre il limite di visualizzazione',not_pdf:'Contenuto non PDF',corrupt:'File incompleto o danneggiato',invalid_path:'Percorso rifiutato',missing:'File mancante'};
   return `<small>${esc(messages[file.viewer_status]||'Visualizzazione non disponibile')}</small>`;
 }
+function groupedLibrary(files) {
+  const games=new Map();
+  for(const file of files){if(!games.has(file.game_id))games.set(file.game_id,{id:file.game_id,title:file.canonical_title,files:[]});games.get(file.game_id).files.push(file);}
+  const groups=[...games.values()],sort=libraryFilters.sort;
+  return groups.sort((a,b)=>(sort==='size'?b.files.reduce((n,f)=>n+f.byte_size,0)-a.files.reduce((n,f)=>n+f.byte_size,0):sort==='date'?b.files.map(f=>f.acquired_at).sort().at(-1).localeCompare(a.files.map(f=>f.acquired_at).sort().at(-1)):sort==='name'?a.files[0].original_filename.localeCompare(b.files[0].original_filename,'it'):a.title.localeCompare(b.title,'it'))||a.id-b.id);
+}
+function libraryFileIcon(file) {
+  const title=`${file.original_filename} · File #${file.id}${file.archive_origin?' · '+file.archive_origin.member_path:''} · ${file.media_type||'Formato non registrato'} · ${bytes(file.byte_size)} · Versione ${file.version_raw||'non dichiarata'} · Acquisizione #${file.acquisition_id} · ${file.source_name}`;
+  const icon=file.viewer_kind==='png'?'▧':file.viewer_kind==='docx'?'▤':file.media_type==='application/pdf'?'▥':file.original_filename.toLowerCase().endsWith('.zip')?'▣':'◇';
+  const ready=['pdf','png','docx'].includes(file.viewer_kind)&&file.viewer_status==='ready';
+  return `<div class="library-file"><div class="library-file-main">${ready?`<a class="file-icon" href="#${file.viewer_kind}/${file.id}/library" title="${esc(title)}" aria-label="Apri ${esc(title)}"><span aria-hidden="true">${icon}</span></a>`:`<button class="file-icon unavailable" type="button" data-file-details="${file.id}" title="${esc(title)}; visualizzazione non disponibile" aria-label="Dettagli ${esc(title)}; visualizzazione non disponibile"><span aria-hidden="true">${icon}</span></button>`}<span>${esc(bytes(file.byte_size))}</span></div><details id="file-details-${file.id}"><summary aria-label="Dettagli ${esc(title)}">Dettagli</summary><p>${esc(file.original_filename)} · File #${file.id}</p><p>${esc(file.media_type||'Formato non registrato')} · Lingua: ${esc(file.language_code||'non registrata')} · Versione: ${esc(file.version_raw||'non dichiarata')}</p><p>Acquisizione #${file.acquisition_id} · ${esc(day(file.acquired_at))} · ${esc(libraryLabel(file.acquisition_status))} · ${esc(libraryLabel(file.local_status))}</p><p>Lotto: ${esc(libraryLabel(file.batch_status))} · Remoto: ${esc(libraryLabel(file.remote_status))}</p><p>${esc(file.source_name)}${file.contests?.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')||''} ${file.source_url?externalLink(file.source_url,'Fonte'):''}</p><p>${esc(file.usage_conditions||'Condizioni non registrate')}</p><p class="file-hash">SHA-256: ${esc(file.sha256)}</p>${file.archive_origin?`<p>Archivio #${file.archive_origin.archive_file_id} · Membro: ${esc(file.archive_origin.member_path)} · Estratto: ${esc(day(file.archive_origin.extracted_at))}</p><p class="file-hash">Hash archivio: ${esc(file.archive_origin.archive_sha256)}</p>`:''}${file.extraction?`<p>Estrazione: ${esc(file.extraction.status)} · ${esc(file.extraction.message)}</p>`:file.original_filename.toLowerCase().endsWith('.zip')?'<p>Archivio non ancora estratto; elaborazione offline richiesta.</p>':''}${ready?'':viewerLink(file)}</details></div>`;
+}
+function libraryGameRows(groups) {
+  return table(['Gioco','Materiali corrispondenti'],groups.map(g=>`<tr><td><a href="#game/${g.id}">${esc(g.title)}</a><small>${g.files.length} file corrispondenti</small></td><td><div class="library-files">${g.files.map(libraryFileIcon).join('')}</div></td></tr>`));
+}
 function localFileRows(files,origin='library') {
-  return table(['Gioco / provenienza','File / versione','Acquisizione / presenza','Metadati'],files.map(x=>`<tr><td><a href="#game/${x.game_id}">${esc(x.canonical_title)}</a><small>${esc(x.source_name)}${x.contests.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')}</small></td><td>${esc(x.original_filename)}${viewerLink(x,origin)}<small>MIME: ${esc(x.media_type||'Non registrato')} · Lingua: ${esc(x.language_code||'Non registrata')}</small><small>Versione: ${esc(x.version_raw||'Non dichiarata')} · ${esc(bytes(x.byte_size))}</small></td><td>${esc(day(x.acquired_at))}<small>Acquisizione #${x.acquisition_id}: ${esc(libraryLabel(x.acquisition_status))}</small><span class="badge ${x.local_present?'':'warn'}">${esc(libraryLabel(x.local_status))}</span><small>Lotto: ${esc(libraryLabel(x.batch_status||'unknown'))}</small><small>Remoto: ${esc(libraryLabel(x.remote_status))}</small></td><td><details><summary>Hash, fonte e condizioni</summary><p class="file-hash">SHA-256: ${esc(x.sha256||'Non registrato')}</p><p>${x.source_url?externalLink(x.source_url,'Risorsa di provenienza'):'URL non registrato o non sicuro'}</p><p>Condizioni d’uso: ${esc(x.usage_conditions||'Non registrate')}</p></details></td></tr>`));
+  return table(['Gioco / provenienza','File / versione','Acquisizione / presenza','Metadati'],files.map(x=>`<tr><td><a href="#game/${x.game_id}">${esc(x.canonical_title)}</a><small>${esc(x.source_name)}${x.contests.map(c=>` · ${esc(c.name)} (${esc(c.year)})`).join('')}</small></td><td>${esc(x.original_filename)}${viewerLink(x,origin)}<small>MIME: ${esc(x.media_type||'Non registrato')} · Lingua: ${esc(x.language_code||'Non registrata')}</small><small>Versione: ${esc(x.version_raw||'Non dichiarata')} · ${esc(bytes(x.byte_size))}</small></td><td>${esc(day(x.acquired_at))}<small>Acquisizione #${x.acquisition_id}: ${esc(libraryLabel(x.acquisition_status))}</small><span class="badge ${x.local_present?'':'warn'}">${esc(libraryLabel(x.local_status))}</span><small>Lotto: ${esc(libraryLabel(x.batch_status||'unknown'))}</small><small>Remoto: ${esc(libraryLabel(x.remote_status))}</small></td><td><details><summary>Hash, fonte e condizioni</summary><p class="file-hash">SHA-256: ${esc(x.sha256||'Non registrato')}</p>${x.archive_origin?`<p>Archivio #${x.archive_origin.archive_file_id} · Membro: ${esc(x.archive_origin.member_path)} · File #${x.id}</p>`:''}<p>${x.source_url?externalLink(x.source_url,'Risorsa di provenienza'):'URL non registrato o non sicuro'}</p><p>Condizioni d’uso: ${esc(x.usage_conditions||'Non registrate')}</p></details></td></tr>`));
 }
 function localMaterials(library) {
   if(!library)return '<h2>Materiali locali</h2><p>Dati non disponibili.</p>';
   return '<h2>Materiali locali</h2><p class="subtitle">Acquisizioni distinte per ID e data. Completezza non determinabile dal solo numero di file; lo stato remoto è indipendente dalla presenza locale.</p>'+(library.acquisitions.length?library.acquisitions.map(a=>`<details><summary>Acquisizione #${a.id} · ${esc(day(a.acquired_at))} · ${a.files.length} file · ${esc(libraryLabel(a.status||'unknown'))} · completezza non determinabile</summary>${localFileRows(a.files,`game/${a.game_id}`)}</details>`).join(''):'<div class="empty">Nessuna acquisizione registrata per questo gioco.</div>');
 }
 function libraryResults() {
-  const files=matchingLibrary(),pages=Math.max(1,Math.ceil(files.length/50));
+  const files=matchingLibrary(),groups=groupedLibrary(files),pages=Math.max(1,Math.ceil(groups.length/50));
   libraryFilters.page=Math.min(libraryFilters.page,pages);
-  $('#library-results').innerHTML=`<p>${files.length} file corrispondenti · pagina ${libraryFilters.page} di ${pages}</p>`+localFileRows(files.slice((libraryFilters.page-1)*50,libraryFilters.page*50))+`<div class="filters"><button id="library-prev" ${libraryFilters.page===1?'disabled':''}>Precedente</button><button id="library-next" ${libraryFilters.page===pages?'disabled':''}>Successiva</button></div>`;
+  $('#library-results').innerHTML=`<p>${groups.length} giochi · ${files.length} file corrispondenti · pagina ${libraryFilters.page} di ${pages}</p><p class="subtitle">Ogni gioco mostra soltanto i file corrispondenti ai filtri. 50 giochi per pagina; dimensione = somma dei file filtrati, data = acquisizione più recente, nome = primo file nell'ordine alfabetico.</p>`+libraryGameRows(groups.slice((libraryFilters.page-1)*50,libraryFilters.page*50))+`<div class="filters"><button id="library-prev" ${libraryFilters.page===1?'disabled':''}>Precedente</button><button id="library-next" ${libraryFilters.page===pages?'disabled':''}>Successiva</button></div>`;
+  document.querySelectorAll('[data-file-details]').forEach(button=>button.onclick=()=>{const details=document.getElementById(`file-details-${button.dataset.fileDetails}`);details.open=true;details.querySelector('summary').focus();});
   $('#library-prev').onclick=()=>{libraryFilters.page--;libraryResults();};
   $('#library-next').onclick=()=>{libraryFilters.page++;libraryResults();};
 }
@@ -400,17 +416,27 @@ function renderPdf(hash) {
   activePdfReader.open(id);
 }
 
+function renderMaterial(hash) {
+  const [kind,id,origin,game]=hash.split('/'),back=origin==='game'?`game/${game}`:'library';
+  $('#main').innerHTML=`<a class="back" href="#${back}">← ${back==='library'?'Torna alla Libreria':'Torna al gioco'}</a><section id="material-reader" class="material-reader" aria-label="Lettore ${kind.toUpperCase()}"><div class="material-controls"><h2 data-material-title>Documento</h2><p data-material-meta class="subtitle"></p><p data-material-status role="status" aria-live="polite">Caricamento…</p>${kind==='png'?'<label class="field">Zoom<select data-material-zoom><option value="fit">Adatta alla finestra</option><option value="actual">Dimensione originale</option></select></label>':'<p class="subtitle">Lettura di testo e tabelle. Impaginazione, immagini, note, intestazioni e revisioni Word non riprodotte.</p>'}</div><div class="material-surface" data-material-content tabindex="0" role="region" aria-label="Contenuto documento"></div></section>`;
+  activePdfReader=new window.PnPViewers.material($('#material-reader'));
+  activePdfReader.open(id,kind);
+}
+
 async function route() {
   if(!data) return;
   activePdfReader?.destroy();activePdfReader=null;
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'games';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('pdf/')&&a.dataset.nav==='library')||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':(hash==='library'||hash.startsWith('pdf/'))?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(/^(pdf|png|docx)\//.test(hash)&&a.dataset.nav==='library')||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':(hash==='library'||/^(pdf|png|docx)\//.test(hash))?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
   try {
     if(hash==='games') renderGames();
     else if(/^pdf\/[1-9]\d*(?:\/(?:library|game\/[1-9]\d*))?$/.test(hash)) {
       renderPdf(hash);
+    }
+    else if(/^(png|docx)\/[1-9]\d*(?:\/(?:library|game\/[1-9]\d*))?$/.test(hash)) {
+      renderMaterial(hash);
     }
     else if(hash==='library') {
       const library=await api('/api/library');

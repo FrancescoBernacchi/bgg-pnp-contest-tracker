@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-03",
+  "original_records_unchanged": 187,
+  "hashes_verified": 198,
+  "archive_contents": 11,
+  "acquisitions": 46,
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "backend_tests_passed": 36,
+  "frontend_tests_passed": 43,
+  "browser_widths": [
+    1400,
+    390
+  ],
+  "browser_formats": [
+    "pdf",
+    "png",
+    "docx"
+  ],
+  "zip_repeat_apply": "198 files, 11 archive contents, no duplicates"
+}

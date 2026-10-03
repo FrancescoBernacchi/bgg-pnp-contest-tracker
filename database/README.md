@@ -49,3 +49,7 @@ I controlli con finalità di `baseline`, `census` o `consistency` possono arricc
 Gli stati normalizzati iniziali previsti sono `unknown`, `wip`, `playtest_ready`, `components_ready`, `contest_ready`, `contest_complete`, `withdrawn` e `unavailable`. Il valore originale e la relativa evidenza devono sempre essere conservati.
 
 Per i contest si usano inizialmente `announced`, `entries_open`, `development`, `freeze`, `voting`, `awaiting_results`, `complete`, `suspended`, `cancelled` e `unknown`. Per le entry si usano `idea`, `wip`, `components_available`, `playtest_ready`, `contest_ready`, `withdrawn`, `incomplete`, `disqualified` e `unknown`. Il testo originale della fonte resta sempre separato dal valore normalizzato.
+
+## Contenuti estratti dagli ZIP
+
+La migrazione `011_archive_contents.sql` conserva in `archive_contents` la relazione file derivato–archivio, hash dell'archivio, percorso interno e data; `archive_extractions` registra l'esito dell'elaborazione per archivio/hash. I file estratti usano `acquired_files` e l'acquisizione sorgente, ereditando la provenienza. Il server legge soltanto; `catalog/extract_registered_archives.py --apply` esegue backup, migrazione ed estrazione offline. Il lotto `catalog/archive_contents_batch_2026-10-03.json` aggiunge 11 contenuti da due ZIP, preservando i 187 file originali. Conteggi attuali: 198 file registrati, 46 acquisizioni.

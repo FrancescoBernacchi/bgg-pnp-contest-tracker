@@ -14,6 +14,7 @@ import hmac
 import webbrowser
 from library_catalog import library_catalog
 from pdf_files import open_pdf, PDFError
+from material_files import open_material, docx_blocks, DOCX
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -347,15 +348,21 @@ class Handler(BaseHTTPRequestHandler):
         if token and not hmac.compare_digest(self.headers.get('X-PnP-Viewer', '').encode('utf-8'), self.server.viewer_token.encode('ascii')):
             raise PDFError(403, 'viewer_token', 'Sessione del visualizzatore non valida. Riaprire il documento.')
 
-    def pdf_response(self, file_id, head=False):
+    def pdf_response(self, file_id, head=False, kind='pdf'):
         self.viewer_access(token=True)
         if self.headers.get('Range'):
             raise PDFError(416, 'range_unsupported', 'Richieste Range non supportate dal visualizzatore.')
         with connect(self.server.database) as db:
             record = one(db, 'SELECT relative_path,media_type,acquisition_status FROM acquired_files WHERE id=?', (file_id,))
-        with open_pdf(self.server.library_root, **record) as (handle, size):
+        expected = {'pdf': 'application/pdf', 'png': 'image/png', 'docx': DOCX}[kind]
+        if record['media_type'] != expected:
+            raise PDFError(415, 'unsupported', 'Formato non corrispondente al visualizzatore.')
+        with open_material(self.server.library_root, **record) as (handle, size):
+            if kind == 'docx':
+                self.respond(200, {'blocks': docx_blocks(handle)}, head=head)
+                return
             self.send_response(200)
-            self.send_header('Content-Type', 'application/pdf')
+            self.send_header('Content-Type', expected)
             self.send_header('Content-Length', str(size))
             self.send_header('Accept-Ranges', 'none')
             self.send_header('Content-Disposition', 'attachment; filename="material.pdf"')
@@ -380,7 +387,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "no-referrer")
-        self.send_header("Content-Security-Policy", "default-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; worker-src 'self'; font-src 'self' blob:; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+        self.send_header("Content-Security-Policy", "default-src 'self'; connect-src 'self'; img-src 'self' blob:; style-src 'self'; script-src 'self'; worker-src 'self'; font-src 'self' blob:; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
         self.send_header('Cross-Origin-Resource-Policy', 'same-origin')
         self.end_headers()
         if not head:
@@ -400,6 +407,7 @@ class Handler(BaseHTTPRequestHandler):
         path = urlsplit(self.path)
         assets = {"/": ("index.html", "text/html; charset=utf-8"),
                   "/pdf-viewer.js": ("pdf-viewer.js", "text/javascript; charset=utf-8"),
+                  "/material-viewer.js": ("material-viewer.js", "text/javascript; charset=utf-8"),
                   "/app.js": ("app.js", "text/javascript; charset=utf-8"),
                   "/style.css": ("style.css", "text/css; charset=utf-8"),
                   "/favicon.svg": ("favicon.svg", "image/svg+xml")}
@@ -419,13 +427,13 @@ class Handler(BaseHTTPRequestHandler):
                 if path.query:
                     raise PDFError(400, 'parameters', 'Parametri non validi.')
                 data = {'token': self.server.viewer_token}
-            elif match := re.fullmatch(r'/api/files/([1-9][0-9]*)(/pdf)?', path.path):
+            elif match := re.fullmatch(r'/api/files/([1-9][0-9]*)(/(?:pdf|png|docx))?', path.path):
                 self.viewer_access(token=True)
                 if path.query:
                     raise PDFError(400, 'parameters', 'Parametri non validi.')
                 file_id = int(match.group(1))
                 if match.group(2):
-                    self.pdf_response(file_id, head)
+                    self.pdf_response(file_id, head, match.group(2)[1:])
                     return
                 with connect(self.server.database) as db:
                     game_id = one(db, 'SELECT a.game_id FROM acquired_files f JOIN acquisitions a ON a.id=f.acquisition_id WHERE f.id=?', (file_id,))['game_id']

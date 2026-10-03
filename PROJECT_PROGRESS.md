@@ -328,7 +328,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-| 69 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 68 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -508,7 +508,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-| 70 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 69 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
 |   |     Censimento entry | — | — | 🔴 0 | — |
 |   |     Classifiche | — | — | 🔴 0 | — |
@@ -682,7 +682,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | — | — | — |
 |   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
 |   |     Download materiali | 🔴 0/0 entry | — | — | — |
-| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 70 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -2038,8 +2038,8 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | Scansioni materiali | 190 | 951 entry | parziale | Ogni entry ha copertura ed esito espliciti | `entry_material_scans` |
 | Requisiti materiali | 387 | Nessun denominatore certo | parziale | Testo originale, normalizzazione, quantità e provenienza preservati quando osservabili | `entry_material_requirements` |
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
-| Acquisizioni | 17 | Primi lotti Kanare e Children & Family 2025 | completo per i lotti eseguiti | Ogni gioco acquisito ha decisione, fonte, condizioni e data | `acquisitions`; manifest Kanare e BGG |
-| File acquisiti | 187 | 3 PDF Kanare, 38 PDF Children & Family e 146 file Roll & Write 2025; uso personale esclusivo | completo per i lotti eseguiti, con limiti remoti espliciti | Dimensione, MIME, SHA-256 e provenienza per ogni file; ZIP e DOCX verificati strutturalmente | `acquired_files`; verificatori acquisizione |
+| Acquisizioni | 46 | Lotti Kanare, Children & Family e Roll & Write 2025; estrazione locale APP-005 senza nuove acquisizioni | completo per i lotti eseguiti | Ogni gioco acquisito ha decisione, fonte, condizioni e data | `acquisitions`; manifest Kanare e BGG |
+| File acquisiti | 198 | 187 originali (3 Kanare, 38 Children & Family, 146 Roll & Write) e 11 contenuti estratti da due ZIP; uso personale esclusivo | completo per i lotti eseguiti, con limiti remoti espliciti | Dimensione, MIME, SHA-256 e provenienza per ogni file; ZIP e DOCX verificati strutturalmente | `acquired_files`; verificatori acquisizione |
 | Titoli Kanare_Abstract | 64 giochi canonici conservativi, 76 record nativi, 39 prodotti e 54 implementazioni | Censimento Kanare del 2026-09-20; destinazioni verificate il 2026-09-21 | censimento completo sulle superfici autorizzate; destinazioni parzialmente verificate | 14 implementazioni `verified`, 40 `uncertain`; 10 matching confermati, 1 respinto e 15 ancora `candidate` | `catalog/verify_kanare_abstract_import.py`; task destinazioni |
 
 ## Pipeline operativa
@@ -2072,19 +2072,21 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 6 | Definire la priorità di acquisizione | parziale | Per Children & Family 2025 è stato adottato il criterio dei vincitori ufficiali; mancano soglie generali quando voti o risultati non bastano | Risultati e segnali disponibili | Formalizzare soglie generali solo quando serviranno a una selezione ambigua | `PROJECT.md`; manifest Children & Family |
 | 7 | Proseguire le acquisizioni selettive | Children & Family e Roll & Write 2025 trattati | Kanare: 3 giochi/3 PDF; Children & Family: 14 giochi/38 PDF; Roll & Write: 29 giochi/146 file, esiti su 37/37 entry | Nuova selezione esplicita per ogni contest | Prossima acquisizione suggerita: 1-Card 2025; recuperi remoti in incrementi separati | manifest dei tre perimetri; `library/README.md` |
 
+APP-005, 2026-10-03: due ZIP estratti in 11 contenuti (10 PDF e 1 PNG), con hash e relazione archivio/contenuto. Originali invariati: 187 record e hash verificati. File totali 198; acquisizioni 46; nessun accesso esterno. I conteggi annuali di file includono i derivati e non indicano nuove risorse remote o completezza. Manifest: `catalog/archive_contents_batch_2026-10-03.json`.
+
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
-| Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 187 file; integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
+| Schema e migrazioni | completo | Migrazioni 001-011 presenti; 011 applicata all’operativo il 2026-10-03 dopo backup verificato | Ogni modifica passa da nuova migrazione numerata |
+| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 198 file registrati (187 originali, 11 contenuti ZIP); integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
-| App locale | lettore PDF locale; APP-001, APP-002, APP-003 e APP-004 corrette | 2026-10-03: APP-002 layout per orientamento e fit alla finestra verificati con 39 test frontend, 7 backend PDF ed Edge headless portrait/landscape/misti su desktop e mobile; screenshot esaminati. APP-001 verificata con 37 test frontend; categorie circoscritte al contest e precedenza overall. Libreria e primo visualizzatore PDF per ID; prove browser Children & Family/Kanare, tastiera e layout stretto; 29 test backend e 34 frontend; database e 41 hash invariati | PDF.js fissato e locale; mantenere confinamento, token/same-origin e assenza di rete esterna |
+| App locale | Libreria per gioco; lettori PDF/PNG/DOCX; APP-001–005 corrette | APP-005: 36 test backend e 43 frontend, Edge desktop/mobile su fixture e file reali, hash originali e idempotenza ZIP verificati; DOCX semantico senza impaginazione/immagini Word. 2026-10-03: APP-002 layout per orientamento e fit alla finestra verificati con 39 test frontend, 7 backend PDF ed Edge headless portrait/landscape/misti su desktop e mobile; screenshot esaminati. APP-001 verificata con 37 test frontend; categorie circoscritte al contest e precedenza overall. Libreria e primo visualizzatore PDF per ID; prove browser Children & Family/Kanare, tastiera e layout stretto; 29 test backend e 34 frontend; database e 41 hash invariati | PDF.js fissato e locale; mantenere confinamento, token/same-origin e assenza di rete esterna |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | aggiornato per Wargame | Rilevamento Wargame del 2026-10-02 registrato; altri contest mantengono finestre scadute separate | Aggiornare dopo ogni rilevamento dovuto; prossimo Wargame 2026-11-12 |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
 | Git/GitHub | finalizzazione Libreria e PDF su main autorizzata | 2026-10-03: partenza da main pulito e allineato a origin/main; branch codex/libreria-locale-materiali verificato; commit e push del branch autorizzati dall’utente, senza unione in main. Libreria committata e pubblicata con eb95408; nuovo branch codex/visualizzatore-pdf-locale autorizzato da tale base, commit, push e fast-forward in main del nuovo incremento autorizzati il 2026-10-03 | Commit, push e unione solo dopo autorizzazioni distinte dell'utente |
-| Libreria nell’app locale | completo per PDF idonei; formati ulteriori da integrare | 2026-10-03: 46 acquisizioni e 187 file; aggiunti PNG, DOCX e ZIP Roll & Write, segnalati come non supportati; Starter_Cards.pdf supera 128 MiB | Originali apribili localmente; visualizzazione immagini/documenti in task autonomi; hash PDF.js preservati tramite `.gitattributes` |
+| Libreria nell’app locale | completo per PDF/PNG/DOCX idonei e ZIP estratti offline | 2026-10-03: APP-005; 198 file registrati, 46 acquisizioni; 11 contenuti ZIP con hash e provenienza; 187 originali invariati; DOCX semantico; Starter_Cards.pdf supera 128 MiB | Altri formati in task autonomi; preservare limiti e tracciabilità; hash PDF.js tramite `.gitattributes` |
 
 ## Registro degli aggiornamenti del cruscotto
 

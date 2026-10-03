@@ -1,0 +1,120 @@
+{
+  "checked_at": "2026-10-03T21:37:22.197733+00:00",
+  "apply": true,
+  "backup": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\app005-before-20261003T213722197733.sqlite3",
+  "archives": [
+    {
+      "archive_file_id": 151,
+      "archive_sha256": "b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48",
+      "status": "extracted",
+      "message": "ZIP annidati registrati senza estrazione ricorsiva",
+      "contents": [
+        {
+          "file_id": 188,
+          "member_path": "F!-Rules260223.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/6f2b246fae3dac94db364473844cbd61124d2259d3addef566e74c1efa2d9a01.pdf",
+          "sha256": "dc658916656078123c647ed1938e0aeaf2bf8534dfd663bfdf24d328e1b152bd",
+          "bytes": 1144536
+        },
+        {
+          "file_id": 189,
+          "member_path": "Playersheets_LowInk/F!-PS-M_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/b4a6e239175247ebce7951e60bb82a77b1c2f76f2848d165152819d8de467e63.pdf",
+          "sha256": "81bb94935e4205793bc37131a41867bdef70cbdf273022296950ee22e942f806",
+          "bytes": 142401
+        },
+        {
+          "file_id": 190,
+          "member_path": "Playersheets_LowInk/F!-PS-MX_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/1b6bc74e921f0f7ec69c91e0ac05112fe82b6d9c07b9816103095e70047057fc.pdf",
+          "sha256": "c8bb6db2f8c13034334a9219195f2e76a5e00e12f582b5933355cbc6f07f038a",
+          "bytes": 229604
+        },
+        {
+          "file_id": 191,
+          "member_path": "Playersheets_LowInk/F!-PS-Solo_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/9d48a165ba81ae10f806add17221a5f30fe3fc230495494e17db65a3420305da.pdf",
+          "sha256": "4daefa13e1191abfdf02e46b03b8d2bbf126df0cee82c2f791a1ffb7f9e74cb3",
+          "bytes": 144265
+        },
+        {
+          "file_id": 192,
+          "member_path": "Playersheets_LowInk/F!-PS-SoloX_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/069e86ec3d568370242b88873e369996f90b7ed046220f75319460d865424e06.pdf",
+          "sha256": "85445b62772b2a982765b79794000670b700750befa9b218c3adba313603a44b",
+          "bytes": 199261
+        },
+        {
+          "file_id": 193,
+          "member_path": "Playersheets_FullColor/F!-PS-FCM_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/3ad8ad790f59977bdb2da954fde950936bcbe7cb9a5094095df0e0d0c481c446.pdf",
+          "sha256": "8a9d043c2c8fc7c0c90e6a49d1cd6d0b6e12c8a32fec263652920f589bc156f4",
+          "bytes": 4488763
+        },
+        {
+          "file_id": 194,
+          "member_path": "Playersheets_FullColor/F!-PS-FCMX_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/ebd60cfd50a8439abf6d35f1a61c2446d22f40af798f781c0344324f77ca8752.pdf",
+          "sha256": "02c4ff63e04ba54da5a3e86129263196a0ad30d2883b42aec62064e78436c0cd",
+          "bytes": 4567439
+        },
+        {
+          "file_id": 195,
+          "member_path": "Playersheets_FullColor/F!-PS-FCSolo_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/0ea03d68c3ba41ed78b36f0ca41b101edba247eb66b6bba6d9225e66e3fa5ae8.pdf",
+          "sha256": "70a9ade2251e2d1241572b592888a6eec57cb4211f7aa93b3845844a2de8f054",
+          "bytes": 4219993
+        },
+        {
+          "file_id": 196,
+          "member_path": "Playersheets_FullColor/F!-PS-FCSoloX_260315.pdf",
+          "relative_path": "_extracted/151/b87d21079b3b312cd7978995ed09d0b8153c2f0b22960cdfde0b6351acf4ef48/74da7b00293402620850693057145a7241d0e4161c0e4119e4795422a3a3238a.pdf",
+          "sha256": "948fb679b80466895a6dae3cb6fdd02e789873c4363172191bf3f414480c0fbb",
+          "bytes": 4338885
+        }
+      ],
+      "provenance": {
+        "game_id": 798,
+        "acquisition_id": 44,
+        "remote_resource_id": 10,
+        "catalog_resource_id": null,
+        "final_url": "https://www.dropbox.com/scl/fo/cq9s96o8bb6bl0e8782b9/AFDI9UKqth0eXLo6fv6FABg?rlkey=i7o5u9nw9449zon124kvzrqfn&st=6vt3dvb9&dl=1",
+        "language_code": "und",
+        "usage_conditions": "File offerto pubblicamente tramite risorsa dichiarata dall’autore; copia personale, nessuna redistribuzione; licenza aperta non accertata.",
+        "version_raw": null
+      }
+    },
+    {
+      "archive_file_id": 152,
+      "archive_sha256": "48c43948e65d6e62d786df93a6208fa54e1b9a965575d425f998b54abaec3f8a",
+      "status": "extracted",
+      "message": "ZIP annidati registrati senza estrazione ricorsiva",
+      "contents": [
+        {
+          "file_id": 197,
+          "member_path": "LeaningTree.png",
+          "relative_path": "_extracted/152/48c43948e65d6e62d786df93a6208fa54e1b9a965575d425f998b54abaec3f8a/1586b2f8ce4774227bad8aa9f6c7027437e9f136d8b6ae5ab8ec27ea864e802c.png",
+          "sha256": "1384ed2a56fef67c0ad8d1cc836aaac600270d38e5423e16173fc3f0d26ad3ab",
+          "bytes": 1431103
+        },
+        {
+          "file_id": 198,
+          "member_path": "LeaningTree.pdf",
+          "relative_path": "_extracted/152/48c43948e65d6e62d786df93a6208fa54e1b9a965575d425f998b54abaec3f8a/37058abef6d1cb1519ae04b0ef84fad6f35db7e1a709757262fad45eef9c2e06.pdf",
+          "sha256": "d44daad2394fa0e1193a09f6ca6078f872b9ca44f2d35e03cae6c2e6d1aeac17",
+          "bytes": 1263008
+        }
+      ],
+      "provenance": {
+        "game_id": 809,
+        "acquisition_id": 45,
+        "remote_resource_id": 42,
+        "catalog_resource_id": null,
+        "final_url": "https://www.dropbox.com/scl/fo/4emb93d1osif1acs29n1q/AD_R0dTRVa_O8D57ryXOW98?rlkey=ja4fvc417fa6qpk9i4slpmjza&st=hdpsr7k2&dl=1",
+        "language_code": "und",
+        "usage_conditions": "File offerto pubblicamente tramite risorsa dichiarata dall’autore; copia personale, nessuna redistribuzione; licenza aperta non accertata.",
+        "version_raw": null
+      }
+    }
+  ]
+}
