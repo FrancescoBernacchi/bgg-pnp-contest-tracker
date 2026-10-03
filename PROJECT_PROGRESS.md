@@ -2088,6 +2088,10 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 
 ## Registro degli aggiornamenti del cruscotto
 
+Confronto esteso nella stessa giornata: BGG 88/100 e Kanare_Abstract 48/100 aggiunte alla graduatoria con stato già integrato; PerGioco resta la prima nuova fonte suggerita. Dettaglio ed evidenze in `sources/MULTISOURCE-SOURCE-RANKING.md`.
+
+Priorità nuove fonti al 2026-10-03: regolamenti completi gratuiti obbligatori per i giochi da integrare; PerGioco 70/100, itch.io gratuito e World of Abstract Games 68/100 guidano la graduatoria esplorativa. Nessuna nuova fonte importata. Metodo, sottopunteggi, esclusioni A PAGAMENTO e sospensioni sono in `sources/MULTISOURCE-SOURCE-RANKING.md`; prossimo incremento suggerito: censimento dedicato PerGioco.
+
 | Data | Task | Modifica registrata | Evidenza |
 |---|---|---|---|
 | 2026-09-15 | Cruscotto avanzamento raccolta | Creato il quadro iniziale e aggiunte viste annuali generate per tipologia, contest e tutte le entry | Query in sola lettura al database; `app/generate_project_progress.py` |
