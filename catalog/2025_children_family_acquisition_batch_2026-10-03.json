@@ -1,0 +1,137 @@
+{
+  "batch_key": "bgg-2025-children-family-2026-10-03-01",
+  "contest": "2025 Children & Family Game Design Contest",
+  "approved_at": "2026-10-03",
+  "acquired_at": "2026-10-03",
+  "purpose": "Uso personale esclusivo; nessuna redistribuzione o derivato",
+  "selection": "Vincitori delle cinque categorie ufficiali, deduplicati per gioco",
+  "items": [
+    {
+      "game_title": "ICBRG",
+      "remote_resource_id": 177,
+      "resource_url": "https://drive.google.com/file/d/1fFHUf2LiuHYpH2lDG6UcTZpLU1Egykug/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1fFHUf2LiuHYpH2lDG6UcTZpLU1Egykug&export=download",
+      "original_filename": "ICBRG PnP Version 2.1.pdf",
+      "relative_path": "bgg/2025-children-family/icbrg/originals/ICBRG PnP Version 2.1.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 100360,
+      "sha256": "ae6473c656fa290c6a8d2a6380096b4fb485ccb6e31d894a1f5d6afc11600745",
+      "version_raw": "2.1; last updated 2025-04-30",
+      "selection_reason": "Vincitore Best Family Game e Best Rulebook",
+      "usage_conditions": "File condiviso pubblicamente dall'autore tramite il WIP BGG e Google Drive; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "ICBRG",
+      "remote_resource_id": 178,
+      "resource_url": "https://drive.google.com/file/d/1E39KA-RsPZHBL4yOfBh_KBopZC0VEfJB/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1E39KA-RsPZHBL4yOfBh_KBopZC0VEfJB&export=download",
+      "original_filename": "ICBRG Rulebook Version 2.0.pdf",
+      "relative_path": "bgg/2025-children-family/icbrg/originals/ICBRG Rulebook Version 2.0.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 221863,
+      "sha256": "86ef19ed4472bef9fa8ca63f4ee1d5d9eeae3a312ed9f78cbfcfde5070380235",
+      "version_raw": "2.0; last updated 2025-04-30",
+      "selection_reason": "Vincitore Best Family Game e Best Rulebook",
+      "usage_conditions": "File condiviso pubblicamente dall'autore tramite il WIP BGG e Google Drive; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Good Breeding",
+      "remote_resource_id": 146,
+      "resource_url": "https://drive.google.com/drive/folders/1HTjtBloUic_1z3ZxLjHZXqyQN0RItHW0",
+      "final_url": "https://drive.usercontent.google.com/download?id=1S7wf5hFhTaNLhkxEfV3SjpqknXSR-ON8&export=download",
+      "original_filename": "Good Breeding Cards v2 (4-up gutterfold) (2025.04.01).pdf",
+      "relative_path": "bgg/2025-children-family/good-breeding/originals/Good Breeding Cards v2 (4-up gutterfold) (2025.04.01).pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 49880064,
+      "sha256": "b8cb05e85450c5635c01e57686e55ef61e9abfe8358c2607974c58c073bdfcd9",
+      "version_raw": "v2; 2025-04-01; modified 2025-05-20",
+      "selection_reason": "Vincitore Best Theme",
+      "usage_conditions": "File corrente nella cartella pubblica dichiarata dall'autore nel WIP BGG; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Good Breeding",
+      "remote_resource_id": 146,
+      "resource_url": "https://drive.google.com/drive/folders/1HTjtBloUic_1z3ZxLjHZXqyQN0RItHW0",
+      "final_url": "https://drive.usercontent.google.com/download?id=1abn0cEw86mY2lnQP5GkDHlhy-A_PfNLV&export=download",
+      "original_filename": "Good Breeding Rules (3.28.2025).pdf",
+      "relative_path": "bgg/2025-children-family/good-breeding/originals/Good Breeding Rules (3.28.2025).pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 8449139,
+      "sha256": "fe3d424e195ea2f46cab8239187d8ac7d9420cf7b1e45fae478ee03b97e14f67",
+      "version_raw": "2025-03-28",
+      "selection_reason": "Vincitore Best Theme",
+      "usage_conditions": "File corrente nella cartella pubblica dichiarata dall'autore nel WIP BGG; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Good Breeding",
+      "remote_resource_id": 146,
+      "resource_url": "https://drive.google.com/drive/folders/1HTjtBloUic_1z3ZxLjHZXqyQN0RItHW0",
+      "final_url": "https://drive.usercontent.google.com/download?id=1-3VLi_P0saEKQKai77vO-ZMi4XzqfkE5&export=download",
+      "original_filename": "Good Breeding Scoring Tiles 3.12.2025.pdf",
+      "relative_path": "bgg/2025-children-family/good-breeding/originals/Good Breeding Scoring Tiles 3.12.2025.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 652681,
+      "sha256": "f4966a5a221aced189e3f7fe018a11233c18c5ed3e64cda67c8ad28e2d952c57",
+      "version_raw": "2025-03-12",
+      "selection_reason": "Vincitore Best Theme",
+      "usage_conditions": "File corrente nella cartella pubblica dichiarata dall'autore nel WIP BGG; copia locale per uso personale esclusivo; nessuna licenza aperta o autorizzazione alla redistribuzione osservata",
+      "status": "acquired"
+    }
+  ],
+  "resource_observations": [
+    {
+      "remote_resource_id": 146,
+      "evidence_url": "https://drive.google.com/drive/folders/1HTjtBloUic_1z3ZxLjHZXqyQN0RItHW0",
+      "availability_status": "available",
+      "version_raw": "Current folder contents observed 2026-10-03",
+      "notes": "Cartella pubblica accessibile; acquisiti carte correnti, regolamento e tessere punteggio. Esclusi Archive - old versions, sell sheet e video."
+    },
+    {
+      "remote_resource_id": 177,
+      "evidence_url": "https://drive.google.com/file/d/1fFHUf2LiuHYpH2lDG6UcTZpLU1Egykug/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": "2.1; last updated 2025-04-30",
+      "notes": "PDF pubblico accessibile senza richiesta di autorizzazione."
+    },
+    {
+      "remote_resource_id": 178,
+      "evidence_url": "https://drive.google.com/file/d/1E39KA-RsPZHBL4yOfBh_KBopZC0VEfJB/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": "2.0; last updated 2025-04-30",
+      "notes": "PDF pubblico accessibile senza richiesta di autorizzazione."
+    },
+    {
+      "remote_resource_id": 181,
+      "evidence_url": "https://c.gmx.net/@327464636691519389/YOeFrQLGl7b_8fshNOMquA",
+      "availability_status": "unavailable",
+      "version_raw": null,
+      "notes": "GMX mostra Link expired e Share (0 File); nessun file acquisito."
+    },
+    {
+      "remote_resource_id": 182,
+      "evidence_url": "https://c.gmx.net/@327464636691519389/codVtkSgl0lg96tFnH0QmA",
+      "availability_status": "unavailable",
+      "version_raw": null,
+      "notes": "GMX mostra Link expired e Share (0 File); nessun file acquisito."
+    }
+  ],
+  "unresolved_games": [
+    {
+      "game_title": "Pirate Treasures",
+      "reason": "Nessuna risorsa dichiarata registrata; il WIP BGG non era osservabile il 2026-10-03 per la verifica di sicurezza Cloudflare."
+    },
+    {
+      "game_title": "Zoo Rush",
+      "reason": "Entrambi i link GMX dichiarati sono scaduti; nessun file disponibile."
+    }
+  ]
+}

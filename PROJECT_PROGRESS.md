@@ -1,6 +1,6 @@
 # Cruscotto di avanzamento della raccolta
 
-Ultimo aggiornamento: 2026-10-02. Fonte dello stato: repository e database operativo locale verificati il 2026-10-02. Ultimo rilevamento BGG registrato: 2026-10-02.
+Ultimo aggiornamento: 2026-10-03. Fonte dello stato: repository e database operativo locale verificati il 2026-10-03. Ultimo rilevamento BGG registrato: 2026-10-02.
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
 
@@ -99,7 +99,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Censimento entry | 🟢 38 | 🟢 27 | 🟢 29 | 🔴 0 |
 |   |     Classifiche | 🟢 5 | 🟢 5 | 🔴 0 | 🔴 0 |
 |   |     Lettura materiali | 🔴 0/38 entry | 🟢 27/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/38 entry | 🔴 0/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
+|   |     Download materiali | 🔴 0/38 entry | 🟡 2/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
 | 55 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 22, withdrawn 3 | 🟢 contest_ready 15, withdrawn 12 | 🔴  | 🔴  |
 |   |     Censimento entry | 🟢 25 | 🟢 27 | 🔴 0 | 🔴 0 |
@@ -328,7 +328,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-| 68 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 69 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -682,7 +682,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | — | — | — |
 |   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
 |   |     Download materiali | 🔴 0/0 entry | — | — | — |
-| 69 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -1194,13 +1194,13 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 |---:|:---|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **Best Overall Game** | **Best Overall Game** | **Best Overall Game** | **Best Family Game** | **Best Overall Solo Game** | **Best Overall Game** |
 | 1 | #1 [Locky Dice](https://boardgamegeek.com/thread/3495217/wip-locky-dice-a-solitaire-dice-manipulation-game) — Ready | #1 [Braggarts](https://boardgamegeek.com/thread/3574791/wip-braggarts-a-double-ended-trick-taker-winner-of) — Ready | #1 [Math Knight](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #1 [ICBRG](https://boardgamegeek.com/thread/3493395) — Ready | #1 [One for sorrow](https://boardgamegeek.com/thread/3388854) — Ready | #1 [Alea’s Garden](https://boardgamegeek.com/thread/3530593/aleas-garden-cosy-polyomino-deckbuilding-game-winn) — Ready |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
 | 2 | #2 [Nap & Roll](https://boardgamegeek.com/thread/3440820/wip-nap-and-roll-2025-1-card-print-and-play-design) — Ready | #2 [Intercept](https://boardgamegeek.com/geeklist/360114/2025-54-card-game-design-contest-entries) — Ready | #2 [Bullet Run](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #2 [The Robots are Multiplying](https://boardgamegeek.com/thread/3442172) — Ready | #2 [Hand-At-Arms](https://boardgamegeek.com/thread/3402467) — Ready | #2 [Server Breach](https://boardgamegeek.com/thread/3545479/wip-server-breach-fast-solo-card-game-of-strategic) — Ready |
 |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
 | 3 | #3 [Sliminal Pursuit](https://boardgamegeek.com/thread/3513981/wip-sliminal-pursuit-2025-1-card-print-and-play-de) — Ready | #3 [Potemkin Villages](https://boardgamegeek.com/thread/3576989/potemkin-villages-54-card-game-design-contest-2025) — Ready | #2 [Fall of the Republic](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #3 [Poker Face](https://boardgamegeek.com/thread/3465191) — Ready | #3 [Smuggler's Sky: Hand of Fate](https://boardgamegeek.com/thread/3425444) — Ready | #3 [Super Robo JetKaiser Z](https://boardgamegeek.com/thread/3528637/wip-super-robo-jetkaiser-z-3rd-place-2025-solo-pnp) — Ready |
 |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
 | 4 | #4 [Honeybee and Dragonfly](https://boardgamegeek.com/thread/3491504/wip-honeybee-and-dragonfly-entry-into-the-2025-1-c) — Ready | #4 [Hack the Planet](https://boardgamegeek.com/thread/3537032/wip-hack-the-planet-2025-54-card-game-design-conte) — Ready | #3 [Veggie Patch](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #4 [Good Breeding](https://boardgamegeek.com/thread/3431880) — Ready | #4 [Hand of Cthulhu](https://boardgamegeek.com/thread/3379033) — Ready | #4 [Word Dungeon](https://boardgamegeek.com/thread/3527240/wip-word-dungeon-2025-solitaire-p-and-p-design-con) — Ready |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
 | 5 | #5 [Shadow Heist](https://boardgamegeek.com/thread/3513986/wip-shadow-heist-2025-1-card-print-and-play-design) — Ready | #5 [Oh Ship!](https://boardgamegeek.com/geeklist/360114/2025-54-card-game-design-contest-entries) — Ready | #4 [Dung Beetles](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #5 [Bon-Bon](https://boardgamegeek.com/thread/3493740) — Ready | #5 [Songs of the Sea and the Sky](https://boardgamegeek.com/thread/3419526) — Ready | #5 [Tightrope Terror](https://boardgamegeek.com/thread/3507873/wip-tightrope-terror-1p-set-collection-balance-mgm) — Ready |
 |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
 | 6 | #6 [Matching Socks](https://boardgamegeek.com/thread/3494402/matching-socks-1p-puzzle-5min-1-card-contest) — Ready | #5 [Scavengers](https://boardgamegeek.com/geeklist/360114/2025-54-card-game-design-contest-entries) — Ready | #5 [Mutineer](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Ready | #6 [Submarine Adventure](https://boardgamegeek.com/thread/3473660) — Ready | #6 [Publish or Perish](https://boardgamegeek.com/thread/3413650) — Ready | #6 [Count Poitiers: Murder at Harmax Hall](https://boardgamegeek.com/thread/3526641/wip-count-poitiers-murder-at-harmax-hall-2025-soli) — Ready |
@@ -2052,10 +2052,10 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | 4. WIP e risorse dichiarate | Entry censita e primo post WIP | Esito scansione, menzioni e provenienza | parziale; Wargame 2026 completo | Stati negativi distinti; URL identici deduplicati | Completare i contest non ancora scansionati con task separati |
 | 5. Requisiti materiali | Primo post; regole solo se autorizzate | Requisiti originali e normalizzati | parziale | Copertura `first_post_only` distinta da `rules_integrated` | Proseguire insieme alla scansione WIP |
 | 6. Risultati e segnali | Risultati BGG o segnale sostitutivo | Posizione, categoria, voto, ufficialità e fonte | parziale | Nessuna inferenza di vincitore senza posizione esplicita | Verificare contest conclusi con risultati incompleti |
-| 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | non iniziato | Segnali ufficiali distinti dai sostitutivi | Definire soglie e primo lotto |
-| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | non iniziato come campagna | Nessun aggiramento di accessi o autenticazione | Avviare soltanto nel task di acquisizione del singolo contest |
-| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | parziale; primo lotto Kanare completo | Nessuna redistribuzione; originali immutabili | Valutare un secondo lotto soltanto in un task separato |
-| 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | completo per il primo lotto Kanare | Hash per ogni file; versioni precedenti preservate | Applicare lo stesso protocollo ai lotti futuri |
+| 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | primo lotto BGG completato sui vincitori Children & Family 2025 | Segnali ufficiali distinti dai sostitutivi | Definire soglie generali soltanto prima di selezioni prive di risultati sufficienti |
+| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | completata per il primo lotto BGG | 3 risorse disponibili e 2 link GMX scaduti; nessun aggiramento | Ripetere per ogni nuovo lotto del singolo contest |
+| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | parziale; primi lotti Kanare e BGG completi | Nessuna redistribuzione; originali immutabili | Valutare separatamente il successivo lotto dello stesso contest |
+| 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | completo per i primi lotti Kanare e BGG | Hash per ogni file; versioni precedenti preservate | Applicare lo stesso protocollo ai lotti futuri |
 | 11. Consultazione e report | Database locale | App e output rigenerabili | completo per le funzioni correnti | Lettura SQLite in sola lettura; nessuna rete implicita | Evolvere solo con requisiti concreti |
 
 ## Attività operative aperte
@@ -2069,15 +2069,15 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 3 | Introdurre Kanare_Abstract nel modello multifonte | primo lotto acquisito | Migrazioni 009-010 applicate; censimento completo; 3 PDF EN acquisiti; 15 matching ancora candidati | Censimento, manifest e verificatori Kanare | Valutare separatamente un secondo lotto oppure un controllo mirato dei matching residui | fonte e task Kanare |
 | 4 | Completare WIP, risorse e materiali per singolo contest | parziale | Wargame 2026 completo 23/23; 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2026-WARGAME-MATERIALS.md`; `sources/2025-CONTEST-COVERAGE.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
-| 6 | Definire la priorità di acquisizione | non iniziato | Mancano soglie operative quando voti o risultati non bastano | Risultati e segnali disponibili | Aprire un task decisionale con esempi reali | `PROJECT.md` |
-| 7 | Eseguire il primo lotto di acquisizione | completo | 3 giochi Kanare approvati; 3 PDF EN acquisiti, verificati e registrati | Nessuna | Chiudere il task corrente; eventuale secondo lotto in un nuovo task | manifest Kanare; `library/README.md` |
+| 6 | Definire la priorità di acquisizione | parziale | Per Children & Family 2025 è stato adottato il criterio dei vincitori ufficiali; mancano soglie generali quando voti o risultati non bastano | Risultati e segnali disponibili | Formalizzare soglie generali solo quando serviranno a una selezione ambigua | `PROJECT.md`; manifest Children & Family |
+| 7 | Proseguire le acquisizioni selettive | primi lotti completi | Kanare: 3 giochi e 3 PDF; BGG Children & Family 2025: 2 giochi e 5 PDF, con 2 vincitori non acquisibili nel rilevamento | Nuova selezione esplicita per ogni lotto | Valutare un secondo lotto Children & Family in un incremento separato dello stesso task o chiudere il task | manifest Kanare e Children & Family; `library/README.md` |
 
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
 | Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; Wargame 2026 completo 23/23; integrità e chiavi esterne verificate il 2026-10-02 | Non versionare; preservare cronologia e provenienza |
+| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 5 acquisizioni e 8 file; integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
 | App locale | completo per il primo incremento multifonte | Vista Giochi, ricerca/filtri trasversali, scheda canonica e vista Kanare aggiunte il 2026-10-02; 17 test backend e 23 frontend superati, inclusi controlli sulla fotografia verificata del database operativo | Mantenere sola lettura e assenza di richieste esterne automatiche |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
@@ -2111,6 +2111,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 2026-09-21 | Verifica destinazioni Kanare Abstract | Verificate 14 implementazioni; 40 mantenute incerte. Confermati 10 matching, respinto l'omonimo BGG `Ripples` e mantenuti 15 candidati | `catalog/verify_kanare_abstract_destinations.py`; fonte e task dedicati |
 | 2026-09-21 | Acquisizione selettiva materiali Kanare Abstract | Acquisiti per uso personale 3 PDF EN ufficiali relativi a Pentwall, ViceVeresi e Chess Territorial; originali fuori Git con manifest, MIME, dimensioni e SHA-256 | manifest e verificatore acquisizione; task dedicato |
 | 2026-10-02 | Interfaccia multifonte BGG e Kanare | Aggiunte vista comune Giochi, ricerca e filtri per fonte/ambiguità, scheda canonica e vista Kanare; preservate le viste specializzate BGG e il contratto offline/read-only | `app/`; 17 test backend e 23 frontend; fotografia del database operativo con hash verificato |
+| 2026-10-03 | Acquisizione materiali Children & Family 2025 | Acquisiti 5 PDF originali relativi a ICBRG e Good Breeding; registrati 3 host disponibili e 2 link Zoo Rush scaduti; Pirate Treasures senza risorsa dichiarata verificabile | manifest, applicatore e verificatore dedicati; file locali con dimensioni e SHA-256 |
 
 ## Protocollo di manutenzione automatica
 
