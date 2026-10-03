@@ -1,4 +1,4 @@
-"""Registra idempotentemente il primo lotto BGG Children & Family 2025."""
+"""Registra idempotentemente un lotto BGG Children & Family 2025."""
 
 from __future__ import annotations
 
@@ -133,8 +133,12 @@ def apply(database: Path, manifest_path: Path, library: Path) -> dict:
         "availability_checks": con.execute(
             """SELECT count(*) FROM remote_resource_observations
                WHERE observed_at=? AND observation_kind='availability_check'
-               AND remote_resource_id IN (146,177,178,181,182)""",
-            (manifest["acquired_at"],),
+               AND remote_resource_id IN ({})""".format(
+                   ",".join("?" for _ in manifest["resource_observations"])
+               ),
+            (manifest["acquired_at"], *[
+                item["remote_resource_id"] for item in manifest["resource_observations"]
+            ]),
         ).fetchone()[0],
         "foreign_key_check": con.execute("PRAGMA foreign_key_check").fetchall(),
         "integrity_check": con.execute("PRAGMA integrity_check").fetchone()[0],

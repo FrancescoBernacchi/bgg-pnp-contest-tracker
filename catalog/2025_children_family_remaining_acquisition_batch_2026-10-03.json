@@ -1,0 +1,822 @@
+{
+  "batch_key": "bgg-2025-children-family-2026-10-03-02",
+  "contest": "2025 Children & Family Game Design Contest",
+  "approved_at": "2026-10-03",
+  "acquired_at": "2026-10-03",
+  "purpose": "Uso personale esclusivo; nessuna redistribuzione o derivato",
+  "selection": "Tutte le 23 entry non comprese nel primo lotto dei vincitori",
+  "items": [
+    {
+      "game_title": "The Robots are Multiplying",
+      "remote_resource_id": 149,
+      "resource_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "final_url": "https://docs.google.com/document/d/1fvVp14-oqpjID3SazOYlaVxjibXO7m2P_nrkuxjegvI/export?format=pdf",
+      "original_filename": "Printing Instructions (Google Docs export).pdf",
+      "relative_path": "bgg/2025-children-family/the-robots-are-multiplying/originals/Printing Instructions (Google Docs export).pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 40417,
+      "sha256": "588b8aece67dac1a343e73f20edf5878946289d08405999fba9c00af93c4f4db",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "The Robots are Multiplying",
+      "remote_resource_id": 149,
+      "resource_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=12wQonbwND4T2S0kTPk--Xd5hyxKbQYG9&export=download",
+      "original_filename": "The Robots are Multiplying - Low Ink Cards - v3.pdf",
+      "relative_path": "bgg/2025-children-family/the-robots-are-multiplying/originals/The Robots are Multiplying - Low Ink Cards - v3.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 3568521,
+      "sha256": "55d60636e066abaf75453eb98c92391f9a9d627230077e9683f67b118f31855d",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "The Robots are Multiplying",
+      "remote_resource_id": 149,
+      "resource_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ZlRicQ2lEbP-PhjEDza7Cji595BGsX4X&export=download",
+      "original_filename": "The Robots are Multiplying - optional player boards.pdf",
+      "relative_path": "bgg/2025-children-family/the-robots-are-multiplying/originals/The Robots are Multiplying - optional player boards.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1042793,
+      "sha256": "767afdfb0fa700b095d8b40f7ee64103f7f3dc5356d62db4ca8050ae11932f07",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "The Robots are Multiplying",
+      "remote_resource_id": 149,
+      "resource_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1V4yWqjrGOjCrmNz7IlOwNQZlta0Vi6D4&export=download",
+      "original_filename": "The Robots are Multiplying - Rules v3.pdf",
+      "relative_path": "bgg/2025-children-family/the-robots-are-multiplying/originals/The Robots are Multiplying - Rules v3.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 2598997,
+      "sha256": "b4483be00111f13eefcd59cd5900d4cab515c5fab18bc3f9f5a8cc2378ce8e59",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "The Robots are Multiplying",
+      "remote_resource_id": 149,
+      "resource_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1IkiDJUFqTKbxOtlKbUhY685pxQ8kmwxY&export=download",
+      "original_filename": "The Robots are Multiplying v3 - Cards.pdf",
+      "relative_path": "bgg/2025-children-family/the-robots-are-multiplying/originals/The Robots are Multiplying v3 - Cards.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 4064233,
+      "sha256": "8307e0af7e0dbc9f07502edcb81777ae682a3c919ec46aecb1f464ff4e62942d",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Isles of Odd",
+      "remote_resource_id": 153,
+      "resource_url": "https://drive.google.com/drive/folders/1kAb6ps0BxrFo8lwEMrDMmSPUiw0DQAHU?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1QV67KqnJyp19SDXqTODdKsEqYcKjhu_9&export=download",
+      "original_filename": "printandplaydecember1.pdf",
+      "relative_path": "bgg/2025-children-family/isles-of-odd/originals/printandplaydecember1.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 13795600,
+      "sha256": "4d60f55e74fd9924797d2fa92694afb0ac110a9582c46581aa98e6f7e52a281f",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Peng Wins!",
+      "remote_resource_id": 155,
+      "resource_url": "https://drive.google.com/file/d/1bRMFKYviShqv89N87QyNnt7lRdQ-8W-_/view?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1bRMFKYviShqv89N87QyNnt7lRdQ-8W-&export=download",
+      "original_filename": "Peng Wins!.pdf",
+      "relative_path": "bgg/2025-children-family/peng-wins/originals/Peng Wins!.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1060360,
+      "sha256": "ac72677f7d49ca149514e4f825f152c2493c197e12b0996f982837b1f9846929",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Slowpoke",
+      "remote_resource_id": 158,
+      "resource_url": "https://drive.google.com/file/d/12AXUphcMbo-hvtUcZoINTq5XCzDWC_jR/view?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=12AXUphcMbo-hvtUcZoINTq5XCzDWC_jR&export=download",
+      "original_filename": "Print and Play Draft 1.pdf",
+      "relative_path": "bgg/2025-children-family/slowpoke/originals/Print and Play Draft 1.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 6872041,
+      "sha256": "2e67e26f73e499e656b1429db287883589bee724301df787b09dbeafaa719828",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Slowpoke",
+      "remote_resource_id": 158,
+      "resource_url": "https://drive.google.com/file/d/12AXUphcMbo-hvtUcZoINTq5XCzDWC_jR/view?usp=sharing",
+      "final_url": "https://docs.google.com/document/d/1_FmmwcxoPLaWpXbDO3aYw6E3HKSgiaE9sLTw3y7LcEg/export?format=pdf",
+      "original_filename": "Slowpoke Rulebook Draft 5.0 (Google Docs export).pdf",
+      "relative_path": "bgg/2025-children-family/slowpoke/originals/Slowpoke Rulebook Draft 5.0 (Google Docs export).pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 6335830,
+      "sha256": "cb7fc2b9456a8108d15429c839227134c73eeace4958816dce73faf45a293e6d",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Sorry! That's My Dungeon",
+      "remote_resource_id": 160,
+      "resource_url": "https://alexandrecamargo.itch.io/sorry-thats-my-dungeon",
+      "final_url": "https://alexandrecamargo.itch.io/sorry-thats-my-dungeon/file/12047983",
+      "original_filename": "Sorry! That's my Dungeon! - EN - Board letter.pdf",
+      "relative_path": "bgg/2025-children-family/sorry-thats-my-dungeon/originals/Sorry! That's my Dungeon! - EN - Board letter.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 16060134,
+      "sha256": "8e5867374e9bd97aec56121315ced9f7391e1422873311fc02d6ce58e36ce2e2",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Ice Cream Heist",
+      "remote_resource_id": 161,
+      "resource_url": "https://drive.google.com/drive/folders/1wwt9avcEXb89YQdJImyHXqvnaXqg_IY7?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1GSt_M8-XqkeBxKNrlGLkpjXe1PcROe6q&export=download",
+      "original_filename": "Ice Cream Heist v0.1 150425.pdf",
+      "relative_path": "bgg/2025-children-family/ice-cream-heist/originals/Ice Cream Heist v0.1 150425.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1983976,
+      "sha256": "6f3821691a89e6fe9340f959f7d3e39d12f057dab6704220090b6e5da850b188",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Poker Face",
+      "remote_resource_id": 162,
+      "resource_url": "https://drive.google.com/file/d/1Qj7zr1IJVQeR8zsvkRhlZzry5e5QA1ZU/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Qj7zr1IJVQeR8zsvkRhlZzry5e5QA1ZU&export=download",
+      "original_filename": "Ver. 1.0 - Cards - Poker Face.pdf",
+      "relative_path": "bgg/2025-children-family/poker-face/originals/Ver. 1.0 - Cards - Poker Face.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 741127,
+      "sha256": "b0fddeccf45cf598c8cadb6227f2fe19669de981070a632333658a331fd33d55",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Poker Face",
+      "remote_resource_id": 163,
+      "resource_url": "https://drive.google.com/file/d/1wTMUUwAJsTuvdoPhRyUFv3uhjf1Z0kCW/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1wTMUUwAJsTuvdoPhRyUFv3uhjf1Z0kCW&export=download",
+      "original_filename": "Ver. 1.0 - Rulebook - Poker Face.pdf",
+      "relative_path": "bgg/2025-children-family/poker-face/originals/Ver. 1.0 - Rulebook - Poker Face.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 143553,
+      "sha256": "1a3560d98b9b4af8381e33f1f8bf6c6f9b268ad9d4e81f5c21020f091d7635e9",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=14EMwzN6RsQr0loMFHRCWOIm-veowH80j&export=download",
+      "original_filename": "Even More Squirrelly, Tuckbox, v1- 2025.6.10.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Even More Squirrelly, Tuckbox, v1- 2025.6.10.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1197438,
+      "sha256": "2a1d819d1667dacd929aa8e155fe4d4e52f5b482c8e09716371f4ee736d7d568",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1VhAhSsxaZKiwx26cD47Lz0V7fPT9dBjq&export=download",
+      "original_filename": "More Squirrelly, Tuckbox, v1- 2025.6.10.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/More Squirrelly, Tuckbox, v1- 2025.6.10.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1186511,
+      "sha256": "5a8732ca398563f1604a48326e7827ce5aed3707f0dd898635c2c972ffe996a8",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1V80dzuMdg_d6Cj4MAKmVKxqqEp-dEFBs&export=download",
+      "original_filename": "Squirrelly- Even More Squirrelly Mini Expansion- 6th Player and New Critters- 2025.6.9.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly- Even More Squirrelly Mini Expansion- 6th Player and New Critters- 2025.6.9.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 4840915,
+      "sha256": "5d46f1e58b3f72977a3a2461b41d4adf18f164f27b84a4dfc67251f22fb801c8",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1P4o6m0zd81bjyAxI3EIRBLY_YD0et8jC&export=download",
+      "original_filename": "Squirrelly- More Squirrelly Mini Expansion- 5th Player and Wild Squirrels- 2025.6.9.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly- More Squirrelly Mini Expansion- 5th Player and Wild Squirrels- 2025.6.9.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 2954970,
+      "sha256": "1022fdf6014a175929480d7e4812319e53732517101a6148f09cdb979da2f3ee",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=13zI3ZOM-_yydnK5zt1tsUJDW2TcxDC6G&export=download",
+      "original_filename": "Squirrelly- Tuckbox, v4- 2025.6.12.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly- Tuckbox, v4- 2025.6.12.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 3603926,
+      "sha256": "eda5bb4e4953f89f94e3431314c1e2b80549a92863a0d3b506166eda7eb5db1c",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1H2kQY35XDLLumboiSKP96Zc86s5FW1p2&export=download",
+      "original_filename": "Squirrelly, v3- 54 Card PNP- 2025.4.26.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly, v3- 54 Card PNP- 2025.4.26.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 10280410,
+      "sha256": "f8c7b3a742c02f8a3b5a825846d7d5230a46b9f72ce6f46b740918a9f4932e8f",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=11GRND7KawqhPa_warXyRjriE5QY5GjfY&export=download",
+      "original_filename": "Squirrelly, v3- PNP- 2025.2.20.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly, v3- PNP- 2025.2.20.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 21644238,
+      "sha256": "ca1f6da9c8520bfa4c5fda688828de245bd5c86dbdad4253c13f4b1dcd8355d5",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "remote_resource_id": 164,
+      "resource_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1bZGb29Nn8Rnx1CXSQ87m_9m32g_V047B&export=download",
+      "original_filename": "Squirrelly, v7- PC-Rulebook- 2025.6.9.pdf",
+      "relative_path": "bgg/2025-children-family/squirelly/originals/Squirrelly, v7- PC-Rulebook- 2025.6.9.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 3309055,
+      "sha256": "92cec2fc01f7ce3d8412c7f5b9a9a0619155dae5d4a444118f917bce8a3a865e",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Submarine Adventure",
+      "remote_resource_id": 166,
+      "resource_url": "https://drive.google.com/file/d/1lZPFrQDFS3If4WwXilJzEGLMyvP-zb1l/view?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1lZPFrQDFS3If4WwXilJzEGLMyvP-zb1l&export=download",
+      "original_filename": "Submarine Adventure Rules.pdf",
+      "relative_path": "bgg/2025-children-family/submarine-adventure/originals/Submarine Adventure Rules.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 361234,
+      "sha256": "8587f80c938b9a9110dc6c46a746613049630a52e1bb6affc3d7983c0501dafc",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Submarine Adventure",
+      "remote_resource_id": 167,
+      "resource_url": "https://drive.google.com/file/d/1dw99YPj1fTMPgv0goPQhog1k4cEREwVS/view?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1dw99YPj1fTMPgv0goPQhog1k4cEREwVS&export=download",
+      "original_filename": "Submarine Adventure Components.pdf",
+      "relative_path": "bgg/2025-children-family/submarine-adventure/originals/Submarine Adventure Components.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 1991600,
+      "sha256": "9176e09da4e59d4cdf2d870468c3ea01ff7f2db2eed8d6b8155bfe132937bbf4",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Mermaids vs Dinosaurs",
+      "remote_resource_id": 170,
+      "resource_url": "https://drive.google.com/drive/folders/1zGPcGn3RqjxIoeSYFUSMms_lsTHQpeHH?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1-6Q7-8iOmt-aCuZGhxWCgjrkLiEFTnyI&export=download",
+      "original_filename": "Mermaids vs Dinosaur cards.pdf",
+      "relative_path": "bgg/2025-children-family/mermaids-vs-dinosaurs/originals/Mermaids vs Dinosaur cards.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 531873,
+      "sha256": "a6ace75b5f042d9b5fa59ce8102be6288bec40dd58f8cbe4b0f516c04fb29877",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Mermaids vs Dinosaurs",
+      "remote_resource_id": 170,
+      "resource_url": "https://drive.google.com/drive/folders/1zGPcGn3RqjxIoeSYFUSMms_lsTHQpeHH?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1zHxkguwZgtUnMb9008wHiKWwf0Hn4bv6&export=download",
+      "original_filename": "Mermaids v Dinosaur board.pdf",
+      "relative_path": "bgg/2025-children-family/mermaids-vs-dinosaurs/originals/Mermaids v Dinosaur board.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 118950,
+      "sha256": "dc288121fd297daf297ba84e02f3e2e9fc5fb660e9733272698b1b44f2e7063c",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Mermaids vs Dinosaurs",
+      "remote_resource_id": 171,
+      "resource_url": "https://docs.google.com/document/d/1c6fbzo61Ytm4uhcFQ5e6CdDhjreeG6WAw2qWq7-C8dI/edit?usp=sharing",
+      "final_url": "https://docs.google.com/document/d/1c6fbzo61Ytm4uhcFQ5e6CdDhjreeG6WAw2qWq7-C8dI/export?format=pdf",
+      "original_filename": "Mermaids vs Dinosaur (Google Docs export).pdf",
+      "relative_path": "bgg/2025-children-family/mermaids-vs-dinosaurs/originals/Mermaids vs Dinosaur (Google Docs export).pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 90771,
+      "sha256": "b46d269fee247ab316284f940a5c5cb9394086c3fa1a81c3dd15e67b18b8fdee",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "remote_resource_id": 174,
+      "resource_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1mXig1ugQ4sQRdzErb9BcBNVMu_36vOJv&export=download",
+      "original_filename": "Allmende manual.pdf",
+      "relative_path": "bgg/2025-children-family/allmende/originals/Allmende manual.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 323039,
+      "sha256": "888d2ce8d31d1ce510a0a1113fd54c8bf98eceecfa6d195c256e2eb4426fbd6c",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "remote_resource_id": 174,
+      "resource_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1PaJCLQt1teReWnfRL0THsfPqQWY6roSN&export=download",
+      "original_filename": "Allmende -hidden roles color.pdf",
+      "relative_path": "bgg/2025-children-family/allmende/originals/Allmende -hidden roles color.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 148290,
+      "sha256": "3e912d968fa76b2a263e3fad2d221c4d9e6fec7067c8b62785e75c646cf83cc9",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "remote_resource_id": 174,
+      "resource_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1lx1qL7zYysRGWqwWRmD69rgxKdx7xS3I&export=download",
+      "original_filename": "Allmende 1.0 color.pdf",
+      "relative_path": "bgg/2025-children-family/allmende/originals/Allmende 1.0 color.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 276023,
+      "sha256": "7f6122a1354c057c9c69111efc1572ad2864f3af29f7a726bd91299ebdf6db77",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "remote_resource_id": 174,
+      "resource_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1HAn6lP5jBHfdqhwVS75GEv4XXsl5N9rp&export=download",
+      "original_filename": "Allmende 1.0 printer friendly.pdf",
+      "relative_path": "bgg/2025-children-family/allmende/originals/Allmende 1.0 printer friendly.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 144417,
+      "sha256": "0882fd1c8776b4504ff2f99fbb964d99c4d04686ba4375c09f3a946c75834ccd",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "remote_resource_id": 174,
+      "resource_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "final_url": "https://drive.usercontent.google.com/download?id=1g3R7hGe7oZAJM4UQAlIEaMlYGSLkZcFV&export=download",
+      "original_filename": "Allmende -hidden roles printer friendly.pdf",
+      "relative_path": "bgg/2025-children-family/allmende/originals/Allmende -hidden roles printer friendly.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 26687,
+      "sha256": "71dba0af794d388fe959995f30a361eb7e06a486b7d0065e7e1eb3b8706c52a7",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Panic Picasso!",
+      "remote_resource_id": 184,
+      "resource_url": "https://drive.google.com/file/d/1HHJbCYuzNm1oHWrc4CWZ5TujdowJ-J5A/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1HHJbCYuzNm1oHWrc4CWZ5TujdowJ-J5A&export=download",
+      "original_filename": "Panic Picasso Prompt Cards and Points Tokens.pdf",
+      "relative_path": "bgg/2025-children-family/panic-picasso/originals/Panic Picasso Prompt Cards and Points Tokens.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 555727,
+      "sha256": "b4007ad1bf9001fd5aaed7cb0941826f7356199749a3af3f2b2a0e1bd9819cf2",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    },
+    {
+      "game_title": "Panic Picasso!",
+      "remote_resource_id": 185,
+      "resource_url": "https://drive.google.com/file/d/1TGqPBrOt_SQp5kUGPQTyePEWfowrfh4j/view?usp=drive_link",
+      "final_url": "https://drive.usercontent.google.com/download?id=1TGqPBrOt_SQp5kUGPQTyePEWfowrfh4j&export=download",
+      "original_filename": "Panic Picasso Rulebook.pdf",
+      "relative_path": "bgg/2025-children-family/panic-picasso/originals/Panic Picasso Rulebook.pdf",
+      "media_type": "application/pdf",
+      "language_code": "en",
+      "byte_size": 87533,
+      "sha256": "ebaa3d8bf8e4a288b893497d5713512e8ac1e49101da4b54f83e08c80fa8bc0c",
+      "version_raw": "current file observed 2026-10-03",
+      "selection_reason": "Completamento dell'acquisizione per tutte le altre entry del contest",
+      "usage_conditions": "Risorsa pubblica dichiarata nel contesto BGG; copia locale per uso personale esclusivo; nessuna redistribuzione",
+      "status": "acquired"
+    }
+  ],
+  "resource_observations": [
+    {
+      "remote_resource_id": 148,
+      "evidence_url": "https://boardgamegeek.com/thread/3388261/official-game-presentation-plus-pnp-files-plus-lin",
+      "availability_status": "unknown",
+      "version_raw": null,
+      "notes": "Il WIP BGG non era osservabile per la verifica Cloudflare; nessun file acquisito."
+    },
+    {
+      "remote_resource_id": 149,
+      "evidence_url": "https://drive.google.com/drive/folders/1U-jwn9MmxArfXS0AIxniqI4YrvODVSMI?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Cartella pubblica accessibile; acquisiti quattro PDF e le istruzioni di stampa esportate in PDF."
+    },
+    {
+      "remote_resource_id": 151,
+      "evidence_url": "https://www.canva.com/design/DAGTfqleqFM/SxYu95Fk4CYd4ysiaIp4XA/view",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Regolamento Canva osservabile in sola lettura; nessun originale scaricabile esposto."
+    },
+    {
+      "remote_resource_id": 153,
+      "evidence_url": "https://drive.google.com/drive/folders/1kAb6ps0BxrFo8lwEMrDMmSPUiw0DQAHU?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Cartella pubblica accessibile; acquisito il PDF PnP."
+    },
+    {
+      "remote_resource_id": 155,
+      "evidence_url": "https://drive.google.com/file/d/1bRMFKYviShqv89N87QyNnt7lRdQ-8W-_/view?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF pubblico di componenti e regole acquisito."
+    },
+    {
+      "remote_resource_id": 156,
+      "evidence_url": "https://linktr.ee/slowpokegame",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Pagina Linktree osservata; nessun ulteriore materiale scaricabile oltre ai collegamenti già censiti."
+    },
+    {
+      "remote_resource_id": 157,
+      "evidence_url": "https://docs.google.com/document/d/1_FmmwcxoPLaWpXbDO3aYw6E3HKSgiaE9sLTw3y7LcEg/edit?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Regolamento Google Docs esportato in PDF."
+    },
+    {
+      "remote_resource_id": 158,
+      "evidence_url": "https://drive.google.com/file/d/12AXUphcMbo-hvtUcZoINTq5XCzDWC_jR/view?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF PnP pubblico acquisito."
+    },
+    {
+      "remote_resource_id": 159,
+      "evidence_url": "https://romab.itch.io/origami-champions/download/svnyZKTYODY1ygzXw1qLZ4zbdh_2TgcJTYMd8bG6",
+      "availability_status": "access_restricted",
+      "version_raw": null,
+      "notes": "Il token dichiarato reindirizza a un login Itch e a un progetto differente; nessun login effettuato."
+    },
+    {
+      "remote_resource_id": 160,
+      "evidence_url": "https://alexandrecamargo.itch.io/sorry-thats-my-dungeon",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Pagina e download gratuiti osservabili; acquisito un PDF inglese, altri tre download inglesi bloccati dal limite tecnico Itch della sessione."
+    },
+    {
+      "remote_resource_id": 161,
+      "evidence_url": "https://drive.google.com/drive/folders/1wwt9avcEXb89YQdJImyHXqvnaXqg_IY7?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Cartella pubblica accessibile; acquisito il PDF corrente."
+    },
+    {
+      "remote_resource_id": 162,
+      "evidence_url": "https://drive.google.com/file/d/1Qj7zr1IJVQeR8zsvkRhlZzry5e5QA1ZU/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF carte acquisito."
+    },
+    {
+      "remote_resource_id": 163,
+      "evidence_url": "https://drive.google.com/file/d/1wTMUUwAJsTuvdoPhRyUFv3uhjf1Z0kCW/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF regolamento acquisito."
+    },
+    {
+      "remote_resource_id": 164,
+      "evidence_url": "https://drive.google.com/drive/folders/1LGdbkZj3mrqKiAkhXjFldlG6tCJZueF4?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Cartella pubblica accessibile; acquisiti otto PDF correnti, esclusi archivio, sell sheet e TTS."
+    },
+    {
+      "remote_resource_id": 166,
+      "evidence_url": "https://drive.google.com/file/d/1lZPFrQDFS3If4WwXilJzEGLMyvP-zb1l/view?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF regolamento acquisito."
+    },
+    {
+      "remote_resource_id": 167,
+      "evidence_url": "https://drive.google.com/file/d/1dw99YPj1fTMPgv0goPQhog1k4cEREwVS/view?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF componenti acquisito."
+    },
+    {
+      "remote_resource_id": 169,
+      "evidence_url": "https://drive.google.com/drive/folders/1XhMiXjWg6244O21QTQN7mFfk9fTTP_a7?usp=sharing",
+      "availability_status": "unavailable",
+      "version_raw": null,
+      "notes": "La cartella Google Drive restituisce 404."
+    },
+    {
+      "remote_resource_id": 170,
+      "evidence_url": "https://drive.google.com/drive/folders/1zGPcGn3RqjxIoeSYFUSMms_lsTHQpeHH?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Cartella pubblica accessibile; acquisiti carte e tabellone."
+    },
+    {
+      "remote_resource_id": 171,
+      "evidence_url": "https://docs.google.com/document/d/1c6fbzo61Ytm4uhcFQ5e6CdDhjreeG6WAw2qWq7-C8dI/edit?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Regolamento Google Docs esportato in PDF."
+    },
+    {
+      "remote_resource_id": 174,
+      "evidence_url": "https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1SPvqNnKXTlV3Y3YI04zA-Ydpmwyr4ied?usp=sharing",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "URL BGG malformato corretto isolando il secondo URL Drive; acquisiti cinque PDF correnti."
+    },
+    {
+      "remote_resource_id": 179,
+      "evidence_url": "https://rollingolem.wordpress.com/197-2/",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Pagina progetto osservabile; i due collegamenti Drive esposti restituiscono 404 al download."
+    },
+    {
+      "remote_resource_id": 183,
+      "evidence_url": "https://scobblehog-press.itch.io/crab-boil-a-print-play-crab-battle-boardgame",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "Pagina Itch e quattro file gratuiti osservabili; download non avviabile per limite tecnico Itch della sessione."
+    },
+    {
+      "remote_resource_id": 184,
+      "evidence_url": "https://drive.google.com/file/d/1HHJbCYuzNm1oHWrc4CWZ5TujdowJ-J5A/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF carte e segnalini acquisito."
+    },
+    {
+      "remote_resource_id": 185,
+      "evidence_url": "https://drive.google.com/file/d/1TGqPBrOt_SQp5kUGPQTyePEWfowrfh4j/view?usp=drive_link",
+      "availability_status": "available",
+      "version_raw": null,
+      "notes": "PDF regolamento acquisito."
+    },
+    {
+      "remote_resource_id": 186,
+      "evidence_url": "https://docs.google.com/document/d/1hEfypoqizHyDm_A7EMcFqt48qQaH1PgfhrYPjpGJ_x4/edit?usp=sharing",
+      "availability_status": "unavailable",
+      "version_raw": null,
+      "notes": "Il documento Google risulta eliminato."
+    },
+    {
+      "remote_resource_id": 187,
+      "evidence_url": "https://drive.google.com/drive/folders/1GZelx-0nKt2PlI8JFyRhgWWSj0D03oB5?usp=sharing",
+      "availability_status": "unavailable",
+      "version_raw": null,
+      "notes": "La cartella Google Drive restituisce 404."
+    }
+  ],
+  "entry_outcomes": [
+    {
+      "game_title": "Pets Rescue",
+      "outcome": "no_resource_declared"
+    },
+    {
+      "game_title": "Swirls",
+      "outcome": "not_observable"
+    },
+    {
+      "game_title": "The Robots are Multiplying",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Potions Master Tournament",
+      "outcome": "not_observable"
+    },
+    {
+      "game_title": "Isles of Odd",
+      "outcome": "acquired_partial_view_only_rulebook"
+    },
+    {
+      "game_title": "Peng Wins!",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Hex Hive: Skirmish",
+      "outcome": "no_resource_declared"
+    },
+    {
+      "game_title": "Slowpoke",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Origami Champions",
+      "outcome": "access_restricted"
+    },
+    {
+      "game_title": "Sorry! That's My Dungeon",
+      "outcome": "acquired_partial_host_limit"
+    },
+    {
+      "game_title": "Ice Cream Heist",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Poker Face",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Squirelly",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Head In The Clouds",
+      "outcome": "no_resource_declared"
+    },
+    {
+      "game_title": "Submarine Adventure",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Island of Peril",
+      "outcome": "unavailable"
+    },
+    {
+      "game_title": "Mermaids vs Dinosaurs",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Allmende",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Bon-Bon",
+      "outcome": "unavailable_downloads"
+    },
+    {
+      "game_title": "Crab Boil",
+      "outcome": "host_limit"
+    },
+    {
+      "game_title": "Panic Picasso!",
+      "outcome": "acquired"
+    },
+    {
+      "game_title": "Guesstrictions",
+      "outcome": "no_resource_declared"
+    },
+    {
+      "game_title": "Amusement park - Clashes",
+      "outcome": "unavailable"
+    }
+  ],
+  "excluded_materials": [
+    "Tabletop Simulator, Tabletopia e altre implementazioni online",
+    "video",
+    "archivi storici e sell sheet",
+    "varianti PT-BR di Sorry! That's My Dungeon"
+  ]
+}

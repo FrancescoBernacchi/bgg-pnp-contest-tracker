@@ -3,7 +3,7 @@
 ## Stato
 
 - Apertura: 2026-10-03.
-- Stato: concluso il 2026-10-03 per il primo lotto dei vincitori ufficiali.
+- Stato: concluso il 2026-10-03 dopo il secondo e ultimo incremento, esteso a tutte le altre entry del contest.
 - Titolo Codex verificato: `2026-10-03 - Acquisizione materiali - 2025 Children & Family Game Design Contest`.
 - PWS: `aligned_version` 1.5.0, uguale alla versione canonica 1.5.0.
 - Git: branch `main`, allineato a `origin/main` e working tree pulita al preflight.
@@ -72,3 +72,42 @@
 - Gli originali e il database restano esclusi da Git; nessun materiale di terzi è stato aggiunto ai contenuti versionabili.
 
 Il primo lotto è concluso secondo il contratto. Un eventuale secondo lotto Children & Family potrà essere svolto nella stessa chat come nuovo incremento esplicito, mantenendo il perimetro sul singolo contest. Il prossimo approfondimento utile è decidere se tentare il recupero autorizzato di `Zoo Rush`/`Pirate Treasures` oppure selezionare i successivi piazzati ufficiali con risorse ancora disponibili.
+
+## Secondo incremento: tutte le altre entry
+
+- Apertura incremento: 2026-10-03.
+- Selezione esplicita dell'utente: tutte le 23 entry non comprese nel primo lotto dei quattro vincitori unici.
+- Restano fuori dalla nuova selezione `Pirate Treasures`, `ICBRG`, `Good Breeding` e `Zoo Rush`, i cui esiti sono già chiusi nel primo lotto.
+- Sono inclusi anche gli esiti senza download: risorsa non dichiarata, collegamento non osservabile, host ristretto, pagina commerciale senza file gratuito, risorsa digitale non-PnP o file non più disponibile.
+- Video e implementazioni online restano esclusi dai materiali locali, ma la loro esclusione viene preservata nel riepilogo senza trasformarla in indisponibilità.
+- Il task resta del tipo **Acquisizione materiali del contest** e mantiene come unica unità `2025 Children & Family Game Design Contest`.
+
+### Obiettivo e criteri aggiuntivi
+
+- Verificare tutte le risorse dichiarate pertinenti alle 23 entry residue e acquisire tutti gli originali PnP chiaramente accessibili per uso personale.
+- Per cartelle o pagine di distribuzione, enumerare i file correnti e distinguere materiali di gioco, regolamenti, archivi storici, immagini promozionali e contenuti digitali.
+- Registrare un esito esplicito per ogni entry, anche quando non esiste una risorsa da scaricare.
+- Produrre un secondo manifest e un aggiornamento idempotente del database, senza modificare o duplicare il primo lotto.
+- Concludere soltanto dopo riconciliazione delle 27 entry complessive del contest, verifica degli hash, integrità SQLite, rigenerazione del cruscotto e test dell'app.
+
+### Registro del secondo incremento
+
+- Verificate tutte le 23 entry residue e 26 risorse remote pertinenti. Per ogni entry è presente un esito esplicito nel secondo manifest.
+- Acquisiti 33 PDF originali relativi a 12 giochi: The Robots are Multiplying (5), Isles of Odd (1), Peng Wins! (1), Slowpoke (2), Sorry! That's My Dungeon (1), Ice Cream Heist (1), Poker Face (2), Squirelly (8), Submarine Adventure (2), Mermaids vs Dinosaurs (3), Allmende (5) e Panic Picasso! (2).
+- Le cartelle Drive correnti sono state enumerate prima del download. Per Squirelly sono stati esclusi archivio, sell sheet e TTS; per tutte le entry sono stati esclusi video e implementazioni online.
+- `Origami Champions` richiede login Itch e il token dichiarato conduce a un progetto differente; non è stato effettuato login. `Island of Peril` e la cartella di `Amusement park - Clashes` restituiscono 404; il relativo Google Doc risulta eliminato.
+- Per `Bon-Bon` la pagina pubblica è osservabile, ma i due file Drive esposti restituiscono 404. `Swirls` e `Potions Master Tournament` non sono stati ulteriormente risolti perché le pagine BGG restano bloccate dalla verifica Cloudflare.
+- `Sorry! That's My Dungeon` ha prodotto un PDF inglese; i tre ulteriori PDF inglesi visibili sono rimasti bloccati dal limite tecnico di Itch. Le quattro varianti PT-BR sono state escluse secondo la politica linguistica. `Crab Boil` espone quattro file gratuiti, ma il medesimo limite Itch ne ha impedito il trasferimento. Nessun limite è stato aggirato.
+- Secondo manifest: `catalog/2025_children_family_remaining_acquisition_batch_2026-10-03.json`; generatore riproducibile: `catalog/build_2025_children_family_remaining_acquisition.py`.
+- Prova su copia: 12 acquisizioni, 33 file, 26 controlli di disponibilità, `foreign_key_check` vuoto e `integrity_check = ok`.
+- Backup pre-applicazione: `database/pnp_collection.pre-children-family-remaining-acquisition-20261003.sqlite3`, SHA-256 `76C6E8E3827F4727643B3CCDE89D056287D4EA5684C33A707AEEE18A51077528`.
+- Database operativo dopo l'applicazione: SHA-256 `30EF04C002F1307066C7BF394F3027A32DD60B6DA4433647BB74CB7B2689B348`; secondo lotto verificato 33/33 file.
+
+### Chiusura complessiva
+
+- Contest riconciliato: 27/27 entry con esito di acquisizione esplicito considerando i due incrementi.
+- Totale locale del contest: 14 giochi con almeno un file, 38 PDF originali, tutti con dimensione e SHA-256 nel manifest; 13 entry senza file per assenza dichiarata, indisponibilità, restrizione, limite dell'host o sola risorsa non scaricabile.
+- Database: 17 acquisizioni e 41 file complessivi nel progetto; `PRAGMA foreign_key_check` senza righe e `PRAGMA integrity_check = ok`.
+- Le sezioni annuali A e B e le righe qualitative di `PROJECT_PROGRESS.md` sono state aggiornate nello stesso incremento.
+- Seconda applicazione idempotente confermata; 17 test backend e 23 test frontend superati senza errori o skip.
+- Prossimo approfondimento utile: scegliere un altro singolo contest già analizzato; gli host Itch o i collegamenti oggi indisponibili potranno essere ritentati solo in un nuovo incremento esplicito, senza ripetere i download già verificati.
