@@ -225,3 +225,37 @@ test('PDF: link nelle due viste solo per file idonei e ritorno al contesto corre
   assert.match(run(`localMaterials({acquisitions:[{id:1,game_id:9,files:[${JSON.stringify(file)}]}]})`),/href="#pdf\/4\/game\/9"/);
   for(const status of ['missing','unsupported','invalid_path','corrupt'])assert.ok(!run(`viewerLink({id:4,viewer_status:'${status}'})`).includes('href='));
 });
+
+test('APP-001 categorie per contest, overall prima e grafia preservata',()=>{
+  run("data={rankings:[{contest_id:1,category:'Zeta'},{contest_id:1,category:' Overall '},{contest_id:1,category:'Alpha'},{contest_id:1,category:'Alpha'},{contest_id:2,category:'Solo'}]}");
+  assert.equal(run("JSON.stringify(rankingCategories(data.rankings,'1'))"),JSON.stringify([' Overall ','Alpha','Zeta']));
+  assert.equal(run("JSON.stringify(rankingCategories(data.rankings,'2'))"),JSON.stringify(['Solo']));
+  assert.equal(run("rankingCategories(data.rankings,'3').length"),0);
+  run("rankingFilters.category='';reconcileRankingCategory(rankingCategories(data.rankings,'1'),rankingFilters)");
+  assert.equal(run('rankingFilters.category'),' Overall ');
+  run("rankingFilters.category='Alpha';reconcileRankingCategory(rankingCategories(data.rankings,'1'),rankingFilters)");
+  assert.equal(run('rankingFilters.category'),'Alpha');
+  run("reconcileRankingCategory(rankingCategories(data.rankings,'2'),rankingFilters)");
+  assert.equal(run('rankingFilters.category'),'');
+  run("reconcileRankingCategory(rankingCategories(data.rankings,'1'),rankingFilters)");
+  assert.equal(run('rankingFilters.category'),' Overall ');
+});
+
+test('APP-001 cambio contest ricostruisce il menu e azzera la pagina',()=>{
+  const elements={};
+  const main={set innerHTML(html){for(const match of html.matchAll(/<select id="([^"]+)">([\s\S]*?)<\/select>/g)){elements['#'+match[1]]={options:[...match[2].matchAll(/<option value="([^"]*)"/g)].map(m=>({value:m[1]}))};}}};
+  const local=vm.createContext({URL,document:{querySelector:s=>s==='#main'?main:(elements[s]??={})},window:{addEventListener:()=>{}},fetch:()=>new Promise(()=>{})});
+  vm.runInContext(fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8'),local);
+  vm.runInContext("rankingResults=()=>{};data={contests:[{contest_id:1,contest_name:'Multi'},{contest_id:2,contest_name:'Solo'}],rankings:[{contest_id:1,category:'overall'},{contest_id:1,category:'art'},{contest_id:2,category:'solo'}]};renderRankings('1')",local);
+  assert.deepEqual(elements['#ranking-category'].options.map(o=>o.value),['','overall','art']);
+  elements['#ranking-category'].value='art';elements['#ranking-category'].onchange();
+  vm.runInContext('rankingFilters.page=3',local);
+  elements['#ranking-contest'].value='2';elements['#ranking-contest'].onchange();
+  assert.deepEqual(elements['#ranking-category'].options.map(o=>o.value),['','solo']);
+  assert.equal(elements['#ranking-category'].value,'');
+  assert.equal(vm.runInContext('rankingFilters.page',local),1);
+  elements['#ranking-contest'].value='1';elements['#ranking-contest'].onchange();
+  assert.equal(elements['#ranking-category'].value,'overall');
+});
+
+test('APP-001 riconosce overall nelle etichette originali del catalogo',()=>{assert.equal(run("JSON.stringify(rankingCategories([{category:'Best Art'},{category:'Best Overall Game'},{category:'Best Overall Solo Game'}],''))"),JSON.stringify(['Best Overall Game','Best Overall Solo Game','Best Art']));});

@@ -22,7 +22,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-001 — Categorie delle classifiche limitate al contest selezionato
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa`.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** Risultati BGG → Classifiche dei contest.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-0c547f97-b5e9-47ae-8403-84d5bbc6f2a6.png`; osservazione dell'utente.
@@ -31,7 +31,8 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Comportamento atteso aggiuntivo:** quando non è selezionata alcuna categoria, la scelta/preselezione e l'ordinamento devono privilegiare `overall`; le altre categorie devono seguire in ordine alfabetico. Il confronto deve essere coerente con la normalizzazione già adottata per i nomi delle categorie, senza eliminare il valore originale mostrato nei dati.
 - **Fuori scope del registro:** correzione del backend, query, API, frontend, test o dati del database.
 - **Criteri per la chiusura:** task evolutivo collegato; verifica con un contest che usa più categorie e con un contest che ne usa una sola; verifica che categorie di altri contest non compaiano; verifica dell'ordinamento/preselezione `overall` e poi alfabetico; nessuna modifica ai dati storici.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** `tasks/2026-10-03 - Categorie classifiche per contest/TASK.md`.
+- **Verifica chiusura (2026-10-03):** menu circoscritto, precedenza overall e transizioni verificati con fixture multi/singola categoria; 37 test frontend superati. Etichette reali overall controllate sul database in sola lettura.
 - **Note:** la segnalazione riguarda il comportamento del filtro e della scelta predefinita, non la classificazione o la validità delle categorie registrate nel database.
 - **Prompt task evolutivo:**
 
@@ -118,3 +119,5 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - 2026-10-03: inserita `APP-004`; nessuna implementazione eseguita.
 - 2026-10-03: predisposti i prompt evolutivi per `APP-001`–`APP-004` e resa obbligatoria la loro presenza per le segnalazioni successive.
 - 2026-10-03: inserita `APP-005` con prompt evolutivo; nessuna implementazione o estrazione eseguita.
+
+- 2026-10-03: chiusa APP-001 nel task Categorie classifiche per contest; nessuna modifica ai dati storici.

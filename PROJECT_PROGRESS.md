@@ -2079,7 +2079,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
 | Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 187 file; integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
-| App locale | estesa con lettore PDF locale | 2026-10-03: Libreria e primo visualizzatore PDF per ID; prove browser Children & Family/Kanare, tastiera e layout stretto; 29 test backend e 34 frontend; database e 41 hash invariati | PDF.js fissato e locale; mantenere confinamento, token/same-origin e assenza di rete esterna |
+| App locale | lettore PDF locale e APP-001 corretta | 2026-10-03: APP-001 verificata con 37 test frontend; categorie circoscritte al contest e precedenza overall. Libreria e primo visualizzatore PDF per ID; prove browser Children & Family/Kanare, tastiera e layout stretto; 29 test backend e 34 frontend; database e 41 hash invariati | PDF.js fissato e locale; mantenere confinamento, token/same-origin e assenza di rete esterna |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | aggiornato per Wargame | Rilevamento Wargame del 2026-10-02 registrato; altri contest mantengono finestre scadute separate | Aggiornare dopo ogni rilevamento dovuto; prossimo Wargame 2026-11-12 |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
@@ -2124,6 +2124,8 @@ Priorità nuove fonti al 2026-10-03: regolamenti completi gratuiti obbligatori p
 | 2026-10-03 | Visualizzatore PDF locale | Lettore con pagine, zoom e ritorno; renderer vendorizzato, endpoint per ID protetto da sessione/same-origin e handle confinato; nessuna modifica ai dati | task PDF; 29 test backend e 34 frontend; browser BGG/Kanare e fixture di errore |
 
 | 2026-10-03 | Acquisizione Roll & Write 2025 | 37 esiti entry, 29 acquisizioni e 146 file: 133 PDF, 7 PNG, 4 DOCX, 2 ZIP; 61 osservazioni remote; byte PDF.js preservati dopo conversione CRLF | manifest Roll & Write; hash, CRC, membri estratti e SQLite verificati; applicazione idempotente; task dedicato |
+
+| 2026-10-03 | Categorie classifiche per contest | Chiusa APP-001: menu categorie per contest, precedenza overall e transizioni coerenti; dati invariati | task dedicato; 37 test frontend |
 
 ## Protocollo di manutenzione automatica
 

@@ -133,7 +133,7 @@ Aprire **Risultati** nella navigazione principale (`#rankings`). I filtri combin
 
 Le colonne separano posizione, punteggio e voti. `Non registrato` non significa zero; nessun punteggio è ricavato dalla posizione e nessun voto dalle metriche aggregate del contest. La ricerca per autore usa esclusivamente i crediti presenti: dove mancano, viene mostrato `Autore non registrato`. Le categorie mantengono la grafia originale, senza equiparare etichette simili.
 
-Ogni riga contiene natura, fonte e data di verifica, oltre all'identificativo dell'osservazione. Titolo e contest aprono le rispettive schede. Il dettaglio entry mostra tutte le sue categorie e i suoi piazzamenti nel contest di appartenenza. `#rankings/ID` apre tutti i risultati di un contest e azzera gli altri filtri; `#results/ID` apre la sua sintesi. La sintesi è raggiungibile anche da **Statistiche e risultati** nella scheda contest. I normali filtri della vista generale restano in memoria fino al ricaricamento della pagina; non sono salvati su disco né serializzati nell'URL.
+Ogni riga contiene natura, fonte e data di verifica, oltre all'identificativo dell'osservazione. Titolo e contest aprono le rispettive schede. Il dettaglio entry mostra tutte le sue categorie e i suoi piazzamenti nel contest di appartenenza. `#rankings/ID` apre le classifiche di un contest e azzera gli altri filtri, preselezionando una categoria overall se disponibile; `#results/ID` apre la sua sintesi. La sintesi è raggiungibile anche da **Statistiche e risultati** nella scheda contest. I normali filtri della vista generale restano in memoria fino al ricaricamento della pagina; non sono salvati su disco né serializzati nell'URL.
 
 La sintesi separa categoria, ufficialità, URL della fonte e data di verifica. Mostra come vincitori soltanto i risultati ufficiali con posizione esplicita 1; per i segnali sostitutivi usa `Primi posti non ufficiali`. Se manca il primo posto, non sceglie il minimo disponibile né il punteggio più alto. La distribuzione conta osservazioni per posizione all'interno del gruppo, incluse quelle senza posizione, e non certifica la completezza della graduatoria. I dettagli espandibili contengono tutte le righe del gruppo.
 
@@ -169,3 +169,5 @@ python app/generate_project_progress.py
 ```
 
 Sono disponibili `--database` e `--output` per usare percorsi differenti. L'output predefinito è locale e ignorato da Git.
+
+APP-001 (2026-10-03): nella vista Classifiche, le categorie sono limitate al contest selezionato. Le etichette contenenti la parola overall (confronto senza distinzione di maiuscole e spazi esterni) precedono le altre, poi ordinate alfabeticamente; valori ed etichette originali restano distinti. Al cambio contest si conserva una categoria valida, altrimenti si sceglie la prima overall disponibile; senza overall si mostrano tutte le categorie. La scelta esplicita Tutte le categorie resta disponibile.

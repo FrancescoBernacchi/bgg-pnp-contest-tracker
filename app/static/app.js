@@ -240,6 +240,16 @@ function renderEntriesRoute(hash) {
   bindEntryFilters(contestId);
 }
 const rankingFilters={query:'',contest:'',year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1};
+const rankingCategoryKey=value=>value.trim().toLocaleLowerCase('it');
+const isOverallCategory=value=>/\boverall\b/.test(rankingCategoryKey(value));
+const compareRankingCategories=(a,b)=>(isOverallCategory(a)?0:1)-(isOverallCategory(b)?0:1)||rankingCategoryKey(a).localeCompare(rankingCategoryKey(b),'it')||a.localeCompare(b,'it');
+function rankingCategories(all,contest) {
+  return [...new Set(all.filter(r=>!contest||String(r.contest_id)===contest).map(r=>r.category))].sort(compareRankingCategories);
+}
+function reconcileRankingCategory(categories,filters) {
+  if(filters.category&&!categories.includes(filters.category))filters.category='';
+  if(!filters.category)filters.category=categories.find(c=>isOverallCategory(c))||'';
+}
 const rankingGroupKey=r=>JSON.stringify([r.contest_id,r.category,r.is_official,r.evidence_url,r.verified_at]);
 const rankingNature=r=>r.is_official===1?'Risultato ufficiale':'Segnale sostitutivo · non ufficiale';
 const rankingLink=r=>r.entry_id?`<a href="#entry/${r.entry_id}">${esc(r.canonical_title)}</a>`:`${esc(r.canonical_title)}<small>Entry non collegata</small>`;
@@ -248,7 +258,7 @@ function selectRankings(all,f) {
   const selected=all.filter(r=>(!f.contest||String(r.contest_id)===f.contest)&&(!f.year||String(r.year)===f.year)&&(!f.scope||r.scope_type===f.scope)&&(!f.category||r.category===f.category)&&(f.official===''||String(r.is_official)===f.official)&&(!f.position||(f.position==='missing'?r.rank==null:f.position==='podium'?r.rank!=null&&r.rank>=1&&r.rank<=3:String(r.rank)===f.position))&&`${r.canonical_title} ${r.credits||''}`.toLocaleLowerCase('it').includes(q));
   const position=(a,b)=>a.rank==null?(b.rank==null?0:1):b.rank==null?-1:(f.sort==='rank-desc'?b.rank-a.rank:a.rank-b.rank);
   return selected.sort((a,b)=>{
-    const group=String(b.year??'').localeCompare(String(a.year??''))||a.contest_name.localeCompare(b.contest_name,'it')||a.category.localeCompare(b.category,'it')||b.is_official-a.is_official||String(b.verified_at).localeCompare(String(a.verified_at))||a.evidence_url.localeCompare(b.evidence_url);
+    const group=String(b.year??'').localeCompare(String(a.year??''))||a.contest_name.localeCompare(b.contest_name,'it')||compareRankingCategories(a.category,b.category)||b.is_official-a.is_official||String(b.verified_at).localeCompare(String(a.verified_at))||a.evidence_url.localeCompare(b.evidence_url);
     return (f.sort.startsWith('rank')?position(a,b)||group:f.sort==='title'?a.canonical_title.localeCompare(b.canonical_title,'it')||group:group||position(a,b))||a.id-b.id;
   });
 }
@@ -263,13 +273,15 @@ function renderRankings(contestId='') {
     Object.assign(rankingFilters,{query:'',contest:contestId,year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1});
   }
   const all=data.rankings;
+  const categories=rankingCategories(all,rankingFilters.contest);
+  reconcileRankingCategory(categories,rankingFilters);
   const select=(key,title,content)=>`<label class="field">${title}<select id="ranking-${key}">${content}</select></label>`;
-  $('#main').innerHTML=heading('RISULTATI BGG','Classifiche dei contest','Piazzamenti registrati, categorie originali e provenienza delle osservazioni.')+`<p class="notice">Posizione, punteggio e voti sono dati distinti. I valori mancanti non equivalgono a zero. L’ordine per posizione non è un confronto di merito fra categorie o contest.</p><div class="filters"><label class="field grow">Cerca titolo o autore<input id="ranking-query" type="search" value="${esc(rankingFilters.query)}"></label>${select('contest','Contest','<option value="">Tutti i contest</option>'+data.contests.map(c=>`<option value="${c.contest_id}">${esc(c.contest_name)}</option>`).join(''))}${select('year','Anno',options(all.map(r=>r.year),'Tutti gli anni'))}${select('scope','Perimetro',options(['pnp_core','adjacent'],'Tutti'))}${select('category','Categoria',options(all.map(r=>r.category),'Tutte le categorie'))}${select('official','Natura','<option value="">Tutte</option><option value="1">Ufficiali</option><option value="0">Non ufficiali / sostitutivi</option>')}${select('position','Posizione','<option value="">Tutte</option><option value="podium">Da 1 a 3</option><option value="missing">Non registrata</option>'+[...new Set(all.map(r=>r.rank).filter(r=>r!=null))].sort((a,b)=>a-b).map(r=>`<option value="${r}">#${r}</option>`).join(''))}${select('sort','Ordina','<option value="category">Contest e categoria</option><option value="rank-asc">Posizione crescente</option><option value="rank-desc">Posizione decrescente</option><option value="title">Titolo A–Z</option>')}<button class="quiet" id="ranking-reset">Azzera filtri</button></div><div id="ranking-results" tabindex="-1" aria-live="polite"></div>`;
+  $('#main').innerHTML=heading('RISULTATI BGG','Classifiche dei contest','Piazzamenti registrati, categorie originali e provenienza delle osservazioni.')+`<p class="notice">Posizione, punteggio e voti sono dati distinti. I valori mancanti non equivalgono a zero. L’ordine per posizione non è un confronto di merito fra categorie o contest.</p><div class="filters"><label class="field grow">Cerca titolo o autore<input id="ranking-query" type="search" value="${esc(rankingFilters.query)}"></label>${select('contest','Contest','<option value="">Tutti i contest</option>'+data.contests.map(c=>`<option value="${c.contest_id}">${esc(c.contest_name)}</option>`).join(''))}${select('year','Anno',options(all.map(r=>r.year),'Tutti gli anni'))}${select('scope','Perimetro',options(['pnp_core','adjacent'],'Tutti'))}${select('category','Categoria','<option value="">Tutte le categorie</option>'+categories.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join(''))}${select('official','Natura','<option value="">Tutte</option><option value="1">Ufficiali</option><option value="0">Non ufficiali / sostitutivi</option>')}${select('position','Posizione','<option value="">Tutte</option><option value="podium">Da 1 a 3</option><option value="missing">Non registrata</option>'+[...new Set(all.map(r=>r.rank).filter(r=>r!=null))].sort((a,b)=>a-b).map(r=>`<option value="${r}">#${r}</option>`).join(''))}${select('sort','Ordina','<option value="category">Contest e categoria</option><option value="rank-asc">Posizione crescente</option><option value="rank-desc">Posizione decrescente</option><option value="title">Titolo A–Z</option>')}<button class="quiet" id="ranking-reset">Azzera filtri</button></div><div id="ranking-results" tabindex="-1" aria-live="polite"></div>`;
   for(const key of ['contest','year','scope','category','official','position','sort']) {
     const element=$('#ranking-'+key);
     if(![...element.options].some(o=>o.value===rankingFilters[key]))rankingFilters[key]=key==='sort'?'category':'';
     element.value=rankingFilters[key];
-    element.onchange=()=>{rankingFilters[key]=element.value;rankingFilters.page=1;rankingResults();};
+    element.onchange=()=>{rankingFilters[key]=element.value;rankingFilters.page=1;if(key==='contest')renderRankings();else rankingResults();};
   }
   $('#ranking-query').oninput=e=>{rankingFilters.query=e.target.value;rankingFilters.page=1;rankingResults();};
   $('#ranking-reset').onclick=()=>{Object.assign(rankingFilters,{query:'',contest:'',year:'',scope:'',category:'',official:'',position:'',sort:'category',page:1});renderRankings();};
