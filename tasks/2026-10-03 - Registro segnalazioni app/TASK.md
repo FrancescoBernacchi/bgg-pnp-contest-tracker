@@ -40,7 +40,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-002 — Layout del visualizzatore PDF in base all'orientamento prevalente
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa`.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** Libreria → Visualizzatore PDF.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-5afea572-191b-41e5-9b07-e04b2609aa8c.png`; osservazione dell'utente.
@@ -51,7 +51,8 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Comportamento atteso per PDF misti:** determinare automaticamente l'orientamento prevalente contando le pagine portrait e landscape e applicare il layout corrispondente all'intero visualizzatore, senza cambiare disposizione a ogni pagina. La regola per i pareggi deve essere definita nel task evolutivo e documentata.
 - **Fuori scope del registro:** modifica di HTML, CSS, JavaScript, PDF.js o comportamento di rendering.
 - **Criteri per la chiusura:** task evolutivo collegato; verifica su PDF prevalentemente portrait, prevalentemente landscape e misto; verifica della riduzione dell'area superiore; verifica della disposizione portrait con canvas a destra e comandi a sinistra; verifica responsive su finestra stretta; nessuna modifica agli originali acquisiti.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** `tasks/2026-10-03 - Layout PDF per orientamento/TASK.md`.
+- **Verifica chiusura (2026-10-03):** 39 test frontend e 7 backend PDF superati; Edge headless con PDF.js e PDF sintetici portrait/landscape/misti, navigazione e layout a 1400/390 px; DOM/CSS anche a 1100/800 px. Screenshot desktop/mobile esaminati. Quadrate escluse dalla maggioranza; pareggio sulla prima non quadrata, tutte quadrate portrait.
 - **Note:** l'orientamento riguarda il layout del visualizzatore, non la modifica o rotazione dei file PDF originali.
 - **Prompt task evolutivo:**
 
@@ -121,3 +122,5 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - 2026-10-03: inserita `APP-005` con prompt evolutivo; nessuna implementazione o estrazione eseguita.
 
 - 2026-10-03: chiusa APP-001 nel task Categorie classifiche per contest; nessuna modifica ai dati storici.
+
+- 2026-10-03: chiusa APP-002 nel task Layout PDF per orientamento dopo verifiche automatiche e screenshot; originali e database operativo invariati.

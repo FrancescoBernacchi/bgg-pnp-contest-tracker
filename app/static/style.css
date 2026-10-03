@@ -12,3 +12,18 @@
 .file-hash { overflow-wrap: anywhere; }
 .pdf-open{display:block;margin:8px 0}.pdf-toolbar{align-items:center}.pdf-toolbar input{width:90px}.pdf-surface{overflow:auto;background:#e5e9e2;border:1px solid var(--line);border-radius:10px;padding:16px;max-height:78vh}.pdf-surface canvas{display:block;background:white;margin:auto;box-shadow:0 2px 12px #0002}.pdf-page-text{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 Segoe UI,system-ui,sans-serif}.pdf-toolbar button{padding:10px;border:1px solid var(--line);border-radius:8px;background:white}.pdf-toolbar button:disabled{opacity:.5}#pdf-reader{min-width:0}.pdf-toolbar{position:sticky;top:0;background:var(--paper,#f7f8f3);z-index:1;padding:12px 0}
 @media(max-width:720px){nav{flex-wrap:wrap}nav a{flex:1 1 120px}}
+
+/* APP-002: document layout remains stable across page changes. */
+#pdf-reader{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-items:start}
+#pdf-reader[data-pdf-layout="portrait"]{grid-template-columns:minmax(210px,280px) minmax(0,1fr)}
+.pdf-controls{min-width:0}.pdf-controls h2{font-size:20px;margin:0 0 8px;overflow-wrap:anywhere}
+.pdf-controls .subtitle{font-size:12px;margin:0 0 8px;overflow-wrap:anywhere}
+.pdf-controls .pdf-toolbar{position:static;margin:0;padding:0;gap:8px;flex-wrap:wrap}
+.pdf-controls [data-pdf-status]{font-size:12px;margin:8px 0 0}
+#pdf-reader .pdf-surface{min-width:0;max-height:none;box-sizing:border-box;overscroll-behavior:contain}
+.pdf-text-details{grid-column:1/-1;margin:0}
+#pdf-reader[data-pdf-layout="portrait"] .pdf-toolbar{flex-direction:column;align-items:stretch}
+#pdf-reader[data-pdf-layout="portrait"] .pdf-toolbar .field{min-width:0}
+@media(max-width:900px){#pdf-reader[data-pdf-layout="portrait"]{grid-template-columns:minmax(0,1fr)}#pdf-reader[data-pdf-layout="portrait"] .pdf-toolbar{flex-direction:row;align-items:center}.pdf-controls h2{font-size:18px}.pdf-controls .subtitle{font-size:11px}}
+
+#pdf-reader .pdf-toolbar .field{flex:0 1 auto;min-width:90px}#pdf-reader .pdf-toolbar .field:has(select){min-width:180px}

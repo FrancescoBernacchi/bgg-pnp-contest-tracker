@@ -3,11 +3,11 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
-function setup({error=null,gate=null,defaultFetch=false}={}) {
+function setup({error=null,gate=null,defaultFetch=false,sizes=[[300,400],[300,400],[300,400]]}={}) {
   const nodes=new Map();
-  const root={querySelector:key=>{if(!nodes.has(key))nodes.set(key,{textContent:'',value:1,clientWidth:640,style:{},setAttribute(k,v){this[k]=v;},getContext:()=>({})});return nodes.get(key);}};
+  const root={setAttribute(k,v){this[k]=v;},querySelector:key=>{if(!nodes.has(key))nodes.set(key,{textContent:'',value:1,clientWidth:640,clientHeight:700,getBoundingClientRect:()=>({top:100}),style:{},setAttribute(k,v){this[k]=v;},getContext:()=>({})});return nodes.get(key);}};
   const calls=[],renders=[],cancellations=[];
-  const doc={numPages:3,getPage:async(number)=>({getViewport:({scale})=>({width:300*scale,height:400*scale}),
+  const doc={numPages:sizes.length,getPage:async(number)=>({getViewport:({scale})=>({width:sizes[number-1][0]*scale,height:sizes[number-1][1]*scale}),
     render:options=>{renders.push({number,options});return {promise:Promise.resolve(),cancel:()=>cancellations.push(number)};},
     getTextContent:async()=>({items:[{str:'<script>safe plain text</script>',hasEOL:true}]}),cleanup(){}})};
   let options, destroyed=0;
@@ -18,7 +18,7 @@ function setup({error=null,gate=null,defaultFetch=false}={}) {
     if(gate&&url.endsWith('/pdf'))await gate;
     return {ok:true,headers:{get:()=>20},json:async()=>url.endsWith('session')?{token:'temporary'}:{viewer_status:'ready',original_filename:'<unsafe>.pdf',canonical_title:'Game',version_raw:'v2',acquisition_id:7,acquired_at:'2026-10-03'},arrayBuffer:async()=>new ArrayBuffer(20)};
   };
-  const context=vm.createContext({window:{devicePixelRatio:2},AbortController,Uint8Array,fetch:fetcher});
+  const context=vm.createContext({window:{devicePixelRatio:2,innerHeight:824,addEventListener(){},removeEventListener(){}},AbortController,Uint8Array,fetch:fetcher});
   vm.runInContext(fs.readFileSync(path.join(__dirname,'static/pdf-viewer.js'),'utf8'),context);
   const reader=new context.window.PnPViewers.pdf(root,{...(defaultFetch?{}:{fetch:fetcher}),engine:async()=>engine});
   return {reader,nodes,root,calls,renders,cancellations,options:()=>options,destroyed:()=>destroyed};
@@ -66,4 +66,29 @@ test('PDF: errori corrotti e cifrati restano locali e comprensibili',async()=>{
 });
 test('PDF: il fetch del browser mantiene il receiver corretto',async()=>{
   const s=setup({defaultFetch:true});await s.reader.open(1);assert.equal(s.renders.length,1);
+});
+
+test('PDF: maggioranze, pareggi e quadrate scelgono un layout stabile',async()=>{
+  for(const [sizes,expected] of [
+    [[[300,400],[500,200],[300,400]],'portrait'],
+    [[[300,400],[500,200],[500,200]],'landscape'],
+    [[[500,200],[300,400],[200,200]],'landscape'],
+    [[[300,400],[500,200]],'portrait'],
+    [[[200,200],[200,200]],'portrait']]) {
+    const s=setup({sizes});await s.reader.open(1);
+    assert.equal(s.root['data-pdf-layout'],expected);
+    await s.reader.setPage(sizes.length);
+    assert.equal(s.root['data-pdf-layout'],expected);
+    const canvas=s.nodes.get('canvas');
+    assert.ok(parseInt(canvas.style.height)<=666);
+    assert.ok(parseInt(canvas.style.width)<=608);
+  }
+});
+test('PDF: fit considera altezza e larghezza anche su finestra stretta',async()=>{
+  const s=setup({sizes:[[800,300],[300,800]]});await s.reader.open(1);
+  const surface=s.nodes.get('[data-pdf-surface]');surface.clientWidth=240;surface.clientHeight=350;
+  await s.reader.setPage(2);
+  assert.ok(parseInt(s.nodes.get('canvas').style.width)<=208);
+  assert.ok(parseInt(s.nodes.get('canvas').style.height)<=316);
+  s.reader.zoom='2';await s.reader.render();assert.equal(s.nodes.get('canvas').style.height,'1600px');
 });
