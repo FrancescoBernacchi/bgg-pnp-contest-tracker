@@ -1,0 +1,2 @@
+# Asset di terzi con SHA-256 nel manifest: preservare esattamente i byte originali.
+app/static/vendor/pdfjs/** -text

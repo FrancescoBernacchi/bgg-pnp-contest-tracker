@@ -135,7 +135,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Censimento entry | 🔴 0 | 🟢 37 | 🔴 0 | — |
 |   |     Classifiche | 🔴 0 | 🟢 11 | 🔴 0 | — |
 |   |     Lettura materiali | 🔴 0/0 entry | 🟢 37/37 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/37 entry | 🔴 0/0 entry | — |
+|   |     Download materiali | 🔴 0/0 entry | 🟡 29/37 entry | 🔴 0/0 entry | — |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 | — | — |
 |   |     Censimento entry | 🟡 89 | 🟢 74 | — | — |
@@ -328,7 +328,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-| 68 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 69 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -508,7 +508,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
 |   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
 |   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-| 69 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 70 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
 |   |     Censimento entry | — | — | 🔴 0 | — |
 |   |     Classifiche | — | — | 🔴 0 | — |
@@ -682,7 +682,7 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |     Classifiche | 🔴 0 | — | — | — |
 |   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
 |   |     Download materiali | 🔴 0/0 entry | — | — | — |
-| 70 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 68 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
 |   |     Censimento entry | — | — | — | 🔴 0 |
 |   |     Classifiche | — | — | — | 🔴 0 |
@@ -1478,79 +1478,79 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 |---:|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **Best Overall Game** |
 | 1 |   |   |   |   | #1 [Rolling Fiefdoms](https://boardgamegeek.com/thread/3596654) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 2 |   |   |   |   | #2 [Doodle Bash!](https://boardgamegeek.com/thread/3606967) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 3 |   |   |   |   | #3 [The Leaning Tower of Pisa](https://boardgamegeek.com/thread/3613315) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 4 |   |   |   |   | #4 [Dawn Chorus](https://boardgamegeek.com/thread/3618849) — Ready |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 5 |   |   |   |   | #4 [Mainframe: System Shutdown](https://boardgamegeek.com/thread/3617159) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 6 |   |   |   |   | #6 [Natura](https://boardgamegeek.com/thread/3621278) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 7 |   |   |   |   | #7 [Ancient World](https://boardgamegeek.com/thread/3614076) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 8 |   |   |   |   | #8 [Skyfall](https://boardgamegeek.com/thread/3600730) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 9 |   |   |   |   | #9 [Vanguard Multi Asset Global Command](https://boardgamegeek.com/thread/3619638) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 10 |   |   |   |   | #10 [Labyrinth of Shadows](https://boardgamegeek.com/thread/3584529) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 11 |   |   |   |   | [1899](https://boardgamegeek.com/thread/3600465) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 12 |   |   |   |   | [A Dragon's Die](https://boardgamegeek.com/thread/3607359) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 13 |   |   |   |   | [City Lights](https://boardgamegeek.com/thread/3621048) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 14 |   |   |   |   | [Compass & Ink](https://boardgamegeek.com/thread/3593066) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 15 |   |   |   |   | [Dicease Control: The 4.D-10 Pathogen](https://boardgamegeek.com/thread/3603070) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 16 |   |   |   |   | [Fortify!](https://boardgamegeek.com/thread/3615315) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 17 |   |   |   |   | [Fortune Script](https://boardgamegeek.com/thread/3621017) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 18 |   |   |   |   | [INFRARED](https://boardgamegeek.com/thread/3593194) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 19 |   |   |   |   | [Lithomacy](https://boardgamegeek.com/thread/3617600) — Ready |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 20 |   |   |   |   | [Master of Thievery](https://boardgamegeek.com/thread/3620403) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 21 |   |   |   |   | [Necromancy: Roll Them Bones!](https://boardgamegeek.com/thread/3592805) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 22 |   |   |   |   | [On the Trail of Bigfoot](https://boardgamegeek.com/thread/3592032) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 23 |   |   |   |   | [On-LINE Kasino](https://boardgamegeek.com/thread/3619168) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 24 |   |   |   |   | [PIXIX](https://boardgamegeek.com/thread/3620811) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 25 |   |   |   |   | [Ringleader](https://boardgamegeek.com/thread/3617946) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 26 |   |   |   |   | [Roll & Pose](https://boardgamegeek.com/thread/3620499) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 27 |   |   |   |   | [Rolling Parks](https://boardgamegeek.com/thread/3619248) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 28 |   |   |   |   | [Scribe](https://boardgamegeek.com/thread/3592781) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 29 |   |   |   |   | [Spellwrights Codex](https://boardgamegeek.com/thread/3617539) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 30 |   |   |   |   | [STRATOS](https://boardgamegeek.com/thread/3592669) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 31 |   |   |   |   | [The Legend of Whispervale](https://boardgamegeek.com/thread/3621367) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 32 |   |   |   |   | [The Thirteenth Dimension](https://boardgamegeek.com/thread/3595192) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 33 |   |   |   |   | [Thieves of Bandervon](https://boardgamegeek.com/thread/3596433) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 34 |   |   |   |   | [U2: Flights of the Dragon Lady](https://boardgamegeek.com/thread/3585469) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 | 35 |   |   |   |   | [Wizard's Tutelage](https://boardgamegeek.com/thread/3592976) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🔴 |
 | 36 |   |   |   |   | [Word Builders](https://boardgamegeek.com/thread/3620974) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟡 |
 | 37 |   |   |   |   | [Yadoya](https://boardgamegeek.com/thread/3618848) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+|   |   |   |   |   | L 🟢 · D 🟢 |
 
 #### Gruppo 4 di 4
 
@@ -2039,7 +2039,7 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | Requisiti materiali | 387 | Nessun denominatore certo | parziale | Testo originale, normalizzazione, quantità e provenienza preservati quando osservabili | `entry_material_requirements` |
 | Osservazioni di classifica | 1.054 | Dipende dalle categorie pubblicate | parziale | Risultati disponibili acquisiti senza fondere sistemi di voto incompatibili | `rankings` |
 | Acquisizioni | 17 | Primi lotti Kanare e Children & Family 2025 | completo per i lotti eseguiti | Ogni gioco acquisito ha decisione, fonte, condizioni e data | `acquisitions`; manifest Kanare e BGG |
-| File acquisiti | 41 | 3 PDF Kanare e 38 PDF Children & Family 2025, uso personale esclusivo | completo per i lotti eseguiti | Ogni file ha dimensione, MIME, SHA-256 e collegamento alla risorsa | `acquired_files`; verificatori acquisizione |
+| File acquisiti | 187 | 3 PDF Kanare, 38 PDF Children & Family e 146 file Roll & Write 2025; uso personale esclusivo | completo per i lotti eseguiti, con limiti remoti espliciti | Dimensione, MIME, SHA-256 e provenienza per ogni file; ZIP e DOCX verificati strutturalmente | `acquired_files`; verificatori acquisizione |
 | Titoli Kanare_Abstract | 64 giochi canonici conservativi, 76 record nativi, 39 prodotti e 54 implementazioni | Censimento Kanare del 2026-09-20; destinazioni verificate il 2026-09-21 | censimento completo sulle superfici autorizzate; destinazioni parzialmente verificate | 14 implementazioni `verified`, 40 `uncertain`; 10 matching confermati, 1 respinto e 15 ancora `candidate` | `catalog/verify_kanare_abstract_import.py`; task destinazioni |
 
 ## Pipeline operativa
@@ -2052,9 +2052,9 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | 4. WIP e risorse dichiarate | Entry censita e primo post WIP | Esito scansione, menzioni e provenienza | parziale; Wargame 2026 completo | Stati negativi distinti; URL identici deduplicati | Completare i contest non ancora scansionati con task separati |
 | 5. Requisiti materiali | Primo post; regole solo se autorizzate | Requisiti originali e normalizzati | parziale | Copertura `first_post_only` distinta da `rules_integrated` | Proseguire insieme alla scansione WIP |
 | 6. Risultati e segnali | Risultati BGG o segnale sostitutivo | Posizione, categoria, voto, ufficialità e fonte | parziale | Nessuna inferenza di vincitore senza posizione esplicita | Verificare contest conclusi con risultati incompleti |
-| 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | Children & Family 2025 completato sui vincitori e poi su tutte le entry residue | Segnali ufficiali distinti dai sostitutivi | Definire soglie generali soltanto prima di selezioni prive di risultati sufficienti |
-| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | completata per Children & Family 2025 | Esiti espliciti per 27/27 entry; nessun aggiramento di limiti o autenticazione | Ripetere per ogni nuovo contest selezionato |
-| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | parziale sul progetto; Kanare e Children & Family 2025 completati nei rispettivi perimetri | Nessuna redistribuzione; originali immutabili | Selezionare un altro singolo contest già analizzato |
+| 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | Tutte le entry Children & Family e Roll & Write 2025 selezionate esplicitamente | Segnali ufficiali distinti dai sostitutivi | Definire soglie generali soltanto prima di selezioni prive di risultati sufficienti |
+| 8. Verifica host esterno | Entry selezionata e risorsa dichiarata | Osservazione di disponibilità | completata nei perimetri Children & Family e Roll & Write 2025 | Esiti su 27/27 e 37/37 entry; 61 verifiche di risorse Roll & Write; nessun aggiramento | Ripetere per ogni nuovo contest selezionato |
+| 9. Acquisizione | Verifica positiva e condizioni compatibili | Record di acquisizione e file originale | parziale sul progetto; Kanare, Children & Family e Roll & Write trattati nei rispettivi perimetri | Roll & Write: 29 giochi, 146 file; una entry ristretta e sette senza risorsa dichiarata | Selezionare un altro singolo contest già analizzato |
 | 10. Integrità e versioni | File acquisito | Manifest, hash e relazione tra versioni | completo per i primi lotti Kanare e BGG | Hash per ogni file; versioni precedenti preservate | Applicare lo stesso protocollo ai lotti futuri |
 | 11. Consultazione e report | Database locale | App e output rigenerabili | completo per le funzioni correnti | Lettura SQLite in sola lettura; nessuna rete implicita | Evolvere solo con requisiti concreti |
 
@@ -2070,21 +2070,21 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 4 | Completare WIP, risorse e materiali per singolo contest | parziale | Wargame 2026 completo 23/23; 167 di 464 entry 2025 hanno scansione registrata | Skill BGG; task per singolo contest | Aprire `Analisi materiali del contest` per Solitaire 2025 | `sources/2026-WARGAME-MATERIALS.md`; `sources/2025-CONTEST-COVERAGE.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
 | 6 | Definire la priorità di acquisizione | parziale | Per Children & Family 2025 è stato adottato il criterio dei vincitori ufficiali; mancano soglie generali quando voti o risultati non bastano | Risultati e segnali disponibili | Formalizzare soglie generali solo quando serviranno a una selezione ambigua | `PROJECT.md`; manifest Children & Family |
-| 7 | Proseguire le acquisizioni selettive | Children & Family 2025 completato | Kanare: 3 giochi e 3 PDF; BGG Children & Family 2025: esito su 27/27 entry, 14 giochi e 38 PDF acquisiti | Nuova selezione esplicita per ogni contest | Selezionare un altro contest già analizzato oppure tentare in futuro i soli host oggi bloccati | manifest Kanare e Children & Family; `library/README.md` |
+| 7 | Proseguire le acquisizioni selettive | Children & Family e Roll & Write 2025 trattati | Kanare: 3 giochi/3 PDF; Children & Family: 14 giochi/38 PDF; Roll & Write: 29 giochi/146 file, esiti su 37/37 entry | Nuova selezione esplicita per ogni contest | Prossima acquisizione suggerita: 1-Card 2025; recuperi remoti in incrementi separati | manifest dei tre perimetri; `library/README.md` |
 
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
 | Schema e migrazioni | completo | Migrazioni 001-010 presenti; 010 applicata all'operativo il 2026-09-21 | Ogni modifica passa da nuova migrazione numerata |
-| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 17 acquisizioni e 41 file; integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
+| Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 187 file; integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
 | App locale | estesa con lettore PDF locale | 2026-10-03: Libreria e primo visualizzatore PDF per ID; prove browser Children & Family/Kanare, tastiera e layout stretto; 29 test backend e 34 frontend; database e 41 hash invariati | PDF.js fissato e locale; mantenere confinamento, token/same-origin e assenza di rete esterna |
 | Report tecnico contest | completo ma rigenerabile | `outputs/contest-monitoring-dashboard.md` | Rigenerare dal database; non trattarlo come fonte primaria |
 | Calendario monitoraggio | aggiornato per Wargame | Rilevamento Wargame del 2026-10-02 registrato; altri contest mantengono finestre scadute separate | Aggiornare dopo ogni rilevamento dovuto; prossimo Wargame 2026-11-12 |
 | Task auditabili | completo | Cartelle in `tasks/` | Aprire e chiudere secondo il workflow di progetto |
 | Git/GitHub | finalizzazione Libreria e PDF su main autorizzata | 2026-10-03: partenza da main pulito e allineato a origin/main; branch codex/libreria-locale-materiali verificato; commit e push del branch autorizzati dall’utente, senza unione in main. Libreria committata e pubblicata con eb95408; nuovo branch codex/visualizzatore-pdf-locale autorizzato da tale base, commit, push e fast-forward in main del nuovo incremento autorizzati il 2026-10-03 | Commit, push e unione solo dopo autorizzazioni distinte dell'utente |
-| Libreria nell’app locale | completo | 2026-10-03: consultazione di 17 acquisizioni e 41 file, tutti presenti; 38 Children & Family e 3 Kanare; filtri, paginazione e schede gioco; 22 test backend e 28 frontend | Conservare sola lettura, confinamento library e separazione degli stati; unica eccezione PDF per ID con controlli dedicati |
+| Libreria nell’app locale | completo per PDF idonei; formati ulteriori da integrare | 2026-10-03: 46 acquisizioni e 187 file; aggiunti PNG, DOCX e ZIP Roll & Write, segnalati come non supportati; Starter_Cards.pdf supera 128 MiB | Originali apribili localmente; visualizzazione immagini/documenti in task autonomi; hash PDF.js preservati tramite `.gitattributes` |
 
 ## Registro degli aggiornamenti del cruscotto
 
@@ -2122,6 +2122,8 @@ Priorità nuove fonti al 2026-10-03: regolamenti completi gratuiti obbligatori p
 | 2026-10-03 | Libreria locale nell’app | Aggiunta consultazione sicura di acquisizioni e file, filtri e schede gioco; 41 file presenti, nessuna modifica operativa | app; task Libreria; 22 test backend e 28 frontend |
 
 | 2026-10-03 | Visualizzatore PDF locale | Lettore con pagine, zoom e ritorno; renderer vendorizzato, endpoint per ID protetto da sessione/same-origin e handle confinato; nessuna modifica ai dati | task PDF; 29 test backend e 34 frontend; browser BGG/Kanare e fixture di errore |
+
+| 2026-10-03 | Acquisizione Roll & Write 2025 | 37 esiti entry, 29 acquisizioni e 146 file: 133 PDF, 7 PNG, 4 DOCX, 2 ZIP; 61 osservazioni remote; byte PDF.js preservati dopo conversione CRLF | manifest Roll & Write; hash, CRC, membri estratti e SQLite verificati; applicazione idempotente; task dedicato |
 
 ## Protocollo di manutenzione automatica
 
