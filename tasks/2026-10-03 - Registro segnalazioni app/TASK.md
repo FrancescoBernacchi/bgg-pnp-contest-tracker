@@ -60,7 +60,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-003 — Contatore dei giochi censiti accanto a Kanare
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa`.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** navigazione laterale → sezione fonti multifonte.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-58e7ad76-0761-442c-a94e-ce9cfef4322d.png`; osservazione dell'utente.
@@ -69,7 +69,8 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Presentazione attesa:** usare lo stesso stile visivo, allineamento e significato dei contatori già presenti nella navigazione; il numero deve aggiornarsi quando cambia il conteggio sottostante e non deve essere un valore statico scritto nell'interfaccia.
 - **Fuori scope del registro:** modifica delle query, API, conteggi del database, frontend o navigazione.
 - **Criteri per la chiusura:** task evolutivo collegato; conteggio verificato contro la fonte dati autorevole della vista Kanare; visualizzazione corretta su desktop e schermi stretti; nessuna confusione con il numero di prodotti, record nativi o giochi canonici complessivi.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** `tasks/2026-10-03 - Contatore giochi Kanare/TASK.md`.
+- **Verifica chiusura (2026-10-03):** conteggio sulla stessa fonte della vista Kanare: 64 giochi canonici distinti. Caricamento e rilettura verificati con 2/0/1 giochi; filtri e prodotti non alterano il totale. 32 test frontend superati. Stile nav-count esistente: allineato a destra su desktop e nascosto sotto 720 px come gli altri contatori; verifica strutturale HTML/CSS, senza prova visiva browser.
 - **Note:** il contatore richiesto riguarda i giochi censiti della fonte Kanare, non il totale generale mostrato accanto a `Giochi`.
 - **Prompt task evolutivo:**
 

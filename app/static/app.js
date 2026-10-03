@@ -100,6 +100,7 @@ async function load() {
     $('#contest-count').textContent = data.contests.length;
     $('#entry-count').textContent = data.entries.length;
     $('#game-count').textContent = data.games.length;
+    $('#kanare-count').textContent = data.games.filter(game=>game.source_keys.includes('kanare_abstract')).length;
     $('#freshness').textContent = `Letto il ${day(data.generated_at)}`;
     await route();
   } catch(error) { errorPanel(error); }
