@@ -173,7 +173,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-009 — Schede annuali compatte e righe espandibili
 
-- **Stato:** `segnalata`.
+- **Stato:** `risolta` — implementata e verificata in TSK-0049 il 2026-10-04.
 - **Data:** 2026-10-04.
 - **Area:** Avanzamento per anno.
 - **Fonte:** richiesta dell'utente e immagine `C:\Users\39348\AppData\Local\Temp\codex-clipboard-12ce2299-1372-4925-ab20-036efc944aa5.png`.
@@ -183,12 +183,30 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Aggregazione:** nella sintesi di ciascun anno combinare PnP principali e adiacenti (indicati come “laterali” nella richiesta). Sommare numeratori e denominatori omogenei, senza fare la media semplice delle percentuali. Preservare gli stati ignoti/non applicabili e i denominatori specifici delle fasi. Il dettaglio espanso mantiene i due perimetri distinti.
 - **Relazioni:** usare le metriche di completamento introdotte da APP-008; l'aggregazione compatta è una presentazione aggiuntiva e non cambia i dati o i confini dei workflow.
 - **Criteri per la chiusura:** quattro schede per riga desktop; testi richiesti rimossi/abbreviati; tutte le righe collassate all'apertura; espansione esclusiva verificata; cinque indicatori aggregati corretti anche con denominatori differenti o ignoti; dettaglio distinto per perimetro; uso da tastiera, etichette accessibili delle metriche e layout su schermi stretti verificati.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** TSK-0049, `tasks/2026-10-04 - APP - Schede annuali compatte e righe espandibili/TASK.md`.
 - **Prompt task evolutivo:**
 
   > Implementa APP-009 del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md` nella vista Avanzamento per anno. Mostra quattro anni per riga desktop, elimina “Avanzamento separato per perimetro” e abbrevia “entry complessive” in “entry”. Rendi collassabili le righe intese come gruppi di quattro schede annuali: tutte devono essere collassate inizialmente e una sola può essere espansa; aprendo una nuova riga richiudi quella precedente. Nella modalità collassata riduci al minimo l'altezza e mostra per ogni anno conteggio entry e cinque piccoli indicatori a torta in linea: censimento entry, censimento classifica, censimento materiali, acquisizione materiali e acquisizione immagini. Gli indicatori devono sintetizzare insieme PnP principali e adiacenti, usando le metriche di completamento APP-008: somma numeratori e denominatori omogenei, non fare medie semplici delle percentuali e rappresenta esplicitamente dati ignoti/non applicabili. Mantieni nel dettaglio espanso i due perimetri separati. Prevedi etichette e valori accessibili, attivazione da tastiera e adattamento a schermi stretti, con comportamento coerente quando cambia il raggruppamento responsive. Verifica stato iniziale, espansione esclusiva, aggregazioni, casi senza dati e navigazione esistente. Documenta risultati e limiti e aggiorna lo stato della segnalazione; usa il naming di categoria APP senza identificativi di segnalazione nel titolo.
 
+### APP-010 — Colori coerenti per tipo di avanzamento
+
+- **Stato:** `segnalata`.
+- **Data:** 2026-10-04.
+- **Area:** Avanzamento per anno → barre e indicatori a torta.
+- **Fonte:** richiesta dell'utente e immagine `C:\Users\39348\AppData\Local\Temp\codex-clipboard-fb387d7b-eddd-4ab8-b366-64047fb3d844.png`.
+- **Contesto osservato:** il censimento entry usa colori diversi nei PnP principali e negli adiacenti; gli indicatori a torta usano un colore uniforme anche per fasi differenti.
+- **Comportamento atteso:** assegnare un colore riconoscibile a ciascuna delle cinque fasi (censimento entry, censimento classifica, censimento materiali, acquisizione materiali, acquisizione immagini). Usare lo stesso colore della fase nelle barre di entrambi i perimetri e nelle relative torte aggregate, in tutti gli anni e nelle modalità collassata/espansa.
+- **Scelta della palette:** definire e documentare una mappatura unica, riutilizzando ove opportuno i colori esistenti. Il colore identifica la fase, non il perimetro; principale e adiacente restano identificati dalle intestazioni. Conservare un trattamento coerente della parte non completata e dei dati non disponibili.
+- **Relazioni:** segue le metriche APP-008 e il layout compatto APP-009; non modifica formule, conteggi o aggregazioni.
+- **Criteri per la chiusura:** cinque colori di fase documentati e applicati coerentemente a barre/torte e principali/adiacenti; contrasto e leggibilità verificati; nomi e valori rendono le metriche distinguibili anche senza percezione del colore; casi 0%, 100% e non disponibile verificati.
+- **Task evolutivo:** da assegnare.
+- **Prompt task evolutivo:**
+
+  > Implementa APP-010 del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`. Nella vista Avanzamento per anno definisci una mappatura unica di colori per le cinque fasi: censimento entry, censimento classifica, censimento materiali, acquisizione materiali e acquisizione immagini. Ogni fase deve avere lo stesso colore nelle barre dei PnP principali, nelle barre degli adiacenti e nei corrispondenti indicatori a torta aggregati, in ogni anno e nelle viste collassata ed espansa. Scegli una palette distinguibile e coerente con l'app, riutilizzando i colori esistenti dove opportuno, e centralizza la mappatura per evitare divergenze. Mantieni coerenti sfondo non completato e stati non disponibili; conserva etichette e valori accessibili affinché il colore non sia l'unico mezzo di identificazione. Non modificare metriche, dati o aggregazioni introdotte da APP-008/APP-009. Verifica corrispondenza dei colori fra barre e torte, entrambi i perimetri, casi 0%, 100% e dato non disponibile, contrasto e schermi stretti. Documenta la palette e le verifiche e aggiorna la segnalazione con il riferimento al task. Usa il naming di categoria APP senza identificativi di segnalazione nel titolo.
+
 ## Registro cambiamenti
+
+- 2026-10-04: inserita APP-010 con prompt evolutivo; nessuna implementazione eseguita nel registro.
 
 - 2026-10-04: inserita APP-009 con prompt evolutivo; nessuna implementazione eseguita nel registro.
 
