@@ -104,3 +104,8 @@ Verifiche riuscite: prova su copia in memoria prima dell'applicazione, backup SQ
 Prossimo passo utile: MAT di un solo contest 2024 (per esempio 9-Card); eventuale completamento delle sei challenge adiacenti in un successivo incremento BGG-A 2024. Nessun monitoraggio ordinario previsto per questi contest conclusi. Nessuna nuova strategia strutturale: applicati i pattern già verificati del playbook, senza manutenzione della directory `.agents`.
 
 Salvataggio Git: deliverable locali da committare. Commit/push non eseguiti; modifiche pregresse di altri task preservate. Messaggio suggerito per un commit selettivo: `Completa censimento dei contest PnP principali BGG 2024`.
+
+
+### Salvataggio e pubblicazione — 2026-10-04
+
+Su autorizzazione esplicita dell’utente, creato il commit `4859212` (`Completa censimento dei contest PnP principali BGG 2024`) su `main`: 15 file, roster, importatore, rapporto, task e parti pertinenti del registro/cruscotto. Database e backup esclusi secondo `.gitignore`. Push riuscito; `git ls-remote origin refs/heads/main` conferma `485921299735b0b36c9054cb0ec42fd0937ecafa`. Modifiche pregresse di governance e Classifiche 2025 preservate localmente e non incluse. Questo esito è registrato in un successivo commit documentale, senza anticiparne l’hash.
