@@ -1403,6 +1403,46 @@
         "last_task_document_commit": "d8ad1c7990383261aa2e135fe46e689929251655"
       },
       "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa."
+    },
+    {
+      "id": "TSK-0051",
+      "original_title": "2026-10-04 - MAT - 9-Card Nanogame 2025",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - MAT - 9-Card Nanogame 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "94 esiti MAT verificati: 89 completi, 5 blocchi espliciti; SQLite/API/browser controllati.",
+      "coverage": {
+        "contest_id": 13,
+        "local_entries": 94,
+        "official_roster_rows_observed": 93,
+        "complete": 89,
+        "blocked": 5,
+        "resource_entries": 80,
+        "resources": 208,
+        "requirements": 414
+      },
+      "dependencies": [
+        "Riconciliazione roster ElementaBrawl: 473/474",
+        "WIP mancanti per 458,459,467; post originale 447 non osservabile"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10824-ae7a-7761-854f-8fa1d95576d4"
+      ],
+      "next_action": "Riconciliare roster ElementaBrawl in incremento distinto; eventuale ACQ singolo contest dopo selezione giochi.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Working tree preesistente modificata; nessuna operazione Git."
+      },
+      "closed_at": "2026-10-04"
     }
   ]
 }

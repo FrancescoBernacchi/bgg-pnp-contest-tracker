@@ -1,0 +1,37 @@
+{
+  "task_id": "TSK-0051",
+  "checked_at": "2026-10-04",
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_and_rankings_unchanged": true,
+  "raw_material_fingerprints_matched": 90,
+  "url_fingerprints_matched": 90,
+  "resource_scans": 94,
+  "material_scans": 94,
+  "complete": 89,
+  "blocked": 5,
+  "resources": 208,
+  "requirements": 414,
+  "sql_sha256": "baa4690642ac9f7cfae04ec7bcc24ce2bc6155f488ca9fe7856585d01c0e04ae",
+  "applied": true,
+  "backup_path": "outputs/2025-nine-card-materials/before-import.sqlite3",
+  "backup_sha256": "aea0c69fbbabf54bdf425ccfb8faaee703dd72f95ac13f155fe6a918b6e686cf",
+  "operational_integrity": "ok",
+  "operational_idempotent": true,
+  "local_app_verification": {
+    "contest_id": 13,
+    "materials_complete_count": 89,
+    "materials_total": 94,
+    "materials_blocked_count": 5,
+    "detail_entry_ids_checked": [
+      393,
+      447,
+      474
+    ],
+    "browser_contest_rendered": true
+  },
+  "progress_regenerated": true,
+  "registry_status": "completato"
+}
