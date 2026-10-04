@@ -1,0 +1,191 @@
+{
+  "verified_at": "2026-10-04",
+  "source": "database/pnp_collection.sqlite3; query sola lettura equivalente app/server.py ranked_entry_count",
+  "pnp_core": {
+    "ranked": 207,
+    "entries": 384,
+    "percent": 53.90625
+  },
+  "adjacent": {
+    "ranked": 40,
+    "entries": 80,
+    "percent": 50
+  },
+  "total": {
+    "ranked": 247,
+    "entries": 464,
+    "percent": 53.23275862068966
+  },
+  "contests": [
+    {
+      "id": 16,
+      "name": "2025 Solomode Contest",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/thread/3470244/2025-solomode-contest",
+      "results_url": "https://boardgamegeek.com/thread/3470244/article/46281057#46281057",
+      "entries": 38,
+      "ranked": 19,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 20,
+      "name": "2025 Traditional Deck Game Design Contest",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3569158/article/47101633#47101633",
+      "entries": 42,
+      "ranked": 21,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 294,
+      "name": "January–February 2025 — 24 Hour Design Challenge (GUARD)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 295,
+      "name": "July–August 2025 — 24 Hour Design Challenge (PAD)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 296,
+      "name": "March–April 2025 — 24 Hour Design Challenge (REVEAL)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 297,
+      "name": "May–June 2025 — 24 Hour Design Challenge (GREEN)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 298,
+      "name": "November–December 2025 — 24 Hour Design Challenge (_ _ _ ANKS)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 299,
+      "name": "September–October 2025 — 24 Hour Design Challenge (PATCH)",
+      "scope_type": "adjacent",
+      "source_url": "https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners",
+      "results_url": null,
+      "entries": 0,
+      "ranked": 0,
+      "review_status": "roster_non_censito"
+    },
+    {
+      "id": 12,
+      "name": "2025 In-Hand Game Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3378403/2025-in-hand-game-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3378403/2025-in-hand-game-design-contest",
+      "entries": 27,
+      "ranked": 15,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 13,
+      "name": "2025 9-Card Nanogame Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "entries": 94,
+      "ranked": 19,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 14,
+      "name": "2025 Children & Family Game Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3441385/2025-children-and-family-game-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3441385/article/46099911#46099911",
+      "entries": 27,
+      "ranked": 16,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 15,
+      "name": "2025 1-Card Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3487579/article/45882567#45882567",
+      "entries": 38,
+      "ranked": 31,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 17,
+      "name": "2025 Solitaire Print and Play Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3520713/2025-solitaire-print-and-play-contest",
+      "results_url": "https://boardgamegeek.com/thread/3520713/article/46153954#46153954",
+      "entries": 74,
+      "ranked": 48,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 18,
+      "name": "2025 Two-Player Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3530940/2025-two-player-print-and-play-game-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3530940/article/46241868#46241868",
+      "entries": 40,
+      "ranked": 20,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 19,
+      "name": "2025 54-Card Game Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3536713/2025-54-card-game-design-contest",
+      "results_url": "https://boardgamegeek.com/thread/3536713/article/46288818#46288818",
+      "entries": 28,
+      "ranked": 20,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 21,
+      "name": "2025 Wargame Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont",
+      "results_url": "https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont",
+      "entries": 19,
+      "ranked": 19,
+      "review_status": "da_verificare"
+    },
+    {
+      "id": 22,
+      "name": "The 2025 Roll & Write Game Design Contest",
+      "scope_type": "pnp_core",
+      "source_url": "https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest",
+      "results_url": null,
+      "entries": 37,
+      "ranked": 19,
+      "review_status": "da_verificare"
+    }
+  ]
+}

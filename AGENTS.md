@@ -117,3 +117,7 @@ Questo progetto segue Project Workspace Standard versione 1.5.0. All'inizio di o
 ## Definition of Done
 
 Un task è concluso quando i deliverable sono verificati, fonti e date sono registrate, i materiali acquisiti hanno manifest e hash, le decisioni durevoli sono promosse nei file autorevoli e `TASK.md` documenta la chiusura.
+
+## Estensione annuale classifiche BGG — 2026-10-04
+
+Il 2026-10-04 l’utente delibera per TSK-0045 il task continuativo `BGG-A - Classifiche BGG 2025`: estensione annuale limitata a risultati e votazioni, con incrementi per contest, provenienza, confronto con baseline e distinzione fra completezza delle verifiche e percentuale di entry in classifica. Il censimento roster resta distinto; WIP, materiali, host esterni e download restano esclusi. Riprese su richiesta nella stessa chat, senza automazione. Le challenge prive di roster restano dipendenza esplicita. PWS resta 1.5.0. Contratto in `tasks/2026-10-04 - BGG-A - Classifiche BGG 2025/TASK.md`.

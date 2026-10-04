@@ -79,3 +79,7 @@ Nel controllo trasversale su richiesta, esaminare tutti i registri, le worktree 
 La classificazione non delibera nuove acquisizioni o allargamenti dei workflow. Il censimento annuale BGG mantiene il contratto vigente; l'estensione sistematica a categorie, voti e risultati richiede una definizione esplicita separata. L'acquisizione copre tutti i materiali nel perimetro approvato, senza promettere assenza di blocchi o completezza universale.
 
 IMG distingue immagini rappresentative dai PNG che costituiscono materiali PnP, già ACQ. Prima del primo task IMG definire un'evoluzione EPR su perimetro per contest, diritti, varianti, originali/derivati, manifest e hash, armonizzando la decisione Kanare già esistente. L'eventuale supporto nell'app è un task APP collegato. Nessun download è autorizzato dalla sola istituzione della categoria.
+
+## Estensione annuale classifiche BGG — 2026-10-04
+
+Il 2026-10-04 l’utente delibera per TSK-0045 il task continuativo `BGG-A - Classifiche BGG 2025`: estensione annuale limitata a risultati e votazioni, con incrementi per contest, provenienza, confronto con baseline e distinzione fra completezza delle verifiche e percentuale di entry in classifica. Il censimento roster resta distinto; WIP, materiali, host esterni e download restano esclusi. Riprese su richiesta nella stessa chat, senza automazione. Le challenge prive di roster restano dipendenza esplicita. PWS resta 1.5.0. Contratto in `tasks/2026-10-04 - BGG-A - Classifiche BGG 2025/TASK.md`.

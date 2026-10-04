@@ -1262,6 +1262,41 @@
         "last_task_document_commit": "7cad97e",
         "evidence": "TASK.md presente su main; push 7cad97e riuscito e refs/heads/main verificato sul server il 2026-10-04. Verifica del documento, non certificazione di tutti i deliverable."
       }
+    },
+    {
+      "id": "TSK-0045",
+      "original_title": "2026-10-04 - BGG-A - Classifiche BGG 2025",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - BGG-A - Classifiche BGG 2025/TASK.md",
+      "original_worktree_path": null,
+      "category": "BGG-A",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "continuativo",
+      "cadence": "su_richiesta",
+      "source_summary": "Prima verifica completa fonti ufficiali 11 contest, 2026-10-04; nessun nuovo risultato pubblicato recuperato.",
+      "status": "in_corso",
+      "status_basis": "Incremento di verifica concluso il 2026-10-04; contenitore continuativo aperto per richiesta utente.",
+      "coverage": "11/11 contest del perimetro iniziale verificati; 797 osservazioni, 247/464 entry (53,23%), invariato. Sei challenge senza roster escluse e dipendenza esplicita.",
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10694-e681-7d93-9cbb-53cdbe34464f"
+      ],
+      "next_action": "Ripresa su richiesta in presenza di nuovi annunci, rettifiche o tabelle complete; dipendenza dal censimento per le sei challenge 24h.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit e push richiesti il 2026-10-04; incremento 2025 isolato, esito verificato in cronologia Git e risposta della chat."
+      },
+      "display_title": "2026-10-04 - BGG-A - Classifiche BGG 2025",
+      "current_chat_titles": [
+        "2026-10-04 - BGG-A - Classifiche BGG 2025"
+      ]
     }
   ]
 }

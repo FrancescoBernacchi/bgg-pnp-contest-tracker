@@ -1,0 +1,627 @@
+{
+  "verified_at": "2026-10-04",
+  "method": "Lettura BGG in browser, risultati ufficiali completi e annunci finali; confronto manuale categorie/liste con SQL originario e snapshot locale. Nessun import. Non una ricerca di ogni citazione nei WIP o di tabelle private.",
+  "checks": [
+    {
+      "contest_id": 16,
+      "name": "2025 Solomode Contest",
+      "scope_type": "adjacent",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3470244/article/46281057#46281057",
+      "pages_checked": [
+        6
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 19,
+      "ranked_after": 19,
+      "entries": 38,
+      "categories": [
+        {
+          "category": "Best AI System",
+          "rows": 10
+        },
+        {
+          "category": "Best Complex Game Solo Mode",
+          "rows": 1
+        },
+        {
+          "category": "Best First Time Solo Mode Designer",
+          "rows": 3
+        },
+        {
+          "category": "Best Light Game Solo Mode",
+          "rows": 5
+        },
+        {
+          "category": "Best Medium Complexity Game Solo Mode",
+          "rows": 5
+        },
+        {
+          "category": "Best Name",
+          "rows": 6
+        },
+        {
+          "category": "Best Official Solo Mode Replacement",
+          "rows": 5
+        },
+        {
+          "category": "Best Rulebook",
+          "rows": 10
+        },
+        {
+          "category": "Best Solo Mode",
+          "rows": 10
+        }
+      ],
+      "ranking_rows": 55,
+      "notes": "Categorie per giochi base/varianti; Best Name include pari merito al secondo posto. Nessun risultato aggiuntivo pubblicato individuato."
+    },
+    {
+      "contest_id": 20,
+      "name": "2025 Traditional Deck Game Design Contest",
+      "scope_type": "adjacent",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3569158/article/47101633#47101633",
+      "pages_checked": [
+        5,
+        6
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 21,
+      "ranked_after": 21,
+      "entries": 42,
+      "categories": [
+        {
+          "category": "Best Multiplayer Game",
+          "rows": 9
+        },
+        {
+          "category": "Best Rulebook",
+          "rows": 10
+        },
+        {
+          "category": "Best Solo Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Use of Theme",
+          "rows": 10
+        },
+        {
+          "category": "Most Innovative Mechanic",
+          "rows": 10
+        }
+      ],
+      "ranking_rows": 49,
+      "notes": "Cinque categorie; Solo e tre categorie top 10, Multiplayer 9. Post annidato in spoiler pubblico letto dal DOM."
+    },
+    {
+      "contest_id": 12,
+      "name": "2025 In-Hand Game Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3378403/2025-in-hand-game-design-contest",
+      "pages_checked": [
+        1,
+        6,
+        7
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 15,
+      "ranked_after": 15,
+      "entries": 27,
+      "categories": [
+        {
+          "category": "Best Low-Ink Printing",
+          "rows": 8
+        },
+        {
+          "category": "Best Overall Multiplayer Game",
+          "rows": 4
+        },
+        {
+          "category": "Best Overall Solo Game",
+          "rows": 6
+        },
+        {
+          "category": "Best Rulebook",
+          "rows": 6
+        },
+        {
+          "category": "Best Use of Theme",
+          "rows": 6
+        },
+        {
+          "category": "Clearest Graphic Design and Support for the Visually Impaired",
+          "rows": 6
+        },
+        {
+          "category": "Ease of Holding",
+          "rows": 6
+        },
+        {
+          "category": "Most Innovative Mechanic",
+          "rows": 7
+        },
+        {
+          "category": "Most Visually Appealing",
+          "rows": 6
+        }
+      ],
+      "ranking_rows": 55,
+      "notes": "15 giochi attivi, 12 ritirati; tutte le entry attive presenti in almeno una categoria. Categoria Traditional/Tarot/Decktet senza entry."
+    },
+    {
+      "contest_id": 13,
+      "name": "2025 9-Card Nanogame Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "pages_checked": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 19,
+      "ranked_after": 19,
+      "entries": 94,
+      "categories": [
+        {
+          "category": "Best 2 Player Game",
+          "rows": 5
+        },
+        {
+          "category": "Best 3 or More Player Game",
+          "rows": 5
+        },
+        {
+          "category": "Best Artwork",
+          "rows": 5
+        },
+        {
+          "category": "Best Language Independent Game",
+          "rows": 5
+        },
+        {
+          "category": "Best New Designer",
+          "rows": 6
+        },
+        {
+          "category": "Best Overall Game",
+          "rows": 8
+        },
+        {
+          "category": "Best Solitaire Game",
+          "rows": 5
+        },
+        {
+          "category": "Best Thematic Game",
+          "rows": 5
+        },
+        {
+          "category": "Best Written Rules",
+          "rows": 5
+        },
+        {
+          "category": "Jury Prize",
+          "rows": 2
+        },
+        {
+          "category": "Most Innovative Mechanic",
+          "rows": 5
+        }
+      ],
+      "ranking_rows": 56,
+      "notes": "Top 5 per categorie, Overall esteso e Jury Prize; nessuna tabella completa individuata nei post esaminati."
+    },
+    {
+      "contest_id": 14,
+      "name": "2025 Children & Family Game Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3441385/article/46099911#46099911",
+      "pages_checked": [
+        3
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 16,
+      "ranked_after": 16,
+      "entries": 27,
+      "categories": [
+        {
+          "category": "Best Art",
+          "rows": 3
+        },
+        {
+          "category": "Best Children's Game",
+          "rows": 3
+        },
+        {
+          "category": "Best Family Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Rulebook",
+          "rows": 10
+        },
+        {
+          "category": "Best Theme",
+          "rows": 10
+        }
+      ],
+      "ranking_rows": 36,
+      "notes": "Due classifiche principali (Children top 3, Family top 10), Rulebook e Theme top 10, Art top 3."
+    },
+    {
+      "contest_id": 15,
+      "name": "2025 1-Card Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3487579/article/45882567#45882567",
+      "pages_checked": [
+        1,
+        7
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 31,
+      "ranked_after": 31,
+      "entries": 38,
+      "categories": [
+        {
+          "category": "Best Artist",
+          "rows": 10
+        },
+        {
+          "category": "Best Game Name",
+          "rows": 10
+        },
+        {
+          "category": "Best Multiplayer Game",
+          "rows": 10
+        },
+        {
+          "category": "Best New Designer",
+          "rows": 7
+        },
+        {
+          "category": "Best Overall Game",
+          "rows": 15
+        },
+        {
+          "category": "Best Rule Book",
+          "rows": 10
+        },
+        {
+          "category": "Best Solitaire Game",
+          "rows": 10
+        },
+        {
+          "category": "Most Innovative Mechanic Involving the 1 Card",
+          "rows": 10
+        },
+        {
+          "category": "Thematic Challenge: Switching of Roles: Dystopia",
+          "rows": 2
+        }
+      ],
+      "ranking_rows": 84,
+      "notes": "Overall top 15, sei categorie top 10, New Designer 7, challenge 2."
+    },
+    {
+      "contest_id": 17,
+      "name": "2025 Solitaire Print and Play Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3520713/article/46153954#46153954",
+      "pages_checked": [
+        1,
+        2,
+        30,
+        31,
+        32,
+        33
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 48,
+      "ranked_after": 48,
+      "entries": 74,
+      "categories": [
+        {
+          "category": "Best AI System in a Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Artist",
+          "rows": 10
+        },
+        {
+          "category": "Best Game Designed in the Contest Timeframe",
+          "rows": 10
+        },
+        {
+          "category": "Best Game Name",
+          "rows": 15
+        },
+        {
+          "category": "Best Graphic Design",
+          "rows": 10
+        },
+        {
+          "category": "Best Low Ink Printing",
+          "rows": 10
+        },
+        {
+          "category": "Best New Artist",
+          "rows": 1
+        },
+        {
+          "category": "Best New Solo Designer",
+          "rows": 10
+        },
+        {
+          "category": "Best Overall Game",
+          "rows": 25
+        },
+        {
+          "category": "Best PnP",
+          "rows": 10
+        },
+        {
+          "category": "Best Rule Book",
+          "rows": 10
+        },
+        {
+          "category": "Best Use of Theme",
+          "rows": 15
+        },
+        {
+          "category": "Mechanic Challenge: Investment",
+          "rows": 1
+        },
+        {
+          "category": "Most Innovative Mechanic",
+          "rows": 15
+        },
+        {
+          "category": "Most Original Theme",
+          "rows": 10
+        },
+        {
+          "category": "Thematic Challenge: Technology Gone Nuts: Ancient Rome",
+          "rows": 5
+        }
+      ],
+      "ranking_rows": 167,
+      "notes": "Overall top 25; altre 15 categorie con liste limitate. Pagina 30 inizialmente non caricata, poi letta con 25 post."
+    },
+    {
+      "contest_id": 18,
+      "name": "2025 Two-Player Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3530940/article/46241868#46241868",
+      "pages_checked": [
+        1,
+        8,
+        9
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 20,
+      "ranked_after": 20,
+      "entries": 40,
+      "categories": [
+        {
+          "category": "Best Graphics",
+          "rows": 5
+        },
+        {
+          "category": "Best Mechanics",
+          "rows": 6
+        },
+        {
+          "category": "Best Overall",
+          "rows": 20
+        },
+        {
+          "category": "Best Rule Book",
+          "rows": 5
+        },
+        {
+          "category": "Best Theme",
+          "rows": 5
+        }
+      ],
+      "ranking_rows": 41,
+      "notes": "Solo cinque categorie con risultati: voti insufficienti per le altre. Organizzatore non rende disponibili dati grezzi utili (post 46844071)."
+    },
+    {
+      "contest_id": 19,
+      "name": "2025 54-Card Game Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3536713/article/46288818#46288818",
+      "pages_checked": [
+        1,
+        9,
+        10
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 20,
+      "ranked_after": 20,
+      "entries": 28,
+      "categories": [
+        {
+          "category": "Best 2-Player Game",
+          "rows": 5
+        },
+        {
+          "category": "Best Artwork",
+          "rows": 6
+        },
+        {
+          "category": "Best Cooperative Game",
+          "rows": 3
+        },
+        {
+          "category": "Best Family Game",
+          "rows": 6
+        },
+        {
+          "category": "Best Game Using a Standard Playing Card Deck",
+          "rows": 3
+        },
+        {
+          "category": "Best New Designer",
+          "rows": 5
+        },
+        {
+          "category": "Best Overall Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Party Game",
+          "rows": 5
+        },
+        {
+          "category": "Best Solo Game",
+          "rows": 5
+        },
+        {
+          "category": "Jury Prize",
+          "rows": 2
+        },
+        {
+          "category": "Jury Prize Honorable Mention",
+          "rows": 4
+        }
+      ],
+      "ranking_rows": 54,
+      "notes": "Nove categorie principali, Jury Prize 2 e quattro menzioni senza ordine; pari merito preservati."
+    },
+    {
+      "contest_id": 21,
+      "name": "2025 Wargame Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont",
+      "pages_checked": [
+        1,
+        4
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 19,
+      "ranked_after": 19,
+      "entries": 19,
+      "categories": [
+        {
+          "category": "Best Art/Graphic Design",
+          "rows": 13
+        },
+        {
+          "category": "Best Game on This Year's Theme: Armor",
+          "rows": 11
+        },
+        {
+          "category": "Best Mechanics",
+          "rows": 15
+        },
+        {
+          "category": "Best Multi-Player Game",
+          "rows": 12
+        },
+        {
+          "category": "Best Overall Wargame",
+          "rows": 12
+        },
+        {
+          "category": "Best Rule Book",
+          "rows": 10
+        },
+        {
+          "category": "Best Solitaire Game",
+          "rows": 7
+        },
+        {
+          "category": "Best Use of Theme",
+          "rows": 13
+        }
+      ],
+      "ranking_rows": 93,
+      "notes": "Otto categorie; tutti i 19 giochi compaiono almeno una volta. Correzione pre-voto The Ground Between non costituisce nuovo risultato."
+    },
+    {
+      "contest_id": 22,
+      "name": "The 2025 Roll & Write Game Design Contest",
+      "scope_type": "pnp_core",
+      "verified_at": "2026-10-04",
+      "source_url": "https://boardgamegeek.com/thread/3585125/article/46680273#46680273",
+      "pages_checked": [
+        1,
+        8,
+        9
+      ],
+      "result": "no_new_published_results_found",
+      "ranked_before": 19,
+      "ranked_after": 19,
+      "entries": 37,
+      "categories": [
+        {
+          "category": "Best Family/Children Friendly Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Graphic Design",
+          "rows": 10
+        },
+        {
+          "category": "Best Innovative Mechanic",
+          "rows": 10
+        },
+        {
+          "category": "Best Light/Minimal Build",
+          "rows": 9
+        },
+        {
+          "category": "Best Low-Ink Version",
+          "rows": 8
+        },
+        {
+          "category": "Best Multi-Player Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Original Artwork",
+          "rows": 10
+        },
+        {
+          "category": "Best Overall Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Solitaire Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Thematic Game",
+          "rows": 10
+        },
+        {
+          "category": "Best Written Rules",
+          "rows": 10
+        }
+      ],
+      "ranking_rows": 107,
+      "notes": "Undici categorie; 21 partecipanti finali e 16 ritirati. I numeri con + accanto ai vincitori sono premi GeekGold, non punteggi di voto."
+    }
+  ]
+}
