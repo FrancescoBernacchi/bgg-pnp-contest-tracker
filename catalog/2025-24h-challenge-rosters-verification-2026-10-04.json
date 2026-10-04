@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-10-04",
+  "contests": 6,
+  "entries": 45,
+  "counts": {
+    "294": 6,
+    "295": 5,
+    "296": 6,
+    "297": 8,
+    "298": 8,
+    "299": 12
+  },
+  "complete_attestations": 6,
+  "rankings": 0,
+  "resource_scans": 0,
+  "integrity": "ok",
+  "foreign_key_violations": 0
+}

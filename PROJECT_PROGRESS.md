@@ -75,11 +75,11 @@ Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenz
 |   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
 |   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
-|   |     Stati entry | 🟢 contest_ready 3 | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 1/1 contest attestati · 3 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
-|   |     Censimento classifica | 0/3 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
-|   |     Censimento materiali | 0/3 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
-|   |     Acquisizione materiali | 0/3 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Stati entry | 🟢 contest_ready 3 | 🟢 contest_ready 12 | 🔴  | 🔴  |
+|   |     Censimento entry | 1/1 contest attestati · 3 entry | 1/1 contest attestati · 12 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 0/3 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 0/12 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/3 · 0% · 0 N/A · 0 bloccate | 0/12 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/3 · 0% · 0 N/A · 0 bloccate | 0/12 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
 |   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 unknown 8, wip 4, components_available 2, idea 2, contest_ready 1 | 🟢 contest_ready 28 | 🟡 contest_ready 16, components_available 5, unknown 4, withdrawn 4, contest_complete 1 | 🔴  |
@@ -1512,18 +1512,18 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 | N. | [2025 Solomode Contest](https://boardgamegeek.com/thread/3470244/2025-solomode-contest) | [2025 Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | [2025 Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3530940/2025-two-player-print-and-play-game-design-contest) | [2025 Wargame Print and Play Design Contest](https://boardgamegeek.com/thread/3441044/results-in-2025-wargame-print-and-play-design-cont) | [January–February 2025 — 24 Hour Design Challenge (GUARD)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [July–August 2025 — 24 Hour Design Challenge (PAD)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) |
 |---:|:---|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **Best AI System** | **Best Solo Game** | **Best Overall** | **Best Overall Wargame** | **ordine alfabetico** | **ordine alfabetico** |
-| 1 | #1 [Throne Alone](https://boardgamegeek.com/thread/3383061) — Ready | #1 [Jack's Dream](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [Scissor Wizards](https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play) — Ready | #1 [Armored Fury](https://boardgamegeek.com/thread/3539132/playtest-ready-armored-fury-2025-wargame-print-and) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 2 | #2 [Sabi](https://boardgamegeek.com/thread/3466096) — Ready | #2 [Shadow Solitaire: Gambit for the City](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [WordStorm](https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game) — Ready | #1 [Armées de Papier: Combined Arms Battles in the Napoleonic Era](https://boardgamegeek.com/thread/3548198/complete-armees-de-papier-combined-arms-battles-in) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 3 | #3 [YRO Solo Campaign](https://boardgamegeek.com/thread/3422271) — Ready | #3 [Against The Clock](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #2 [Quickdraw: Battle for Silver City](https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy) — Ready | #3 [Monster Cross](https://boardgamegeek.com/thread/3582983/playtest-ready-monster-cross-2025-wargame-print-an) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 4 | #4 [boop. Solo Mode](https://boardgamegeek.com/thread/3478437) — Ready | #4 [Soluna](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #3 [Narrow Seas](https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play) — Ready | #4 [Rough & Tumble Multilateral](https://boardgamegeek.com/thread/3576203/playtest-ready-rough-and-tumble-multilateral-2025) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 5 | #5 [SUPERCAT](https://boardgamegeek.com/thread/3425290) — Ready | #5 [Swamp](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #4 [Collapsi](https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design) — Ready | #5 [1453: Siege of Constantinople](https://boardgamegeek.com/thread/3495795/wip-1453-siege-of-constantinople-2025-wargames-pnp) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
-| 6 | #6 [Lord d'Automa](https://boardgamegeek.com/thread/3512047) — Ready | #6 [River Black](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #5 [OiSH!i](https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp) — Ready | #6 [StrikeFirstNow](https://boardgamegeek.com/thread/3585042/wip-strikefirstnow-from-hexstorical-playtest-ready) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+| 1 | #1 [Throne Alone](https://boardgamegeek.com/thread/3383061) — Ready | #1 [Jack's Dream](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [Scissor Wizards](https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play) — Ready | #1 [Armored Fury](https://boardgamegeek.com/thread/3539132/playtest-ready-armored-fury-2025-wargame-print-and) — Ready | [Guard the Bard](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [ALT](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 2 | #2 [Sabi](https://boardgamegeek.com/thread/3466096) — Ready | #2 [Shadow Solitaire: Gambit for the City](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #1 [WordStorm](https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game) — Ready | #1 [Armées de Papier: Combined Arms Battles in the Napoleonic Era](https://boardgamegeek.com/thread/3548198/complete-armees-de-papier-combined-arms-battles-in) — Ready | [Guarded Words](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [CareFlight](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 3 | #3 [YRO Solo Campaign](https://boardgamegeek.com/thread/3422271) — Ready | #3 [Against The Clock](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #2 [Quickdraw: Battle for Silver City](https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy) — Ready | #3 [Monster Cross](https://boardgamegeek.com/thread/3582983/playtest-ready-monster-cross-2025-wargame-print-an) — Ready | [Handguards](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Cycle Of The Lotus](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 4 | #4 [boop. Solo Mode](https://boardgamegeek.com/thread/3478437) — Ready | #4 [Soluna](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #3 [Narrow Seas](https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play) — Ready | #4 [Rough & Tumble Multilateral](https://boardgamegeek.com/thread/3576203/playtest-ready-rough-and-tumble-multilateral-2025) — Ready | [Maroons and Doubloons](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Lunch Pad](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 5 | #5 [SUPERCAT](https://boardgamegeek.com/thread/3425290) — Ready | #5 [Swamp](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #4 [Collapsi](https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design) — Ready | #5 [1453: Siege of Constantinople](https://boardgamegeek.com/thread/3495795/wip-1453-siege-of-constantinople-2025-wargames-pnp) — Ready | [Oh My Pies!](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Pad Your Stats](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+| 6 | #6 [Lord d'Automa](https://boardgamegeek.com/thread/3512047) — Ready | #6 [River Black](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #5 [OiSH!i](https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp) — Ready | #6 [StrikeFirstNow](https://boardgamegeek.com/thread/3585042/wip-strikefirstnow-from-hexstorical-playtest-ready) — Ready | [Valor](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready |   |
+|   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
 | 7 | #7 [Solisauron](https://boardgamegeek.com/thread/3486373) — Ready | #7 [The Four Musketeers](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Automon](https://boardgamegeek.com/thread/3548268/wip-automon-2025-two-player-game-design-contest) — Ready | #7 [The Ground Between](https://boardgamegeek.com/thread/3491589/released-the-ground-between-2025-wargame-pnp-desig) — Ready |   |   |
 |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 8 | #8 [Cavemono](https://boardgamegeek.com/thread/3344024) — Ready | #8 [Alchemy](https://boardgamegeek.com/thread/3569158/2025-traditional-deck-game-design-contest) | #6 [Bone Machine](https://boardgamegeek.com/thread/3556560/bone-machine-tile-laying-hand-management-2025-2-pl) — Ready | #8 [Finger Guns: A Wargame Played Using Only Fingers](https://boardgamegeek.com/thread/3555005/playtest-ready-finger-guns-a-wargame-played-using) — Ready |   |   |
@@ -1602,30 +1602,30 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 | N. | [March–April 2025 — 24 Hour Design Challenge (REVEAL)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [May–June 2025 — 24 Hour Design Challenge (GREEN)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [November–December 2025 — 24 Hour Design Challenge (_ _ _ ANKS)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [September–October 2025 — 24 Hour Design Challenge (PATCH)](https://boardgamegeek.com/geeklist/355982/community-pnp-contests-and-winners) | [The 2025 Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3585125/the-2025-roll-and-write-game-design-contest) |
 |---:|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **ordine alfabetico** | **Best Overall Game** |
-| 1 |   |   |   |   | #1 [Rolling Fiefdoms](https://boardgamegeek.com/thread/3596654) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 2 |   |   |   |   | #2 [Doodle Bash!](https://boardgamegeek.com/thread/3606967) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟢 |
-| 3 |   |   |   |   | #3 [The Leaning Tower of Pisa](https://boardgamegeek.com/thread/3613315) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 4 |   |   |   |   | #4 [Dawn Chorus](https://boardgamegeek.com/thread/3618849) — Ready |
-|   |   |   |   |   | L 🟢 · D 🔴 |
-| 5 |   |   |   |   | #4 [Mainframe: System Shutdown](https://boardgamegeek.com/thread/3617159) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟢 |
-| 6 |   |   |   |   | #6 [Natura](https://boardgamegeek.com/thread/3621278) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟢 |
-| 7 |   |   |   |   | #7 [Ancient World](https://boardgamegeek.com/thread/3614076) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 8 |   |   |   |   | #8 [Skyfall](https://boardgamegeek.com/thread/3600730) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 9 |   |   |   |   | #9 [Vanguard Multi Asset Global Command](https://boardgamegeek.com/thread/3619638) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟢 |
-| 10 |   |   |   |   | #10 [Labyrinth of Shadows](https://boardgamegeek.com/thread/3584529) — Ready |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 11 |   |   |   |   | [1899](https://boardgamegeek.com/thread/3600465) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🟡 |
-| 12 |   |   |   |   | [A Dragon's Die](https://boardgamegeek.com/thread/3607359) — Withdrawn |
-|   |   |   |   |   | L 🟢 · D 🔴 |
+| 1 | [Dungeon Encounter](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Cash Crop](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Ankhs before Isfet](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Autumn's Ghost](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #1 [Rolling Fiefdoms](https://boardgamegeek.com/thread/3596654) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 2 | [Intent](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Chlorophyllium](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Apothecaries & Quacks](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Berry Patch](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #2 [Doodle Bash!](https://boardgamegeek.com/thread/3606967) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟢 |
+| 3 | [King's Claim](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Flag Finish](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Crank! Clank! Crank!](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Captain Plankwalker](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #3 [The Leaning Tower of Pisa](https://boardgamegeek.com/thread/3613315) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 4 | [Robotika](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Fruit Tumbler](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Gee, Thanks!](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Grandma's Quilts](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #4 [Dawn Chorus](https://boardgamegeek.com/thread/3618849) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
+| 5 | [Shuffle & Sleuth](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Green Gold](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Lost Ranks](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Krak-in'](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #4 [Mainframe: System Shutdown](https://boardgamegeek.com/thread/3617159) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟢 |
+| 6 | [What Happened?](https://boardgamegeek.com/thread/3473961/article/45765525#45765525) — Ready | [Green Thumb](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Pip Blanks](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Mishi's Bedtime](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #6 [Natura](https://boardgamegeek.com/thread/3621278) — Ready |
+|   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟢 |
+| 7 |   | [Shipmates](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [Planks & Piers](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Patch Monsters](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #7 [Ancient World](https://boardgamegeek.com/thread/3614076) — Ready |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 8 |   | [Sustainibattle](https://boardgamegeek.com/thread/3510376/article/46069059#46069059) — Ready | [SHANKS](https://boardgamegeek.com/thread/3607485/article/46858357#46858357) — Ready | [Patch-22](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #8 [Skyfall](https://boardgamegeek.com/thread/3600730) — Ready |
+|   |   | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 9 |   |   |   | [Picking Pumpkins](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #9 [Vanguard Multi Asset Global Command](https://boardgamegeek.com/thread/3619638) — Ready |
+|   |   |   |   | L 🔴 · D 🔴 | L 🟢 · D 🟢 |
+| 10 |   |   |   | [Rough Patch: Motel Lives](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | #10 [Labyrinth of Shadows](https://boardgamegeek.com/thread/3584529) — Ready |
+|   |   |   |   | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 11 |   |   |   | [Veg Patch](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | [1899](https://boardgamegeek.com/thread/3600465) — Withdrawn |
+|   |   |   |   | L 🔴 · D 🔴 | L 🟢 · D 🟡 |
+| 12 |   |   |   | [Zero-Day Triage](https://boardgamegeek.com/thread/3576315/article/46608341#46608341) — Ready | [A Dragon's Die](https://boardgamegeek.com/thread/3607359) — Withdrawn |
+|   |   |   |   | L 🔴 · D 🔴 | L 🟢 · D 🔴 |
 | 13 |   |   |   |   | [City Lights](https://boardgamegeek.com/thread/3621048) — Withdrawn |
 |   |   |   |   |   | L 🟢 · D 🟡 |
 | 14 |   |   |   |   | [Compass & Ink](https://boardgamegeek.com/thread/3593066) — Ready |
@@ -2301,7 +2301,7 @@ Le percentuali misurano soltanto unità con copertura esplicitamente registrata.
 | Anno | Contest censiti | Entry censite | Scansioni WIP/risorse | Copertura risorse | Scansioni materiali | Copertura materiali | Stato annualità | Ultima verifica del quadro |
 |---:|---:|---:|---:|---:|---:|---:|---|---|
 | 2026 | 18 | 430 | 23 | 5,3% | 23 | 5,3% | contest importati; entry parziali; Wargame analizzato | 2026-10-02 |
-| 2025 | 17 | 464 | 167 | 36,0% | 167 | 36,0% | contest importati; entry parziali | 2026-09-18 |
+| 2025 | 17 | 509 | 167 | 32,8% | 167 | 32,8% | roster completi: PnP 9/9 (384 entry), adiacenti 8/8 (125 entry) | 2026-10-04 |
 | 2024 | 17 | 409 | 0 | 0,0% | 0 | 0,0% | PnP principali 10/10 (381 entry); adiacenti 1/7 (28 entry); limiti nominali espliciti | 2026-10-04 |
 | 2023 | 21 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
 | 2022 | 12 | 0 | 0 | non avviata | 0 | non avviata | soli contest | 2026-09-18 |
@@ -2357,6 +2357,8 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 ## Attività operative aperte
 
 Aggiornamento 2026-10-04, TSK-0015: concluso l'incremento richiesto sulla barra verde 2024, **10/10 PnP principali, 381 entry** (+352). Totale annuale 409; adiacenti invariati 1/7, 28 entry. L'enumerazione dei roster principali è completa, con due titoli 9-Card non osservabili e altri metadati assenti dichiarati nel rapporto `sources/2024-CORE-ROSTER-COMPLETION.md`. Prossimo approfondimento utile: MAT di un singolo contest 2024; sei challenge adiacenti da trattare in un successivo incremento BGG-A 2024, senza ampliamento silenzioso dell'obiettivo verde.
+
+Aggiornamento 2026-10-04, TSK-0005: completati i sei roster delle 24 Hour Design Challenge 2025, **8/8 contest adiacenti attestati e 125 entry** complessive (+45). L'incremento conserva soltanto titolo, autore dichiarato, ordine e fonte del roster; classifiche, WIP e materiali sono esclusi. Il 2025 raggiunge 509 entry censite fra perimetro PnP e adiacente.
 
 Questa tabella contiene soltanto attività non concluse che attraversano o seguono più task. I dettagli di esecuzione restano nei rispettivi `TASK.md`.
 
@@ -2478,3 +2480,5 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 
 - 2026-10-04 — APP-008 (TSK-0047): cinque barre di lavoro, metriche condivise, migrazione 012 e attestazioni locali. Classifiche 2025 verificate 384/384 PnP e 80/80 adiacenti, distinte da 207/40 entry classificate; roster attestati 9/9 e 2/8, sei challenge dipendenti. Materiali/acquisizioni distinguono completezza, N/A, ignoti e blocchi; immagini 0% non implementate. 45 test Python distinti, 46 frontend/PDF, browser 1400/390 px; righe originarie preservate e aggiunte TSK-0046 distinte. Sezioni A/B rigenerate dal database; nessuna nuova osservazione BGG. Evidenza: tasks/2026-10-04 - APP - Barre di completamento del lavoro/VERIFICATION.json.
 - 2026-10-04 — APP-008, incremento correttivo TSK-0047: roster storici recuperati (2024 PnP 10/10; 2026 9/10 PnP e 7/8 adiacenti con limiti espliciti); classifiche 2026 132/356 complete e 12 parziali PnP, 21/74 adiacenti. Acquisizioni 2025 riconciliate con manifest: 39/363 complete PnP, 13 bloccate e 3 parziali; dati originari preservati. Box annuali allineati in alto a 15 px, desktop/mobile; 47 test Python e 46 frontend/PDF. Tutte le cinque fasi/annualità controllate e A/B rigenerate, nessun rilevamento BGG. Audit: tasks/2026-10-04 - APP - Barre di completamento del lavoro/HISTORY_AUDIT.md.
+
+- 2026-10-04 — BGG-A 2025 (TSK-0005): censiti i sei roster ufficiali delle challenge GUARD, REVEAL, GREEN, PAD, PATCH e `_ _ _ ANKS`: 45 nuove entry, **8/8 contest adiacenti attestati e 125 entry**. Importazione offline idempotente verificata su copia e applicata al database operativo; integrità e chiavi esterne valide, zero classifiche e zero scansioni WIP/materiali introdotte. Sezioni A/B rigenerate. Evidenza: `catalog/2025-24h-challenge-rosters-verification-2026-10-04.json`.

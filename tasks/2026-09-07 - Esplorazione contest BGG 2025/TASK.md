@@ -1,7 +1,7 @@
 # Esplorazione contest BGG 2025
 
 ## Stato
-Riaperto il 10 settembre 2026 per estendere l'esplorazione annuale a WIP BGG e collegamenti alle risorse dichiarati nei primi post. Baseline, undici censimenti e ricognizione dei contest sono completati.
+Completato il 4 ottobre 2026 per il workflow BGG-A: roster PnP principali 9/9 (384 entry) e contest adiacenti 8/8 (125 entry). Le analisi WIP e materiali conservate nello storico appartengono ai successivi task MAT per singolo contest.
 
 ## Scopo e confini
 Esplorare i contest di game design PnP dell'edizione 2025 su BoardGameGeek, quindi censire entry, fasi e risultati per incrementi verificati. L'anno è quello dichiarato dall'edizione, anche quando il calendario attraversa due anni. Nessuna apertura o acquisizione di materiali di gioco. I nuovi casi adiacenti dubbi restano da valutare.
@@ -156,3 +156,8 @@ Questa esperienza è stata promossa nella skill locale `.agents/skills/bgg-conte
 ### Censimento completo delle risorse dichiarate Roll & Write
 
 Il 10 settembre 2026 sono stati analizzati i primi post renderizzati di tutte le 37 WIP, senza seguire destinazioni esterne. Il censimento registra 82 risorse distinte in 30 entry; 7 WIP non dichiarano collegamenti pertinenti osservabili. Sono stati considerati anchor ordinari, link dinamici e media incorporati, con deduplicazione degli URL e conservazione delle descrizioni. La tassonomia funzionale e tecnica rimane provvisoria fino alla scansione di tutti i contest 2025.
+### Completamento dei roster adiacenti 24 Hour Design Challenge — 2026-10-04
+
+L'estensione annuale è stata circoscritta ai sei contest adiacenti privi di roster nel database. I post ufficiali renderizzati in una sessione BGG autenticata hanno fornito 45 entry: GUARD 6, REVEAL 6, GREEN 8, PAD 5, PATCH 12 e `_ _ _ ANKS` 8. Per ogni riga sono stati conservati titolo, autore dichiarato, ordine e URL del post roster. Non sono state aperte le pagine individuali delle entry e non sono state raccolte classifiche, WIP o risorse.
+
+Il dataset riproducibile è `catalog/2025-24h-challenge-rosters-2026-10-04.json`; l'importatore offline idempotente è `catalog/import_2025_24h_challenge_rosters.py`. La prova su copia e l'applicazione al database operativo confermano 45 nuove entry, sei attestazioni `complete`, nessuna classifica e nessuna scansione materiali. `PRAGMA integrity_check` restituisce `ok` e `PRAGMA foreign_key_check` non segnala violazioni. Il perimetro adiacente 2025 raggiunge così **8/8 contest verificati e 125 entry**; il totale annuale sale a 509 entry.

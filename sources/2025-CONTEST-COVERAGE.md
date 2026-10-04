@@ -30,7 +30,7 @@ Non è emerso un ulteriore contest annuale PnP ospitato su BGG con evidenza suff
 
 | Candidato | Evidenza BGG | Classificazione | Decisione |
 |---|---|---|---|
-| 2025 Bi-Monthly 24-Hour Design Challenges | [Meta-thread nel forum Design Contests](https://boardgamegeek.com/forum/974620/bgg/design-contests?page=2) e richiamo esplicito nel [contest 1-Card 2025](https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest) | Serie di challenge brevi ed episodiche, con ciclo distinto dai contest annuali | Non inclusa nel task annuale; possibile task dedicato se si decide di censire le design challenge |
+| 2025 Bi-Monthly 24-Hour Design Challenges | [Meta-thread 2025](https://boardgamegeek.com/thread/3452555/2025-bi-monthly-24-hour-design-challenges) e sei thread ufficiali | Serie di challenge brevi ed episodiche, conservata nel perimetro adiacente | Estensione autorizzata il 2026-10-04: verificati i sei roster ufficiali, 45 entry complessive; classifiche, WIP e materiali esclusi |
 | 2025 Print and Play Challenge | [GeekList della challenge](https://boardgamegeek.com/geeklist/346059/2025-print-and-play-challenge) | Challenge di gioco e registrazione delle partite, non contest di design | Esclusa |
 | Concorsi esterni annunciati nel forum, tra cui challenge di The Game Crafter | [Elenco del forum Design Contests](https://boardgamegeek.com/forum/974620/bgg/design-contests?page=2) | Concorsi organizzati fuori da BGG e soltanto segnalati nel forum | Esclusi dalla baseline BGG; richiederebbero un perimetro esplicito sulle fonti esterne |
 | Turkish PnP 2025 | Ricerche nel forum e nelle pagine BGG indicizzate | Nessuna edizione 2025 verificata | Non censita; assenza di evidenza sufficiente al 10 settembre 2026 |
@@ -38,4 +38,4 @@ Non è emerso un ulteriore contest annuale PnP ospitato su BGG con evidenza suff
 
 ## Copertura risultante
 
-Gli undici contest hanno tutti una baseline e un censimento dedicato nel catalogo versionabile. Il database operativo contiene 464 entry attribuite al 2025. Le challenge brevi, le challenge di gioco e i concorsi esterni restano distinguibili e non alterano il conteggio annuale.
+Gli undici contest della baseline originaria hanno tutti un censimento dedicato. Il perimetro adiacente comprende inoltre sei 24 Hour Design Challenge, ora tutte attestate: GUARD 6 entry, REVEAL 6, GREEN 8, PAD 5, PATCH 12 e `_ _ _ ANKS` 8. Il database operativo contiene quindi 509 entry attribuite al 2025: 384 nei nove contest PnP principali e 125 negli otto contest adiacenti. Le challenge di gioco e i concorsi esterni restano esclusi.

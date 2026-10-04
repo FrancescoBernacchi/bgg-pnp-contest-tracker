@@ -131,14 +131,26 @@
       "classified_at": "2026-10-04",
       "mode": "circoscritto",
       "cadence": "su_richiesta",
-      "source_summary": "Dichiarato riaperto; roster completo, analisi successive mischiate; chiusura da riconciliare",
-      "status": "in_corso",
-      "status_basis": "Stato storico ambiguo o copertura incompleta; riesame necessario, non chiusura inferita.",
-      "coverage": null,
+      "source_summary": "Censimento annuale 2025 completato: roster PnP 9/9 e adiacenti 8/8; materiali storici separati nei task MAT",
+      "status": "completato",
+      "status_basis": "Incremento del 2026-10-04: sei challenge adiacenti verificate, 45 entry importate; annualità attestata 9/9 PnP e 8/8 adiacenti.",
+      "coverage": {
+        "year": 2025,
+        "pnp_core": {
+          "contests": "9/9",
+          "entries": 384
+        },
+        "adjacent": {
+          "contests": "8/8",
+          "entries": 125
+        },
+        "total_entries": 509,
+        "verified_at": "2026-10-04"
+      },
       "dependencies": [],
       "successors": [],
       "chat_ids": [],
-      "next_action": "Riconciliare stato e continuita usando TASK.md e successori.",
+      "next_action": null,
       "git": {
         "checked_at": "2026-10-04",
         "local_save": "committato",

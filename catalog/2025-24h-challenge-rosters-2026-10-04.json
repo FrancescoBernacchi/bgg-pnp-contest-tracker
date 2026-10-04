@@ -1,0 +1,99 @@
+{
+  "observed_at": "2026-10-04",
+  "scope": "Annual entry census only; rankings, WIP and materials excluded.",
+  "contests": [
+    {
+      "key": "guard",
+      "contest_id": 294,
+      "thread_id": 3452558,
+      "source": "https://boardgamegeek.com/thread/3452558/article/45584159#45584159",
+      "rows": [
+        {"position": 1, "title": "Guarded Words", "author": "Julian Anstey"},
+        {"position": 2, "title": "Maroons and Doubloons", "author": "Iffix Y Santaph"},
+        {"position": 3, "title": "Valor", "author": "Iffix Y Santaph"},
+        {"position": 4, "title": "Guard the Bard", "author": "@This Punking"},
+        {"position": 5, "title": "Oh My Pies!", "author": "@This Punking"},
+        {"position": 6, "title": "Handguards", "author": "Mus Rattus"}
+      ]
+    },
+    {
+      "key": "reveal",
+      "contest_id": 296,
+      "thread_id": 3473961,
+      "source": "https://boardgamegeek.com/thread/3473961/article/45765525#45765525",
+      "rows": [
+        {"position": 1, "title": "Robotika", "author": "Iffix Y Santaph"},
+        {"position": 2, "title": "Intent", "author": "Iffix Y Santaph"},
+        {"position": 3, "title": "Shuffle & Sleuth", "author": "Krasimir Savov"},
+        {"position": 4, "title": "Dungeon Encounter", "author": "Isaac Haller"},
+        {"position": 5, "title": "King's Claim", "author": "BlueChicken"},
+        {"position": 6, "title": "What Happened?", "author": "Tarang Hardikar"}
+      ]
+    },
+    {
+      "key": "green",
+      "contest_id": 297,
+      "thread_id": 3510376,
+      "source": "https://boardgamegeek.com/thread/3510376/article/46069059#46069059",
+      "rows": [
+        {"position": 1, "title": "Shipmates", "author": "Aaronvw8"},
+        {"position": 2, "title": "Sustainibattle", "author": "Cameron"},
+        {"position": 3, "title": "Green Thumb", "author": "Matthew P"},
+        {"position": 4, "title": "Green Gold", "author": "Julian Anstey"},
+        {"position": 5, "title": "Cash Crop", "author": "Pranav Vaddepalli"},
+        {"position": 6, "title": "Chlorophyllium", "author": "J-P Kurikka"},
+        {"position": 7, "title": "Flag Finish", "author": "David Stewart"},
+        {"position": 8, "title": "Fruit Tumbler", "author": "Iffix Y Santaph"}
+      ]
+    },
+    {
+      "key": "pad",
+      "contest_id": 295,
+      "thread_id": 3542704,
+      "source": "https://boardgamegeek.com/thread/3542704/article/46335246#46335246",
+      "rows": [
+        {"position": 1, "title": "Cycle Of The Lotus", "author": "Cameron"},
+        {"position": 2, "title": "Pad Your Stats", "author": "Iffix Y Santaph"},
+        {"position": 3, "title": "Lunch Pad", "author": "David Stewart"},
+        {"position": 4, "title": "ALT", "author": "Iffix Y Santaph"},
+        {"position": 5, "title": "CareFlight", "author": "Isaac Haller"}
+      ]
+    },
+    {
+      "key": "patch",
+      "contest_id": 299,
+      "thread_id": 3576315,
+      "source": "https://boardgamegeek.com/thread/3576315/article/46608341#46608341",
+      "rows": [
+        {"position": 1, "title": "Zero-Day Triage", "author": "David McDougal"},
+        {"position": 2, "title": "Grandma's Quilts", "author": "Isaac Haller"},
+        {"position": 3, "title": "Autumn's Ghost", "author": "Thomas Gutshall"},
+        {"position": 4, "title": "Rough Patch: Motel Lives", "author": "JP Perkins"},
+        {"position": 5, "title": "Mishi's Bedtime", "author": "Is. Ra."},
+        {"position": 6, "title": "Captain Plankwalker", "author": "Iffix Y Santaph"},
+        {"position": 7, "title": "Patch-22", "author": "Iffix Y Santaph"},
+        {"position": 8, "title": "Veg Patch", "author": "Corin Elliott"},
+        {"position": 9, "title": "Berry Patch", "author": "David Stewart"},
+        {"position": 10, "title": "Krak-in'", "author": "Mitchell Martin-Moran"},
+        {"position": 11, "title": "Picking Pumpkins", "author": "Jeremiah Brammer"},
+        {"position": 12, "title": "Patch Monsters", "author": "@coblin"}
+      ]
+    },
+    {
+      "key": "anks",
+      "contest_id": 298,
+      "thread_id": 3607485,
+      "source": "https://boardgamegeek.com/thread/3607485/article/46858357#46858357",
+      "rows": [
+        {"position": 1, "title": "Gee, Thanks!", "author": "Iffix Y Santaph"},
+        {"position": 2, "title": "Ankhs before Isfet", "author": "Noah Charles"},
+        {"position": 3, "title": "SHANKS", "author": "Marek Chodan"},
+        {"position": 4, "title": "Apothecaries & Quacks", "author": "Iffix Y Santaph"},
+        {"position": 5, "title": "Planks & Piers", "author": "coblin"},
+        {"position": 6, "title": "Pip Blanks", "author": "David McDougal"},
+        {"position": 7, "title": "Crank! Clank! Crank!", "author": "Is. Ra."},
+        {"position": 8, "title": "Lost Ranks", "author": "David McDougal"}
+      ]
+    }
+  ]
+}
