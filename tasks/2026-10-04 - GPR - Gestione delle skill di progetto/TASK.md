@@ -40,3 +40,7 @@ Aggiornati punti di ingresso AGENTS.md, PROJECT.md, TASK_GOVERNANCE.md, README.m
 Commit/push autorizzati dall'utente. Si escludono modifiche autonome del monitoraggio e classificazione task; nel registro si salva solo TSK-0048, preservando nella working tree gli aggiornamenti preesistenti degli altri record/chat. Nessun materiale, database o output rigenerabile incluso.
 
 Verifiche del secondo incremento: verify_local.py senza errori (7 skill, 24 riferimenti), git diff --cached --check valido; indice selettivo di 25 file, senza dati/materiali di terzi. Remoto main verificato prima del commit e coincidente con HEAD 50e2e1f. L'accesso ordinario al Git index e alla rete è limitato dal sandbox; operazioni Git autorizzate eseguite fuori sandbox senza interventi ACL. Contenitore GPR ancora aperto; secondo incremento documentale concluso, pubblicazione in corso.
+
+## Esito Git — 2026-10-04
+
+Commit principale `d8ad1c7990383261aa2e135fe46e689929251655` su main: 25 file, skill e integrazione documentale. Push origin/main riuscito; refs/heads/main verificato sul server e coincidente con HEAD. Modifiche pregresse di classificazione/naming chat preservate e non incluse. Nessun file operativo, materiale di terzi o output incluso. Il presente esito viene salvato nel commit documentale finale; TSK-0048 resta in corso, su richiesta senza automazione.

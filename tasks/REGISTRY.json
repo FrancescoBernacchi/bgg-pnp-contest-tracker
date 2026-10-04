@@ -1383,11 +1383,12 @@
       ],
       "next_action": "Manutenzione su richiesta dopo esperienze verificate; collaudare preanalisi su fonte diversa da Kanare e riesaminare autonomia roster se cresce.",
       "git": {
-        "local_save": "pronto_commit",
-        "evidence": "Commit e push autorizzati esplicitamente; salvataggio dedicato alle skill, modifiche pregresse di altri task escluse.",
+        "local_save": "committato",
+        "evidence": "Commit d8ad1c7 e push su main riusciti il 2026-10-04; hash HEAD/refs/heads/main coincidenti sul server. Esito registrato in commit documentale successivo.",
         "checked_at": "2026-10-04",
         "integration": "integrato_main",
-        "synchronization": "da_verificare"
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "d8ad1c7990383261aa2e135fe46e689929251655"
       },
       "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa."
     }
