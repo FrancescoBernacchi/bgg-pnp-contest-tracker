@@ -49,6 +49,7 @@ Estensione sistematica del censimento annuale alle classifiche e workflow immagi
 - Pre-analisi preservata come documento storico; il nuovo protocollo prevale per le decisioni adottate.
 - Criteri di successo: tutti i TASK.md della checkout principale coperti una sola volta, ID univoci, codici validi, naming BGG coerente, percorsi esistenti, copia Wargame identica, esclusioni Git controllate e push verificato.
 - Verifiche documentali superate: 44 TASK.md e 44 record, ID univoci, copertura esatta e codici validi; copia Wargame identica all'originale; git diff --check passato. Database, materiali e output esclusi. Fetch autorizzato eseguito; main e origin/main senza divergenza prima del commit. Nessun test applicativo necessario: codice e dati operativi invariati.
+- Incremento completato: commit `7cad97e` («Formalizza categorie, naming e monitoraggio dei task»), pubblicato su origin/main il 2026-10-04. Riferimento main verificato anche sul server con ls-remote; working tree pulita dopo il primo push. Registro aggiornato successivamente con esito effettivo, in un commit documentale di finalizzazione. Il contenitore TSK-0044 resta attivo e continuativo; Wargame resta sospeso.
 
 ## Prossimo incremento utile
 
