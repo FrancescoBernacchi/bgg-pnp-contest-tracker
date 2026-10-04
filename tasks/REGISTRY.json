@@ -413,20 +413,33 @@
       "cadence": "su_richiesta",
       "source_summary": "In corso, copertura incompleta e impedimenti documentati; stato operativo da riesaminare",
       "status": "in_corso",
-      "status_basis": "Stato storico ambiguo o copertura incompleta; riesame necessario, non chiusura inferita.",
-      "coverage": null,
+      "status_basis": "2026-10-04: incremento barra verde concluso, 10/10 PnP principali; annualita attuale resta parziale per sei challenge adiacenti fuori incremento.",
+      "coverage": {
+        "checked_at": "2026-10-04",
+        "pnp_core": "10/10 contest, 381 entry, 100%; enumerazione completa con limiti nominali documentati",
+        "adjacent": "1/7 contest, 28 entry; sei challenge fuori incremento",
+        "annual_entries": 409,
+        "evidence": "sources/2024-CORE-ROSTER-COMPLETION.md"
+      },
       "dependencies": [],
       "successors": [],
-      "chat_ids": [],
-      "next_action": "Riconciliare stato e continuita usando TASK.md e successori.",
+      "chat_ids": [
+        "01a0b64a-caa0-7bf0-beca-3653ded478da",
+        "01a1069c-78b1-7042-bfad-2bd049fb50bd"
+      ],
+      "next_action": "Obiettivo verde completato. Eventuale incremento BGG-A 2024 per sei challenge adiacenti; MAT di un solo contest 2024 come approfondimento distinto.",
       "git": {
         "checked_at": "2026-10-04",
-        "local_save": "committato",
+        "local_save": "da_committare",
         "integration": "integrato_main",
-        "synchronization": "remoto_verificato",
+        "synchronization": "da_pushare",
         "last_task_document_commit": "99f887d",
-        "evidence": "TASK.md presente su main; push 7cad97e riuscito e refs/heads/main verificato sul server il 2026-10-04. Verifica del documento, non certificazione di tutti i deliverable."
-      }
+        "evidence": "Nuovi roster e import offline verificati 2026-10-04, documenti e cruscotto aggiornati; commit e push non eseguiti per questo incremento. Stato remoto precedente non certifica questi deliverable."
+      },
+      "display_title": "2026-09-18 - BGG-A - Contest BGG 2024",
+      "current_chat_titles": [
+        "2026-09-18 - BGG-A - Contest BGG 2024"
+      ]
     },
     {
       "id": "TSK-0016",

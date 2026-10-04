@@ -1,0 +1,356 @@
+{
+  "source": "https://boardgamegeek.com/thread/3360317/2024-traditional-deck-game-design-contest",
+  "verified_at": "2026-10-04",
+  "rows": [
+    {
+      "author": "M. & Robin Stokkel (1-4p)",
+      "position": 1,
+      "raw": "River Rats",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360328/wip-river-rats-cooperative-card-game-for-1-4-playe"
+    },
+    {
+      "author": "Jesse Hickle (1p)",
+      "position": 2,
+      "raw": "Seat and Eat",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360483/2024-traditional-deck-game-design-contest-seat-and"
+    },
+    {
+      "author": "Kendall Woffinden (1p)",
+      "position": 3,
+      "raw": "Checkmate in Your Pocket",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3358487/wip-checkmate-in-your-pocket-2024-traditional-deck"
+    },
+    {
+      "author": "quantum potato (2+p)",
+      "position": 4,
+      "raw": "Digging Graves",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360696/contest-readydigging-graves-casino-style-game-feat"
+    },
+    {
+      "author": "Vincent Bugica (1-2p)",
+      "position": 5,
+      "raw": "Puzzle Poker",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360704/puzzle-poker-a-match-3-duel-w-solo-variant-2024-tr"
+    },
+    {
+      "author": "quantum potato (1p)",
+      "position": 6,
+      "raw": "Chapel",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360803/contest-ready-chapel-solitaire-puzzle-game-2024-tr"
+    },
+    {
+      "author": "Arthur Wohlwill (1-2p)",
+      "position": 7,
+      "raw": "Look Ma No Hands",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3360805/wiplook-ma-no-hands-2024-traditional-deck-card-con"
+    },
+    {
+      "author": "John Burton (2-4p)",
+      "position": 8,
+      "raw": "Chowdah",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3361126/wip-chowdah-a-card-game-for-2-to-4-2024-traditiona"
+    },
+    {
+      "author": "Jacob Buss (2-5p)",
+      "position": 9,
+      "raw": "Roofs",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3361402/wip-roofs-2024-traditional-deck-game-design-contes"
+    },
+    {
+      "author": "Mike L. (1p)",
+      "position": 10,
+      "raw": "Troll Forest",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3361905/2024-traditional-deck-game-design-contest-troll-fo"
+    },
+    {
+      "author": "Ollie A. (2p)",
+      "position": 11,
+      "raw": "Mole",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3362089/wip-mole-2024-traditional-deck-game-design-contest"
+    },
+    {
+      "author": "Richard Lenherr (2-4p)",
+      "position": 12,
+      "raw": "Crash Cars",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3363458/wip-crash-cars-the-ultimate-race-2024-traditional"
+    },
+    {
+      "author": "Richard Lenherr (2-4p)",
+      "position": 13,
+      "raw": "The Lost Library of Eryndor",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3365972/wip-the-lost-library-of-eryndor-2024-traditional-d"
+    },
+    {
+      "author": "B. Hazard (1-4p)",
+      "position": 14,
+      "raw": "Packs Kingdoms",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3367319/wip-packs-kingdoms-2024-traditional-deck-game-desi"
+    },
+    {
+      "author": "Joseph Propati (1p)",
+      "position": 15,
+      "raw": "Death to the Goblin King",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3371498/wip-death-to-the-goblin-king-2024-traditional-deck"
+    },
+    {
+      "author": "Charles Magri (2-4p)",
+      "position": 16,
+      "raw": "Peek and Run",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3373080/peek-and-run-2024-traditional-deck-game-design-con"
+    },
+    {
+      "author": "Gregg Jewell (1p)",
+      "position": 17,
+      "raw": "Base of Spades",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3372614/wip-base-of-spades-solo-game-2024-traditional-deck"
+    },
+    {
+      "author": "Jacob Zimmerman (2-4p)",
+      "position": 18,
+      "raw": "Commitment",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3375795/commitment-2-4p-card-battle-game-2024-traditional"
+    },
+    {
+      "author": "Jacob Zimmerman (2p)",
+      "position": 19,
+      "raw": "Measure and Tempo",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3376640/measure-and-tempo-2p-pseudo-trick-taking-game-2024"
+    },
+    {
+      "author": "A. Ighalen, Y. Ighalen, and V. Musella (1p)",
+      "position": 20,
+      "raw": "Alice's Nightmare",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3379753/wip-alices-nightmares-solitaire-2024-traditional-d"
+    },
+    {
+      "author": "Constance Metzinger (1p)",
+      "position": 21,
+      "raw": "Sinbad and the Seven Isles",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3380997/wip-sinbad-and-the-seven-isles-a-solitaire-game-wi"
+    },
+    {
+      "author": "Steve Michel (2-4p)",
+      "position": 22,
+      "raw": "Snakeheads",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3381857/wip-snakeheads-its-species-invasion-time-in-the-la"
+    },
+    {
+      "author": "Iffix Y Santaph (1p)",
+      "position": 23,
+      "raw": "Cardbury",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3387202/wip-cardburysolitaire2024-traditional-deck-game-de"
+    },
+    {
+      "author": "@Qu1rr3l (1-2p, coop)",
+      "position": 24,
+      "raw": "Night Dungeon",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3387624/wip-night-dungeon-2024-traditional-deck-game-desig"
+    },
+    {
+      "author": "Félix Bernat Julián (3p)",
+      "position": 25,
+      "raw": "Bandit Guilds",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3389050/bandit-guilds-2024-traditional-deck-game-design-co"
+    },
+    {
+      "author": "Taylor O'Brien (2-4p)",
+      "position": 26,
+      "raw": "Speculation",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3389642/wip-speculation-for-2-4-players-2024-traditional-d"
+    },
+    {
+      "author": "Leo Cidner (2p, coop)",
+      "position": 27,
+      "raw": "You See What I Must Dream",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3391112/you-see-what-i-must-dream-2-4-players-20-minutes-c"
+    },
+    {
+      "author": "Josh Maher (1-4p)",
+      "position": 28,
+      "raw": "Diamond Mine",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3392447/wip-diamond-mine-competitive-card-game-for-1-4-pla"
+    },
+    {
+      "author": "Clark Anderson (2-5p)",
+      "position": 29,
+      "raw": "RoboRummy",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3392975/wip-roborummy-2-5p-2024-traditional-deck-game-desi"
+    },
+    {
+      "author": "Clark Anderson (1p)",
+      "position": 30,
+      "raw": "Jack's Nightmare",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3393631/wip-jack-s-nightmare-a-solo-puzzle-game-traditiona"
+    },
+    {
+      "author": "D. Teuber (1p)",
+      "position": 31,
+      "raw": "Black◆Diamond",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3395585/blackdiamond-solo-10-min-2024-traditional-deck-con"
+    },
+    {
+      "author": "Frank (2p)",
+      "position": 32,
+      "raw": "Depth Charges",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3396994/depth-charges-an-entry-into-the-2024-traditional-d"
+    },
+    {
+      "author": "@ForgetMeTomorrow (2p)",
+      "position": 33,
+      "raw": "Starships",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3398263/wip-2024-traditional-deck-game-design-contest-rule"
+    },
+    {
+      "author": "J. Simmons (3-5p)",
+      "position": 34,
+      "raw": "Quint",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3398513/wip-quint-2024-traditional-deck-game-design-contes"
+    },
+    {
+      "author": "Sammy Spoelders (1p)",
+      "position": 35,
+      "raw": "Peak Warrior",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3400297/wip-2024-traditional-deck-game-design-contest-peak"
+    },
+    {
+      "author": "@Qu1rr3l (2-6p)",
+      "position": 36,
+      "raw": "Final Trick",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3403008/wip-final-trick-2024-traditional-deck-game-design"
+    },
+    {
+      "author": "Adrien Cocuaud (2p)",
+      "position": 37,
+      "raw": "Voleur",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3403308/wip-voleur-duel-card-game-2024-traditional-deck-ga"
+    },
+    {
+      "author": "Felipe Stefani (3-6p)",
+      "position": 38,
+      "raw": "Court of Deception",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3404884/wip-court-of-deception-card-game-2024-traditional"
+    },
+    {
+      "author": "Robert Stefaniuk (3p)",
+      "position": 39,
+      "raw": "Tripleto",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3408772/wip-tripleto-2024-traditional-deck-game-design-con"
+    },
+    {
+      "author": "Edin Mujadžević (1p)",
+      "position": 40,
+      "raw": "Abroad",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3414952/wip-abroad-2024-traditional-deck-game-design-conte"
+    },
+    {
+      "author": "Ákos Plesznivy & Petra Hahn (2p)",
+      "position": 41,
+      "raw": "Quarters",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3415510/wip-quarters-court-building-card-game-for-two-2024"
+    },
+    {
+      "author": "Ákos Plesznivy & Petra Hahn (2p)",
+      "position": 42,
+      "raw": "Hex",
+      "status": "Listed in official roster",
+      "url": "https://boardgamegeek.com/thread/3415500/wip-hex-fantasy-combat-for-two-2024-traditional-de"
+    },
+    {
+      "author": "Gregg Jewell (1p)",
+      "position": 43,
+      "raw": "Beast Tamer",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3365277/wip-leafbearer-solo-mancala-playing-card-game"
+    },
+    {
+      "author": "Gregg Jewell (1p)",
+      "position": 44,
+      "raw": "Suited for Battle",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3367152/wip-suited-for-battle-solitaire-playing-card-game"
+    },
+    {
+      "author": "Steven Tondeur (2p)",
+      "position": 45,
+      "raw": "Grand Suit Slam",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3363668/withdrawn-wip-grand-suit-slam-2p-hand-court-manage"
+    },
+    {
+      "author": "Mike L. (1-2p)",
+      "position": 46,
+      "raw": "Gridiron Kings",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3361901/2024-traditional-deck-game-design-contest-gridiron"
+    },
+    {
+      "author": "Vincent Bugica (3-4p)",
+      "position": 47,
+      "raw": "Snakes & Aces",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3375597/snakes-and-aces-a-hidden-ladder-climbing-for-3-4-b"
+    },
+    {
+      "author": "Marek Kolcun (2-5p, coop)",
+      "position": 48,
+      "raw": "House of Valois",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3396703/wip-house-of-valois-a-traditional-deck-game-design"
+    },
+    {
+      "author": "Adi (2-4p)",
+      "position": 49,
+      "raw": "Petri-Fight",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3396449/2024-traditional-deck-game-design-contestrules-ava"
+    },
+    {
+      "author": "Rory Campbell (2-100p) considered withdrawn as it's still in IDEA PHASE",
+      "position": 50,
+      "raw": "Huscarl",
+      "status": "Withdrawn",
+      "url": "https://boardgamegeek.com/thread/3369620/huscarl-for-the-2024-traditional-deck-game-design"
+    }
+  ]
+}

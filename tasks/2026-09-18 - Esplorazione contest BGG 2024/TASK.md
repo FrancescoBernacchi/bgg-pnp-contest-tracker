@@ -1,5 +1,13 @@
 # Esplorazione contest BGG 2024
 
+## Ripresa autorizzata — 2026-10-04
+
+ID stabile: TSK-0015. La nuova chat `01a1069c-78b1-7042-bfad-2bd049fb50bd`, titolo `2026-10-04 - BGG-A - Contest BGG 2024`, prosegue questo registro aperto senza duplicarlo. L'utente chiede di portare al 100% la barra verde del 2024: obiettivo dell'incremento sono i roster dei 10 contest `pnp_core` attualmente nel database. I 7 contest adiacenti restano separati; la precedente esclusione delle challenge descrive il perimetro storico e non cambia la loro classificazione attuale.
+
+Categoria BGG-A, modalità circoscritto, cadenza su richiesta, stato in corso. Deliverable: roster verificati e import riproducibile per i 9 contest PnP ancora privi di entry, provenienza e anomalie datate, verifica su copia prima dell'importazione, integrità e chiavi esterne, rigenerazione delle sezioni annuali A/B e controllo della copertura 10/10. Il 100% della barra misura contest con entry censite; la completezza dei roster sarà verificata separatamente, senza trattare una singola entry come censimento completo. WIP, materiali, classifiche autonome, host esterni e download sono esclusi.
+
+Preflight riuscito; PWS locale e canonico 1.5.0. Working tree su main con modifiche pregresse di governance e Classifiche 2025, preservate; nessuna operazione Git autorizzata. Baseline: PnP 1/10, 29 entry; adiacenti 1/7, 28 entry. Fonte tecnica: database operativo `database/pnp_collection.sqlite3`.
+
 ## Tipo di attività
 
 Censimento annuale delle entry — anno 2024.
@@ -84,3 +92,15 @@ Tutte le entry sono state registrate come `dependent_variant` con dipendenza dal
 La procedura è stata applicata prima a una copia e poi al database operativo. Esito: 28 entry, posizioni 1–28 senza lacune, 28 osservazioni storiche, integrità SQLite valida e zero violazioni delle chiavi esterne. Nessun thread WIP è stato aperto e nessuna risorsa o requisito materiale è stato censito.
 
 Prossima unità di lavoro: completare e importare 1-Card 2024 dalla GeekList ufficiale 334560.
+
+## Incremento concluso — barra verde 2024 — 2026-10-04
+
+Obiettivo richiesto raggiunto: **10/10 contest PnP principali, 100%, 381 entry**. Importate 352 nuove entry nei nove contest mancanti; Children & Family (29) e Solomode adiacente (28) preservati. Totale annuale 409 entry. Adiacenti ancora 1/7: le sei challenge non sono comprese nell'incremento verde, quindi il contenitore annuale resta parziale/in corso rispetto al perimetro attuale di 17 contest; questo incremento è concluso.
+
+Deliverable: nove JSON datati in catalog, importatore offline idempotente `catalog/import_2024_core_rosters.py`, verifica JSON e [rapporto con fonti, conteggi, anomalie e limiti](../../sources/2024-CORE-ROSTER-COMPLETION.md). Enumerazione verificata per tutti i roster, distinguendo completezza delle righe dai metadati non osservabili: 9-Card include due destinazioni cancellate, In-Hand autori non dichiarati, 54-Card un ritiro supplementare privo di autore. Discrepanze storiche In-Hand 7/6 squalificate e 1-Card 54/50 conservate e descritte, senza riscrivere le vecchie osservazioni o inferire rimozioni.
+
+Verifiche riuscite: prova su copia in memoria prima dell'applicazione, backup SQLite, cardinalità e posizioni senza lacune, unicità URL, seconda esecuzione senza modifiche, `integrity_check=ok`, zero violazioni di chiavi esterne. Backend dell'app verificato: `pnp_core` 10 contest, 10 censiti, 381 entry; `adjacent` 7 contest, 1 censito, 28 entry; zero classifiche, letture materiali e acquisizioni 2024. Sezioni annuali A/B rigenerate con il generatore ufficiale, sintesi manuale e registro aggiornati. Nessuna analisi WIP, risorsa, requisito, host esterno o download.
+
+Prossimo passo utile: MAT di un solo contest 2024 (per esempio 9-Card); eventuale completamento delle sei challenge adiacenti in un successivo incremento BGG-A 2024. Nessun monitoraggio ordinario previsto per questi contest conclusi. Nessuna nuova strategia strutturale: applicati i pattern già verificati del playbook, senza manutenzione della directory `.agents`.
+
+Salvataggio Git: deliverable locali da committare. Commit/push non eseguiti; modifiche pregresse di altri task preservate. Messaggio suggerito per un commit selettivo: `Completa censimento dei contest PnP principali BGG 2024`.
