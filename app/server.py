@@ -12,6 +12,7 @@ import sqlite3
 import secrets
 import hmac
 import webbrowser
+from work_progress import enrich_work_progress, summarize_work
 from library_catalog import library_catalog
 from pdf_files import open_pdf, PDFError
 from material_files import open_material, docx_blocks, DOCX
@@ -185,12 +186,14 @@ def progress_rows(db):
         LEFT JOIN acquisitions a ON a.game_id=e.game_id
         LEFT JOIN acquired_files af ON af.acquisition_id=a.id
         GROUP BY c.id ORDER BY c.year DESC,c.name COLLATE NOCASE,c.id""")
+    enrich_work_progress(db, contests)
     years = []
     for year in range(2026, 2007, -1):
         current = [contest for contest in contests if contest["year"] == year]
         def scope_summary(scope_type):
             scoped = [contest for contest in current if contest["scope_type"] == scope_type]
             return {
+                **summarize_work(scoped),
                 "contest_count": len(scoped),
                 "contests_with_entries_count": sum(1 for row in scoped if row["entry_count"] > 0),
                 "entry_count": sum(row["entry_count"] for row in scoped),
@@ -199,6 +202,7 @@ def progress_rows(db):
                 "downloaded_entry_count": sum(row["downloaded_entry_count"] for row in scoped),
             }
         years.append({
+            **summarize_work(current),
             "year": year,
             "contest_count": len(current),
             "contests_with_entries_count": sum(1 for row in current if row["entry_count"] > 0),

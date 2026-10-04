@@ -9,6 +9,7 @@ import re
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
+from work_progress import enrich_work_progress
 
 
 START_MARKER = "<!-- BEGIN GENERATED ANNUAL PROGRESS -->"
@@ -186,6 +187,8 @@ def build_generated_section(db: sqlite3.Connection) -> str:
     ):
         category_counts[row["contest_id"]].append((row["category"], row["ranked"]))
 
+    work = enrich_work_progress(db, [dict(contest_id=c['id'], entry_count=c['entry_count']) for c in contests])
+    work_by_id = {c['contest_id']: c for c in work}
     summary: dict[int, dict[str, int | str | None]] = {}
     for contest in contests:
         cid, total = contest["id"], contest["entry_count"]
@@ -222,7 +225,7 @@ def build_generated_section(db: sqlite3.Connection) -> str:
         START_MARKER,
         "## A. Sintesi immediata per anno",
         "",
-        "Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. Gli anni sono divisi in gruppi di massimo quattro. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti. Un trattino indica che l'annualità non è ancora stata importata nel database.",
+        "Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenza. Censimento entry: contest con roster completo attestato / contest registrati. Classifica: entry con tutte le categorie verificate, incluse assenze esplicite / entry applicabili. Materiali: primo post censito con esito osservabile secondo contratto MAT, regole integrabili successivamente / entry applicabili; acquisizione: tutte le risorse dichiarate acquisite / entry applicabili. Gli esiti non applicabili escono dal denominatore; ignoti e blocchi non completano la fase. Zero entry non significa 100%. Immagini rappresentative: 0%, funzione non implementata. Le sezioni di dettaglio L/D mostrano invece la presenza storica di scansioni/file e non il completamento del lavoro.",
         "",
     ]
     year_blocks = [years[index:index + SUMMARY_YEAR_BLOCK_SIZE]
@@ -240,8 +243,8 @@ def build_generated_section(db: sqlite3.Connection) -> str:
         for contest_number, series_name in enumerate(series, start=1):
             if not any((series_name, year) in contest_by_series_year for year in block_years):
                 continue
-            metrics = {"Stati entry": [], "Censimento entry": [], "Classifiche": [],
-                       "Lettura materiali": [], "Download materiali": []}
+            metrics = {"Stati entry": [], "Censimento entry": [], "Censimento classifica": [],
+                       "Censimento materiali": [], "Acquisizione materiali": [], "Acquisizione immagini": []}
             for year in block_years:
                 contest = contest_by_series_year.get((series_name, year))
                 if contest is None:
@@ -258,12 +261,17 @@ def build_generated_section(db: sqlite3.Connection) -> str:
                 known_statuses = int(values["known_statuses"])
                 status_icon = "🔴" if known_statuses == 0 else ("🟢" if known_statuses == total else "🟡")
                 metrics["Stati entry"].append(f"{status_icon} {escape_cell(values['entry_statuses'])}")
-                metrics["Censimento entry"].append(f"{entry_icon} {total}")
-                metrics["Classifiche"].append(f"{'🟢' if ranking_count else '🔴'} {ranking_count}")
-                metrics["Lettura materiali"].append(f"{reading_icon} {values['any_reads']}/{total} entry")
-                metrics["Download materiali"].append(
-                    f"{bullet(downloaded, total)} {downloaded}/{total} entry"
-                )
+                work_values = work_by_id[contest['id']]
+                metrics['Censimento entry'].append(f"{work_values['census_complete_count']}/1 contest attestati · {total} entry")
+                for phase, title in [('ranking','Censimento classifica'),('materials','Censimento materiali'),('acquisition','Acquisizione materiali')]:
+                    done, denominator = work_values[phase+'_complete_count'], work_values[phase+'_total']
+                    ratio = f"{done}/{denominator} · {round(done*100/denominator)}%" if denominator else '— denominatore non disponibile / non applicabile'
+                    metrics[title].append(ratio + f" · {work_values[phase+'_not_applicable_count']} N/A · {work_values[phase+'_blocked_count']} bloccate")
+                    if work_values[phase+'_partial_count']:
+                        metrics[title][-1] += f" · {work_values[phase+'_partial_count']} verifiche parziali"
+                    if phase == 'ranking':
+                        metrics[title][-1] += f" · {work_values['ranked_entry_count']} entry classificate · {ranking_count} categorie"
+                metrics['Acquisizione immagini'].append('0% · non implementata')
             latest_contest = latest_contest_by_series[series_name]
             series_link = markdown_link(series_name, latest_contest["source_url"])
             lines.append(f"| {contest_number} | **{series_link}** | "

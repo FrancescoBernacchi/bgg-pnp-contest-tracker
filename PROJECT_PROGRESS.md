@@ -39,7 +39,7 @@ Le sezioni A e B sottostanti sono rigenerate dal database con `app/generate_proj
 <!-- BEGIN GENERATED ANNUAL PROGRESS -->
 ## A. Sintesi immediata per anno
 
-Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, censimento entry, classifiche presenti, lettura dei materiali e download. Gli anni sono divisi in gruppi di massimo quattro. `🟢` completo/effettuato, `🟡` avviato o ancora aperto, `🔴` non iniziato. La lettura è completata per un'entry quando esiste una scansione dei materiali registrata, anche se limitata al primo post; l'integrazione delle regole resta distinguibile nel database. Il conteggio delle classifiche indica le categorie distinte, non i singoli piazzamenti. Un trattino indica che l'annualità non è ancora stata importata nel database.
+Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenza. Censimento entry: contest con roster completo attestato / contest registrati. Classifica: entry con tutte le categorie verificate, incluse assenze esplicite / entry applicabili. Materiali: primo post censito con esito osservabile secondo contratto MAT, regole integrabili successivamente / entry applicabili; acquisizione: tutte le risorse dichiarate acquisite / entry applicabili. Gli esiti non applicabili escono dal denominatore; ignoti e blocchi non completano la fase. Zero entry non significa 100%. Immagini rappresentative: 0%, funzione non implementata. Le sezioni di dettaglio L/D mostrano invece la presenza storica di scansioni/file e non il completamento del lavoro.
 
 ### Gruppo anni 1 di 5
 
@@ -48,136 +48,158 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |   | **18 contest nel database** | **17 contest nel database** | **17 contest nel database** | **21 contest nel database** |
 | 2 | **[1-Card Print and Play Contest](https://boardgamegeek.com/thread/3686290/2026-1-card-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 30 | — | — | — |
-|   |     Censimento entry | 🟢 30 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/30 entry | — | — | — |
-|   |     Download materiali | 🔴 0/30 entry | — | — | — |
+|   |     Censimento entry | 1/1 contest attestati · 30 entry | — | — | — |
+|   |     Censimento classifica | 0/30 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | 0/30 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | 0/30 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 3 | **[1-Card Print and Play Design Contest](https://boardgamegeek.com/thread/3487579/2025-1-card-print-and-play-design-contest)** |   |   |   |   |
 |   |     Stati entry | — | 🟢 contest_ready 38 | — | — |
-|   |     Censimento entry | — | 🟢 38 | — | — |
-|   |     Classifiche | — | 🟢 9 | — | — |
-|   |     Lettura materiali | — | 🟢 38/38 entry | — | — |
-|   |     Download materiali | — | 🔴 0/38 entry | — | — |
+|   |     Censimento entry | — | 1/1 contest attestati · 38 entry | — | — |
+|   |     Censimento classifica | — | 38/38 · 100% · 0 N/A · 0 bloccate · 31 entry classificate · 9 categorie | — | — |
+|   |     Censimento materiali | — | 37/38 · 97% · 0 N/A · 1 bloccate | — | — |
+|   |     Acquisizione materiali | — | 0/34 · 0% · 4 N/A · 1 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 10 | **[14th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 11 | **[15th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 3 | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🟡 3 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/3 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/3 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 3 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 0/3 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/3 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/3 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 unknown 8, wip 4, components_available 2, idea 2, contest_ready 1 | 🟢 contest_ready 28 | 🟡 contest_ready 16, components_available 5, unknown 4, withdrawn 4, contest_complete 1 | 🔴  |
-|   |     Censimento entry | 🟡 17 | 🟢 28 | 🟢 30 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🟢 11 | 🟢 11 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/17 entry | 🔴 0/28 entry | 🔴 0/30 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/17 entry | 🔴 0/28 entry | 🔴 0/30 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 17 entry | 1/1 contest attestati · 28 entry | 1/1 contest attestati · 30 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 0/17 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 28/28 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 11 categorie | 30/30 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 11 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/17 · 0% · 0 N/A · 0 bloccate | 0/28 · 0% · 0 N/A · 0 bloccate | 0/30 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/17 · 0% · 0 N/A · 0 bloccate | 0/28 · 0% · 0 N/A · 0 bloccate | 0/30 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 44, components_available 11, idea 8, withdrawn 6 | 🟢 contest_ready 63, withdrawn 31 | — | — |
-|   |     Censimento entry | 🟢 69 | 🟢 94 | — | — |
-|   |     Classifiche | 🟢 11 | 🟢 11 | — | — |
-|   |     Lettura materiali | 🔴 0/69 entry | 🔴 0/94 entry | — | — |
-|   |     Download materiali | 🔴 0/69 entry | 🔴 0/94 entry | — | — |
+|   |     Censimento entry | 1/1 contest attestati · 69 entry | 1/1 contest attestati · 94 entry | — | — |
+|   |     Censimento classifica | 69/69 · 100% · 0 N/A · 0 bloccate · 17 entry classificate · 11 categorie | 94/94 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 11 categorie | — | — |
+|   |     Censimento materiali | 0/69 · 0% · 0 N/A · 0 bloccate | 0/94 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | 0/69 · 0% · 0 N/A · 0 bloccate | 0/94 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | — | — |
 | 31 | **[Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design)** |   |   |   |   |
 |   |     Stati entry | 🟡 contest_ready 2, components_available 1, playtest_ready 1, unknown 1 | — | — | — |
-|   |     Censimento entry | 🟢 5 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/5 entry | — | — | — |
-|   |     Download materiali | 🔴 0/5 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 5 entry | — | — | — |
+|   |     Censimento classifica | 0/5 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | 0/5 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | 0/5 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 35 | **[Children & Family Game Design Contest](https://boardgamegeek.com/thread/3645079/2026-children-and-family-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 36, withdrawn 2 | 🟢 contest_ready 27 | 🟢 contest_complete 29 | 🔴  |
-|   |     Censimento entry | 🟢 38 | 🟢 27 | 🟢 29 | 🔴 0 |
-|   |     Classifiche | 🟢 5 | 🟢 5 | 🟢 2 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/38 entry | 🟢 27/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/38 entry | 🟡 14/27 entry | 🔴 0/29 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 38 entry | 1/1 contest attestati · 27 entry | 1/1 contest attestati · 29 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 38/38 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 5 categorie | 27/27 · 100% · 0 N/A · 0 bloccate · 16 entry classificate · 5 categorie | 29/29 · 100% · 0 N/A · 0 bloccate · 15 entry classificate · 2 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/38 · 0% · 0 N/A · 0 bloccate | 26/27 · 96% · 0 N/A · 0 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/38 · 0% · 0 N/A · 0 bloccate | 12/23 · 52% · 4 N/A · 10 bloccate · 1 verifiche parziali | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 55 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 22, withdrawn 3 | 🟢 contest_ready 15, withdrawn 12 | 🟡 unknown 24, disqualified 6, withdrawn 5 | 🔴  |
-|   |     Censimento entry | 🟢 25 | 🟢 27 | 🟢 35 | 🔴 0 |
-|   |     Classifiche | 🟢 9 | 🟢 9 | 🟢 10 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/25 entry | 🟢 27/27 entry | 🔴 0/35 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/25 entry | 🔴 0/27 entry | 🔴 0/35 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 25 entry | 1/1 contest attestati · 27 entry | 1/1 contest attestati · 35 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 25/25 · 100% · 0 N/A · 0 bloccate · 22 entry classificate · 9 categorie | 27/27 · 100% · 0 N/A · 0 bloccate · 15 entry classificate · 9 categorie | 35/35 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 10 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/25 · 0% · 0 N/A · 0 bloccate | 25/27 · 93% · 0 N/A · 1 bloccate | 0/35 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/25 · 0% · 0 N/A · 0 bloccate | 0/21 · 0% · 6 N/A · 1 bloccate | 0/35 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 65 | **[Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟢 contest_ready 32, withdrawn 18 | 🔴  |
-|   |     Censimento entry | — | — | 🟢 50 | 🔴 0 |
-|   |     Classifiche | — | — | 🟢 17 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/50 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/50 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 1/1 contest attestati · 50 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | 50/50 · 100% · 0 N/A · 0 bloccate · 22 entry classificate · 17 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | 0/50 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | 0/50 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 | 66 | **[One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 67 | **[One Card Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟡 contest_ready 21, unknown 19, components_available 9, contest_complete 1 | — |
-|   |     Censimento entry | — | — | 🟢 50 | — |
-|   |     Classifiche | — | — | 🟢 12 | — |
-|   |     Lettura materiali | — | — | 🔴 0/50 entry | — |
-|   |     Download materiali | — | — | 🔴 0/50 entry | — |
+|   |     Censimento entry | — | — | 1/1 contest attestati · 50 entry | — |
+|   |     Censimento classifica | — | — | 50/50 · 100% · 0 N/A · 0 bloccate · 33 entry classificate · 12 categorie | — |
+|   |     Censimento materiali | — | — | 0/50 · 0% · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | 0/50 · 0% · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 75 | **[Print and Play Wargame Design Contest](https://boardgamegeek.com/thread/3627732/contest-open-2026-print-and-play-wargame-design-co)** |   |   |   |   |
 |   |     Stati entry | 🟡 playtest_ready 13, wip 6, components_available 2, idea 1, unknown 1 | 🟢 contest_ready 19 | — | — |
-|   |     Censimento entry | 🟡 23 | 🟢 19 | — | — |
-|   |     Classifiche | 🔴 0 | 🟢 8 | — | — |
-|   |     Lettura materiali | 🟢 23/23 entry | 🔴 0/19 entry | — | — |
-|   |     Download materiali | 🔴 0/23 entry | 🔴 0/19 entry | — | — |
+|   |     Censimento entry | 1/1 contest attestati · 23 entry | 1/1 contest attestati · 19 entry | — | — |
+|   |     Censimento classifica | 0/23 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 19/19 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 8 categorie | — | — |
+|   |     Censimento materiali | 23/23 · 100% · 0 N/A · 0 bloccate | 0/19 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | 0/12 · 0% · 11 N/A · 0 bloccate | 0/19 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | — | — |
 | 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🟢 contest_ready 21, withdrawn 16 | 🟡 unknown 29, withdrawn 8 | — |
-|   |     Censimento entry | 🔴 0 | 🟢 37 | 🟢 37 | — |
-|   |     Classifiche | 🔴 0 | 🟢 11 | 🟢 11 | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🟢 37/37 entry | 🔴 0/37 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🟡 29/37 entry | 🔴 0/37 entry | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 1/1 contest attestati · 37 entry | 1/1 contest attestati · 37 entry | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 37/37 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 11 categorie | 37/37 · 100% · 0 N/A · 0 bloccate · 25 entry classificate · 11 categorie | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | 37/37 · 100% · 0 N/A · 0 bloccate | 0/37 · 0% · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | 27/30 · 90% · 7 N/A · 1 bloccate · 2 verifiche parziali | 0/37 · 0% · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | — |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 | — | — |
-|   |     Censimento entry | 🟡 89 | 🟢 74 | — | — |
-|   |     Classifiche | 🔴 0 | 🟢 16 | — | — |
-|   |     Lettura materiali | 🔴 0/89 entry | 🔴 0/74 entry | — | — |
-|   |     Download materiali | 🔴 0/89 entry | 🔴 0/74 entry | — | — |
+|   |     Censimento entry | 1/1 contest attestati · 89 entry | 1/1 contest attestati · 74 entry | — | — |
+|   |     Censimento classifica | 0/89 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 74/74 · 100% · 0 N/A · 0 bloccate · 48 entry classificate · 16 categorie | — | — |
+|   |     Censimento materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 0/74 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 0/74 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | — | — |
 | 82 | **[Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟡 contest_ready 31, components_available 15, unknown 9, contest_complete 2 | 🔴  |
-|   |     Censimento entry | — | — | 🟢 57 | 🔴 0 |
-|   |     Classifiche | — | — | 🟢 16 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/57 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/57 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 1/1 contest attestati · 57 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | 57/57 · 100% · 0 N/A · 0 bloccate · 40 entry classificate · 16 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | 0/57 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | 0/57 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 | 83 | **[Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 contest_ready 21 | 🟢 contest_ready 38 | 🟢 contest_complete 28 | 🔴  |
-|   |     Censimento entry | 🟢 21 | 🟢 38 | 🟢 28 | 🔴 0 |
-|   |     Classifiche | 🟢 8 | 🟢 9 | 🟢 7 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/21 entry | 🟢 38/38 entry | 🔴 0/28 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/21 entry | 🔴 0/38 entry | 🔴 0/28 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 21 entry | 1/1 contest attestati · 38 entry | 1/1 contest attestati · 28 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 21/21 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 8 categorie | 38/38 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 9 categorie | 28/28 · 100% · 0 N/A · 0 bloccate · 14 entry classificate · 7 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/21 · 0% · 0 N/A · 0 bloccate | 36/38 · 95% · 0 N/A · 0 bloccate | 0/28 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/21 · 0% · 0 N/A · 0 bloccate | 0/23 · 0% · 15 N/A · 0 bloccate | 0/28 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 90 | **[Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟡 unknown 11, components_available 7 | 🔴 unknown 42 | 🟡 unknown 42, withdrawn 8 | 🔴  |
-|   |     Censimento entry | 🟡 18 | 🟢 42 | 🟢 50 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🟢 5 | 🟢 6 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/18 entry | 🔴 0/42 entry | 🔴 0/50 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/18 entry | 🔴 0/42 entry | 🔴 0/50 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 18 entry | 1/1 contest attestati · 42 entry | 1/1 contest attestati · 50 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 0/18 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 42/42 · 100% · 0 N/A · 0 bloccate · 21 entry classificate · 5 categorie | 50/50 · 100% · 0 N/A · 0 bloccate · 23 entry classificate · 6 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/18 · 0% · 0 N/A · 0 bloccate | 0/42 · 0% · 0 N/A · 0 bloccate | 0/50 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/18 · 0% · 0 N/A · 0 bloccate | 0/42 · 0% · 0 N/A · 0 bloccate | 0/50 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 92 | **[Turkish Print and Play Design Contest](https://boardgamegeek.com/thread/3701420/2026-turkce-yazdir-ve-oyna-pnp-kutu-oyunu-tasarim)** |   |   |   |   |
 |   |     Stati entry | 🟢 components_available 14, withdrawn 6 | — | — | — |
-|   |     Censimento entry | 🟡 20 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/20 entry | — | — | — |
-|   |     Download materiali | 🔴 0/20 entry | — | — | — |
+|   |     Censimento entry | 1/1 contest attestati · 20 entry | — | — | — |
+|   |     Censimento classifica | 0/20 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | 0/20 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | 0/20 · 0% · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 96 | **[Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🟢 components_available 32, contest_ready 7, playtest_ready 4, wip 1, withdrawn 1 | 🟢 contest_ready 40 | 🟡 contest_ready 14, unknown 7, components_available 5, idea 2, contest_complete 1 | 🔴  |
-|   |     Censimento entry | 🟢 45 | 🟢 40 | 🟢 29 | 🔴 0 |
-|   |     Classifiche | 🟢 8 | 🟢 5 | 🟢 10 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/45 entry | 🔴 0/40 entry | 🔴 0/29 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/45 entry | 🔴 0/40 entry | 🔴 0/29 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 1/1 contest attestati · 45 entry | 1/1 contest attestati · 40 entry | 1/1 contest attestati · 29 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | 0/45 · 0% · 0 N/A · 0 bloccate · 12 verifiche parziali · 12 entry classificate · 8 categorie | 40/40 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 5 categorie | 29/29 · 100% · 0 N/A · 0 bloccate · 17 entry classificate · 10 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 0/40 · 0% · 0 N/A · 0 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 0/40 · 0% · 0 N/A · 0 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 102 | **[Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟡 unknown 6, components_available 2, contest_ready 2, withdrawn 2, contest_complete 1, idea 1 | 🔴  |
-|   |     Censimento entry | — | — | 🟢 14 | 🔴 0 |
-|   |     Classifiche | — | — | 🟢 8 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/14 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/14 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 1/1 contest attestati · 14 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | 14/14 · 100% · 0 N/A · 0 bloccate · 11 entry classificate · 8 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | 0/14 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | 0/14 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 
 ### Gruppo anni 2 di 5
 
@@ -186,226 +208,263 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |   | **12 contest nel database** | **14 contest nel database** | **24 contest nel database** | **23 contest nel database** |
 | 5 | **[10th anniversary Christmas Print and Play Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 6 | **[10th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 7 | **[11th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 8 | **[12th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 9 | **[13th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | 🔴  |
-|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 | 18 | **[2nd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 19 | **[3rd ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 21 | **[4th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 23 | **[5th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 24 | **[6th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 25 | **[7th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 26 | **[8th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 27 | **[9 Card Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | 🔴  |
-|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 | 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 29 | **[9th ROLL & WRITE GAME DESIGN CONTEST](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 36 | **[Children and Family Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 37 | **[Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 38 | **[Children's Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 46 | **[DTR Pewter Heroes Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 55 | **[In-Hand Game Design Contest](https://boardgamegeek.com/thread/3591416/2026-in-hand-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 65 | **[Nine Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 66 | **[One Card Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-| 70 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | — |
+| 68 | **[One Page PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 74 | **[Postcard Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 78 | **[Roll & Write Game Design Contest](https://boardgamegeek.com/thread/3776341/the-2026-roll-and-write-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 79 | **[Single Page Solo Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 82 | **[Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 83 | **[Solomode Contest](https://boardgamegeek.com/thread/3670686/2026-solomode-contest)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | 0% · non implementata | — |
 | 90 | **[Traditional Deck Game Design Contest](https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | — | — |
 | 94 | **[Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 96 | **[Two-Player Print and Play Game Design Contest](https://boardgamegeek.com/thread/3620917/2026-two-player-print-and-play-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 99 | **[Video Stream Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 101 | **[Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 102 | **[Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | — |
 
 ### Gruppo anni 3 di 5
 
@@ -414,160 +473,186 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |   | **22 contest nel database** | **20 contest nel database** | **21 contest nel database** | **24 contest nel database** |
 | 12 | **[18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 13 | **[2 Player PnP Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 14 | **[2 Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 15 | **[2015-16 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 16 | **[2016-17 Wargame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 22 | **[54-Card Game Design Contest](https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 28 | **[9-Card Nanogame Print and Play Design Contest](https://boardgamegeek.com/thread/3648226/2026-9-card-nanogame-print-and-play-design-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | — |
 | 32 | **[Badger Rainbow Deck Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 37 | **[Children's Game Print and Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 48 | **[Eff the Rules Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 51 | **[Gamer Deck 1 Mechanics Design Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 57 | **[League of Designers Workshop and Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 59 | **[M80 World Languages Card Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 63 | **[MicroGame Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | 🔴  |
-|   |     Censimento entry | — | — | 🔴 0 | 🔴 0 |
-|   |     Classifiche | — | — | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | 0% · non implementata |
 | 64 | **[Mint Tin Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-| 68 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
+| 70 | **[One Page PNP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 84 | **[Starfarm! Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 85 | **[Summer 2018 Green Box of Games Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 87 | **[The Pug Life Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 91 | **[Travel Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 94 | **[Two Player Print and Play Game Design](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 95 | **[Two-Player PnP Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 100 | **[War Game Print and Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 103 | **[Wibbell++ Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 
 ### Gruppo anni 4 di 5
 
@@ -576,172 +661,200 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |   | **22 contest nel database** | **18 contest nel database** | **12 contest nel database** | **9 contest nel database** |
 | 4 | **[10d12 Dice Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 12 | **[18 Card MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 17 | **[24 Hour Design Challenge](https://boardgamegeek.com/thread/3765638/september-october-2026-bi-monthly-24-hour-design-c)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | — |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | — |
 | 20 | **[4 Year Old D12 Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 30 | **[Art and Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 34 | **[Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 40 | **[Classic Novel Microgame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 43 | **[Dexterity Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 44 | **[Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 47 | **[Easy Builds Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 50 | **[Four Poppels and Six Dice Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 52 | **[Gimme a Hand contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 53 | **[Historical Themed Board Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🔴  | — |
-|   |     Censimento entry | — | — | 🔴 0 | — |
-|   |     Classifiche | — | — | 🔴 0 | — |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | — | 0% · non implementata | — |
 | 54 | **[In-A-Tin / Express Print-and-Play Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 56 | **[Iron Game Designer Challenge](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 58 | **[Little Box Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 61 | **[Mashup Game Design and Artwork Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | 0% · non implementata | — |
 | 62 | **[MicroGame Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 69 | **[One Page PnP contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 72 | **[PNP Hidden Role / Bluffing Card Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 73 | **[PnP Postcard Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 76 | **[Quick Print and Play contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 77 | **[Randall's Dice Or No Dice Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 81 | **[Solitaire Print and Play Contest](https://boardgamegeek.com/thread/3716853/2026-solitaire-print-and-play-contest)** |   |   |   |   |
 |   |     Stati entry | 🔴  | 🔴  | 🔴  | 🔴  |
-|   |     Censimento entry | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Classifiche | 🔴 0 | 🔴 0 | 🔴 0 | 🔴 0 |
-|   |     Lettura materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
-|   |     Download materiali | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry | 🔴 0/0 entry |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 86 | **[Synergy Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | — | 🔴  |
-|   |     Censimento entry | — | — | — | 🔴 0 |
-|   |     Classifiche | — | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | — | 0% · non implementata |
 | 93 | **[Two Player PnP Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | 🔴  | — | — |
-|   |     Censimento entry | — | 🔴 0 | — | — |
-|   |     Classifiche | — | 🔴 0 | — | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — | — |
 | 97 | **[Two-Player Print-and-Play Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 | 98 | **[Unique Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | 🔴  | — | — | — |
-|   |     Censimento entry | 🔴 0 | — | — | — |
-|   |     Classifiche | 🔴 0 | — | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — | — |
 
 ### Gruppo anni 5 di 5
 
@@ -750,76 +863,88 @@ Ogni tipologia ha una riga di intestazione vuota, seguita da stati delle entry, 
 |   |   | **5 contest nel database** | **6 contest nel database** | **1 contest nel database** |
 | 1 | **[$1,000 Budget Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 | 33 | **[BoardGameCreate Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | — | 🔴  |
-|   |     Censimento entry | — | — | 🔴 0 |
-|   |     Classifiche | — | — | 🔴 0 |
-|   |     Lettura materiali | — | — | 🔴 0/0 entry |
-|   |     Download materiali | — | — | 🔴 0/0 entry |
+|   |     Censimento entry | — | — | 0/1 contest attestati · 0 entry |
+|   |     Censimento classifica | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
+|   |     Censimento materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | — | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione immagini | — | — | 0% · non implementata |
 | 39 | **[Christmas Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — |
 | 41 | **[Co-Operative Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 | 42 | **[Confuse a Gamer Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — |
 | 45 | **[Dicefest Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — |
 | 49 | **[Four Cards or Tiles contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 | 60 | **[Many Monster Dice Game Competition](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — |
 | 71 | **[PnP Dice contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 | 80 | **[Sneaky Sci-Fi Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | 🔴  | — | — |
-|   |     Censimento entry | 🔴 0 | — | — |
-|   |     Classifiche | 🔴 0 | — | — |
-|   |     Lettura materiali | 🔴 0/0 entry | — | — |
-|   |     Download materiali | 🔴 0/0 entry | — | — |
+|   |     Censimento entry | 0/1 contest attestati · 0 entry | — | — |
+|   |     Censimento classifica | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — | — |
+|   |     Censimento materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione immagini | 0% · non implementata | — | — |
 | 88 | **[Themed Rummy Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 | 89 | **[Traditional Card Game Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |
 |   |     Stati entry | — | 🔴  | — |
-|   |     Censimento entry | — | 🔴 0 | — |
-|   |     Classifiche | — | 🔴 0 | — |
-|   |     Lettura materiali | — | 🔴 0/0 entry | — |
-|   |     Download materiali | — | 🔴 0/0 entry | — |
+|   |     Censimento entry | — | 0/1 contest attestati · 0 entry | — |
+|   |     Censimento classifica | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | — |
+|   |     Censimento materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione materiali | — | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate | — |
+|   |     Acquisizione immagini | — | 0% · non implementata | — |
 
 
 ## B. Dettaglio delle entry per anno
@@ -2343,3 +2468,7 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-04 — TSK-0045 Classifiche 2025: prima verifica completa delle fonti ufficiali per 11/11 contest nel perimetro iniziale; 797 osservazioni già raccolte, nessun nuovo risultato recuperato. Copertura invariata: PnP 207/384 (53,91%), adiacenti 40/80 (50,00%), totale 247/464 (53,23%). Ritiri e liste top-N impediscono di assimilare la barra blu alla completezza della verifica; sei challenge 24h senza roster restano dipendenza. Contenitore aperto su richiesta; prossima ripresa su nuovi annunci/rettifiche. Evidenza: tasks/2026-10-04 - BGG-A - Classifiche BGG 2025/VERIFICA_2026-10-04.md. Dati invariati, A/B non rigenerate.
 
 - 2026-10-04 — TSK-0046 Classifiche 2024: conclusa riconciliazione delle liste ufficiali di 11 contest; importati 869 risultati. PnP 225/381 (59,06%), adiacenti 14/28 (50%); confronto esplicito completato per tutte le 409 entry. Sei challenge senza roster escluse. Backup, integrità, chiavi esterne e importazione idempotente verificati. Evidenze nel task dedicato; sezioni A/B rigenerate. Prossimo approfondimento solo su nuove tabelle ufficiali/rettifiche.
+
+- 2026-10-04 — APP-008 (TSK-0047): cinque barre di lavoro, metriche condivise, migrazione 012 e attestazioni locali. Classifiche 2025 verificate 384/384 PnP e 80/80 adiacenti, distinte da 207/40 entry classificate; roster attestati 9/9 e 2/8, sei challenge dipendenti. Materiali/acquisizioni distinguono completezza, N/A, ignoti e blocchi; immagini 0% non implementate. 45 test Python distinti, 46 frontend/PDF, browser 1400/390 px; righe originarie preservate e aggiunte TSK-0046 distinte. Sezioni A/B rigenerate dal database; nessuna nuova osservazione BGG. Evidenza: tasks/2026-10-04 - APP - Barre di completamento del lavoro/VERIFICATION.json.
+
+- 2026-10-04 — APP-008, incremento correttivo TSK-0047: roster storici recuperati (2024 PnP 10/10; 2026 9/10 PnP e 7/8 adiacenti con limiti espliciti); classifiche 2026 132/356 complete e 12 parziali PnP, 21/74 adiacenti. Acquisizioni 2025 riconciliate con manifest: 39/363 complete PnP, 13 bloccate e 3 parziali; dati originari preservati. Box annuali allineati in alto a 15 px, desktop/mobile; 47 test Python e 46 frontend/PDF. Tutte le cinque fasi/annualità controllate e A/B rigenerate, nessun rilevamento BGG. Audit: tasks/2026-10-04 - APP - Barre di completamento del lavoro/HISTORY_AUDIT.md.

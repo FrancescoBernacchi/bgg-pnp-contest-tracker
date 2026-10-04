@@ -152,7 +152,32 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
   > Implementa la correzione `APP-007` descritta nel registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`: il visualizzatore DOCX della Libreria non riproduce correttamente la formattazione dei documenti. Usa come caso iniziale `Peste Negra Regras em Português.docx` del gioco `1899 - 1907 Black Death Brazil`, acquisizione #39. Confronta il file originale con la resa attuale e individua le perdite effettive di formattazione. Migliora il lettore affinché conservi stili del testo, gerarchia dei titoli, paragrafi, spaziatura, allineamenti, elenchi e tabelle; verifica anche immagini e impaginazione presenti nei documenti. Scegli una soluzione locale coerente con l'architettura del progetto e documenta il livello di fedeltà ottenibile e gli elementi non supportati. Mantieni originali, hash e provenienza, accesso confinato ai file registrati e gestione sicura dei contenuti del documento. Verifica visivamente il caso segnalato e documenti rappresentativi, confrontandoli con una resa autorevole dell'originale; controlla completezza del contenuto, ordine di lettura, accessibilità e finestra stretta. Registra verifiche e limiti, aggiorna la documentazione e il cruscotto secondo i protocolli del progetto e collega il task a `APP-007`, aggiornandone lo stato con evidenze.
 
+### APP-008 — Barre di completamento del lavoro e acquisizione immagini
+
+- **Stato:** `chiusa`.
+- **Data:** 2026-10-04.
+- **Area:** Avanzamento → schede annuali, PnP principali e adiacenti.
+- **Fonte:** richiesta dell'utente e immagine `C:\Users\39348\AppData\Local\Temp\codex-clipboard-56173ee2-8582-41dd-8d18-ad2da28816b9.png`.
+- **Requisito:** tutte le barre devono misurare il lavoro completato e raggiungere il 100% quando la fase è conclusa. Per le classifiche contare tutte le entry controllate, comprese quelle verificate come assenti da ogni classifica, per esempio ritirate. Separare copertura delle verifiche e numero di entry con piazzamenti. L'assenza di dati nel database non dimostra una verifica conclusa.
+- **Etichette richieste, con ortografia normalizzata:** `Censimento entry`, `Censimento classifica`, `Censimento materiali`, `Acquisizione materiali`.
+- **Nuova barra:** `Acquisizione immagini`, inizialmente 0%, con funzione non ancora implementata indicata esplicitamente. Riguarda immagini rappresentative, distinte dai PNG dei materiali PnP; nessun download è autorizzato da questa segnalazione.
+- **Da definire nel task evolutivo:** denominatori e condizioni di completamento di ogni fase; casi senza entry/non applicabili, materiali assenti e acquisizioni bloccate; perimetro approvato. Non assegnare completezza artificiale e non inventare verifiche storiche.
+- **Relazioni:** coordinare la metrica delle classifiche con il contratto annuale deliberato per TSK-0045; nessun rilevamento BGG nel task APP.
+- **Criteri per la chiusura:** classifiche al 100% se tutte le entry sono verificate, anche con alcune prive di piazzamenti; incompletezza distinta dalla verifica negativa; cinque barre con le nuove etichette in entrambi i perimetri; immagini a 0% iniziale; denominatori documentati e coerenza fra app e cruscotto; provenienza e storia preservate.
+- **Task evolutivo:** TSK-0047, `tasks/2026-10-04 - APP - Barre di completamento del lavoro/TASK.md`.
+- **Incremento correttivo (2026-10-04):** riaperta sulla regressione segnalata dall'utente e richiusa: recuperati roster 2024/2026, classifiche 2026 e manifest ACQ, verifiche parziali visibili; box allineati in alto. 47 test Python, 46 frontend/PDF, Edge 1560/1400/390 px con offset dei titoli 15 px per tutti i primi cinque anni. Evidenza TSK-0047/HISTORY_AUDIT.md.
+- **Verifica chiusura (2026-10-04):** 45 test Python distinti, 46 frontend/PDF e browser Edge 1400/390 px; metriche condivise e cruscotto rigenerato. Classifiche 2025 384/384 e 80/80 verificate; 207 e 40 giochi classificati distinti. Undici roster storici attestati; challenge senza roster visibili. Immagini 0% non implementate. Migrazione 012 e importazioni locali provate su copia e backup; righe originarie preservate; aggiunte concorrenti TSK-0046 registrate separatamente. Nessun accesso BGG o download.
+- **Prompt task evolutivo:**
+
+  > Implementa `APP-008` del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`. Le barre annuali di Avanzamento devono misurare il completamento del lavoro e raggiungere il 100% quando la fase è conclusa. Rinominale “Censimento entry”, “Censimento classifica”, “Censimento materiali” e “Acquisizione materiali”. Nel censimento classifica conta le entry con verifica conclusa, incluse quelle documentate come assenti da tutte le classifiche; mantieni distinto il numero di entry effettivamente classificate. Non dedurre verifica negativa dalla sola assenza di rankings. Consulta il contratto annuale classifiche TSK-0045 e predisponi eventuale persistenza degli esiti con provenienza, senza inventare verifiche storiche né accedere a BGG. Definisci denominatori e condizioni di completamento coerenti per tutte le fasi, distinguendo dati ignoti, casi non applicabili e blocchi. Aggiungi “Acquisizione immagini”, inizialmente allo 0%, dichiarando la funzione non ancora implementata e distinguendo immagini rappresentative dai materiali PNG. Non implementare acquisizioni di immagini in questo incremento. Mantieni coerenti app e cruscotto autorevole, aggiornando generatori e documentazione pertinenti. Verifica copertura classifiche completa con entry senza piazzamenti, copertura incompleta, casi senza entry, entrambi i perimetri e nuova barra immagini. Documenta verifiche e limiti, collega il task alla segnalazione e usa il naming di categoria APP previsto da TASK_GOVERNANCE.md, conservando APP-008 nel corpo.
+
 ## Registro cambiamenti
+
+- 2026-10-04: APP-008 riaperta e corretta in TSK-0047 per attestazioni storiche omesse e allineamento verticale; audit di tutte le fasi concluso.
+
+- 2026-10-04: APP-008 implementata e chiusa in TSK-0047; evidenze e limiti nel task evolutivo.
+
+- 2026-10-04: inserita APP-008 con prompt evolutivo; nessuna implementazione eseguita.
 
 - 2026-10-03: creato il registro e inserita `APP-001`; nessuna implementazione eseguita.
 - 2026-10-03: inserita `APP-002`; nessuna implementazione eseguita.

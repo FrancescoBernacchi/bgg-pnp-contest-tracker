@@ -56,3 +56,7 @@
 .docx-document td{border:1px solid #888;padding:.4rem;vertical-align:top;background:transparent}
 .docx-document .table-wrap{max-width:100%;overflow:auto}
 @media(max-width:700px){.docx-document{padding:.75rem}.docx-document p,.docx-document li{margin-left:0!important;margin-right:0!important;text-indent:0!important}}
+/* Le cinque fasi includono note di completezza e dipendenze. */
+.pipeline-scope>small{display:block;font-size:10px;line-height:1.4;color:var(--muted);overflow-wrap:anywhere}
+.pipeline-row>div:first-child{flex-wrap:wrap;align-items:baseline}
+.year-pipeline{display:flex;flex-direction:column;justify-content:flex-start}

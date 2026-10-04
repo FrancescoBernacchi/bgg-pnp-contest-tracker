@@ -204,17 +204,29 @@ const progressMark=(value,total,kind='count')=>{
 };
 const progressPercent=(value,total)=>total?Math.round(value*100/total):0;
 const pipelineRow=(labelText,value,total,tone='green')=>`<div class="pipeline-row"><div><span>${esc(labelText)}</span><strong>${value}/${total} · ${progressPercent(value,total)}%</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(labelText)}" value="${value}" max="${total||1}">${progressPercent(value,total)}%</progress></div>`;
-const scopePipeline=(scope,labelText,tone='green')=>`<section class="pipeline-scope"><div class="pipeline-scope-title"><strong>${esc(labelText)}</strong><span>${scope.entry_count} entry · ${scope.contest_count} contest</span></div>${pipelineRow('Contest con entry censite',scope.contests_with_entries_count,scope.contest_count,tone)}${pipelineRow('Entry in classifica',scope.ranked_entry_count,scope.entry_count,'blue')}${pipelineRow('Lettura materiali',scope.materials_read_count,scope.entry_count,'amber')}${pipelineRow('File acquisiti',scope.downloaded_entry_count,scope.entry_count,tone)}</section>`;
+const workPipelineRow=(text,value,total,tone,note='')=>(total?pipelineRow(text,value||0,total,tone):`<div class="pipeline-row"><div><span>${esc(text)}</span><strong>—</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(text)}: non applicabile o denominatore ignoto" value="0" max="1"></progress></div>`)+`<small>${esc(total ? note : 'Non applicabile / denominatore non disponibile')}${note&&!total?' · '+esc(note):''}</small>`;
+const scopePipeline=(scope,labelText,tone='green')=>{
+  const withoutRoster=scope.contests_without_entries_count??(scope.contest_count-scope.contests_with_entries_count);
+  const unverifiedRoster=Math.max(0,scope.contest_count-(scope.census_complete_count||0)-withoutRoster);
+  const phases=['ranking','materials','acquisition'].map((phase,i)=>{
+    const partial=scope[phase+'_partial_count']||0;
+    const note=`${scope[phase+'_not_applicable_count']||0} non applicabili · ${scope[phase+'_blocked_count']||0} bloccate${partial?' · '+partial+' verifiche parziali':''}${phase==='ranking'?' · '+(scope.ranked_entry_count||0)+' entry effettivamente classificate · '+withoutRoster+' contest senza roster: dipendenza aperta':''}`;
+    return workPipelineRow(['Censimento classifica','Censimento materiali','Acquisizione materiali'][i],scope[phase+'_complete_count'],scope[phase+'_total']??scope.entry_count,['blue','amber',tone][i],note);
+  }).join('');
+  return `<section class="pipeline-scope"><div class="pipeline-scope-title"><strong>${esc(labelText)}</strong><span>${scope.entry_count} entry · ${scope.contest_count} contest</span></div>${workPipelineRow('Censimento entry',scope.census_complete_count,scope.contest_count,tone,`${scope.contests_with_entries_count} contest con entry · ${withoutRoster} senza roster${unverifiedRoster?' · '+unverifiedRoster+' roster parziali o da attestare':''}`)}${phases}${pipelineRow('Acquisizione immagini',0,scope.entry_count,tone)}<small>Funzione non ancora implementata · immagini rappresentative, distinte dai materiali PNG</small></section>`;
+};
 const scopeSummary=(year,scopeType)=>{
   if(year[scopeType]) return year[scopeType];
   const contests=(data?.progress?.contests||[]).filter(c=>c.year===year.year&&c.scope_type===scopeType);
   return {
+    census_complete_count:contests.reduce((sum,c)=>sum+(c.census_complete_count||0),0),
+    ...Object.fromEntries(['ranking','materials','acquisition'].flatMap(phase=>['complete_count','not_applicable_count','blocked_count','partial_count','total'].map(suffix=>[phase+'_'+suffix,contests.reduce((sum,c)=>sum+(c[phase+'_'+suffix]??(suffix==='total'?c.entry_count:0)),0)]))),
     contest_count:contests.length,
     contests_with_entries_count:contests.filter(c=>c.entry_count>0).length,
     entry_count:contests.reduce((sum,c)=>sum+c.entry_count,0),
-    ranked_entry_count:contests.reduce((sum,c)=>sum+c.ranked_entry_count,0),
-    materials_read_count:contests.reduce((sum,c)=>sum+c.materials_read_count,0),
-    downloaded_entry_count:contests.reduce((sum,c)=>sum+c.downloaded_entry_count,0),
+    ranked_entry_count:contests.reduce((sum,c)=>sum+(c.ranked_entry_count||0),0),
+    materials_read_count:contests.reduce((sum,c)=>sum+(c.materials_read_count||0),0),
+    downloaded_entry_count:contests.reduce((sum,c)=>sum+(c.downloaded_entry_count||0),0),
   };
 };
 function renderProgress() {
@@ -226,7 +238,7 @@ function renderProgress() {
   const annual=activeYears.map(y=>`<button class="year-pipeline ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><div class="pipeline-title"><span><strong>${y.year}</strong><small>Avanzamento separato per perimetro</small></span><b>${y.entry_count}<small> entry complessive</small></b></div>${scopePipeline(scopeSummary(y,'pnp_core'),'PnP principali')}${scopePipeline(scopeSummary(y,'adjacent'),'Adiacenti','violet')}</button>`).join('');
   const pending=emptyYears.map(y=>`<button class="year-pending ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><strong>${y.year}</strong><span>Non importato</span></button>`).join('');
   const contests=data.progress.contests.filter(c=>String(c.year)===selected);
-  const detail=contests.length?table(['Contest','Entry','Stati noti','Classifiche','Lettura materiali','Download'],contests.map(c=>`<tr><td><a href="#contest/${c.contest_id}">${esc(c.contest_name)}</a><small>${esc(label(c.scope_type))} · ${esc(label(c.status_normalized))}</small></td><td><a href="#entries/contest/${c.contest_id}">${progressMark(c.entry_count,c.entry_count)}</a></td><td>${progressMark(c.known_status_count,c.entry_count,'ratio')}</td><td><a href="#rankings/${c.contest_id}">${progressMark(c.ranking_category_count,1)}</a><small>categorie</small></td><td><a href="#entries/contest/${c.contest_id}/read">${progressMark(c.materials_read_count,c.entry_count,'ratio')}</a></td><td><a href="#entries/contest/${c.contest_id}/downloaded">${progressMark(c.downloaded_entry_count,c.entry_count,'ratio')}</a></td></tr>`)):`<div class="empty">L’annualità ${esc(selected)} non è ancora importata nel database operativo.</div>`;
+  const detail=contests.length?table(['Contest','Entry','Stati noti','Censimento classifica','Censimento materiali','Acquisizione materiali'],contests.map(c=>`<tr><td><a href="#contest/${c.contest_id}">${esc(c.contest_name)}</a><small>${esc(label(c.scope_type))} · ${esc(label(c.status_normalized))}</small></td><td><a href="#entries/contest/${c.contest_id}">${progressMark(c.entry_count,c.entry_count)}</a></td><td>${progressMark(c.known_status_count,c.entry_count,'ratio')}</td><td><a href="#rankings/${c.contest_id}">${progressMark(c.ranking_complete_count,c.ranking_total,'ratio')}</a><small>${c.ranked_entry_count} entry classificate · ${c.ranking_category_count} categorie</small></td><td><a href="#entries/contest/${c.contest_id}/read">${progressMark(c.materials_complete_count,c.materials_total,'ratio')}</a></td><td><a href="#entries/contest/${c.contest_id}/downloaded">${progressMark(c.acquisition_complete_count,c.acquisition_total,'ratio')}</a></td></tr>`)):`<div class="empty">L’annualità ${esc(selected)} non è ancora importata nel database operativo.</div>`;
   $('#main').innerHTML=heading('CRUSCOTTO','Avanzamento per anno.','Una seconda via di accesso a contest, entry, classifiche e materiali, calcolata direttamente dal catalogo locale.')+`<div class="notice">PnP principali e contest adiacenti hanno conteggi e indicatori indipendenti. Le challenge da 24 ore appartengono agli adiacenti e non alterano più l’avanzamento dei PnP principali.</div><div class="year-pipeline-grid" aria-label="Annualità presenti nel database">${annual}</div><details class="pending-years"><summary>Annualità non ancora importate (${emptyYears.length})</summary><div class="year-pending-grid">${pending}</div></details><div class="section-heading"><h2>${esc(selected)}</h2><span>${contests.length} contest nel database · <a href="#entries/year/${esc(selected)}">Apri tutte le entry dell’anno →</a></span></div>${detail}`;
   document.querySelectorAll('[data-progress-year]').forEach(button=>button.onclick=()=>{progressState.year=button.dataset.progressYear;renderProgress();});
 }

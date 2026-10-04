@@ -1020,7 +1020,7 @@
       "cadence": "su_richiesta",
       "source_summary": "Attivo; non implementativo",
       "status": "in_corso",
-      "status_basis": "TASK.md e pre-analisi del 2026-10-04.",
+      "status_basis": "TASK.md e pre-analisi del 2026-10-04. APP-008 chiusa in TSK-0047 il 2026-10-04; registro continuativo aperto.",
       "coverage": null,
       "dependencies": [],
       "successors": [],
@@ -1330,6 +1330,36 @@
       },
       "display_title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
       "last_verified_at": "2026-10-04"
+    },
+    {
+      "id": "TSK-0047",
+      "original_title": "2026-10-04 - APP - Barre di completamento del lavoro",
+      "display_title": "2026-10-04 - APP - Barre di completamento del lavoro",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - APP - Barre di completamento del lavoro/TASK.md",
+      "category": "APP",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Incremento correttivo APP-008 concluso il 2026-10-04; HISTORY_AUDIT.md e HISTORY_RECONCILIATION.json.",
+      "dependencies": [
+        "TSK-0045"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a106e7-0978-7b20-a795-ab8654dbea44"
+      ],
+      "next_action": "Revisione app e commit dedicato; roster mancanti/verifiche parziali nei task BGG/MAT/ACQ pertinenti.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Correzione su main; modifiche pregresse preservate, nessun commit/push autorizzato per questo incremento."
+      },
+      "coverage": "Cinque fasi e tutte le annualita riconciliate; roster 2024/2026, risultati 2026, manifest ACQ 2025 e allineamento superiore verificati."
     }
   ]
 }

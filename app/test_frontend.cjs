@@ -45,14 +45,16 @@ test('pipeline annuale calcola percentuali senza dividere per zero',()=>{
 });
 test('pipeline annuale separa PnP principali e adiacenti',()=>{
   const source=fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8');
-  assert.match(source,/Contest con entry censite/);
+  assert.match(source,/Censimento entry/);
   assert.match(source,/scopePipeline\(scopeSummary\(y,'pnp_core'\),'PnP principali'\)/);
   assert.match(source,/scopePipeline\(scopeSummary\(y,'adjacent'\),'Adiacenti','violet'\)/);
   assert.ok(!source.includes("pipelineRow('Stati entry noti',y.known_status_count,y.entry_count)"));
 });
 test('riepilogo per perimetro funziona anche con il vecchio formato API',()=>{
   run("data={progress:{contests:[{year:2024,scope_type:'pnp_core',entry_count:29,ranked_entry_count:2,materials_read_count:1,downloaded_entry_count:0},{year:2024,scope_type:'adjacent',entry_count:0,ranked_entry_count:0,materials_read_count:0,downloaded_entry_count:0}]}};");
-  assert.equal(run("JSON.stringify(scopeSummary({year:2024},'pnp_core'))"),JSON.stringify({contest_count:1,contests_with_entries_count:1,entry_count:29,ranked_entry_count:2,materials_read_count:1,downloaded_entry_count:0}));
+  assert.equal(run("scopeSummary({year:2024},'pnp_core').ranking_complete_count"),0);
+  assert.equal(run("scopeSummary({year:2024},'pnp_core').ranking_total"),29);
+  assert.equal(run("scopeSummary({year:2024},'pnp_core').ranked_entry_count"),2);
 });
 test('solo link BGG di metadati, nessun download o host esterno',()=>{
   for(const url of ['javascript:alert(1)','https://example.com/thread/123','https://boardgamegeek.com/filepage/123','https://boardgamegeek.com/file/download/test','https://boardgamegeek.com.evil.example/thread/123','https://user:pass@boardgamegeek.com/thread/123']){
@@ -275,13 +277,13 @@ test('APP-004: dettaglio annuale conserva link, etichette e indicatori positivi'
   const previous=context.document;
   context.document={querySelector:()=>main,querySelectorAll:()=>[]};
   try{
-    run(`data={progress:{years:[{year:2026,contest_count:1,entry_count:4}],contests:[{year:2026,contest_id:7,contest_name:'Contest prova',scope_type:'pnp_core',status_normalized:'open',entry_count:4,known_status_count:4,ranking_category_count:0,materials_read_count:2,downloaded_entry_count:0}]}};progressState.year='2026';renderProgress();`);
+    run(`data={progress:{years:[{year:2026,contest_count:1,entry_count:4}],contests:[{year:2026,contest_id:7,contest_name:'Contest prova',scope_type:'pnp_core',status_normalized:'open',entry_count:4,known_status_count:4,ranking_category_count:0,ranked_entry_count:0,ranking_complete_count:0,ranking_total:4,materials_complete_count:2,materials_total:4,acquisition_complete_count:0,acquisition_total:4,materials_read_count:2,downloaded_entry_count:0}]}};progressState.year='2026';renderProgress();`);
     for(const link of ['#contest/7','#entries/contest/7','#rankings/7','#entries/contest/7/read','#entries/contest/7/downloaded'])
       assert.ok(main.innerHTML.includes(`href="${link}"`));
     assert.match(main.innerHTML,/progress-mark zero.*>0\/4<\/span>/);
     assert.match(main.innerHTML,/progress-mark partial.*>2\/4<\/span>/);
     assert.match(main.innerHTML,/progress-mark done.*>4\/4<\/span>/);
-    assert.match(main.innerHTML,/<small>categorie<\/small>/);
+    assert.match(main.innerHTML,/0 entry classificate · 0 categorie/);
     assert.ok(!main.innerHTML.includes('progress-mark empty'));
     const css=fs.readFileSync(path.join(__dirname,'static/style.css'),'utf8');
     assert.match(css,/\.progress-mark\{display:inline-flex/);
@@ -325,4 +327,18 @@ test('APP-006: varianti, provenienza e qualità non dedotta dai byte',()=>{
   assert.match(present({original_filename:'Rules_EN.pdf',language_code:'it'}).description,/IT/);
   assert.ok(!present({original_filename:'Rules_EN.pdf',language_code:'it'}).description.includes('EN?'));
   assert.match(present({original_filename:'board_1200x1800px_high_quality.pdf'}).description,/1200×1800px\?.*HQ\?/);
+});
+
+test('APP-008: cinque barre, verifica negativa, immagini e denominatore zero',()=>{
+  for(const scope of ['PnP principali','Adiacenti']){
+    const html=run(`scopePipeline({entry_count:4,contest_count:1,contests_with_entries_count:1,census_complete_count:1,ranking_complete_count:4,ranking_total:4,ranked_entry_count:2,materials_complete_count:2,materials_total:4,acquisition_complete_count:0,acquisition_total:4},${JSON.stringify(scope)})`);
+    assert.equal((html.match(/<progress /g)||[]).length,5);
+    for(const title of ['Censimento entry','Censimento classifica','Censimento materiali','Acquisizione materiali','Acquisizione immagini']) assert.ok(html.includes(title));
+    assert.match(html,/4\/4 · 100%/);
+    assert.match(html,/2 entry effettivamente classificate/);
+    assert.match(html,/Funzione non ancora implementata/);
+    assert.match(html,/Acquisizione immagini.*0\/4 · 0%/);
+  }
+  assert.match(run("workPipelineRow('Censimento classifica',0,0,'blue')"),/Non applicabile/);
+  assert.ok(!run("workPipelineRow('Censimento classifica',0,0,'blue')").includes('100%'));
 });
