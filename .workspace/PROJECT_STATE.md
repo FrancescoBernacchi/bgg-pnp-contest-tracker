@@ -21,6 +21,8 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 
 ## Storico migrazioni
 
+- 2026-10-04: adottato il protocollo locale `TASK_GOVERNANCE.md` con categorie, naming `YYYY-MM-DD - CODICE - descrizione`, ID stabili e registro centrale `tasks/REGISTRY.json`. Classificazione retroattiva datata dei 43 registri preesistenti e del task corrente; percorsi e storia originari preservati. Copiato senza modifiche in main il registro Wargame sospeso dalla worktree 52fb per conservarne la decisione, senza riattivare acquisizioni. PWS resta 1.5.0; nessuna modifica allo Standard o al contratto annuale BGG. Workflow immagini ancora da definire.
+
 - 2026-09-04: inizializzazione diretta con PWS 1.3.0; nessuna migrazione pregressa.
 - 2026-09-04: formalizzato il protocollo di monitoraggio ricorrente e aggiunto `sources/MONITORING_CALENDAR.md`; modifica procedurale applicata al progetto corrente su richiesta esplicita dell'utente.
 - 2026-09-05: introdotta la distinzione durevole fra contest PnP autonomi e contest adiacenti; Solomode è incluso come variante dipendente dal gioco base e resta predisposto a filtri o trattamenti futuri differenti.

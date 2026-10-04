@@ -26,6 +26,7 @@ Le attività BGG sono organizzate in cinque workflow non sovrapponibili: censime
 ## Struttura
 
 - `PROJECT.md`: scopo e architettura autorevole;
+- `TASK_GOVERNANCE.md`: categorie, naming e procedura di monitoraggio dei task; `tasks/REGISTRY.json`: registro centrale con ID stabili, stati ed evidenze;
 - `PROJECT_PROGRESS.md`: cruscotto operativo dell'avanzamento complessivo;
 - `GIT_GUIDE.md`: guida pratica per commit, branch, push e sincronizzazione;
 - `sources/MONITORING_CALENDAR.md`: taccuino dei controlli;
