@@ -1323,10 +1323,10 @@
       "next_action": "Solo nuove tabelle ufficiali o rettifiche; challenge senza roster in censimento separato.",
       "git": {
         "checked_at": "2026-10-04",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_pushare",
-        "evidence": "Documenti nuovi e modificati locali; nessuna operazione Git"
+        "synchronization": "sincronizzato",
+        "evidence": "Commit dati 8b316ad, push origin/main riuscito il 2026-10-04; registrazione audit successiva."
       },
       "display_title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
       "last_verified_at": "2026-10-04"

@@ -18,3 +18,7 @@ PWS locale/canonico 1.5.0; sandbox e browser neutro verificati. Main con modific
 ## Chiusura — 2026-10-04
 
 Importati 869 risultati ufficiali di 11 contest; 225/381 entry principali e 14/28 adiacenti presenti nelle liste. Confronto concluso per tutte le 409 entry con esiti espliciti complete/absent. Fonti e limiti in CHECKS_2026-10-04.json e VERIFICA_2026-10-04.md. Backup e verifiche in IMPORT_VERIFICATION.json; importazione idempotente, integrità e chiavi esterne valide. Sezioni annuali A/B rigenerate. Nessuna acquisizione o modifica Git. Prossimo approfondimento utile: solo nuove tabelle ufficiali/rettifiche; censimento delle challenge in task roster distinto.
+
+## Salvataggio Git — 2026-10-04
+
+Su richiesta dell’utente creato commit `8b316ad` (Completa classifiche ufficiali BGG 2024) e push a `origin/main` riuscito. Database operativo, backup e materiali esclusi; modifiche delle altre chat preservate. La presente registrazione viene salvata con un commit audit separato.
