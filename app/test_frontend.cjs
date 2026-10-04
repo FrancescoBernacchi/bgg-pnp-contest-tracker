@@ -308,3 +308,21 @@ test('APP-001 cambio contest ricostruisce il menu e azzera la pagina',()=>{
 });
 
 test('APP-001 riconosce overall nelle etichette originali del catalogo',()=>{assert.equal(run("JSON.stringify(rankingCategories([{category:'Best Art'},{category:'Best Overall Game'},{category:'Best Overall Solo Game'}],''))"),JSON.stringify(['Best Overall Game','Best Overall Solo Game','Best Art']));});
+
+test('APP-006: funzione indipendente dal formato, misti e ignoti',()=>{
+  const present=f=>JSON.parse(run(`JSON.stringify(materialPresentation(${JSON.stringify(f)}))`));
+  for(const media_type of ['application/pdf','image/png','application/zip'])assert.equal(present({original_filename:'Player Boards.pdf',media_type}).category,'Plancia giocatore');
+  assert.match(present({original_filename:'Cards and Tokens.pdf'}).category,/Misto: Carte \+ Segnalini/);
+  assert.match(present({original_filename:'abc123.pdf'}).category,/non determinato/);
+  assert.equal(present({original_filename:'Rules.docx'}).icon,present({original_filename:'Rules.pdf'}).icon);
+});
+test('APP-006: varianti, provenienza e qualità non dedotta dai byte',()=>{
+  const present=f=>JSON.parse(run(`JSON.stringify(materialPresentation(${JSON.stringify(f)}))`));
+  const a=present({original_filename:'cards_EN_300dpi_color_A4.pdf',byte_size:999999});
+  assert.match(a.description,/EN\?.*300dpi\?/);assert.match(a.description,/COL\?/);assert.match(a.description,/A4\?/);
+  assert.equal(present({original_filename:'cards.pdf',byte_size:999999}).description,'Carte');
+  assert.ok(!present({original_filename:'cards_low_ink.pdf'}).description.includes('B/N'));
+  assert.match(present({original_filename:'Rules_EN.pdf',language_code:'it'}).description,/IT/);
+  assert.ok(!present({original_filename:'Rules_EN.pdf',language_code:'it'}).description.includes('EN?'));
+  assert.match(present({original_filename:'board_1200x1800px_high_quality.pdf'}).description,/1200×1800px\?.*HQ\?/);
+});

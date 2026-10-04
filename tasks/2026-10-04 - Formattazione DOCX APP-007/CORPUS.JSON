@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Peste Negra English Rules.docx",
+    "sha256": "851880068cb2834d41b273bd93629964a2ee43026e01b7edcf75aa227c088147",
+    "blocks": 441,
+    "images": 43
+  },
+  {
+    "name": "Peste Negra Regras em Português.docx",
+    "sha256": "921d45ef15e34e1e1a277ff1ce562a6387ec0e438fe081c70340e0cbea5d431a",
+    "blocks": 446,
+    "images": 43
+  },
+  {
+    "name": "Resumo das Regras.docx",
+    "sha256": "dc86cd279e0ec3cb1513cdd00efce000c4c438780e0dadded10b3878701319b6",
+    "blocks": 26,
+    "images": 0
+  },
+  {
+    "name": "Summary of Rules.docx",
+    "sha256": "5fe3ac17fcd395777839ed6f1feccebfa9f854e1d4820e9bf17fc2649a869b5c",
+    "blocks": 1,
+    "images": 0
+  }
+]

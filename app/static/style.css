@@ -43,3 +43,16 @@
 .material-surface p{white-space:pre-wrap;overflow-wrap:anywhere}
 .material-portrait{grid-template-columns:minmax(190px,260px) minmax(0,1fr)}
 @media(max-width:700px){.material-portrait{grid-template-columns:minmax(0,1fr)}.library-file{max-width:230px}.material-surface{padding:.5rem}.library-files{gap:.6rem}}
+.material-description{font-size:.85rem;min-width:0;overflow-wrap:anywhere}
+.material-description small{display:block;color:var(--muted);font-size:.75rem}
+.library-file-main{flex-wrap:wrap}
+.material-legend{margin-bottom:1rem;font-size:.85rem}
+/* APP-007: isolate document typography from application styles. */
+.docx-document{background:#fff;color:#000;font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.15;max-width:900px;margin:auto;padding:2rem;box-sizing:border-box}
+.docx-document p,.docx-document h1,.docx-document h2,.docx-document h3,.docx-document h4,.docx-document h5,.docx-document h6,.docx-document li{white-space:pre-wrap;overflow-wrap:anywhere;min-height:1em;margin:0 0 8pt;tab-size:4}
+.docx-document .docx-image{display:inline-block;vertical-align:middle;max-width:100%;height:auto;max-height:none;margin:0;object-fit:contain}
+.docx-document .docx-list{list-style:none;margin:0;padding-left:1.5em}
+.docx-document table{color:#000;border-collapse:collapse;width:auto;min-width:0}
+.docx-document td{border:1px solid #888;padding:.4rem;vertical-align:top;background:transparent}
+.docx-document .table-wrap{max-width:100%;overflow:auto}
+@media(max-width:700px){.docx-document{padding:.75rem}.docx-document p,.docx-document li{margin-left:0!important;margin-right:0!important;text-indent:0!important}}

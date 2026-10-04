@@ -90,7 +90,7 @@ class MaterialTests(unittest.TestCase):
 
     def test_docx_compatibility_branches_are_not_duplicated(self):
         xml='''<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"><w:body><w:p><mc:AlternateContent><mc:Choice><w:r><w:t>Doppione</w:t></w:r></mc:Choice><mc:Fallback><w:r><w:t>Unico</w:t></w:r></mc:Fallback></mc:AlternateContent></w:p></w:body></w:document>'''
-        self.assertEqual(docx_blocks(io.BytesIO(docx(xml))),[{'kind':'paragraph','text':'Unico'}])
+        self.assertEqual([b['text'] for b in docx_blocks(io.BytesIO(docx(xml)))],['Unico'])
 
     def archive(self, names):
         data=io.BytesIO()

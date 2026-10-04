@@ -117,7 +117,7 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 ### APP-006 — Icone per contenuto, descrizioni e sigle delle varianti in Libreria
 
-- **Stato:** `segnalata`.
+- **Stato:** `chiusa` il 2026-10-04.
 - **Data segnalazione:** 2026-10-03.
 - **Area:** Libreria → materiali raggruppati per gioco.
 - **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-38b66a9a-600e-4783-a248-1702fd66dd85.png`; richiesta dell'utente.
@@ -129,10 +129,28 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 - **Preservazione:** conservare nomi originali, file, hash, provenienza e versioni; la convenzione riguarda il nome di presentazione nell'app, senza rinominare gli originali acquisiti. Separare classificazioni verificate e inferenze, registrando la base della classificazione.
 - **Relazioni:** incremento successivo ad `APP-005`, già registrata come chiusa. La richiesta di breve descrizione estende deliberatamente il precedente requisito di sola dimensione visibile; la specifica storica di `APP-005` resta preservata.
 - **Criteri per la chiusura:** task evolutivo collegato; categorie e legenda documentate dopo verifica del corpus; icone semanticamente distinte e accessibili; descrizioni compatte; varianti di lingua/qualità/colore distinguibili; gestione esplicita dei materiali misti e degli attributi ignoti; apertura dei visualizzatori, filtri e layout stretto verificati; originali e hash preservati.
-- **Task evolutivo:** da assegnare.
+- **Task evolutivo:** `tasks/2026-10-04 - Contenuti e varianti Libreria APP-006/TASK.md`.
+- **Verifica:** 45 test frontend, 36 backend, Edge 1400/390 px (legenda, misti, tastiera, filtri, paginazione e lettori), 198/198 hash verificati. Classificazioni dal nome esplicitamente inferite; attributi ignoti omessi. Evidenza corpus in `CORPUS.json` del task.
 - **Prompt task evolutivo:**
 
   > Implementa l'evoluzione `APP-006` del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`, come incremento della Libreria per gioco introdotta da `APP-005`. Differenzia le icone in base al contenuto, indipendentemente dal formato del file: categorie iniziali rule/regolamento, cards/carte, board/tabellone, player board/plancia giocatore e altro. Esamina i materiali e i metadati locali per verificare se esistono altre categorie standard ricorrenti; documenta la tassonomia adottata e gestisci contenuti misti o non determinabili. Accanto a ciascuna icona mostra dimensione e breve descrizione, mantenendo il layout compatto e l'apertura del visualizzatore. Definisci e implementa una convenzione sintetica e comprensibile per i nomi visualizzati, con sigle per lingua, risoluzione/definizione/qualità e colore o bianco e nero, corredate da legenda. Valuta una forma come “Carte [EN · 300dpi · COL]”, senza trattare questo esempio come tassonomia definitiva. Usa attributi documentati, separa inferenze e valori verificati, non dedurre qualità dalla dimensione e distingui DPI, dimensioni in pixel e qualità dichiarata. Preserva nomi e file originali, hash, provenienza e versioni; applica la convenzione alla presentazione nell'app. Verifica categorie rappresentative, varianti dello stesso materiale, attributi ignoti, accessibilità da tastiera, visualizzatori e schermi stretti. Documenta scelte, verifiche e limiti, aggiorna la documentazione e il cruscotto secondo i protocolli del progetto e collega il task a `APP-006` aggiornandone lo stato con evidenze.
+
+### APP-007 — Formattazione fedele nel visualizzatore DOCX
+
+- **Stato:** `risolta` il 2026-10-04; resa HTML adattata con limiti documentati.
+- **Data segnalazione:** 2026-10-04.
+- **Area:** Libreria → visualizzatore DOCX.
+- **Fonte:** immagine allegata `C:\Users\39348\AppData\Local\Temp\codex-clipboard-f8a6301a-c6f5-441d-861a-de2cabf638a2.png`; segnalazione dell'utente.
+- **Caso di riferimento:** `Peste Negra Regras em Português.docx`, gioco `1899 - 1907 Black Death Brazil`, acquisizione #39.
+- **Contesto osservato:** il documento appare come testo quasi uniforme, con gerarchia visiva e spaziatura insufficienti; nell'immagine alcuni elementi risultano accostati. Il lettore dichiara di riprodurre testo e tabelle senza impaginazione, immagini, note, intestazioni e revisioni Word. Il confronto puntuale con l'originale deve essere effettuato nel task evolutivo; la schermata da sola non dimostra quali formattazioni siano presenti nel file sorgente.
+- **Comportamento atteso:** migliorare la fedeltà al DOCX originale, preservando formattazione del testo, stili e gerarchia dei titoli, paragrafi, spaziature, allineamenti, elenchi e tabelle. Verificare e trattare immagini e impaginazione quando presenti; documentare eventuali elementi non riproducibili, evitando di presentare la sola estrazione del testo come resa fedele.
+- **Relazioni:** evoluzione del lettore semantico introdotto con `APP-005`, i cui limiti erano stati documentati alla chiusura. Nessuna riapertura o riscrittura della verifica storica di APP-005.
+- **Criteri per la chiusura:** task evolutivo collegato; confronto visivo del caso segnalato con una resa autorevole dell'originale; verifica di DOCX rappresentativi con titoli, testo formattato, elenchi, tabelle e immagini; controllo che contenuti e ordine di lettura siano preservati; verifica tastiera e finestra stretta; originali e hash invariati; limiti residui espliciti.
+- **Task evolutivo:** `tasks/2026-10-04 - Formattazione DOCX APP-007/TASK.md`.
+- **Verifica:** 40 test backend e 45 frontend; quattro DOCX reali a 1400/390 px, confronto visivo con PDF esportati da Word, 43 immagini nei due regolamenti, completezza/ordine del testo e quattro hash invariati; fixture titoli, elenchi, tabelle e contenuto inerte. Limiti Word e numerazioni/tabelle avanzate in app/README.md.
+- **Prompt task evolutivo:**
+
+  > Implementa la correzione `APP-007` descritta nel registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`: il visualizzatore DOCX della Libreria non riproduce correttamente la formattazione dei documenti. Usa come caso iniziale `Peste Negra Regras em Português.docx` del gioco `1899 - 1907 Black Death Brazil`, acquisizione #39. Confronta il file originale con la resa attuale e individua le perdite effettive di formattazione. Migliora il lettore affinché conservi stili del testo, gerarchia dei titoli, paragrafi, spaziatura, allineamenti, elenchi e tabelle; verifica anche immagini e impaginazione presenti nei documenti. Scegli una soluzione locale coerente con l'architettura del progetto e documenta il livello di fedeltà ottenibile e gli elementi non supportati. Mantieni originali, hash e provenienza, accesso confinato ai file registrati e gestione sicura dei contenuti del documento. Verifica visivamente il caso segnalato e documenti rappresentativi, confrontandoli con una resa autorevole dell'originale; controlla completezza del contenuto, ordine di lettura, accessibilità e finestra stretta. Registra verifiche e limiti, aggiorna la documentazione e il cruscotto secondo i protocolli del progetto e collega il task a `APP-007`, aggiornandone lo stato con evidenze.
 
 ## Registro cambiamenti
 
@@ -151,3 +169,6 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
 - 2026-10-03: APP-005 implementata e chiusa nel task dedicato, con limiti DOCX/ZIP documentati e verifiche registrate.
 - 2026-10-03: inserita `APP-006` con prompt evolutivo e proposta di convenzione da valutare; nessuna implementazione eseguita in questo registro.
+- 2026-10-04: inserita `APP-007` con caso DOCX di riferimento e prompt evolutivo; nessuna implementazione eseguita in questo registro.
+
+- 2026-10-04: APP-007 risolta con lettore DOCX formattato e confronto Word; evidenze e limiti nel task evolutivo dedicato.

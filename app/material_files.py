@@ -1,10 +1,8 @@
-"""Lettura confinata PNG/DOCX. Il DOCX produce esclusivamente dati testuali."""
+"""Lettura confinata PNG/DOCX; dati strutturati senza HTML attivo."""
 from contextlib import contextmanager
 import os
 import struct
-import zipfile
 import zlib
-from xml.etree import ElementTree as ET
 from pdf_files import PDFError, confined_path, check_handle, open_pdf
 
 DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
@@ -14,50 +12,8 @@ W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 
 
 def docx_blocks(handle):
-    try:
-        with zipfile.ZipFile(handle) as archive:
-            entries = archive.infolist()
-            if len(entries) > 2000 or sum(x.file_size for x in entries) > 128 * 1024 * 1024:
-                raise ValueError('Documento troppo grande')
-            matches = [x for x in entries if x.filename == 'word/document.xml']
-            if len(matches) != 1 or matches[0].file_size > 8 * 1024 * 1024 or matches[0].flag_bits & 1:
-                raise ValueError('Documento non supportato')
-            xml = archive.read(matches[0])
-        if b'<!DOCTYPE' in xml.upper() or b'<!ENTITY' in xml.upper() or b'\x00' in xml:
-            raise ValueError('XML non supportato')
-        tree = ET.fromstring(xml)
-        # Word stores the same content twice for compatibility. Choose one
-        # representation instead of concatenating Choice and Fallback text.
-        mc = '{http://schemas.openxmlformats.org/markup-compatibility/2006}'
-        def normalize(node):
-            for child in list(node):
-                if child.tag == mc+'AlternateContent':
-                    chosen = child.find(mc+'Fallback')
-                    if chosen is None:
-                        chosen = child.find(mc+'Choice')
-                    index = list(node).index(child)
-                    node.remove(child)
-                    if chosen is not None:
-                        normalize(chosen)
-                        for offset, replacement in enumerate(list(chosen)):
-                            node.insert(index+offset, replacement)
-                else:
-                    normalize(child)
-        normalize(tree)
-        body = tree.find(W + 'body')
-        if body is None:
-            raise ValueError('Corpo assente')
-        def text(node):
-            return ''.join((x.text or '') if x.tag == W+'t' else '\t' if x.tag == W+'tab' else '\n' if x.tag in (W+'br', W+'cr') else '' for x in node.iter())
-        blocks = []
-        for node in body:
-            if node.tag == W+'p':
-                blocks.append({'kind': 'paragraph', 'text': text(node)})
-            elif node.tag == W+'tbl':
-                blocks.append({'kind': 'table', 'rows': [[text(cell) for cell in row.findall(W+'tc')] for row in node.findall(W+'tr')]})
-        return blocks
-    except (ValueError, ET.ParseError, zipfile.BadZipFile, KeyError, RuntimeError, RecursionError, NotImplementedError, EOFError, zlib.error) as error:
-        raise PDFError(422, 'corrupt', 'DOCX non leggibile, protetto o oltre i limiti.') from error
+    from docx_reader import read_blocks
+    return read_blocks(handle)
 
 
 def validate_png(handle, size):
