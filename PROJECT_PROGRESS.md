@@ -2442,6 +2442,8 @@ Priorità nuove fonti al 2026-10-03: regolamenti completi gratuiti obbligatori p
 
 ## Protocollo di manutenzione automatica
 
+- 2026-10-04 — EPR TSK-0052: registrate in `PROJECT.md` due proposte collegate e non adottate, EPR-001 fasi/calendario BGG ed EPR-002 approfondimento WIP. Evidenze datate, alternative e decisioni aperte conservate; ricognizione storica, monitoraggio futuro e vista APP distinti. Registrazione documentale conclusa, nessuna rilevazione esterna, modifica dati/app o autorizzazione del pilota. Sezioni A/B invariate. Prossimo passo su richiesta: scegliere quale proposta valutare e deliberarne il contratto.
+
 L'agente che esegue un incremento nel repository aggiorna questo file senza attendere una richiesta separata quando cambia almeno uno dei seguenti elementi:
 
 - perimetro di contest o annualità;

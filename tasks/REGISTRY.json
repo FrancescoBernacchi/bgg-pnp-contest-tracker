@@ -1443,6 +1443,44 @@
         "evidence": "Working tree preesistente modificata; nessuna operazione Git."
       },
       "closed_at": "2026-10-04"
+    },
+    {
+      "id": "TSK-0052",
+      "original_title": "2026-10-04 - EPR - Fasi dei contest e approfondimento WIP",
+      "display_title": "2026-10-04 - EPR - Fasi dei contest e approfondimento WIP",
+      "opened_at": "2026-10-04",
+      "closed_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - EPR - Fasi dei contest e approfondimento WIP/TASK.md",
+      "original_worktree_path": null,
+      "category": "EPR",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "source_summary": "Registrazione richiesta di due proposte evolutive, senza adozione o lavoro operativo",
+      "status": "completato",
+      "status_basis": "Due schede EPR-001/EPR-002 in PROJECT.md, da valutare e non adottate; chiusura della sola registrazione documentale il 2026-10-04.",
+      "coverage": {
+        "proposals": 2,
+        "adoption": "non_deliberata",
+        "external_checks": 0
+      },
+      "dependencies": [
+        "Eventuale estensione annuale fasi da deliberare",
+        "Eventuale pilota WIP da autorizzare separatamente"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10868-8a8c-7361-bc56-0e1198290528"
+      ],
+      "next_action": "Su richiesta scegliere una proposta e deliberare perimetro della valutazione; nessuna ricognizione o pilota avviati.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "synchronization": "da_verificare",
+        "integration": "integrato_main",
+        "evidence": "Commit e push autorizzati il 2026-10-04; esito da verificare.",
+        "local_save": "da_committare"
+      }
     }
   ]
 }
