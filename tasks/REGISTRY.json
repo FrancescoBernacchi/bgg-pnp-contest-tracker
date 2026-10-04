@@ -1476,10 +1476,10 @@
       "next_action": "Su richiesta scegliere una proposta e deliberare perimetro della valutazione; nessuna ricognizione o pilota avviati.",
       "git": {
         "checked_at": "2026-10-04",
-        "synchronization": "da_verificare",
+        "synchronization": "remoto_verificato",
         "integration": "integrato_main",
-        "evidence": "Commit e push autorizzati il 2026-10-04; esito da verificare.",
-        "local_save": "da_committare"
+        "evidence": "Commit 732a944 e push su main verificati il 2026-10-04: HEAD e refs/heads/main coincidono sul server. Esito salvato nel successivo commit documentale; modifiche degli altri task preservate.",
+        "local_save": "committato"
       }
     }
   ]

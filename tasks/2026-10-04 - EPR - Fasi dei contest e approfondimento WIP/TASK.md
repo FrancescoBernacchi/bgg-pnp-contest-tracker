@@ -30,3 +30,5 @@ Working tree su main con modifiche preesistenti di altri task; preservate. Nuovi
 ## Salvataggio Git autorizzato - 2026-10-04
 
 Richiesti commit e push. Esclusioni verificate; fetch e confronto 0/0. Preparazione selettiva da HEAD dei file condivisi: soltanto schede EPR-001/002, nota di cruscotto, record TSK-0052 e questo TASK.md. Modifiche degli altri task preservate; esito da registrare dopo esecuzione.
+
+Esito: commit 732a944f9af939f3827bedbd153bb00760343f0a, quattro documenti e sole modifiche TSK-0052; controllo indice superato. Push origin/main riuscito; hash HEAD e refs/heads/main identici sul server il 2026-10-04. Questo esito viene salvato con commit documentale successivo. Modifiche preesistenti degli altri task ancora presenti e preservate.
