@@ -1351,13 +1351,15 @@
       "chat_ids": [
         "01a106e7-0978-7b20-a795-ab8654dbea44"
       ],
-      "next_action": "Revisione app e commit dedicato; roster mancanti/verifiche parziali nei task BGG/MAT/ACQ pertinenti.",
+      "next_action": "APP-008 pubblicata; roster mancanti e verifiche parziali nei task BGG/MAT/ACQ pertinenti.",
       "git": {
         "checked_at": "2026-10-04",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Correzione su main; modifiche pregresse preservate, nessun commit/push autorizzato per questo incremento."
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit applicativo fa938dd, 26 file selezionati; push origin main riuscito e hash verificato sul server con ls-remote il 2026-10-04. Esito riferito al commit applicativo; registrazione documentale successiva distinta. Modifiche GPR pregresse preservate localmente.",
+        "implementation_commit": "fa938dd737db017e4bdf85d480557aab382d7bc8",
+        "last_task_document_commit": "fa938dd"
       },
       "coverage": "Cinque fasi e tutte le annualita riconciliate; roster 2024/2026, risultati 2026, manifest ACQ 2025 e allineamento superiore verificati."
     }

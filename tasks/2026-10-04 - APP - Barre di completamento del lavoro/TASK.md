@@ -48,3 +48,9 @@ TSK-0047 e APP-008 nuovamente chiusi. Prossimo passo: revisione dell'app aggiorn
 ### Salvataggio autorizzato — 2026-10-04
 
 L'utente autorizza commit e push di APP-008. Preparazione selettiva dei file del task, codice, migrazione 012, SQL delle attestazioni e sole parti pertinenti dei documenti condivisi. Esclusi database, backup, libreria, screenshot e modifiche del task GPR sulla rinomina delle chat. Verifiche funzionali già concluse: 47 Python e 46 frontend/PDF, browser desktop/mobile. Esito Git e identificativi saranno registrati soltanto dopo il successo delle operazioni.
+
+### Esito Git — 2026-10-04
+
+Creato su `main` il commit `fa938dd737db017e4bdf85d480557aab382d7bc8`, `Riconcilia avanzamento storico e allinea i box annuali`: 26 file selezionati, codice, test, migrazione, SQL, evidenze e sole parti APP-008 dei documenti condivisi. `git diff --cached --check` superato; database, backup, materiali e screenshot esclusi secondo `.gitignore`. Modifiche GPR/naming rimaste nella working tree e non incluse.
+
+Push `origin main` riuscito da `0a3981d` a `fa938dd`; `git ls-remote origin refs/heads/main` ha confermato l'hash completo sul server GitHub. Questa registrazione è successiva al successo del commit e del push e viene salvata in un piccolo commit documentale distinto. Prossimo passo utile: eventuali roster/verifiche parziali nei task BGG pertinenti; APP-008 conclusa e pubblicata.
