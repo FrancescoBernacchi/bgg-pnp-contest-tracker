@@ -1362,6 +1362,34 @@
         "last_task_document_commit": "fa938dd"
       },
       "coverage": "Cinque fasi e tutte le annualita riconciliate; roster 2024/2026, risultati 2026, manifest ACQ 2025 e allineamento superiore verificati."
+    },
+    {
+      "id": "TSK-0048",
+      "original_title": "2026-10-04 - GPR - Gestione delle skill di progetto",
+      "display_title": "2026-10-04 - GPR - Gestione delle skill di progetto",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - GPR - Gestione delle skill di progetto/TASK.md",
+      "category": "GPR",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "continuativo",
+      "cadence": "su_richiesta",
+      "status": "in_corso",
+      "status_basis": "Primi due incrementi conclusi il 2026-10-04; skill verificate e attivazione sistematica documentata. Contenitore continuativo aperto.",
+      "dependencies": [],
+      "successors": [],
+      "chat_ids": [
+        "01a1071a-deb4-7e41-95b6-a65ad1c0654e"
+      ],
+      "next_action": "Manutenzione su richiesta dopo esperienze verificate; collaudare preanalisi su fonte diversa da Kanare e riesaminare autonomia roster se cresce.",
+      "git": {
+        "local_save": "pronto_commit",
+        "evidence": "Commit e push autorizzati esplicitamente; salvataggio dedicato alle skill, modifiche pregresse di altri task escluse.",
+        "checked_at": "2026-10-04",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      },
+      "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa."
     }
   ]
 }

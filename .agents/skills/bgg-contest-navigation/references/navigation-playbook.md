@@ -60,8 +60,6 @@ Per ogni fallback verifica titolo, autore, appartenenza al contest e identificat
 - URL dinamici, redirect e riferimenti cancellati;
 - risultati che usano titoli o grafie differenti dal roster.
 
-## Registrazione di un nuovo pattern
-
 ## Pattern: GeekList paginata con caricamento progressivo
 
 **Osservato:** `Community PnP contests and winners (2008 to 2024)`, 16 settembre 2026.

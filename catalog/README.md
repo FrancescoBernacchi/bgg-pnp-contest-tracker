@@ -35,3 +35,7 @@ I manifest `2025_children_family_acquisition_batch_2026-10-03.json` e `2025_chil
 ## Estrazione ZIP offline APP-005
 
 `extract_registered_archives.py` simula senza `--apply`; con `--apply --manifest catalog/NOME_LOTTO.json` esegue backup verificato, migrazione 011 ed estrazione dei soli ZIP originali acquisiti. Il manifest `archive_contents_batch_2026-10-03.json` registra i 11 contenuti estratti da due archivi, con hash, ID, percorso interno e provenienza. Rerun verificato senza duplicati; nessun download. Contratto e limiti in `app/README.md`. Backup, originali ed estratti restano esclusi da Git.
+
+## Procedure di raccolta e importazione
+
+Prima di preparare dati di un workflow coperto, leggere e applicare la skill pertinente nell'inventario `sources/SKILL_INVENTORY.md`: BGG-G, roster annuale, classifiche, MAT e ACQ restano distinti; FON non autorizza importazione. Gli script storici sono esempi specifici con ID/date/perimetri fissi, da ispezionare prima del riuso. L'uso di una skill non autorizza a eseguire script con rete o scritture operative: resta valido il contratto del task e il protocollo di verifica su copia.

@@ -4,6 +4,8 @@ Archivio locale per monitorare contest di game design Print and Play pubblicati 
 
 Lo stato operativo complessivo è raccolto in [`PROJECT_PROGRESS.md`](PROJECT_PROGRESS.md); calendario e finestre dei controlli BGG restano in [`sources/MONITORING_CALENDAR.md`](sources/MONITORING_CALENDAR.md).
 
+Le procedure riutilizzabili sono elencate nell'[inventario delle skill locali](sources/SKILL_INVENTORY.md). Prima di ogni attività coperta, anche alla ripresa, l'agente legge e applica la skill pertinente secondo `AGENTS.md` e `TASK_GOVERNANCE.md`. La base BGG e le specializzazioni mantengono distinti contest, roster annuali, classifiche, MAT e ACQ; le skill FON distinguono scoperta di candidati e preanalisi di una fonte. La gestione continuativa delle skill è TSK-0048, su richiesta senza automazione.
+
 ## Stato attuale
 
 - 305 contest censiti dal 2008 al 2026; 22 contest del 2025–2026 dispongono già del roster delle entry;

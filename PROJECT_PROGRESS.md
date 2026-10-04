@@ -2372,10 +2372,13 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 
 APP-005, 2026-10-03: due ZIP estratti in 11 contenuti (10 PDF e 1 PNG), con hash e relazione archivio/contenuto. Originali invariati: 187 record e hash verificati. File totali 198; acquisizioni 46; nessun accesso esterno. I conteggi annuali di file includono i derivati e non indicano nuove risorse remote o completezza. Manifest: `catalog/archive_contents_batch_2026-10-03.json`.
 
+TSK-0048, 2026-10-04: primi due incrementi delle skill conclusi; attivazione sistematica formalizzata; contenitore GPR aperto su richiesta, senza automazione. Inventario in sources/SKILL_INVENTORY.md; prossima manutenzione dopo esperienza verificata o bisogno ricorrente.
+
 ## Salute degli strumenti e della governance
 
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
+| Skill locali | base BGG e sei specialistiche verificate offline | 2026-10-04 TSK-0048: audit, inventario e procedura annuale entry distinta; applicazione delle skill pertinenti obbligatoria anche nelle riprese; nessuna nuova operazione esterna | Mantenere tramite GPR su richiesta; esperienze verificate, EPR per cambi contrattuali |
 | Schema e migrazioni | completo | Migrazioni 001-011 presenti; 011 applicata all’operativo il 2026-10-03 dopo backup verificato | Ogni modifica passa da nuova migrazione numerata |
 | Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 198 file registrati (187 originali, 11 contenuti ZIP); integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
@@ -2387,6 +2390,10 @@ APP-005, 2026-10-03: due ZIP estratti in 11 contenuti (10 PDF e 1 PNG), con hash
 | Libreria nell’app locale | completo per PDF/PNG/DOCX idonei e ZIP estratti offline | 2026-10-03: APP-005; 198 file registrati, 46 acquisizioni; 11 contenuti ZIP con hash e provenienza; 187 originali invariati; DOCX semantico; Starter_Cards.pdf supera 128 MiB | Altri formati in task autonomi; preservare limiti e tracciabilità; hash PDF.js tramite `.gitattributes` |
 
 ## Registro degli aggiornamenti del cruscotto
+
+- 2026-10-04 — GPR Titoli compatti: eliminate da 11 chat le etichette operative già espresse da ACQ/MAT/BGG-M/BGG-G/BGG-A. Protocollo e registro aggiornati, storico preservato, documentazione ancora locale da committare. Evidenza: `tasks/2026-10-04 - Monitoraggio e classificazione dei task/CHAT_TITLE_SIMPLIFICATION.json`. Dati operativi invariati, sezioni annuali non rigenerate.
+
+- 2026-10-04 — GPR Rinomina dei task: 38 chat con contenuto verificate, 36 rinominate e 2 già conformi (bootstrap incluso); codici di categoria e date originarie applicati, identificativi di segnalazione rimossi dai titoli APP. Registro centrale integrato con collegamenti e storico prima/dopo; 44 percorsi locali preservati. Evidenza: `tasks/2026-10-04 - Monitoraggio e classificazione dei task/CHAT_RENAMING.json`. Incremento documentale locale da committare; dati operativi e sezioni A/B invariati.
 
 - 2026-10-04 — GPR Monitoraggio e classificazione dei task: protocollo adottato su richiesta dell'utente; registro centrale con 44 ID, classificazione storica datata e nuova convenzione dei titoli. Salvata copia immutata del TASK.md Wargame sospeso; nessuna acquisizione riattivata. PWS e dati operativi invariati, sezioni annuali non rigenerate. Evidenza: `TASK_GOVERNANCE.md`, `tasks/REGISTRY.json` e task corrente.
 
@@ -2470,5 +2477,4 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-04 — TSK-0046 Classifiche 2024: conclusa riconciliazione delle liste ufficiali di 11 contest; importati 869 risultati. PnP 225/381 (59,06%), adiacenti 14/28 (50%); confronto esplicito completato per tutte le 409 entry. Sei challenge senza roster escluse. Backup, integrità, chiavi esterne e importazione idempotente verificati. Evidenze nel task dedicato; sezioni A/B rigenerate. Prossimo approfondimento solo su nuove tabelle ufficiali/rettifiche.
 
 - 2026-10-04 — APP-008 (TSK-0047): cinque barre di lavoro, metriche condivise, migrazione 012 e attestazioni locali. Classifiche 2025 verificate 384/384 PnP e 80/80 adiacenti, distinte da 207/40 entry classificate; roster attestati 9/9 e 2/8, sei challenge dipendenti. Materiali/acquisizioni distinguono completezza, N/A, ignoti e blocchi; immagini 0% non implementate. 45 test Python distinti, 46 frontend/PDF, browser 1400/390 px; righe originarie preservate e aggiunte TSK-0046 distinte. Sezioni A/B rigenerate dal database; nessuna nuova osservazione BGG. Evidenza: tasks/2026-10-04 - APP - Barre di completamento del lavoro/VERIFICATION.json.
-
 - 2026-10-04 — APP-008, incremento correttivo TSK-0047: roster storici recuperati (2024 PnP 10/10; 2026 9/10 PnP e 7/8 adiacenti con limiti espliciti); classifiche 2026 132/356 complete e 12 parziali PnP, 21/74 adiacenti. Acquisizioni 2025 riconciliate con manifest: 39/363 complete PnP, 13 bloccate e 3 parziali; dati originari preservati. Box annuali allineati in alto a 15 px, desktop/mobile; 47 test Python e 46 frontend/PDF. Tutte le cinque fasi/annualità controllate e A/B rigenerate, nessun rilevamento BGG. Audit: tasks/2026-10-04 - APP - Barre di completamento del lavoro/HISTORY_AUDIT.md.

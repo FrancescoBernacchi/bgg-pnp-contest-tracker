@@ -53,3 +53,5 @@ TSK-0046: estensione annuale circoscritta classifiche BGG 2024 confermata il 202
 - 2026-10-04: APP-008 e migrazione additiva 012 introducono attestazioni di lavoro con provenienza e metriche condivise `app/work_progress.py` per app/cruscotto. Formalizzate 464 verifiche classifiche TSK-0045 e 11 roster 2025 TSK-0005 con date originali preservate; nessuna nuova verifica esterna. Indicatore immagini 0% non implementato. PWS resta 1.5.0.
 
 - 2026-10-04: incremento correttivo APP-008 riconcilia anche roster 2024/2026, risultati 2026 e manifest ACQ 2025. Verifiche parziali distinte; tabelle originarie preservate, nessuna nuova lettura esterna. Box annuali allineati in alto; audit e prove desktop/mobile in TSK-0047. Nessun cambiamento architetturale ulteriore o allineamento PWS.
+
+- 2026-10-04: TSK-0048 riorganizza offline le competenze locali in base BGG condivisa e sei skill specialistiche, con procedura annuale entry separata, inventario e audit delle evidenze. Nessuna modifica ai contratti, al modello dati o all'app; PWS resta 1.5.0. Gestione GPR continuativa su richiesta senza automazione.

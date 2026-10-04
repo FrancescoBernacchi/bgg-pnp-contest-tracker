@@ -61,7 +61,7 @@ Conservare evidenza e data per ogni verifica. Autorizzazione al commit non è es
 All'apertura o ripresa:
 
 1. Verificare PWS, sandbox, task esistenti, registro e stato Git; indicare eventuale continuità prima di duplicare il lavoro.
-2. Definire categoria, modalità, scope, input, deliverable e criteri di successo nel TASK.md; registrare ID e collegamenti nel registro centrale.
+2. Definire categoria, modalità, scope, input, deliverable e criteri di successo nel TASK.md; registrare ID e collegamenti nel registro centrale. Consultare `sources/SKILL_INVENTORY.md`, leggere e applicare le skill pertinenti prima del lavoro coperto; annotare nel task quali sono state usate e gli eventuali limiti. Il controllo vale anche alla ripresa dei task storici; non implica riscriverne il contratto o la storia.
 3. Applicare naming; per BGG verificare unità ed esclusioni in PROJECT.md. Registrare le eccezioni storiche senza estenderle.
 
 Al termine di ogni incremento:
@@ -87,3 +87,7 @@ Il 2026-10-04 l’utente delibera per TSK-0045 il task continuativo `BGG-A - Cla
 ## Estensione annuale classifiche 2024 — 2026-10-04
 
 L’utente ha confermato TSK-0046, `BGG-A - Classifiche BGG 2024`, incremento annuale circoscritto ai risultati e votazioni dei contest con roster esistente. Provenienza e confronto con baseline per contest; completezza della verifica separata dalla presenza in classifica. Roster aggiuntivi, WIP, materiali, host esterni e download esclusi. Le challenge senza roster restano dipendenza del censimento. Contratto: `tasks/2026-10-04 - BGG-A - Classifiche BGG 2024/TASK.md`. PWS invariato a 1.5.0.
+
+## Gestione delle skill
+
+TSK-0048 è un contenitore GPR continuativo su richiesta, senza automazione: inventario, verifiche, lacune e proposte motivate di procedure riutilizzabili. Gli incrementi conclusi non chiudono il contenitore. La manutenzione organizzativa resta GPR; modifiche ai contratti o all'architettura sono EPR da deliberare separatamente. Riferimento: `sources/SKILL_INVENTORY.md`.

@@ -25,3 +25,5 @@ BoardGameGeek è l'unica fonte esterna autorizzata nella fase corrente. L'ordine
 `2025-SOLOMODE-WIPS-RESOURCES.md` espone la scansione completa delle 38 proposte Solomode, comprese le due proposte senza WIP e il caso di risorse rimosse, con 67 collegamenti distinti conservati senza aprirne le destinazioni.
 
 `OPEN-VERIFICATION-POINTS.md` conserva le anomalie e le lacune che richiedono verifica umana o fonti future, con evidenza, azione prevista e criterio di chiusura. I punti risolti non vengono cancellati.
+
+Inventario delle procedure locali: [SKILL_INVENTORY.md](SKILL_INVENTORY.md). Prima della ricerca o verifica coperta leggere e applicare le skill indicate nell'inventario: base/specializzazione BGG per contest e materiali; `potential-source-discovery` per candidati; `source-preanalysis` per una sola fonte. Per nuove fonti la baseline candidati resta storica; `MULTISOURCE-SOURCE-RANKING.md` mantiene lista e priorità operative, senza implicare adozione. Le prove e le date storiche non diventano nuove verifiche per effetto della manutenzione delle skill.

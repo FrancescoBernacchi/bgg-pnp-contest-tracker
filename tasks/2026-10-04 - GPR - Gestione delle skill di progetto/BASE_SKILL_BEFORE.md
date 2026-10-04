@@ -1,22 +1,11 @@
 ---
 name: bgg-contest-navigation
-description: Base condivisa per navigare contest, roster, risultati e WIP BGG con pattern tecnici verificati e instradamento ai workflow specialistici. Non autorizza ampliamenti di scope o download.
+description: Esplora e censisce pagine BoardGameGeek relative a contest, roster, entry, WIP, risultati e risorse, scegliendo la strategia di navigazione adatta alla struttura osservata e registrando i pattern riutilizzabili nel progetto.
 ---
 
 # Navigazione dei contest BGG
 
-Usa questa base per navigazione BGG e leggi soltanto la specializzazione pertinente. Le sezioni tecniche seguenti si applicano esclusivamente alle fasi autorizzate dal contratto, mai come sequenza da eseguire integralmente.
-
-## Specializzazioni e procedure
-
-- Identità, serie e annualità BGG-G: [censimento contest](../bgg-contest-census/SKILL.md).
-- Roster di un solo anno BGG-A: [procedura annuale entry](references/annual-entry-census.md), senza lettura WIP o materiali.
-- Risultati/votazioni nel contratto autorizzato: [classifiche](../bgg-ranking-census/SKILL.md); estensioni annuali 2024/2025 non trasferibili ad altri anni.
-- Primo post e dichiarazioni di un contest MAT: [materiali](../bgg-material-census/SKILL.md).
-- Host e materiali selezionati di un contest ACQ: [acquisizione](../bgg-material-acquisition/SKILL.md).
-- Monitoraggio BGG-M: PROJECT.md e sources/MONITORING_CALENDAR.md governano cadenza e snapshot; la base supporta navigazione di stato/fasi/roster/metriche senza file di gioco. Non duplicare controlli giornalieri; mantenere snapshot completi collegati tramite check_id e distinguere baseline/census/consistency dai rilevamenti periodici.
-
-Inventario e manutenzione: sources/SKILL_INVENTORY.md, TSK-0048. Il playbook rimane il riferimento unico dei pattern tecnici, con date e limiti originari. La verifica offline delle skill non aggiorna lo stato esterno dei siti.
+Usa questa skill per ogni esplorazione o verifica di contest, entry, WIP, risultati e collegamenti ai materiali su BoardGameGeek.
 
 ## Obiettivo operativo
 
@@ -60,6 +49,19 @@ Dopo una struttura nuova o un fallimento istruttivo:
 
 Il compito continuativo dell'agente è migliorare la competenza nella navigazione BGG durante le esplorazioni, mantenendo le procedure rapide, verificabili e adattabili ai formati storici del sito.
 
-## Dettagli specialistici
+## Collegamenti dichiarati nel WIP
 
-Le procedure sui collegamenti e sui requisiti del primo post sono mantenute in [bgg-material-census](../bgg-material-census/SKILL.md), con pattern tecnici nel playbook condiviso. La base precedente è conservata in TSK-0048/BASE_SKILL_BEFORE.md; non duplicare qui le istruzioni MAT.
+1. Limita l'osservazione al primo `article.post` e al relativo `.post-body` renderizzato.
+2. Attiva gli eventuali `gg-item-link` nel corpo del post.
+3. Estrai `a[href]`, `iframe[src]`, `video[src]` e `source[src]`.
+4. Escludi navigazione, profili, immagini decorative, canali aggiunti dai player e duplicati tecnici.
+5. Conserva URL, dominio, testo e contesto senza aprire la destinazione.
+6. Assegna separatamente funzione e forma tecnica provvisorie.
+7. Accorpa URL identici conservando tutte le descrizioni sorgente.
+8. Registra l'assenza soltanto dopo questi controlli.
+
+Non chiudere la tassonomia prima del confronto di tutti i contest dell'anno.
+
+## Materiali di gioco dichiarati nel WIP
+
+Durante la lettura integrale del primo post, censisci separatamente anche i requisiti materiali che non dipendono da un URL: dadi, mazzi standard, strumenti di scrittura, pedine, segnalini, oggetti domestici, dispositivi e materiali di montaggio. Conserva testo originale, quantità, contesto, obbligatorietà e modalità di approvvigionamento; assegna categorie soltanto provvisorie. Per una variante dipendente da un gioco base, registra come requisiti della variante soltanto i componenti aggiuntivi o sostitutivi esplicitamente dichiarati e conserva separatamente la dipendenza, senza duplicare l'intera dotazione del gioco base. Distingui esplicitamente la copertura `first_post_only` da un futuro inventario integrato dalle regole. Non dedurre un componente dalla sola descrizione della meccanica e non interpretare il silenzio del primo post come prova che il gioco non richieda materiali.

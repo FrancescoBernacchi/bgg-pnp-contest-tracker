@@ -1,0 +1,20 @@
+# Inventario delle skill locali
+
+Responsabile: TSK-0048, `GPR - Gestione delle skill di progetto`, continuativo su richiesta senza automazione. Ultima verifica organizzativa offline: 2026-10-04. PWS 1.5.0. Dettaglio delle evidenze e lacune: [audit](../tasks/2026-10-04%20-%20GPR%20-%20Gestione%20delle%20skill%20di%20progetto/AUDIT.md).
+
+| Skill / procedura | Scopo e copertura | Stato della conoscenza | Verifica e prossima manutenzione |
+|---|---|---|---|
+| [bgg-contest-navigation](../.agents/skills/bgg-contest-navigation/SKILL.md) | Base tecnica BGG; routing, playbook; supporto al monitoraggio senza ampliarne il contratto | Pattern verificati, contesti e date originari preservati | Offline 2026-10-04; promuovere nuove strutture solo dopo prova |
+| [bgg-contest-census](../.agents/skills/bgg-contest-census/SKILL.md) | BGG-G: identità, serie e annualità; esclusi roster | Procedura derivata da censimenti verificati; euristiche storiche esplicite | Offline 2026-10-04; nuovi pattern di deduplicazione da verificare |
+| [Procedura annuale entry](../.agents/skills/bgg-contest-navigation/references/annual-entry-census.md) | BGG-A: roster di un anno; distinta da globale e classifiche | Procedura verificata; non è settima skill autonoma | Offline 2026-10-04; valutare autonomia se cresce |
+| [bgg-ranking-census](../.agents/skills/bgg-ranking-census/SKILL.md) | Risultati/voti; contratti annuali 2024/2025 distinti | Procedura verificata; completezza confronto separata da presenza | Offline 2026-10-04; ulteriori annualità solo con contratto deliberato |
+| [bgg-material-census](../.agents/skills/bgg-material-census/SKILL.md) | MAT di un contest, primo post; nessun host/download | Pattern verificati; tassonomia provvisoria | Offline 2026-10-04; confronto tassonomia dopo MAT annuali separati |
+| [bgg-material-acquisition](../.agents/skills/bgg-material-acquisition/SKILL.md) | ACQ autorizzato di un contest; manifest, hash, esiti, esclusioni | Lotti verificati con blocchi; host nuovi non collaudati | Offline 2026-10-04; documentare nuove enumerazioni e residui |
+| [potential-source-discovery](../.agents/skills/potential-source-discovery/SKILL.md) | FON: candidati e graduatoria operativa; nessuna adozione | Metodo v1 già verificato; dati storici non aggiornati | Offline 2026-10-04; aggiornamenti esterni in task FON |
+| [source-preanalysis](../.agents/skills/source-preanalysis/SKILL.md) | FON: una fonte; proposta catalogo/dati/app | Precedente Kanare; generalizzazione da collaudare | Offline 2026-10-04; prossimo uso su una fonte scelta |
+
+Le skill si leggono dal progetto e vanno applicate prima di ogni attività pertinente, anche nelle riprese senza invocazione esplicita dell'utente. Il catalogo di questa sessione ora espone tutte e sette le skill; AGENTS.md mantiene comunque routing e percorsi espliciti. La sola categoria non basta per attivare una skill: usare obiettivo e unità di lavoro, senza estenderne scope. Le attività APP/DAT che consultano soltanto dati locali non attivano automaticamente workflow BGG/FON; se comprendono una fase coperta, applicare la skill soltanto a quella fase. Annotare skill usate, anomalie e limiti nel task.
+
+## Protocollo del gestore
+
+Verificare a ogni incremento frontmatter, riferimenti, condizioni di attivazione e casi concreti. Preservare prove storiche e distinguere procedura verificata, inferenza, esperimento e lacuna. Confrontare sovrapposizioni e contraddizioni con PROJECT.md/TASK_GOVERNANCE.md; questi conservano autorità sui contratti. Proporre skill nuove con esempi ricorrenti, benefici e confini, evitando frammentazione per un solo episodio. Annotare data, task e limite di ogni verifica; aggiornare inventario, task e cruscotto quando cambia lo stato delle competenze. Non usare la manutenzione per eseguire i workflow descritti.
