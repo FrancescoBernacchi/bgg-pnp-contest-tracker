@@ -1,0 +1,65 @@
+{
+  "observations": 869,
+  "new_rankings": 869,
+  "scratch_integrity": "ok",
+  "repeat_additions": 0,
+  "applied": true,
+  "backup": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\rankings-2024-before-20261004-144358.sqlite3",
+  "by_contest": [
+    {
+      "contest_id": 277,
+      "entries": 30,
+      "ranked": 19
+    },
+    {
+      "contest_id": 278,
+      "entries": 29,
+      "ranked": 15
+    },
+    {
+      "contest_id": 279,
+      "entries": 35,
+      "ranked": 20
+    },
+    {
+      "contest_id": 284,
+      "entries": 50,
+      "ranked": 22
+    },
+    {
+      "contest_id": 286,
+      "entries": 50,
+      "ranked": 33
+    },
+    {
+      "contest_id": 287,
+      "entries": 37,
+      "ranked": 25
+    },
+    {
+      "contest_id": 289,
+      "entries": 57,
+      "ranked": 40
+    },
+    {
+      "contest_id": 290,
+      "entries": 28,
+      "ranked": 14
+    },
+    {
+      "contest_id": 291,
+      "entries": 50,
+      "ranked": 23
+    },
+    {
+      "contest_id": 292,
+      "entries": 29,
+      "ranked": 17
+    },
+    {
+      "contest_id": 293,
+      "entries": 14,
+      "ranked": 11
+    }
+  ]
+}

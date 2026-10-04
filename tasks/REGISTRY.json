@@ -1297,6 +1297,39 @@
       "current_chat_titles": [
         "2026-10-04 - BGG-A - Classifiche BGG 2025"
       ]
+    },
+    {
+      "id": "TSK-0046",
+      "original_title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - BGG-A - Classifiche BGG 2024/TASK.md",
+      "original_worktree_path": null,
+      "category": "BGG-A",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "source_summary": "Estensione annuale classifiche 2024 confermata dall utente.",
+      "status": "completato",
+      "status_basis": "Importazione e confronto conclusi; integrità, chiavi esterne e idempotenza verificate; evidenze in VERIFICA_2026-10-04.md.",
+      "coverage": "11 contest; 409 entry verificate; 869 risultati; 225/381 PnP e 14/28 adiacenti in classifica",
+      "dependencies": [
+        "TSK-0015"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a106c3-8e8e-7c20-b431-764b602a28c7"
+      ],
+      "next_action": "Solo nuove tabelle ufficiali o rettifiche; challenge senza roster in censimento separato.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_pushare",
+        "evidence": "Documenti nuovi e modificati locali; nessuna operazione Git"
+      },
+      "display_title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
+      "last_verified_at": "2026-10-04"
     }
   ]
 }

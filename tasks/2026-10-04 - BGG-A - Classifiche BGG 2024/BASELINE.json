@@ -1,0 +1,104 @@
+{
+  "verified_at": "2026-10-04",
+  "contests": [
+    {
+      "id": 277,
+      "name": "54 Card Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/geeklist/338815/2024-54-card-game-design-contest-entries",
+      "results_url": null,
+      "entries": 30,
+      "ranked": 0
+    },
+    {
+      "id": 278,
+      "name": "Children & Family Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": null,
+      "results_url": null,
+      "entries": 29,
+      "ranked": 0
+    },
+    {
+      "id": 279,
+      "name": "In-Hand Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/thread/3162927/2024-in-hand-game-design-contest",
+      "results_url": null,
+      "entries": 35,
+      "ranked": 0
+    },
+    {
+      "id": 284,
+      "name": "Nine Card Nanogame Print and Play Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/thread/3218618/2024-9-card-nanogame-print-and-play-design-contest",
+      "results_url": null,
+      "entries": 50,
+      "ranked": 0
+    },
+    {
+      "id": 286,
+      "name": "One Card Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/geeklist/334560",
+      "results_url": null,
+      "entries": 50,
+      "ranked": 0
+    },
+    {
+      "id": 287,
+      "name": "Roll & Write Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/thread/3353041/2024-roll-and-write-game-design-contest",
+      "results_url": null,
+      "entries": 37,
+      "ranked": 0
+    },
+    {
+      "id": 289,
+      "name": "Solitaire Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/geeklist/337391/2024-solitaire-print-and-play-design-contest-entra",
+      "results_url": null,
+      "entries": 57,
+      "ranked": 0
+    },
+    {
+      "id": 290,
+      "name": "Solo Mode Design Contest",
+      "scope_type": "adjacent",
+      "entries_url": "https://boardgamegeek.com/geeklist/332839/2024-solomode-design-contest-submissions",
+      "results_url": null,
+      "entries": 28,
+      "ranked": 0
+    },
+    {
+      "id": 291,
+      "name": "Traditional Deck Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/thread/3360317/2024-traditional-deck-game-design-contest",
+      "results_url": null,
+      "entries": 50,
+      "ranked": 0
+    },
+    {
+      "id": 292,
+      "name": "Two Player Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/geeklist/328627/2024-two-player-pnp-game-design-contest-entries",
+      "results_url": null,
+      "entries": 29,
+      "ranked": 0
+    },
+    {
+      "id": 293,
+      "name": "Wargame Print and Play Game Design Contest",
+      "scope_type": "pnp_core",
+      "entries_url": "https://boardgamegeek.com/geeklist/326943/2024-wargame-print-and-play-game-design-contest-en",
+      "results_url": null,
+      "entries": 14,
+      "ranked": 0
+    }
+  ]
+}

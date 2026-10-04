@@ -108,3 +108,9 @@ Un collegamento `/image/...` non è sempre decorativo. Se il primo post associa 
 **Osservato:** Solomode 2025, 15 settembre 2026.
 
 Nei contest di varianti il primo post può elencare insieme componenti del gioco base e materiali introdotti dalla modalità. La dipendenza dal gioco base non deve trasformarsi nella duplicazione del suo intero inventario: conservare come requisiti della variante soltanto carte, dadi, fogli, timer, dispositivi o sostituzioni esplicitamente aggiuntivi. Una dichiarazione come “no extra components” è evidenza utile per la scansione ma non genera un requisito materiale. Se il post propone un kit alternativo per provare la variante senza il gioco base, registrarlo come `alternative`, conservando separata la dipendenza principale.
+
+## Pattern: piazzamenti con immagini numeriche e spoiler
+
+**Verificato:** TSK-0046, classifiche 2024, 4 ottobre 2026; Nine Card articolo 43546487, 54 Card articoli 45273141/45273144, Traditional 45411639 e Two Player 43538242.
+
+Le posizioni possono essere immagini con alt `d10-N`: conservare il numero esplicito insieme al testo e alla fonte, senza ricavarlo dall'ordine delle righe. Gli spoiler sono normale contenuto della pagina: aprirli con i controlli della pagina e leggere le categorie complete; gli spoiler annidati richiedono controllare di nuovo i pulsanti ancora chiusi. Preservare pari merito e menzioni senza posizione. Escludere premi ai playtester e non convertire premi GeekGold o totali globali dei votanti in voti dei giochi. Conservare separatamente completezza del confronto delle liste pubblicate e presenza delle entry nelle classifiche.
