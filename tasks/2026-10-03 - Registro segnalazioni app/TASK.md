@@ -171,7 +171,26 @@ Conservare, classificare e seguire le correzioni da realizzare nell'app in task 
 
   > Implementa `APP-008` del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md`. Le barre annuali di Avanzamento devono misurare il completamento del lavoro e raggiungere il 100% quando la fase è conclusa. Rinominale “Censimento entry”, “Censimento classifica”, “Censimento materiali” e “Acquisizione materiali”. Nel censimento classifica conta le entry con verifica conclusa, incluse quelle documentate come assenti da tutte le classifiche; mantieni distinto il numero di entry effettivamente classificate. Non dedurre verifica negativa dalla sola assenza di rankings. Consulta il contratto annuale classifiche TSK-0045 e predisponi eventuale persistenza degli esiti con provenienza, senza inventare verifiche storiche né accedere a BGG. Definisci denominatori e condizioni di completamento coerenti per tutte le fasi, distinguendo dati ignoti, casi non applicabili e blocchi. Aggiungi “Acquisizione immagini”, inizialmente allo 0%, dichiarando la funzione non ancora implementata e distinguendo immagini rappresentative dai materiali PNG. Non implementare acquisizioni di immagini in questo incremento. Mantieni coerenti app e cruscotto autorevole, aggiornando generatori e documentazione pertinenti. Verifica copertura classifiche completa con entry senza piazzamenti, copertura incompleta, casi senza entry, entrambi i perimetri e nuova barra immagini. Documenta verifiche e limiti, collega il task alla segnalazione e usa il naming di categoria APP previsto da TASK_GOVERNANCE.md, conservando APP-008 nel corpo.
 
+### APP-009 — Schede annuali compatte e righe espandibili
+
+- **Stato:** `segnalata`.
+- **Data:** 2026-10-04.
+- **Area:** Avanzamento per anno.
+- **Fonte:** richiesta dell'utente e immagine `C:\Users\39348\AppData\Local\Temp\codex-clipboard-12ce2299-1372-4925-ab20-036efc944aa5.png`.
+- **Layout:** passare da cinque a quattro anni per riga nella vista desktop; eliminare “Avanzamento separato per perimetro”; abbreviare “entry complessive” in “entry”.
+- **Interazione:** le righe di schede annuali devono essere collassabili e tutte inizialmente collassate. Può essere espansa una sola riga alla volta: espandendone un'altra, quella precedentemente aperta si richiude. Interpretazione registrata: riga = gruppo di quattro anni, non singola metrica o singola scheda.
+- **Vista collassata:** altezza minima compatibile con leggibilità e accessibilità; anno, conteggio entry e cinque piccoli indicatori a torta in linea, uno per censimento entry, censimento classifica, censimento materiali, acquisizione materiali e acquisizione immagini.
+- **Aggregazione:** nella sintesi di ciascun anno combinare PnP principali e adiacenti (indicati come “laterali” nella richiesta). Sommare numeratori e denominatori omogenei, senza fare la media semplice delle percentuali. Preservare gli stati ignoti/non applicabili e i denominatori specifici delle fasi. Il dettaglio espanso mantiene i due perimetri distinti.
+- **Relazioni:** usare le metriche di completamento introdotte da APP-008; l'aggregazione compatta è una presentazione aggiuntiva e non cambia i dati o i confini dei workflow.
+- **Criteri per la chiusura:** quattro schede per riga desktop; testi richiesti rimossi/abbreviati; tutte le righe collassate all'apertura; espansione esclusiva verificata; cinque indicatori aggregati corretti anche con denominatori differenti o ignoti; dettaglio distinto per perimetro; uso da tastiera, etichette accessibili delle metriche e layout su schermi stretti verificati.
+- **Task evolutivo:** da assegnare.
+- **Prompt task evolutivo:**
+
+  > Implementa APP-009 del registro `tasks/2026-10-03 - Registro segnalazioni app/TASK.md` nella vista Avanzamento per anno. Mostra quattro anni per riga desktop, elimina “Avanzamento separato per perimetro” e abbrevia “entry complessive” in “entry”. Rendi collassabili le righe intese come gruppi di quattro schede annuali: tutte devono essere collassate inizialmente e una sola può essere espansa; aprendo una nuova riga richiudi quella precedente. Nella modalità collassata riduci al minimo l'altezza e mostra per ogni anno conteggio entry e cinque piccoli indicatori a torta in linea: censimento entry, censimento classifica, censimento materiali, acquisizione materiali e acquisizione immagini. Gli indicatori devono sintetizzare insieme PnP principali e adiacenti, usando le metriche di completamento APP-008: somma numeratori e denominatori omogenei, non fare medie semplici delle percentuali e rappresenta esplicitamente dati ignoti/non applicabili. Mantieni nel dettaglio espanso i due perimetri separati. Prevedi etichette e valori accessibili, attivazione da tastiera e adattamento a schermi stretti, con comportamento coerente quando cambia il raggruppamento responsive. Verifica stato iniziale, espansione esclusiva, aggregazioni, casi senza dati e navigazione esistente. Documenta risultati e limiti e aggiorna lo stato della segnalazione; usa il naming di categoria APP senza identificativi di segnalazione nel titolo.
+
 ## Registro cambiamenti
+
+- 2026-10-04: inserita APP-009 con prompt evolutivo; nessuna implementazione eseguita nel registro.
 
 - 2026-10-04: APP-008 riaperta e corretta in TSK-0047 per attestazioni storiche omesse e allineamento verticale; audit di tutte le fasi concluso.
 
