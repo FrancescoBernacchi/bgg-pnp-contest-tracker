@@ -37,3 +37,7 @@ Varianti di URL dello stesso video/cartella preservate e annotate; 86 URL non eq
 Nessun blocco MAT; le destinazioni sono dichiarate e non verificate. Non avviata automazione né aggiornato il calendario periodico: è un censimento del primo post di contest concluso. Nessun pattern nuovo da promuovere alle skill.
 
 Prossimo passo utile: eventuale ACQ del solo 54-Card 2025 dopo selezione esplicita dei giochi; in alternativa MAT separato di Solitaire 2025. Incremento locale da committare; proposta messaggio `Censisci materiali dichiarati del 54-Card Contest 2025`. Nessun commit o push eseguito; modifiche preesistenti preservate.
+
+## Versionamento verificato — 2026-10-05
+
+Su richiesta utente «commit e push», commit 8de9833 su main, push riuscito e HEAD uguale a refs/heads/main sul server. Inclusi nove file del censimento e soltanto il relativo delta di registro/cruscotto; gli altri incrementi non committati preservati. Database, backup e outputs esclusi da Git. Esito registrato nel successivo commit documentale.

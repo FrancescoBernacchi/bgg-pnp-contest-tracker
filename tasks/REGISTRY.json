@@ -1515,11 +1515,12 @@
       ],
       "next_action": "Eventuale ACQ 54-Card 2025 dopo selezione esplicita dei giochi; verifica condizioni e host",
       "git": {
-        "local_save": "da_committare",
-        "synchronization": "da_verificare",
-        "evidence": "Modifiche preesistenti preservate; nessuna operazione Git",
         "checked_at": "2026-10-05",
-        "integration": "integrato_main"
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "8de9833977e047524815562f6598a7ba167a7810",
+        "evidence": "Commit 8de9833 e push main verificati sul server il 2026-10-05; database e backup esclusi. Modifiche degli altri task preservate; questo esito salvato nel successivo commit documentale."
       },
       "closed_at": "2026-10-05"
     }
