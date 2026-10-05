@@ -2542,3 +2542,33 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-05: TSK-0065 completato: workflow IMG deliberato e promosso, skill game-image-acquisition installata con riferimenti fonti/estrazione/AI, routing e documenti autorevoli allineati. 14 controlli documentali locali riusciti; validatore standard limitato da PyYAML assente. Nessun lotto o implementazione immagini. Prossimi task separati: APP dati/consultazione e IMG pilota BGG o Kanare selezionato. PWS 1.5.0.
 
 - 2026-10-05: TSK-0065, workflow/skill immagini committati in 986dd93 e inviati a origin/main; hash remoto verificato. Altre modifiche del workspace escluse dal commit, audit sui contenuti pubblicati senza rilievi.
+
+## Progettazione supporto immagini — TSK-0067
+
+TSK-0067, 2026-10-05: aperto APP Catalogazione e consultazione immagini dei giochi, fase brainstorming progressivo. Base TSK-0065 concluso; persistenza, manifest, UI e metriche da concordare prima dell'implementazione. Nessun codice, migrazione o lotto IMG avviato; metriche immagini invariate. Prossimo passo: discutere immagini a livello gioco e collegamenti a contesti specifici. Contratto in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/TASK.md`.
+
+TSK-0067, integrazione 2026-10-05: raccolta per gioco approvata; preferenza sempre per la revisione più recente dello stesso materiale promossa in IMAGE_WORKFLOW.md. Originali/storico preservati e componenti unici recuperabili dalle revisioni precedenti; revisione materiale distinta da versione immagine. Nessuna implementazione o variazione delle metriche. Prossimo punto: identità e versioni immagini/componenti.
+
+TSK-0067, decisione successiva 2026-10-05: approvati materiale e versione di origine nei dettagli delle immagini estratte, con segnalazione della revisione precedente. Prossimo punto di brainstorming: associazioni componente/lati e dorsi condivisi. Implementazione e metriche invariate.
+
+TSK-0067, componenti 2026-10-05: approvati componenti distinti dalle immagini, associazioni dei lati per revisione e dorso condiviso senza duplicare file. Prossimo punto: importazione offline e riconciliazione manifest IMG. Nessun codice o dato operativo modificato.
+
+TSK-0067, manifest 2026-10-05: approvato percorso manifest IMG → importatore offline con anteprima/backup/idempotenza/conflitti → database → app consultiva. Assenza dal manifest non elimina record; decisioni AI esplicite importate. Prossimo punto: copertura per categoria e filtri. Nessuna implementazione o variazione dati/metriche.
+
+TSK-0067, copertura 2026-10-05: approvate tabella per categoria con ricerca/originali/AI approvate/proposte separate e filtri combinabili per lacune, ricerca incompleta e AI pendenti. Prossimo punto: scheda immagini, galleria e zoom. Metriche aggregate ancora da discutere; nessuna implementazione.
+
+TSK-0067, scheda immagini 2026-10-05: approvate galleria adottata, componenti/lati affiancati, proposte AI separate, storico chiuso, zoom e dettagli di provenienza. Tabella copertura collegata ai filtri galleria. Prossimo punto: principale/fallback e miniature liste. Nessuna implementazione.
+
+TSK-0067, principale 2026-10-05: approvati principale esplicita e fallback provvisorio Copertina/Setup/segnaposto, originali prioritari entro categoria, ordine stabile e miniature nascondibili. File principale mancante segnalato senza perdere la scelta. Prossimo punto: cronologia validazione AI e stato corrente. Implementazione/metriche invariate.
+
+TSK-0067, AI e prerequisito 2026-10-05: approvate valutazione AI e uso corrente distinti, con decisioni storicizzate. L'utente richiede completamento di un task IMG contest 2025 prima dell'implementazione APP; contest/ID da collegare quando noti. Brainstorming continua, poi riesame dei manifest reali e piano prima del codice. Prossimo punto: file/formati e compatibilità Libreria. Nessuna implementazione.
+
+TSK-0067, file 2026-10-05: approvati accesso locale per ID con protezioni Libreria, PNG/JPEG/WebP, altri formati catalogati con limite anteprima esplicito, miniature rigenerabili/caricate progressivamente e originali aperti per zoom. Prossimo punto: metriche ricerca e copertura. Prerequisito IMG 2025 invariato; nessun codice/dato operativo modificato.
+
+TSK-0067, metriche 2026-10-05: utente indica denominatore entry controllate, comprese quelle senza immagini. Distinzione lavoro/copertura accettata; numeratore e significato di controllate da chiarire prima di deliberare la formula. Nessuna metrica operativa cambiata; implementazione subordinata a IMG 2025.
+
+TSK-0067, chiarimento metriche 2026-10-05: controllate = ricerca conclusa. Concordata una sola barra/torta immagini; da provare tre segmenti (conclusa con immagini adottate, conclusa senza, non conclusa), percentuale principale concluse/totale entry. Tooltip distingue originali/AI approvate, pendenti escluse. Prossimo punto: migrazione/compatibilità e piano incrementi. Nessuna implementazione prima del completamento IMG 2025.
+
+TSK-0067, migrazione 2026-10-05: approvata estensione additiva con collegamenti al catalogo/Libreria, nessuna conversione automatica PNG, importazione lotto reale su copia e compatibilità senza dati IMG. Proposta tre incrementi da confermare prima del riepilogo piano; implementazione attende IMG 2025.
+
+TSK-0067, brainstorming concluso 2026-10-05: approvati tre incrementi (dati/importazione, scheda/file, liste/filtri/metriche), riepilogo decisioni nel TASK.md. APP resta aperto, nessuna implementazione; prossimo passo completare IMG contest 2025 e riesaminare manifest reale prima del primo incremento. Contest/ID del prerequisito ancora da comunicare. Generazione AI UI esclusa dalla fase iniziale.

@@ -5,6 +5,48 @@
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata.",
   "tasks": [
     {
+      "id": "TSK-0067",
+      "original_title": "2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi",
+      "display_title": "2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/TASK.md",
+      "category": "APP",
+      "secondary_categories": [
+        "DAT"
+      ],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "in_corso",
+      "status_basis": "Richiesta utente: brainstorming progressivo prima dell'implementazione; apertura e analisi locale il 2026-10-05.",
+      "coverage": {
+        "phase": "brainstorming concluso; piano tre incrementi approvato",
+        "implementation": "non iniziata; attende completamento task IMG contest 2025",
+        "implementation_prerequisite": {
+          "task_id": null,
+          "contest": null,
+          "year": 2025,
+          "basis": "Vincolo esplicito utente: completare prima il task di acquisizione immagini del contest 2025; identità da collegare quando comunicata."
+        }
+      },
+      "dependencies": [
+        "TSK-0065"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c8a-b153-7fb3-8242-cebea9edb44a"
+      ],
+      "next_action": "Brainstorming concluso e tre incrementi approvati. Attendere completamento IMG contest 2025, collegarne ID e riesaminare manifest prima di iniziare incremento dati/importatore.",
+      "git": {
+        "checked_at": "2026-10-05",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Documenti locali su main; modifiche pregresse e ahead 1 sul riferimento locale. Remoto non verificato."
+      },
+      "last_verified_at": "2026-10-05"
+    },
+    {
       "id": "TSK-0001",
       "original_title": "2026-09-04 - monitoraggio contest BGG",
       "opened_at": "2026-09-04",
