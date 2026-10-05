@@ -1,0 +1,1896 @@
+{
+  "task_id": "TSK-0055",
+  "contest_id": 20,
+  "checked_at": "2026-10-05",
+  "coverage_scope": "first_post_only",
+  "method": "42 original first posts rendered in CUA, fully read; authors and timestamps observed. Selected verbatim evidence and exact declared URL forms retained; no external hosts or files opened.",
+  "counts": {
+    "entries": 42,
+    "complete": 42,
+    "resource_entries": 38,
+    "resources": 53,
+    "resource_mentions": 53,
+    "requirement_entries": 37,
+    "requirements": 54
+  },
+  "entries": [
+    {
+      "entry_id": 732,
+      "game_id": 732,
+      "position": 1,
+      "title": "Swamp",
+      "source_url": "https://boardgamegeek.com/thread/3569304/article/46550628#46550628",
+      "wip_url": "https://boardgamegeek.com/thread/3569304",
+      "author_raw": "quantumpotato",
+      "post_timestamp_raw": "1 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1b_qAVxnY8amahzmgwYy4db-67nL7yt8G_GtZALYzYto/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/1b_qAVxnY8amahzmgwYy4db-6...",
+          "content_role": "rules",
+          "context_raw": "Rules Document (1 page)",
+          "version_raw": "Last Updated: September 5, 2025",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "Shuffle the deck with all 52 cards, excluding 2 Jokers.",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Shuffle the deck with all 52 cards, excluding 2 Jokers."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 733,
+      "game_id": 733,
+      "position": 2,
+      "title": "Candles & Cannons",
+      "source_url": "https://boardgamegeek.com/thread/3569308/article/46550651#46550651",
+      "wip_url": "https://boardgamegeek.com/thread/3569308",
+      "author_raw": "quantumpotato",
+      "post_timestamp_raw": "1 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1inq5w0K2rDOsTYtN_L6u-1MjRpcCb8Xn5G_jidC_018/edit",
+          "label_raw": "https://docs.google.com/document/d/1inq5w0K2rDOsTYtN_L6u-1Mj...",
+          "content_role": "rules",
+          "context_raw": "Rules Link",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Shore (quadri e picche)",
+          "name_raw": "Shuffle Candles (Diamonds ) & Cannons (Spades ) to form the Shore deck.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Shuffle Candles (Diamonds ) & Cannons (Spades ) to form the Shore deck."
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Ocean (cuori e fiori)",
+          "name_raw": "Shuffle Treasure Ships (Hearts ) and Pirates (Clubs ) to form the Ocean deck.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Shuffle Treasure Ships (Hearts ) and Pirates (Clubs ) to form the Ocean deck."
+        }
+      ],
+      "notes": "Due mazzi Shore/Ocean costituiti dai semi dichiarati; nessuna quantità standard dedotta."
+    },
+    {
+      "entry_id": 734,
+      "game_id": 734,
+      "position": 3,
+      "title": "Edgar Shovelhands",
+      "source_url": "https://boardgamegeek.com/thread/3569329/article/46550763#46550763",
+      "wip_url": "https://boardgamegeek.com/thread/3569329",
+      "author_raw": "woffpack",
+      "post_timestamp_raw": "1 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1JkQv-oq5yGgNYRvKQZoJmJ17TIGDITsCSXfW3BZoTPE/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/1JkQv-oq5yGgNYRvKQZoJmJ17...",
+          "content_role": "rules",
+          "context_raw": "RULES Google doc",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://youtu.be/tjpJp0p6jYI",
+          "label_raw": "https://youtu.be/tjpJp0p6jYI",
+          "content_role": "video",
+          "context_raw": "Overview Video link",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://youtu.be/2Y8OH0p7u7Q",
+          "label_raw": "https://youtu.be/2Y8OH0p7u7Q",
+          "content_role": "video",
+          "context_raw": "Full Playthrough Video link",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Required Components: Standard deck of playing cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Standard deck of playing cards"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 735,
+      "game_id": 735,
+      "position": 4,
+      "title": "Polarité",
+      "source_url": "https://boardgamegeek.com/thread/3569377/article/46551084#46551084",
+      "wip_url": "https://boardgamegeek.com/thread/3569377",
+      "author_raw": "vbugica",
+      "post_timestamp_raw": "1 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1Ss6fmEGr3566Ig5WrOy571bzkhc2VyMxoKcSj79BeD8",
+          "label_raw": "Read here",
+          "content_role": "rules",
+          "context_raw": "Full Rules & Tutorial",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/drive/u/3/folders/1u2WtJOxwPM56a9J4ncpwR4E7NJj_ZErb",
+          "label_raw": "Print here",
+          "content_role": "rules",
+          "context_raw": "Quick Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fo/2bsea4oa1x383qaz91kwg/ALyieMeywF0ju1mTH4bZ1rw?rlkey=lrd81lcttrokm8h1gh9berxlx&st=3fzgwzqi&e=1&dl=0",
+          "label_raw": "여기를 클릭하세요",
+          "content_role": "rules",
+          "context_raw": "한국어 규칙: 여기를 클릭하세요",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Components: 52 card deck and enough table space for a 4x4 grid.",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: 52 card deck and enough table space for a 4x4 grid."
+        },
+        {
+          "material_kind": "play_space",
+          "name_normalized": "spazio sul tavolo",
+          "name_raw": "Components: 52 card deck and enough table space for a 4x4 grid.",
+          "quantity_raw": "griglia 4x4",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Components: 52 card deck and enough table space for a 4x4 grid."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 736,
+      "game_id": 736,
+      "position": 5,
+      "title": "River Black",
+      "source_url": "https://boardgamegeek.com/thread/3569557/article/46552264#46552264",
+      "wip_url": "https://boardgamegeek.com/thread/3569557",
+      "author_raw": "LetsGameMore",
+      "post_timestamp_raw": "2 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1-KyOTzrXpZehx7R_eMAmh-9VCyEDxTIPjDN0CUmS-bs/edit?usp=sharing",
+          "label_raw": "River Black Rules",
+          "content_role": "rules",
+          "context_raw": "River Black Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [],
+      "notes": "Solo link alle regole: nessun requisito esplicito."
+    },
+    {
+      "entry_id": 737,
+      "game_id": 737,
+      "position": 6,
+      "title": "Hocken",
+      "source_url": "https://boardgamegeek.com/thread/3569651/article/46552897#46552897",
+      "wip_url": "https://boardgamegeek.com/thread/3569651",
+      "author_raw": "XendoBreckett",
+      "post_timestamp_raw": "2 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1L-Uwv9pBr5sKNronJ7KY0kO1ULrUi2uG/view?usp=sharing",
+          "label_raw": "[Hocken rules]",
+          "content_role": "rules",
+          "context_raw": "[Hocken rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "score_tracker",
+          "name_normalized": "strumento per tenere il punteggio",
+          "name_raw": "You will likely need a way to keep score between rounds in a smaller player count game, but I found I was able to play it all in a single round in my 6-player simulated game.",
+          "quantity_raw": null,
+          "requirement_level": "unclear",
+          "supply_mode": "unspecified",
+          "context_raw": "You will likely need a way to keep score between rounds in a smaller player count game, but I found I was able to play it all in a single round in my 6-player simulated game."
+        }
+      ],
+      "notes": "Metodo di conteggio richiesto condizionalmente per piccoli player count; mezzo non specificato."
+    },
+    {
+      "entry_id": 738,
+      "game_id": 738,
+      "position": 7,
+      "title": "Divide",
+      "source_url": "https://boardgamegeek.com/thread/3569799/article/46554090#46554090",
+      "wip_url": "https://boardgamegeek.com/thread/3569799",
+      "author_raw": "davidmcdougal",
+      "post_timestamp_raw": "2 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1thmkgpLcRmNKOgr-R14ECtB1a9d8duXG3PhhnVWdhVE/edit?usp=sharing",
+          "label_raw": "V1 Living Rulebook",
+          "content_role": "rules",
+          "context_raw": "V1 Living Rulebook",
+          "version_raw": "V1",
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1Y9mkFuSlDWGUcqKJ8UbJbOM80r-Z4i6A7Xd7Xh3qyGM/edit?usp=sharing",
+          "label_raw": "V2 Living Rulebook",
+          "content_role": "rules",
+          "context_raw": "V2 Living Rulebook",
+          "version_raw": "V2",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "Use a standard 52-card deck (no Jokers)",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Use a standard 52-card deck (no Jokers)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "cut marker per giocatore",
+          "name_raw": "Give each player a cut marker card (token, chit, or placeholder to mark a pile)",
+          "quantity_raw": "1 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Give each player a cut marker card (token, chit, or placeholder to mark a pile)"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 739,
+      "game_id": 739,
+      "position": 8,
+      "title": "Beanstalks",
+      "source_url": "https://boardgamegeek.com/thread/3570031/article/46556052#46556052",
+      "wip_url": "https://boardgamegeek.com/thread/3570031",
+      "author_raw": "mfmw",
+      "post_timestamp_raw": "2 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1D1ukrpzy71AAWczZF-CA4BzcPc6hmuZUo1VucMg64Lo/edit?tab=t.0",
+          "label_raw": "Beanstalks",
+          "content_role": "rules",
+          "context_raw": "Rules V4",
+          "version_raw": "V4",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Components: Traditional deck of playing cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: Traditional deck of playing cards"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 740,
+      "game_id": 740,
+      "position": 9,
+      "title": "Rules of Engagement",
+      "source_url": "https://boardgamegeek.com/thread/3571024/article/46564024#46564024",
+      "wip_url": "https://boardgamegeek.com/thread/3571024",
+      "author_raw": "BGWBarry",
+      "post_timestamp_raw": "4 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1uf-xCAnACizWIgD800YhlI-T4OfFnjS1HgiuYCeXhDQ/edit?usp=sharing",
+          "label_raw": "V1.0 Complete",
+          "content_role": "rules",
+          "context_raw": "RULES",
+          "version_raw": "V1.0",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard con joker",
+          "name_raw": "Required Components: Traditional deck of playing cards with jokers",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Traditional deck of playing cards with jokers"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 741,
+      "game_id": 741,
+      "position": 10,
+      "title": "Safes",
+      "source_url": "https://boardgamegeek.com/thread/3570149/article/46557041#46557041",
+      "wip_url": "https://boardgamegeek.com/thread/3570149",
+      "author_raw": "Season6028",
+      "post_timestamp_raw": "3 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "One standard deck of 52 cards",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "One standard deck of 52 cards"
+        }
+      ],
+      "notes": "Regole nel primo post; nessun URL pertinente."
+    },
+    {
+      "entry_id": 742,
+      "game_id": 742,
+      "position": 11,
+      "title": "Winner Take All!",
+      "source_url": "https://boardgamegeek.com/thread/3573345/article/46582927#46582927",
+      "wip_url": "https://boardgamegeek.com/thread/3573345",
+      "author_raw": "thecheckdeck",
+      "post_timestamp_raw": "8 set 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "mazzo separato in carte rosse e nere",
+          "name_raw": "Separate the deck into red cards and black cards.\nFrom the red deck, remove one 2 and one King.\nFrom the black deck, remove one 2 and one Queen.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Separate the deck into red cards and black cards.\nFrom the red deck, remove one 2 and one King.\nFrom the black deck, remove one 2 and one Queen."
+        }
+      ],
+      "notes": "Regole nel primo post; deck e rimozioni descritte ma nessuna distinta standard esplicita."
+    },
+    {
+      "entry_id": 743,
+      "game_id": 743,
+      "position": 12,
+      "title": "Alchemy",
+      "source_url": "https://boardgamegeek.com/thread/3574744/article/46595526#46595526",
+      "wip_url": "https://boardgamegeek.com/thread/3574744",
+      "author_raw": "mfmw",
+      "post_timestamp_raw": "11 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1DwzXzS4jFXFktjBk8ocC5XJJDcBGvTU7loRHOnMXUuY/edit?tab=t.0",
+          "label_raw": "Alchemy",
+          "content_role": "rules",
+          "context_raw": "Rules (V4)",
+          "version_raw": "V4",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress"
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "penna e carta",
+          "name_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "household",
+          "context_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress"
+        },
+        {
+          "material_kind": "digital_device",
+          "name_normalized": "dispositivo per tracciare progressi",
+          "name_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "digital_device",
+          "context_raw": "Components: Traditional deck of playing cards, pen and paper/device to track progress"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 744,
+      "game_id": 744,
+      "position": 13,
+      "title": "The Four Musketeers",
+      "source_url": "https://boardgamegeek.com/thread/3575515/article/46602615#46602615",
+      "wip_url": "https://boardgamegeek.com/thread/3575515",
+      "author_raw": "KintsugiGames",
+      "post_timestamp_raw": "13 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://buymeacoffee.com/kintsugigames/e/532280",
+          "label_raw": "Rules available here",
+          "content_role": "rules",
+          "context_raw": "Rules available here",
+          "version_raw": null,
+          "host": "buymeacoffee.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Components: Traditional deck of regular playing cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: Traditional deck of regular playing cards"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 745,
+      "game_id": 745,
+      "position": 14,
+      "title": "Trick Tac Foe",
+      "source_url": "https://boardgamegeek.com/thread/3576027/article/46606327#46606327",
+      "wip_url": "https://boardgamegeek.com/thread/3576027",
+      "author_raw": "davidmcdougal",
+      "post_timestamp_raw": "14 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1Qdv-TOTUEjOVO_nJFp9d_wHr0kA_P3njClCsTVcTUaM/edit?usp=sharing",
+          "label_raw": "2 Player",
+          "content_role": "rules",
+          "context_raw": "Google Docs Living Rulebooks: v1.3 2 Player",
+          "version_raw": "v1.3",
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1scvGCsb-X1u9ewv2lmbW57WuiUucXN9wGoiBcfahFCw/edit?usp=sharing",
+          "label_raw": "4 Player",
+          "content_role": "rules",
+          "context_raw": "Google Docs Living Rulebooks: v0.6 4 Player",
+          "version_raw": "v0.6",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "1 standard 52-card deck (no Jokers)",
+          "quantity_raw": "1 / 52 carte",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 standard 52-card deck (no Jokers)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini doppia faccia",
+          "name_raw": "9 double-sided tokens (Heads/Tails)",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "9 double-sided tokens (Heads/Tails)"
+        },
+        {
+          "material_kind": "play_space",
+          "name_normalized": "griglia numerata",
+          "name_raw": "Optional: 9-space grid (numbered 1–9)",
+          "quantity_raw": "9 spazi",
+          "requirement_level": "optional",
+          "supply_mode": "unspecified",
+          "context_raw": "Optional: 9-space grid (numbered 1–9)"
+        },
+        {
+          "material_kind": "player_aid",
+          "name_normalized": "regole e aiuto giocatore stampati",
+          "name_raw": "Optional: printed rules and player aid",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "Optional: printed rules and player aid"
+        }
+      ],
+      "notes": "Etichetta contest 54 Card punta al Traditional Deck: URL originale preservato. Grid e player aid opzionali."
+    },
+    {
+      "entry_id": 746,
+      "game_id": 746,
+      "position": 15,
+      "title": "S.O.L. SIX ORBIT LOCKDOWN",
+      "source_url": "https://boardgamegeek.com/thread/3576314/article/46608335#46608335",
+      "wip_url": "https://boardgamegeek.com/thread/3576314",
+      "author_raw": "alexserpa",
+      "post_timestamp_raw": "14 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ShbRBx87YpaahkeyVeKB4sjjFfJkviBA?usp=sharing",
+          "label_raw": "here",
+          "content_role": "rules",
+          "context_raw": "Rules Available here v1.4 (A4 and Letter sizes); 2-Player rule book is in a separate file within the PnP folder",
+          "version_raw": "v1.4",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/7gr9rz",
+          "label_raw": "https://playingcards.io/7gr9rz",
+          "content_role": "online_play",
+          "context_raw": "Online implementation - COMPLETED",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard con joker",
+          "name_raw": "Required Components: Traditional deck of playing cards with jokers.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Traditional deck of playing cards with jokers."
+        }
+      ],
+      "notes": "Manuali solo/2p nella stessa cartella; differenze PCIO dichiarate. Video annunciato senza URL non trattato come disponibile."
+    },
+    {
+      "entry_id": 747,
+      "game_id": 747,
+      "position": 16,
+      "title": "Flock Rocks: Sheep vs. Wolves",
+      "source_url": "https://boardgamegeek.com/thread/3576804/article/46612051#46612051",
+      "wip_url": "https://boardgamegeek.com/thread/3576804",
+      "author_raw": "rimadeta",
+      "post_timestamp_raw": "15 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1vNnrbKwBIWja1njaWq2R_unjeelLzt6q/view?usp=drive_link",
+          "label_raw": "Rulebook",
+          "content_role": "rules",
+          "context_raw": "Rulebook",
+          "version_raw": "V1.0 - updated 09-15-25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [],
+      "notes": "Nessun requisito materiale esplicito nel primo post."
+    },
+    {
+      "entry_id": 748,
+      "game_id": 748,
+      "position": 17,
+      "title": "Court & Crown",
+      "source_url": "https://boardgamegeek.com/thread/3576802/article/46612031#46612031",
+      "wip_url": "https://boardgamegeek.com/thread/3576802",
+      "author_raw": "Rexigent",
+      "post_timestamp_raw": "15 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/19BrxfnzU8p5EcFX9C-llE3LPIq1-PEHyoAkAHC7Py-o/edit?usp=drivesdk",
+          "label_raw": "Court & Crown Rules",
+          "content_role": "rules",
+          "context_raw": "view and download the rulebook in English",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://screentop.gg/@DustinGrayGames/courtandcrown",
+          "label_raw": "Play Court & Crown Online",
+          "content_role": "online_play",
+          "context_raw": "Play Court & Crown Online",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "1 Traditional Deck of Cards",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 Traditional Deck of Cards"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 749,
+      "game_id": 749,
+      "position": 18,
+      "title": "Undergrowth",
+      "source_url": "https://boardgamegeek.com/thread/3577980/article/46622325#46622325",
+      "wip_url": "https://boardgamegeek.com/thread/3577980",
+      "author_raw": "goodkinghenry",
+      "post_timestamp_raw": "17 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1jnTGF_hzJd0QLqRE0iq_ztBtCY02C1gA6AD_N2f5Cmw/edit?usp=sharing",
+          "label_raw": "Undergrowth Rules",
+          "content_role": "rules",
+          "context_raw": "Undergrowth Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Plays in 10-15 minutes for a single player using only a traditional deck of 52 cards, and a handful of generic tokens.",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Plays in 10-15 minutes for a single player using only a traditional deck of 52 cards, and a handful of generic tokens."
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini generici",
+          "name_raw": "Plays in 10-15 minutes for a single player using only a traditional deck of 52 cards, and a handful of generic tokens.",
+          "quantity_raw": "una manciata",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Plays in 10-15 minutes for a single player using only a traditional deck of 52 cards, and a handful of generic tokens."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 750,
+      "game_id": 750,
+      "position": 19,
+      "title": "Share Tactics",
+      "source_url": "https://boardgamegeek.com/thread/3578872/article/46630011#46630011",
+      "wip_url": "https://boardgamegeek.com/thread/3578872",
+      "author_raw": "weekendworrier",
+      "post_timestamp_raw": "19 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/11WxAB63oGKIjbXcjNqLZaC18W_kdjVzOq9fDYLAAVHE/edit?usp=sharing",
+          "label_raw": "Downloadable Rules (Google Drive)",
+          "content_role": "rules",
+          "context_raw": "Downloadable Rules (Google Drive)",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "4-5 players: Use a full 52-card deck (no Jokers)\n3 players: Remove one entire suit (e.g., Clubs) and Jokers",
+          "quantity_raw": "52 (4-5p); un seme rimosso (3p)",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "4-5 players: Use a full 52-card deck (no Jokers)\n3 players: Remove one entire suit (e.g., Clubs) and Jokers"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 751,
+      "game_id": 751,
+      "position": 20,
+      "title": "Against The Clock",
+      "source_url": "https://boardgamegeek.com/thread/3579229/article/46633218#46633218",
+      "wip_url": "https://boardgamegeek.com/thread/3579229",
+      "author_raw": "Kikwik",
+      "post_timestamp_raw": "20 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/16S-VJCYXt2Fzrg0mv8EsRJECJwiabtgb/view?usp=sharing",
+          "label_raw": "Rules 1.14",
+          "content_role": "rules",
+          "context_raw": "Rules 1.14",
+          "version_raw": "v1.14 - 2026/09/08",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "marker",
+          "name_normalized": "joker / contatori danno",
+          "name_raw": ". 2026/09/08 - v1.14 : Added a precision about the Jokers/damage counters being carry over through all stages, not being reseted. Thanks Seong Hun Jeong !",
+          "quantity_raw": null,
+          "requirement_level": "unclear",
+          "supply_mode": "unspecified",
+          "context_raw": ". 2026/09/08 - v1.14 : Added a precision about the Jokers/damage counters being carry over through all stages, not being reseted. Thanks Seong Hun Jeong !"
+        }
+      ],
+      "notes": "v1.14 aggiornata nel 2026; requisito contatori dal changelog, alternativa e quantità non chiarite. Nessun mazzo quantitativo inferito."
+    },
+    {
+      "entry_id": 752,
+      "game_id": 752,
+      "position": 21,
+      "title": "Hedgerow",
+      "source_url": "https://boardgamegeek.com/thread/3579886/article/46637677#46637677",
+      "wip_url": "https://boardgamegeek.com/thread/3579886",
+      "author_raw": "goodkinghenry",
+      "post_timestamp_raw": "21 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1iN80s1JVcop7_vi9sfXxv05Z5O9SdVUIHLm-6wS2RzM/edit?usp=sharing",
+          "label_raw": "Hedgerow Rules",
+          "content_role": "rules",
+          "context_raw": "Hedgerow Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Hedgerow is a game for 1-2 players, where players create lush hedges teeming with life in a head to head drafting and tableau building contest using only a standard deck of cards. Plays in 20 minutes.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Hedgerow is a game for 1-2 players, where players create lush hedges teeming with life in a head to head drafting and tableau building contest using only a standard deck of cards. Plays in 20 minutes."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 753,
+      "game_id": 753,
+      "position": 22,
+      "title": "The House Always Wins",
+      "source_url": "https://boardgamegeek.com/thread/3581612/article/46652569#46652569",
+      "wip_url": "https://boardgamegeek.com/thread/3581612",
+      "author_raw": "rimadeta",
+      "post_timestamp_raw": "24 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1ueoO4fiWK0VTLIfC7DxrUI_5Fp-6bp1_/view?usp=drive_link",
+          "label_raw": "Rulebook",
+          "content_role": "rules",
+          "context_raw": "Rulebook",
+          "version_raw": "V3.0 - updated 10-11-2025",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [],
+      "notes": "Nessun requisito esplicito; data versione 10-11-2025 preservata senza conversione ambigua."
+    },
+    {
+      "entry_id": 754,
+      "game_id": 754,
+      "position": 23,
+      "title": "Shadow Solitaire: Gambit for the City",
+      "source_url": "https://boardgamegeek.com/thread/3581665/article/46653063#46653063",
+      "wip_url": "https://boardgamegeek.com/thread/3581665",
+      "author_raw": "woffpack",
+      "post_timestamp_raw": "24 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1JitgJTgVYDcvJvM1niSdaSM642Re_xnUDcQ6uesKD-8/edit?tab=t",
+          "label_raw": "https://docs.google.com/document/d/1JitgJTgVYDcvJvM1niSdaSM6...",
+          "content_role": "rules",
+          "context_raw": "RULES Google doc",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://youtu.be/6cGIrlBZBQ4",
+          "label_raw": "https://youtu.be/6cGIrlBZBQ4",
+          "content_role": "video",
+          "context_raw": "Overview Video link",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://youtu.be/fOje3R-jAdA",
+          "label_raw": "https://youtu.be/fOje3R-jAdA",
+          "content_role": "video",
+          "context_raw": "Full Playthrough Video link",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Required Components: Standard deck of playing cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Standard deck of playing cards"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 755,
+      "game_id": 755,
+      "position": 24,
+      "title": "Olm",
+      "source_url": "https://boardgamegeek.com/thread/3583037/article/46664510#46664510",
+      "wip_url": "https://boardgamegeek.com/thread/3583037",
+      "author_raw": "unlessgames",
+      "post_timestamp_raw": "27 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://deck.unlessgames.com/olm",
+          "label_raw": "Read the rulebook on our site",
+          "content_role": "rules",
+          "context_raw": "Read the rulebook on our site",
+          "version_raw": null,
+          "host": "deck.unlessgames.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "This is a TCG-like combat game for a standard deck of playing cards and two players.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "This is a TCG-like combat game for a standard deck of playing cards and two players."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 756,
+      "game_id": 756,
+      "position": 25,
+      "title": "Jack's Dream",
+      "source_url": "https://boardgamegeek.com/thread/3583045/article/46664572#46664572",
+      "wip_url": "https://boardgamegeek.com/thread/3583045",
+      "author_raw": "unlessgames",
+      "post_timestamp_raw": "27 set 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://deck.unlessgames.com/jacks-dream/",
+          "label_raw": "Read the rulebook on our site",
+          "content_role": "rules",
+          "context_raw": "Read the rulebook on our site",
+          "version_raw": null,
+          "host": "deck.unlessgames.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [],
+      "notes": "Nessun inventario esplicito: carte e cuscini della descrizione non trasformati in distinta."
+    },
+    {
+      "entry_id": 757,
+      "game_id": 757,
+      "position": 26,
+      "title": "Council of Dragons",
+      "source_url": "https://boardgamegeek.com/thread/3583048/article/46664576#46664576",
+      "wip_url": "https://boardgamegeek.com/thread/3583048",
+      "author_raw": "LetsGameMore",
+      "post_timestamp_raw": "27 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1WMM_222yQQPz7RfGvYyfZVKFCSXXUYFcpz1aNl_uwig/edit?usp=drivesdk",
+          "label_raw": "Council of Dragons rules v0.1",
+          "content_role": "rules",
+          "context_raw": "Council of Dragons rules v0.1",
+          "version_raw": "v0.1",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [],
+      "notes": "Nessun requisito materiale esplicito."
+    },
+    {
+      "entry_id": 758,
+      "game_id": 758,
+      "position": 27,
+      "title": "FIRE",
+      "source_url": "https://boardgamegeek.com/thread/3586578/article/46692202#46692202",
+      "wip_url": "https://boardgamegeek.com/thread/3586578",
+      "author_raw": "akimakesthings",
+      "post_timestamp_raw": "3 ott 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1i9tsLjJrw_bwrknysslihYJxUcd13od0zPR4GPJhl20/edit?usp=sharing",
+          "label_raw": "FIRE WIP Rulesheet v1.2",
+          "content_role": "rules",
+          "context_raw": "FIRE WIP Rulesheet v1.2",
+          "version_raw": "v1.2",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "The single-player and two-player co-op modes use only the traditional deck of playing cards. For 3+ players, the addition of two D4 dice is required.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "The single-player and two-player co-op modes use only the traditional deck of playing cards. For 3+ players, the addition of two D4 dice is required."
+        },
+        {
+          "material_kind": "randomizer",
+          "name_normalized": "dadi d4",
+          "name_raw": "For 3+ players, the addition of two D4 dice is required.",
+          "quantity_raw": "2, per 3+ giocatori",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "For 3+ players, the addition of two D4 dice is required."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 759,
+      "game_id": 759,
+      "position": 28,
+      "title": "The Four Winds",
+      "source_url": "https://boardgamegeek.com/thread/3595594/article/46761450#46761450",
+      "wip_url": "https://boardgamegeek.com/thread/3595594",
+      "author_raw": "burismiga",
+      "post_timestamp_raw": "20 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://boardgamegeek.com/image/9261429/burismiga",
+          "label_raw": "Rule Book",
+          "content_role": "rules",
+          "context_raw": "The Four Winds Rules: Rule Book",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "image"
+        },
+        {
+          "url": "https://boardgamegeek.com/image/9261429",
+          "label_raw": "",
+          "content_role": "rules",
+          "context_raw": "Immagine del Rule Book 9261429 ripetuta nel primo post",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "image"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino (moneta, meeple o altro)",
+          "name_raw": "Requires a small token to play (can by anything, a coin, meeple, ect)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Requires a small token to play (can by anything, a coin, meeple, ect)"
+        },
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "The entire game can be played with a standard deck of cards, where the Aces, 2s, and 3s of every suit create a map.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "The entire game can be played with a standard deck of cards, where the Aces, 2s, and 3s of every suit create a map."
+        }
+      ],
+      "notes": "Regole dichiarate in immagine BGG; due forme URL dello stesso ID immagine, non due manuali."
+    },
+    {
+      "entry_id": 760,
+      "game_id": 760,
+      "position": 29,
+      "title": "Relic Solitaire",
+      "source_url": "https://boardgamegeek.com/thread/3600542/article/46802831#46802831",
+      "wip_url": "https://boardgamegeek.com/thread/3600542",
+      "author_raw": "XendoBreckett",
+      "post_timestamp_raw": "28 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard con joker",
+          "name_raw": "Preparation: From a 54 card deck (Jokers in), separate out Ace (1), 2-7 of  and shuffle these. Form a row from the top 7 cards.",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Preparation: From a 54 card deck (Jokers in), separate out Ace (1), 2-7 of  and shuffle these. Form a row from the top 7 cards."
+        }
+      ],
+      "notes": "Regole integrate nel post; nessun URL di materiali."
+    },
+    {
+      "entry_id": 761,
+      "game_id": 761,
+      "position": 30,
+      "title": "Hightower",
+      "source_url": "https://boardgamegeek.com/thread/3573372/article/46583159#46583159",
+      "wip_url": "https://boardgamegeek.com/thread/3573372",
+      "author_raw": "Tottojer",
+      "post_timestamp_raw": "8 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Required Components: Traditional deck of playing cards.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Traditional deck of playing cards."
+        }
+      ],
+      "notes": "Regole integrate nel post; immagini di esempi escluse."
+    },
+    {
+      "entry_id": 762,
+      "game_id": 762,
+      "position": 31,
+      "title": "Cardello",
+      "source_url": "https://boardgamegeek.com/thread/3610656/article/46884172#46884172",
+      "wip_url": "https://boardgamegeek.com/thread/3610656",
+      "author_raw": "Mystael",
+      "post_timestamp_raw": "13 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1ww-AEXKouZ-IkQTLxyVjD4kVc2hJspgukwO1k31Y8hw/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/1ww-AEXKouZ-IkQTLxyVjD4kV...",
+          "content_role": "rules",
+          "context_raw": "Visit the living Google Document here",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1DjkIijRKQ2HpWyjeFxt_k0CCZ2oZ6LMB?usp=drive_link",
+          "label_raw": "https://drive.google.com/drive/folders/1DjkIijRKQ2HpWyjeFxt_...",
+          "content_role": "rules",
+          "context_raw": "Download the PDF directly",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://pocketmod.jocho.sk/",
+          "label_raw": "https://pocketmod.jocho.sk",
+          "content_role": "other",
+          "context_raw": "Use a pocketmod PDF converter to print the game",
+          "version_raw": null,
+          "host": "pocketmod.jocho.sk",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo di carte",
+          "name_raw": "All that with just single deck of cards.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "All that with just single deck of cards."
+        }
+      ],
+      "notes": "Pocketmod è strumento di stampa dichiarato, distinto dal PDF del gioco."
+    },
+    {
+      "entry_id": 763,
+      "game_id": 763,
+      "position": 32,
+      "title": "Feuda Rivalia",
+      "source_url": "https://boardgamegeek.com/thread/3612376/article/46896468#46896468",
+      "wip_url": "https://boardgamegeek.com/thread/3612376",
+      "author_raw": "elastic_kevin",
+      "post_timestamp_raw": "16 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1dw6XuKekmgxBnus5gWzcU0HTsPvtkMwT/view?usp=sharing",
+          "label_raw": "https://drive.google.com/file/d/1dw6XuKekmgxBnus5gWzcU0HTsPv...",
+          "content_role": "rules",
+          "context_raw": "Rules (.pdf)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "carte standard",
+          "name_raw": "Feuda Rivalia uses standard playing cards to represent the influence of aspiring Lords on rival fiefs operating a feudal economy.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Feuda Rivalia uses standard playing cards to represent the influence of aspiring Lords on rival fiefs operating a feudal economy."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 764,
+      "game_id": 764,
+      "position": 33,
+      "title": "Train Trekker",
+      "source_url": "https://boardgamegeek.com/thread/3613703/article/46907368#46907368",
+      "wip_url": "https://boardgamegeek.com/thread/3613703",
+      "author_raw": "CardGameAcolyte",
+      "post_timestamp_raw": "18 nov 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1l07oUkL_YlABTuZMHuDsoaU_14a-0wfq3yaRYOiwOtA/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/1l07oUkL_YlABTuZMHuDsoaU_...",
+          "content_role": "rules",
+          "context_raw": "The current rules are available here",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Components required: Just a standard deck of cards!",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components required: Just a standard deck of cards!"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 765,
+      "game_id": 765,
+      "position": 34,
+      "title": "Necromancer",
+      "source_url": "https://boardgamegeek.com/thread/3615564/article/46923265#46923265",
+      "wip_url": "https://boardgamegeek.com/thread/3615564",
+      "author_raw": "elmagnifico",
+      "post_timestamp_raw": "21 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1IldS4fl-w9TE51sKnNiMr0hOG_Y6dlD15hBgIz-fiY0/edit?usp=sharing",
+          "label_raw": "Necromancer v1.0 game rules (google doc)",
+          "content_role": "rules",
+          "context_raw": "Necromancer v1.0 game rules (google doc)",
+          "version_raw": "v1.0",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard con joker",
+          "name_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring",
+          "quantity_raw": "2 joker",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino reversibile (es. moneta)",
+          "name_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring"
+        },
+        {
+          "material_kind": "score_tracker",
+          "name_normalized": "blocco carta per punteggio",
+          "name_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Required Component: Standard deck of cards with two jokers, 1 flippable token (e.g. a coin), pad of paper for scoring"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 766,
+      "game_id": 766,
+      "position": 35,
+      "title": "Soluna",
+      "source_url": "https://boardgamegeek.com/thread/3615827/article/46925258#46925258",
+      "wip_url": "https://boardgamegeek.com/thread/3615827",
+      "author_raw": "jbleveque",
+      "post_timestamp_raw": "22 nov 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1ObbBUY16D7QLOFszxDibxyUg1GkfAK8pCTCa6-4vE1Y/edit?tab=t.0#heading=h.avtj39clj6ps",
+          "label_raw": "Rules in english are available here.",
+          "content_role": "rules",
+          "context_raw": "Rules in english are available here.",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1EJUXiez43nnpL9c151kfUVjuIaygAZ6_/view?usp=sharing",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "french version of this zine; A4 zine, with rules and game board on either side",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "carte da mazzo standard",
+          "name_raw": "Soluna is a single player divination game, using cards 1 to 6 from a traditional deck.",
+          "quantity_raw": "valori 1–6",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Soluna is a single player divination game, using cards 1 to 6 from a traditional deck."
+        },
+        {
+          "material_kind": "game_sheet",
+          "name_normalized": "zine regole e plancia",
+          "name_raw": "It was designed to be distributed as an A4 zine, with rules and game board on either side.",
+          "quantity_raw": "A4, due lati",
+          "requirement_level": "unclear",
+          "supply_mode": "printable",
+          "context_raw": "It was designed to be distributed as an A4 zine, with rules and game board on either side."
+        }
+      ],
+      "notes": "Nome Soluna dichiarato da cambiare ma nuovo nome non fornito. Zine francese con regole/plancia, inglese separato."
+    },
+    {
+      "entry_id": 767,
+      "game_id": 767,
+      "position": 36,
+      "title": "This Ol' Cowboy",
+      "source_url": "https://boardgamegeek.com/thread/3615878/article/46925658#46925658",
+      "wip_url": "https://boardgamegeek.com/thread/3615878",
+      "author_raw": "davrooom",
+      "post_timestamp_raw": "22 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://youtu.be/GHq87F2fS-s?si=8CmTC9JtL0FfHRsc",
+          "label_raw": "https://youtu.be/GHq87F2fS-s?si=8CmTC9JtL0FfHRsc",
+          "content_role": "audio",
+          "context_raw": "Soundtrack for this game[/url]",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo ordinario senza joker e figure",
+          "name_raw": "1. Grab an ordinary deck of cards\n2. Burn all jokers and face cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1. Grab an ordinary deck of cards\n2. Burn all jokers and face cards"
+        },
+        {
+          "material_kind": "score_tracker",
+          "name_normalized": "annotazione del punteggio",
+          "name_raw": "After you have filled all four hands, you will score and only the hand with the LOWEST score will count. Write that down.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "After you have filled all four hands, you will score and only the hand with the LOWEST score will count. Write that down."
+        }
+      ],
+      "notes": "Regole integrate; unico URL è soundtrack, non manuale. Annotazione del punteggio esplicita senza dedurre penna specifica."
+    },
+    {
+      "entry_id": 768,
+      "game_id": 768,
+      "position": 37,
+      "title": "Super Snap Showdown",
+      "source_url": "https://boardgamegeek.com/thread/3616651/article/46931100#46931100",
+      "wip_url": "https://boardgamegeek.com/thread/3616651",
+      "author_raw": "BGWBarry",
+      "post_timestamp_raw": "23 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1B3QWQxj5LqxcqboXT6KFFsZY-y5r7n9tHh21qQ0szHM/edit?usp=sharing",
+          "label_raw": "V1.1 Complete",
+          "content_role": "rules",
+          "context_raw": "RULES",
+          "version_raw": "V1.1",
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Required Components: Traditional deck of playing cards.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Required Components: Traditional deck of playing cards."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 769,
+      "game_id": 769,
+      "position": 38,
+      "title": "Grazer",
+      "source_url": "https://boardgamegeek.com/thread/3616770/article/46931979#46931979",
+      "wip_url": "https://boardgamegeek.com/thread/3616770",
+      "author_raw": "jbleveque",
+      "post_timestamp_raw": "23 nov 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1--hsiuMiRXz_5ldTNj1eM-KUF0j7sutl/view?usp=sharing",
+          "label_raw": "Rules available here",
+          "content_role": "rules",
+          "context_raw": "can be printed and folded as a trifold brochure",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "GRAZER is a solo arcade-inspired card game, fast-paced and playable with a standard deck of cards.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "GRAZER is a solo arcade-inspired card game, fast-paced and playable with a standard deck of cards."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 770,
+      "game_id": 770,
+      "position": 39,
+      "title": "Shadow Market",
+      "source_url": "https://boardgamegeek.com/thread/3617857/article/46941170#46941170",
+      "wip_url": "https://boardgamegeek.com/thread/3617857",
+      "author_raw": "dgrgich",
+      "post_timestamp_raw": "25 nov 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1jR9xLSN-S65eLNyUruicUuaIHRj6JcvY/view?usp=sharing",
+          "label_raw": "Shadow Market",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "Components: Standard 52-Card Deck (No Jokers)",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: Standard 52-Card Deck (No Jokers)"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 771,
+      "game_id": 771,
+      "position": 40,
+      "title": "Sniper",
+      "source_url": "https://boardgamegeek.com/thread/3618340/article/46945118#46945118",
+      "wip_url": "https://boardgamegeek.com/thread/3618340",
+      "author_raw": "wordbandar",
+      "post_timestamp_raw": "26 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1BPSwDvHFhRHDd-Q4Jeasj-3463rNEdGa8HsOfUldhl4/edit?usp=sharing",
+          "label_raw": "Sniper",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard senza joker",
+          "name_raw": "Components: Standard 52 card deck(no jokers).",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Components: Standard 52 card deck(no jokers)."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; nessun host/file aperto."
+    },
+    {
+      "entry_id": 772,
+      "game_id": 772,
+      "position": 41,
+      "title": "Arsenal: Duel of Kings",
+      "source_url": "https://boardgamegeek.com/thread/3620533/article/46961483#46961483",
+      "wip_url": "https://boardgamegeek.com/thread/3620533",
+      "author_raw": "Kyl_",
+      "post_timestamp_raw": "30 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1wTVNQV5DeMUOOdIO9G_PrRIolWXcLNQ_/view?usp=drive_link",
+          "label_raw": "Rulebook",
+          "content_role": "rules",
+          "context_raw": "Rulebook",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EiJVJbzIT1Y",
+          "label_raw": "Tutorial",
+          "content_role": "video",
+          "context_raw": "YouTube: Tutorial",
+          "version_raw": null,
+          "host": "www.youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Arsenal: Duel of Kings is a fast, tactical 1v1 card-battle game played with a standard deck of cards, where two rival kings face off using weapons, shields, potions, and clever strategy to bring the enemy’s HP from 20 to zero.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Arsenal: Duel of Kings is a fast, tactical 1v1 card-battle game played with a standard deck of cards, where two rival kings face off using weapons, shields, potions, and clever strategy to bring the enemy’s HP from 20 to zero."
+        },
+        {
+          "material_kind": "randomizer",
+          "name_normalized": "dadi d20",
+          "name_raw": "Additional Requirement (Optional): D20 Dice or Pencil & Paper for tracking player HP.",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "Additional Requirement (Optional): D20 Dice or Pencil & Paper for tracking player HP."
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "matita e carta",
+          "name_raw": "Additional Requirement (Optional): D20 Dice or Pencil & Paper for tracking player HP.",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "household",
+          "context_raw": "Additional Requirement (Optional): D20 Dice or Pencil & Paper for tracking player HP."
+        }
+      ],
+      "notes": "D20 oppure carta/matita sono alternative opzionali, quantità non specificate."
+    },
+    {
+      "entry_id": 773,
+      "game_id": 773,
+      "position": 42,
+      "title": "Pippins Aplenty",
+      "source_url": "https://boardgamegeek.com/thread/3620605/article/46961933#46961933",
+      "wip_url": "https://boardgamegeek.com/thread/3620605",
+      "author_raw": "Mandrel",
+      "post_timestamp_raw": "30 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://repiqued-interests.co.uk/games/pippins-aplenty",
+          "label_raw": "at this page",
+          "content_role": "rules",
+          "context_raw": "The full rules, along with example hands, are available at this page",
+          "version_raw": null,
+          "host": "repiqued-interests.co.uk",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Pippins Aplenty is a 2v2 game playable with a standard pack of cards.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Pippins Aplenty is a 2v2 game playable with a standard pack of cards."
+        }
+      ],
+      "notes": "Implementazione online annunciata senza destinazione; riferimenti a giochi ispiratori esclusi."
+    }
+  ]
+}

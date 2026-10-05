@@ -39,3 +39,7 @@ I manifest `2025_children_family_acquisition_batch_2026-10-03.json` e `2025_chil
 ## Procedure di raccolta e importazione
 
 Prima di preparare dati di un workflow coperto, leggere e applicare la skill pertinente nell'inventario `sources/SKILL_INVENTORY.md`: BGG-G, roster annuale, classifiche, MAT e ACQ restano distinti; FON non autorizza importazione. Gli script storici sono esempi specifici con ID/date/perimetri fissi, da ispezionare prima del riuso. L'uso di una skill non autorizza a eseguire script con rete o scritture operative: resta valido il contratto del task e il protocollo di verifica su copia.
+
+## MAT Traditional Deck 2025 — TSK-0055
+
+`build_2025_traditional_materials.py` normalizza le dichiarazioni osservate nei 42 primi post e produce `2025-traditional-materials.sql` e le evidenze. `verify_2025_traditional_materials.py` confronta le impronte DOM, verifica su copia isolamento e idempotenza; `--apply` conserva un backup prima dell’importazione. Lotto specifico contest 20, 2026-10-05: 53 URL, 54 requisiti, nessun host/download. Relazione in `sources/2025-TRADITIONAL-MATERIALS.md`.

@@ -1560,6 +1560,43 @@
       },
       "last_verified_at": "2026-10-05",
       "result": "74/74 primi post completi; 236 URL, 244 menzioni, 239 requisiti; importazione verificata e cruscotto aggiornato."
+    },
+    {
+      "id": "TSK-0055",
+      "original_title": "2026-10-05 - MAT - Traditional Deck Game Design Contest 2025",
+      "display_title": "2026-10-05 - MAT - Traditional Deck Game Design Contest 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - Traditional Deck Game Design Contest 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "42/42 primi post originali completi; importazione e app verificate il 2026-10-05",
+      "coverage": {
+        "contest_id": 20,
+        "coverage_scope": "first_post_only",
+        "entries": 42
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10b57-4d7f-74d1-a712-70ccab94080b"
+      ],
+      "next_action": "Eventuale ACQ del solo Traditional Deck 2025 dopo selezione; commit su richiesta",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "checked_at": "2026-10-05",
+        "evidence": "Modifiche preesistenti preservate; nessuna operazione Git"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05",
+      "result": "42/42 completi; 53 URL/menzioni, 54 requisiti, 38 entry con risorse e 37 con requisiti"
     }
   ]
 }

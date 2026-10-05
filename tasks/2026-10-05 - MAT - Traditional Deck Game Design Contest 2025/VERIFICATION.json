@@ -1,0 +1,36 @@
+{
+  "task_id": "TSK-0055",
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 42,
+    "complete": 42,
+    "resource_entries": 38,
+    "resources": 53,
+    "resource_mentions": 53,
+    "requirement_entries": 37,
+    "requirements": 54
+  },
+  "dom_url_label_identity_and_context_checks": 42,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_rankings_and_acquisitions_unchanged": true,
+  "sql_sha256": "4f8aeb2342d3a2412f456fd9b73c8ed2ab2b171b77b9e8d5779598aa09d334f5",
+  "applied": true,
+  "backup_path": "outputs/2025-traditional-materials/before-import.sqlite3",
+  "backup_sha256": "b85145b5aaa7197428d3e1cec70b90d34873ff8170df4282bc368ed472e25b98",
+  "operational_integrity": "ok",
+  "operational_idempotent": true,
+  "local_api_entries_verified": 42,
+  "browser_verification": {
+    "contest_reading_filter": 42,
+    "pages_checked": 2,
+    "entry_cases": [
+      "FIRE: two d4 only for 3+ players",
+      "Safes: no declared URL, 52-card requirement retained",
+      "The Four Winds: declared BGG image manual URL displayed"
+    ]
+  },
+  "annual_2025_entries_with_scan": 405
+}
