@@ -31,8 +31,10 @@
       "git": {
         "checked_at": "2026-10-05",
         "integration": "integrato_main",
-        "local_save": "da_committare",
-        "synchronization": "da_verificare"
+        "local_save": "committato",
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "c0235307eb39b368098d83f1755400804d00cac1",
+        "evidence": "TSK-0069 e raccordo TSK-0048 salvati in c023530; push main riuscito e hash server verificato il 2026-10-05. Modifiche estranee escluse; esito in commit documentale successivo."
       },
       "last_verified_at": "2026-10-05",
       "closed_at": "2026-10-05"
@@ -1473,12 +1475,12 @@
       ],
       "next_action": "Applicare il protocollo TSK-0069 nei nuovi incrementi; raccogliere riferimenti alle migliorie senza duplicare evidenze; collaudi preanalisi/host futuri solo nel perimetro autorizzato.",
       "git": {
-        "local_save": "da_committare",
-        "evidence": "Commit d8ad1c7 e push su main riusciti il 2026-10-04; hash HEAD/refs/heads/main coincidenti sul server. Esito registrato in commit documentale successivo. Raccordo documentale TSK-0069 del 2026-10-05 ancora locale, non incluso nella verifica remota storica.",
+        "local_save": "committato",
+        "evidence": "TSK-0069 e raccordo TSK-0048 salvati in c023530; push main riuscito e hash server verificato il 2026-10-05. Modifiche estranee escluse; esito in commit documentale successivo.",
         "checked_at": "2026-10-05",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "last_task_document_commit": "d8ad1c7990383261aa2e135fe46e689929251655"
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "c0235307eb39b368098d83f1755400804d00cac1"
       },
       "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa.",
       "related_tasks": [

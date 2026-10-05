@@ -2394,6 +2394,8 @@ TSK-0048, 2026-10-04: primi due incrementi delle skill conclusi; attivazione sis
 
 ## Registro degli aggiornamenti del cruscotto
 
+- 2026-10-05 — TSK-0069: protocollo skill e raccordi committati in c023530 e pubblicati su origin/main; hash remoto verificato. Audit dei due commit in uscita senza rilievi, candidati preesistenti esclusi e revisione TSK-0066 aperta. Esito salvato in commit documentale successivo; altre modifiche locali preservate.
+
 - 2026-10-05 — TSK-0069 EPR: adottata verifica obbligatoria dell’efficacia delle skill per nuovi incrementi significativi, comprese riprese storiche. Definiti criteri pratici, evidenze/causa/incertezze e confine manutenzione tecnica autonoma/evoluzione da deliberare; TSK-0048 resta contenitore aperto. Coerenza verificata offline su esempi locali, senza fonti esterne, acquisizioni o nuove prove dei workflow. Dati operativi invariati, sezioni A/B non rigenerate. Modifiche locali da committare, nessuna operazione Git autorizzata.
 
 - 2026-10-04 — GPR Titoli compatti: eliminate da 11 chat le etichette operative già espresse da ACQ/MAT/BGG-M/BGG-G/BGG-A. Protocollo e registro aggiornati, storico preservato, documentazione ancora locale da committare. Evidenza: `tasks/2026-10-04 - Monitoraggio e classificazione dei task/CHAT_TITLE_SIMPLIFICATION.json`. Dati operativi invariati, sezioni annuali non rigenerate.
