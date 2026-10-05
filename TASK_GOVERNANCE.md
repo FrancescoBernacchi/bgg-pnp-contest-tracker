@@ -66,7 +66,7 @@ All'apertura o ripresa:
 
 Al termine di ogni incremento:
 
-1. Registrare risultati, verifiche, decisioni, stato del contenitore e prossimo passo nel TASK.md.
+1. Registrare risultati, verifiche, decisioni, stato del contenitore e prossimo passo nel TASK.md; se l’incremento significativo usa skill, includere la verifica dell’efficacia secondo il protocollo seguente.
 2. Aggiornare nel registro i campi cambiati, con evidenza e data; non sostituire le dichiarazioni storiche con uno stato corrente inferito.
 3. Controllare working tree, worktree pertinenti, commit e integrazione. Affermare sincronizzazione remota solo dopo verifica del server; il solo origin/main è un riferimento locale.
 4. Aggiornare PROJECT_PROGRESS.md quando cambia la governance o lo stato operativo; sezioni annuali generate soltanto se cambiano i dati pertinenti.
@@ -91,3 +91,21 @@ L’utente ha confermato TSK-0046, `BGG-A - Classifiche BGG 2024`, incremento an
 ## Gestione delle skill
 
 TSK-0048 è un contenitore GPR continuativo su richiesta, senza automazione: inventario, verifiche, lacune e proposte motivate di procedure riutilizzabili. Gli incrementi conclusi non chiudono il contenitore. La manutenzione organizzativa resta GPR; modifiche ai contratti o all'architettura sono EPR da deliberare separatamente. Riferimento: `sources/SKILL_INVENTORY.md`.
+
+### Verifica dell’efficacia — decisione TSK-0069, 2026-10-05
+
+Al termine di ogni incremento significativo che utilizza skill è obbligatoria una breve verifica nel TASK.md sorgente. Vale per i nuovi incrementi, comprese le riprese di task storici; nessun riesame retroattivo obbligatorio delle attività già concluse. La verifica riguarda le skill effettivamente applicate, anche di sistema/plugin; può essere unica per le skill che collaborano allo stesso risultato, distinguendo eventuali problemi specifici. La sola consultazione di un inventario non equivale a uso di una skill. Nessun audit per singola invocazione, automazione, benchmark generalizzato o punteggio di efficacia.
+
+**Incremento significativo:** unità verificabile che produce o modifica un deliverable, completa una porzione concordata del lavoro, cambia una decisione o lo stato di copertura/blocco, oppure si arresta dopo tentativi rilevanti con un limite da conservare. Esempi: un lotto MAT, una riconciliazione classifiche, una revisione di skill, un’acquisizione parziale bloccata. Letture preparatorie, singole chiamate, retry ordinari risolti e ritocchi editoriali privi di effetti operativi confluiscono nella verifica dell’incremento; non creano attestazioni separate. Un incremento sospeso o bloccato può essere significativo anche senza risultato completo.
+
+Valutare insieme: risultato atteso raggiunto e limiti; tentativi ripetuti, passaggi inutili e situazioni non previste; origine dei problemi (skill, ambiente, fonte, input o altro); eventuale miglioria. L’attribuzione della causa deve citare evidenze e mantenere esplicite incertezze e cause concorrenti. Un blocco esterno o un errore isolato non dimostrano un difetto della skill; un esito riuscito non dimostra validità universale.
+
+- Se non emergono problemi, basta una frase: «Skill X applicata: risultato Y verificato nel perimetro Z; nessun tentativo ripetuto/passaggio inutile o caso imprevisto rilevante; nessuna criticità o miglioria emersa; limite L». Adattare alla prova disponibile, senza attestare controlli non eseguiti.
+- Se emergono problemi, annotare nello stesso task evidenza concreta e riferimento, impatto sul risultato o sul percorso, causa osservata/ipotizzata e incertezze, soluzione sperimentata con esito oppure proposta non collaudata, residui e prossimo passo. Usare poche righe o una tabella soltanto se utile. Non copiare dump o materiali di terzi nei documenti versionabili.
+- Collegare le migliorie pertinenti a TSK-0048 con riferimento al task e al passaggio sorgente. Prima cercare una voce già presente: aggiornarla o collegare un’ulteriore evidenza, senza duplicare audit e contenuti. L’inventario cambia soltanto quando cambia copertura, grado di verifica o prossima manutenzione di una competenza; nessun registro aggiuntivo per ogni uso riuscito. TSK-0048 resta aperto e non va chiuso per la conclusione di un incremento sorgente.
+
+**Manutenzione tecnica autonoma:** correzione circoscritta di istruzioni, riferimenti, routing o helper che conserva obiettivo, input ammessi, output, unità di lavoro, esclusioni, autorizzazioni e modello del workflow. Può essere svolta nell’incremento sorgente e collegata a TSK-0048, oppure in quel contenitore se richiede lavoro autonomo. Applicare skill-creator e le salvaguardie Windows di .agents prima di modificarne i file; nessuna autorizzazione implicita a operazioni Git, ACL o azioni esterne. Validare i file/riferimenti e, quando pertinente, il comportamento sul caso concreto; una verifica statica non certifica efficacia operativa.
+
+Non modificare una skill sulla sola base di una difficoltà isolata. Prima verificare un difetto circoscritto riproducibile o raccogliere evidenze concordanti di un pattern; un collegamento rotto dimostrato può essere corretto senza attendere un altro incidente. Conservare ipotesi ed esperimenti nel task. Promuovere nei riferimenti condivisi soltanto soluzioni con prova riuscita, contesto, data, limiti e utilità riutilizzabile, senza generalizzare un metodo specifico di un host a tutti gli host.
+
+**Evoluzione da deliberare:** cambia scope, contratti o architettura: per esempio estende MAT oltre il primo post, aggiunge host/download, cambia unità annuale/singolo contest, adotta fonti, introduce workflow, modifica entità o autorizzazioni. Formulare una proposta EPR collegata e ottenere una decisione esplicita prima dell’adozione, anche quando la modifica del testo è piccola. In caso di dubbio conservare la proposta e l’incertezza, continuando il lavoro consentito dal contratto. La distinzione dipende dall’effetto operativo, non dal numero di righe modificate. PWS resta read-only e 1.5.0.

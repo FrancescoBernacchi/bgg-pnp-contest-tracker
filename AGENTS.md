@@ -133,6 +133,8 @@ Quando cambia la metrica di una barra, riconciliare tutte le evidenze storiche p
 
 ## Gestione delle skill locali — 2026-10-04
 
+Dal 2026-10-05, decisione TSK-0069: al termine di ogni incremento significativo che applica skill, registrare la breve verifica dell’efficacia prevista in `TASK_GOVERNANCE.md`, sezione «Verifica dell’efficacia». Vale anche per nuovi incrementi di task storici, senza riesame retroattivo obbligatorio. Collegare migliorie a TSK-0048; manutenzione tecnica autonoma nei confini autorizzati con skill-creator e salvaguardie .agents; scope, contratti e architettura richiedono decisione esplicita. Criteri e modalità di attestazione restano nel solo protocollo autorevole.
+
 TSK-0048 mantiene le skill come attività GPR continuativa su richiesta, senza automazione. Inventario autorevole: `sources/SKILL_INVENTORY.md`. Per BGG leggere la base `.agents/skills/bgg-contest-navigation/SKILL.md` e soltanto la specializzazione pertinente: `bgg-contest-census` (BGG-G), `bgg-ranking-census` (risultati nel contratto autorizzato), `bgg-material-census` (MAT), `bgg-material-acquisition` (ACQ). Il roster annuale resta procedura distinta in `.agents/skills/bgg-contest-navigation/references/annual-entry-census.md`; monitoraggio governato da PROJECT.md e calendario. Per FON usare `potential-source-discovery` per candidati/gradatoria e `source-preanalysis` per una sola fonte. Tutti gli entrypoint sono `.agents/skills/NOME/SKILL.md`. Queste skill non adottano nuove fonti né estendono contratti; manutenzione con skill-creator, prove locali e promozione delle sole esperienze verificate. Cambi contrattuali/architetturali restano EPR da deliberare. Salvaguardie Windows .agents invariate.
 
 

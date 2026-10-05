@@ -17,6 +17,12 @@ PWS consumer e canonico 1.5.0; nessuna migrazione richiesta. Registro esaminato 
 
 A ogni ripresa aggiornare inventario e verifiche; riconciliare sovrapposizioni, contraddizioni e lacune. Promuovere esperienze con evidenza, data e limiti; proporre nuove skill con casi reali, beneficio e confini. Registrare incrementi conclusi mantenendo aperto il contenitore.
 
+### Raccordo deliberato in TSK-0069 — 2026-10-05
+
+Per i nuovi incrementi vale il protocollo «Verifica dell’efficacia» in TASK_GOVERNANCE.md: attestazione nel task sorgente, riferimenti alle migliorie pertinenti in questo contenitore senza duplicare evidenze; inventario aggiornato quando cambia stato/copertura/manutenzione delle competenze, non a ogni uso. Nessun riesame retroattivo obbligatorio dei due incrementi conclusi. Manutenzione tecnica autonoma entro il contratto con skill-creator e salvaguardie .agents; scope, contratti e architettura richiedono decisione EPR esplicita. Questo raccordo documentale non esegue manutenzione di skill né chiude il contenitore.
+
+Evidenze collegate, già trattate nell’audit e senza nuove voci duplicate: caricamento progressivo BGG verificato nel playbook; limite PyYAML del primo incremento; errore enum corretto in TSK-0030; generalizzazione preanalisi ancora da collaudare. TSK-0069 ne controlla soltanto la coerenza con il nuovo protocollo. Prossimo passo: applicarlo al prossimo incremento reale, collegando qui eventuali migliorie nuove.
+
 ## Primo incremento concluso — 2026-10-04
 
 Create sei skill specialistiche e riorganizzata la base BGG condivisa; playbook conservato con correzione di un'intestazione duplicata. Le procedure MAT duplicate nella base sono rinviate alla specializzazione; copia antecedente in BASE_SKILL_BEFORE.md. Inventario operativo in sources/SKILL_INVENTORY.md; AUDIT.md distingue prove, inferenze, esperimenti e lacune; APPLICABILITY.md registra 13 casi locali. Il censimento annuale entry mantiene un riferimento dedicato nella base: nessuna settima specializzazione necessaria ora.

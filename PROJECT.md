@@ -258,6 +258,8 @@ APP-008 introduce attestazioni additive `entry_work_observations` e `contest_cen
 
 ## Organizzazione delle competenze locali — 2026-10-04
 
+Decisione TSK-0069 del 2026-10-05: verifica dell’efficacia obbligatoria alla chiusura degli incrementi significativi che applicano skill, comprese riprese storiche; nessun riesame retroattivo obbligatorio. Protocollo autorevole, criteri e confine manutenzione tecnica/evoluzione in [TASK_GOVERNANCE.md](TASK_GOVERNANCE.md#verifica-dellefficacia--decisione-tsk-0069-2026-10-05). TSK-0048 raccoglie le migliorie pertinenti mediante collegamenti alle evidenze sorgenti; PWS invariato.
+
 Il contenitore GPR TSK-0048 mantiene un inventario in [sources/SKILL_INVENTORY.md](sources/SKILL_INVENTORY.md), una base tecnica BGG e sei skill specialistiche: censimento identità contest, classifiche, materiali dichiarati, acquisizione, scoperta fonti e preanalisi di una fonte. Il censimento annuale entry conserva una procedura autonoma identificabile nella base BGG, distinta dal censimento globale. Playbook e percorsi storici restano validi; routing in AGENTS.md. La riorganizzazione non introduce workflow, migrazioni dati, nuove adozioni di fonti o estensioni annuali ulteriori. PWS resta 1.5.0.
 
 

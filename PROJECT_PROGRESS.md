@@ -2381,6 +2381,7 @@ TSK-0048, 2026-10-04: primi due incrementi delle skill conclusi; attivazione sis
 | Componente | Stato | Ultima evidenza | Regola di manutenzione |
 |---|---|---|---|
 | Skill locali | base BGG e sei specialistiche verificate offline | 2026-10-04 TSK-0048: audit, inventario e procedura annuale entry distinta; applicazione delle skill pertinenti obbligatoria anche nelle riprese; nessuna nuova operazione esterna | Mantenere tramite GPR su richiesta; esperienze verificate, EPR per cambi contrattuali |
+| Efficacia delle skill | protocollo prospettivo adottato | 2026-10-05 TSK-0069: verifica breve degli incrementi significativi e confronto offline con casi documentati; nessun collaudo operativo nuovo | TASK_GOVERNANCE.md; attestazione nel task sorgente, migliorie collegate a TSK-0048; nessun audit per invocazione o riesame retroattivo obbligatorio |
 | Schema e migrazioni | completo | Migrazioni 001-011 presenti; 011 applicata all’operativo il 2026-10-03 dopo backup verificato | Ogni modifica passa da nuova migrazione numerata |
 | Database operativo | completo | 306 contest BGG; 951 entry; 190 scansioni WIP/materiali, 386 risorse e 387 requisiti; 46 acquisizioni e 198 file registrati (187 originali, 11 contenuti ZIP); integrità e chiavi esterne verificate il 2026-10-03 | Non versionare; preservare cronologia e provenienza |
 | Catalogo versionabile | destinazioni Kanare parzialmente verificate | 14 implementazioni verificate, 40 incerte; 15 matching candidati e un omonimo respinto | Mantenere separata la futura acquisizione selettiva |
@@ -2392,6 +2393,8 @@ TSK-0048, 2026-10-04: primi due incrementi delle skill conclusi; attivazione sis
 | Libreria nell’app locale | completo per PDF/PNG/DOCX idonei e ZIP estratti offline | 2026-10-03: APP-005; 198 file registrati, 46 acquisizioni; 11 contenuti ZIP con hash e provenienza; 187 originali invariati; DOCX semantico; Starter_Cards.pdf supera 128 MiB | Altri formati in task autonomi; preservare limiti e tracciabilità; hash PDF.js tramite `.gitattributes` |
 
 ## Registro degli aggiornamenti del cruscotto
+
+- 2026-10-05 — TSK-0069 EPR: adottata verifica obbligatoria dell’efficacia delle skill per nuovi incrementi significativi, comprese riprese storiche. Definiti criteri pratici, evidenze/causa/incertezze e confine manutenzione tecnica autonoma/evoluzione da deliberare; TSK-0048 resta contenitore aperto. Coerenza verificata offline su esempi locali, senza fonti esterne, acquisizioni o nuove prove dei workflow. Dati operativi invariati, sezioni A/B non rigenerate. Modifiche locali da committare, nessuna operazione Git autorizzata.
 
 - 2026-10-04 — GPR Titoli compatti: eliminate da 11 chat le etichette operative già espresse da ACQ/MAT/BGG-M/BGG-G/BGG-A. Protocollo e registro aggiornati, storico preservato, documentazione ancora locale da committare. Evidenza: `tasks/2026-10-04 - Monitoraggio e classificazione dei task/CHAT_TITLE_SIMPLIFICATION.json`. Dati operativi invariati, sezioni annuali non rigenerate.
 

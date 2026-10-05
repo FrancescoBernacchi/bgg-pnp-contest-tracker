@@ -5,6 +5,39 @@
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata.",
   "tasks": [
     {
+      "id": "TSK-0069",
+      "original_title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento delle skill",
+      "display_title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento delle skill",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - EPR - Verifica dell’efficacia e miglioramento delle skill/TASK.md",
+      "category": "EPR",
+      "secondary_categories": [
+        "GPR"
+      ],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Protocollo adottato nei riferimenti autorevoli e verificato su sette casi locali; registro e documentazione coerenti. Nessun collaudo operativo nuovo.",
+      "dependencies": [],
+      "successors": [],
+      "related_tasks": [
+        "TSK-0048"
+      ],
+      "chat_ids": [
+        "01a10da4-4938-7b03-8d90-1553e989f89a"
+      ],
+      "next_action": "Applicare la verifica al prossimo incremento significativo reale; collegare a TSK-0048 eventuali migliorie pertinenti.",
+      "git": {
+        "checked_at": "2026-10-05",
+        "integration": "integrato_main",
+        "local_save": "da_committare",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
       "id": "TSK-0067",
       "original_title": "2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi",
       "display_title": "2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi",
@@ -1438,16 +1471,20 @@
       "chat_ids": [
         "01a1071a-deb4-7e41-95b6-a65ad1c0654e"
       ],
-      "next_action": "Manutenzione su richiesta dopo esperienze verificate; collaudare preanalisi su fonte diversa da Kanare e riesaminare autonomia roster se cresce.",
+      "next_action": "Applicare il protocollo TSK-0069 nei nuovi incrementi; raccogliere riferimenti alle migliorie senza duplicare evidenze; collaudi preanalisi/host futuri solo nel perimetro autorizzato.",
       "git": {
-        "local_save": "committato",
-        "evidence": "Commit d8ad1c7 e push su main riusciti il 2026-10-04; hash HEAD/refs/heads/main coincidenti sul server. Esito registrato in commit documentale successivo.",
-        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "evidence": "Commit d8ad1c7 e push su main riusciti il 2026-10-04; hash HEAD/refs/heads/main coincidenti sul server. Esito registrato in commit documentale successivo. Raccordo documentale TSK-0069 del 2026-10-05 ancora locale, non incluso nella verifica remota storica.",
+        "checked_at": "2026-10-05",
         "integration": "integrato_main",
-        "synchronization": "remoto_verificato",
+        "synchronization": "da_verificare",
         "last_task_document_commit": "d8ad1c7990383261aa2e135fe46e689929251655"
       },
-      "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa."
+      "coverage": "Gestione di tutte le skill locali; primo incremento sei specialistiche e base condivisa.",
+      "related_tasks": [
+        "TSK-0069"
+      ],
+      "last_verified_at": "2026-10-05"
     },
     {
       "id": "TSK-0051",

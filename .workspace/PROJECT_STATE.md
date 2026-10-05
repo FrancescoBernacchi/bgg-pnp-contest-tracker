@@ -21,6 +21,8 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 
 ## Storico migrazioni
 
+- 2026-10-05: TSK-0069 adotta localmente la verifica breve dell’efficacia delle skill al termine degli incrementi significativi, comprese nuove riprese storiche; nessun riesame retroattivo obbligatorio delle attività concluse. Protocollo in TASK_GOVERNANCE.md, manutenzione collegata a TSK-0048 e decisione esplicita per scope/contratti/architettura. Evoluzione di governance consumer, non migrazione PWS: aligned_version resta 1.5.0 e Standard invariato.
+
 - 2026-10-04: adottato il protocollo locale `TASK_GOVERNANCE.md` con categorie, naming `YYYY-MM-DD - CODICE - descrizione`, ID stabili e registro centrale `tasks/REGISTRY.json`. Classificazione retroattiva datata dei 43 registri preesistenti e del task corrente; percorsi e storia originari preservati. Copiato senza modifiche in main il registro Wargame sospeso dalla worktree 52fb per conservarne la decisione, senza riattivare acquisizioni. PWS resta 1.5.0; nessuna modifica allo Standard o al contratto annuale BGG. Workflow immagini allora ancora da definire, successivamente deliberato in TSK-0065 il 2026-10-05.
 
 - 2026-09-04: inizializzazione diretta con PWS 1.3.0; nessuna migrazione pregressa.

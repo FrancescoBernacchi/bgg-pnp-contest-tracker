@@ -18,4 +18,6 @@ Le skill si leggono dal progetto e vanno applicate prima di ogni attività perti
 
 ## Protocollo del gestore
 
+Dal 2026-10-05, TSK-0069: applicare il [protocollo di verifica dell’efficacia](../TASK_GOVERNANCE.md#verifica-dellefficacia--decisione-tsk-0069-2026-10-05) ai nuovi incrementi significativi, anche nelle riprese. TSK-0048 riceve riferimenti alle migliorie e alle evidenze già registrate nei task sorgenti, senza duplicarle. La presente integrazione organizzativa non cambia il grado di collaudo delle skill elencate né aggiorna fatti esterni.
+
 Verificare a ogni incremento frontmatter, riferimenti, condizioni di attivazione e casi concreti. Preservare prove storiche e distinguere procedura verificata, inferenza, esperimento e lacuna. Confrontare sovrapposizioni e contraddizioni con PROJECT.md/TASK_GOVERNANCE.md; questi conservano autorità sui contratti. Proporre skill nuove con esempi ricorrenti, benefici e confini, evitando frammentazione per un solo episodio. Annotare data, task e limite di ogni verifica; aggiornare inventario, task e cruscotto quando cambia lo stato delle competenze. Non usare la manutenzione per eseguire i workflow descritti.
