@@ -1,0 +1,40 @@
+{
+  "task_id": "TSK-0061",
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 8,
+    "complete": 8,
+    "unique_original_posts": 8,
+    "resource_entries": 8,
+    "resources": 16,
+    "resource_mentions": 16,
+    "unique_resource_urls": 16,
+    "requirements": 14,
+    "material_observed_entries": 7,
+    "material_none_declared_entries": 1,
+    "not_observable": 0,
+    "wip_not_found": 0
+  },
+  "dom_body_identity_links_checks": 8,
+  "official_roster_reconciled": 8,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "prior_rows_preserved": true,
+  "other_contests_rankings_acquisitions_unchanged": true,
+  "added_rows": {
+    "remote_resources": 16,
+    "entry_resource_scans": 8,
+    "entry_resource_mentions": 16,
+    "remote_resource_observations": 16,
+    "entry_material_scans": 8,
+    "entry_material_requirements": 14,
+    "entry_work_observations": 8
+  },
+  "filled_wip_urls": 8,
+  "operational_database_open_mode": "ro/query_only",
+  "operational_import": false,
+  "sql_sha256": "dbafa5d4326f9696bf58989f731230c960fff45afa1e97fec9798f574237d1f7",
+  "witness_sha256": "8519c68ebc7e979db5016531f8d9ba6016064663f84bc7ca3075a6064d181453",
+  "private_copy": "outputs/2025-green-materials/verification.sqlite3"
+}

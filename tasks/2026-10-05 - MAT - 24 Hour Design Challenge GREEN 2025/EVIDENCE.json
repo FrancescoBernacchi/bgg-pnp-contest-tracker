@@ -1,0 +1,485 @@
+{
+  "task_id": "TSK-0061",
+  "contest_id": 297,
+  "checked_at": "2026-10-05",
+  "coverage_scope": "first_post_only",
+  "method": "CUA rendered article.post headers, entire post-body innerText, anchors, iframe/video/source and gg-item-link inspection. Only selected original submissions retained; no later replies used.",
+  "counts": {
+    "entries": 8,
+    "complete": 8,
+    "unique_original_posts": 8,
+    "resource_entries": 8,
+    "resources": 16,
+    "resource_mentions": 16,
+    "unique_resource_urls": 16,
+    "requirements": 14,
+    "material_observed_entries": 7,
+    "material_none_declared_entries": 1,
+    "not_observable": 0,
+    "wip_not_found": 0
+  },
+  "entries": [
+    {
+      "entry_id": 1316,
+      "game_id": 1380,
+      "position": 1,
+      "title": "Shipmates",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46127202#46127202",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46127202#46127202",
+      "author_raw": "Aaronvw8",
+      "username_raw": "ajvw4",
+      "post_timestamp_raw": "25 mag 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://1drv.ms/w/c/56597566f3fd71ff/Edz0vK0S3PJKtCT_GMwz-lIBwg3KTjlBFGpvNqwYTqguGQ?e=HdQFHj",
+          "label_raw": "Rules",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "1drv.ms",
+          "access_type": "document"
+        },
+        {
+          "url": "https://www.canva.com/design/DAGoIXxwFd8/9LzKC46Zh_B6E-I_o1drnA/edit?utm_content=DAGoIXxwFd8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+          "label_raw": "SellSheet",
+          "content_role": "reference",
+          "context_raw": "SellSheet",
+          "version_raw": null,
+          "host": "www.canva.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://www.canva.com/design/DAGnPGpWDxQ/vvCi1BSW3GvwWC43EGZsJg/edit?utm_content=DAGnPGpWDxQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+          "label_raw": "Cards",
+          "content_role": "component",
+          "context_raw": "Cards",
+          "version_raw": null,
+          "host": "www.canva.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Rules"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Cards"
+        }
+      ],
+      "notes": "Regole, carte e sell sheet dichiarati; adattamento digitale ancora da finire, senza URL. Nessuna quantità esplicita."
+    },
+    {
+      "entry_id": 1317,
+      "game_id": 1381,
+      "position": 2,
+      "title": "Sustainibattle",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46155890#46155890",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46155890#46155890",
+      "author_raw": "Cameron",
+      "username_raw": "GameTortoise",
+      "post_timestamp_raw": "1 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1QZj_rfCS_ZtQyuAL1Hl5Ok_mJ9gtZ7LZSFveeYVN1pw/edit?tab=t",
+          "label_raw": "https://docs.google.com/document/d/1QZj_rfCS_ZtQyuAL1Hl5Ok_m...",
+          "content_role": "rules",
+          "context_raw": "Here's the rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/141PxTitEphqevcc56a6ZmZmPNoEAGtj7?usp=drive_link",
+          "label_raw": "https://drive.google.com/drive/folders/141PxTitEphqevcc56a6Z...",
+          "content_role": "game_files",
+          "context_raw": "and the PnP",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Here's the rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Here's the rules"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "materiali PnP non specificati",
+          "name_raw": "and the PnP",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "and the PnP"
+        }
+      ],
+      "notes": "Regole e cartella PnP dichiarate. Testo visualizzato con suffisso .0 dopo il link: nessuna versione inferita."
+    },
+    {
+      "entry_id": 1318,
+      "game_id": 1382,
+      "position": 3,
+      "title": "Green Thumb",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46168808#46168808",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46168808#46168808",
+      "author_raw": "Matthew P",
+      "username_raw": "pevenm",
+      "post_timestamp_raw": "4 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1mWvO2HsvyqrrN9R9m3K3xWqkLWbiSIZ_?usp=share_link",
+          "label_raw": "Link to Files",
+          "content_role": "game_files",
+          "context_raw": "Link to Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "changes in rules and cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "changes in rules and cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte pianta",
+          "name_raw": "the different plant cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "the different plant cards"
+        }
+      ],
+      "notes": "Post finale originale collegato dal roster, distinto dai precedenti annunci/progressi. Regole e carte pianta menzionate; nessun formato, istruzione di montaggio o quantità importati dai post precedenti."
+    },
+    {
+      "entry_id": 1319,
+      "game_id": 1383,
+      "position": 4,
+      "title": "Green Gold",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46183374#46183374",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46183374#46183374",
+      "author_raw": "Julian Anstey",
+      "username_raw": "j409603",
+      "post_timestamp_raw": "8 giu 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1YvJUEW3uHK21p6Wba7ydu8E0A_sqisUA/view?usp=sharing",
+          "label_raw": "Green Gold rules",
+          "content_role": "rules",
+          "context_raw": "Green Gold rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1CNOTklmQGPFeXomhNDBysPtoC5Jo55np/view?usp=sharing",
+          "label_raw": "Green Gold cards",
+          "content_role": "component",
+          "context_raw": "Green Gold cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Green Gold rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Green Gold rules"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Green Gold cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Green Gold cards"
+        }
+      ],
+      "notes": "Regole e carte dichiarate; nessun mazzo tradizionale o quantità inferiti dal precedente annuncio."
+    },
+    {
+      "entry_id": 1320,
+      "game_id": 1384,
+      "position": 5,
+      "title": "Cash Crop",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46241630#46241630",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46241630#46241630",
+      "author_raw": "Pranav Vaddepalli",
+      "username_raw": "StormShadow4889",
+      "post_timestamp_raw": "22 giu 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/15H7yl-F5gMLsvkJYjxWdkpJKVNIgnvCz1MXi618GCno/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/15H7yl-F5gMLsvkJYjxWdkpJK...",
+          "content_role": "rules",
+          "context_raw": "Rulebook:",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://www.canva.com/design/DAGqcuIJ6hY/ivp8hR1wg7W9Fe0pJtFj2g/view?utm_content=DAGqcuIJ6hY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h78c4cd31d5",
+          "label_raw": "https://www.canva.com/design/DAGqcuIJ6hY/ivp8hR1wg7W9Fe0pJtF...",
+          "content_role": "component",
+          "context_raw": "Card and Token Designs:",
+          "version_raw": null,
+          "host": "www.canva.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1TahocadtapwAfqodrY7_NVueF9NWx955/view?usp=drive_link",
+          "label_raw": "https://drive.google.com/file/d/1TahocadtapwAfqodrY7_NVueF9N...",
+          "content_role": "game_files",
+          "context_raw": "PnP:",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://youtu.be/BPS-HMBgy7I?feature=shared",
+          "label_raw": "https://youtu.be/BPS-HMBgy7I?feature=shared",
+          "content_role": "video",
+          "context_raw": "Gameplay and Tutorial Video:",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "an official rulebook of the game",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "an official rulebook of the game"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "card and token designs",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "supplied_or_printable",
+          "context_raw": "card and token designs"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "segnalini",
+          "name_raw": "card and token designs",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "supplied_or_printable",
+          "context_raw": "card and token designs"
+        }
+      ],
+      "notes": "Regolamento, design carte/segnalini, PnP e video tutorial/gameplay. Il PnP non genera una seconda copia dei requisiti carte/segnalini; nessuna quantità dedotta."
+    },
+    {
+      "entry_id": 1321,
+      "game_id": 1385,
+      "position": 6,
+      "title": "Chlorophyllium",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46258135#46258135",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46258135#46258135",
+      "author_raw": "J-P Kurikka",
+      "username_raw": "MrKuricat",
+      "post_timestamp_raw": "26 giu 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://wannabeboardgamedesigner.com/chlorophyllium-challenge-pnpfile/",
+          "label_raw": "Link to the site with PnP materials etc.",
+          "content_role": "game_files",
+          "context_raw": "Link to the site with PnP materials etc.",
+          "version_raw": null,
+          "host": "wannabeboardgamedesigner.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "materiali PnP non specificati",
+          "name_raw": "PnP materials etc.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "PnP materials etc."
+        }
+      ],
+      "notes": "Pagina dichiarata con materiali PnP; inventario e regole non specificati nel post."
+    },
+    {
+      "entry_id": 1322,
+      "game_id": 1386,
+      "position": 7,
+      "title": "Flag Finish",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46277480#46277480",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46277480#46277480",
+      "author_raw": "David Stewart",
+      "username_raw": "davidfstewart",
+      "post_timestamp_raw": "1 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://davidfstewart.ca/wp-content/uploads/2025/06/Flag-Finish-Rules.pdf",
+          "label_raw": "[link]",
+          "content_role": "rules",
+          "context_raw": "Here are the rules:",
+          "version_raw": null,
+          "host": "davidfstewart.ca",
+          "access_type": "file"
+        },
+        {
+          "url": "https://davidfstewart.ca/wp-content/uploads/2025/06/Flag-Finish-Cards.pdf",
+          "label_raw": "[link]",
+          "content_role": "component",
+          "context_raw": "Here are the cards:",
+          "version_raw": null,
+          "host": "davidfstewart.ca",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Here are the rules:",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Here are the rules:"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Here are the cards:",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Here are the cards:"
+        }
+      ],
+      "notes": "Due link con etichetta identica [link], distinti per destinazione e contesto regole/carte. Estensione PDF osservata nella destinazione dichiarata; file non aperti."
+    },
+    {
+      "entry_id": 1323,
+      "game_id": 1387,
+      "position": 8,
+      "title": "Fruit Tumbler",
+      "source_url": "https://boardgamegeek.com/thread/3510376/article/46277709#46277709",
+      "wip_url": "https://boardgamegeek.com/thread/3510376/article/46277709#46277709",
+      "author_raw": "Iffix Y Santaph",
+      "username_raw": "XendoBreckett",
+      "post_timestamp_raw": "1 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "source_structure": "original_game_submission_in_contest_thread",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1zYahelwShiEBXx840ROtIRfJKYcFQh5h/view?usp=sharing",
+          "label_raw": "Fruit Tumbler",
+          "content_role": "game_files",
+          "context_raw": "Fruit Tumbler",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [],
+      "notes": "File dichiarato con titolo del gioco; ruolo game_files provvisorio. Nessun componente o requisito sufficientemente esplicito nel post; none_declared non indica gioco privo di materiali."
+    }
+  ],
+  "limits": "Declarations only; no external hosts/files opened. Original roster-linked submission is valid under optional-WIP challenge rule. No subsequent replies used."
+}

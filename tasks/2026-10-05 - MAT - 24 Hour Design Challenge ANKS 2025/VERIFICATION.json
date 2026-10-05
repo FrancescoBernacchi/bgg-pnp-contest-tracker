@@ -1,0 +1,24 @@
+{
+  "task_id": "TSK-0064",
+  "counts": {
+    "entries": 8,
+    "complete": 8,
+    "unique_original_posts": 8,
+    "resource_entries": 7,
+    "resources_per_entry": 9,
+    "unique_resource_urls": 9,
+    "requirements": 21,
+    "none_declared_resource_entries": 1,
+    "none_declared_material_entries": 1
+  },
+  "dom_identity_and_links": 8,
+  "roster_reconciled": 8,
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "prior_rows_preserved": true,
+  "other_contests_unchanged": true,
+  "operational_database_opened_read_only": true,
+  "sql_sha256": "9d3d81a034c960eb7a4a5d1ba0444136afe78411f2367c74daac6c012f24d9b4",
+  "private_copy": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\2025-anks-materials\\verification.sqlite3"
+}

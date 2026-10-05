@@ -1,0 +1,20 @@
+{
+  "task_id": "TSK-0060",
+  "counts": {
+    "entries": 6,
+    "complete": 6,
+    "unique_original_posts": 6,
+    "resource_entries": 6,
+    "resources": 11,
+    "unique_resource_urls": 11,
+    "requirements": 18
+  },
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "prior_rows_preserved": true,
+  "other_contests_unchanged": true,
+  "operational_database_opened_read_only": true,
+  "applied": false,
+  "sql_sha256": "dca28c807d8a4aaa7bc7cb8e745f3ce398f6323c46a7ac89ff10416ce92d4ea0"
+}

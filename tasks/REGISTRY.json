@@ -1677,6 +1677,232 @@
       "last_verified_at": "2026-10-05",
       "closed_at": "2026-10-05",
       "result": "4 URL unici globali, 5 associazioni gioco–URL, 13 requisiti; API 6/6 e cruscotto aggiornato"
+    },
+    {
+      "id": "TSK-0059",
+      "original_title": "2026-10-05 - GPR - Censimenti materiali challenge 24h 2025 e commit",
+      "display_title": "2026-10-05 - GPR - Censimenti materiali challenge 24h 2025 e commit",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - GPR - Censimenti materiali challenge 24h 2025 e commit/TASK.md",
+      "category": "GPR",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Cinque MAT integrati e verificati: FINAL_VERIFICATION.json; versionamento in esecuzione",
+      "coverage": {
+        "complete": 39,
+        "contests": 5,
+        "resources": 53,
+        "requirements": 94,
+        "entries": 39
+      },
+      "dependencies": [
+        "TSK-0060",
+        "TSK-0061",
+        "TSK-0062",
+        "TSK-0063",
+        "TSK-0064"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c23-c0df-7ec3-9b0d-75476489e72a"
+      ],
+      "next_action": "Commit finale autorizzato del lotto, senza push",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0060",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge REVEAL 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge REVEAL 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge REVEAL 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Censimento e integrazione operativa verificati dal coordinatore: REVEAL_INTEGRATION.json",
+      "coverage": {
+        "entries": 6,
+        "blocked": 0,
+        "coverage_scope": "first_post_only",
+        "complete": 6,
+        "contest_id": 296
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c29-46b5-7680-88be-77004f94c855"
+      ],
+      "next_action": "Eventuale ACQ del solo REVEAL dopo selezione e verifica condizioni/host",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0061",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge GREEN 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge GREEN 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge GREEN 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Censimento e integrazione operativa verificati: GREEN_INTEGRATION.json",
+      "coverage": {
+        "entries": 8,
+        "blocked": 0,
+        "contest_id": 297,
+        "coverage_scope": "first_post_only",
+        "complete": 8
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c28-4ecb-7821-81ee-f2f1bc1a8511"
+      ],
+      "next_action": "Eventuale ACQ del solo GREEN dopo selezione e verifica condizioni/host",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0062",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge PAD 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge PAD 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge PAD 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Censimento e integrazione operativa verificati: PAD_INTEGRATION.json",
+      "coverage": {
+        "complete": 5,
+        "entries": 5,
+        "coverage_scope": "first_post_only",
+        "contest_id": 295,
+        "blocked": 0
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c28-7a2d-7e70-985a-168461ffb5b3"
+      ],
+      "next_action": "Eventuale ACQ del solo PAD dopo selezione e verifica condizioni/host",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0063",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge PATCH 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge PATCH 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge PATCH 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Censimento e integrazione operativa verificati: PATCH_INTEGRATION.json",
+      "coverage": {
+        "complete": 12,
+        "coverage_scope": "first_post_only",
+        "blocked": 0,
+        "contest_id": 299,
+        "entries": 12
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c28-a297-75e0-bc9f-93baf93dd31e"
+      ],
+      "next_action": "Eventuale ACQ del solo PATCH dopo selezione e verifica condizioni/host",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0064",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge ANKS 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge ANKS 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge ANKS 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Censimento e integrazione operativa verificati: ANKS_INTEGRATION.json",
+      "coverage": {
+        "contest_id": 298,
+        "blocked": 0,
+        "coverage_scope": "first_post_only",
+        "complete": 8,
+        "entries": 8
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c28-c9e5-7e01-ba24-9f8763ff6d03"
+      ],
+      "next_action": "Eventuale ACQ del solo ANKS; chiarire componenti finali Planks & Piers nelle regole",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "task_id": "TSK-0062",
+  "counts": {
+    "entries": 5,
+    "complete": 5,
+    "unique_original_posts": 5,
+    "resource_entries": 4,
+    "resources": 5,
+    "unique_resource_urls": 5,
+    "requirements": 15,
+    "requirement_entries": 4
+  },
+  "dom_identity_and_links_checked": 5,
+  "roster_reconciled": 5,
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "prior_rows_preserved": true,
+  "other_contests_rankings_acquisitions_unchanged": true,
+  "operational_database_opened_read_only": true,
+  "applied": false,
+  "sql_sha256": "29f58fb029f42c2f4068908e6a0ca71a65f014b6341d1b4f08a43a6822a3e313"
+}

@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-05",
+  "method": "CUA rendered article.post headers, entire post-body innerText, anchors, iframe/video/source and gg-item-link inspection. Only selected original submissions retained; no later replies used.",
+  "roster_source": "https://boardgamegeek.com/thread/3510376/article/46069059#46069059",
+  "roster_author": "@UberDante",
+  "roster_time": "11 mag 2025 (edited)",
+  "challenge_rule": "You are welcome to create a thread in the Works In Progress subforum, but are not required to",
+  "roster_posts": [46127202,46155890,46168808,46183374,46241630,46258135,46277480,46277709],
+  "live_dom_fingerprints": {
+    "algorithm": "FNV-1a 32bit UTF-16; links encoded JSON compact [url,label] pairs",
+    "roster_links_fnv": "3ed1ea6f",
+    "body_fnv": ["113c4160","b109be8e","e296c7a7","3051922d","1ab42f71","73125f1f","6fb4908f","d21ac18b"],
+    "url_label_fnv": ["521db7c7","d8d21360","54344fe5","6340b1ae","e0bb9d9b","0a33ff73","171a0cdd","f0689097"],
+    "header_fnv": ["ae26b150","3ccb2a16","8a00994c","800df32b","20c44c61","e2e1160a","06600755","455b812e"]
+  },
+  "entries": [
+    {
+      "position": 1, "title": "Shipmates", "post": 46127202, "author": "Aaronvw8", "username": "ajvw4", "time": "25 mag 2025",
+      "body": "Alright I think I am done! Here is a link to the rules, cards, and a sell sheet I made to give people an easier way to quickly view it and see components, player size, and a briefer overview. Still need to finish the digital adaptation. Let me know if I missed anything, this is my first time entering a contest.\nRules SellSheet Cards",
+      "links": [
+        {"label":"Rules","url":"https://1drv.ms/w/c/56597566f3fd71ff/Edz0vK0S3PJKtCT_GMwz-lIBwg3KTjlBFGpvNqwYTqguGQ?e=HdQFHj"},
+        {"label":"SellSheet","url":"https://www.canva.com/design/DAGoIXxwFd8/9LzKC46Zh_B6E-I_o1drnA/edit?utm_content=DAGoIXxwFd8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"},
+        {"label":"Cards","url":"https://www.canva.com/design/DAGnPGpWDxQ/vvCi1BSW3GvwWC43EGZsJg/edit?utm_content=DAGnPGpWDxQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"}
+      ], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 2, "title": "Sustainibattle", "post": 46155890, "author": "Cameron", "username": "GameTortoise", "time": "1 giu 2025 (edited)",
+      "body": "All done! I didn't have a TON of time, but I got a playtest in and it worked somewhat well. I'm bummed it didn't turn out great, but I think it could go somewhere with more time. Anyways, it was fun to participate! Here's the rules (https://docs.google.com/document/d/1QZj_rfCS_ZtQyuAL1Hl5Ok_m....0) and the PnP(https://drive.google.com/drive/folders/141PxTitEphqevcc56a6Z...). Also I hope 3 minutes over doesn't change anything about my submission...",
+      "links": [
+        {"label":"https://docs.google.com/document/d/1QZj_rfCS_ZtQyuAL1Hl5Ok_m...","url":"https://docs.google.com/document/d/1QZj_rfCS_ZtQyuAL1Hl5Ok_mJ9gtZ7LZSFveeYVN1pw/edit?tab=t"},
+        {"label":"https://drive.google.com/drive/folders/141PxTitEphqevcc56a6Z...","url":"https://drive.google.com/drive/folders/141PxTitEphqevcc56a6ZmZmPNoEAGtj7?usp=drive_link"}
+      ], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 3, "title": "Green Thumb", "post": 46168808, "author": "Matthew P", "username": "pevenm", "time": "4 giu 2025 (edited)",
+      "body": "It's been a whirlwind of 24 hours. After play testing, I decided to shorten the game from 4 deck runs to 2 (the couple plays I was able to basically meet the goal within two runs and then it was just swapping cards back and forth, not so much fun, so now it is more cutthroat and quick and challenging) so had to pivot and make some big changes in rules and cards but I think it is all set! This was a blast and hope to join more in the future!\n\nGreen Thumb is Contest Ready!!\n\nLink to Files\n\nI was not able to try all the different plant cards to see if the values made sense. With more play testing, I would work on that to make sure the game is both challenging and enjoyable. I had fun playing my few rounds!\n\nHappy Planting!!",
+      "links": [{"label":"Link to Files","url":"https://drive.google.com/drive/folders/1mWvO2HsvyqrrN9R9m3K3xWqkLWbiSIZ_?usp=share_link"}], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 4, "title": "Green Gold", "post": 46183374, "author": "Julian Anstey", "username": "j409603", "time": "8 giu 2025",
+      "body": "It was an interesting idea, but the special powers, in combination, are so strong that the rest of the game has to be very restrictive. That makes the end game too fiddly for my liking. But here it is anyway:\n\nGreen Gold rules\nGreen Gold cards",
+      "links": [
+        {"label":"Green Gold rules","url":"https://drive.google.com/file/d/1YvJUEW3uHK21p6Wba7ydu8E0A_sqisUA/view?usp=sharing"},
+        {"label":"Green Gold cards","url":"https://drive.google.com/file/d/1CNOTklmQGPFeXomhNDBysPtoC5Jo55np/view?usp=sharing"}
+      ], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 5, "title": "Cash Crop", "post": 46241630, "author": "Pranav Vaddepalli", "username": "StormShadow4889", "time": "22 giu 2025",
+      "body": "Alright I am finished with my game now and am ready to submit. Below I have provided an official rulebook of the game, card and token designs, a PnP, and a quick video I made showcasing some gameplay and providing a quick tutorial.\n\nRulebook: https://docs.google.com/document/d/15H7yl-F5gMLsvkJYjxWdkpJK...\n\nCard and Token Designs: https://www.canva.com/design/DAGqcuIJ6hY/ivp8hR1wg7W9Fe0pJtF...\n\nPnP: https://drive.google.com/file/d/1TahocadtapwAfqodrY7_NVueF9N...\n\nGameplay and Tutorial Video: https://youtu.be/BPS-HMBgy7I?feature=shared\n\nI hope you enjoy the game!",
+      "links": [
+        {"label":"https://docs.google.com/document/d/15H7yl-F5gMLsvkJYjxWdkpJK...","url":"https://docs.google.com/document/d/15H7yl-F5gMLsvkJYjxWdkpJKVNIgnvCz1MXi618GCno/edit?usp=sharing"},
+        {"label":"https://www.canva.com/design/DAGqcuIJ6hY/ivp8hR1wg7W9Fe0pJtF...","url":"https://www.canva.com/design/DAGqcuIJ6hY/ivp8hR1wg7W9Fe0pJtFj2g/view?utm_content=DAGqcuIJ6hY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h78c4cd31d5"},
+        {"label":"https://drive.google.com/file/d/1TahocadtapwAfqodrY7_NVueF9N...","url":"https://drive.google.com/file/d/1TahocadtapwAfqodrY7_NVueF9NWx955/view?usp=drive_link"},
+        {"label":"https://youtu.be/BPS-HMBgy7I?feature=shared","url":"https://youtu.be/BPS-HMBgy7I?feature=shared"}
+      ], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 6, "title": "Chlorophyllium", "post": 46258135, "author": "J-P Kurikka", "username": "MrKuricat", "time": "26 giu 2025",
+      "body": "It has been done. Took almost exactly 20 hours. I would have wanted to test this a bit more and make a few tweaks here and there, but at this point I'm wayyyy too tired.\n\nLink to the site with PnP materials etc.\n\nNow, to bed...",
+      "links": [{"label":"Link to the site with PnP materials etc.","url":"https://wannabeboardgamedesigner.com/chlorophyllium-challenge-pnpfile/"}], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 7, "title": "Flag Finish", "post": 46277480, "author": "David Stewart", "username": "davidfstewart", "time": "1 lug 2025 (edited)",
+      "body": "My game is called Flag Finish. Here are the rules: [link] Here are the cards: [link]",
+      "links": [
+        {"label":"[link]","url":"https://davidfstewart.ca/wp-content/uploads/2025/06/Flag-Finish-Rules.pdf"},
+        {"label":"[link]","url":"https://davidfstewart.ca/wp-content/uploads/2025/06/Flag-Finish-Cards.pdf"}
+      ], "media": [], "dynamic_links": []
+    },
+    {
+      "position": 8, "title": "Fruit Tumbler", "post": 46277709, "author": "Iffix Y Santaph", "username": "XendoBreckett", "time": "1 lug 2025 (edited)",
+      "body": "I tried one, couldn't quite make it work in the time available to me (for the 2nd time this contest ), maybe for a future design contest? \nSo, I tried again starting about an hour ago. This is one of the slightest games I have ever created. But just for the designer cred, why not?\nFruit Tumbler\n\n(I also decided on the name a fraction of a minute ago. Seemed appropriate.)",
+      "links": [{"label":"Fruit Tumbler","url":"https://drive.google.com/file/d/1zYahelwShiEBXx840ROtIRfJKYcFQh5h/view?usp=sharing"}], "media": [], "dynamic_links": []
+    }
+  ]
+}

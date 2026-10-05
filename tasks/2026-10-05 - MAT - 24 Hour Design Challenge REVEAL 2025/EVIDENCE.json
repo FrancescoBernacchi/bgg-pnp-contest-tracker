@@ -1,0 +1,429 @@
+{
+  "task_id": "TSK-0060",
+  "contest_id": 296,
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 6,
+    "complete": 6,
+    "unique_original_posts": 6,
+    "resource_entries": 6,
+    "resources": 11,
+    "unique_resource_urls": 11,
+    "requirements": 18
+  },
+  "coverage_scope": "first_post_only",
+  "method": "CUA original author posts directly linked by official roster; optional dedicated WIP; no external hosts/files or replies used.",
+  "entries": [
+    {
+      "entry_id": 1310,
+      "game_id": 1374,
+      "position": 1,
+      "title": "Robotika",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45784115#45784115",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45784115#45784115",
+      "author_raw": "Iffix Y Santaph",
+      "roster_author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "11 mar 2025",
+      "post_timestamp_iso": "2025-03-11T14:18:48+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1nmXxGNEV7d_0x4Ga72c0Qji1k2YBJHOD/view?usp=sharing",
+          "label_raw": "[Components]",
+          "content_role": "component",
+          "context_raw": "[Components]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1naT2pDNf6ZnB0ebZwBJcAlD1Mhx0zliG/view?usp=sharing",
+          "label_raw": "[Rules]",
+          "content_role": "rules",
+          "context_raw": "[Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "counter",
+          "name_normalized": "workers condivisi",
+          "name_raw": "one of 2 workers which are shared by all players",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "one of 2 workers which are shared by all players"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "each player will roll 2 dice",
+          "quantity_raw": "2 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "each player will roll 2 dice"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte robot",
+          "name_raw": "Each player starts with a robot card in their hand.",
+          "quantity_raw": "1 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Each player starts with a robot card in their hand."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte oggetto",
+          "name_raw": "20 item cards in a 2-3 player game, 28 in a 4 player game, or 36 in a 5 player game.",
+          "quantity_raw": "20 / 28 / 36 secondo giocatori",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "20 item cards in a 2-3 player game, 28 in a 4 player game, or 36 in a 5 player game."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "fogli stampati",
+          "name_raw": "print just 5 sheets if you wish to play a 2-3 player game",
+          "quantity_raw": "5 per 2–3 giocatori",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "print just 5 sheets if you wish to play a 2-3 player game"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Rules]"
+        }
+      ],
+      "notes": "Quantità alternative di carte per numero giocatori, non sommate. Workers e dadi espliciti; forma dei workers non inferita.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1311,
+      "game_id": 1375,
+      "position": 2,
+      "title": "Intent",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45826419#45826419",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45826419#45826419",
+      "author_raw": "Iffix Y Santaph",
+      "roster_author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "19 mar 2025",
+      "post_timestamp_iso": "2025-03-19T14:05:34+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1HcHpdKmLt3YdMlN3RytOH8OJenXBjssQ/view?usp=sharing",
+          "label_raw": "[Rules]",
+          "content_role": "rules",
+          "context_raw": "[Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1bh1adDo5qfdgkCWlUM9m27Ykq2FAai33/view?usp=sharing",
+          "label_raw": "[Components]",
+          "content_role": "component",
+          "context_raw": "[Components]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "[Components]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Components]"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Rules]"
+        }
+      ],
+      "notes": "Immagine BGG illustrativa esclusa: nessuna istruzione di stampa. Legame tematico con Robotika non trasformato in dipendenza.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1312,
+      "game_id": 1376,
+      "position": 3,
+      "title": "Shuffle & Sleuth",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45830622#45830622",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45830622#45830622",
+      "author_raw": "Coblin King",
+      "roster_author_raw": "Krasimir Savov",
+      "post_timestamp_raw": "20 mar 2025 (edited)",
+      "post_timestamp_iso": "2025-03-20T06:50:26+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1wDpA4uiDqq9CDV1I27S92KvQS0GeQrwN?usp=sharing",
+          "label_raw": "Rulebook and Cards",
+          "content_role": "game_files",
+          "context_raw": "Rulebook and Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte sospettato",
+          "name_raw": "6 suspect cards, 6 location cards, 6 weapon cards.",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "6 suspect cards, 6 location cards, 6 weapon cards."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte luogo",
+          "name_raw": "6 suspect cards, 6 location cards, 6 weapon cards.",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "6 suspect cards, 6 location cards, 6 weapon cards."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte arma",
+          "name_raw": "6 suspect cards, 6 location cards, 6 weapon cards.",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "6 suspect cards, 6 location cards, 6 weapon cards."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Rulebook and Cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Rulebook and Cards"
+        },
+        {
+          "material_kind": "base_game_component",
+          "name_normalized": "carte di Clue",
+          "name_raw": "you own a copy of Clue, you can probably play it just as well with the cards from that game.",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "specialized",
+          "context_raw": "you own a copy of Clue, you can probably play it just as well with the cards from that game."
+        }
+      ],
+      "notes": "Roster Krasimir Savov; profilo @coblin visualizzato Coblin King. 18 carte proposte e poi carte pubblicate; pawn, carta e tokens nel brainstorming sono ipotesi, non requisiti confermati. Carte Clue alternativa dichiarata con incertezza probably.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1313,
+      "game_id": 1377,
+      "position": 4,
+      "title": "Dungeon Encounter",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45846664#45846664",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45846664#45846664",
+      "author_raw": "Isaac Haller",
+      "roster_author_raw": "Isaac Haller",
+      "post_timestamp_raw": "23 mar 2025 (edited)",
+      "post_timestamp_iso": "2025-03-23T13:04:48+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1wraVcEQXfQVaKsMeJru5HoryrZNKLj0R?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1wraVcEQXfQVaKsMeJru5...",
+          "content_role": "game_files",
+          "context_raw": "https://drive.google.com/drive/folders/1wraVcEQXfQVaKsMeJru5...",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tessere eroe oggetto e nemico",
+          "name_raw": "a grid of hero, object, and enemy tiles",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "a grid of hero, object, and enemy tiles"
+        }
+      ],
+      "notes": "House Run è idea scartata nel medesimo post; inventario riferito solo a Dungeon Encounter. Cartella non enumerata; nessun regolamento inferito.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1314,
+      "game_id": 1378,
+      "position": 5,
+      "title": "King's Claim",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45882504#45882504",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45882504#45882504",
+      "author_raw": "J de K",
+      "roster_author_raw": "BlueChicken",
+      "post_timestamp_raw": "30 mar 2025 (edited)",
+      "post_timestamp_iso": "2025-03-30T11:39:03+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1stG2TduAvP8lATxKXBNfEILVsfcY6IxI?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1stG2TduAvP8lATxKXBNf...",
+          "content_role": "game_files",
+          "context_raw": "https://drive.google.com/drive/folders/1stG2TduAvP8lATxKXBNf...",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/ryh27k",
+          "label_raw": "https://playingcards.io/ryh27k",
+          "content_role": "online_play",
+          "context_raw": "https://playingcards.io/ryh27k",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti PnP",
+          "name_raw": "PnP can be found here:",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "PnP can be found here:"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Hope the rules and components are clear enough.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Hope the rules and components are clear enough."
+        }
+      ],
+      "notes": "Roster BlueChicken corrisponde a profilo @BlueChicken visualizzato J de K. PnP e implementazione online separati; Dextrous citato come strumento senza URL, escluso.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1315,
+      "game_id": 1379,
+      "position": 6,
+      "title": "What Happened?",
+      "source_url": "https://boardgamegeek.com/thread/3473961/article/45930400#45930400",
+      "wip_url": "https://boardgamegeek.com/thread/3473961/article/45930400#45930400",
+      "author_raw": "Tarang Hardikar",
+      "roster_author_raw": "Tarang Hardikar",
+      "post_timestamp_raw": "9 apr 2025 (edited)",
+      "post_timestamp_iso": "2025-04-09T14:32:18+00:00",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1QcXK590bIegi89XAlFrriSB89LM3Vacf/view?usp=sharing",
+          "label_raw": "What Happened Rules",
+          "content_role": "rules",
+          "context_raw": "What Happened Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1tPCGHxjoSHVg6dj8-N2GZGmZzpBy9wDj/view?usp=sharing",
+          "label_raw": "What Happened PNP",
+          "content_role": "component",
+          "context_raw": "What Happened PNP",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1kEdQip1WtGYbjI2m03v2VOeP2n-3HNGN2pXeDrY9SFM/edit?tab=t.0",
+          "label_raw": "https://docs.google.com/document/d/1kEdQip1WtGYbjI2m03v2VOeP...",
+          "content_role": "player_aid",
+          "context_raw": "The Answer To The Puzzle; revealed story, only after solving the game",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte con fronti e dorsi",
+          "name_raw": "Page 1 is card fronts, page 2 is card backs for the cards on the first page. Page 3 is fronts, page 4 is backs and so on.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Page 1 is card fronts, page 2 is card backs for the cards on the first page. Page 3 is fronts, page 4 is backs and so on."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "What Happened Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "What Happened Rules"
+        }
+      ],
+      "notes": "Documento soluzione della storia: player_aid provvisorio, spoiler da aprire solo dopo il gioco. Fronti/dorsi espliciti, quantità carte non dedotta.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    }
+  ]
+}

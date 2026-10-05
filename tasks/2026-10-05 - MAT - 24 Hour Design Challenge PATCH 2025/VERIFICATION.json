@@ -1,0 +1,36 @@
+{
+  "task_id": "TSK-0063",
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 12,
+    "complete": 12,
+    "resource_entries": 10,
+    "none_declared_resource_entries": 2,
+    "resources_per_entry": 12,
+    "unique_resource_urls": 12,
+    "requirements": 26,
+    "none_declared_material_entries": 1,
+    "not_observable": 0,
+    "wip_not_found": 0
+  },
+  "dom_identity_links_excerpts_verified": 12,
+  "roster_reconciled": 12,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_rankings_and_acquisitions_unchanged": true,
+  "operational_database_opened_read_only": true,
+  "operational_applied": false,
+  "copy_path": "outputs/2025-patch-materials/verification.sqlite3",
+  "table_additions": {
+    "remote_resources": 12,
+    "entry_resource_scans": 12,
+    "entry_resource_mentions": 12,
+    "remote_resource_observations": 12,
+    "entry_material_scans": 12,
+    "entry_material_requirements": 26,
+    "entry_work_observations": 12
+  },
+  "sql_sha256": "701c988a904ef3ae58ba5ecbe5405ed9cef36f5c6ebf159a08e7f3693ae3b5e7"
+}

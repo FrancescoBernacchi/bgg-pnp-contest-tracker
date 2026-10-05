@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-05",
+  "method": "CUA rendered DOM; original posts only; full text read, text fingerprint recorded without reproducing whole third-party posts",
+  "roster_source": "https://boardgamegeek.com/thread/3473961/article/45765525#45765525",
+  "roster_posts": [
+    45784115,
+    45826419,
+    45830622,
+    45846664,
+    45882504,
+    45930400
+  ],
+  "optional_wip_evidence": "https://boardgamegeek.com/thread/3473961/article/45765523#45765523",
+  "entries": [
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45784115#45784115",
+      "author": "Iffix Y Santaph",
+      "time": "11 mar 2025",
+      "datetime": "2025-03-11T14:18:48+00:00",
+      "characters": 2076,
+      "text_fnv": "0092236d",
+      "links": [
+        {
+          "url": "https://drive.google.com/file/d/1nmXxGNEV7d_0x4Ga72c0Qji1k2YBJHOD/view?usp=sharing",
+          "label": "[Components]"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1naT2pDNf6ZnB0ebZwBJcAlD1Mhx0zliG/view?usp=sharing",
+          "label": "[Rules]"
+        }
+      ],
+      "media": []
+    },
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45826419#45826419",
+      "author": "Iffix Y Santaph",
+      "time": "19 mar 2025",
+      "datetime": "2025-03-19T14:05:34+00:00",
+      "characters": 703,
+      "text_fnv": "9a63b232",
+      "links": [
+        {
+          "url": "https://drive.google.com/file/d/1HcHpdKmLt3YdMlN3RytOH8OJenXBjssQ/view?usp=sharing",
+          "label": "[Rules]"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1bh1adDo5qfdgkCWlUM9m27Ykq2FAai33/view?usp=sharing",
+          "label": "[Components]"
+        }
+      ],
+      "media": []
+    },
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45830622#45830622",
+      "author": "Coblin King",
+      "time": "20 mar 2025 (edited)",
+      "datetime": "2025-03-20T06:50:26+00:00",
+      "characters": 1733,
+      "text_fnv": "bad2b53b",
+      "links": [
+        {
+          "url": "https://drive.google.com/drive/folders/1wDpA4uiDqq9CDV1I27S92KvQS0GeQrwN?usp=sharing",
+          "label": "Rulebook and Cards"
+        }
+      ],
+      "media": []
+    },
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45846664#45846664",
+      "author": "Isaac Haller",
+      "time": "23 mar 2025 (edited)",
+      "datetime": "2025-03-23T13:04:48+00:00",
+      "characters": 1215,
+      "text_fnv": "6e5d5a21",
+      "links": [
+        {
+          "url": "https://drive.google.com/drive/folders/1wraVcEQXfQVaKsMeJru5HoryrZNKLj0R?usp=sharing",
+          "label": "https://drive.google.com/drive/folders/1wraVcEQXfQVaKsMeJru5..."
+        }
+      ],
+      "media": []
+    },
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45882504#45882504",
+      "author": "J de K",
+      "time": "30 mar 2025 (edited)",
+      "datetime": "2025-03-30T11:39:03+00:00",
+      "characters": 930,
+      "text_fnv": "5f9fc0ab",
+      "links": [
+        {
+          "url": "https://drive.google.com/drive/folders/1stG2TduAvP8lATxKXBNfEILVsfcY6IxI?usp=sharing",
+          "label": "https://drive.google.com/drive/folders/1stG2TduAvP8lATxKXBNf..."
+        },
+        {
+          "url": "https://playingcards.io/ryh27k",
+          "label": "https://playingcards.io/ryh27k"
+        }
+      ],
+      "media": []
+    },
+    {
+      "source": "https://boardgamegeek.com/thread/3473961/article/45930400#45930400",
+      "author": "Tarang Hardikar",
+      "time": "9 apr 2025 (edited)",
+      "datetime": "2025-04-09T14:32:18+00:00",
+      "characters": 1419,
+      "text_fnv": "6b150b11",
+      "links": [
+        {
+          "url": "https://drive.google.com/file/d/1QcXK590bIegi89XAlFrriSB89LM3Vacf/view?usp=sharing",
+          "label": "What Happened Rules"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1tPCGHxjoSHVg6dj8-N2GZGmZzpBy9wDj/view?usp=sharing",
+          "label": "What Happened PNP"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1kEdQip1WtGYbjI2m03v2VOeP2n-3HNGN2pXeDrY9SFM/edit?tab=t.0",
+          "label": "https://docs.google.com/document/d/1kEdQip1WtGYbjI2m03v2VOeP..."
+        }
+      ],
+      "media": []
+    }
+  ]
+}

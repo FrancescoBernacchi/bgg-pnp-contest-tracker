@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-05",
+  "method": "CUA read-only rendered article DOM; all original text read. Text FNV witnesses identify the observed rendered article including UI chrome; excerpts in EVIDENCE preserve relevant declarations, not full third-party text.",
+  "roster_source": "https://boardgamegeek.com/thread/3542704/article/46335246#46335246",
+  "roster_author": "@UberDante",
+  "roster_time": "15 lug 2025 (edited)",
+  "roster_text_length": 273,
+  "roster_text_fnv": "b9a116b0",
+  "roster_post_ids": [46361933,46367208,46430966,46482487,46484191],
+  "original_post_ids": [46361933,46367208,46430966,46482487,46484191],
+  "authors": ["Cameron","Iffix Y Santaph","David Stewart","Iffix Y Santaph","Isaac Haller"],
+  "times": ["22 lug 2025 (edited)","23 lug 2025 (edited)","6 ago 2025 (edited)","17 ago 2025 (edited)","17 ago 2025"],
+  "rendered_text_lengths": [1391,2562,458,1423,349],
+  "rendered_text_fnv": ["22d3d93d","61220811","2923ecc7","921b6b87","f00986f8"],
+  "external_links": [
+    [["https://docs.google.com/document/d/1Z48pyFKnoxPcAGL6Ev7kN-PjDm87J2Hbv-_7UkNGwGQ/edit?tab=t","https://docs.google.com/document/d/1Z48pyFKnoxPcAGL6Ev7kN-Pj..."]],
+    [],
+    [["https://davidfstewart.ca/wp-content/uploads/2025/08/Lunch-Pad-Game-by-David-Stewart.pdf","Lunch-Pad-Game-by-David-Stewart.pdf"]],
+    [["https://drive.google.com/file/d/1kDIsTPy8Tfp0RZWjmteJjqLRdr0MvhcK/view?usp=sharing","[Components]"],["https://drive.google.com/file/d/1WjeA3B4QG5dyAz6CgEb0eIOhOw5_9mqC/view?usp=sharing","[Rules]"]],
+    [["https://drive.google.com/drive/folders/1OWAZYD8xhl0ufOL8TvFMKmAquLJdaQ82?usp=sharing","https://drive.google.com/drive/folders/1OWAZYD8xhl0ufOL8TvFM..."]]
+  ],
+  "embedded_media_counts": [0,0,0,0,0],
+  "additional_explicit_contexts": {"1": "Final note--print 3 decks for 2 person games. See \"2 player variant\" in the rules for why.", "2": "(Pre-phase Tie-breaker: If players tie for lowest score, shuffle the removed cards and each tied player alternates drawing a card. The first player to reveal a joker will lead the first trick.)"},
+  "excluded_bgg_image": "https://boardgamegeek.com/image/9031357"
+}

@@ -1,0 +1,312 @@
+{
+  "task_id": "TSK-0062",
+  "contest_id": 295,
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 5,
+    "complete": 5,
+    "unique_original_posts": 5,
+    "resource_entries": 4,
+    "resources": 5,
+    "unique_resource_urls": 5,
+    "requirements": 15,
+    "requirement_entries": 4
+  },
+  "coverage_scope": "first_post_only",
+  "method": "CUA rendered original submissions linked by roster. WIP optional per official first post 46335243. Entire original submissions read, no later replies used, no external hosts or files opened.",
+  "entries": [
+    {
+      "entry_id": 1324,
+      "game_id": 1388,
+      "position": 1,
+      "title": "Cycle Of The Lotus",
+      "source_url": "https://boardgamegeek.com/thread/3542704/article/46361933#46361933",
+      "wip_url": "https://boardgamegeek.com/thread/3542704/article/46361933#46361933",
+      "author_raw": "Cameron",
+      "post_timestamp_raw": "22 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1Z48pyFKnoxPcAGL6Ev7kN-PjDm87J2Hbv-_7UkNGwGQ/edit?tab=t",
+          "label_raw": "https://docs.google.com/document/d/1Z48pyFKnoxPcAGL6Ev7kN-Pj...",
+          "content_role": "rules",
+          "context_raw": "RULES; files for the actual game are within the rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "mazzo PnP con plance incluse",
+          "name_raw": "Print out one PnP deck for each person playing the game (the boards are included in the deck files)",
+          "quantity_raw": "1 per giocatore; 3 mazzi per 2 giocatori",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Print out one PnP deck for each person playing the game (the boards are included in the deck files)"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "mazzo wild",
+          "name_raw": "print out the wild deck and player guide no matter what",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "print out the wild deck and player guide no matter what"
+        },
+        {
+          "material_kind": "player_aid",
+          "name_normalized": "guida giocatore",
+          "name_raw": "print out the wild deck and player guide no matter what",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "print out the wild deck and player guide no matter what"
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "pedine per le plance",
+          "name_raw": "Grab some movers for the boards, as I forgot to make any",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Grab some movers for the boards, as I forgot to make any"
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "blocco segnapunti o superficie per tacche",
+          "name_raw": "a scorepad/somewhere to write tally marks for each person",
+          "quantity_raw": "1 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "a scorepad/somewhere to write tally marks for each person"
+        }
+      ],
+      "notes": "Plance incluse nel mazzo, non sommate nuovamente. Tre mazzi per due giocatori; mazzo wild e guida sempre richiesti. File Canva Lilypad Boards e Cards dichiarati mera arte non configurata PnP; nessun URL Canva nel post originale corrente. File di gioco dichiarati interni alle regole: destinazioni annidate non osservate.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1325,
+      "game_id": 1389,
+      "position": 2,
+      "title": "Pad Your Stats",
+      "source_url": "https://boardgamegeek.com/thread/3542704/article/46367208#46367208",
+      "wip_url": "https://boardgamegeek.com/thread/3542704/article/46367208#46367208",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "23 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale con joker per spareggio",
+          "name_raw": "Preparation: In a 3 player game, remove Jokers, all 2-6's, and red 7's; this leaves 30 cards. In a 4 player game, remove Jokers and 2-4's; this leaves 40 cards. In a 5 player game, remove Jokers and red 2's; this leaves 50 cards.",
+          "quantity_raw": "30/40/50 carte in gioco per 3/4/5 giocatori",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Preparation: In a 3 player game, remove Jokers, all 2-6's, and red 7's; this leaves 30 cards. In a 4 player game, remove Jokers and 2-4's; this leaves 40 cards. In a 5 player game, remove Jokers and red 2's; this leaves 50 cards."
+        }
+      ],
+      "notes": "Regole interamente nel post, nessun URL materiali. Mazzo selezionato per numero giocatori; joker delle carte rimosse usati nello spareggio. Nessuno strumento segnapunti dedotto.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1326,
+      "game_id": 1390,
+      "position": 3,
+      "title": "Lunch Pad",
+      "source_url": "https://boardgamegeek.com/thread/3542704/article/46430966#46430966",
+      "wip_url": "https://boardgamegeek.com/thread/3542704/article/46430966#46430966",
+      "author_raw": "David Stewart",
+      "post_timestamp_raw": "6 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://davidfstewart.ca/wp-content/uploads/2025/08/Lunch-Pad-Game-by-David-Stewart.pdf",
+          "label_raw": "Lunch-Pad-Game-by-David-Stewart.pdf",
+          "content_role": "game_files",
+          "context_raw": "Here is the print-and-play file that contains the rules and cards",
+          "version_raw": null,
+          "host": "davidfstewart.ca",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "You will need 8 dice to play, along with the cards included in the print-and-play file.",
+          "quantity_raw": "8",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "You will need 8 dice to play, along with the cards included in the print-and-play file."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte PnP",
+          "name_raw": "You will need 8 dice to play, along with the cards included in the print-and-play file.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "You will need 8 dice to play, along with the cards included in the print-and-play file."
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "segnalino primo giocatore",
+          "name_raw": "The rules mention a first player token, which is not needed but helps with the flow.",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "The rules mention a first player token, which is not needed but helps with the flow."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Here is the print-and-play file that contains the rules and cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Here is the print-and-play file that contains the rules and cards"
+        }
+      ],
+      "notes": "PDF dichiarato regole e carte; 8 dadi e segnalino primo giocatore opzionale. Immagine BGG 9031357 illustrativa esclusa: nessuna istruzione di stampa.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1327,
+      "game_id": 1391,
+      "position": 4,
+      "title": "ALT",
+      "source_url": "https://boardgamegeek.com/thread/3542704/article/46482487#46482487",
+      "wip_url": "https://boardgamegeek.com/thread/3542704/article/46482487#46482487",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "17 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1kDIsTPy8Tfp0RZWjmteJjqLRdr0MvhcK/view?usp=sharing",
+          "label_raw": "[Components]",
+          "content_role": "component",
+          "context_raw": "[Components]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1WjeA3B4QG5dyAz6CgEb0eIOhOw5_9mqC/view?usp=sharing",
+          "label_raw": "[Rules]",
+          "content_role": "rules",
+          "context_raw": "[Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte mini",
+          "name_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components.",
+          "quantity_raw": "32",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "plancia gioco",
+          "name_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "plance giocatore",
+          "name_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components.",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components."
+        },
+        {
+          "material_kind": "other",
+          "name_normalized": "altri componenti non specificati",
+          "name_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components.",
+          "quantity_raw": "a handful",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "The game uses 32 mini-sized playing cards, a game board and 2 player boards, and just a handful of components."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Rules]"
+        }
+      ],
+      "notes": "32 carte mini, una plancia gioco, due plance giocatore e ulteriori componenti non specificati. Nessuna distinta dedotta dalla meccanica.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1328,
+      "game_id": 1392,
+      "position": 5,
+      "title": "CareFlight",
+      "source_url": "https://boardgamegeek.com/thread/3542704/article/46484191#46484191",
+      "wip_url": "https://boardgamegeek.com/thread/3542704/article/46484191#46484191",
+      "author_raw": "Isaac Haller",
+      "post_timestamp_raw": "17 ago 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1OWAZYD8xhl0ufOL8TvFMKmAquLJdaQ82?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1OWAZYD8xhl0ufOL8TvFM...",
+          "content_role": "game_files",
+          "context_raw": "A little late, but here's my entry! It's called CareFlight",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [],
+      "notes": "Cartella dichiarata per entry, contenuto non verificato. Nessun requisito esplicito: roll n write non autorizza inferire dadi, matite o schede.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "verified_at": "2026-10-05",
+  "entries": 39,
+  "complete": 39,
+  "contests": [
+    {
+      "contest_id": 296,
+      "theme": "REVEAL",
+      "entries": 6,
+      "complete": 6,
+      "resources": 11,
+      "requirements": 18
+    },
+    {
+      "contest_id": 297,
+      "theme": "GREEN",
+      "entries": 8,
+      "complete": 8,
+      "resources": 16,
+      "requirements": 14
+    },
+    {
+      "contest_id": 295,
+      "theme": "PAD",
+      "entries": 5,
+      "complete": 5,
+      "resources": 5,
+      "requirements": 15
+    },
+    {
+      "contest_id": 299,
+      "theme": "PATCH",
+      "entries": 12,
+      "complete": 12,
+      "resources": 12,
+      "requirements": 26
+    },
+    {
+      "contest_id": 298,
+      "theme": "ANKS",
+      "entries": 8,
+      "complete": 8,
+      "resources": 9,
+      "requirements": 21
+    }
+  ],
+  "unique_urls": 53,
+  "game_url_associations": 53,
+  "requirements": 94,
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "original_history_preserved": true,
+  "roster_rankings_acquisitions_files_other_contests_unchanged": true,
+  "provenance_and_api_verified": 39,
+  "final_materials_metrics_verified": 39,
+  "changed_tables": {
+    "entries": {
+      "updated_wip_urls": 39
+    },
+    "remote_resources": {
+      "added": 53
+    },
+    "entry_resource_scans": {
+      "added": 39
+    },
+    "entry_resource_mentions": {
+      "added": 53
+    },
+    "remote_resource_observations": {
+      "added": 53
+    },
+    "entry_material_scans": {
+      "added": 39
+    },
+    "entry_material_requirements": {
+      "added": 94
+    },
+    "entry_work_observations": {
+      "added": 39
+    }
+  },
+  "year_2025": {
+    "census_complete_count": 17,
+    "census_incomplete_count": 0,
+    "contests_without_entries_count": 0,
+    "ranking_complete_count": 509,
+    "ranking_not_applicable_count": 0,
+    "ranking_blocked_count": 0,
+    "ranking_partial_count": 0,
+    "ranking_total": 509,
+    "materials_complete_count": 495,
+    "materials_not_applicable_count": 0,
+    "materials_blocked_count": 10,
+    "materials_partial_count": 0,
+    "materials_total": 509,
+    "acquisition_complete_count": 39,
+    "acquisition_not_applicable_count": 63,
+    "acquisition_blocked_count": 17,
+    "acquisition_partial_count": 3,
+    "acquisition_total": 446,
+    "image_complete_count": 0,
+    "year": 2025,
+    "contest_count": 17,
+    "contests_with_entries_count": 17,
+    "entry_count": 509,
+    "known_status_count": 467,
+    "ranking_category_count": 111,
+    "ranked_entry_count": 292,
+    "materials_read_count": 509,
+    "downloaded_entry_count": 43,
+    "pnp_core": {
+      "census_complete_count": 9,
+      "census_incomplete_count": 0,
+      "contests_without_entries_count": 0,
+      "ranking_complete_count": 384,
+      "ranking_not_applicable_count": 0,
+      "ranking_blocked_count": 0,
+      "ranking_partial_count": 0,
+      "ranking_total": 384,
+      "materials_complete_count": 372,
+      "materials_not_applicable_count": 0,
+      "materials_blocked_count": 10,
+      "materials_partial_count": 0,
+      "materials_total": 384,
+      "acquisition_complete_count": 39,
+      "acquisition_not_applicable_count": 39,
+      "acquisition_blocked_count": 17,
+      "acquisition_partial_count": 3,
+      "acquisition_total": 345,
+      "image_complete_count": 0,
+      "contest_count": 9,
+      "contests_with_entries_count": 9,
+      "entry_count": 384,
+      "ranked_entry_count": 207,
+      "materials_read_count": 384,
+      "downloaded_entry_count": 43
+    },
+    "adjacent": {
+      "census_complete_count": 8,
+      "census_incomplete_count": 0,
+      "contests_without_entries_count": 0,
+      "ranking_complete_count": 125,
+      "ranking_not_applicable_count": 0,
+      "ranking_blocked_count": 0,
+      "ranking_partial_count": 0,
+      "ranking_total": 125,
+      "materials_complete_count": 123,
+      "materials_not_applicable_count": 0,
+      "materials_blocked_count": 0,
+      "materials_partial_count": 0,
+      "materials_total": 125,
+      "acquisition_complete_count": 0,
+      "acquisition_not_applicable_count": 24,
+      "acquisition_blocked_count": 0,
+      "acquisition_partial_count": 0,
+      "acquisition_total": 101,
+      "image_complete_count": 0,
+      "contest_count": 8,
+      "contests_with_entries_count": 8,
+      "entry_count": 125,
+      "ranked_entry_count": 85,
+      "materials_read_count": 125,
+      "downloaded_entry_count": 0
+    }
+  }
+}

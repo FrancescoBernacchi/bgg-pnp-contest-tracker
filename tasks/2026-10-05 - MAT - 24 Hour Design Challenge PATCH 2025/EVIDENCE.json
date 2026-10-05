@@ -1,0 +1,648 @@
+{
+  "task_id": "TSK-0063",
+  "contest_id": 299,
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 12,
+    "complete": 12,
+    "resource_entries": 10,
+    "none_declared_resource_entries": 2,
+    "resources_per_entry": 12,
+    "unique_resource_urls": 12,
+    "requirements": 26,
+    "none_declared_material_entries": 1,
+    "not_observable": 0,
+    "wip_not_found": 0
+  },
+  "coverage_scope": "first_post_only",
+  "method": "CUA rendered official roster and original submissions on three pages. WIP optional under challenge rules; Zero-Day dynamic title link resolved via viewport, then original dedicated WIP read. All selected original posts read completely; no replies or external hosts/files opened.",
+  "entries": [
+    {
+      "entry_id": 1329,
+      "game_id": 1393,
+      "position": 1,
+      "title": "Zero-Day Triage",
+      "source_url": "https://boardgamegeek.com/thread/3577423/article/46617446#46617446",
+      "wip_url": "https://boardgamegeek.com/thread/3577423/article/46617446#46617446",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46617473#46617473",
+      "author_raw": "David McDougal",
+      "post_timestamp_raw": "16 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/17szR-qbv7s3pf0bYg6JAak3I9hOEQTaYXpd2C45f1sU/edit?usp=sharing",
+          "label_raw": "Rules via Google Drive",
+          "content_role": "rules",
+          "context_raw": "Rules via Google Drive",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale",
+          "name_raw": "Deck of Playing Cards (52 card deck, 4 suit 13 card per suit)",
+          "quantity_raw": "52 (4 semi, 13 carte per seme)",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Deck of Playing Cards (52 card deck, 4 suit 13 card per suit)"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Rules via Google Drive",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Rules via Google Drive"
+        }
+      ],
+      "notes": "Presentazione ufficiale articolo 46617473: gg-item-link risolto entrando nel viewport; WIP originale 3577423/46617446 letto integralmente. Versioni dichiarate v0.5 e v1.0; refuso data Final Edit 2025-90-16 conservato, non corretto. Logo e backlink contest esclusi.",
+      "source_structure": "dedicated_wip_original_first_post"
+    },
+    {
+      "entry_id": 1330,
+      "game_id": 1394,
+      "position": 2,
+      "title": "Grandma's Quilts",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46640833#46640833",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46640833#46640833",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46640833#46640833",
+      "author_raw": "Isaac Haller",
+      "post_timestamp_raw": "22 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1FvZsjDIxN-EbZPskXAkxz3GayP8QEwqK?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1FvZsjDIxN-EbZPskXAkx...",
+          "content_role": "game_files",
+          "context_raw": "Below is the link to the Google drive folder containing the rules and card files.",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "rules and card files",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "rules and card files"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "rules and card files",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "rules and card files"
+        }
+      ],
+      "notes": "Cartella dichiarata per regole e carte; quantità e approvvigionamento di altri componenti non dedotti dal tile-laying.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1331,
+      "game_id": 1395,
+      "position": 3,
+      "title": "Autumn's Ghost",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46691324#46691324",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46691324#46691324",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46691324#46691324",
+      "author_raw": "Thomas Gutshall",
+      "post_timestamp_raw": "3 ott 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1XmJlajClDIim3R4BJzNwFkdEQ5kStg-T?usp=sharing",
+          "label_raw": "Google Drive Files - Autumn's Ghost",
+          "content_role": "game_files",
+          "context_raw": "Google Drive Files - Autumn's Ghost",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Each round, 12 of 16 cards are dealt out, 6 to each player.",
+          "quantity_raw": "16",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Each round, 12 of 16 cards are dealt out, 6 to each player."
+        },
+        {
+          "material_kind": "token",
+          "name_normalized": "pedine",
+          "name_raw": "Then they take turns moving their pieces or making attacks.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Then they take turns moving their pieces or making attacks."
+        }
+      ],
+      "notes": "16 carte esplicite nella descrizione, non soltanto le 12 distribuite. Pedine senza quantità o approvvigionamento dichiarato; nessuna distinta inferita.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1332,
+      "game_id": 1396,
+      "position": 4,
+      "title": "Rough Patch: Motel Lives",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46698988#46698988",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46698988#46698988",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46698988#46698988",
+      "author_raw": "JP Perkins",
+      "post_timestamp_raw": "5 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/18oENz-56ENBENr0auf52WH5mQ4YYgUKE",
+          "label_raw": "https://drive.google.com/drive/folders/18oENz-56ENBENr0auf52...",
+          "content_role": "game_files",
+          "context_raw": "Google drive with rules and printable components",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "Each day, roll the dice, face the grind, and try to survive long enough to see sunrise.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Each day, roll the dice, face the grind, and try to survive long enough to see sunrise."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Google drive with rules and printable components",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Google drive with rules and printable components"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti stampabili",
+          "name_raw": "Google drive with rules and printable components",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Google drive with rules and printable components"
+        }
+      ],
+      "notes": "Regole e componenti stampabili dichiarati; dadi nel testo, senza numero o tipo. Immagine di presentazione esclusa.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1333,
+      "game_id": 1397,
+      "position": 5,
+      "title": "Mishi's Bedtime",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46700123#46700123",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46700123#46700123",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46700123#46700123",
+      "author_raw": "Is. Ra.",
+      "post_timestamp_raw": "6 ott 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/jk19ofkfbib5q2siteki1/Mishi-CGE.pdf?rlkey=1wfku9epd01nyn1hl9e9itl9v&st=h5bt7ehr&dl=0",
+          "label_raw": "Here",
+          "content_role": "game_files",
+          "context_raw": "Ready components; Game Here",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/d55h4gi4vp48m1nyi50kx/Mishi-CGS.pdf?rlkey=3o3luqfl0minypfiwpemkmsxy&st=taro883m&dl=0",
+          "label_raw": " Aquí",
+          "content_role": "game_files",
+          "context_raw": "Ready components; Juego Aquí",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "plancia",
+          "name_raw": "1 Game Board",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "1 Game Board"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tessere",
+          "name_raw": "48 Tiles",
+          "quantity_raw": "48",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "48 Tiles"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Chain",
+          "name_raw": "26 Chain Cards",
+          "quantity_raw": "26",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "26 Chain Cards"
+        },
+        {
+          "material_kind": "token",
+          "name_normalized": "token",
+          "name_raw": "48 Tokens (per player)",
+          "quantity_raw": "48 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "48 Tokens (per player)"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "dado d6 per modalità solitaria",
+          "name_raw": "1 d6 Die  (For single-player mode)",
+          "quantity_raw": "1",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "1 d6 Die  (For single-player mode)"
+        }
+      ],
+      "notes": "Due PDF dichiarati Game/Juego, senza aprirli; lingue non inferite dal nome file. 48 token per giocatore, non totale universale. D6 limitato al solo solitario.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1334,
+      "game_id": 1398,
+      "position": 6,
+      "title": "Captain Plankwalker",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46740245#46740245",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46740245#46740245",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46740245#46740245",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "15 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/135GVEDyiVaykJz4cmJDdQYlvo8tLaw4Q/view?usp=sharing",
+          "label_raw": "\n[Components & Rules]",
+          "content_role": "game_files",
+          "context_raw": "[Components & Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "[Components & Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Components & Rules]"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Components & Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Components & Rules]"
+        }
+      ],
+      "notes": "Un unico file per componenti e regole; quantità non specificate.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1335,
+      "game_id": 1399,
+      "position": 7,
+      "title": "Patch-22",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46740519#46740519",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46740519#46740519",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46740519#46740519",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "15 ott 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale senza joker",
+          "name_raw": "Deck: Traditional, no jokers",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Deck: Traditional, no jokers"
+        }
+      ],
+      "notes": "Regole integralmente nel post originale, senza link risorse. Mazzo tradizionale senza joker; incongruenze eventuali del setup non corrette e quantità non ricostruite.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1336,
+      "game_id": 1400,
+      "position": 8,
+      "title": "Veg Patch",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46754814#46754814",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46754814#46754814",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46754814#46754814",
+      "author_raw": "Corin Elliott",
+      "post_timestamp_raw": "18 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1I_K04Wz1NonH2DUEPRfkvQIDS7gy2llD?usp=drive_link",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "You can find the PnP files for the cards and the rules here.",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte formato poker",
+          "name_raw": "Veg Patch requires 18 poker-sized cards and therefore two double-sided printed pages.",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Veg Patch requires 18 poker-sized cards and therefore two double-sided printed pages."
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "You can find the PnP files for the cards and the rules here.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "You can find the PnP files for the cards and the rules here."
+        }
+      ],
+      "notes": "18 carte formato poker su due pagine stampate fronte/retro; le pagine sono supporto di stampa, non due componenti ulteriori. Anteprima carta esclusa.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1337,
+      "game_id": 1401,
+      "position": 9,
+      "title": "Berry Patch",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46776766#46776766",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46776766#46776766",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46776766#46776766",
+      "author_raw": "David Stewart",
+      "post_timestamp_raw": "23 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://davidfstewart.ca/wp-content/uploads/2025/10/Berry-Patch-Rules.pdf",
+          "label_raw": "Berry Patch - Rules",
+          "content_role": "rules",
+          "context_raw": "Berry Patch - Rules",
+          "version_raw": null,
+          "host": "davidfstewart.ca",
+          "access_type": "file"
+        },
+        {
+          "url": "https://davidfstewart.ca/wp-content/uploads/2025/10/Berry-Patch-Cards.pdf",
+          "label_raw": "Berry Patch - Cards & Chips",
+          "content_role": "component",
+          "context_raw": "Berry Patch - Cards & Chips",
+          "version_raw": null,
+          "host": "davidfstewart.ca",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Berry Patch - Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Berry Patch - Rules"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Berry Patch - Cards & Chips",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Berry Patch - Cards & Chips"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "fiches",
+          "name_raw": "Berry Patch - Cards & Chips",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Berry Patch - Cards & Chips"
+        }
+      ],
+      "notes": "Regole e Cards & Chips in due PDF dichiarati; quantità non specificate.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1338,
+      "game_id": 1402,
+      "position": 10,
+      "title": "Krak-in'",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46790355#46790355",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46790355#46790355",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46790355#46790355",
+      "author_raw": "Mitchell Martin-Moran",
+      "post_timestamp_raw": "25 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1CLsyy0hvneZTdf_DI1Rm6Mtc0IFRyc-p?usp=drive_link",
+          "label_raw": "Google Drive Folder Link",
+          "content_role": "game_files",
+          "context_raw": "Google Drive Folder Link",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "the Kraken who uses Cards with images of Dice Placements to Attack the Ship",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "the Kraken who uses Cards with images of Dice Placements to Attack the Ship"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "The Captain uses Dice to roll and try to meet the requirements of the cards to patch the damage before the ship is destroyed!",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "The Captain uses Dice to roll and try to meet the requirements of the cards to patch the damage before the ship is destroyed!"
+        }
+      ],
+      "notes": "Carte e dadi espliciti nella descrizione; nessuna quantità o numero di facce dedotto. Funzione dei file della cartella non dettagliata.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1339,
+      "game_id": 1403,
+      "position": 11,
+      "title": "Picking Pumpkins",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46794941#46794941",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46794941#46794941",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46794941#46794941",
+      "author_raw": "Jeremiah Brammer",
+      "post_timestamp_raw": "27 ott 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [],
+      "notes": "Autore dichiara regole non finite in tempo. Immagine BGG 9184032 con alt Picking Pumpkins Gamesheet r4, senza istruzione esplicita di stampa: esclusa secondo skill MAT, non aperta. Nessun URL materiali o requisito esplicito nel testo.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1340,
+      "game_id": 1404,
+      "position": 12,
+      "title": "Patch Monsters",
+      "source_url": "https://boardgamegeek.com/thread/3576315/article/46807640#46807640",
+      "wip_url": "https://boardgamegeek.com/thread/3576315/article/46807640#46807640",
+      "roster_submission_url": "https://boardgamegeek.com/thread/3576315/article/46807640#46807640",
+      "author_raw": "Coblin King",
+      "post_timestamp_raw": "29 ott 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1NgZSSrKNf_fldZk-rUsRyNeSigaC6vTQ?usp=sharing",
+          "label_raw": "Patch Monsters - Rulebook and Cards",
+          "content_role": "game_files",
+          "context_raw": "EDIT 2: Hour 23; Patch Monsters - Rulebook and Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Patch Monsters - Rulebook and Cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Patch Monsters - Rulebook and Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Patch Monsters - Rulebook and Cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Patch Monsters - Rulebook and Cards"
+        }
+      ],
+      "notes": "Primo post editato contiene cronologia Hour 1/9/23 e working title My Father’s Patchwork; intenzioni iniziali e Bonus Objectives may exist non adottati come distinta finale. Regolamento e carte dichiarati; nessuna quantità dedotta dal mostro.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    }
+  ]
+}

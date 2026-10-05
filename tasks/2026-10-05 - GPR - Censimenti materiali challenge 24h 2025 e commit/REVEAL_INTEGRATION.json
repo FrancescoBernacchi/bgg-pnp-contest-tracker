@@ -1,0 +1,40 @@
+{
+  "contest_id": 296,
+  "entries": 6,
+  "sql_sha256": "dca28c807d8a4aaa7bc7cb8e745f3ce398f6323c46a7ac89ff10416ce92d4ea0",
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "history_preserved": true,
+  "isolated": true,
+  "idempotent": true,
+  "changed_tables": {
+    "entries": {
+      "updated_wip_urls": 6
+    },
+    "remote_resources": {
+      "added": 11
+    },
+    "entry_resource_scans": {
+      "added": 6
+    },
+    "entry_resource_mentions": {
+      "added": 11
+    },
+    "remote_resource_observations": {
+      "added": 11
+    },
+    "entry_material_scans": {
+      "added": 6
+    },
+    "entry_material_requirements": {
+      "added": 18
+    },
+    "entry_work_observations": {
+      "added": 6
+    }
+  },
+  "api_entries_verified": 6,
+  "applied": true,
+  "backup_path": "outputs/24h-2025-coordination/before-reveal-import.sqlite3",
+  "backup_sha256": "c39a8e6d2955477a39bdac9b2c787515341747e94da0b1e2a79f9c85206fca28"
+}

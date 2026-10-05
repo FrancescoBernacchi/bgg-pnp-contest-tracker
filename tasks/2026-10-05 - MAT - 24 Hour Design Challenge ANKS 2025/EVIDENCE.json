@@ -1,0 +1,495 @@
+{
+  "task_id": "TSK-0064",
+  "contest_id": 298,
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 8,
+    "complete": 8,
+    "unique_original_posts": 8,
+    "resource_entries": 7,
+    "resources_per_entry": 9,
+    "unique_resource_urls": 9,
+    "requirements": 21,
+    "none_declared_resource_entries": 1,
+    "none_declared_material_entries": 1
+  },
+  "roster_source": "https://boardgamegeek.com/thread/3607485/article/46858357#46858357",
+  "coverage_scope": "first_post_only",
+  "method": "CUA rendered original author posts, whole text read; BGG rules explicitly permit optional dedicated WIP. No replies, external hosts or files used.",
+  "entries": [
+    {
+      "entry_id": 1341,
+      "game_id": 1405,
+      "position": 1,
+      "title": "Gee, Thanks!",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46860893#46860893",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46860893#46860893",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "9 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale senza joker",
+          "name_raw": "Gee, Thanks is a trick-taking game played with a traditional deck (no Jokers).",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Gee, Thanks is a trick-taking game played with a traditional deck (no Jokers)."
+        }
+      ],
+      "notes": "Regole nel post originale; nessun URL materiali dichiarato. Numero totale carte non dedotto.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1342,
+      "game_id": 1406,
+      "position": 2,
+      "title": "Ankhs before Isfet",
+      "source_url": "https://boardgamegeek.com/thread/3614854/article/46916910#46916910",
+      "wip_url": "https://boardgamegeek.com/thread/3614854/article/46916910#46916910",
+      "author_raw": "Noah Charles",
+      "post_timestamp_raw": "20 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://1drv.ms/f/c/5e3ac0b8ce9fcff6/EgPGFsB-DlxEv84th0mElvMBHKGYpa0ImnZExbSnbe16Iw?e=nhxUMq",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "Find the files here.",
+          "version_raw": null,
+          "host": "1drv.ms",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tabellone",
+          "name_raw": "Just a board, a deck of cards, five scraps, and your increasingly fragile grip on cosmic order.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Just a board, a deck of cards, five scraps, and your increasingly fragile grip on cosmic order."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte evento",
+          "name_raw": "Each turn, draw one of 24 event cards",
+          "quantity_raw": "24",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Each turn, draw one of 24 event cards"
+        },
+        {
+          "material_kind": "assembly_tool",
+          "name_normalized": "stampante",
+          "name_raw": "2. A Printer — ideally not haunted, but thematically appropriate if it is.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "2. A Printer — ideally not haunted, but thematically appropriate if it is."
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "segnalini sostituibili",
+          "name_raw": "3. Five tokens — coins, beads, buttons, pebbles, lint, dead flies. Anything.",
+          "quantity_raw": "5",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3. Five tokens — coins, beads, buttons, pebbles, lint, dead flies. Anything."
+        }
+      ],
+      "notes": "Roster -> presentazione originale 46916976 -> WIP originale 46916910. PnP, tabellone, 24 carte evento, stampante e cinque segnalini espliciti; bravery escluso come battuta. Host OneDrive non verificato.",
+      "source_structure": "dedicated_wip_original_first_post"
+    },
+    {
+      "entry_id": 1343,
+      "game_id": 1407,
+      "position": 3,
+      "title": "SHANKS",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46915525#46915525",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46915525#46915525",
+      "author_raw": "Marek Chodan",
+      "post_timestamp_raw": "20 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://markcho.itch.io/shanks",
+          "label_raw": "SHANKS",
+          "content_role": "game_files",
+          "context_raw": "Full game (rules and prints) can be found here: SHANKS",
+          "version_raw": null,
+          "host": "markcho.itch.io",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Full game (rules and prints) can be found here: SHANKS",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Full game (rules and prints) can be found here: SHANKS"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "materiali stampabili",
+          "name_raw": "Full game (rules and prints) can be found here: SHANKS",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Full game (rules and prints) can be found here: SHANKS"
+        }
+      ],
+      "notes": "Regole e stampe dichiarate; contenuti itch.io non aperti.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1344,
+      "game_id": 1408,
+      "position": 4,
+      "title": "Apothecaries & Quacks",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46940111#46940111",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46940111#46940111",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "25 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1GeTjZ6dQuTYO4a7QgxNsvFZCSTNwQb9v/view?usp=sharing",
+          "label_raw": "[Rules]",
+          "content_role": "rules",
+          "context_raw": "[Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1KNLEaQklSY6YRsgaTbwJfeUTPLU_abnK/view?usp=sharing",
+          "label_raw": "[Components]",
+          "content_role": "component",
+          "context_raw": "[Components]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Rules]"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "[Components]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Components]"
+        }
+      ],
+      "notes": "Regole e componenti separati; nessuna quantità dedotta dalla meccanica. Immagine decorativa esclusa.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1345,
+      "game_id": 1409,
+      "position": 5,
+      "title": "Planks & Piers",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46944051#46944051",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46944051#46944051",
+      "author_raw": "Coblin King",
+      "post_timestamp_raw": "26 nov 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1QKaR_dW2YxcapCahDE8-yjsybFsUUVHK?usp=sharing",
+          "label_raw": "Planks & Piers",
+          "content_role": "game_files",
+          "context_raw": "EDIT: Done. Not the deepest game, but I think it works. Planks & Piers",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [],
+      "notes": "18 carte e possibile pedina dichiarate soltanto come idea iniziale (I imagine, There might); conservate come proposta, non requisito finale. Cartella dichiarata dal successivo EDIT nello stesso primo post.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1346,
+      "game_id": 1410,
+      "position": 6,
+      "title": "Pip Blanks",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46956895#46956895",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46956895#46956895",
+      "author_raw": "David McDougal",
+      "post_timestamp_raw": "29 nov 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/13Aa6mkpRetPsK84RnOr5nEIUl9XvKkI3U1fumUv6V-M/edit?usp=sharing",
+          "label_raw": "PIP BLANKS RULEBOOK",
+          "content_role": "game_files",
+          "context_raw": "PNP Grid for gameplay added to rulebook",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale",
+          "name_raw": "1 Standard 52-Card Deck",
+          "quantity_raw": "1 mazzo di 52 carte",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 Standard 52-Card Deck"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "32 Dice (16 per player)",
+          "quantity_raw": "32 (16 per giocatore)",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "32 Dice (16 per player)"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "griglie giocatore",
+          "name_raw": "2 Player Grids (4x4) (optional)",
+          "quantity_raw": "2 (4x4)",
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "2 Player Grids (4x4) (optional)"
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "segnalino primo giocatore",
+          "name_raw": "1 First Player Marker (optional)",
+          "quantity_raw": "1",
+          "requirement_level": "optional",
+          "supply_mode": "unspecified",
+          "context_raw": "1 First Player Marker (optional)"
+        }
+      ],
+      "notes": "Regolamento contiene griglia PnP secondo dichiarazione. WIP Thread for Game ha href # e click conduce alla home; fallback mirato senza risultato pertinente. Presentazione originale completa valida. Video solo desiderato futuro, nessun URL.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1347,
+      "game_id": 1411,
+      "position": 7,
+      "title": "Crank! Clank! Crank!",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/46993380#46993380",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/46993380#46993380",
+      "author_raw": "Is. Ra.",
+      "post_timestamp_raw": "7 dic 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/9a4q2jhl3gqqn9hjckgdp/CrankCC-GE.pdf?rlkey=yfauxc8gai18uzv3bnaqteph6&st=frgvfc2n&dl=0",
+          "label_raw": "Here",
+          "content_role": "game_files",
+          "context_raw": "Here",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/zspntabc0jofcuk83uysj/CrankCC-GS.pdf?rlkey=f53rhtf67pv4itau882lzsm8c&st=x8nibapf&dl=0",
+          "label_raw": "Aquí",
+          "content_role": "game_files",
+          "context_raw": "Aquí",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tabellone",
+          "name_raw": "1 Game Board",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "1 Game Board"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tessere",
+          "name_raw": "48 Tiles",
+          "quantity_raw": "48",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "48 Tiles"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "54 Cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "54 Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte contatore mood o HP",
+          "name_raw": "4 Cards (mood or HP \"counter\")",
+          "quantity_raw": "4",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "4 Cards (mood or HP \"counter\")"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carta contatore",
+          "name_raw": "1 Card (counter)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "1 Card (counter)"
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "segnalini",
+          "name_raw": "5 Tokens",
+          "quantity_raw": "5",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "5 Tokens"
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "meeple",
+          "name_raw": "4 Meeples (1 per player)",
+          "quantity_raw": "4 (1 per giocatore)",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "4 Meeples (1 per player)"
+        }
+      ],
+      "notes": "Due PDF dichiarati con etichette Here/Aquí; lingue/contenuti non verificati né dedotti dai nomi. Quantità carte 54, 4 e 1 mantenute separate; nessun totale inferito. Immagini illustrative escluse.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1348,
+      "game_id": 1412,
+      "position": 8,
+      "title": "Lost Ranks",
+      "source_url": "https://boardgamegeek.com/thread/3607485/article/47044720#47044720",
+      "wip_url": "https://boardgamegeek.com/thread/3607485/article/47044720#47044720",
+      "author_raw": "David McDougal",
+      "post_timestamp_raw": "19 dic 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "dedicated_wip_status": "not_required",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1tN0R6ftlilxOUThG5AcbWzMa0qpnnja7GaOnGhhwSD8/edit?usp=sharing",
+          "label_raw": "Living Rulebook",
+          "content_role": "rules",
+          "context_raw": "Living Rulebook (will lock at 2pm EST -5GMT on 12/20/25)",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Living Rulebook (will lock at 2pm EST -5GMT on 12/20/25)",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Living Rulebook (will lock at 2pm EST -5GMT on 12/20/25)"
+        }
+      ],
+      "notes": "Solo Living Rulebook dichiarato; nessun inventario di componenti esplicito. Non inferire mazzo tradizionale dalla meccanica.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    }
+  ],
+  "anomalies": [
+    {
+      "entry_position": 6,
+      "label": "WIP Thread for Game",
+      "href": "#",
+      "click_result": "https://boardgamegeek.com/",
+      "fallback": "site:boardgamegeek.com/thread \"Pip Blanks\"; no relevant result"
+    },
+    {
+      "entry_position": 5,
+      "provisional_components_raw": "The way I imagine it is 18 cards; There might also be a player pawn",
+      "adopted_as_requirements": false
+    }
+  ]
+}
