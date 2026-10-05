@@ -27,3 +27,7 @@ Deliverable: ROSTER_BASELINE.json, EVIDENCE.json, DOM_WITNESS.json, VERIFICATION
 Nessun host esterno/file aperto o download. Nessun nuovo pattern strutturale da promuovere; applicati quelli già verificati. Skill e PWS invariati. Nessun commit/push; modifiche preesistenti preservate. Incremento verificato da committare: messaggio proposto `Censisci materiali Two-Player PnP 2025`.
 
 Prossimo passo utile: selezione dei giochi per un eventuale ACQ del solo Two-Player 2025, con verifica condizioni e host. Per Parry occorre recuperare l'originale o concordare una fonte alternativa; nessun monitoraggio ordinario del contest concluso.
+
+## Versionamento verificato — 2026-10-05
+
+Su richiesta commit e push: commit e63fe64 su main, 13 file, soli delta Two-Player nei file condivisi. Push origin/main riuscito; hash completo HEAD uguale al riferimento letto sul server. Database, backup e temporanei esclusi; altre modifiche locali preservate. Usato componente HTTPS Git integrato con exec-path esplicito, senza modifiche persistenti. Esito salvato nel successivo commit documentale.

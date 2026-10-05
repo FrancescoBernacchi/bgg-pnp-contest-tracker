@@ -1628,11 +1628,12 @@
       ],
       "next_action": "Eventuale ACQ del solo Two-Player 2025 dopo selezione; Parry richiede recupero originale o fonte alternativa",
       "git": {
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
+        "synchronization": "remoto_verificato",
         "checked_at": "2026-10-05",
-        "evidence": "Incremento locale verificato, nessuna operazione Git; modifiche preesistenti preservate"
+        "evidence": "Commit e63fe64 e push main riusciti; hash remoto verificato sul server. Esito registrato nel successivo commit documentale; modifiche estranee preservate.",
+        "commit": "e63fe6433d0fc898d6aac21983f07c318a2a7afd"
       },
       "last_verified_at": "2026-10-05",
       "closed_at": "2026-10-05",
