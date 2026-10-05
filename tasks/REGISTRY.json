@@ -1552,10 +1552,10 @@
       ],
       "next_action": "Eventuale ACQ del solo Solitaire 2025 dopo selezione dei giochi; commit su richiesta",
       "git": {
-        "local_save": "da_committare",
-        "evidence": "Nessuna operazione Git; modifiche preesistenti preservate",
+        "local_save": "committato",
+        "evidence": "Commit 7464101, push origin/main e riferimento server coincidenti il 2026-10-05; esito nel successivo commit documentale",
         "checked_at": "2026-10-05",
-        "synchronization": "da_verificare",
+        "synchronization": "sincronizzato",
         "integration": "integrato_main"
       },
       "last_verified_at": "2026-10-05",

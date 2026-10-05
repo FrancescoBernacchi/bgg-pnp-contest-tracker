@@ -38,3 +38,7 @@ Nessun host esterno o file aperto e nessun download. Calendario periodico invari
 Titolo visibile verificato: `2026-10-05 - MAT - Solitaire Print and Play Contest 2025`. PWS 1.5.0 invariato. Registro TSK-0054 completato; TSK-0009 conserva stato e perimetro storico.
 
 Prossimo passo utile: eventuale ACQ del solo Solitaire 2025, dopo selezione esplicita dei giochi e verifica di condizioni/host. Incremento locale pronto per commit su richiesta: `Censisci materiali dichiarati del Solitaire Contest 2025`. Nessun commit o push eseguito; modifiche preesistenti preservate. Database, backup e copie integrali esclusi da Git.
+
+## Versionamento verificato — 2026-10-05
+
+Su richiesta «commit e push»: commit 7464101 su main, 11 file del censimento e soli delta pertinenti di registro/cruscotto. Push origin/main riuscito; HEAD uguale al riferimento server. Database, backup e copie integrali esclusi. Altri incrementi non committati preservati. Esito registrato nel successivo commit documentale.
