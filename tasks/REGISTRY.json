@@ -1638,6 +1638,45 @@
       "last_verified_at": "2026-10-05",
       "closed_at": "2026-10-05",
       "result": "87 URL, 95 menzioni, 131 requisiti in 34 entry; API 40/40, cruscotto aggiornato"
+    },
+    {
+      "id": "TSK-0058",
+      "original_title": "2026-10-05 - MAT - 24 Hour Design Challenge GUARD 2025",
+      "display_title": "2026-10-05 - MAT - 24 Hour Design Challenge GUARD 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 24 Hour Design Challenge GUARD 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Sei post introduttivi completi per sei entry, importazione e API verificate",
+      "coverage": {
+        "contest_id": 294,
+        "coverage_scope": "first_post_only",
+        "complete": 6,
+        "entries": 6,
+        "blocked": 0
+      },
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10c1a-f886-7ce2-a2b9-721f51bb0ebe"
+      ],
+      "next_action": "Eventuale ACQ del solo GUARD dopo selezione dei giochi e verifica condizioni/host",
+      "git": {
+        "evidence": "Nessuna operazione Git",
+        "integration": "integrato_main",
+        "checked_at": "2026-10-05",
+        "local_save": "da_committare",
+        "synchronization": "da_verificare"
+      },
+      "last_verified_at": "2026-10-05",
+      "closed_at": "2026-10-05",
+      "result": "4 URL unici globali, 5 associazioni gioco–URL, 13 requisiti; API 6/6 e cruscotto aggiornato"
     }
   ]
 }

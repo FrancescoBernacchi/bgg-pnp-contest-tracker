@@ -1,0 +1,316 @@
+{
+  "task_id": "TSK-0058",
+  "contest_id": 294,
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 6,
+    "complete": 6,
+    "unique_original_posts": 5,
+    "resource_entries": 4,
+    "resources_per_entry": 5,
+    "unique_resource_urls": 4,
+    "requirements": 13
+  },
+  "coverage_scope": "first_post_only",
+  "method": "CUA rendered original game submissions, linked directly by official roster; dedicated WIP optional under official challenge rules; all original post text read, no external hosts/files opened.",
+  "entries": [
+    {
+      "entry_id": 1304,
+      "game_id": 1368,
+      "position": 1,
+      "title": "Guarded Words",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45662252#45662252",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45662252#45662252",
+      "author_raw": "Julian Anstey",
+      "post_timestamp_raw": "15 feb 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1KYTl-iUzJ5kwbnUeat_XRkcQYkbI6Z_2?usp=sharing",
+          "label_raw": "Guarded Words - Cards & Rules",
+          "content_role": "game_files",
+          "context_raw": "Guarded Words - Cards & Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte",
+          "name_raw": "Guarded Words - Cards & Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Guarded Words - Cards & Rules"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Guarded Words - Cards & Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Guarded Words - Cards & Rules"
+        }
+      ],
+      "notes": "Carte e regole dichiarate nella stessa cartella; quantità non specificate.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1305,
+      "game_id": 1369,
+      "position": 2,
+      "title": "Maroons and Doubloons",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45675946#45675946",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45675946#45675946",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "18 feb 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "carte tradizionali A–6 dei quattro semi",
+          "name_raw": "From a deck of traditional cards gather the A-6 of 4 suits.",
+          "quantity_raw": "A–6 di 4 semi",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "From a deck of traditional cards gather the A-6 of 4 suits."
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "dobloni o sostituti",
+          "name_raw": "You will also need 17 doubloons. You may choose a suitable substitute.",
+          "quantity_raw": "17",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "You will also need 17 doubloons. You may choose a suitable substitute."
+        }
+      ],
+      "notes": "Regole integralmente nel post originale autore; nessun URL materiali. A–6 di quattro semi, 17 dobloni sostituibili.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1306,
+      "game_id": 1370,
+      "position": 3,
+      "title": "Valor",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45705323#45705323",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45705323#45705323",
+      "author_raw": "Iffix Y Santaph",
+      "post_timestamp_raw": "23 feb 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1TvHX3NCWuPH62QCOUD0RiaLOiw9TPvh2/view?usp=sharing",
+          "label_raw": "[Rules]",
+          "content_role": "rules",
+          "context_raw": "[Rules]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1-aa9Tv537-QkyYSUXuW3rBjoAyw08Ugq/view?usp=sharing",
+          "label_raw": "[Components]",
+          "content_role": "component",
+          "context_raw": "[Components]",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "[Components]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Components]"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "[Rules]",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "[Rules]"
+        }
+      ],
+      "notes": "Due file dichiarati, regole e componenti; nessun numero di carte dedotto dalla meccanica.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1307,
+      "game_id": 1371,
+      "position": 4,
+      "title": "Guard the Bard",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45706137#45706137",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45706137#45706137",
+      "author_raw": "@This_Punking",
+      "post_timestamp_raw": "23 feb 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1UUnxhN2iiW7PPUCBfgJcwXRoVg-RJTJM",
+          "label_raw": "Components and rulebook for both games",
+          "content_role": "game_files",
+          "context_raw": "Components and rulebook for both games",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "Components and rulebook for both games",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components and rulebook for both games"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Components and rulebook for both games",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components and rulebook for both games"
+        }
+      ],
+      "notes": "Post originale e cartella condivisi con Oh My Pies!; due giochi distinti, nessuna fusione.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1308,
+      "game_id": 1372,
+      "position": 5,
+      "title": "Oh My Pies!",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45706137#45706137",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45706137#45706137",
+      "author_raw": "@This_Punking",
+      "post_timestamp_raw": "23 feb 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1UUnxhN2iiW7PPUCBfgJcwXRoVg-RJTJM",
+          "label_raw": "Components and rulebook for both games",
+          "content_role": "game_files",
+          "context_raw": "Components and rulebook for both games",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "componenti",
+          "name_raw": "Components and rulebook for both games",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components and rulebook for both games"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Components and rulebook for both games",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components and rulebook for both games"
+        }
+      ],
+      "notes": "Post originale e cartella condivisi con Guard the Bard; due giochi distinti, nessuna fusione.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    },
+    {
+      "entry_id": 1309,
+      "game_id": 1373,
+      "position": 6,
+      "title": "Handguards",
+      "source_url": "https://boardgamegeek.com/thread/3452558/article/45707562#45707562",
+      "wip_url": "https://boardgamegeek.com/thread/3452558/article/45707562#45707562",
+      "author_raw": "Mus Rattus",
+      "post_timestamp_raw": "24 feb 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale selezionato con joker",
+          "name_raw": "29 Cards: 2 x 1,2,3,4,5 in a red suit and a black suit. 1 x 6,7,8,9 in a red suit and a black suit. + 1 Joker",
+          "quantity_raw": "29",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "29 Cards: 2 x 1,2,3,4,5 in a red suit and a black suit. 1 x 6,7,8,9 in a red suit and a black suit. + 1 Joker"
+        },
+        {
+          "material_kind": "counter",
+          "name_normalized": "segnalini per contare prese",
+          "name_raw": "Some way of counting trick winners (counters, pen and paper).",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Some way of counting trick winners (counters, pen and paper)."
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "penna e carta per contare prese",
+          "name_raw": "Some way of counting trick winners (counters, pen and paper).",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Some way of counting trick winners (counters, pen and paper)."
+        }
+      ],
+      "notes": "Regole integralmente nel post originale. 29 carte incluso joker; contatori oppure penna/carta alternativi. La frase No components è conservata come assenza di componenti dedicati pubblicati, senza negare i requisiti precedenti. Riferimento ispirazione non risorsa.",
+      "source_structure": "original_game_submission_in_contest_thread"
+    }
+  ]
+}

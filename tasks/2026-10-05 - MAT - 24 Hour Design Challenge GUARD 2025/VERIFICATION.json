@@ -1,0 +1,21 @@
+{
+  "task_id": "TSK-0058",
+  "counts": {
+    "entries": 6,
+    "complete": 6,
+    "unique_original_posts": 5,
+    "resource_entries": 4,
+    "resources_per_entry": 5,
+    "unique_resource_urls": 4,
+    "requirements": 13
+  },
+  "dom_identity_and_links": 6,
+  "roster_reconciled": 6,
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "prior_rows_preserved": true,
+  "other_contests_unchanged": true,
+  "backup_sha256": "43a3dd6f91ae4694524dd08174a108a776b6866cb700b05c728b273eb97513bc",
+  "sql_sha256": "ecc2ccbe286385dd65693f2e8412291b922f7dbc28b63fd80dfb4670855f8c28"
+}

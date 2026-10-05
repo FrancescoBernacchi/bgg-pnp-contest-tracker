@@ -1,0 +1,38 @@
+[
+  {
+    "requirements": 2,
+    "entry_id": 1304,
+    "resource_status": "observed",
+    "resources": 1
+  },
+  {
+    "requirements": 2,
+    "entry_id": 1305,
+    "resource_status": "none_declared",
+    "resources": 0
+  },
+  {
+    "requirements": 2,
+    "entry_id": 1306,
+    "resource_status": "observed",
+    "resources": 2
+  },
+  {
+    "requirements": 2,
+    "entry_id": 1307,
+    "resource_status": "observed",
+    "resources": 1
+  },
+  {
+    "requirements": 2,
+    "entry_id": 1308,
+    "resource_status": "observed",
+    "resources": 1
+  },
+  {
+    "requirements": 3,
+    "entry_id": 1309,
+    "resource_status": "none_declared",
+    "resources": 0
+  }
+]
