@@ -21,7 +21,7 @@ Ogni task ha una categoria primaria, scelta per il risultato principale, ed even
 | BGG-M | Monitoraggio contest BGG | Snapshot di un solo contest secondo calendario; contratto specifico in PROJECT.md |
 | MAT | Analisi dei materiali | Risorse e requisiti dichiarati; per BGG un solo contest, senza verifica degli host né download |
 | ACQ | Acquisizione dei materiali | Verifica degli host e acquisizione nel perimetro selezionato e approvato, con originali, manifest, hash e versioni |
-| IMG | Acquisizione delle immagini | Immagini rappresentative del gioco; categoria predisposta, workflow da definire prima dell'uso |
+| IMG | Acquisizione delle immagini | Immagini rappresentative del gioco; workflow autonomo deliberato in TSK-0065, sources/IMAGE_WORKFLOW.md |
 | ALT | Altro | Eccezione motivata; annotare perché le categorie esistenti non bastano e riesaminare al prossimo controllo |
 
 FON decide quali fonti approfondire; CAT costruisce il catalogo di una fonte; DAT ne progetta la persistenza o ne importa i dati; VER verifica asserzioni già raccolte. BGG usa i suoi tipi specifici. Test dell'app, integrità del database e verifica degli hash appartengono al task che verificano: VER si usa soltanto quando la verifica informativa è il deliverable autonomo. Le modifiche dati necessarie a una funzionalità non impongono automaticamente un secondo task DAT. Documentazione e verifiche seguono la finalità principale.
@@ -78,7 +78,7 @@ Nel controllo trasversale su richiesta, esaminare tutti i registri, le worktree 
 
 La classificazione non delibera nuove acquisizioni o allargamenti dei workflow. Il censimento annuale BGG mantiene il contratto vigente; l'estensione sistematica a categorie, voti e risultati richiede una definizione esplicita separata. L'acquisizione copre tutti i materiali nel perimetro approvato, senza promettere assenza di blocchi o completezza universale.
 
-IMG distingue immagini rappresentative dai PNG che costituiscono materiali PnP, già ACQ. Prima del primo task IMG definire un'evoluzione EPR su perimetro per contest, diritti, varianti, originali/derivati, manifest e hash, armonizzando la decisione Kanare già esistente. L'eventuale supporto nell'app è un task APP collegato. Nessun download è autorizzato dalla sola istituzione della categoria.
+IMG distingue immagini catalogate dai PNG stampabili originali, già ACQ. TSK-0065 delibera il workflow autonomo in `sources/IMAGE_WORKFLOW.md`: un contest/anno BGG o giochi Kanare espliciti, titoli `YYYY-MM-DD - IMG - NOME CONTEST AAAA` oppure `YYYY-MM-DD - IMG - Kanare Abstract`; fonti future da valutare. Generazione AI facoltativa tramite Codex con validazione utente. Supporto app in task APP collegato. Il contratto di ciascun lotto deve esplicitare giochi e modalità; nessun download è autorizzato dalla sola categoria o dal brainstorming. Decisione storica Kanare armonizzata senza riscrittura dello storico.
 
 ## Estensione annuale classifiche BGG — 2026-10-04
 

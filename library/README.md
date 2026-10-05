@@ -9,3 +9,8 @@ Il task ricorrente di monitoraggio dei contest non popola questa cartella e non 
 Per le fonti non-BGG autorizzate da un task multifonte, la struttura adottata è `library/<fonte>/<gioco>/originals/`. Gli originali restano immutabili; eventuali derivati dovranno essere collocati separatamente sotto `derived/`. Il primo lotto Kanare_Abstract usa `library/kanare-abstract/<gioco>/originals/`; il manifest versionabile è `catalog/kanare_abstract_acquisition_batch_2026-09-21.json`.
 
 I lotti BGG usano `library/bgg/<contest>/<gioco>/originals/`. L'acquisizione Children & Family 2025 del 3 ottobre 2026 comprende 38 PDF originali relativi a 14 giochi: cinque file del primo lotto e 33 del completamento sulle entry residue. I manifest versionabili sono `catalog/2025_children_family_acquisition_batch_2026-10-03.json` e `catalog/2025_children_family_remaining_acquisition_batch_2026-10-03.json`. Link scaduti, accessi ristretti, limiti temporanei dell'host e risorse non osservabili sono registrati senza creare file locali sostitutivi.
+
+
+## Immagini dei giochi — workflow adottato, raccolta non ancora avviata
+
+`sources/IMAGE_WORKFLOW.md` governa IMG autonomo: `library/immagini/<ID-stabile>__<Titolo>/` con originali/estratti/ai/derivati. Manifest testuali in catalog; binari esclusi da Git. Per BGG un contest/anno con giochi espliciti, per Kanare giochi selezionati; fonti future da valutare. Non modifica i lotti ACQ esistenti né li sposta. Estratti da materiali già acquisiti; nuovi pacchetti restano ACQ. AI tramite Codex con validazione utente prima di adozione. Nessun accesso HTTP nuovo alla radice immagini è implementato da questa decisione.

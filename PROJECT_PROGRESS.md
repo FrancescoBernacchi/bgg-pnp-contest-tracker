@@ -2510,3 +2510,33 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-05 — TSK-0063 MAT PATCH 2025: 12/12 entry complete, 12 URL per 10 giochi e 26 requisiti. Immagine Picking Pumpkins esclusa per assenza di istruzione esplicita di stampa. Integrazione TSK-0059 con backup/hash, integrità/FK, conservazione, isolamento, idempotenza e API 12/12 verificate; A/B rigenerate. Nessun host/file aperto o download. Evidenza: TSK-0059/PATCH_INTEGRATION.json.
 
 - 2026-10-05 — TSK-0059: conclusi e integrati cinque MAT distinti TSK-0060–0064 (REVEAL, GREEN, PAD, PATCH, ANKS): 39/39 entry, 53 URL unici/associazioni e 94 requisiti. API e metriche 39/39, storia e altri contest preservati. Sei challenge 24h 2025 ora censite (45 entry incluso GUARD). Nel 2025 509/509 entry hanno scansione registrata, distinta da 495/509 complete, 10 bloccate e 4 senza attestazione completa. Commit finale del lotto in esecuzione, modifiche pregresse preservate; nessun push. Evidenza: TSK-0059/FINAL_VERIFICATION.json.
+
+- 2026-10-05: TSK-0065 EPR aperto, brainstorming immagini rappresentative e uso nell'app. Workflow IMG da deliberare; nessun download o modifica delle metriche. Prossimo passo: concordare finalita e selezione.
+
+- 2026-10-05: TSK-0065 aggiornato con requisiti immagini: raccolta di tutte le immagini utili, estrazioni MAN/PNP per componente e senza duplicati, selezione varianti superiori, Artwork/Titolo grafico/Icona, AI e futura skill dedicata. Codici provenienza e workflow ancora in discussione; nessuna acquisizione o implementazione.
+
+- 2026-10-05: TSK-0065, provenienze leggibili e tassonomia immagini concordate con l'utente; categoria principale distinta da tag aggiuntivi e ruolo nell'app. Prossimo punto: naming. Workflow IMG complessivo e skill ancora da definire; nessuna implementazione.
+
+- 2026-10-05: TSK-0065, naming immagini approvato (gioco, contest/anno o fonte, categoria, provenienza, numero stabile, versione). Prossimo punto: equivalenza e priorita delle varianti dei materiali. Nessuna acquisizione o implementazione.
+
+- 2026-10-05: TSK-0065, criteri di selezione varianti approvati e requisito di tracciamento lacune per categoria per integrazione AI automatica su richiesta. Matrice e filtri da concordare; nessuna generazione, automazione ricorrente o implementazione.
+
+- 2026-10-05: TSK-0065, copertura immagini per categoria approvata, conteggi originali/AI separati e Icona/Titolo grafico/Artwork desiderati per tutti i giochi. Prossimo punto: metodo di estrazione componenti. Nessuna implementazione o generazione.
+
+- 2026-10-05: TSK-0065, procedimento estrazione componenti approvato: ritagli fedeli, lati collegati, deduplicazione con occorrenze, provenienza puntuale, verifica e scontorni separati. Prossimo punto: organizzazione libreria immagini. Nessuna estrazione eseguita.
+
+- 2026-10-05: TSK-0065, struttura libreria immagini per gioco approvata con originali/estratti/ai/derivati e manifest separato versionabile. Prossimo punto: comportamento generazione AI su richiesta. Nessuna cartella binaria o generazione creata.
+
+- 2026-10-05: TSK-0065, generazione AI iniziale tramite Codex su richiesta; app per lacune e risultati. Generazione direttamente nell'app tracciata come potenziale evoluzione APP autonoma. Revisione risultati ancora da concordare; nessuna implementazione.
+
+- 2026-10-05: TSK-0065, validazione utente obbligatoria delle immagini AI approvata, anche per lotto; risultati Da valutare prima della adozione. Prossimo punto: presentazione immagini e scelta principale. Nessuna generazione o implementazione.
+
+- 2026-10-05: TSK-0065, presentazione immagini app approvata: miniature nascondibili, galleria filtrabile, vista componenti, proposte AI separate, lacune e principale esplicita con fallback provvisorio Copertina/Setup. Prossimo punto: contratto operativo IMG. Nessuna implementazione.
+
+- 2026-10-05: TSK-0065, perimetro IMG approvato per singolo contest/anno BGG e per Kanare con giochi espliciti; modello non esteso alle fonti future. Riprese incrementali, completamento per perimetro/data e AI facoltativa distinta. Prossimo punto: accessibilita e condizioni, poi workflow/skill.
+
+- 2026-10-05: TSK-0065, esiti acquisizione e riferimenti senza file approvati; condizioni per rielaborazione AI distinte dalla acquisizione, con fonte/data. Prossimo punto: conservazione immagini scartate/superate, poi consolidamento workflow e skill.
+
+- 2026-10-05: TSK-0065, conservazione storico immagini approvata: originali superati preservati, varianti inferiori non acquisite solo riferimenti, AI scartate conservate e fuori copertura; pulizia definitiva esplicita. Prossimo punto: contenuto skill dedicata e formalizzazione workflow.
+
+- 2026-10-05: TSK-0065 completato: workflow IMG deliberato e promosso, skill game-image-acquisition installata con riferimenti fonti/estrazione/AI, routing e documenti autorevoli allineati. 14 controlli documentali locali riusciti; validatore standard limitato da PyYAML assente. Nessun lotto o implementazione immagini. Prossimi task separati: APP dati/consultazione e IMG pilota BGG o Kanare selezionato. PWS 1.5.0.

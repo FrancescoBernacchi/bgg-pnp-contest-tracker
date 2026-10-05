@@ -14,6 +14,7 @@ Usa questa base per navigazione BGG e leggi soltanto la specializzazione pertine
 - Risultati/votazioni nel contratto autorizzato: [classifiche](../bgg-ranking-census/SKILL.md); estensioni annuali 2024/2025 non trasferibili ad altri anni.
 - Primo post e dichiarazioni di un contest MAT: [materiali](../bgg-material-census/SKILL.md).
 - Host e materiali selezionati di un contest ACQ: [acquisizione](../bgg-material-acquisition/SKILL.md).
+- Immagini IMG di un contest/anno: [immagini dei giochi](../game-image-acquisition/SKILL.md), contratto autonomo in sources/IMAGE_WORKFLOW.md; non estende MAT/ACQ o monitoraggi.
 - Monitoraggio BGG-M: PROJECT.md e sources/MONITORING_CALENDAR.md governano cadenza e snapshot; la base supporta navigazione di stato/fasi/roster/metriche senza file di gioco. Non duplicare controlli giornalieri; mantenere snapshot completi collegati tramite check_id e distinguere baseline/census/consistency dai rilevamenti periodici.
 
 Inventario e manutenzione: sources/SKILL_INVENTORY.md, TSK-0048. Il playbook rimane il riferimento unico dei pattern tecnici, con date e limiti originari. La verifica offline delle skill non aggiorna lo stato esterno dei siti.
@@ -31,7 +32,7 @@ Non interpretare un collegamento non ancora risolto come assente.
 
 ## Instradamento del task
 
-Prima della navigazione classifica il lavoro secondo uno dei cinque tipi definiti in `PROJECT.md`: censimento globale dei contest, censimento annuale delle entry, analisi materiali di un singolo contest, acquisizione materiali di un singolo contest o monitoraggio di un singolo contest. Applica soltanto le fasi pertinenti al tipo scelto. In particolare, il censimento annuale si ferma al roster delle entry; WIP, risorse e requisiti appartengono all'analisi del singolo contest; verifica degli host e download appartengono all'acquisizione dello stesso singolo contest.
+Per IMG applica il contratto autonomo sources/IMAGE_WORKFLOW.md e la skill game-image-acquisition; le fasi tecniche seguenti valgono solo quando pertinenti. Per censimento, materiali e monitoraggio classifica il lavoro secondo uno dei cinque tipi definiti in `PROJECT.md`: censimento globale dei contest, censimento annuale delle entry, analisi materiali di un singolo contest, acquisizione materiali di un singolo contest o monitoraggio di un singolo contest. Applica soltanto le fasi pertinenti al tipo scelto. In particolare, il censimento annuale si ferma al roster delle entry; WIP, risorse e requisiti appartengono all'analisi del singolo contest; verifica degli host e download appartengono all'acquisizione dello stesso singolo contest.
 
 Se la richiesta combina unità diverse o propone analisi o download trasversali a più contest, segnala la deviazione e indica la scomposizione conforme prima di procedere. Usa lo stesso instradamento quando viene chiesto genericamente quale sia il prossimo passo.
 

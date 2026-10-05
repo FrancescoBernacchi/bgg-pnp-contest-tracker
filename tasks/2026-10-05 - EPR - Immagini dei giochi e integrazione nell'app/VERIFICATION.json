@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-05",
+  "task_id": "TSK-0065",
+  "scope": "verifica documentale locale; nessun rilevamento esterno o lotto immagini",
+  "checks": [
+    {
+      "check": "Frontmatter delimitato",
+      "passed": true
+    },
+    {
+      "check": "Campi scalar frontmatter name/description",
+      "passed": true
+    },
+    {
+      "check": "Nome coincide con directory e convenzione",
+      "passed": true
+    },
+    {
+      "check": "Descrizione breve non vuota",
+      "passed": true
+    },
+    {
+      "check": "Nessun placeholder scaffold",
+      "passed": true
+    },
+    {
+      "check": "Tre riferimenti scoperti",
+      "passed": true
+    },
+    {
+      "check": "Riferimento esistente references/sources.md",
+      "passed": true
+    },
+    {
+      "check": "Riferimento esistente references/extraction.md",
+      "passed": true
+    },
+    {
+      "check": "Riferimento esistente references/ai.md",
+      "passed": true
+    },
+    {
+      "check": "Documenti autorevoli presenti",
+      "passed": true
+    },
+    {
+      "check": "ID registro univoci",
+      "passed": true
+    },
+    {
+      "check": "Task registro presente",
+      "passed": true
+    },
+    {
+      "check": "Binari libreria immagini esclusi da Git",
+      "passed": true
+    },
+    {
+      "check": "Diff documenti senza errori whitespace",
+      "passed": true
+    }
+  ],
+  "standard_validator": "quick_validate.py non eseguibile: ModuleNotFoundError yaml; controllo locale dei soli campi scalar utilizzati, non parser YAML generale",
+  "artifacts": [
+    {
+      "path": ".agents/skills/game-image-acquisition/SKILL.md",
+      "sha256": "b6deeac950980438c1ca5ec1ad656b626bc5f6b5434b314c4f2c5c320c012e10"
+    },
+    {
+      "path": ".agents/skills/game-image-acquisition/references/ai.md",
+      "sha256": "2ec772e2509564b84cb780297e1efd92c6e7fbf760cdfa40701b47064078a2d9"
+    },
+    {
+      "path": ".agents/skills/game-image-acquisition/references/extraction.md",
+      "sha256": "9de332ca35447d6f59880ca0d836734bd89baaceeaaa3c0773e3bbb655b67a62"
+    },
+    {
+      "path": ".agents/skills/game-image-acquisition/references/sources.md",
+      "sha256": "78bebdaa6f87c7cbd0b9b3a29231684a17ecbbe202269ca267e477b77201706d"
+    },
+    {
+      "path": "sources/IMAGE_WORKFLOW.md",
+      "sha256": "a1813dee456f6abd1ba9667dd7eb445e012c8630310243a7aa6f68be33dc9ed5"
+    },
+    {
+      "path": "sources/IMAGE_CONTEST_CODES.md",
+      "sha256": "b6bdc5cec52ace8f21627c6377f9a13f2480cd73f102e9688abece1a69ec9d75"
+    }
+  ],
+  "limitations": [
+    "download/estrazione/deduplicazione visiva/AI non collaudati",
+    "nessuna implementazione dati/API/app",
+    "sigle contest operative da assegnare nel primo lotto"
+  ]
+}

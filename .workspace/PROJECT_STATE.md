@@ -21,7 +21,7 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 
 ## Storico migrazioni
 
-- 2026-10-04: adottato il protocollo locale `TASK_GOVERNANCE.md` con categorie, naming `YYYY-MM-DD - CODICE - descrizione`, ID stabili e registro centrale `tasks/REGISTRY.json`. Classificazione retroattiva datata dei 43 registri preesistenti e del task corrente; percorsi e storia originari preservati. Copiato senza modifiche in main il registro Wargame sospeso dalla worktree 52fb per conservarne la decisione, senza riattivare acquisizioni. PWS resta 1.5.0; nessuna modifica allo Standard o al contratto annuale BGG. Workflow immagini ancora da definire.
+- 2026-10-04: adottato il protocollo locale `TASK_GOVERNANCE.md` con categorie, naming `YYYY-MM-DD - CODICE - descrizione`, ID stabili e registro centrale `tasks/REGISTRY.json`. Classificazione retroattiva datata dei 43 registri preesistenti e del task corrente; percorsi e storia originari preservati. Copiato senza modifiche in main il registro Wargame sospeso dalla worktree 52fb per conservarne la decisione, senza riattivare acquisizioni. PWS resta 1.5.0; nessuna modifica allo Standard o al contratto annuale BGG. Workflow immagini allora ancora da definire, successivamente deliberato in TSK-0065 il 2026-10-05.
 
 - 2026-09-04: inizializzazione diretta con PWS 1.3.0; nessuna migrazione pregressa.
 - 2026-09-04: formalizzato il protocollo di monitoraggio ricorrente e aggiunto `sources/MONITORING_CALENDAR.md`; modifica procedurale applicata al progetto corrente su richiesta esplicita dell'utente.
@@ -55,3 +55,5 @@ TSK-0046: estensione annuale circoscritta classifiche BGG 2024 confermata il 202
 - 2026-10-04: incremento correttivo APP-008 riconcilia anche roster 2024/2026, risultati 2026 e manifest ACQ 2025. Verifiche parziali distinte; tabelle originarie preservate, nessuna nuova lettura esterna. Box annuali allineati in alto; audit e prove desktop/mobile in TSK-0047. Nessun cambiamento architetturale ulteriore o allineamento PWS.
 
 - 2026-10-04: TSK-0048 riorganizza offline le competenze locali in base BGG condivisa e sei skill specialistiche, con procedura annuale entry separata, inventario e audit delle evidenze. Nessuna modifica ai contratti, al modello dati o all'app; PWS resta 1.5.0. Gestione GPR continuativa su richiesta senza automazione.
+
+- 2026-10-05: TSK-0065 delibera workflow IMG autonomo BGG/Kanare, `sources/IMAGE_WORKFLOW.md`, registro sigle e skill `game-image-acquisition`. Libreria immagini per gioco con originali/estratti/ai/derivati, manifest fuori binari; tassonomia, naming, estrazioni, varianti, copertura e validazione AI utente. PWS resta 1.5.0. App/schema/acquisizioni non implementati; tecniche da collaudare, fonti future non generalizzate.

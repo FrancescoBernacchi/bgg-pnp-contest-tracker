@@ -35,9 +35,9 @@ La baseline globale corrente comprende 305 contest dal 2008 al 2026. Il censimen
 
 ## Tipi standard di attività BGG
 
-Dal 2026-10-04 tutti i task seguono `TASK_GOVERNANCE.md`: categorie EPR, GPR, APP, INF, FON, CAT, DAT, VER, BGG-G, BGG-A, BGG-M, MAT, ACQ, IMG e ALT; registro centrale `tasks/REGISTRY.json`; modalità, ciclo di lavoro e versionamento separati. Nuovi titoli/cartelle inseriscono il codice dopo la data. I percorsi storici e il bootstrap sono preservati; la classificazione retroattiva è datata e distinta dalla storia originale. La categoria non modifica il contratto operativo BGG né autorizza acquisizioni. IMG è predisposta ma richiede un workflow dedicato prima dell'uso.
+Dal 2026-10-04 tutti i task seguono `TASK_GOVERNANCE.md`: categorie EPR, GPR, APP, INF, FON, CAT, DAT, VER, BGG-G, BGG-A, BGG-M, MAT, ACQ, IMG e ALT; registro centrale `tasks/REGISTRY.json`; modalità, ciclo di lavoro e versionamento separati. Nuovi titoli/cartelle inseriscono il codice dopo la data. I percorsi storici e il bootstrap sono preservati; la classificazione retroattiva è datata e distinta dalla storia originale. La categoria non modifica il contratto operativo BGG né autorizza acquisizioni. IMG è un workflow autonomo deliberato il 2026-10-05 in TSK-0065, governato da `sources/IMAGE_WORKFLOW.md`; non estende i cinque workflow seguenti.
 
-Ogni attività BGG deve appartenere a uno solo dei cinque tipi seguenti. L'unità di lavoro è parte del contratto del task e non può essere ampliata silenziosamente.
+Le attività BGG di censimento, materiali e monitoraggio appartengono a uno solo dei cinque tipi seguenti; IMG segue il contratto autonomo in `sources/IMAGE_WORKFLOW.md`. L'unità di lavoro è parte del contratto del task e non può essere ampliata silenziosamente.
 
 | Tipo standard | Unità di lavoro | Contenuto | Esclusioni obbligatorie | Titolo del task |
 |---|---|---|---|---|
@@ -156,7 +156,7 @@ Decisioni già raccolte per il futuro task Kanare_Abstract:
 - catalogo Kanare esteso a giochi attuali, fuori produzione, varianti nominate, classici, giochi con componenti comuni e titoli dichiarati sulle piattaforme online; accessori e set generici non sono elementi di catalogo, ma i singoli giochi supportati sono censiti e collegati al set come riferimento tecnico;
 - titoli ufficiali conservati come principali, alias e grafie giapponesi ricercabili, traduzione italiana interna secondaria quando utile e chiaramente distinta da un titolo ufficiale;
 - descrizioni brevi e dettagliate in italiano; se manca la breve può essere derivata dalla dettagliata, mentre una descrizione dettagliata assente non viene inventata. Testi giapponesi usati solo transitoriamente per tradurre e non censiti; la provenienza resta registrata;
-- un'immagine rappresentativa viene acquisita durante il censimento; le immagini secondarie sono inizialmente censite tramite URL e scaricate soltanto dopo selezione manuale. Originali e derivati restano separati, versionati e fuori da Git;
+- decisione storica Kanare del 2026-09-20: principale durante il censimento e secondarie inizialmente per URL. Dal 2026-10-05 il task IMG autonomo raccoglie tutte le immagini utili dei giochi Kanare esplicitamente selezionati, secondo `sources/IMAGE_WORKFLOW.md`; nessuna riapertura automatica di CAT o acquisizione retroattiva. Originali e derivati restano separati, versionati e fuori da Git;
 - tutti i regolamenti sono censiti per lingua, ma dopo selezione manuale si scaricano soltanto quelli italiani o inglesi. I regolamenti giapponesi non vengono acquisiti o analizzati;
 - inventario completo dei materiali ricostruito da regolamenti, elenchi ufficiali, descrizioni e immagini, separando contenuto della confezione, requisiti di gioco, sostituzioni, dati dichiarati e inferenze;
 - presenze su BGG e piattaforme di gioco distinte fra dichiarate da Kanare, da verificare e verificate; la verifica esterna appartiene a un incremento successivo;
@@ -259,3 +259,10 @@ APP-008 introduce attestazioni additive `entry_work_observations` e `contest_cen
 ## Organizzazione delle competenze locali — 2026-10-04
 
 Il contenitore GPR TSK-0048 mantiene un inventario in [sources/SKILL_INVENTORY.md](sources/SKILL_INVENTORY.md), una base tecnica BGG e sei skill specialistiche: censimento identità contest, classifiche, materiali dichiarati, acquisizione, scoperta fonti e preanalisi di una fonte. Il censimento annuale entry conserva una procedura autonoma identificabile nella base BGG, distinta dal censimento globale. Playbook e percorsi storici restano validi; routing in AGENTS.md. La riorganizzazione non introduce workflow, migrazioni dati, nuove adozioni di fonti o estensioni annuali ulteriori. PWS resta 1.5.0.
+
+
+## Workflow immagini — 2026-10-05
+
+TSK-0065 delibera `sources/IMAGE_WORKFLOW.md`: raccolta completa utile per singolo contest/anno BGG o giochi Kanare selezionati, provenienze leggibili, tassonomia, estrazioni per componente, varianti superiori, naming e libreria per gioco. Manifest/versioni/hash e riferimenti senza file; copertura per categoria distinta da originali/AI, AI tramite Codex con validazione utente. Fonti future richiedono contratto proprio. La skill `.agents/skills/game-image-acquisition/SKILL.md` applica il workflow. Tecniche IMG ancora da collaudare su primo lotto; dati e app non implementati.
+
+La mappa include `sources/IMAGE_WORKFLOW.md`, `sources/IMAGE_CONTEST_CODES.md`, la nuova skill e la futura radice `library/immagini/`. Manifest testuali in catalog, binari fuori Git. Requisiti app approvati (miniature, galleria, componenti, lacune, principale, proposte AI separate) in task APP futuro; generazione AI interna all’app resta potenziale evoluzione separata. PWS invariato.

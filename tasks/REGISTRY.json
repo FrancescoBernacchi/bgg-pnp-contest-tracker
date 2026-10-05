@@ -1903,6 +1903,41 @@
       },
       "last_verified_at": "2026-10-05",
       "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0065",
+      "original_title": "2026-10-05 - EPR - Immagini dei giochi e integrazione nell'app",
+      "display_title": "2026-10-05 - EPR - Immagini dei giochi e integrazione nell'app",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - EPR - Immagini dei giochi e integrazione nell'app/TASK.md",
+      "category": "EPR",
+      "secondary_categories": [
+        "APP",
+        "IMG"
+      ],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Brainstorming deliberato, workflow promosso, skill creata; 14 controlli documentali locali, tecniche operative da collaudare",
+      "coverage": {
+        "deliverable": "workflow IMG e skill, non acquisizione immagini",
+        "verification": "14 controlli documentali locali",
+        "operational_validation": "non effettuata"
+      },
+      "dependencies": [],
+      "successors": [],
+      "chat_ids": [
+        "01a10c2b-114b-7b90-9dda-2955446e7f05"
+      ],
+      "next_action": "APP immagini e successivo IMG pilota separati; nessun lotto ancora selezionato",
+      "git": {
+        "synchronization": "da_verificare",
+        "integration": "integrato_main",
+        "local_save": "da_committare",
+        "checked_at": "2026-10-05"
+      },
+      "last_verified_at": "2026-10-05"
     }
   ]
 }
