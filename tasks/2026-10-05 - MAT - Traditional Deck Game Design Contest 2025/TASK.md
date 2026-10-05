@@ -27,3 +27,7 @@ Deliverable: ROSTER_BASELINE.json, EVIDENCE.json, DOM_WITNESS.json, VERIFICATION
 Nessun host esterno o file di gioco aperto/scaricato. Disponibilità, condizioni attuali e inventari delle regole esterne restano esclusi. Nessun nuovo pattern strutturale da promuovere: applicati i pattern già verificati per link dinamici, immagini dichiarate e first_post_only. Nessuna modifica alle skill o allo Standard.
 
 Prossimo passo utile: selezionare i giochi per un eventuale task ACQ dedicato al solo Traditional Deck 2025; oppure MAT distinto di un altro contest. Il contest è concluso, nessun monitoraggio ordinario configurato. Incremento verificato da committare; nessun commit/push eseguito, modifiche preesistenti preservate. Messaggio proposto: `Censisci materiali Traditional Deck 2025`.
+
+## Versionamento verificato — 2026-10-05
+
+Su richiesta «commit e push»: commit a4affa9 su main, 12 file e soli delta pertinenti di registro/cruscotto. Push origin/main riuscito e hash HEAD uguale al riferimento letto sul server. Database, backup e temporanei esclusi; modifiche di altre attività preservate. Utilizzato il componente HTTPS Git integrato con percorso esplicito; nessuna configurazione persistente modificata. Esito registrato nel successivo commit documentale.
