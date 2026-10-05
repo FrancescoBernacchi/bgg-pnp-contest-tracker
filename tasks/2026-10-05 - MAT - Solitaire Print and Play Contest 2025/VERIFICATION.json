@@ -1,0 +1,26 @@
+{
+  "task_id": "TSK-0054",
+  "checked_at": "2026-10-05",
+  "dom_url_and_label_witnesses_matched": 74,
+  "raw_capture_matched": true,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_rankings_and_acquisitions_unchanged": true,
+  "counts": {
+    "entries": 74,
+    "complete": 74,
+    "resource_entries": 71,
+    "resources": 236,
+    "resource_mentions": 244,
+    "material_entries": 64,
+    "requirements": 239
+  },
+  "sql_sha256": "ed1dcfbe4d1001dd8a84f5c39692f301908e9ecbb5e9219450a9a9c1ba5e85be",
+  "applied": true,
+  "backup_path": "outputs/2025-solitaire-materials/before-import.sqlite3",
+  "backup_sha256": "1f2b5c023a17e540f1dd2e95d67d7df42e5ee5a64b9c51da805dc828ad68ccd7",
+  "operational_integrity": "ok",
+  "operational_idempotent": true
+}

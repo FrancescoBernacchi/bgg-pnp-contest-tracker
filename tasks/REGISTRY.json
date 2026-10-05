@@ -261,7 +261,8 @@
       "coverage": null,
       "dependencies": [],
       "successors": [
-        "TSK-0053"
+        "TSK-0053",
+        "TSK-0054"
       ],
       "chat_ids": [],
       "next_action": "Riconciliare stato e continuita usando TASK.md e successori.",
@@ -1523,6 +1524,42 @@
         "evidence": "Commit 8de9833 e push main verificati sul server il 2026-10-05; database e backup esclusi. Modifiche degli altri task preservate; questo esito salvato nel successivo commit documentale."
       },
       "closed_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0054",
+      "original_title": "2026-10-05 - MAT - Solitaire Print and Play Contest 2025",
+      "display_title": "2026-10-05 - MAT - Solitaire Print and Play Contest 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - Solitaire Print and Play Contest 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "74/74 primi post letti integralmente; importazione e app locale verificate, deliverable chiusi il 2026-10-05",
+      "coverage": {
+        "contest_id": 17,
+        "coverage_scope": "first_post_only",
+        "entries": 74
+      },
+      "dependencies": [
+        "TSK-0009"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10ae7-edd6-7071-8103-6cd960ad49b1"
+      ],
+      "next_action": "Eventuale ACQ del solo Solitaire 2025 dopo selezione dei giochi; commit su richiesta",
+      "git": {
+        "local_save": "da_committare",
+        "evidence": "Nessuna operazione Git; modifiche preesistenti preservate",
+        "checked_at": "2026-10-05",
+        "synchronization": "da_verificare",
+        "integration": "integrato_main"
+      },
+      "last_verified_at": "2026-10-05",
+      "result": "74/74 primi post completi; 236 URL, 244 menzioni, 239 requisiti; importazione verificata e cruscotto aggiornato."
     }
   ]
 }

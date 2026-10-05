@@ -1,6 +1,6 @@
 # Cruscotto di avanzamento della raccolta
 
-Ultimo aggiornamento: 2026-10-05. Fonte dello stato: repository e database operativo locale; censimento materiali 54-Card 2025 verificato il 2026-10-05. Ultimo controllo periodico BGG registrato: 2026-10-02.
+Ultimo aggiornamento: 2026-10-05. Fonte dello stato: repository e database operativo locale; censimenti materiali 54-Card e Solitaire 2025 verificati il 2026-10-05. Ultimo controllo periodico BGG registrato: 2026-10-02.
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
 
@@ -155,8 +155,8 @@ Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenz
 |   |     Stati entry | 🟡 components_available 49, wip 23, playtest_ready 10, unknown 5, idea 2 | 🟢 contest_ready 74 | — | — |
 |   |     Censimento entry | 1/1 contest attestati · 89 entry | 1/1 contest attestati · 74 entry | — | — |
 |   |     Censimento classifica | 0/89 · 0% · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie | 74/74 · 100% · 0 N/A · 0 bloccate · 48 entry classificate · 16 categorie | — | — |
-|   |     Censimento materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 0/74 · 0% · 0 N/A · 0 bloccate | — | — |
-|   |     Acquisizione materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 0/74 · 0% · 0 N/A · 0 bloccate | — | — |
+|   |     Censimento materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 74/74 · 100% · 0 N/A · 0 bloccate | — | — |
+|   |     Acquisizione materiali | 0/89 · 0% · 0 N/A · 0 bloccate | 0/64 · 0% · 10 N/A · 0 bloccate | — | — |
 |   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | — | — |
 | 82 | **[Solitaire Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟡 contest_ready 31, components_available 15, unknown 9, contest_complete 2 | 🔴  |
@@ -1319,153 +1319,153 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 |---:|:---|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **Best Overall Game** | **Best Overall Game** | **Best Overall Game** | **Best Family Game** | **Best Overall Solo Game** | **Best Overall Game** |
 | 1 | #1 [Locky Dice](https://boardgamegeek.com/thread/3495217/wip-locky-dice-a-solitaire-dice-manipulation-game) — Ready | #1 [Braggarts](https://boardgamegeek.com/thread/3574791/wip-braggarts-a-double-ended-trick-taker-winner-of) — Ready | #1 [Math Knight](https://boardgamegeek.com/thread/3436938) — Ready | #1 [ICBRG](https://boardgamegeek.com/thread/3493395) — Ready | #1 [One for sorrow](https://boardgamegeek.com/thread/3388854) — Ready | #1 [Alea’s Garden](https://boardgamegeek.com/thread/3530593/aleas-garden-cosy-polyomino-deckbuilding-game-winn) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 2 | #2 [Nap & Roll](https://boardgamegeek.com/thread/3440820/wip-nap-and-roll-2025-1-card-print-and-play-design) — Ready | #2 [Intercept](https://boardgamegeek.com/thread/3561466) — Ready | #2 [Bullet Run](https://boardgamegeek.com/thread/3450478) — Ready | #2 [The Robots are Multiplying](https://boardgamegeek.com/thread/3442172) — Ready | #2 [Hand-At-Arms](https://boardgamegeek.com/thread/3402467) — Ready | #2 [Server Breach](https://boardgamegeek.com/thread/3545479/wip-server-breach-fast-solo-card-game-of-strategic) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 3 | #3 [Sliminal Pursuit](https://boardgamegeek.com/thread/3513981/wip-sliminal-pursuit-2025-1-card-print-and-play-de) — Ready | #3 [Potemkin Villages](https://boardgamegeek.com/thread/3576989/potemkin-villages-54-card-game-design-contest-2025) — Ready | #2 [Fall of the Republic](https://boardgamegeek.com/thread/3463372) — Ready | #3 [Poker Face](https://boardgamegeek.com/thread/3465191) — Ready | #3 [Smuggler's Sky: Hand of Fate](https://boardgamegeek.com/thread/3425444) — Ready | #3 [Super Robo JetKaiser Z](https://boardgamegeek.com/thread/3528637/wip-super-robo-jetkaiser-z-3rd-place-2025-solo-pnp) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 4 | #4 [Honeybee and Dragonfly](https://boardgamegeek.com/thread/3491504/wip-honeybee-and-dragonfly-entry-into-the-2025-1-c) — Ready | #4 [Hack the Planet](https://boardgamegeek.com/thread/3537032/wip-hack-the-planet-2025-54-card-game-design-conte) — Ready | #3 [Veggie Patch](https://boardgamegeek.com/thread/3452530) — Ready | #4 [Good Breeding](https://boardgamegeek.com/thread/3431880) — Ready | #4 [Hand of Cthulhu](https://boardgamegeek.com/thread/3379033) — Ready | #4 [Word Dungeon](https://boardgamegeek.com/thread/3527240/wip-word-dungeon-2025-solitaire-p-and-p-design-con) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 5 | #5 [Shadow Heist](https://boardgamegeek.com/thread/3513986/wip-shadow-heist-2025-1-card-print-and-play-design) — Ready | #5 [Oh Ship!](https://boardgamegeek.com/thread/3538538) — Ready | #4 [Dung Beetles](https://boardgamegeek.com/thread/3453315) — Ready | #5 [Bon-Bon](https://boardgamegeek.com/thread/3493740) — Ready | #5 [Songs of the Sea and the Sky](https://boardgamegeek.com/thread/3419526) — Ready | #5 [Tightrope Terror](https://boardgamegeek.com/thread/3507873/wip-tightrope-terror-1p-set-collection-balance-mgm) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 6 | #6 [Matching Socks](https://boardgamegeek.com/thread/3494402/matching-socks-1p-puzzle-5min-1-card-contest) — Ready | #5 [Scavengers](https://boardgamegeek.com/thread/3560045) — Ready | #5 [Mutineer](https://boardgamegeek.com/thread/3477856) — Ready | #6 [Submarine Adventure](https://boardgamegeek.com/thread/3473660) — Ready | #6 [Publish or Perish](https://boardgamegeek.com/thread/3413650) — Ready | #6 [Count Poitiers: Murder at Harmax Hall](https://boardgamegeek.com/thread/3526641/wip-count-poitiers-murder-at-harmax-hall-2025-soli) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 7 | #7 [Self Service](https://boardgamegeek.com/thread/3516181/wip-self-service-2-4p-8-10min-worker-placement-dic) — Ready | #7 [Villains Incorporated](https://boardgamegeek.com/thread/3539135) — Ready | #6 [Dragons Horde](https://boardgamegeek.com/thread/3439500) — Ready | #7 [Allmende](https://boardgamegeek.com/thread/3487174) — Ready | [Awake until midnight](https://boardgamegeek.com/thread/3425454) — Withdrawn | #7 [Flipping Fortune](https://boardgamegeek.com/thread/3552470/wip-flipping-fortune-push-your-luck-deckbuilding-2) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 8 | #8 [BEEP](https://boardgamegeek.com/thread/3508169/wip-beep-a-single-card-anticipation-game-1-card-pr) — Ready | #7 [Wildlife Garden](https://boardgamegeek.com/thread/3552498) — Ready | #7 [Grate Sword](https://boardgamegeek.com/thread/3459079) — Ready | #8 [Mermaids vs Dinosaurs](https://boardgamegeek.com/thread/3484120) — Ready | [Black Market](https://boardgamegeek.com/thread/3431335) — Withdrawn | #8 [Cupid Boards A Train](https://boardgamegeek.com/thread/3555269/wip-cupid-boards-a-train-2025-solitaire-pnp-contes) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 9 | #9 [Delivery Dash](https://boardgamegeek.com/thread/3494616/wip-delivery-dash-1-card-design-contest-2-or-more) — Ready | #8 [Surfboard Stealin' Sea Otters](https://boardgamegeek.com/thread/3543426) — Ready | [1865: Flying Confederacy Guns of Freedom](https://boardgamegeek.com/thread/3477165) — Withdrawn | #9 [Peng Wins!](https://boardgamegeek.com/thread/3449433) — Ready | [Crop Rotation](https://boardgamegeek.com/thread/3378438) — Ready | #9 [Lasercut](https://boardgamegeek.com/thread/3526117/wip-lasercut-2025-solo-pnp-contest-contest-ready) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 10 | #10 [Ship Under Sabotage](https://boardgamegeek.com/thread/3488497/wip-ship-under-sabotage-a-1-card-deduction-game-co) — Ready | #9 [The Gauntlet: Twenty Trials of Darkness](https://boardgamegeek.com/thread/3577099/wip-the-gauntlet-twenty-trials-of-darkness-2025-54) — Ready | [20 Dice](https://boardgamegeek.com/thread/3479228) — Ready | #10 [Hex Hive: Skirmish](https://boardgamegeek.com/thread/3449448) — Ready | [Dive Into The Dungeon](https://boardgamegeek.com/thread/3408691) — Ready | #10 [Underdice Kingdom](https://boardgamegeek.com/thread/3528152/wip-underdice-kingdom-2025-solitaire-print-and-pla) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 11 | #11 [Way of the Goose](https://boardgamegeek.com/thread/3510065/wip-way-of-the-goose-a-snappy-dexterity-game-for-2) — Ready | [Bet and Bridle](https://boardgamegeek.com/thread/3569340/bet-and-bridle-2025-54-card-game-design-contest) — Ready | [7 PIONEERS](https://boardgamegeek.com/thread/3477202) — Ready | [Amusement park](https://boardgamegeek.com/thread/3496296) — Ready | [Downtown Las Palmas](https://boardgamegeek.com/thread/3410393) — Withdrawn | #11 [Landscapes](https://boardgamegeek.com/thread/3534010/wip-landscapes-solo-set-collection-card-game-5-min) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 12 | #12 [Lucky Words](https://boardgamegeek.com/thread/3491766/wip-lucky-words-entry-into-the-2025-1-card-print-a) — Ready | [Card Champs](https://boardgamegeek.com/thread/3577095/wip-card-champs-a-1v1-tag-team-wrestling-character-card-game) — Ready | [9 Days of Kyiv](https://boardgamegeek.com/thread/3446532) — Ready | [Crab Boil](https://boardgamegeek.com/thread/3495781) — Ready | [Dreadspire Keep](https://boardgamegeek.com/thread/3429956) — Withdrawn | #12 [My Journal](https://boardgamegeek.com/thread/3568823/wip-my-journal-2025-solitaire-p-and-p-design-conte) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 13 | #13 [Rabbit Race](https://boardgamegeek.com/thread/3505789/wip-rabbit-race-1-card-racing-game-1-4-players-202) — Ready | [Dreadful Deductions](https://boardgamegeek.com/thread/3548061) — Ready | [9 RIP](https://boardgamegeek.com/thread/3454676) — Ready | [Guesstrictions](https://boardgamegeek.com/thread/3496460) — Ready | [Duel: Clash of Metal](https://boardgamegeek.com/thread/3378403/2025-in-hand-game-design-contest) — Withdrawn | #13 [Covert Tricks](https://boardgamegeek.com/thread/3521431/wip-covert-tricks-a-solo-trick-taking-game-1-playe) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 14 | #14 [Don’t Get Snaked!](https://boardgamegeek.com/thread/3487751/wip-dont-get-snaked-a-1-card-background-party-game) — Ready | [Hack-a-Pad](https://boardgamegeek.com/thread/3558118) — Ready | [9th Maze](https://boardgamegeek.com/thread/3438996) — Ready | [Head In The Clouds](https://boardgamegeek.com/thread/3469238) — Ready | [Handicam](https://boardgamegeek.com/thread/3423424) — Withdrawn | #14 [It's Not Rocket Science](https://boardgamegeek.com/thread/3520767/wip-its-not-rocket-science-a-solitaire-game-of-dic) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 15 | #15 [Boom!](https://boardgamegeek.com/thread/3501760/wip-boom-2025-1-card-pnp-design-contest-contest-re) — Ready | [Harlequin](https://boardgamegeek.com/thread/3543743) — Ready | [A Seat at the Table](https://boardgamegeek.com/thread/3477933) — Withdrawn | [Ice Cream Heist](https://boardgamegeek.com/thread/3462311) — Ready | [HandMaze](https://boardgamegeek.com/thread/3423398) — Withdrawn | #15 [Lost in Spaceship](https://boardgamegeek.com/thread/3567188/lost-in-spaceship-2025-solitaire-contest-puzzle-1) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 16 | [Archipelago Rebels](https://boardgamegeek.com/thread/3505950/wip-archipelago-rebels-2025-1-card-print-and-play) — Ready | [Kill The Queen](https://boardgamegeek.com/thread/3548538) — Ready | [All Amongst Cats and Pigeons](https://boardgamegeek.com/thread/3469230) — Ready | [Island of Peril](https://boardgamegeek.com/thread/3482193) — Ready | [Hellheim In-Hand Duel](https://boardgamegeek.com/thread/3403303) — Withdrawn | #16 [Never Ending West](https://boardgamegeek.com/thread/3523039/wip-never-ending-west-1-page-procedurally-generate) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 17 | [Breathless Tango](https://boardgamegeek.com/thread/3495445/wip-breathless-tango-2025-1-card-pnp-design-contes) — Ready | [One More?](https://boardgamegeek.com/thread/3576425) — Ready | [Brawl](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Withdrawn | [Isles of Odd](https://boardgamegeek.com/thread/3441309) — Ready | [Librarian’s Cat](https://boardgamegeek.com/thread/3431954) — Ready | #17 [Aqua Fluens](https://boardgamegeek.com/thread/3534737/wip-aqua-fluens-2025-solitaire-p-and-p-design-cont) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 18 | [Cuéntame (Tell me)](https://boardgamegeek.com/thread/3505085/cuentame-tell-me) — Ready | [Perilous Quest](https://boardgamegeek.com/thread/3566750) — Ready | [Buddy System](https://boardgamegeek.com/thread/3449122) — Ready | [Origami Champions](https://boardgamegeek.com/thread/3451743) — Ready | [Maze Shift](https://boardgamegeek.com/thread/3384043) — Ready | #18 [Coup de Jarnac](https://boardgamegeek.com/thread/3568785/wip-coup-de-jarnac-2025-solo-pnp-contest-contest-r) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 19 | [Deceive to Succeed](https://boardgamegeek.com/thread/3491405/wip-deceive-to-succeed-duel-game-10-minutes-based) — Ready | [Pip's Quest](https://boardgamegeek.com/thread/3539855/pips-quest-2025-54-card-contest-contest-ready) — Ready | [Bug Brain](https://boardgamegeek.com/thread/3441992) — Ready | [Panic Picasso!](https://boardgamegeek.com/thread/3496634) — Ready | [Memory Trick](https://boardgamegeek.com/thread/3388612) — Withdrawn | #19 [Drone Workshop](https://boardgamegeek.com/thread/3556332/wip-drone-workshop-2025-solitaire-print-and-play-c) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 20 | [Disturbance at Darkholm Manor](https://boardgamegeek.com/thread/3520521/wip-disturbance-at-darkholm-manor-2025-1-card-pnp) — Ready | [Racket](https://boardgamegeek.com/thread/3555689) — Ready | [Call the Crew](https://boardgamegeek.com/thread/3440581) — Withdrawn | [Pets Rescue](https://boardgamegeek.com/thread/3441653) — Ready | [Office Quest: Data Kraken](https://boardgamegeek.com/thread/3402030) — Ready | #20 [Johnny Appleseed](https://boardgamegeek.com/thread/3521035/wip-johnny-appleseed-contest-ready-2025-solo-pnp-c) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 21 | [Finger Twister](https://boardgamegeek.com/thread/3516506/operation-d-2-2025-1-card-print-and-play-design-co) — Ready | [Ranicide](https://boardgamegeek.com/thread/3549419) — Ready | [Calling Card Warriors](https://boardgamegeek.com/thread/3475937) — Ready | [Pirate Treasures](https://boardgamegeek.com/thread/3435409) — Ready | [On the Trail of the Letter Cutter](https://boardgamegeek.com/thread/3388256) — Withdrawn | #21 [Miskatonic Confidential](https://boardgamegeek.com/thread/3486464/wip-miskatonic-confidential-2025-solitaire-print-a) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 22 | [Flip Fart](https://boardgamegeek.com/thread/3515359/wip-flip-fart-2025-1-card-print-and-play-design-co) — Ready | [Rekta](https://boardgamegeek.com/thread/3541265) — Ready | [Cotton Candy Stampede](https://boardgamegeek.com/thread/3468802) — Withdrawn | [Potions Master Tournament](https://boardgamegeek.com/geeklist/351008/2025-children-and-family-game-design-contest?itemid=11448984#11448984) — Ready | [One Banner](https://boardgamegeek.com/thread/3379074) — Ready | #22 [Bread & Circuits](https://boardgamegeek.com/thread/3530627/wip-bread-and-circuits-1p-investment-bag-building) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 23 | [Going the Difference!](https://boardgamegeek.com/thread/3509254/wip-going-the-difference-a-1-card-1v1-dice-strateg) — Ready | [Tinker Turtle](https://boardgamegeek.com/thread/3576051) — Ready | [Daily Dungeon](https://boardgamegeek.com/thread/3443671) — Withdrawn | [Slowpoke](https://boardgamegeek.com/thread/3451616) — Ready | [Prime Minister](https://boardgamegeek.com/thread/3378860) — Withdrawn | #23 [Brothers in Arms](https://boardgamegeek.com/thread/3545944/wip-brothers-in-arms-solo-pnp-contest-25) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 24 | [Hovercraft in a Minefield: Alligator Rescue](https://boardgamegeek.com/thread/3510163/wip-hovercraft-in-a-minefield-alligator-rescue-a-s) — Ready | [Tower Guard](https://boardgamegeek.com/thread/3560716) — Ready | [Dice Production](https://boardgamegeek.com/thread/3479765) — Withdrawn | [Sorry! That's My Dungeon](https://boardgamegeek.com/thread/3442526) — Ready | [Spellbooked!](https://boardgamegeek.com/thread/3430680) — Ready | #24 [Urban Planner](https://boardgamegeek.com/thread/3526943/wip-urban-planner-component-ready-2025-solitaire-p) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟢 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 25 | [In the Trench](https://boardgamegeek.com/thread/3495777/wip-in-the-trench) — Ready | [Trick Trick Boom](https://boardgamegeek.com/thread/3576183) — Ready | [Echoing Howls](https://boardgamegeek.com/thread/3449028) — Ready | [Squirelly](https://boardgamegeek.com/thread/3465485) — Ready | [Starcrossed](https://boardgamegeek.com/thread/3400721) — Withdrawn | #25 [Have some Cheese](https://boardgamegeek.com/thread/3568849/wip-have-some-cheese-solo-spatial-puzzle-10-mins-2) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🟡 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 26 | [Know B4 U Go](https://boardgamegeek.com/thread/3520264/know-b4-u-go-2p-5-10min-cooperative-2025-1-card-pr) — Ready | [Victorian Villainy](https://boardgamegeek.com/thread/3573515/wip-victorian-villainy) — Ready | [Elementa](https://boardgamegeek.com/thread/3476068) — Withdrawn | [Swirls](https://boardgamegeek.com/thread/3387063) — Ready | [Valley of Gems](https://boardgamegeek.com/thread/3399221) — Ready | [Abydos](https://boardgamegeek.com/thread/3522182/wip-abydos-1p-30-min-real-time-puzzle-game-2025-so) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 27 | [Laced Up](https://boardgamegeek.com/thread/3509555/wip-laced-up-2025-1-card-pnp-design-contest-contes) — Ready | [Wager in the Fog](https://boardgamegeek.com/thread/3572929/wager-in-the-fog-the-keeper-s-last-hand-54-card-ga) — Ready | [Flip Dungeon](https://boardgamegeek.com/thread/3479370) — Ready | [Zoo Rush](https://boardgamegeek.com/thread/3495361) — Ready | [Withering Grove](https://boardgamegeek.com/thread/3425504) — Ready | [Advance The Ranch](https://boardgamegeek.com/thread/3524433/wip-advance-the-ranch-2025-solo-pnp-contest-compon) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |
 | 28 | [One Card Battle](https://boardgamegeek.com/thread/3512843/wip-one-card-battle-2025-1-card-print-and-play-des) — Ready | [Yaminabe](https://boardgamegeek.com/thread/3546692) — Ready | [FOR9E](https://boardgamegeek.com/thread/3449728) — Ready |   |   | [Arachnacrisis](https://boardgamegeek.com/thread/3554850/wip-arachnacrisis-1p-dice-pool-team-management-202) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 29 | [One Card Guard](https://boardgamegeek.com/thread/3489141/wip-one-card-guard-a-solo-dice-driven-boss-battle) — Ready |   | [Forest Tip](https://boardgamegeek.com/thread/3477855) — Ready |   |   | [Bletchley Park](https://boardgamegeek.com/thread/3567447/bletchley-park-join-the-select-group-of-codebreake) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 30 | [One Intersection](https://boardgamegeek.com/thread/3511086/wip-one-intersection-1p-15-20min-dice-manipulation) — Ready |   | [Fruit Sort Company](https://boardgamegeek.com/thread/3479222) — Ready |   |   | [Calculated Risk](https://boardgamegeek.com/thread/3527694/wip-calculated-risk-1p-15min-tableau-building-puzz) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 31 | [Pass the Dice](https://boardgamegeek.com/thread/3493787/wip-pass-the-dice-quick-dice-roller-for-2-4-player) — Ready |   | [Gems Make Goblin Kings](https://boardgamegeek.com/thread/3473847) — Ready |   |   | [Carthago Servanda Est](https://boardgamegeek.com/thread/3563889/wip-carthago-servanda-est) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 32 | [Piece of Cake](https://boardgamegeek.com/thread/3512039/wip-piece-of-cake-2025-1-card-print-and-play-desig) — Ready |   | [Haunted Hunting Grounds](https://boardgamegeek.com/thread/3475192) — Ready |   |   | [Charming the Belle](https://boardgamegeek.com/thread/3566520/charming-the-belle-2025-solitaire-print-and-play-c) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 33 | [Saltatorial](https://boardgamegeek.com/thread/3517033/wip-saltatorial-a-whimsical-cricket-simulator-2025) — Ready |   | [HMS Ulven](https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest) — Withdrawn |   |   | [Contubernium: Rome at War](https://boardgamegeek.com/thread/3528184/complete-contubernium-rome-at-war-2025-solitaire-p) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 34 | [Some Strings Attached](https://boardgamegeek.com/thread/3512037/wip-some-strings-attached-2025-1-card-print-and-pl) — Ready |   | [Hydra Wrangler](https://boardgamegeek.com/thread/3439122) — Ready |   |   | [Courtful of Tricks](https://boardgamegeek.com/thread/3526900/wip-courtful-of-tricks-solo-pnp-design-contest-tri) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 35 | [The Moving Fortress](https://boardgamegeek.com/thread/3489442/wip-the-moving-fortress-a-1-card-resource-manageme) — Ready |   | [If Only Fireflies Exist](https://boardgamegeek.com/thread/3477927) — Ready |   |   | [Crikey!](https://boardgamegeek.com/thread/3568329/crikey-contest-ready) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 36 | [The Peak](https://boardgamegeek.com/thread/3512510/wip-the-peak-2025-1-card-print-and-play-design-con) — Ready |   | [Into the Arcanum](https://boardgamegeek.com/thread/3440248) — Ready |   |   | [D6 Alchemist](https://boardgamegeek.com/thread/3525435/wip-d6-alchemist-2025-solitaire-print-and-play-con) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 37 | [Wobbly Bridge](https://boardgamegeek.com/thread/3503056/wip-wobbly-bridge-contest-ready-2025-1-card-pnp-de) — Ready |   | [Katsuka](https://boardgamegeek.com/thread/3469537) — Withdrawn |   |   | [Delve in Your Pocket: The Folded Depths Await](https://boardgamegeek.com/thread/3519938/wip-delve-in-your-pocket-the-folded-depths-await-1) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 38 | [Zombie Apocalypse](https://boardgamegeek.com/thread/3514360/wip-zombie-apocalypse-2025-1-card-pnp-design-conte) — Ready |   | [Kodokuna: The Lone Hermit](https://boardgamegeek.com/thread/3447990) — Ready |   |   | [Diemon](https://boardgamegeek.com/thread/3535235/wip-diemon-2025-solitaire-pnp-contest-components-a) — Ready |
-|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 39 |   |   | [Labyrinth Nine](https://boardgamegeek.com/thread/3447052) — Withdrawn |   |   | [Dominate](https://boardgamegeek.com/thread/3565711/dominate-machines-and-trees-2025-solitaire-p-and-p) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 40 |   |   | [Let's Have a Wedding](https://boardgamegeek.com/thread/3477894) — Ready |   |   | [DonJon Defense](https://boardgamegeek.com/thread/3534318/wip-donjon-defense-a-solo-tower-defense-card-game) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 41 |   |   | [Little Ruins of Arnakiny](https://boardgamegeek.com/thread/3455234) — Ready |   |   | [Eighteen Eggs](https://boardgamegeek.com/thread/3523615/wip-eighteen-eggs-1p-10-min-memory-matching-puzzle) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 42 |   |   | [Lola High Up in the Ocean](https://boardgamegeek.com/thread/3456714) — Ready |   |   | [Fairway Fantasy](https://boardgamegeek.com/thread/3568475/wip-fairway-fantasy-an-entry-in-the-2025-solitaire) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 43 |   |   | [Main Line Mayhem](https://boardgamegeek.com/thread/3479751) — Withdrawn |   |   | [Four-Armed Robot Blaster: Hunt for the Arqu](https://boardgamegeek.com/thread/3533740/wip-four-armed-robot-blaster-hunt-for-the-arqu-a-s) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 44 |   |   | [Monster Restaurant](https://boardgamegeek.com/thread/3461857) — Withdrawn |   |   | [Going Knowhere](https://boardgamegeek.com/thread/3546467/wip-2042026-update-going-knowhere-solo-fantasy-rog) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 45 |   |   | [Network with an Octopuse](https://boardgamegeek.com/thread/3479008) — Withdrawn |   |   | [He Watches With No Eyes](https://boardgamegeek.com/thread/3544732/wip-he-watches-with-no-eyes-a-mournington-game-sub) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 46 |   |   | [Nine Tails](https://boardgamegeek.com/thread/3457895) — Ready |   |   | [Here they come... AGAIN!](https://boardgamegeek.com/thread/3530072/wip-here-they-come-again-2025-solitaire-print-and) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 47 |   |   | [No More Dragons](https://boardgamegeek.com/thread/3446445) — Ready |   |   | [Island Stranding](https://boardgamegeek.com/thread/3559890/wip-island-stranding-hand-management-18-cards-puzz) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 48 |   |   | [Obscurum](https://boardgamegeek.com/thread/3479007) — Ready |   |   | [Jacobites 1745](https://boardgamegeek.com/thread/3528153/wip-jacobites-1745-solo-pnp-roll-and-write) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 49 |   |   | [Ocean Path](https://boardgamegeek.com/thread/3442893) — Ready |   |   | [Jelly](https://boardgamegeek.com/thread/3564034/wip-jelly-a-puzzle-book-2025-solitaire-pnp-game-co) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 50 |   |   | [Oppidum](https://boardgamegeek.com/thread/3436697) — Ready |   |   | [Micro-Cosmic Confrontation](https://boardgamegeek.com/thread/3555735/wip-micro-cosmic-confrontation-solitaire-pnp-game) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 51 |   |   | [Orangutan Rescue Duet](https://boardgamegeek.com/thread/3475151) — Ready |   |   | [Moonsail](https://boardgamegeek.com/thread/3563993/wip-moonsail-a-solitaire-roll-and-write-pirate-adv) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 52 |   |   | [Particular Pigeons](https://boardgamegeek.com/thread/3466979) — Ready |   |   | [Nan's Heroes](https://boardgamegeek.com/thread/3547246/nans-heroes-pnp) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 53 |   |   | [Passcode](https://boardgamegeek.com/thread/3453394) — Ready |   |   | [null_pr0xy](https://boardgamegeek.com/thread/3549054/wip-null-pr0xy-solo-dice-manipulation-push-your-lu) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 54 |   |   | [Penny Poltergeist](https://boardgamegeek.com/thread/3461958) — Ready |   |   | [Of Memories and Decay](https://boardgamegeek.com/thread/3566728/wip-of-memories-and-decay-a-solo-dungeon-crawl-gam) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 55 |   |   | [Primary Colors](https://boardgamegeek.com/thread/3478441) — Withdrawn |   |   | [Only Diced Words](https://boardgamegeek.com/thread/3519694/wip-only-diced-words-solo-pnp-contest-25contest-re) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 56 |   |   | [Psychodynamic Fronts](https://boardgamegeek.com/thread/3479778) — Withdrawn |   |   | [Oregon Trail](https://boardgamegeek.com/thread/3530234/wip-oregon-trail-2025-solitaire-print-and-play-con) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 57 |   |   | [Puebleando](https://boardgamegeek.com/thread/3477928) — Withdrawn |   |   | [Overstep: Balance or Collapse](https://boardgamegeek.com/thread/3569021/wip-overstep-balance-or-collapse-2025-solitaire-pr) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 58 |   |   | [Quick Dishes](https://boardgamegeek.com/thread/3461354) — Ready |   |   | [Pilzgrim](https://boardgamegeek.com/thread/3545369/wip-pilzgrim-solo-36-cards-map-maze-components-and) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 59 |   |   | [Rapid Words](https://boardgamegeek.com/thread/3443351) — Ready |   |   | [Plague Vector](https://boardgamegeek.com/thread/3530383/wip-plague-vector-2025-solitaire-print-and-play-co) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 60 |   |   | [Red Is Hungry](https://boardgamegeek.com/thread/3452360) — Withdrawn |   |   | [Pocket Submarine](https://boardgamegeek.com/thread/3535810/wip-pocket-submarine-2025-solitaire-p-and-p-design) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 61 |   |   | [Right-Hand-Man](https://boardgamegeek.com/thread/3447498) — Withdrawn |   |   | [Poker's Rogue Reckoning](https://boardgamegeek.com/thread/3560847/wip-pokers-rogue-reckoning) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 62 |   |   | [Risky Riches](https://boardgamegeek.com/thread/3479685) — Ready |   |   | [ROME](https://boardgamegeek.com/thread/3521436/wip-rome-a-solitaire-game-for-bored-citizens-2025) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 63 |   |   | [Royal Courier](https://boardgamegeek.com/thread/3436550) — Ready |   |   | [Rourke's Relics: Jungle Quest](https://boardgamegeek.com/thread/3548740/rourkes-relics-jungle-quest-a-solo-adventure-card) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 64 |   |   | [SagaSaurus: Dino Duel](https://boardgamegeek.com/thread/3471323) — Ready |   |   | [Run Time Zombie](https://boardgamegeek.com/thread/3523083/wip-run-time-zombie-a-solitaire-game-of-zombie-apo) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 65 |   |   | [Skyward Parcel](https://boardgamegeek.com/thread/3453464) — Ready |   |   | [SNAP](https://boardgamegeek.com/thread/3524851/components-ready-open-for-playtests-snap-2025-solo) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 66 |   |   | [Slayer](https://boardgamegeek.com/thread/3472477) — Ready |   |   | [South Shore Vibes](https://boardgamegeek.com/thread/3524180/wip-2025-solitaire-pnp-contest-south-shore-vibes) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 67 |   |   | [Smuggler's Sky: Fool's Gambit](https://boardgamegeek.com/thread/3476092) — Ready |   |   | [The Wretch](https://boardgamegeek.com/thread/3568463/wip-the-wretch-a-2025-solitaire-pnp-contest-entry) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 68 |   |   | [Soda Wars](https://boardgamegeek.com/thread/3441059) — Withdrawn |   |   | [Thru The Thicket](https://boardgamegeek.com/thread/3551597/wip-thru-the-thicket-a-cozy-solo-exploration-game) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 69 |   |   | [Sound Check](https://boardgamegeek.com/thread/3457687) — Ready |   |   | [Toborochi](https://boardgamegeek.com/thread/3521022/wiptoborochi2025-solitaire-game-design-contesttest) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 70 |   |   | [Space Traders](https://boardgamegeek.com/thread/3479556) — Withdrawn |   |   | [Tron: Origin](https://boardgamegeek.com/thread/3520697/wip-tron-origin-2025-solitaire-contest-contest-rea) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 71 |   |   | [SPLAT!](https://boardgamegeek.com/thread/3479036) — Withdrawn |   |   | [Vesuvius 79](https://boardgamegeek.com/thread/3558753/vesuvius-79-2025-solitaire-p-and-p-design-contest) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 72 |   |   | [Squunchies](https://boardgamegeek.com/thread/3472458) — Ready |   |   | [Vicinity](https://boardgamegeek.com/thread/3459416/wip-vicinity-a-simple-solo-tile-placement-game-con) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 73 |   |   | [Stand of Supremacy](https://boardgamegeek.com/thread/3449049) — Ready |   |   | [X-Stream Squatters](https://boardgamegeek.com/thread/3536789/x-stream-squatters-contest-ready) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 74 |   |   | [Submerge](https://boardgamegeek.com/thread/3462494) — Withdrawn |   |   | [Yokocho](https://boardgamegeek.com/thread/3543546/wip-yokocho-2025-solitaire-game-design-contest-con) — Ready |
-|   |   |   | L 🟢 · D 🔴 |   |   | L 🔴 · D 🔴 |
+|   |   |   | L 🟢 · D 🔴 |   |   | L 🟢 · D 🔴 |
 | 75 |   |   | [Supernova Albion](https://boardgamegeek.com/thread/3478380) — Ready |   |   |   |
 |   |   |   | L 🟢 · D 🔴 |   |   |   |
 | 76 |   |   | [Surround the King](https://boardgamegeek.com/thread/3458414) — Withdrawn |   |   |   |
@@ -2367,7 +2367,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 1 | Completare il censimento globale dei contest PnP BGG | completo; aggiornamento del 2 ottobre | 306 contest importati, incluso il nuovo Roll & Write 2026; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; aggiornare il censimento se emerge un nuovo contest | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Proseguire il monitoraggio BGG per contest | in corso | Wargame 2026 controllato il 2 ottobre: submission chiuse, 23 entry e snapshot confrontabile completo; restano finestre scadute di altri contest | Calendario; accesso BGG | Eseguire task separati per le finestre scadute; prossimo Wargame il 12 novembre | `sources/MONITORING_CALENDAR.md`; `tasks/2026-10-02 - Monitoraggio - 2026 Print and Play Wargame Design Contest/TASK.md` |
 | 3 | Introdurre Kanare_Abstract nel modello multifonte | primo lotto acquisito | Migrazioni 009-010 applicate; censimento completo; 3 PDF EN acquisiti; 15 matching ancora candidati | Censimento, manifest e verificatori Kanare | Valutare separatamente un secondo lotto oppure un controllo mirato dei matching residui | fonte e task Kanare |
-| 4 | Completare WIP, risorse e materiali per singolo contest | parziale | Wargame 2026 completo 23/23; 9-Card 2025: 89/94 completi, 5 bloccati; 54-Card 2025 completo 28/28; 289/509 entry 2025 con scansione registrata, distinta dalla completezza (2026-10-05) | Skill BGG; task per singolo contest | MAT separato per Solitaire 2025; riconciliare ElementaBrawl; eventuale ACQ di un singolo contest già analizzato dopo selezione | `sources/2026-WARGAME-MATERIALS.md`; `sources/2025-NINE-CARD-MATERIALS.md`; `sources/2025-54-CARD-MATERIALS.md` |
+| 4 | Completare WIP, risorse e materiali per singolo contest | parziale | Wargame 2026 completo 23/23; 9-Card 2025: 89/94 completi, 5 bloccati; 54-Card 2025 completo 28/28; Solitaire 2025 completo 74/74; 363/509 entry 2025 con scansione registrata, distinta dalla completezza (2026-10-05) | Skill BGG; task per singolo contest | MAT separato di un contest non ancora scansionato; riconciliare ElementaBrawl; eventuale ACQ di un singolo contest già analizzato dopo selezione | `sources/2026-WARGAME-MATERIALS.md`; `sources/2025-NINE-CARD-MATERIALS.md`; `sources/2025-54-CARD-MATERIALS.md`; `sources/2025-SOLITAIRE-MATERIALS.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
 | 6 | Definire la priorità di acquisizione | parziale | Per Children & Family 2025 è stato adottato il criterio dei vincitori ufficiali; mancano soglie generali quando voti o risultati non bastano | Risultati e segnali disponibili | Formalizzare soglie generali solo quando serviranno a una selezione ambigua | `PROJECT.md`; manifest Children & Family |
 | 7 | Proseguire le acquisizioni selettive | Children & Family e Roll & Write 2025 trattati | Kanare: 3 giochi/3 PDF; Children & Family: 14 giochi/38 PDF; Roll & Write: 29 giochi/146 file, esiti su 37/37 entry | Nuova selezione esplicita per ogni contest | Prossima acquisizione suggerita: 1-Card 2025; recuperi remoti in incrementi separati | manifest dei tre perimetri; `library/README.md` |
@@ -2488,3 +2488,5 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-04 — MAT 9-Card Nanogame 2025 (TSK-0051): 94 esiti espliciti, 89 primi post completi e 5 blocchi; 208 URL distinti per gioco in 80 entry, 414 requisiti. WIP mancanti, post originale Three Buccaneers non osservabile e scissione ElementaBrawl distinti. Importazione additiva con backup, integrità, chiavi esterne, idempotenza e preservazione dei dati precedenti verificate; API e browser locali controllati, A/B rigenerate. Host esterni e download esclusi. Evidenza: `sources/2025-NINE-CARD-MATERIALS.md` e `tasks/2026-10-04 - MAT - 9-Card Nanogame 2025/VERIFICATION.json`. Prossimo passo: riconciliazione roster e ACQ separato per lo stesso contest dopo selezione.
 
 - 2026-10-05 — MAT 54-Card Game Design Contest 2025 (TSK-0053): 28/28 primi post originali censiti, 27 entry con risorse e Villains Incorporated senza URL dichiarato ma con componenti espliciti; 86 URL esatti, 89 menzioni e 46 requisiti. Importazione additiva con backup, fingerprint DOM URL/etichette, integrità, FK, isolamento e idempotenza verificati su copia e operativo; schede locali verificate. A/B rigenerate; 289/509 entry 2025 con scansione. Host e download esclusi. Evidenze: `sources/2025-54-CARD-MATERIALS.md`, TSK-0053/EVIDENCE.json e VERIFICATION.json. Prossimo passo: eventuale ACQ dello stesso contest dopo selezione; gratuità limitata alla durata contest dichiarata per Surfboard Stealin’ Sea Otters da verificare in ACQ. Commit 8de9833 e push main verificati sul server il 2026-10-05; esito registrato nel successivo commit documentale.
+
+- 2026-10-05 — MAT Solitaire 2025 (TSK-0054): 74/74 primi post originali censiti; 71 entry con risorse, 236 URL distinti per gioco, 244 menzioni e 239 requisiti in 64 entry. Nan’s Heroes, Vicinity e Fairway Fantasy senza URL pertinente nel primo post; assenza di link distinta dall’assenza di requisiti. Importazione additiva verificata su copia e operativo, backup, integrità/FK, conservazione delle righe pregresse, isolamento e idempotenza; tutte le 74 righe locali mostrano lettura registrata. A/B rigenerate, 363/509 entry 2025 con scansione. Nessun host/file aperto o download. Evidenze: sources/2025-SOLITAIRE-MATERIALS.md e TSK-0054/EVIDENCE.json, VERIFICATION.json. Prossimo passo: ACQ dello stesso singolo contest dopo selezione dei giochi e verifica delle condizioni. Incremento locale da committare; nessuna operazione Git eseguita.
