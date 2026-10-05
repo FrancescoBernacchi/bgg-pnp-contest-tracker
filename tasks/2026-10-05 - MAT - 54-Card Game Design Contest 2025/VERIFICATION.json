@@ -1,0 +1,25 @@
+{
+  "task_id": "TSK-0053",
+  "checked_at": "2026-10-05",
+  "dom_url_fingerprints_matched": 28,
+  "dom_mention_fingerprints_matched": 28,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_rankings_and_acquisitions_unchanged": true,
+  "counts": {
+    "entries": 28,
+    "complete": 28,
+    "resource_entries": 27,
+    "resources": 86,
+    "resource_mentions": 89,
+    "requirements": 46
+  },
+  "sql_sha256": "93ff90e0edff8c2081a474b7182abbeb6b943f1227f71a0ef6b7cf135adefa18",
+  "applied": true,
+  "backup_path": "outputs/2025-54-card-materials/before-import.sqlite3",
+  "backup_sha256": "06774c6e75c9e664641ca0019cc7d242811c7bafd42cda5e699004f1bf15e1c0",
+  "operational_integrity": "ok",
+  "operational_idempotent": true
+}

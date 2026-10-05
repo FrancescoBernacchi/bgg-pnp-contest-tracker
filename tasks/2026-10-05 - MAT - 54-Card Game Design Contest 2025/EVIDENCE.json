@@ -1,0 +1,1819 @@
+{
+  "task_id": "TSK-0053",
+  "contest_id": 19,
+  "checked_at": "2026-10-05",
+  "coverage_scope": "first_post_only",
+  "method": "Rendered original first posts; exact declared URLs and selected verbatim evidence; all text read; no external hosts/files opened.",
+  "counts": {
+    "entries": 28,
+    "complete": 28,
+    "resource_entries": 27,
+    "resources": 86,
+    "resource_mentions": 89,
+    "requirements": 46
+  },
+  "entries": [
+    {
+      "entry_id": 704,
+      "game_id": 704,
+      "position": 1,
+      "title": "Hack the Planet",
+      "source_url": "https://boardgamegeek.com/thread/3537032/article/46291237#46291237",
+      "wip_url": "https://boardgamegeek.com/thread/3537032",
+      "author_raw": "Ghost_Dancer",
+      "post_timestamp_raw": "4 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/10mtLExpoUn6vj4CEJPAyJLH_gQNaFMKg?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/10mtLExpoUn6vj4CEJPAy...",
+          "content_role": "game_files",
+          "context_raw": "PNP Files*",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3549264552",
+          "label_raw": "https://steamcommunity.com/sharedfiles/filedetails/?id=35492...",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://youtu.be/Cue21v0XjWo",
+          "label_raw": "https://youtu.be/Cue21v0XjWo",
+          "content_role": "video",
+          "context_raw": "Tutorial & Playthrough Video",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://youtube.com/watch?v=Cue21v0XjWo",
+          "label_raw": "Hack The Planet - Tutorial & Playthrough",
+          "content_role": "video",
+          "context_raw": "Embedded tutorial; same video as textual short URL",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Card Count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Card Count: 54"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "dorsi delle carte",
+          "name_raw": "The card backs are optional - if you don't want to print them, just print odd numbered pages.",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "The card backs are optional - if you don't want to print them, just print odd numbered pages."
+        }
+      ],
+      "notes": "URL breve e incorporato riferiscono lo stesso video; entrambi gli URL dichiarati conservati, non due contenuti distinti."
+    },
+    {
+      "entry_id": 705,
+      "game_id": 705,
+      "position": 2,
+      "title": "Oh Ship!",
+      "source_url": "https://boardgamegeek.com/thread/3538538/article/46301955#46301955",
+      "wip_url": "https://boardgamegeek.com/thread/3538538",
+      "author_raw": "CrossedSignals",
+      "post_timestamp_raw": "7 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1LJDPOr3J51l0jC8yQvK-zwDGYTPIfYjB?usp=sharing",
+          "label_raw": "Oh Ship! WIP",
+          "content_role": "game_files",
+          "context_raw": "Game components PnP Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3542368043",
+          "label_raw": "https://steamcommunity.com/sharedfiles/filedetails/?id=35423...",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Total card count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "secondo mazzo per 5–8 giocatori",
+          "name_raw": "Number of players: 2-4 (5-8 with 2 decks)",
+          "quantity_raw": "1 aggiuntivo",
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "Number of players: 2-4 (5-8 with 2 decks)"
+        }
+      ],
+      "notes": "Secondo mazzo solo per 5–8 giocatori; non sommare al mazzo base per 2–4."
+    },
+    {
+      "entry_id": 706,
+      "game_id": 706,
+      "position": 3,
+      "title": "Rekta",
+      "source_url": "https://boardgamegeek.com/thread/3541265/article/46324376#46324376",
+      "wip_url": "https://boardgamegeek.com/thread/3541265",
+      "author_raw": "janciorules",
+      "post_timestamp_raw": "12 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://janciorules.itch.io/rekta",
+          "label_raw": "HQ ENGLISH VERSION (Fullcolor)",
+          "content_role": "game_files",
+          "context_raw": "Print And Play files (ITCH.io): HQ ENGLISH VERSION (Fullcolor) (8 MB zip)",
+          "version_raw": "2025.12.16",
+          "host": "janciorules.itch.io",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://playingcards.io/",
+          "label_raw": "PLAYINGCARDS.IO",
+          "content_role": "online_play",
+          "context_raw": "Play Online: PLAYINGCARDS.IO (digital game file available in PnP game package)",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "With handy components (only 18 cards)",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "With handy components (only 18 cards)"
+        }
+      ],
+      "notes": "Versione dichiarata finale 2025.12.16; link PlayingCards.io generico, file digitale dichiarato nel pacchetto PnP. LINK BGG a pagina gioco/WIP non risorse."
+    },
+    {
+      "entry_id": 707,
+      "game_id": 707,
+      "position": 4,
+      "title": "Pip's Quest",
+      "source_url": "https://boardgamegeek.com/thread/3539855/article/46313270#46313270",
+      "wip_url": "https://boardgamegeek.com/thread/3539855",
+      "author_raw": "Ninjabunny13",
+      "post_timestamp_raw": "10 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1ExjyNXtudC2tNSvFgUyoD-qfbXj-IIDX/view?usp=sharing",
+          "label_raw": "Card game link",
+          "content_role": "component",
+          "context_raw": "7/30/25 Update: Card game link",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1N-nJIOLgOoTcvoO10i11vK1RzyB59r7K/view?usp=sharing",
+          "label_raw": "Link to Rules",
+          "content_role": "rules",
+          "context_raw": "7/30/25 Update: The link to the video on how to play doesn't work yet- in progress. Link to Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Quest",
+          "name_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte risorsa",
+          "name_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge",
+          "quantity_raw": "21",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte ostacolo",
+          "name_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge",
+          "quantity_raw": "12",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte azione",
+          "name_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge",
+          "quantity_raw": "12",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54 cards: 9 Quest cards (double-sided quests?), 21 resource cards, 12 obstacle cards, 12 action cards; 7/26/25 update: double-sided quest cards with side B being more of a challenge"
+        }
+      ],
+      "notes": "Aggiornamenti storici del primo post preservati nel contesto: file assenti inizialmente, aggiunti il 30 luglio. Linktr.ee personale escluso."
+    },
+    {
+      "entry_id": 708,
+      "game_id": 708,
+      "position": 5,
+      "title": "Surfboard Stealin' Sea Otters",
+      "source_url": "https://boardgamegeek.com/thread/3543426/article/46341270#46341270",
+      "wip_url": "https://boardgamegeek.com/thread/3543426",
+      "author_raw": "Herald Selenay",
+      "post_timestamp_raw": "16 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1UfIZINPy7lZoHKYxwCLZrUAbhC4U9FQ6?usp=drive_link",
+          "label_raw": "here!",
+          "content_role": "game_files",
+          "context_raw": "Files available via GoogleDrive; rulebook v4 2025.9.17, PnP v1 and optional tuckbox",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3527339355",
+          "label_raw": "here!",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://youtube.com/watch?v=IUW7bPzqAMA",
+          "label_raw": "Surfboard Stealin' Sea Otters: Assembling the Ocean!",
+          "content_role": "video",
+          "context_raw": "Assembling the Ocean Video",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Surfboards",
+          "name_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards",
+          "quantity_raw": "30",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Ocean Waves",
+          "name_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards",
+          "quantity_raw": "8",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Department of Fish & Wildlife",
+          "name_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Wild Surfboards",
+          "name_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Action",
+          "name_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards",
+          "quantity_raw": "11",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards - 30 Surfboards - 8 Ocean Waves - 2 Department of Fish & Wildlife Cards - 3 Wild Surfboards - 11 Action Cards"
+        },
+        {
+          "material_kind": "rules",
+          "name_normalized": "regolamento",
+          "name_raw": "Components: Rulebook",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: Rulebook"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "tuckbox",
+          "name_raw": "Tuckbox (optional)",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "Tuckbox (optional)"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "dorsi delle carte",
+          "name_raw": "Page 7 is an optional card back (the same for all cards).",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "Page 7 is an optional card back (the same for all cards)."
+        }
+      ],
+      "notes": "Licenza dichiarata: Game rules and cards available as a free print and play for the duration of the 2025 54-Card Game Design Contest. Disponibilità attuale non verificata; box e dorsi opzionali. Varianti low ink color/greyscale e carta Legal/Letter dichiarate."
+    },
+    {
+      "entry_id": 709,
+      "game_id": 709,
+      "position": 6,
+      "title": "Harlequin",
+      "source_url": "https://boardgamegeek.com/thread/3543743/article/46344366#46344366",
+      "wip_url": "https://boardgamegeek.com/thread/3543743",
+      "author_raw": "tucky60",
+      "post_timestamp_raw": "17 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1Ue1klMeUM-HnGJ0qFg59xiYbgGPoE0MB?usp=sharing",
+          "label_raw": "Rules and Cards",
+          "content_role": "game_files",
+          "context_raw": "Game files: Rules and Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Total card count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 710,
+      "game_id": 710,
+      "position": 7,
+      "title": "Yaminabe",
+      "source_url": "https://boardgamegeek.com/thread/3546692/article/46367010#46367010",
+      "wip_url": "https://boardgamegeek.com/thread/3546692",
+      "author_raw": "Supah_Jawa",
+      "post_timestamp_raw": "23 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1g5uVw8m4llpoLCg0e1dG5BjuEUte3NWj?usp=drive_link",
+          "label_raw": "Google Drive with Rules and Cards",
+          "content_role": "game_files",
+          "context_raw": "Google Drive with Rules and Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Card Count: 53",
+          "quantity_raw": "53",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Card Count: 53"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 711,
+      "game_id": 711,
+      "position": 8,
+      "title": "Dreadful Deductions",
+      "source_url": "https://boardgamegeek.com/thread/3548061/article/46378729#46378729",
+      "wip_url": "https://boardgamegeek.com/thread/3548061",
+      "author_raw": "robcsi90",
+      "post_timestamp_raw": "25 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1DCSuLeWhgTfzYAfu_2cZndgQxfAj8KKm?usp=drive_link",
+          "label_raw": "Google Drive link",
+          "content_role": "game_files",
+          "context_raw": "Files; low and high ink cards, expansion outside contest limit",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3558845840",
+          "label_raw": "Steam link",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Components: 54 cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "espansione per 5–6 giocatori e carte avanzate",
+          "name_raw": "For the 5 and 6 player count, as well as some advanced cards and even more replayability you need to print an expansion, which is outside of the contests limit",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "For the 5 and 6 player count, as well as some advanced cards and even more replayability you need to print an expansion, which is outside of the contests limit"
+        }
+      ],
+      "notes": "Espansione fuori dal limite contest distinta dal mazzo 54; annuncio futuro 70–80 carte non adottato come inventario corrente."
+    },
+    {
+      "entry_id": 712,
+      "game_id": 712,
+      "position": 9,
+      "title": "Villains Incorporated",
+      "source_url": "https://boardgamegeek.com/thread/3539135/article/46307150#46307150",
+      "wip_url": "https://boardgamegeek.com/thread/3539135",
+      "author_raw": "PressStartUA",
+      "post_timestamp_raw": "8 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "none_declared",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Treasure",
+          "name_raw": "Components: 42 Treasure Cards; 12 Decision Cards",
+          "quantity_raw": "42",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 42 Treasure Cards; 12 Decision Cards"
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte Decision",
+          "name_raw": "Components: 42 Treasure Cards; 12 Decision Cards",
+          "quantity_raw": "12",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 42 Treasure Cards; 12 Decision Cards"
+        }
+      ],
+      "notes": "Primo post originale @PressStartUA 8 luglio: componenti espliciti ma nessun URL pertinente; none_declared riguarda solo i collegamenti, non disponibilità universale."
+    },
+    {
+      "entry_id": 713,
+      "game_id": 713,
+      "position": 10,
+      "title": "Kill The Queen",
+      "source_url": "https://boardgamegeek.com/thread/3548538/article/46382221#46382221",
+      "wip_url": "https://boardgamegeek.com/thread/3548538",
+      "author_raw": "milovegas",
+      "post_timestamp_raw": "26 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/16NGp-Q6M3FchjIVLt4JkaF0EdrYTZ62U?usp=share_link",
+          "label_raw": "https://drive.google.com/drive/folders/16NGp-Q6M3FchjIVLt4Jk...",
+          "content_role": "game_files",
+          "context_raw": "Card and Rules Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Feel free to print and play the cards and let me know what you think!",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Feel free to print and play the cards and let me know what you think!"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 714,
+      "game_id": 714,
+      "position": 11,
+      "title": "Ranicide",
+      "source_url": "https://boardgamegeek.com/thread/3549419/article/46388295#46388295",
+      "wip_url": "https://boardgamegeek.com/thread/3549419",
+      "author_raw": "Cnote58",
+      "post_timestamp_raw": "28 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ER4eLu2eH9AvOhZ_rQEcNATz76N4gz_5",
+          "label_raw": "Game Rules and Custom PNP Deck",
+          "content_role": "game_files",
+          "context_raw": "Game Rules and Custom PNP Deck",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/4bmc9v",
+          "label_raw": "PCIO Available",
+          "content_role": "online_play",
+          "context_raw": "PCIO Available",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://youtube.com/watch?v=0CV1VPaIbDU",
+          "label_raw": "The Sixth Crypt Playthrough - Traditional Deck Game",
+          "content_role": "video",
+          "context_raw": "Playthrough Video; titolo video differente dal roster Ranicide",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1ER4eLu2eH9AvOhZ_rQEcNATz76N4gz_5?usp=sharing",
+          "label_raw": "Google Drive with Rules and Custom PNP Deck",
+          "content_role": "game_files",
+          "context_raw": "Google Drive with Rules and Custom PNP Deck",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/4bmc9v",
+          "label_raw": "PCIO Available",
+          "content_role": "online_play",
+          "context_raw": "PCIO Available",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo tradizionale con joker",
+          "name_raw": "Card Count: Uses 54 cards: a traditional deck and 2 Jokers.",
+          "quantity_raw": "52 + 2 joker",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Card Count: Uses 54 cards: a traditional deck and 2 Jokers."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "mazzo PnP personalizzato",
+          "name_raw": "Game Rules and Custom PNP Deck",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "printable",
+          "context_raw": "Game Rules and Custom PNP Deck"
+        }
+      ],
+      "notes": "Cartella ripetuta con/senza usp: URL originali conservati; stesso identificativo cartella. PCIO identico accorpato. Video intitolato The Sixth Crypt: nome video preservato, nessuna rinomina canonica inferita."
+    },
+    {
+      "entry_id": 715,
+      "game_id": 715,
+      "position": 12,
+      "title": "Wildlife Garden",
+      "source_url": "https://boardgamegeek.com/thread/3552498/article/46415425#46415425",
+      "wip_url": "https://boardgamegeek.com/thread/3552498",
+      "author_raw": "Table_for_two_games",
+      "post_timestamp_raw": "2 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://www.youtube.com/watch?v=NrJ_fxfl3_8",
+          "label_raw": "here",
+          "content_role": "video",
+          "context_raw": "Overview video",
+          "version_raw": null,
+          "host": "www.youtube.com",
+          "access_type": "video"
+        },
+        {
+          "url": "https://screentop.gg/@SammyB/WildlifeGarden",
+          "label_raw": "here",
+          "content_role": "online_play",
+          "context_raw": "Digital link (Screentop.gg), rules link inside the game",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fo/unut6opamrbq1wmtmgv3h/AA5qmaxjQlnJPEvReAcPRlc?rlkey=4pqnpq9hyi85m34160jel1c9f&st=4k4ybhh9&dl=0",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "Print and play files",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Components- 47 Cards",
+          "quantity_raw": "47",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components- 47 Cards"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 716,
+      "game_id": 716,
+      "position": 13,
+      "title": "Racket",
+      "source_url": "https://boardgamegeek.com/thread/3555689/article/46442687#46442687",
+      "wip_url": "https://boardgamegeek.com/thread/3555689",
+      "author_raw": "asdir",
+      "post_timestamp_raw": "8 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1tDPcxxZHSgT5WriudbIperFbL2w9DyRR/view?usp=sharing",
+          "label_raw": "Rules",
+          "content_role": "rules",
+          "context_raw": "Rules (pdf, 2 pages)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1oFmSghW6aaaueQQ0r0vTJ59e5nckX4h-/view?usp=sharing",
+          "label_raw": "Cards coloured",
+          "content_role": "component",
+          "context_raw": "Cards coloured; low-ink version (for both backsides are necessary to print)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1f-Hs3ibPM2ySlQvXeDMnUfKaQbkMgFX5/view?usp=sharing",
+          "label_raw": "low-ink version",
+          "content_role": "component",
+          "context_raw": "Cards coloured; low-ink version (for both backsides are necessary to print)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://playingcards.io/scpfmm",
+          "label_raw": "Online playtest (playingcards.io)",
+          "content_role": "online_play",
+          "context_raw": "Online playtest (playingcards.io) (3-players only)",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://youtu.be/5J1V-DIROcc",
+          "label_raw": "Rules video (3-player example)",
+          "content_role": "video",
+          "context_raw": "Rules video (3-player example)",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte con dorsi stampati",
+          "name_raw": "Cards coloured; low-ink version (for both backsides are necessary to print)",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Cards coloured; low-ink version (for both backsides are necessary to print)"
+        }
+      ],
+      "notes": "Dorsi esplicitamente necessari per versione colore e low ink; PCIO dichiarato solo per tre giocatori."
+    },
+    {
+      "entry_id": 717,
+      "game_id": 717,
+      "position": 14,
+      "title": "Hack-a-Pad",
+      "source_url": "https://boardgamegeek.com/thread/3558118/article/46463006#46463006",
+      "wip_url": "https://boardgamegeek.com/thread/3558118",
+      "author_raw": "MrKuricat",
+      "post_timestamp_raw": "12 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://wannabeboardgamedesigner.com/hack-a-pad_rules-3a.2",
+          "label_raw": "Proto 3a.2 Rulebook",
+          "content_role": "rules",
+          "context_raw": "Proto 3a.2 Rulebook",
+          "version_raw": "Proto 3a.2",
+          "host": "wannabeboardgamedesigner.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://wannabeboardgamedesigner.com/hack-a-pad_3a.1#pnp",
+          "label_raw": "Components download page (v 3a.1)",
+          "content_role": "component",
+          "context_raw": "Components download page (v 3a.1)",
+          "version_raw": "3a.1",
+          "host": "wannabeboardgamedesigner.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://youtu.be/IWFgIb4sW5w",
+          "label_raw": "YouTube",
+          "content_role": "video",
+          "context_raw": "How-to-play video",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3573534913",
+          "label_raw": "Tabletop Simulator Mod",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://screentop.gg/@MrKuriCat/Hack-a-Pad",
+          "label_raw": "Screentop.gg version",
+          "content_role": "online_play",
+          "context_raw": "Screentop.gg version",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Card Count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Card Count: 54"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 718,
+      "game_id": 718,
+      "position": 15,
+      "title": "Scavengers",
+      "source_url": "https://boardgamegeek.com/thread/3560045/article/46479286#46479286",
+      "wip_url": "https://boardgamegeek.com/thread/3560045",
+      "author_raw": "Herr_Goldberg",
+      "post_timestamp_raw": "16 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1i2h5V1PLnxk5mStTIdR-OtBCRxRRhrN0?usp=sharing",
+          "label_raw": "August 28th",
+          "content_role": "game_files",
+          "context_raw": "latest rules and PnP files from August 28th",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1i2h5V1PLnxk5mStTIdR-OtBCRxRRhrN0?usp=drive_link",
+          "label_raw": "Get components and rules here",
+          "content_role": "game_files",
+          "context_raw": "Get components and rules here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Components: 54 cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 cards"
+        }
+      ],
+      "notes": "Due parametri usp per lo stesso ID cartella: forme dichiarate preservate. Instagram personale escluso."
+    },
+    {
+      "entry_id": 719,
+      "game_id": 719,
+      "position": 16,
+      "title": "Tower Guard",
+      "source_url": "https://boardgamegeek.com/thread/3560716/article/46483984#46483984",
+      "wip_url": "https://boardgamegeek.com/thread/3560716",
+      "author_raw": "Smulchy_",
+      "post_timestamp_raw": "17 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1Cdh7HjozADJEl7xHB3zFyuQ-aju8mx9g/view?usp=sharing",
+          "label_raw": "Tower Guard Rules",
+          "content_role": "rules",
+          "context_raw": "Tower Guard Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1m08oBuhY3KGk4SwOWvcyQRMAAkjJI-VX/view?usp=sharing",
+          "label_raw": "Tower Guard PNP Files",
+          "content_role": "component",
+          "context_raw": "Tower Guard PNP Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592617426",
+          "label_raw": "Steam Workshop Link",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1eTScFLafteHnLa4MKnRIhS_X47x16b8W/view?usp=sharing",
+          "label_raw": "this JSON file",
+          "content_role": "online_play",
+          "context_raw": "Alternatively, download this JSON file into your TTS documents folder and spawn it in-game via the Saved Objects menu",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://youtube.com/watch?v=h2cJUc79N8k",
+          "label_raw": "Tower Guard Guide & Playthrough",
+          "content_role": "video",
+          "context_raw": "Tower Guard Guide & Playthrough",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Total Card Count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total Card Count: 54"
+        }
+      ],
+      "notes": "JSON alternativo per TTS classificato online_play/file, non componente stampabile."
+    },
+    {
+      "entry_id": 720,
+      "game_id": 720,
+      "position": 17,
+      "title": "Intercept",
+      "source_url": "https://boardgamegeek.com/thread/3561466/article/46489667#46489667",
+      "wip_url": "https://boardgamegeek.com/thread/3561466",
+      "author_raw": "tosx",
+      "post_timestamp_raw": "18 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1FLD_9XpnyZx5cRcmBd5Uh9_2Rwm8W-0n?usp=drive_link",
+          "label_raw": "Link",
+          "content_role": "game_files",
+          "context_raw": "Rules/Files: Link (rules are cards in the deck; a lower-ink version is available)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3551657730",
+          "label_raw": "TTS",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://screentop.gg/@tosx/Intercept",
+          "label_raw": "Screentop",
+          "content_role": "online_play",
+          "context_raw": "Screentop",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Card count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Card count: 54"
+        }
+      ],
+      "notes": "Regole integrate nelle carte, nessun regolamento aggiuntivo inferito; low ink dichiarato."
+    },
+    {
+      "entry_id": 721,
+      "game_id": 721,
+      "position": 18,
+      "title": "Perilous Quest",
+      "source_url": "https://boardgamegeek.com/thread/3566750/article/46532631#46532631",
+      "wip_url": "https://boardgamegeek.com/thread/3566750",
+      "author_raw": "chendobvb",
+      "post_timestamp_raw": "28 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1Q8r3-dYhFaSEEqBX8gr1vZZxPhK6jicB/view?usp=drivesdk",
+          "label_raw": "https://drive.google.com/file/d/1Q8r3-dYhFaSEEqBX8gr1vZZxPhK...",
+          "content_role": "player_aid",
+          "context_raw": "Example game",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1ArKPdGx1-IUHLu8ryN0jgKVGm00QRumv/view?usp=drivesdk",
+          "label_raw": "https://drive.google.com/file/d/1ArKPdGx1-IUHLu8ryN0jgKVGm00...",
+          "content_role": "component",
+          "context_raw": "ENGLISH CARDS",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1lUU5Q1Zz9212fqKLpwuZ4ZAvTVzx4HpO/view?usp=drivesdk",
+          "label_raw": "https://drive.google.com/file/d/1lUU5Q1Zz9212fqKLpwuZ4ZAvTVz...",
+          "content_role": "rules",
+          "context_raw": "ENGLISH RULES",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1bZ2PlsAthVeZUMJcEKtAPtrPEqKmvQo6/view?usp=drivesdk",
+          "label_raw": "https://drive.google.com/file/d/1bZ2PlsAthVeZUMJcEKtAPtrPEqK...",
+          "content_role": "game_files",
+          "context_raw": "Cards and rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1geLRBcaz444bscIP_MgDWVgZZB9U2P4G/view?usp=drive_link",
+          "label_raw": "https://drive.google.com/file/d/1geLRBcaz444bscIP_MgDWVgZZB9...",
+          "content_role": "rules",
+          "context_raw": "Spanish Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Requierd componentes: deck of 54 poker size cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Requierd componentes: deck of 54 poker size cards"
+        }
+      ],
+      "notes": "Deck poker size personalizzato esplicito; non inferita compatibilità con mazzo standard dalla categoria del contest. Cards and rules senza lingua esplicita conservato."
+    },
+    {
+      "entry_id": 722,
+      "game_id": 722,
+      "position": 19,
+      "title": "Bet and Bridle",
+      "source_url": "https://boardgamegeek.com/thread/3569340/article/46550829#46550829",
+      "wip_url": "https://boardgamegeek.com/thread/3569340",
+      "author_raw": "ajvw4",
+      "post_timestamp_raw": "1 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1orvQr2xsKJb6twb1zx6c8eMfSAdWFtgK/view?usp=sharing",
+          "label_raw": "Rules Including Components",
+          "content_role": "game_files",
+          "context_raw": "Rules Including Components",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3560266779",
+          "label_raw": "TTS Mod",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1YBC_XEz1U-zPIs_nigQaRPhh9dan2CAc/view?usp=sharing",
+          "label_raw": "How to Play Video",
+          "content_role": "video",
+          "context_raw": "How to Play Video",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Card Count: 52; Each suit in a standard deck represents a different horse in the race",
+          "quantity_raw": "52",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Card Count: 52; Each suit in a standard deck represents a different horse in the race"
+        }
+      ],
+      "notes": "Rules Including Components conservato come game_files; contenuto del file non letto. Video su Drive distinto da regole."
+    },
+    {
+      "entry_id": 723,
+      "game_id": 723,
+      "position": 20,
+      "title": "Wager in the Fog",
+      "source_url": "https://boardgamegeek.com/thread/3572929/article/46579299#46579299",
+      "wip_url": "https://boardgamegeek.com/thread/3572929",
+      "author_raw": "alexserpa",
+      "post_timestamp_raw": "8 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1daz2DxI1TL0YKhwi9kZ7GsPfzHL8FDf7?usp=sharing",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "PnP Files can be found here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://screentop.gg/@ComplianceBG/WagerInTheFog",
+          "label_raw": "https://screentop.gg/@ComplianceBG/WagerInTheFog",
+          "content_role": "online_play",
+          "context_raw": "Digital Implementation",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1qG2tO0Yp74RffG_6rhw_nQWQ5gxq8Kuh/view?usp=sharing",
+          "label_raw": "without captions",
+          "content_role": "video",
+          "context_raw": "How to play Video: without captions",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1BdiZQSi9gw0uGAiH8T9wExV-Hp1jYEHt/view?usp=sharing",
+          "label_raw": "with captions",
+          "content_role": "video",
+          "context_raw": "How to play Video: with captions",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "54 Cards (standard poker size)",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "54 Cards (standard poker size)"
+        }
+      ],
+      "notes": "Video con/senza sottotitoli separati; carte dado non trasformate in requisito dadi fisici."
+    },
+    {
+      "entry_id": 724,
+      "game_id": 724,
+      "position": 21,
+      "title": "Victorian Villainy",
+      "source_url": "https://boardgamegeek.com/thread/3573515/article/46584390#46584390",
+      "wip_url": "https://boardgamegeek.com/thread/3573515",
+      "author_raw": "PugWarlord",
+      "post_timestamp_raw": "9 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/162O7QYMc194tZcQf6o28sbkc_rRqrOJ3/view?usp=sharing",
+          "label_raw": "https://drive.google.com/file/d/162O7QYMc194tZcQf6o28sbkc_rR...",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1Wt7rkhV2nAHIDHobUe7dK5yzkvbS5eri/view?usp=sharing",
+          "label_raw": "https://drive.google.com/file/d/1Wt7rkhV2nAHIDHobUe7dK5yzkvb...",
+          "content_role": "component",
+          "context_raw": "Print Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1B6tiEWmdaXwWJGmPan8ngDehCD6oY1E_/view?usp=sharing",
+          "label_raw": "https://drive.google.com/file/d/1B6tiEWmdaXwWJGmPan8ngDehCD6...",
+          "content_role": "component",
+          "context_raw": "Low Ink Print Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3565029609",
+          "label_raw": "https://steamcommunity.com/sharedfiles/filedetails/?id=35650...",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Components: 54 Cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 54 Cards"
+        }
+      ],
+      "notes": "Crediti Artstation esclusi; Rules e Print Files correnti diversi da quelli storici del roster."
+    },
+    {
+      "entry_id": 725,
+      "game_id": 725,
+      "position": 22,
+      "title": "Braggarts",
+      "source_url": "https://boardgamegeek.com/thread/3574791/article/46595935#46595935",
+      "wip_url": "https://boardgamegeek.com/thread/3574791",
+      "author_raw": "turncoatgames",
+      "post_timestamp_raw": "11 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1P6pcReFvGRMPoFjPTZpoX5c9h9AUcOWf?usp=drive_link",
+          "label_raw": "Here",
+          "content_role": "game_files",
+          "context_raw": "Update 1: Print and Play Components Available Here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://screentop.gg/@turncoatgames/Braggarts",
+          "label_raw": "Here",
+          "content_role": "online_play",
+          "context_raw": "Update 2: Digital Implementation Available Here",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1PxR4EEEPeAFFDvKWAqzxrWkVxKIS8K06/view?usp=drive_link",
+          "label_raw": "Here",
+          "content_role": "rules",
+          "context_raw": "Update 3: Illustrated Rules Available Here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://youtu.be/Pvdvpf4_6yQ",
+          "label_raw": "Here",
+          "content_role": "video",
+          "context_raw": "Update 4: Playthrough Video Available Here",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1P6pcReFvGRMPoFjPTZpoX5c9h9AUcOWf?usp=drive_link",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "Full colour and low-ink PnP components are available for A4, US Legal and US Letter paper here.",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://screentop.gg/@turncoatgames/Braggarts",
+          "label_raw": "Screentop.gg",
+          "content_role": "online_play",
+          "context_raw": "You can also play Braggarts online at Screentop.gg without an account.",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://youtube.com/watch?v=Pvdvpf4_6yQ",
+          "label_raw": "Braggarts Playthrough",
+          "content_role": "video",
+          "context_raw": "Braggarts Playthrough",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte teste",
+          "name_raw": "Braggarts requires a deck of 54 cards, split into 3 suits of 18 cards. Each suit has 9 heads and 9 tails numbered 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+          "quantity_raw": "27 (9 per seme)",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Braggarts requires a deck of 54 cards, split into 3 suits of 18 cards. Each suit has 9 heads and 9 tails numbered 1, 2, 2, 3, 3, 4, 4, 5, 5."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte code",
+          "name_raw": "Braggarts requires a deck of 54 cards, split into 3 suits of 18 cards. Each suit has 9 heads and 9 tails numbered 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+          "quantity_raw": "27 (9 per seme)",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Braggarts requires a deck of 54 cards, split into 3 suits of 18 cards. Each suit has 9 heads and 9 tails numbered 1, 2, 2, 3, 3, 4, 4, 5, 5."
+        }
+      ],
+      "notes": "Menzioni ripetute preservate; 27 teste e 27 code sono normalizzazione esplicita di 3×9, totale 54 non sommato nuovamente. Due URL video dello stesso contenuto conservati. A4, US Legal, US Letter e low ink dichiarati."
+    },
+    {
+      "entry_id": 726,
+      "game_id": 726,
+      "position": 23,
+      "title": "Tinker Turtle",
+      "source_url": "https://boardgamegeek.com/thread/3576051/article/46606498#46606498",
+      "wip_url": "https://boardgamegeek.com/thread/3576051",
+      "author_raw": "kensiebensie",
+      "post_timestamp_raw": "14 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1O_s-Qt8MtOvl5fdfTo_YdNTajr-PKLsF/view?usp=sharing",
+          "label_raw": "here",
+          "content_role": "rules",
+          "context_raw": "Rules: here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1nDIn56NdhLHi0p4xVHJZsJp-6eT0oPTX/view?usp=sharing",
+          "label_raw": "here",
+          "content_role": "component",
+          "context_raw": "PNP Files: here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1CCXnFHCRMBgVMLj3YYbNBGvw6-jA2vBo/view?usp=sharing",
+          "label_raw": "here",
+          "content_role": "component",
+          "context_raw": "Low Ink PNP Files: here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3593490172",
+          "label_raw": "here",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        },
+        {
+          "url": "https://youtu.be/dZUZ6xhkK_0",
+          "label_raw": "here",
+          "content_role": "video",
+          "context_raw": "How to Play Video",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Card Count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Card Count: 54"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 727,
+      "game_id": 727,
+      "position": 24,
+      "title": "Trick Trick Boom",
+      "source_url": "https://boardgamegeek.com/thread/3576183/article/46607412#46607412",
+      "wip_url": "https://boardgamegeek.com/thread/3576183",
+      "author_raw": "Haymire",
+      "post_timestamp_raw": "14 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1RjJfHMBKziOl9OSdqApAl49TgwgECt-I?usp=drive_link",
+          "label_raw": "Google Drive (PnP Components, Rules)",
+          "content_role": "game_files",
+          "context_raw": "Google Drive (PnP Components, Rules)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3582649214",
+          "label_raw": "TTS mod",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte PnP",
+          "name_raw": "Components needed: 1. The PnP file for 22 cards.",
+          "quantity_raw": "22",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components needed: 1. The PnP file for 22 cards."
+        },
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "carte da mazzo standard",
+          "name_raw": "2. 32 cards from a standard deck of cards. The Ace and 2-8 of Spades, Hearts, Clubs, Diamonds (Alternatively the 2-9 of Spades, Hearts, Clubs, Diamonds, if you consider Ace to be high only).",
+          "quantity_raw": "32",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "2. 32 cards from a standard deck of cards. The Ace and 2-8 of Spades, Hearts, Clubs, Diamonds (Alternatively the 2-9 of Spades, Hearts, Clubs, Diamonds, if you consider Ace to be high only)."
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 728,
+      "game_id": 728,
+      "position": 25,
+      "title": "One More?",
+      "source_url": "https://boardgamegeek.com/thread/3576425/article/46609129#46609129",
+      "wip_url": "https://boardgamegeek.com/thread/3576425",
+      "author_raw": "rimadeta",
+      "post_timestamp_raw": "14 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1b_VzBBjdccFVKCALSMVhaatsqcdoFAee/view?usp=drive_link",
+          "label_raw": "Rulebook Low Ink",
+          "content_role": "rules",
+          "context_raw": "Rulebook Low Ink / V3.0 updated 10-14-2025",
+          "version_raw": "V3.0",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1v51q8qc36x3qa_WufiJUytCPFwuBF3PD/view?usp=drive_link",
+          "label_raw": "PnP-Cards",
+          "content_role": "component",
+          "context_raw": "PnP-Cards / V1.0 updated 09-14-2025",
+          "version_raw": "V1.0",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "components: 54 cards",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "components: 54 cards"
+        }
+      ],
+      "notes": "Primo post originale completo; collegamenti e requisiti dichiarati, host non aperti."
+    },
+    {
+      "entry_id": 729,
+      "game_id": 729,
+      "position": 26,
+      "title": "Potemkin Villages",
+      "source_url": "https://boardgamegeek.com/thread/3576989/article/46613703#46613703",
+      "wip_url": "https://boardgamegeek.com/thread/3576989",
+      "author_raw": "Zhan_Shi",
+      "post_timestamp_raw": "15 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://boardgamegeek.com/boardgame/454829/potemkin-villages/files",
+          "label_raw": "Ready to download",
+          "content_role": "game_files",
+          "context_raw": "PDF Rulebook and all PnP Files; Last update September 27, 2025 (rulebook v0.0.5, pnp files v0.0.3/4)",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3572730165",
+          "label_raw": "Available here",
+          "content_role": "online_play",
+          "context_raw": "Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Total card count: 49",
+          "quantity_raw": "49",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 49"
+        }
+      ],
+      "notes": "Destinazione PDF/PnP è pagina file BGG, non aperta; versione regole 0.0.5 e PnP 0.0.3/4 dichiarate."
+    },
+    {
+      "entry_id": 730,
+      "game_id": 730,
+      "position": 27,
+      "title": "Card Champs",
+      "source_url": "https://boardgamegeek.com/thread/3577095/article/46614574#46614574",
+      "wip_url": "https://boardgamegeek.com/thread/3577095",
+      "author_raw": "Hunter_P",
+      "post_timestamp_raw": "16 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/11chOKQQw0F4HWywWh8n7NzKjuq8O3auq/view?usp=sharing",
+          "label_raw": "Component Ready",
+          "content_role": "component",
+          "context_raw": "Status: Component Ready",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1iAaRvcot1-GmYAH2fBMXsDbFn8_hx0su?usp=sharing",
+          "label_raw": "Rules & Components Link:",
+          "content_role": "game_files",
+          "context_raw": "Rules & Components Link:",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1zksbiZzfIqh7vUIgoq_Ow6W9ekHlGipGJhzAez4ytfM/edit?usp=sharing",
+          "label_raw": "The Rules:",
+          "content_role": "rules",
+          "context_raw": "The Rules:",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1iAaRvcot1-GmYAH2fBMXsDbFn8_hx0su",
+          "label_raw": "Playtest Cards:",
+          "content_role": "component",
+          "context_raw": "Playtest Cards:",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1IrSMQ6ElmXcacXZpej252Cd1zdEUC1DH/view?usp=sharing",
+          "label_raw": "Low-Ink Cards:",
+          "content_role": "component",
+          "context_raw": "Low-Ink Cards:",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "carte del gioco",
+          "name_raw": "Total card count: 54",
+          "quantity_raw": "54",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Total card count: 54"
+        }
+      ],
+      "notes": "Status Component Ready è anchor a un file: funzione componente provvisoria, contenuto non verificato. Stesso ID cartella per Rules & Components e Playtest Cards, URL originali conservati; profili artisti esclusi."
+    },
+    {
+      "entry_id": 731,
+      "game_id": 731,
+      "position": 28,
+      "title": "The Gauntlet: Twenty Trials of Darkness",
+      "source_url": "https://boardgamegeek.com/thread/3577099/article/46614587#46614587",
+      "wip_url": "https://boardgamegeek.com/thread/3577099",
+      "author_raw": "ProfStemkoski",
+      "post_timestamp_raw": "16 set 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1sWRe3YIj2MeksEtnfrHlBinxNpBhapKl/view?usp=drive_link",
+          "label_raw": "Rulebook",
+          "content_role": "rules",
+          "context_raw": "Rulebook",
+          "version_raw": "3.0",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1U2RluGzgaEXT19I2nuUwXgRObvidbgcH/view?usp=drive_link",
+          "label_raw": "Custom Deck",
+          "content_role": "component",
+          "context_raw": "Custom Deck",
+          "version_raw": "3.0",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "http://stemkoski.net/g20/",
+          "label_raw": "Website",
+          "content_role": "project_page",
+          "context_raw": "Website (now includes digital versions of the game!)",
+          "version_raw": null,
+          "host": "stemkoski.net",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://youtube.com/watch?v=9KIioEz1cac",
+          "label_raw": "The Gauntlet: Twenty Trials of Darkness - Tutorial and Playthrough (standard mode)",
+          "content_role": "video",
+          "context_raw": "Video (tutorial and playthrough); solitaire Adventurer standard mode",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard con joker",
+          "name_raw": "Components: A standard deck of cards (52 cards + 2 jokers) or the custom artwork cards below.",
+          "quantity_raw": "52 + 2 joker",
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Components: A standard deck of cards (52 cards + 2 jokers) or the custom artwork cards below."
+        },
+        {
+          "material_kind": "printable_component",
+          "name_normalized": "mazzo personalizzato",
+          "name_raw": "Components: A standard deck of cards (52 cards + 2 jokers) or the custom artwork cards below.",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "printable",
+          "context_raw": "Components: A standard deck of cards (52 cards + 2 jokers) or the custom artwork cards below."
+        }
+      ],
+      "notes": "Mazzo standard e personalizzato sono alternative; Website dichiara versioni digitali. Versione 3.0, file aggiornati 13 ottobre 2025."
+    }
+  ]
+}

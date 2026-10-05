@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04",
+  "updated_at": "2026-10-05",
   "protocol": "TASK_GOVERNANCE.md",
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata.",
   "tasks": [
@@ -260,7 +260,9 @@
       "status_basis": "Stato storico ambiguo o copertura incompleta; riesame necessario, non chiusura inferita.",
       "coverage": null,
       "dependencies": [],
-      "successors": [],
+      "successors": [
+        "TSK-0053"
+      ],
       "chat_ids": [],
       "next_action": "Riconciliare stato e continuita usando TASK.md e successori.",
       "git": {
@@ -1481,6 +1483,45 @@
         "evidence": "Commit 732a944 e push su main verificati il 2026-10-04: HEAD e refs/heads/main coincidono sul server. Esito salvato nel successivo commit documentale; modifiche degli altri task preservate.",
         "local_save": "committato"
       }
+    },
+    {
+      "id": "TSK-0053",
+      "original_title": "2026-10-05 - MAT - 54-Card Game Design Contest 2025",
+      "display_title": "2026-10-05 - MAT - 54-Card Game Design Contest 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - MAT - 54-Card Game Design Contest 2025/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "28/28 primi post completi; importazione, integrità, idempotenza, fingerprint DOM e browser verificati il 2026-10-05",
+      "coverage": {
+        "requirements": 46,
+        "complete": 28,
+        "resource_mentions": 89,
+        "blocked": 0,
+        "entries": 28,
+        "contest_id": 19,
+        "coverage_scope": "first_post_only",
+        "resources": 86,
+        "resource_entries": 27
+      },
+      "dependencies": [],
+      "successors": [],
+      "chat_ids": [
+        "01a10ad4-27e9-7ad3-a5a0-3a8a5843fd4c"
+      ],
+      "next_action": "Eventuale ACQ 54-Card 2025 dopo selezione esplicita dei giochi; verifica condizioni e host",
+      "git": {
+        "local_save": "da_committare",
+        "synchronization": "da_verificare",
+        "evidence": "Modifiche preesistenti preservate; nessuna operazione Git",
+        "checked_at": "2026-10-05",
+        "integration": "integrato_main"
+      },
+      "closed_at": "2026-10-05"
     }
   ]
 }
