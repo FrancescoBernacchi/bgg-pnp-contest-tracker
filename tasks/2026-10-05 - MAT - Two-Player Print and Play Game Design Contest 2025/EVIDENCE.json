@@ -1,0 +1,2926 @@
+{
+  "task_id": "TSK-0056",
+  "contest_id": 18,
+  "checked_at": "2026-10-05",
+  "coverage_scope": "first_post_only",
+  "method": "Rendered first posts in CUA; original author and timestamps checked; selected verbatim declarations, no external hosts or files opened.",
+  "counts": {
+    "entries": 40,
+    "complete": 39,
+    "blocked": 1,
+    "resource_entries": 39,
+    "resources": 87,
+    "resource_mentions": 95,
+    "requirement_entries": 34,
+    "requirements": 131
+  },
+  "entries": [
+    {
+      "entry_id": 664,
+      "game_id": 664,
+      "position": 2,
+      "title": "World Trip",
+      "source_url": "https://boardgamegeek.com/thread/3531092/article/46242911#46242911",
+      "wip_url": "https://boardgamegeek.com/thread/3531092/playtest-ready-world-trip-2p-18-cardspnp-pcio-avai",
+      "author_raw": "PaganPasta",
+      "post_timestamp_raw": "22 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1v0hVFk9oeCHWVSnMu8X8O0oiiSVepHnX?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1v0hVFk9oeCHWVSnMu8X8...",
+          "content_role": "game_files",
+          "context_raw": "PnP & rulebook[v3.0]",
+          "version_raw": "v3.0",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/w2xsk6",
+          "label_raw": "https://playingcards.io/w2xsk6",
+          "content_role": "online_play",
+          "context_raw": "PCIO",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 665,
+      "game_id": 665,
+      "position": 3,
+      "title": "Constellate",
+      "source_url": "https://boardgamegeek.com/thread/3531905/article/46249238#46249238",
+      "wip_url": "https://boardgamegeek.com/thread/3531905/wip-constellate-1-to-4-players-30-to-45-minutes-ti",
+      "author_raw": "MGribbins",
+      "post_timestamp_raw": "24 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ruromRGGBtBrTKhdZXmHpilgMRdu0wqD?usp=sharing",
+          "label_raw": "Constellate PnP and Rule",
+          "content_role": "game_files",
+          "context_raw": "Constellate PnP and Rule",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/fy2n8n",
+          "label_raw": "PCIO Link",
+          "content_role": "online_play",
+          "context_raw": "PCIO Link",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "tile",
+          "name_normalized": "tessere 2x2 pollici",
+          "name_raw": "280 tiles (laid out over 24 pages)",
+          "quantity_raw": "280 / 24 pagine",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "280 tiles (laid out over 24 pages)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini giocatore",
+          "name_raw": "8 playertokens",
+          "quantity_raw": "8",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "8 playertokens"
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "regole fronte retro",
+          "name_raw": "Complete rules (on a single double-sided page)",
+          "quantity_raw": "1 pagina",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Complete rules (on a single double-sided page)"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 666,
+      "game_id": 666,
+      "position": 4,
+      "title": "Heartseekers",
+      "source_url": "https://boardgamegeek.com/thread/3532140/article/46251145#46251145",
+      "wip_url": "https://boardgamegeek.com/thread/3532140/wip-heartseekers-2p-print-and-play-contest-2025",
+      "author_raw": "Witchway_Games",
+      "post_timestamp_raw": "24 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/u/0/folders/11yhMYYgTVK5GMvTaBClejVVMkiyPO3qE",
+          "label_raw": "https://drive.google.com/drive/u/0/folders/11yhMYYgTVK5GMvTa...",
+          "content_role": "game_files",
+          "context_raw": "files for the 18 cards and a tuck box that includes the game rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "files for the 18 cards and a tuck box that includes the game rules",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "files for the 18 cards and a tuck box that includes the game rules"
+        },
+        {
+          "material_kind": "storage",
+          "name_normalized": "tuck box con regole",
+          "name_raw": "files for the 18 cards and a tuck box that includes the game rules",
+          "quantity_raw": null,
+          "requirement_level": "unclear",
+          "supply_mode": "printable",
+          "context_raw": "files for the 18 cards and a tuck box that includes the game rules"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 667,
+      "game_id": 667,
+      "position": 5,
+      "title": "Mush Puppies",
+      "source_url": "https://boardgamegeek.com/thread/3532583/article/46254695#46254695",
+      "wip_url": "https://boardgamegeek.com/thread/3532583/wip-mush-puppies-18-cards-2025-2-player-pnp-design",
+      "author_raw": "Oceans4Ransom",
+      "post_timestamp_raw": "25 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/14yCN9Ng-p42k5Lz1mWzpcEkWqwr8G9EiSYnGaGkTwMk/edit?usp=drive_link",
+          "label_raw": "RULES v1.1",
+          "content_role": "rules",
+          "context_raw": "RULES v1.1",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1mUJkgzE-L9z_z0FrCszcvczfawkP8Kd0/view?usp=sharing",
+          "label_raw": "PNP v1.1",
+          "content_role": "game_files",
+          "context_raw": "PNP v1.1",
+          "version_raw": "v1.1",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1z1raIISMuTI0I3PfFYhHc0jC37dvqrMA/view?usp=sharing",
+          "label_raw": "PCIO",
+          "content_role": "online_play",
+          "context_raw": "PCIO",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "Mush Puppies {2 players | 8+ ages | 15 minutes | 18 cards}",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Mush Puppies {2 players | 8+ ages | 15 minutes | 18 cards}"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 668,
+      "game_id": 668,
+      "position": 6,
+      "title": "Lemonade Stand",
+      "source_url": "https://boardgamegeek.com/thread/3533425/article/46262161#46262161",
+      "wip_url": "https://boardgamegeek.com/thread/3533425/wip-lemonade-stand-designed-by-lance-schricke-2025",
+      "author_raw": "Lschricke",
+      "post_timestamp_raw": "27 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1bpTyVhOfDS1zfW29Ms9l5SvxCb3zd7iGZDcz13z4h_g/edit?usp=sharing",
+          "label_raw": "Lemonade Stand Rules",
+          "content_role": "rules",
+          "context_raw": "Lemonade Stand Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "cube",
+          "name_normalized": "cubi gialli",
+          "name_raw": "12 yellow cubes (lemonade)",
+          "quantity_raw": "12",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "12 yellow cubes (lemonade)"
+        },
+        {
+          "material_kind": "tile",
+          "name_normalized": "tessere piccole",
+          "name_raw": "4 small tiles (lemonade slush)",
+          "quantity_raw": "4",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "4 small tiles (lemonade slush)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "gemme blu",
+          "name_raw": "3 blue gems (ice cubes)",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 blue gems (ice cubes)"
+        },
+        {
+          "material_kind": "coin",
+          "name_normalized": "monete",
+          "name_raw": "12 coins",
+          "quantity_raw": "12",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "12 coins"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 variante solo",
+          "name_raw": "1 standard D6 for the solo variant",
+          "quantity_raw": "1",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "1 standard D6 for the solo variant"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 669,
+      "game_id": 669,
+      "position": 7,
+      "title": "Goal Rush",
+      "source_url": "https://boardgamegeek.com/thread/3533918/article/46266487#46266487",
+      "wip_url": "https://boardgamegeek.com/thread/3533918/goal-rush-wip",
+      "author_raw": "RIchardSDD",
+      "post_timestamp_raw": "28 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://icedrive.net/s/ZwXFCQu9G714tCYuwj4xSygF9aQF",
+          "label_raw": "https://icedrive.net/s/ZwXFCQu9G714tCYuwj4xSygF9aQF",
+          "content_role": "game_files",
+          "context_raw": "For PnP files of the gameboard and game rules visit",
+          "version_raw": null,
+          "host": "icedrive.net",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6",
+          "name_raw": "1 D6 Dice",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 D6 Dice"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino palla",
+          "name_raw": "1 small token for the ball",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 small token for the ball"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino tempo",
+          "name_raw": "1 small token for the time token",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 small token for the time token"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini punteggio",
+          "name_raw": "2 small tokens for the team score track tokens",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "2 small tokens for the team score track tokens"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone",
+          "name_raw": "For PnP files of the gameboard and game rules visit",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "For PnP files of the gameboard and game rules visit"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 670,
+      "game_id": 670,
+      "position": 8,
+      "title": "Senjin",
+      "source_url": "https://boardgamegeek.com/thread/3534862/article/46273001#46273001",
+      "wip_url": "https://boardgamegeek.com/thread/3534862/wip-senjin-2025-two-player-pnp-contest-components",
+      "author_raw": "dcluley",
+      "post_timestamp_raw": "30 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1oQrW9v54j3jbb0yoFFhoi9ccNU4W9eXn?usp=sharing",
+          "label_raw": "Senjin PDF PNP Files",
+          "content_role": "game_files",
+          "context_raw": "Senjin PDF PNP Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://boardgamegeek.com/image/9069432",
+          "label_raw": "",
+          "content_role": "component",
+          "context_raw": "PNP 11x17 File with Board and Pieces",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://boardgamegeek.com/image/9210387",
+          "label_raw": "",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone e pezzi 11x17",
+          "name_raw": "PNP 11x17 File with Board and Pieces",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "PNP 11x17 File with Board and Pieces"
+        }
+      ],
+      "notes": "Immagini esplicitamente etichettate PNP 11x17 e Rules; mockup escluso. Vecchio WIP citato come provenienza, non letto."
+    },
+    {
+      "entry_id": 671,
+      "game_id": 671,
+      "position": 9,
+      "title": "Scissor Wizards",
+      "source_url": "https://boardgamegeek.com/thread/3535282/article/46276524#46276524",
+      "wip_url": "https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play",
+      "author_raw": "JewellGames",
+      "post_timestamp_raw": "30 giu 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/13j3atSXTm5M1jnWPk_NpYZlCU5_pXqzy/view",
+          "label_raw": "Game Rules",
+          "content_role": "rules",
+          "context_raw": "Game Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1Pfr9ShYFUJRsjquCiJ4O3w_zspZPFyJf/view",
+          "label_raw": "6 PnP Cards",
+          "content_role": "component",
+          "context_raw": "6 PnP Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1H3_58pqD32-wthlg0-BFiRVMWsut3X6w/view",
+          "label_raw": "1 PnP Mana Sheet",
+          "content_role": "component",
+          "context_raw": "1 PnP Mana Sheet",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/13j3atSXTm5M1jnWPk_NpYZlCU5_pXqzy/view",
+          "label_raw": "Game Rules",
+          "content_role": "rules",
+          "context_raw": "Game Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1Pfr9ShYFUJRsjquCiJ4O3w_zspZPFyJf/view",
+          "label_raw": "6 PnP Cards",
+          "content_role": "component",
+          "context_raw": "6 PnP Cards",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1H3_58pqD32-wthlg0-BFiRVMWsut3X6w/view",
+          "label_raw": "1 PnP Mana Sheet",
+          "content_role": "component",
+          "context_raw": "1 PnP Mana Sheet",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "6 PnP Cards",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "6 PnP Cards"
+        },
+        {
+          "material_kind": "sheet",
+          "name_normalized": "foglio mana",
+          "name_raw": "1 PnP Mana Sheet",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 PnP Mana Sheet"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 672,
+      "game_id": 672,
+      "position": 10,
+      "title": "Intramural",
+      "source_url": "https://boardgamegeek.com/thread/3536316/article/46285534#46285534",
+      "wip_url": "https://boardgamegeek.com/thread/3536316/wip-intramural-the-soccer-trick-taking-poker-game",
+      "author_raw": "Lukifer10",
+      "post_timestamp_raw": "3 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1MSw6VWTvfPkeZY3Y18Z0JjdMBcFd2mYn?usp=share_link",
+          "label_raw": "Rezbol trick taking PnP rules and files",
+          "content_role": "game_files",
+          "context_raw": "Rezbol trick taking PnP rules and files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://youtu.be/Zx2zrsjQdPM?si=XFpQk34_fDyU0dDF",
+          "label_raw": "Video showing how use Print and Play Materials",
+          "content_role": "video",
+          "context_raw": "Video showing how use Print and Play Materials",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://youtu.be/PjEJns6Yizc",
+          "label_raw": "Video of Rules",
+          "content_role": "video",
+          "context_raw": "Video of Rules",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [],
+      "notes": "Cartella ancora etichettata Rezbol; video dichiarati un poco obsoleti."
+    },
+    {
+      "entry_id": 673,
+      "game_id": 673,
+      "position": 11,
+      "title": "KORxSOL",
+      "source_url": "https://boardgamegeek.com/thread/3537614/article/46295449#46295449",
+      "wip_url": "https://boardgamegeek.com/thread/3537614/wip-korxsol-fantasy-tabletop-pvp-card-and-dice-ski",
+      "author_raw": "isjustdrew",
+      "post_timestamp_raw": "5 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://korxsol.com/",
+          "label_raw": "korxsol.com",
+          "content_role": "game_files",
+          "context_raw": "Find everything you need to start playing the game at",
+          "version_raw": null,
+          "host": "korxsol.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://korxsol.base44.app/",
+          "label_raw": "Get PRINT AND PLAY FILES HERE",
+          "content_role": "game_files",
+          "context_raw": "Get PRINT AND PLAY FILES HERE",
+          "version_raw": null,
+          "host": "korxsol.base44.app",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://korxsol.base44.app/",
+          "label_raw": "KORxSOL Game Counter",
+          "content_role": "other",
+          "context_raw": "Use the KORxSOL Web App and Game Counter",
+          "version_raw": null,
+          "host": "korxsol.base44.app",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "score_tracker",
+          "name_normalized": "d20 o contatore colpi",
+          "name_raw": "D20 or Hit Counter",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "D20 or Hit Counter"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d3 o d6",
+          "name_raw": "D3 or D6 Dice",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "D3 or D6 Dice"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "flip token o moneta",
+          "name_raw": "Flip Token or Quarter",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Flip Token or Quarter"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino giocatore",
+          "name_raw": "Player Token",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Player Token"
+        },
+        {
+          "material_kind": "digital_device",
+          "name_normalized": "app contatore",
+          "name_raw": "Use the KORxSOL Web App and Game Counter : KORxSOL Game Counter",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "digital_device",
+          "context_raw": "Use the KORxSOL Web App and Game Counter : KORxSOL Game Counter"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 674,
+      "game_id": 674,
+      "position": 12,
+      "title": "Cube Wars",
+      "source_url": "https://boardgamegeek.com/thread/3538610/article/46302725#46302725",
+      "wip_url": "https://boardgamegeek.com/thread/3538610/wip-cube-wars-a-compact-4x-for-the-2025-two-player",
+      "author_raw": "jeffluenza",
+      "post_timestamp_raw": "7 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1J7Jon2WBxGnKlMvyWWbBYh_LeTwOwpsS?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1J7Jon2WBxGnKlMvyWWbB...",
+          "content_role": "game_files",
+          "context_raw": "PnP files (v1.0) and Rulebook (v1.2)",
+          "version_raw": "PnP v1.0; Rulebook v1.2",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://screentop.gg/@Jeffluenza/CubeWars",
+          "label_raw": "Screentop.gg - Cube Wars",
+          "content_role": "online_play",
+          "context_raw": "Screentop (v1.0)",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "18 cards",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "18 cards"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6",
+          "name_raw": "24 D6 dice - can be any color, but helpful to have 2 green, 2 orange, 2 blue of the 24",
+          "quantity_raw": "24",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "24 D6 dice - can be any color, but helpful to have 2 green, 2 orange, 2 blue of the 24"
+        },
+        {
+          "material_kind": "cube",
+          "name_normalized": "cubi 8mm in dieci colori",
+          "name_raw": "100 8mm cubes of 10 colors:\n> 26 of a player color (Red)\n> 26 of a player color (Blue)\n> 18 White\n> 6 Gray\n> 4 Black\n> 4 Pink\n> 4 Purple\n> 4 Orange\n> 4 Green\n> 4 Yellow",
+          "quantity_raw": "100 dichiarati; somma elenco 100",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "100 8mm cubes of 10 colors:\n> 26 of a player color (Red)\n> 26 of a player color (Blue)\n> 18 White\n> 6 Gray\n> 4 Black\n> 4 Pink\n> 4 Purple\n> 4 Orange\n> 4 Green\n> 4 Yellow"
+        },
+        {
+          "material_kind": "cube",
+          "name_normalized": "colori cubi sostituibili",
+          "name_raw": "Note: You can use any colors you want realistically - just as long as there are enough distinct colors.",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Note: You can use any colors you want realistically - just as long as there are enough distinct colors."
+        }
+      ],
+      "notes": "Colori dei cubi sostituibili; 100 cubi dichiarati e somma delle dieci righe coerente (26+26+18+6+24=100)."
+    },
+    {
+      "entry_id": 675,
+      "game_id": 675,
+      "position": 13,
+      "title": "KONSPIRO",
+      "source_url": "https://boardgamegeek.com/thread/3538971/article/46305655#46305655",
+      "wip_url": "https://boardgamegeek.com/thread/3538971/wip-konspiro-2025-two-player-pnp-reverse-deck-buil",
+      "author_raw": "watch01",
+      "post_timestamp_raw": "8 lug 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1yohlcOLtvmQSfyyroBWTT7_dDH0gQV_g",
+          "label_raw": "https://drive.google.com/drive/folders/1yohlcOLtvmQSfyyroBWT...",
+          "content_role": "game_files",
+          "context_raw": "Rule and PnP",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzi standard",
+          "name_raw": "1V1 with two standard card deck.",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1V1 with two standard card deck."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 676,
+      "game_id": 676,
+      "position": 14,
+      "title": "Roll and Pull",
+      "source_url": "https://boardgamegeek.com/thread/3542280/article/46331373#46331373",
+      "wip_url": "https://boardgamegeek.com/thread/3542280/wip-tractor-pull-2025-two-player-print-and-play-de",
+      "author_raw": "Cnote58",
+      "post_timestamp_raw": "14 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ET8foCJAKjhR9G1dTdhNoF4AIO0YH5-Y?usp=drive_link",
+          "label_raw": "Game Rules and PNP File",
+          "content_role": "game_files",
+          "context_raw": "Game Rules and PNP File",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1ET8foCJAKjhR9G1dTdhNoF4AIO0YH5-Y?usp=drive_link",
+          "label_raw": "- Game Board",
+          "content_role": "game_files",
+          "context_raw": "- Game Board",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/z44u2x",
+          "label_raw": "Playingcards.io",
+          "content_role": "online_play",
+          "context_raw": "Playingcards.io",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi di quattro colori",
+          "name_raw": "4 dice: 1 each in 4 different colors",
+          "quantity_raw": "4",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "4 dice: 1 each in 4 different colors"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "pedine o segnalini",
+          "name_raw": "3 pawns or markers (I use marshmallows, winner gets to eat 'em).",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "3 pawns or markers (I use marshmallows, winner gets to eat 'em)."
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone",
+          "name_raw": "- Game Board",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "- Game Board"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 677,
+      "game_id": 677,
+      "position": 15,
+      "title": "Parry",
+      "source_url": "https://boardgamegeek.com/thread/3542787/article/46341267#46341267",
+      "wip_url": "https://boardgamegeek.com/thread/3542787/wip-parry",
+      "author_raw": "hleveillegauvin",
+      "post_timestamp_raw": "16 lug 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "not_observable",
+      "material_listing_status": "not_observable",
+      "coverage_scope": "first_post_only",
+      "outcome": "blocked",
+      "all_first_post_read": false,
+      "resources": [],
+      "requirements": [],
+      "notes": "Primo post originale di GiantLeapGames non osservabile. Primo articolo residuo di hleveillegauvin: I love the artwork! Nessuna assenza di risorse inferita."
+    },
+    {
+      "entry_id": 678,
+      "game_id": 678,
+      "position": 16,
+      "title": "Voidsmiths",
+      "source_url": "https://boardgamegeek.com/thread/3544288/article/46349021#46349021",
+      "wip_url": "https://boardgamegeek.com/thread/3544288/wip-voidsmiths-2025-two-player-print-and-play-desi",
+      "author_raw": "nexttwoyougames",
+      "post_timestamp_raw": "18 lug 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1x5sj6iCpEFdXoYimDoqZSeB98U3kkpjq?usp=sharing",
+          "label_raw": "https://drive.google.com/drive/folders/1x5sj6iCpEFdXoYimDoqZ...",
+          "content_role": "game_files",
+          "context_raw": "Link to PnP Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "sheet",
+          "name_normalized": "documenti Letter",
+          "name_raw": "Two Letter Size Documents",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Two Letter Size Documents"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini stampabili",
+          "name_raw": "Printable and Cuttable Tokens",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Printable and Cuttable Tokens"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "dischi piccoli",
+          "name_raw": "6 Discs (2 colors of 3)",
+          "quantity_raw": "6 / 3 per colore",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "6 Discs (2 colors of 3)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "dischi più grandi",
+          "name_raw": "2 Slightly larger discs (2 colors of 1 that match the same colors of the smaller discs)",
+          "quantity_raw": "2 / 1 per colore",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "2 Slightly larger discs (2 colors of 1 that match the same colors of the smaller discs)"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 679,
+      "game_id": 679,
+      "position": 17,
+      "title": "Unlucky Spirits",
+      "source_url": "https://boardgamegeek.com/thread/3544761/article/46352391#46352391",
+      "wip_url": "https://boardgamegeek.com/thread/3544761/wip-unlucky-spirits-original-edition-1-3-players-6",
+      "author_raw": "Herald Selenay",
+      "post_timestamp_raw": "19 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ZBEinaYX0zZZ9tCOg-ucPlfJI4U_qZli?usp=sharing",
+          "label_raw": "here!",
+          "content_role": "game_files",
+          "context_raw": "Files available via GoogleDrive; rulebook v1 2025.8.25, low ink PnP v3 2025.8.24",
+          "version_raw": "rules v1; PnP v3",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3543471912",
+          "label_raw": "here!",
+          "content_role": "online_play",
+          "context_raw": "Digital playtesting available via Tabletop Simulator",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Household Omens",
+          "name_raw": "9 Household Omens (double-sided 2-inch square cards):",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "9 Household Omens (double-sided 2-inch square cards):"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Omen Effect Cards",
+          "name_raw": "9 Household Omen Effect Cards (double-sided poker-sized cards):",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "9 Household Omen Effect Cards (double-sided poker-sized cards):"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Tarot Cards",
+          "name_raw": "36 Tarot Cards: (double-sided tarot-sized cards; * indicates a Player’s Starting Tarot Cards)",
+          "quantity_raw": "36",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "36 Tarot Cards: (double-sided tarot-sized cards; * indicates a Player’s Starting Tarot Cards)"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Good Luck Charms",
+          "name_raw": "3 Good Luck Charms (double-sided 2-inch square cards)",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "3 Good Luck Charms (double-sided 2-inch square cards)"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Hex Breakers",
+          "name_raw": "3 Hex Breakers (double-sided 2-inch square cards)",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "3 Hex Breakers (double-sided 2-inch square cards)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "Hold Tokens",
+          "name_raw": "3 Hold Tokens (custom cardstock/cardboard components)",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "3 Hold Tokens (custom cardstock/cardboard components)"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "Household Omens board",
+          "name_raw": "1 Household Omens board (custom game board)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 Household Omens board (custom game board)"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "Tarot Tableau playerboards",
+          "name_raw": "3 Tarot Tableau playerboards (custom playerboards- there are separate Right and Left boards, for now, simply print a duplicate of EITHER to include a third player)",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "3 Tarot Tableau playerboards (custom playerboards- there are separate Right and Left boards, for now, simply print a duplicate of EITHER to include a third player)"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "Talking Spirit Board",
+          "name_raw": "1 Talking Spirit Board (custom game board)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 Talking Spirit Board (custom game board)"
+        },
+        {
+          "material_kind": "tile",
+          "name_normalized": "Name Title and Instruction Tile",
+          "name_raw": "1 Name Title and Instruction Tile (custom tile/board)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 Name Title and Instruction Tile (custom tile/board)"
+        },
+        {
+          "material_kind": "component",
+          "name_normalized": "Planchette",
+          "name_raw": "1 Planchette (custom cardstock/cardboard component)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 Planchette (custom cardstock/cardboard component)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "Lock Tokens",
+          "name_raw": "9 Lock Tokens (custom cardstock/cardboard components)",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "9 Lock Tokens (custom cardstock/cardboard components)"
+        },
+        {
+          "material_kind": "coin",
+          "name_normalized": "moneta",
+          "name_raw": "1 Coin (Players can supply a coin of their choice, I use a U.S. Quarter.)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "1 Coin (Players can supply a coin of their choice, I use a U.S. Quarter.)"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 personalizzati 0-0-1-1-2-2",
+          "name_raw": "2 Custom dice (both d6s with sides labelled 0-0-1-1-2-2)",
+          "quantity_raw": "2",
+          "requirement_level": "alternative",
+          "supply_mode": "specialized",
+          "context_raw": "2 Custom dice (both d6s with sides labelled 0-0-1-1-2-2)"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 standard sostitutivi",
+          "name_raw": "Players can substitute regular d6s and agree to count 1-2 as a 0, 3-4 as a 1, and 5-6 as a 2.",
+          "quantity_raw": "2",
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "Players can substitute regular d6s and agree to count 1-2 as a 0, 3-4 as a 1, and 5-6 as a 2."
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini fortuna bianchi",
+          "name_raw": "50 White/Good Luck Tokens (Not Included in the PNP! Bingo chips are recommended, but players can substitute with\ncubes, coins, tokens, candy, etc.)",
+          "quantity_raw": "50",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "50 White/Good Luck Tokens (Not Included in the PNP! Bingo chips are recommended, but players can substitute with\ncubes, coins, tokens, candy, etc.)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini sfortuna neri",
+          "name_raw": "50 Black/Bad Luck Tokens (Not Included in the PNP! Bingo chips are recommended, but players can substitute with\ncubes, coins, tokens, candy, etc.)",
+          "quantity_raw": "50",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "50 Black/Bad Luck Tokens (Not Included in the PNP! Bingo chips are recommended, but players can substitute with\ncubes, coins, tokens, candy, etc.)"
+        },
+        {
+          "material_kind": "bag",
+          "name_normalized": "sacchetto",
+          "name_raw": "1 Draw Bag (Not Included in the PNP!)",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "1 Draw Bag (Not Included in the PNP!)"
+        },
+        {
+          "material_kind": "container",
+          "name_normalized": "bicchieri o ciotola divisa",
+          "name_raw": "2 Supply/Discard Cups (Not Included in the PNP! Players can use separate cups or they can use a divided bowl. Note that the cups/divided bowl only need(s) to be large enough to fit whatever White and Black Tokens the players are using.)",
+          "quantity_raw": "2 / una ciotola divisa",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "2 Supply/Discard Cups (Not Included in the PNP! Players can use separate cups or they can use a divided bowl. Note that the cups/divided bowl only need(s) to be large enough to fit whatever White and Black Tokens the players are using.)"
+        },
+        {
+          "material_kind": "sleeve",
+          "name_normalized": "bustine poker",
+          "name_raw": "9 Standard/Poker Card Sleeves (for the Household Omen Effect Cards)",
+          "quantity_raw": "9",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "9 Standard/Poker Card Sleeves (for the Household Omen Effect Cards)"
+        },
+        {
+          "material_kind": "sleeve",
+          "name_normalized": "bustine quadrate",
+          "name_raw": "15 Square Card Sleeves (for the 9 Household Omens, 3 Good Luck Charms, and 3 Hex",
+          "quantity_raw": "15",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "15 Square Card Sleeves (for the 9 Household Omens, 3 Good Luck Charms, and 3 Hex"
+        },
+        {
+          "material_kind": "sleeve",
+          "name_normalized": "bustine tarot",
+          "name_raw": "24-36 Tarot-Size Sleeves (24 Tarot Cards for a 2-Player Game; 36 Tarot Cards for a 3-Player Game)",
+          "quantity_raw": "24-36",
+          "requirement_level": "optional",
+          "supply_mode": "common",
+          "context_raw": "24-36 Tarot-Size Sleeves (24 Tarot Cards for a 2-Player Game; 36 Tarot Cards for a 3-Player Game)"
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "regolamento",
+          "name_raw": "Rulebook",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Rulebook"
+        }
+      ],
+      "notes": "Original Edition dal 1-1-2026; gratuità dichiarata per durata contest, condizioni attuali non verificate. Regole v1/PnP v3, low ink, materiali domestici e alternative separati."
+    },
+    {
+      "entry_id": 680,
+      "game_id": 680,
+      "position": 18,
+      "title": "Diskochet",
+      "source_url": "https://boardgamegeek.com/thread/3545142/article/46354822#46354822",
+      "wip_url": "https://boardgamegeek.com/thread/3545142/wip-diskochet-a-two-player-paddle-sport-card-game",
+      "author_raw": "OfficeTurtle",
+      "post_timestamp_raw": "20 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1iSNz62_37tA95y6A92pnDNQBlJlHZFox/view?usp=drive_link",
+          "label_raw": "Diskochet v1.04 Cards",
+          "content_role": "component",
+          "context_raw": "Diskochet v1.04 Cards",
+          "version_raw": "v1.04",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1LxRR7DmrFmWMtj4diDMJv0ZFrPYJxZyU/view?usp=drive_link",
+          "label_raw": "Diskochet v1.04 Rules",
+          "content_role": "rules",
+          "context_raw": "Diskochet v1.04 Rules",
+          "version_raw": "v1.04",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte paddle fronte retro",
+          "name_raw": "Components: 9 paddle cards (back to back), five disks (or coins)",
+          "quantity_raw": "9",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Components: 9 paddle cards (back to back), five disks (or coins)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "dischi o monete",
+          "name_raw": "Components: 9 paddle cards (back to back), five disks (or coins)",
+          "quantity_raw": "5",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Components: 9 paddle cards (back to back), five disks (or coins)"
+        }
+      ],
+      "notes": "Primo post corrente: cinque dischi o monete. Roster storico: un disco e due dadi; dichiarazioni non fuse."
+    },
+    {
+      "entry_id": 681,
+      "game_id": 681,
+      "position": 19,
+      "title": "Automon",
+      "source_url": "https://boardgamegeek.com/thread/3548268/article/46380478#46380478",
+      "wip_url": "https://boardgamegeek.com/thread/3548268/wip-automon-2025-two-player-game-design-contest",
+      "author_raw": "Slopesofvesuvius",
+      "post_timestamp_raw": "26 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/15GA3ACuYANxXveYT8ia0CGq81BSXcudZ",
+          "label_raw": "Automon Game Rules",
+          "content_role": "game_files",
+          "context_raw": "PnP File Location",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 neri",
+          "name_raw": "6 Black D6 Automon robot dice",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "6 Black D6 Automon robot dice"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 rossi",
+          "name_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "gemma rossa",
+          "name_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple"
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "meeple rosso",
+          "name_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 Red D6 Command dice, 1 red Command gem, 1 red Meeple"
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6 bianchi",
+          "name_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple.",
+          "quantity_raw": "3",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple."
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "gemma trasparente",
+          "name_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple."
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "meeple bianco",
+          "name_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "3 White D6 Command dice, 1 transparent Command gem, 1 white Meeple."
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "gemme gialle",
+          "name_raw": "2 Yellow Initiative Gems",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "2 Yellow Initiative Gems"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino primo giocatore",
+          "name_raw": "A First Player Marker",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "A First Player Marker"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "scacchiera",
+          "name_raw": "A chess board",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "A chess board"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 682,
+      "game_id": 682,
+      "position": 20,
+      "title": "Collapsi",
+      "source_url": "https://boardgamegeek.com/thread/3548846/article/46384475#46384475",
+      "wip_url": "https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design",
+      "author_raw": "marksball",
+      "post_timestamp_raw": "27 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1MV1vvV1Aq7ikRU7lF8Y7QQD-akH3ybHmk2fKs6p61lE/edit?usp=sharing",
+          "label_raw": "https://docs.google.com/document/d/1MV1vvV1Aq7ikRU7lF8Y7QQD-...",
+          "content_role": "rules",
+          "context_raw": "Here is the rules doc on Google",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://youtube.com/watch?v=FgHkYEFGCXI",
+          "label_raw": "How to Play Updated Collapsi: The Shrinking Grid Card Game!",
+          "content_role": "video",
+          "context_raw": "How to Play Updated Collapsi: The Shrinking Grid Card Game!",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo standard",
+          "name_raw": "Collapsi is an abstract game that uses a regular deck of cards and anything available for pawns.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Collapsi is an abstract game that uses a regular deck of cards and anything available for pawns."
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "pedine sostitutive",
+          "name_raw": "Collapsi is an abstract game that uses a regular deck of cards and anything available for pawns.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Collapsi is an abstract game that uses a regular deck of cards and anything available for pawns."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 683,
+      "game_id": 683,
+      "position": 21,
+      "title": "Word Dungeon Duel",
+      "source_url": "https://boardgamegeek.com/thread/3551113/article/46404052#46404052",
+      "wip_url": "https://boardgamegeek.com/thread/3551113/wip-word-dungeon-duel-2-player-pnp-contest-compone",
+      "author_raw": "joe_plays_games",
+      "post_timestamp_raw": "31 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1FBTOp1QdcvDof3Az0LUUWYzBCbw-3xSx?usp=share_link",
+          "label_raw": "Access the files here",
+          "content_role": "game_files",
+          "context_raw": "Access the files here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone A4",
+          "name_raw": "1 A4 game board",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "1 A4 game board"
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "penna o matita",
+          "name_raw": "Pencil or pen, recommended different colour per player.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "Pencil or pen, recommended different colour per player."
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "regole",
+          "name_raw": "- Rules",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "- Rules"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 684,
+      "game_id": 684,
+      "position": 22,
+      "title": "Under One Sky",
+      "source_url": "https://boardgamegeek.com/thread/3436540/article/45445403#45445403",
+      "wip_url": "https://boardgamegeek.com/thread/3436540/wip-under-one-sky",
+      "author_raw": "themisplay",
+      "post_timestamp_raw": "8 gen 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://playingcards.io/@themisplay/under-one-sky",
+          "label_raw": "Play in our PlayingCards.io room!",
+          "content_role": "online_play",
+          "context_raw": "Play in our PlayingCards.io room!",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://playingcards.io/@themisplay/under-one-sky",
+          "label_raw": "https://playingcards.io/@themisplay/under-one-sky",
+          "content_role": "online_play",
+          "context_raw": "https://playingcards.io/@themisplay/under-one-sky",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://youtube.com/watch?v=N8KSAlr7kAY",
+          "label_raw": "Under One Sky - Cardboard Edison (2026)",
+          "content_role": "video",
+          "context_raw": "Under One Sky - Cardboard Edison (2026)",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [],
+      "notes": "Primo post aggiornato con PCIO/video 2026 e Kickstarter; nessun link PnP dichiarato attualmente, promozioni escluse."
+    },
+    {
+      "entry_id": 685,
+      "game_id": 685,
+      "position": 23,
+      "title": "PAWND",
+      "source_url": "https://boardgamegeek.com/thread/3547608/article/46374918#46374918",
+      "wip_url": "https://boardgamegeek.com/thread/3547608/wip-pawnd-entry-for-2025-bgg-2-player-pnp-game-des",
+      "author_raw": "RPMgamer",
+      "post_timestamp_raw": "24 lug 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1KSUyDQI35-RciTqh9mWfC2JpggNYl8SA/view?usp=drive_link",
+          "label_raw": "PAWND PnP Version 0.1",
+          "content_role": "game_files",
+          "context_raw": "PAWND PnP Version 0.1",
+          "version_raw": "0.1; 7/31/25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1VF0prVR1pQKPpMME3nO0ToA4OcrnrmdN/view?usp=drive_link",
+          "label_raw": "PAWND Rulebook Version 1.0",
+          "content_role": "rules",
+          "context_raw": "PAWND Rulebook Version 1.0",
+          "version_raw": "1.0; 9/19/25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "board",
+          "name_normalized": "griglia sostitutiva 9x9",
+          "name_raw": "I strongly recommend using your own substitute grid, pawns, and checkers/tokens for best result. You can use a checker board if you place pieces on the intersections instead of inside the square spaces, to create the required 9x9 grid",
+          "quantity_raw": "1",
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "I strongly recommend using your own substitute grid, pawns, and checkers/tokens for best result. You can use a checker board if you place pieces on the intersections instead of inside the square spaces, to create the required 9x9 grid"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "pedine e segnalini sostitutivi",
+          "name_raw": "I strongly recommend using your own substitute grid, pawns, and checkers/tokens for best result.",
+          "quantity_raw": null,
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "I strongly recommend using your own substitute grid, pawns, and checkers/tokens for best result."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 686,
+      "game_id": 686,
+      "position": 24,
+      "title": "Orbits",
+      "source_url": "https://boardgamegeek.com/thread/3552316/article/46414031#46414031",
+      "wip_url": "https://boardgamegeek.com/thread/3552316/orbits-an-entry-into-the-two-player-game-design-co",
+      "author_raw": "Wildcard Six",
+      "post_timestamp_raw": "2 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://boardgamegeek.com/boardgame/457261/orbits",
+          "label_raw": "Orbits",
+          "content_role": "game_files",
+          "context_raw": "Game Page: Orbits. Files located in the file section of the Game Page.",
+          "version_raw": null,
+          "host": "boardgamegeek.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "pawn",
+          "name_normalized": "astronavi giocatore",
+          "name_raw": "Orbits is a two player race game where players will move their four racers across a grid to other side while collecting eight objectives.",
+          "quantity_raw": "4 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Orbits is a two player race game where players will move their four racers across a grid to other side while collecting eight objectives."
+        }
+      ],
+      "notes": "Pagina BGG esplicitamente indicata come luogo dei file; link dinamico risolto. Video promozionale del marchio escluso."
+    },
+    {
+      "entry_id": 687,
+      "game_id": 687,
+      "position": 25,
+      "title": "Quickdraw: Battle for Silver City",
+      "source_url": "https://boardgamegeek.com/thread/3553161/article/46419943#46419943",
+      "wip_url": "https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy",
+      "author_raw": "Knosh0",
+      "post_timestamp_raw": "3 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1RoOxb-bsTSIfCDD9tsgrHMwSQf2SaWqu/view?usp=sharing",
+          "label_raw": "cards",
+          "content_role": "component",
+          "context_raw": "cards",
+          "version_raw": "v1.2",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/13DG0sL_ycue2vV91WPI8CGlaMdSf7mr6/view?usp=sharing",
+          "label_raw": "low ink cards",
+          "content_role": "component",
+          "context_raw": "low ink cards",
+          "version_raw": "v1.2",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1goG9kd1EqpAJnJwuMVtq6N8vx0391iaA/view?usp=sharing",
+          "label_raw": "rules ",
+          "content_role": "rules",
+          "context_raw": "rules ",
+          "version_raw": "v1.2",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1MbP3Jx2J4-oiWaFRndlhfz9OzgEUE5G8/view?usp=sharing",
+          "label_raw": "low ink rules",
+          "content_role": "rules",
+          "context_raw": "low ink rules",
+          "version_raw": "v1.2",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1PflQxaPOhBx3UhmAX8HDnLrvNE479xCh/view?usp=sharing",
+          "label_raw": "rules sheet",
+          "content_role": "rules",
+          "context_raw": "rules sheet",
+          "version_raw": "v1.2",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://playingcards.io/e9r342",
+          "label_raw": "playingcards.io",
+          "content_role": "online_play",
+          "context_raw": "v1.2 draft cards",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://discord.gg/3bnpgbN3MB",
+          "label_raw": "Discord",
+          "content_role": "online_play",
+          "context_raw": "Play Virtually ... on my Discord where you can also make your own teams!",
+          "version_raw": null,
+          "host": "discord.gg",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Law",
+          "name_raw": "8 Law unit cards",
+          "quantity_raw": "8",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "8 Law unit cards"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Bandit",
+          "name_raw": "8 Bandit unit cards",
+          "quantity_raw": "8",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "8 Bandit unit cards"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte riferimento giocatore",
+          "name_raw": "2 player reference cards (pending)",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "2 player reference cards (pending)"
+        }
+      ],
+      "notes": "Carte riferimento indicate pending ma To Do le segna completate: entrambe dichiarazioni preservate."
+    },
+    {
+      "entry_id": 688,
+      "game_id": 688,
+      "position": 26,
+      "title": "5 Spells",
+      "source_url": "https://boardgamegeek.com/thread/3553927/article/46426517#46426517",
+      "wip_url": "https://boardgamegeek.com/thread/3553927/wip-5-spells-2025-two-player-pnp-contest-2-player",
+      "author_raw": "Pistols_at_Dawn",
+      "post_timestamp_raw": "5 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/14jgSwxgzVPqIAiEKVTaRh_9l6f5Y4Byk?usp=drive_link",
+          "label_raw": "Download",
+          "content_role": "game_files",
+          "context_raw": "Download",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/f4fpq2",
+          "label_raw": "https://playingcards.io/f4fpq2",
+          "content_role": "online_play",
+          "context_raw": "https://playingcards.io/f4fpq2",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://youtube.com/watch?v=HR2JV_AlF5c",
+          "label_raw": "5 Spells Playthrough",
+          "content_role": "video",
+          "context_raw": "5 Spells Playthrough",
+          "version_raw": null,
+          "host": "youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte stampate",
+          "name_raw": "The cards requrie two pages to print and the rule book is 2 pages.",
+          "quantity_raw": "2 pagine",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The cards requrie two pages to print and the rule book is 2 pages."
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "regolamento",
+          "name_raw": "The cards requrie two pages to print and the rule book is 2 pages.",
+          "quantity_raw": "2 pagine",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The cards requrie two pages to print and the rule book is 2 pages."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 689,
+      "game_id": 689,
+      "position": 27,
+      "title": "Bone Machine",
+      "source_url": "https://boardgamegeek.com/thread/3556560/article/46450656#46450656",
+      "wip_url": "https://boardgamegeek.com/thread/3556560/bone-machine-tile-laying-hand-management-2025-2-pl",
+      "author_raw": "StrangeAcre",
+      "post_timestamp_raw": "10 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://airboardgame.net/playgame/V22SMrPneH",
+          "label_raw": "Play the Victorian Gothic variant Online",
+          "content_role": "online_play",
+          "context_raw": "Play the Victorian Gothic variant Online",
+          "version_raw": null,
+          "host": "airboardgame.net",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://www.strangeacre.games/",
+          "label_raw": "Click here to download for free.",
+          "content_role": "game_files",
+          "context_raw": "Click here to download for free.",
+          "version_raw": null,
+          "host": "www.strangeacre.games",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "tile",
+          "name_normalized": "tessere",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": "58",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini rossi",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": "20",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini blu",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": "20",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino primo giocatore",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "player_aid",
+          "name_normalized": "aiuti giocatore",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "scacchiera sostitutiva",
+          "name_raw": "You can use any checkerboard with a 5 x 5 or 6x6 for the 3-4 player expansion if you want to & feel free to use your own tokens if you have some.",
+          "quantity_raw": "5x5; 6x6 espansione 3-4 giocatori",
+          "requirement_level": "alternative",
+          "supply_mode": "common",
+          "context_raw": "You can use any checkerboard with a 5 x 5 or 6x6 for the 3-4 player expansion if you want to & feel free to use your own tokens if you have some."
+        },
+        {
+          "material_kind": "assembly_tool",
+          "name_normalized": "adesivi colorati per retro",
+          "name_raw": "You could also use coloured stickers for the tile backs in the appropriate colours which would save on coloured ink.",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "household",
+          "context_raw": "You could also use coloured stickers for the tile backs in the appropriate colours which would save on coloured ink."
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "regolamento",
+          "name_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "Components: 58 tiles, 20 red & 20 blue tokens, 1st Player marker, Game Board, Player Aids + Rule book"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 690,
+      "game_id": 690,
+      "position": 28,
+      "title": "SubMerge",
+      "source_url": "https://boardgamegeek.com/thread/3557308/article/46456076#46456076",
+      "wip_url": "https://boardgamegeek.com/thread/3557308/wip-submerge-pnp-components-available-and-pcio-202",
+      "author_raw": "KevMakesGames",
+      "post_timestamp_raw": "11 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://kevmakesgames.itch.io/submerge",
+          "label_raw": "Rules and PnP files are available on itch.io. With an older version as a PCIO version",
+          "content_role": "game_files",
+          "context_raw": "Rules and PnP files are available on itch.io. With an older version as a PCIO version",
+          "version_raw": null,
+          "host": "kevmakesgames.itch.io",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "18 Cards",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "18 Cards"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalini",
+          "name_raw": "12 tokens, 6 per player",
+          "quantity_raw": "12 / 6 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "unspecified",
+          "context_raw": "12 tokens, 6 per player"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 691,
+      "game_id": 691,
+      "position": 29,
+      "title": "WordStorm",
+      "source_url": "https://boardgamegeek.com/thread/3560398/article/46481663#46481663",
+      "wip_url": "https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game",
+      "author_raw": "OnurTosun",
+      "post_timestamp_raw": "16 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1bzMnMqtXw0AYBZksIl2s0Zy3te_DJE8I/view?usp=sharing",
+          "label_raw": "WordStorm_English_PnP_WithRules_600dpi",
+          "content_role": "game_files",
+          "context_raw": "WordStorm_English_PnP_WithRules_600dpi",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/191kcih76PiiEy2K4WjJl96WLgSJWRqmc/view?usp=sharing",
+          "label_raw": "WordStorm_English_Rules_Letter",
+          "content_role": "rules",
+          "context_raw": "WordStorm_English_Rules_Letter",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/16x-A8Swy2aFNXNyJhsX-U25FslLQyYRJ/view?usp=sharing",
+          "label_raw": "WordStorm Turkish Version PnP Pdf",
+          "content_role": "game_files",
+          "context_raw": "WordStorm Turkish Version PnP Pdf",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1HmsOOftxj0OtUQJCAqqWT86H_KvQb7El/view?usp=sharing",
+          "label_raw": "WordStorm Turkish Rule Book",
+          "content_role": "rules",
+          "context_raw": "WordStorm Turkish Rule Book",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://youtu.be/T-Wxs_wgAVg",
+          "label_raw": "Designing a Board Game from Scratch - Part 1 - Creating the Basic Design",
+          "content_role": "video",
+          "context_raw": "Designing a Board Game from Scratch - Part 1 - Creating the Basic Design",
+          "version_raw": null,
+          "host": "youtu.be",
+          "access_type": "video"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=PLczPXwIb-s42skQA3WvGhF8ZspiPe4wcM",
+          "label_raw": "Designing a Board Game from Scratch - Playlist",
+          "content_role": "video",
+          "context_raw": "Designing a Board Game from Scratch - Playlist",
+          "version_raw": null,
+          "host": "www.youtube.com",
+          "access_type": "video"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte vuote personalizzabili",
+          "name_raw": "I've also added four blank cards to spice up the game. You can create any letter and rule you like!",
+          "quantity_raw": "4",
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "I've also added four blank cards to spice up the game. You can create any letter and rule you like!"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 692,
+      "game_id": 692,
+      "position": 30,
+      "title": "Pond Pals",
+      "source_url": "https://boardgamegeek.com/thread/3563455/article/46507405#46507405",
+      "wip_url": "https://boardgamegeek.com/thread/3563455/wip-pond-pals-2025-two-player-pnp-contest-digital",
+      "author_raw": "Leodip",
+      "post_timestamp_raw": "22 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1ugTUoDWCoxrdv6ze2hKMLpurKEqTzLNW?usp=drive_link",
+          "label_raw": "Rules & Components available here",
+          "content_role": "game_files",
+          "context_raw": "Rules & Components available here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://playingcards.io/qzhfh4",
+          "label_raw": "playingcards.io/qzhfh4",
+          "content_role": "online_play",
+          "context_raw": "playingcards.io/qzhfh4",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "Frogs Feud is an abstract game with a randomized setup that only requires 16 cards and 4 pawns in 2 different colors (8 total pawns), and the cards themselves don't need to be heavily shuffled or kept secret, so it could even be printed on normal printing paper.",
+          "quantity_raw": "16",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Frogs Feud is an abstract game with a randomized setup that only requires 16 cards and 4 pawns in 2 different colors (8 total pawns), and the cards themselves don't need to be heavily shuffled or kept secret, so it could even be printed on normal printing paper."
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "pedine due colori",
+          "name_raw": "Frogs Feud is an abstract game with a randomized setup that only requires 16 cards and 4 pawns in 2 different colors (8 total pawns), and the cards themselves don't need to be heavily shuffled or kept secret, so it could even be printed on normal printing paper.",
+          "quantity_raw": "8 / 4 per colore",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Frogs Feud is an abstract game with a randomized setup that only requires 16 cards and 4 pawns in 2 different colors (8 total pawns), and the cards themselves don't need to be heavily shuffled or kept secret, so it could even be printed on normal printing paper."
+        }
+      ],
+      "notes": "Primo post ora Frogs Feud; roster e titolo canonico storico Pond Pals preservati."
+    },
+    {
+      "entry_id": 693,
+      "game_id": 693,
+      "position": 31,
+      "title": "OiSH!i",
+      "source_url": "https://boardgamegeek.com/thread/3565566/article/46523984#46523984",
+      "wip_url": "https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp",
+      "author_raw": "m_frederic",
+      "post_timestamp_raw": "26 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://playingcards.io/t2tkyz",
+          "label_raw": "here!",
+          "content_role": "online_play",
+          "context_raw": "Try the game here! (Rules included)",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1hwdwiISWDkQxQ78sDgP1oW25kXzBfLpC/view?usp=sharing",
+          "label_raw": "OiSH!i Files",
+          "content_role": "game_files",
+          "context_raw": "OiSH!i Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1hBmdGnW5kA8p9D0fo8OPKEoGVY9ogRPz/view?usp=sharing",
+          "label_raw": "OiSH!i Rules",
+          "content_role": "rules",
+          "context_raw": "OiSH!i Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://playingcards.io/t2tkyz",
+          "label_raw": "here!",
+          "content_role": "online_play",
+          "context_raw": "Digital version: here!",
+          "version_raw": null,
+          "host": "playingcards.io",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte",
+          "name_raw": "Only 25 tasty cards to play!",
+          "quantity_raw": "25",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Only 25 tasty cards to play!"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 694,
+      "game_id": 694,
+      "position": 32,
+      "title": "Hex Barons",
+      "source_url": "https://boardgamegeek.com/thread/3566327/article/46529260#46529260",
+      "wip_url": "https://boardgamegeek.com/thread/3566327/hex-barons-a-crunchy-streamlined-old-school-hex-sk",
+      "author_raw": "Animalcolm",
+      "post_timestamp_raw": "27 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://www.studiotortu.com/hexbarons",
+          "label_raw": "https://www.studiotortu.com/hexbarons",
+          "content_role": "video",
+          "context_raw": "QUICKSTART VIDEO",
+          "version_raw": null,
+          "host": "www.studiotortu.com",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1M4wnJM0jMsI7PM5ZE_9oLduIKClLPw92",
+          "label_raw": "Google Drive direct link",
+          "content_role": "game_files",
+          "context_raw": "Google Drive direct link",
+          "version_raw": "0.7 (August 2025)",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://www.studiotortu.com/hexbarons",
+          "label_raw": "https://www.studiotortu.com/hexbarons",
+          "content_role": "other",
+          "context_raw": "playtest form available here",
+          "version_raw": null,
+          "host": "www.studiotortu.com",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "set di dadi",
+          "name_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!",
+          "quantity_raw": "2",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!"
+        },
+        {
+          "material_kind": "standard_deck",
+          "name_normalized": "mazzo di carte",
+          "name_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!"
+        },
+        {
+          "material_kind": "writing_tool",
+          "name_normalized": "matita",
+          "name_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!"
+        },
+        {
+          "material_kind": "sheet",
+          "name_normalized": "pagine bianco nero",
+          "name_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!",
+          "quantity_raw": "4",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "To get started with the quickstart rules, all you need are 2 sets of dice, a deck of cards, a pencil, and only 4 b&w printed pages - no cutting or assembly required!"
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "Rulebook",
+          "name_raw": "Rulebook",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Rulebook"
+        },
+        {
+          "material_kind": "sheet",
+          "name_normalized": "Squad Sheets",
+          "name_raw": "Squad Sheets",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Squad Sheets"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "Scenario Maps",
+          "name_raw": "Scenario Maps",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Scenario Maps"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "Sigil Cards",
+          "name_raw": "Sigil Cards",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Sigil Cards"
+        },
+        {
+          "material_kind": "sheet",
+          "name_normalized": "fogli squadra e mappe vuoti",
+          "name_raw": "Blank squad sheets and scenario maps to create your own",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "Blank squad sheets and scenario maps to create your own"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 695,
+      "game_id": 695,
+      "position": 33,
+      "title": "Momentum",
+      "source_url": "https://boardgamegeek.com/thread/3566864/article/46533535#46533535",
+      "wip_url": "https://boardgamegeek.com/thread/3566864/wip-momentum-2-players",
+      "author_raw": "m_frederic",
+      "post_timestamp_raw": "28 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1i9btCIhErTPKJ4PatHpFd39pXVwdvC_c/view?usp=sharing",
+          "label_raw": "Momentum Files",
+          "content_role": "game_files",
+          "context_raw": "Momentum Files",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1HUncC6J8igKO1nUzkwinsiZxC0kU4LVN/view?usp=sharing",
+          "label_raw": "Momentum Rules",
+          "content_role": "rules",
+          "context_raw": "Momentum Rules",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3562416983",
+          "label_raw": "Momentum Workshop",
+          "content_role": "online_play",
+          "context_raw": "Momentum Workshop",
+          "version_raw": null,
+          "host": "steamcommunity.com",
+          "access_type": "workshop_module"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "dice",
+          "name_normalized": "d6",
+          "name_raw": "Six 6-sided dice",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "Six 6-sided dice"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "piccoli oggetti holds",
+          "name_raw": "10 small objects used as \"holds\" to place on the cards",
+          "quantity_raw": "10",
+          "requirement_level": "required",
+          "supply_mode": "household",
+          "context_raw": "10 small objects used as \"holds\" to place on the cards"
+        }
+      ],
+      "notes": "Primo post ora Messenger Momentum; nome storico Momentum preservato."
+    },
+    {
+      "entry_id": 696,
+      "game_id": 696,
+      "position": 34,
+      "title": "Florentine Towers",
+      "source_url": "https://boardgamegeek.com/thread/3567502/article/46538761#46538761",
+      "wip_url": "https://boardgamegeek.com/thread/3567502/wip-florentine-towers",
+      "author_raw": "BeaRes",
+      "post_timestamp_raw": "29 ago 2025",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/1CCcHBr-T4gwV_oha6nEx6rX_r7dkbxSt/view?usp=drive_link",
+          "label_raw": "https://drive.google.com/file/d/1CCcHBr-T4gwV_oha6nEx6rX_r7d...",
+          "content_role": "rules",
+          "context_raw": "Download the Rules here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1Wlx_4NuvcZqWclDPzuupjlAcKduTobTs/view?usp=drive_link",
+          "label_raw": "https://drive.google.com/file/d/1Wlx_4NuvcZqWclDPzuupjlAcKdu...",
+          "content_role": "component",
+          "context_raw": "Download the Prints here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1WuSvwBDoKOdStgxipqq_Z1JdLYbvJIWE/view?usp=drive_link",
+          "label_raw": "https://drive.google.com/file/d/1WuSvwBDoKOdStgxipqq_Z1JdLYb...",
+          "content_role": "component",
+          "context_raw": "Download Optional Prints here",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 697,
+      "game_id": 697,
+      "position": 35,
+      "title": "War Weavers: Vikings",
+      "source_url": "https://boardgamegeek.com/thread/3567825/article/46540728#46540728",
+      "wip_url": "https://boardgamegeek.com/thread/3567825/wip-war-weavers-vikings-2025-two-player-print-and",
+      "author_raw": "nascif",
+      "post_timestamp_raw": "30 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://www.dropbox.com/scl/fo/9azudq0zl95cfjzgnlmzi/AOFb-LJOOuUNHKC1EOM7a18?rlkey=ur9ttqx06j7mbdndtkr956353&st=1hdwc8nq&dl=0",
+          "label_raw": "here",
+          "content_role": "game_files",
+          "context_raw": "PnP files - board, pieces, rulebook, and summary sheet",
+          "version_raw": null,
+          "host": "www.dropbox.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "pawn",
+          "name_normalized": "pezzi",
+          "name_raw": "Each side plays with 16 pieces of different types, including Berserkers, Chieftains, and Shieldmaidens.",
+          "quantity_raw": "16 per giocatore",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Each side plays with 16 pieces of different types, including Berserkers, Chieftains, and Shieldmaidens."
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "board",
+          "name_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here."
+        },
+        {
+          "material_kind": "rulebook",
+          "name_normalized": "rulebook",
+          "name_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here."
+        },
+        {
+          "material_kind": "player_aid",
+          "name_normalized": "summary sheet",
+          "name_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here.",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Status: PnP files - board, pieces, rulebook, and summary sheet are available here."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 698,
+      "game_id": 698,
+      "position": 36,
+      "title": "Narrow Seas",
+      "source_url": "https://boardgamegeek.com/thread/3567950/article/46541392#46541392",
+      "wip_url": "https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play",
+      "author_raw": "flivni",
+      "post_timestamp_raw": "30 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://flivni.github.io/narrow-seas/",
+          "label_raw": "Living Rules",
+          "content_role": "rules",
+          "context_raw": "Living Rules",
+          "version_raw": null,
+          "host": "flivni.github.io",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://narrowseas.short.gy/pnp",
+          "label_raw": "narrow-seas.zip",
+          "content_role": "game_files",
+          "context_raw": "narrow-seas.zip",
+          "version_raw": null,
+          "host": "narrowseas.short.gy",
+          "access_type": "download_page"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte azione",
+          "name_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)",
+          "quantity_raw": "21",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte nave",
+          "name_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)",
+          "quantity_raw": "4",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino vento e segnalini nave/equipaggio",
+          "name_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)",
+          "quantity_raw": null,
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "card_fronts.pdf - 21 action cards + 4 ship cards, wind direction token, ship & crew tokens (4 pages)"
+        },
+        {
+          "material_kind": "board",
+          "name_normalized": "tabellone",
+          "name_raw": "board.pdf (1 page)",
+          "quantity_raw": "1 pagina",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "board.pdf (1 page)"
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "segnalino primo giocatore",
+          "name_raw": "first_player_marker.pdf",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "first_player_marker.pdf"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "retro carte",
+          "name_raw": "card_backs.pdf",
+          "quantity_raw": null,
+          "requirement_level": "optional",
+          "supply_mode": "printable",
+          "context_raw": "card_backs.pdf"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 699,
+      "game_id": 699,
+      "position": 37,
+      "title": "The Greatest Unknown Artist Beneath the Moonlight",
+      "source_url": "https://boardgamegeek.com/thread/3568011/article/46541817#46541817",
+      "wip_url": "https://boardgamegeek.com/thread/3568011/the-greatest-unknown-artist-beneath-the-moonlight",
+      "author_raw": "comodinski",
+      "post_timestamp_raw": "30 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/1PA2JLM7nQ_w07oCbb0GYkZLgD37-OC-9",
+          "label_raw": "Rules v.2.1, Components v.2.0",
+          "content_role": "game_files",
+          "context_raw": "Rules v.2.1, Components v.2.0",
+          "version_raw": "Rules v.2.1; Components v.2.0",
+          "host": "drive.google.com",
+          "access_type": "folder"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Artwork",
+          "name_raw": "18 Artwork cards (Poker size)",
+          "quantity_raw": "18",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "18 Artwork cards (Poker size)"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Artist",
+          "name_raw": "36 Artist cards (Half poker size)",
+          "quantity_raw": "36",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "36 Artist cards (Half poker size)"
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Stuff",
+          "name_raw": "70 Stuff cards (small squares)",
+          "quantity_raw": "70",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "70 Stuff cards (small squares)"
+        },
+        {
+          "material_kind": "sheet",
+          "name_normalized": "fogli A4 low ink",
+          "name_raw": "6 single sided A4 sheets (Low Ink version)",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "6 single sided A4 sheets (Low Ink version)"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 700,
+      "game_id": 700,
+      "position": 38,
+      "title": "Perfect Gardens",
+      "source_url": "https://boardgamegeek.com/thread/3568111/article/46542431#46542431",
+      "wip_url": "https://boardgamegeek.com/thread/3568111/wip-perfect-gardens-2025-2-player-pnp-contest-entr",
+      "author_raw": "r3_a7",
+      "post_timestamp_raw": "30 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/drive/folders/15eZO0eAUFkdJTqznByIYJPm7KD-Ocv28?usp=drive_link",
+          "label_raw": "Rule sheet + all components (playtest-ready)",
+          "content_role": "game_files",
+          "context_raw": "Rule sheet + all components (playtest-ready)",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "folder"
+        },
+        {
+          "url": "https://airboardgame.net/playgame/npB2BbeTQR",
+          "label_raw": "Airboardgame link - to play online",
+          "content_role": "online_play",
+          "context_raw": "Airboardgame link - to play online",
+          "version_raw": null,
+          "host": "airboardgame.net",
+          "access_type": "download_page"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1uGyhv7I_amU2QZJK6dW-5uVALZ0wcNv5/view?usp=drive_link",
+          "label_raw": "2.1 Components - 72 Flower Tiles - 1.9 cm.pdf",
+          "content_role": "component",
+          "context_raw": "2.1 Components - 72 Flower Tiles - 1.9 cm.pdf",
+          "version_raw": "2.1; 11.09.2025",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "tile",
+          "name_normalized": "tessere Flower",
+          "name_raw": "2.1 Components - 72 Flower Tiles - 1.9 cm.pdf",
+          "quantity_raw": "72 / 1.9 cm",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "2.1 Components - 72 Flower Tiles - 1.9 cm.pdf"
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    },
+    {
+      "entry_id": 701,
+      "game_id": 701,
+      "position": 39,
+      "title": "Cloud's Edge",
+      "source_url": "https://boardgamegeek.com/thread/3568231/article/46543109#46543109",
+      "wip_url": "https://boardgamegeek.com/thread/3568231/wip-clouds-edge-2025-2-player-pnp-contest-entry-pl",
+      "author_raw": "bertez",
+      "post_timestamp_raw": "30 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "none_declared",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1BQ3PjpWP0aXcCJLwHNGwTU7QpfUHw9ZIsjs4FpSqWMs/edit?tab=t.0",
+          "label_raw": "Rules",
+          "content_role": "rules",
+          "context_raw": "Rules",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1wkvDK04YXbbUUdBPoilLXpHbFWOS59ra/view?usp=sharing",
+          "label_raw": "PNP",
+          "content_role": "game_files",
+          "context_raw": "PNP",
+          "version_raw": null,
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://screentop.gg/@Bertez/Clouds-EdgeV4",
+          "label_raw": "Online Implementation (Screentop)",
+          "content_role": "online_play",
+          "context_raw": "This version is more experimental and as a result might not match the PNP",
+          "version_raw": null,
+          "host": "screentop.gg",
+          "access_type": "web_app"
+        }
+      ],
+      "requirements": [],
+      "notes": "Screentop sperimentale può differire dal PnP."
+    },
+    {
+      "entry_id": 702,
+      "game_id": 702,
+      "position": 40,
+      "title": "GRDNN",
+      "source_url": "https://boardgamegeek.com/thread/3567200/article/46536425#46536425",
+      "wip_url": "https://boardgamegeek.com/thread/3567200/wip-grdnn-entry-for-2025-bgg-2-player-pnp-game-des",
+      "author_raw": "RPMgamer",
+      "post_timestamp_raw": "29 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://drive.google.com/file/d/13ihp6ds8jr4ZrrqReoGXBk9ZpQ76SBYB/view?usp=drive_link",
+          "label_raw": "GRDNN Board, Tokens, Pawns PnP v0.0 (last updated 8/30/25)",
+          "content_role": "game_files",
+          "context_raw": "GRDNN Board, Tokens, Pawns PnP v0.0 (last updated 8/30/25)",
+          "version_raw": "v0.0; 8/30/25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1V9SK_I_8tjBbEfhm8eLwAhvLL9BBuYvf/view?usp=drive_link",
+          "label_raw": "GRDNN Scoring Cards v0.0 (last updated 8/30/25)",
+          "content_role": "component",
+          "context_raw": "GRDNN Scoring Cards v0.0 (last updated 8/30/25)",
+          "version_raw": "v0.0; 8/30/25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        },
+        {
+          "url": "https://drive.google.com/file/d/10fLtSDisLmi_w2G8k6mnEVL_aBrruUt8/view?usp=drive_link",
+          "label_raw": "GRDNN Rulebook v0.0 (last updated 8/30/25)",
+          "content_role": "rules",
+          "context_raw": "GRDNN Rulebook v0.0 (last updated 8/30/25)",
+          "version_raw": "v0.0; 8/30/25",
+          "host": "drive.google.com",
+          "access_type": "file"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "board",
+          "name_normalized": "griglia Garden",
+          "name_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards.",
+          "quantity_raw": "7x7",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards."
+        },
+        {
+          "material_kind": "marker",
+          "name_normalized": "Flower tokens",
+          "name_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards.",
+          "quantity_raw": "7 in 7 colori (formulazione originale)",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards."
+        },
+        {
+          "material_kind": "playing_cards",
+          "name_normalized": "carte Scoring",
+          "name_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards.",
+          "quantity_raw": "16",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "The game is played on a 7 x 7 Garden grid, and uses 7 Flower tokens in 7 different colors as well as 16 mini Scoring cards."
+        },
+        {
+          "material_kind": "pawn",
+          "name_normalized": "pedine giocatori e Groundskeeper",
+          "name_raw": "Each player has a single pawn which they move on their turn to collect flowers. The Groundskeeper is represented by a neutral pawn that is moved by each player on their turn.",
+          "quantity_raw": "2 giocatori + 1 neutra",
+          "requirement_level": "required",
+          "supply_mode": "printable",
+          "context_raw": "Each player has a single pawn which they move on their turn to collect flowers. The Groundskeeper is represented by a neutral pawn that is moved by each player on their turn."
+        }
+      ],
+      "notes": "Quantità Flower tokens conservata letteralmente, senza dedurre 49."
+    },
+    {
+      "entry_id": 703,
+      "game_id": 703,
+      "position": 41,
+      "title": "Duel of Fates",
+      "source_url": "https://boardgamegeek.com/thread/3563553/article/46508547#46508547",
+      "wip_url": "https://boardgamegeek.com/thread/3563553/wip-duel-of-fates-two-player-pnp-contest",
+      "author_raw": "DuelofFates",
+      "post_timestamp_raw": "22 ago 2025 (edited)",
+      "checked_at": "2026-10-05",
+      "wip_status": "found",
+      "resource_listing_status": "observed",
+      "material_listing_status": "observed",
+      "coverage_scope": "first_post_only",
+      "outcome": "complete",
+      "all_first_post_read": true,
+      "resources": [
+        {
+          "url": "https://docs.google.com/document/d/1H3BZQUV29SPdSESLYoKHWa3d8nJlMVNd/edit?usp=sharing&ouid=110647625382493989607&rtpof=true&sd=true",
+          "label_raw": "Score Card",
+          "content_role": "component",
+          "context_raw": "Score Card",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        },
+        {
+          "url": "https://docs.google.com/document/d/1ZuBPO_5uwGq5UopzTe-8_5eJQevkfa3x0Blo4rH3J84/edit?usp=sharing",
+          "label_raw": "Rule Book",
+          "content_role": "rules",
+          "context_raw": "Two rulebooks in this file; original with updates and faster New Rulebook",
+          "version_raw": null,
+          "host": "docs.google.com",
+          "access_type": "document"
+        }
+      ],
+      "requirements": [
+        {
+          "material_kind": "coin",
+          "name_normalized": "moneta",
+          "name_raw": "You will need the following documents 1 coin and 6 dice in total.",
+          "quantity_raw": "1",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "You will need the following documents 1 coin and 6 dice in total."
+        },
+        {
+          "material_kind": "dice",
+          "name_normalized": "dadi",
+          "name_raw": "You will need the following documents 1 coin and 6 dice in total.",
+          "quantity_raw": "6",
+          "requirement_level": "required",
+          "supply_mode": "common",
+          "context_raw": "You will need the following documents 1 coin and 6 dice in total."
+        }
+      ],
+      "notes": "Primo post originale letto integralmente; risorse dichiarate non verificate."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "entry_id": 664,
+    "resource_scan": "observed",
+    "material_scan": "none_declared",
+    "urls": 2,
+    "requirements": 0
+  },
+  {
+    "entry_id": 665,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 3
+  },
+  {
+    "entry_id": 666,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 2
+  },
+  {
+    "entry_id": 667,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 1
+  },
+  {
+    "entry_id": 668,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 5
+  },
+  {
+    "entry_id": 669,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 5
+  },
+  {
+    "entry_id": 670,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 1
+  },
+  {
+    "entry_id": 671,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 2
+  },
+  {
+    "entry_id": 672,
+    "resource_scan": "observed",
+    "material_scan": "none_declared",
+    "urls": 3,
+    "requirements": 0
+  },
+  {
+    "entry_id": 673,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 5
+  },
+  {
+    "entry_id": 674,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 4
+  },
+  {
+    "entry_id": 675,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 1
+  },
+  {
+    "entry_id": 676,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 3
+  },
+  {
+    "entry_id": 677,
+    "resource_scan": "not_observable",
+    "material_scan": "not_observable",
+    "urls": 0,
+    "requirements": 0
+  },
+  {
+    "entry_id": 678,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 4
+  },
+  {
+    "entry_id": 679,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 23
+  },
+  {
+    "entry_id": 680,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 2
+  },
+  {
+    "entry_id": 681,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 10
+  },
+  {
+    "entry_id": 682,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 2
+  },
+  {
+    "entry_id": 683,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 3
+  },
+  {
+    "entry_id": 684,
+    "resource_scan": "observed",
+    "material_scan": "none_declared",
+    "urls": 2,
+    "requirements": 0
+  },
+  {
+    "entry_id": 685,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 2
+  },
+  {
+    "entry_id": 686,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 1
+  },
+  {
+    "entry_id": 687,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 7,
+    "requirements": 3
+  },
+  {
+    "entry_id": 688,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 2
+  },
+  {
+    "entry_id": 689,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 9
+  },
+  {
+    "entry_id": 690,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 2
+  },
+  {
+    "entry_id": 691,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 6,
+    "requirements": 1
+  },
+  {
+    "entry_id": 692,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 2
+  },
+  {
+    "entry_id": 693,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 1
+  },
+  {
+    "entry_id": 694,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 9
+  },
+  {
+    "entry_id": 695,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 2
+  },
+  {
+    "entry_id": 696,
+    "resource_scan": "observed",
+    "material_scan": "none_declared",
+    "urls": 3,
+    "requirements": 0
+  },
+  {
+    "entry_id": 697,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 4
+  },
+  {
+    "entry_id": 698,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 6
+  },
+  {
+    "entry_id": 699,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 1,
+    "requirements": 4
+  },
+  {
+    "entry_id": 700,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 1
+  },
+  {
+    "entry_id": 701,
+    "resource_scan": "observed",
+    "material_scan": "none_declared",
+    "urls": 3,
+    "requirements": 0
+  },
+  {
+    "entry_id": 702,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 3,
+    "requirements": 4
+  },
+  {
+    "entry_id": 703,
+    "resource_scan": "observed",
+    "material_scan": "observed",
+    "urls": 2,
+    "requirements": 2
+  }
+]

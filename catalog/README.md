@@ -43,3 +43,5 @@ Prima di preparare dati di un workflow coperto, leggere e applicare la skill per
 ## MAT Traditional Deck 2025 — TSK-0055
 
 `build_2025_traditional_materials.py` normalizza le dichiarazioni osservate nei 42 primi post e produce `2025-traditional-materials.sql` e le evidenze. `verify_2025_traditional_materials.py` confronta le impronte DOM, verifica su copia isolamento e idempotenza; `--apply` conserva un backup prima dell’importazione. Lotto specifico contest 20, 2026-10-05: 53 URL, 54 requisiti, nessun host/download. Relazione in `sources/2025-TRADITIONAL-MATERIALS.md`.
+
+`2025-two-player-materials.sql` (TSK-0056, 2026-10-05) registra scansioni dei 40 WIP: 39 primi post completi e Parry non osservabile, 87 URL/95 menzioni e 131 requisiti dichiarativi. Build e verifica dedicati; nessun host esterno/file aperto o download. Dettagli in `sources/2025-TWO-PLAYER-MATERIALS.md`.

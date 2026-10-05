@@ -1,0 +1,24 @@
+{
+  "task_id": "TSK-0056",
+  "checked_at": "2026-10-05",
+  "counts": {
+    "entries": 40,
+    "complete": 39,
+    "blocked": 1,
+    "resource_entries": 39,
+    "resources": 87,
+    "resource_mentions": 95,
+    "requirement_entries": 34,
+    "requirements": 131
+  },
+  "dom_url_label_identity_checks": 40,
+  "roster_reconciled": 40,
+  "copy_integrity": "ok",
+  "foreign_keys": "ok",
+  "idempotent": true,
+  "original_rows_preserved": true,
+  "other_contests_rankings_acquisitions_and_entries_unchanged": true,
+  "sql_sha256": "9b1d499fb8a0cf04e74606912e45a8f0f5b75a25a34b1114dde0fbc5ae390ce1",
+  "backup_sha256": "d4e12d166c1f329ad24cc4074bbcf1281c913633fe52c0476c83170cdedef620",
+  "operational_integrity": "ok"
+}

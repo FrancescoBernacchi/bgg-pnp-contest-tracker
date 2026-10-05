@@ -190,8 +190,8 @@ Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenz
 |   |     Stati entry | 🟢 components_available 32, contest_ready 7, playtest_ready 4, wip 1, withdrawn 1 | 🟢 contest_ready 40 | 🟡 contest_ready 14, unknown 7, components_available 5, idea 2, contest_complete 1 | 🔴  |
 |   |     Censimento entry | 1/1 contest attestati · 45 entry | 1/1 contest attestati · 40 entry | 1/1 contest attestati · 29 entry | 0/1 contest attestati · 0 entry |
 |   |     Censimento classifica | 0/45 · 0% · 0 N/A · 0 bloccate · 12 verifiche parziali · 12 entry classificate · 8 categorie | 40/40 · 100% · 0 N/A · 0 bloccate · 20 entry classificate · 5 categorie | 29/29 · 100% · 0 N/A · 0 bloccate · 17 entry classificate · 10 categorie | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate · 0 entry classificate · 0 categorie |
-|   |     Censimento materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 0/40 · 0% · 0 N/A · 0 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
-|   |     Acquisizione materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 0/40 · 0% · 0 N/A · 0 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Censimento materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 39/40 · 98% · 0 N/A · 1 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
+|   |     Acquisizione materiali | 0/45 · 0% · 0 N/A · 0 bloccate | 0/35 · 0% · 5 N/A · 1 bloccate | 0/29 · 0% · 0 N/A · 0 bloccate | — denominatore non disponibile / non applicabile · 0 N/A · 0 bloccate |
 |   |     Acquisizione immagini | 0% · non implementata | 0% · non implementata | 0% · non implementata | 0% · non implementata |
 | 102 | **[Wargame Print and Play Game Design Contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
 |   |     Stati entry | — | — | 🟡 unknown 6, components_available 2, contest_ready 2, withdrawn 2, contest_complete 1, idea 1 | 🔴  |
@@ -1513,85 +1513,85 @@ Per ogni entry: **L** = lettura dei materiali dichiarati (`🟢` scansione regis
 |---:|:---|:---|:---|:---|:---|:---|
 | **Classifica utilizzata per l'ordinamento delle Entry** | **Best AI System** | **Best Solo Game** | **Best Overall** | **Best Overall Wargame** | **ordine alfabetico** | **ordine alfabetico** |
 | 1 | #1 [Throne Alone](https://boardgamegeek.com/thread/3383061) — Ready | #1 [Jack's Dream](https://boardgamegeek.com/thread/3583045) | #1 [Scissor Wizards](https://boardgamegeek.com/thread/3535282/wip-scissor-wizards-2025-two-player-print-and-play) — Ready | #1 [Armored Fury](https://boardgamegeek.com/thread/3539132/playtest-ready-armored-fury-2025-wargame-print-and) — Ready | [Guard the Bard](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [ALT](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
 | 2 | #2 [Sabi](https://boardgamegeek.com/thread/3466096) — Ready | #2 [Shadow Solitaire: Gambit for the City](https://boardgamegeek.com/thread/3581665) | #1 [WordStorm](https://boardgamegeek.com/thread/3560398/wip-wordstorm-2025-two-player-print-and-play-game) — Ready | #1 [Armées de Papier: Combined Arms Battles in the Napoleonic Era](https://boardgamegeek.com/thread/3548198/complete-armees-de-papier-combined-arms-battles-in) — Ready | [Guarded Words](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [CareFlight](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
 | 3 | #3 [YRO Solo Campaign](https://boardgamegeek.com/thread/3422271) — Ready | #3 [Against The Clock](https://boardgamegeek.com/thread/3579229) | #2 [Quickdraw: Battle for Silver City](https://boardgamegeek.com/thread/3553161/wip-quickdraw-18-card-wild-west-squad-building-asy) — Ready | #3 [Monster Cross](https://boardgamegeek.com/thread/3582983/playtest-ready-monster-cross-2025-wargame-print-an) — Ready | [Handguards](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Cycle Of The Lotus](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
 | 4 | #4 [boop. Solo Mode](https://boardgamegeek.com/thread/3478437) — Ready | #4 [Soluna](https://boardgamegeek.com/thread/3615827) | #3 [Narrow Seas](https://boardgamegeek.com/thread/3567950/wip-narrow-seas-2025-two-player-pnp-contest-2-play) — Ready | #4 [Rough & Tumble Multilateral](https://boardgamegeek.com/thread/3576203/playtest-ready-rough-and-tumble-multilateral-2025) — Ready | [Maroons and Doubloons](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Lunch Pad](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
 | 5 | #5 [SUPERCAT](https://boardgamegeek.com/thread/3425290) — Ready | #5 [Swamp](https://boardgamegeek.com/thread/3569304) | #4 [Collapsi](https://boardgamegeek.com/thread/3548846/wip-collapsi-2025-two-player-print-and-play-design) — Ready | #5 [1453: Siege of Constantinople](https://boardgamegeek.com/thread/3495795/wip-1453-siege-of-constantinople-2025-wargames-pnp) — Ready | [Oh My Pies!](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready | [Pad Your Stats](https://boardgamegeek.com/thread/3542704/article/46335246#46335246) — Ready |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |
 | 6 | #6 [Lord d'Automa](https://boardgamegeek.com/thread/3512047) — Ready | #6 [River Black](https://boardgamegeek.com/thread/3569557) | #5 [OiSH!i](https://boardgamegeek.com/thread/3565566/wip-oishi-a-tasty-card-game-free-pnp) — Ready | #6 [StrikeFirstNow](https://boardgamegeek.com/thread/3585042/wip-strikefirstnow-from-hexstorical-playtest-ready) — Ready | [Valor](https://boardgamegeek.com/thread/3452558/article/45584159#45584159) — Ready |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |
 | 7 | #7 [Solisauron](https://boardgamegeek.com/thread/3486373) — Ready | #7 [The Four Musketeers](https://boardgamegeek.com/thread/3575515) | #6 [Automon](https://boardgamegeek.com/thread/3548268/wip-automon-2025-two-player-game-design-contest) — Ready | #7 [The Ground Between](https://boardgamegeek.com/thread/3491589/released-the-ground-between-2025-wargame-pnp-desig) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 8 | #8 [Cavemono](https://boardgamegeek.com/thread/3344024) — Ready | #8 [Alchemy](https://boardgamegeek.com/thread/3574744) | #6 [Bone Machine](https://boardgamegeek.com/thread/3556560/bone-machine-tile-laying-hand-management-2025-2-pl) — Ready | #8 [Finger Guns: A Wargame Played Using Only Fingers](https://boardgamegeek.com/thread/3555005/playtest-ready-finger-guns-a-wargame-played-using) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 9 | #9 [Junk Punk](https://boardgamegeek.com/thread/3446309) — Ready | #9 [S.O.L. SIX ORBIT LOCKDOWN](https://boardgamegeek.com/thread/3576314) | #6 [Constellate](https://boardgamegeek.com/thread/3531905/wip-constellate-1-to-4-players-30-to-45-minutes-ti) — Ready | #9 [Fortuna & Virtu](https://boardgamegeek.com/thread/3564942/playtest-ready-fortuna-and-virtu-medieval-themed-w) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 10 | #10 [Nemesis](https://boardgamegeek.com/thread/3504827) — Ready | #10 [Candles & Cannons](https://boardgamegeek.com/thread/3569308) | #6 [Heartseekers](https://boardgamegeek.com/thread/3532140/wip-heartseekers-2p-print-and-play-contest-2025) — Ready | #10 [Deadlock!](https://boardgamegeek.com/boardgame/446550/deadlock) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 11 | [b-AI-rista](https://boardgamegeek.com/thread/3490914) — Ready | [Arsenal: Duel of Kings](https://boardgamegeek.com/thread/3620533) | #6 [Momentum](https://boardgamegeek.com/thread/3566864/wip-momentum-2-players) — Ready | #11 [In the Trench](https://boardgamegeek.com/thread/3530510/in-the-trench-war-game) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 12 | [Bot Families](https://boardgamegeek.com/thread/3480600) — Ready | [Beanstalks](https://boardgamegeek.com/thread/3570031) | #6 [Mush Puppies](https://boardgamegeek.com/thread/3532583/wip-mush-puppies-18-cards-2025-2-player-pnp-design) — Ready | #12 [Night Strike: 418 Squadron RCAF](https://boardgamegeek.com/thread/3441750/night-strike-2025-cmc-war-game-pnp-contest-play-te) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 13 | [Cathy](https://boardgamegeek.com/thread/3327279) — Ready | [Cardello](https://boardgamegeek.com/thread/3610656) | #6 [Parry](https://boardgamegeek.com/thread/3542787/wip-parry) — Ready | [Battle Stations!](https://boardgamegeek.com/thread/3522597/wip-battle-stations-a-space-dogfight-cardgame-2025) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 14 | [Codenames Rush](https://boardgamegeek.com/thread/3475523) — Ready | [Council of Dragons](https://boardgamegeek.com/thread/3583048) | #6 [PAWND](https://boardgamegeek.com/thread/3547608/wip-pawnd-entry-for-2025-bgg-2-player-pnp-game-des) — Ready | [Project 01: Ferrum Front](https://boardgamegeek.com/thread/3582082/playtest-ready-project-01-ferrum-front-2025-wargam) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 15 | [Enchanted Forest Solo Variant](https://boardgamegeek.com/thread/3406119) — Ready | [Court & Crown](https://boardgamegeek.com/thread/3576802) | #6 [Roll and Pull](https://boardgamegeek.com/thread/3542280/wip-tractor-pull-2025-two-player-print-and-play-de) — Ready | [S.P.A.T.](https://boardgamegeek.com/thread/3461799/wip-spat-2025-wargame-print-and-play-game-design-c) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 16 | [Felipe I / Felipe II](https://boardgamegeek.com/thread/3490911) — Ready | [Divide](https://boardgamegeek.com/thread/3569799) | #6 [Senjin](https://boardgamegeek.com/thread/3534862/wip-senjin-2025-two-player-pnp-contest-components) — Ready | [Shootout in the Bardo](https://boardgamegeek.com/boardgame/417655/shootout-in-the-bardo) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 17 | [Florek & Florka](https://boardgamegeek.com/thread/3454362) — Ready | [Edgar Shovelhands](https://boardgamegeek.com/thread/3569329) | #6 [Unlucky Spirits](https://boardgamegeek.com/thread/3544761/wip-unlucky-spirits-original-edition-1-3-players-6) — Ready | [Star Carrier Assault](https://boardgamegeek.com/thread/3542290/wip-star-carrier-assault-2025-wargame-print-and-pl) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 18 | [Forest Link](https://boardgamegeek.com/thread/3496730) — Ready | [Feuda Rivalia](https://boardgamegeek.com/thread/3612376) | #6 [War Weavers: Vikings](https://boardgamegeek.com/thread/3567825/wip-war-weavers-vikings-2025-two-player-print-and) — Ready | [Tank Board Game II: Hex](https://boardgamegeek.com/boardgame/440996/tank-board-game-ii-hex) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 19 | [Full Auto](https://boardgamegeek.com/thread/3483643) — Ready | [FIRE](https://boardgamegeek.com/thread/3586578) | #6 [Word Dungeon Duel](https://boardgamegeek.com/thread/3551113/wip-word-dungeon-duel-2-player-pnp-contest-compone) — Ready | [Ukrainian F-16: Peace has a price](https://boardgamegeek.com/boardgame/424102/ukrainian-f-16-peace-has-a-price) — Ready |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 | L 🔴 · D 🔴 |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |
 | 20 | [Grandma & Grandpa](https://boardgamegeek.com/thread/3511290) — Ready | [Flock Rocks: Sheep vs. Wolves](https://boardgamegeek.com/thread/3576804) | #6 [World Trip](https://boardgamegeek.com/thread/3531092/playtest-ready-world-trip-2p-18-cardspnp-pcio-avai) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 21 | [Humanoid Monsters Have Brains](https://boardgamegeek.com/thread/3471610) — Ready | [Grazer](https://boardgamegeek.com/thread/3616770) | [5 Spells](https://boardgamegeek.com/thread/3553927/wip-5-spells-2025-two-player-pnp-contest-2-player) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 22 | [Lone Digger](https://boardgamegeek.com/thread/3474645) — Ready | [Hedgerow](https://boardgamegeek.com/thread/3579886) | [Cloud's Edge](https://boardgamegeek.com/thread/3568231/wip-clouds-edge-2025-2-player-pnp-contest-entry-pl) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 23 | [M. KloneUs](https://boardgamegeek.com/thread/3511300) — Ready | [Hightower](https://boardgamegeek.com/thread/3573372) | [Cube Wars](https://boardgamegeek.com/thread/3538610/wip-cube-wars-a-compact-4x-for-the-2025-two-player) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 24 | [Malakar](https://boardgamegeek.com/thread/3398741) — Ready | [Hocken](https://boardgamegeek.com/thread/3569651) | [Diskochet](https://boardgamegeek.com/thread/3545142/wip-diskochet-a-two-player-paddle-sport-card-game) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 25 | [Midnight Racetrack](https://boardgamegeek.com/thread/3472592) — Ready | [Necromancer](https://boardgamegeek.com/thread/3615564) | [Duel of Fates](https://boardgamegeek.com/thread/3563553/wip-duel-of-fates-two-player-pnp-contest) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 26 | [Pharaoh Code Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11794744#11794744) — Ready | [Olm](https://boardgamegeek.com/thread/3583037) | [Florentine Towers](https://boardgamegeek.com/thread/3567502/wip-florentine-towers) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 27 | [RuneBot](https://boardgamegeek.com/thread/3510981) — Ready | [Pippins Aplenty](https://boardgamegeek.com/thread/3620605) | [Goal Rush](https://boardgamegeek.com/thread/3533918/goal-rush-wip) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 28 | [Shrimpy](https://boardgamegeek.com/thread/3502388) — Ready | [Polarité](https://boardgamegeek.com/thread/3569377) | [GRDNN](https://boardgamegeek.com/thread/3567200/wip-grdnn-entry-for-2025-bgg-2-player-pnp-game-des) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 29 | [Solo Automa for Avignon](https://boardgamegeek.com/thread/3472563) — Ready | [Relic Solitaire](https://boardgamegeek.com/thread/3600542) | [Hex Barons](https://boardgamegeek.com/thread/3566327/hex-barons-a-crunchy-streamlined-old-school-hex-sk) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 30 | [Splendor Solo Mode](https://boardgamegeek.com/geeklist/353866/2025-solomode-design-contest-submissions/?itemid=11799886#11799886) — Ready | [Rules of Engagement](https://boardgamegeek.com/thread/3571024) | [Intramural](https://boardgamegeek.com/thread/3536316/wip-intramural-the-soccer-trick-taking-poker-game) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 31 | [The Bus Conspiracy](https://boardgamegeek.com/thread/3445556) — Ready | [Safes](https://boardgamegeek.com/thread/3570149) | [KONSPIRO](https://boardgamegeek.com/thread/3538971/wip-konspiro-2025-two-player-pnp-reverse-deck-buil) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 32 | [The Wily Widow](https://boardgamegeek.com/thread/3455165) — Ready | [Shadow Market](https://boardgamegeek.com/thread/3617857) | [KORxSOL](https://boardgamegeek.com/thread/3537614/wip-korxsol-fantasy-tabletop-pvp-card-and-dice-ski) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 33 | [Unfinished Window](https://boardgamegeek.com/thread/3350683) — Ready | [Share Tactics](https://boardgamegeek.com/thread/3578872) | [Lemonade Stand](https://boardgamegeek.com/thread/3533425/wip-lemonade-stand-designed-by-lance-schricke-2025) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 34 | [Unofficial Automa for Deep Regrets](https://boardgamegeek.com/thread/3503201) — Ready | [Sniper](https://boardgamegeek.com/thread/3618340) | [Orbits](https://boardgamegeek.com/thread/3552316/orbits-an-entry-into-the-two-player-game-design-co) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 35 | [Unofficial Solo Mode & Campaign Mode](https://boardgamegeek.com/thread/3385154) — Ready | [Super Snap Showdown](https://boardgamegeek.com/thread/3616651) | [Perfect Gardens](https://boardgamegeek.com/thread/3568111/wip-perfect-gardens-2025-2-player-pnp-contest-entr) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 36 | [Up Front Browser Automa](https://boardgamegeek.com/thread/3512452) — Ready | [The Four Winds](https://boardgamegeek.com/thread/3595594) | [Pond Pals](https://boardgamegeek.com/thread/3563455/wip-pond-pals-2025-two-player-pnp-contest-digital) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 37 | [Veteran Solo Mode](https://boardgamegeek.com/thread/3418473) — Ready | [The House Always Wins](https://boardgamegeek.com/thread/3581612) | [SubMerge](https://boardgamegeek.com/thread/3557308/wip-submerge-pnp-components-available-and-pcio-202) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 38 | [War Against the Chtorr](https://boardgamegeek.com/thread/3471614) — Ready | [This Ol' Cowboy](https://boardgamegeek.com/thread/3615878) | [The Greatest Unknown Artist Beneath the Moonlight](https://boardgamegeek.com/thread/3568011/the-greatest-unknown-artist-beneath-the-moonlight) — Ready |   |   |   |
-|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   | L 🟢 · D 🔴 | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 39 |   | [Train Trekker](https://boardgamegeek.com/thread/3613703) | [Under One Sky](https://boardgamegeek.com/thread/3436540/wip-under-one-sky) — Ready |   |   |   |
-|   |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   |   | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 40 |   | [Trick Tac Foe](https://boardgamegeek.com/thread/3576027) | [Voidsmiths](https://boardgamegeek.com/thread/3544288/wip-voidsmiths-2025-two-player-print-and-play-desi) — Ready |   |   |   |
-|   |   | L 🟢 · D 🔴 | L 🔴 · D 🔴 |   |   |   |
+|   |   | L 🟢 · D 🔴 | L 🟢 · D 🔴 |   |   |   |
 | 41 |   | [Undergrowth](https://boardgamegeek.com/thread/3577980) |   |   |   |   |
 |   |   | L 🟢 · D 🔴 |   |   |   |   |
 | 42 |   | [Winner Take All!](https://boardgamegeek.com/thread/3573345) |   |   |   |   |
@@ -2345,7 +2345,7 @@ La conclusione dell'esplorazione contest 2025 riguarda l'individuazione delle ed
 | 1. Scoperta contest | Pagine BGG autorevoli | Edizione candidata con fonte e data | baseline globale importata | Ricognizione finale e anomalie documentate | Verificare fonti dirette e stati ancora `unknown` |
 | 2. Classificazione perimetro | Evidenza sul tipo di contest | `scope_type` e `treatment_profile` | completo per i contest noti | PnP autonomi separati dagli adiacenti | Riesame soltanto su nuova evidenza |
 | 3. Censimento entry | Roster o fonte equivalente | Entry, gioco, stato originale e normalizzato | completo per baseline; dinamico sui contest attivi | Totali riconciliati con la fonte | Nuovi snapshot completi nei controlli periodici |
-| 4. WIP e risorse dichiarate | Entry censita e primo post WIP | Esito scansione, menzioni e provenienza | parziale; Wargame 2026, 54-Card, Solitaire e Traditional Deck 2025 completi nei rispettivi perimetri MAT | Stati negativi distinti; URL identici deduplicati | Completare i contest non ancora scansionati con task separati |
+| 4. WIP e risorse dichiarate | Entry censita e primo post WIP | Esito scansione, menzioni e provenienza | parziale; Wargame 2026, 54-Card, Solitaire e Traditional Deck 2025 completi nei rispettivi perimetri MAT; Two-Player 2025: 39/40 completi, Parry non osservabile | Stati negativi distinti; URL identici deduplicati | Completare i contest non ancora scansionati con task separati |
 | 5. Requisiti materiali | Primo post; regole solo se autorizzate | Requisiti originali e normalizzati | parziale | Copertura `first_post_only` distinta da `rules_integrated` | Proseguire insieme alla scansione WIP |
 | 6. Risultati e segnali | Risultati BGG o segnale sostitutivo | Posizione, categoria, voto, ufficialità e fonte | parziale | Nessuna inferenza di vincitore senza posizione esplicita | Verificare contest conclusi con risultati incompleti |
 | 7. Selezione acquisizioni | Priorità, disponibilità e condizioni applicabili | Decisione motivata per ciascun gioco | Tutte le entry Children & Family e Roll & Write 2025 selezionate esplicitamente | Segnali ufficiali distinti dai sostitutivi | Definire soglie generali soltanto prima di selezioni prive di risultati sufficienti |
@@ -2367,7 +2367,7 @@ Questa tabella contiene soltanto attività non concluse che attraversano o seguo
 | 1 | Completare il censimento globale dei contest PnP BGG | completo; aggiornamento del 2 ottobre | 306 contest importati, incluso il nuovo Roll & Write 2026; una anomalia storica `unknown` documentata; integrità SQLite verificata | Skill BGG; indici comunitari; forum | Passare ai task annuali, per contest o di monitoraggio; aggiornare il censimento se emerge un nuovo contest | `sources/BGG-PNP-CONTEST-GLOBAL-COVERAGE.md` |
 | 2 | Proseguire il monitoraggio BGG per contest | in corso | Wargame 2026 controllato il 2 ottobre: submission chiuse, 23 entry e snapshot confrontabile completo; restano finestre scadute di altri contest | Calendario; accesso BGG | Eseguire task separati per le finestre scadute; prossimo Wargame il 12 novembre | `sources/MONITORING_CALENDAR.md`; `tasks/2026-10-02 - Monitoraggio - 2026 Print and Play Wargame Design Contest/TASK.md` |
 | 3 | Introdurre Kanare_Abstract nel modello multifonte | primo lotto acquisito | Migrazioni 009-010 applicate; censimento completo; 3 PDF EN acquisiti; 15 matching ancora candidati | Censimento, manifest e verificatori Kanare | Valutare separatamente un secondo lotto oppure un controllo mirato dei matching residui | fonte e task Kanare |
-| 4 | **[10d12 Dice Game contest](https://boardgamegeek.com/geeklist/207777/community-pnp-contests-and-winners-2008-to-2024)** |   |   |   |   |
+| 4 | Completare WIP, risorse e materiali per singolo contest | parziale | Wargame 2026 completo 23/23; 9-Card 2025: 89/94 completi, 5 bloccati; 54-Card 2025 completo 28/28; Solitaire 2025 completo 74/74; Traditional Deck 2025 completo 42/42; Two-Player 2025: 39/40 completi e Parry non osservabile; 445/509 entry 2025 con scansione registrata, distinta dalla completezza (2026-10-05) | Skill BGG; task per singolo contest | MAT separato di un contest non ancora scansionato; riconciliare ElementaBrawl e approfondire Parry; eventuale ACQ di un singolo contest già analizzato dopo selezione | `sources/2026-WARGAME-MATERIALS.md`; `sources/2025-NINE-CARD-MATERIALS.md`; `sources/2025-54-CARD-MATERIALS.md`; `sources/2025-SOLITAIRE-MATERIALS.md`; `sources/2025-TRADITIONAL-MATERIALS.md`; `sources/2025-TWO-PLAYER-MATERIALS.md` |
 | 5 | Consolidare la tassonomia delle risorse | parziale | Le categorie restano provvisorie fino al confronto trasversale 2025 | Completamento scansioni 2025 | Confrontare funzioni, forme tecniche ed evidenze | `PROJECT.md` |
 | 6 | Definire la priorità di acquisizione | parziale | Per Children & Family 2025 è stato adottato il criterio dei vincitori ufficiali; mancano soglie generali quando voti o risultati non bastano | Risultati e segnali disponibili | Formalizzare soglie generali solo quando serviranno a una selezione ambigua | `PROJECT.md`; manifest Children & Family |
 | 7 | Proseguire le acquisizioni selettive | Children & Family e Roll & Write 2025 trattati | Kanare: 3 giochi/3 PDF; Children & Family: 14 giochi/38 PDF; Roll & Write: 29 giochi/146 file, esiti su 37/37 entry | Nuova selezione esplicita per ogni contest | Prossima acquisizione suggerita: 1-Card 2025; recuperi remoti in incrementi separati | manifest dei tre perimetri; `library/README.md` |
@@ -2492,3 +2492,5 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-05 — MAT Solitaire 2025 (TSK-0054): 74/74 primi post originali censiti; 71 entry con risorse, 236 URL distinti per gioco, 244 menzioni e 239 requisiti in 64 entry. Nan’s Heroes, Vicinity e Fairway Fantasy senza URL pertinente nel primo post; assenza di link distinta dall’assenza di requisiti. Importazione additiva verificata su copia e operativo, backup, integrità/FK, conservazione delle righe pregresse, isolamento e idempotenza; tutte le 74 righe locali mostrano lettura registrata. A/B rigenerate, 363/509 entry 2025 con scansione. Nessun host/file aperto o download. Evidenze: sources/2025-SOLITAIRE-MATERIALS.md e TSK-0054/EVIDENCE.json, VERIFICATION.json. Prossimo passo: ACQ dello stesso singolo contest dopo selezione dei giochi e verifica delle condizioni. Commit 7464101 e push main verificati sul server il 2026-10-05; esito nel successivo commit documentale.
 
 - 2026-10-05 — MAT Traditional Deck 2025 (TSK-0055): 42/42 primi post originali completi, 38 entry con risorse, 53 URL esatti/menzioni e 54 requisiti in 37 entry. Quattro esiti senza URL con regole nel post; soundtrack, strumenti e manuali immagine distinti. Importazione su copia e operativo con backup, integrità/FK, isolamento, idempotenza e confronto DOM di URL/etichette/identità/evidenze verificati; API 42/42, browser su due pagine e tre casi. A/B rigenerate, 405/509 entry 2025 con scansione. Nessun host/file aperto o download; evidenze sources/2025-TRADITIONAL-MATERIALS.md e TSK-0055/VERIFICATION.json. Task concluso; commit a4affa9 e push main verificati sul server il 2026-10-05, esito nel successivo commit documentale. Prossimo passo: eventuale ACQ del solo Traditional Deck 2025 dopo selezione e verifica condizioni.
+
+- 2026-10-05 — MAT Two-Player PnP 2025 (TSK-0056): 40 esiti espliciti, 39 primi post originali completi e Parry non osservabile; 87 URL, 95 menzioni, 131 requisiti in 34 entry. Trascrizioni URL/etichette/identità e roster 40/40 verificati; importazione su copia e operativo con backup, integrità/FK, idempotenza e isolamento. API 40/40 e scheda Parry verificate; A/B rigenerate, 445/509 entry 2025 con scansione. Nessun host/file aperto o download. Task concluso con blocco esplicito, incremento da committare. Prossimo passo: eventuale ACQ dello stesso singolo contest dopo selezione; recupero originale Parry o fonte alternativa autorizzata.
