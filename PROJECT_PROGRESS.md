@@ -2540,3 +2540,5 @@ Il cruscotto non viene aggiornato per una semplice rigenerazione di output che n
 - 2026-10-05: TSK-0065, conservazione storico immagini approvata: originali superati preservati, varianti inferiori non acquisite solo riferimenti, AI scartate conservate e fuori copertura; pulizia definitiva esplicita. Prossimo punto: contenuto skill dedicata e formalizzazione workflow.
 
 - 2026-10-05: TSK-0065 completato: workflow IMG deliberato e promosso, skill game-image-acquisition installata con riferimenti fonti/estrazione/AI, routing e documenti autorevoli allineati. 14 controlli documentali locali riusciti; validatore standard limitato da PyYAML assente. Nessun lotto o implementazione immagini. Prossimi task separati: APP dati/consultazione e IMG pilota BGG o Kanare selezionato. PWS 1.5.0.
+
+- 2026-10-05: TSK-0065, workflow/skill immagini committati in 986dd93 e inviati a origin/main; hash remoto verificato. Altre modifiche del workspace escluse dal commit, audit sui contenuti pubblicati senza rilievi.

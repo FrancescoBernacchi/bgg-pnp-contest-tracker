@@ -1932,10 +1932,12 @@
       ],
       "next_action": "APP immagini e successivo IMG pilota separati; nessun lotto ancora selezionato",
       "git": {
-        "synchronization": "da_verificare",
+        "synchronization": "remoto_verificato",
         "integration": "integrato_main",
-        "local_save": "da_committare",
-        "checked_at": "2026-10-05"
+        "local_save": "committato",
+        "checked_at": "2026-10-05",
+        "commit": "986dd93c36459c1b10ecd852fe6f078b01025ef5",
+        "evidence": "Push riuscito; ls-remote main uguale a HEAD 986dd93, confronto 0/0; annotazione successiva in commit documentale"
       },
       "last_verified_at": "2026-10-05"
     }

@@ -157,3 +157,7 @@ Task concluso per il deliverable EPR richiesto. Nessun download, estrazione, gen
 Prossimi incrementi separati: APP per persistenza/catalogazione immagini e consultazione lacune/galleria; IMG pilota di un solo contest/anno e giochi selezionati, oppure Kanare selezionato. Generazione AI tramite Codex facoltativa con validazione utente; integrazione di generazione nella UI solo evoluzione potenziale.
 
 Git finale: main ahead 2 rispetto al riferimento locale origin/main; molte modifiche di altre attività presenti e preservate, remoto non interrogato. Nessun commit/push/branch eseguito in questo task. Incremento documentale e skill da committare, previa revisione mirata e policy pubblicazione; messaggio proposto: Definisci workflow immagini e aggiungi skill dedicata.
+
+
+## Commit e push autorizzati — 2026-10-05
+Commit 986dd93c36459c1b10ecd852fe6f078b01025ef5: Definisci workflow immagini e aggiungi skill dedicata. Push origin/main riuscito; hash remoto verificato uguale e confronto 0/0 nella chiamata Git precedente. Solo 19 contenuti IMG inclusi, selezionando le modifiche pertinenti nei documenti condivisi; altre attività preservate nella working tree. Audit pubblicazione con zero rilievi sui contenuti selezionati e sul commit in uscita; rilievi nella working tree estranei al lotto esclusi. Esito registrato dopo il successo in incremento documentale separato.
