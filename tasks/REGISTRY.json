@@ -2229,6 +2229,128 @@
         "evidence": "Commit 21c1834412a5e88f2ed71745513d707c1781a481; push e hash origin/main verificati il 2026-10-06."
       },
       "coverage": "Avanzamento multifonte BGG/Kanare; quattro metriche Kanare, filtri, giochi/confezioni/schede; IMG senza selezione esplicita."
+    },
+    {
+      "id": "TSK-0072",
+      "original_title": "2026-10-06 - FON - Preanalisi PerGioco",
+      "display_title": "2026-10-06 - FON - Preanalisi PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - FON - Preanalisi PerGioco/TASK.md",
+      "category": "FON",
+      "secondary_categories": [],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Relazione e verifiche documentali concluse; nessuna adozione/importazione.",
+      "coverage": {
+        "pages_or_destinations": 25,
+        "main_game_pages": 7,
+        "local_names_compared": 11,
+        "exact_title_alias_matches": 1,
+        "full_census": false
+      },
+      "dependencies": [
+        "TSK-0037",
+        "TSK-0039"
+      ],
+      "successors": [
+        "TSK-0073"
+      ],
+      "chat_ids": [
+        "01a112a8-cda7-79e2-8d36-d8fb6cc59cea"
+      ],
+      "next_action": "Decisione sul perimetro, poi CAT pilota PerGioco autonomo.",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "evidence": "Modifiche pregresse preservate; nessuna operazione Git mutativa.",
+        "synchronization": "da_verificare",
+        "checked_at": "2026-10-06"
+      },
+      "last_verified_at": "2026-10-06",
+      "closed_at": "2026-10-06"
+    },
+    {
+      "id": "TSK-0073",
+      "original_title": "2026-10-06 - EPR - Adozione PerGioco",
+      "display_title": "2026-10-06 - EPR - Adozione PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - EPR - Adozione PerGioco/TASK.md",
+      "category": "EPR",
+      "secondary_categories": [],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Adozione e requisito classificazione originale registrati; implementazione futura.",
+      "dependencies": [
+        "TSK-0072"
+      ],
+      "successors": [
+        "TSK-0074"
+      ],
+      "chat_ids": [
+        "01a112a8-cda7-79e2-8d36-d8fb6cc59cea"
+      ],
+      "coverage": {
+        "scope_adopted": true,
+        "logical_games_included": true,
+        "database_imported": false,
+        "native_classification_required": true
+      },
+      "next_action": "Eseguire CAT pilota TSK-0074.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      },
+      "title_history": [
+        {
+          "date": "2026-10-06",
+          "previous_title": "2026-10-06 - FON - Preanalisi PerGioco",
+          "title": "2026-10-06 - EPR - Preanalisi e adozione PerGioco",
+          "reason": "Prosecuzione deliberativa; preservato tema preanalisi."
+        }
+      ],
+      "closed_at": "2026-10-06",
+      "last_verified_at": "2026-10-06"
+    },
+    {
+      "id": "TSK-0074",
+      "original_title": "2026-10-06 - CAT - Pilota PerGioco",
+      "display_title": "2026-10-06 - CAT - Pilota PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - CAT - Pilota PerGioco/TASK.md",
+      "category": "CAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "in_corso",
+      "status_basis": "2026-10-06: ripresa autorizzata in chat dedicata; preflight riuscito e PWS 1.5.0 allineato.",
+      "dependencies": [
+        "TSK-0073",
+        "TSK-0072"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a112a8-cda7-79e2-8d36-d8fb6cc59cea",
+        "01a112d6-cd21-7202-aaac-3fb038838d78"
+      ],
+      "coverage": {
+        "candidate_identities": 12,
+        "censused_identities": 0,
+        "native_classification_required": true
+      },
+      "next_action": "Eseguire CAT in chat dedicata sullo stesso registro, con classificazione originale.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      }
     }
   ]
 }

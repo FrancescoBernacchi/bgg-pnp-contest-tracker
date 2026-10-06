@@ -2,6 +2,8 @@
 
 ## Missione del progetto
 
+PerGioco: decisione TSK-0073 del 2026-10-06, perimetro in `sources/PERGIOCO-SCOPE.md`. Include subito giochi logici oltre ad astratti/tradizionali e carta e matita. Catalogare il sistema di regole; schemi e soluzioni sono istanze/risorse, senza moltiplicare i giochi. CAT pilota separato da DAT/APP/ACQ/IMG, regole complete gratuite e accessi attestati per titolo. Adozione non equivale a importazione né a download.
+
 Costruire e mantenere una collezione locale, ricercabile e tracciabile di giochi Print and Play scoperti inizialmente nei contest di BoardGameGeek.
 
 ## Modello operativo

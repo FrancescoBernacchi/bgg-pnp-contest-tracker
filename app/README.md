@@ -250,3 +250,7 @@ Valori verificati: 76/76 schede, 62/64 materiali (1 parziale, 1 bloccato), 3/3 A
 Il dettaglio Kanare separa requisiti, quantità confezione, inferenze, limiti, collegamenti storici, fonte/data e crediti per ruolo. Il censimento MAT completo non certifica che ogni misura sia dichiarata. La ricerca esplicita di assenza può completare MAT; blocchi e parziali no. I filtri non alterano i totali; viste Giochi/Confezioni/Schede e linguette sono navigabili da tastiera. URL `#progress/boardgamegeek` e `#progress/kanare_abstract` aprono direttamente la fonte.
 
 Gli hash dei tre PDF sono stati ricontrollati nella riconciliazione offline. Durante HTTP si confrontano metadati registrati, lingua, hash dichiarato, dimensione e presenza in library confinata: nessun ricalcolo continuo del contenuto e nessun diritto di redistribuzione inferito. Le immagini restano dipendenza di TSK-0067; nessun importatore IMG implementato qui. Il cruscotto Markdown conserva le sezioni annuali generate BGG; questo incremento non cambia dati BGG né richiede la loro rigenerazione.
+
+## Requisito PerGioco adottato, non implementato - 2026-10-06
+
+TSK-0073: preservare nel database e mostrare/navigare nell'app la classificazione originale PerGioco, con etichette, gerarchia e appartenenze multiple attribuite alla fonte. Eventuale mapping comune separato, senza sostituire le categorie native. CAT TSK-0074 raccoglie le evidenze; successivi DAT/APP definiscono persistenza ed esposizione. Nessun supporto PerGioco ancora implementato.

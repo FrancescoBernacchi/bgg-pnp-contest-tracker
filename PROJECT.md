@@ -6,6 +6,10 @@ Costruire un archivio locale consultabile di giochi Print and Play, iniziando da
 
 ## Scope
 
+Requisito PerGioco 2026-10-06, TSK-0073: database e app conservano la classificazione originale della fonte, etichette/gerarchia e appartenenze multiple con provenienza. Mapping trasversale eventualmente separato, senza sostituire le categorie native. Raccolta CAT, persistenza DAT ed esposizione APP successive, non ancora implementate; dettagli in `sources/PERGIOCO-SCOPE.md`.
+
+Decisione 2026-10-06, TSK-0073: **PerGioco** adottata per un pilota come fonte editoriale di giochi astratti/tradizionali, carta e matita e giochi logici, inclusi problemi solitari. Regole complete gratuite verificate titolo per titolo; sistema di regole distinto da singoli schemi e soluzioni, che non aumentano il conteggio giochi. Perimetro autorevole in `sources/PERGIOCO-SCOPE.md`. CAT pilota distinto da successive importazioni DAT, app e acquisizioni; nessun dato operativo PerGioco ancora importato, nessuna modifica retroattiva alle fonti esistenti.
+
 Nella prima fase la fonte è esclusivamente BoardGameGeek. Il progetto cataloga tutte le entries individuate nei contest inclusi nel perimetro e scarica i materiali soltanto per i giochi selezionati. La ricerca di ulteriori fonti richiederà un task dedicato.
 
 Dal 20 settembre 2026 è deliberata l'evoluzione verso un catalogo personale multifonte di giochi. Lo stato implementato resta inizialmente quello centrato sui contest BGG; l'estensione sarà introdotta tramite task separati e migrazioni verificabili. Nel modello obiettivo il gioco è l'entità canonica trasversale, BGG e Kanare_Abstract sono fonti specializzate e il Print and Play è una forma di accesso o realizzazione, non il perimetro esclusivo dell'app.

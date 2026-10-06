@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-10-06",
+  "task_id": "TSK-0072",
+  "source_rows_unique": 25,
+  "main_game_pages": 7,
+  "registry_task_unique": true,
+  "other_task_records_preserved_during_closure": true,
+  "sqlite_query_mode": "read_only",
+  "local_comparison_names": 11,
+  "local_exact_match": {
+    "game_id": 993,
+    "canonical_title": "Abande",
+    "designer_declared": "Dieter Stein",
+    "existing_source": "Kanare_Abstract"
+  },
+  "scoped_publication_heuristic_findings": [],
+  "limits": "Verifica documentale e sintesi originali; nessun censimento integrale, file, login o partita. Audit del solo nuovo deliverable, senza certificazione diritti o revisione della cronologia pregressa."
+}
