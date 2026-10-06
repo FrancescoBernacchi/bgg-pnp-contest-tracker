@@ -1,0 +1,26 @@
+{
+  "task_id": "TSK-0075",
+  "date": "2026-10-06",
+  "database_sha256_before": "1813fa05a07afc600c02ad72eb2055e1d1a9d0f64e2538661e828134a9fd55a6",
+  "database_sha256_after": "1813fa05a07afc600c02ad72eb2055e1d1a9d0f64e2538661e828134a9fd55a6",
+  "manifest_sha256": "ab15231c9185b93b78e8896d28edc91f46d671c0bb434067a24e6e707eeef45e",
+  "preview_sha256": "8773aea5d9bad60439298e50b440f5fb6df9034ad9bc3a3a07424358ac3be841",
+  "checks": {
+    "CAT_input_hash_matches": true,
+    "exact_CAT_records_preserved": true,
+    "12_unique_records": true,
+    "12_unique_urls": true,
+    "9_admitted": true,
+    "3_source_only": true,
+    "8_new_games": true,
+    "Abande_993_candidate": true,
+    "Itinera_2_instances": true,
+    "classification_lossless": true,
+    "no_inferred_categories": true,
+    "foreign_keys_clean": true,
+    "integrity_ok": true,
+    "database_unchanged": true
+  },
+  "idempotence_test": "Deterministic JSON regeneration; no SQL import replay performed",
+  "writes_to_operational_database": 0
+}

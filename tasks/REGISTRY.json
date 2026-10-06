@@ -2337,7 +2337,9 @@
         "TSK-0073",
         "TSK-0072"
       ],
-      "successors": [],
+      "successors": [
+        "TSK-0075"
+      ],
       "chat_ids": [
         "01a112a8-cda7-79e2-8d36-d8fb6cc59cea",
         "01a112d6-cd21-7202-aaac-3fb038838d78"
@@ -2354,7 +2356,7 @@
         "local_matching_candidates": 1,
         "classification_scope": "Tutte le appartenenze osservate; nessuna esaustività globale del sito attestata."
       },
-      "next_action": "DAT preparatorio separato: mapping e anteprima offline, decisione prima di eventuale schema/importazione. Prompt nel task CAT; nessun successore aperto.",
+      "next_action": "Successore DAT preparatorio TSK-0075 completato; decidere architettura/piano identità prima di task esecutivi separati.",
       "git": {
         "checked_at": "2026-10-06",
         "local_save": "committato",
@@ -2364,6 +2366,59 @@
         "commit": "9ad9337a601a399212f3d43d761a24dec6023778"
       },
       "verification_date": "2026-10-06"
+    },
+    {
+      "id": "TSK-0075",
+      "original_title": "2026-10-06 - DAT - Preparazione integrazione PerGioco",
+      "display_title": "2026-10-06 - DAT - Preparazione integrazione PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - DAT - Preparazione integrazione PerGioco/TASK.md",
+      "category": "DAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "2026-10-06: proposta, mapping, alternative EPR e anteprima offline 12/12 verificati; database invariato. Nessuna importazione o architettura adottata.",
+      "dependencies": [
+        "TSK-0074",
+        "TSK-0073"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a112e4-6a22-75b2-8a7f-ed6e6f11bdd3"
+      ],
+      "coverage": {
+        "preview_candidates": 12,
+        "CAT_admitted": 9,
+        "CAT_requirement_not_demonstrated": 3,
+        "proposed_new_games": 8,
+        "candidate_links": 1,
+        "imported_identities": 0,
+        "architecture_adopted": false
+      },
+      "next_action": "Deliberare alternativa A/B e piano identità; eventuale EPR/importazione DAT e APP in passi autonomi.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "evidence": "2026-10-06: commit pilota e push main riusciti; ls-remote hash identico, confronto 0/0. Esito in commit documentale successivo; modifiche pregresse escluse.",
+        "commit": "9ad9337a601a399212f3d43d761a24dec6023778"
+      },
+      "verification_date": "2026-10-06",
+      "events": [
+        {
+          "date": "2026-10-06",
+          "status": "in_corso",
+          "evidence": "Contratto TASK.md predisposto prima della costruzione anteprima."
+        },
+        {
+          "date": "2026-10-06",
+          "status": "completato",
+          "evidence": "VERIFICHE.json e PROPOSTA.md; preparazione conclusa, decisioni esecutive pendenti."
+        }
+      ]
     }
   ]
 }
