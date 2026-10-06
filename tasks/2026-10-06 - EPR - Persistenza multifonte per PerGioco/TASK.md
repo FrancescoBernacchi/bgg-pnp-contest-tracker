@@ -39,3 +39,7 @@ Prossimo passo utile: su richiesta autorizzare un DAT esecutivo di schema/migraz
 ## Migrazione 013 operativa — successore 2026-10-06
 
 TSK-0077 DAT schema multifonte autorizzato nella stessa chat dopo chiusura EPR, con consenso esplicito aggiuntivo all'applicazione operativa dopo prove. B-v1 ora implementata come migrazione 013, nuovi insiemi vuoti e legacy preservato; PerGioco non importato/APP invariata. TSK-0076 resta completato, adozione originaria e date preservate; esiti di esecuzione nel successore. Titolo chat cumulativo aggiornato a `2026-10-06 - DAT - Deliberazione e schema multifonte PerGioco` con storia nel registro.
+
+## Commit e push verificati — 2026-10-06
+
+Commit selettivo `22479a61b11456035d0fe23dcb1ad9a37602f31b` su main: decisione B-v1, schema/migrazione 013 e verifiche, 36 file; documenti condivisi e registro preparati da HEAD con sole modifiche PerGioco. Push origin/main riuscito; ls-remote hash identico, confronto 0/0. Audit di tutti i contenuti del commit in uscita senza candidati; 299 candidati pregressi su 30 percorsi esterni all’incremento restano da riesaminare. Database/backup/materiali esclusi, modifiche estranee preservate. Il componente HTTPS bundled Git e stato selezionato tramite exec-path per questa operazione, senza modifiche di configurazione; rete e indice hanno richiesto esecuzione fuori sandbox autorizzata. Esito registrato nel successivo commit documentale compreso nella richiesta commit e push; nessuna importazione o APP.

@@ -41,9 +41,11 @@
       "next_action": "Su richiesta autorizzare DAT importazione PerGioco separato; nessun importer o APP avviato.",
       "git": {
         "checked_at": "2026-10-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "allineato_riferimento_locale"
+        "synchronization": "remoto_verificato",
+        "commit": "22479a61b11456035d0fe23dcb1ad9a37602f31b",
+        "evidence": "Commit selettivo EPR/DAT 22479a6 e push origin/main verificati con hash server coincidente, confronto 0/0. Modifiche estranee preservate; esito in successivo commit documentale."
       },
       "closed_at": "2026-10-06",
       "last_verified_at": "2026-10-06"
@@ -88,10 +90,11 @@
       "next_action": "Su richiesta aprire DAT esecutivo per schema/migrazione; importazione PerGioco e APP richiedono contratti/autorizzazioni separati.",
       "git": {
         "checked_at": "2026-10-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "allineato_riferimento_locale",
-        "evidence": "main...origin/main nel riferimento locale; remoto non interrogato, modifiche pregresse preservate."
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit selettivo EPR/DAT 22479a6 e push origin/main verificati con hash server coincidente, confronto 0/0. Modifiche estranee preservate; esito in successivo commit documentale.",
+        "commit": "22479a61b11456035d0fe23dcb1ad9a37602f31b"
       },
       "last_verified_at": "2026-10-06",
       "closed_at": "2026-10-06"
