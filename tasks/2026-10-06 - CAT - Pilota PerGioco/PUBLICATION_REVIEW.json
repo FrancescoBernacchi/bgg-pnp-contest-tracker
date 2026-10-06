@@ -19,5 +19,12 @@
     "unique_paths": 30,
     "preexisting_outgoing_commits": 0,
     "disposition": "Percorsi pregressi estranei al commit CAT, da riesaminare separatamente; nessuna riscrittura storica. Review esatto index CAT prima del commit."
+  },
+  "outgoing_commit_review": {
+    "commit": "9ad9337a601a399212f3d43d761a24dec6023778",
+    "date": "2026-10-06",
+    "all_changed_files_reviewed": true,
+    "findings": [],
+    "remote_hash_verified": true
   }
 }

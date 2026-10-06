@@ -59,3 +59,7 @@ Chat corrente: 01a112d6-cd21-7202-aaac-3fb038838d78; chat originaria preservata.
 ## Commit e push autorizzati — 2026-10-06
 
 Utente autorizza commit e push del pilota. Fetch origin riuscito; main allineato prima dell’operazione. Audit generale: 299 rilievi euristici in 30 percorsi pregressi, nessun commit in uscita preesistente. Quei percorsi non sono inclusi nel commit CAT; cronologia non riscritta. Pubblicazione circoscritta ai metadati e alle sintesi del pilota, previa revisione dell’esatto contenuto staged. Modifiche pregresse preservate fuori dal commit.
+
+### Esito Git verificato — 2026-10-06
+
+Commit pilota `9ad9337a601a399212f3d43d761a24dec6023778` su main: dieci file, inclusi solo aggiornamenti CAT nei documenti condivisi. Push origin/main riuscito; ls-remote stesso hash, confronto 0/0. Audit di tutti i file del commit in uscita senza rilievi; dati del registro estranei a TSK-0074 invariati. Modifiche pregresse preservate fuori dai commit. Esito registrato dopo successo in aggiornamento documentale separato.
