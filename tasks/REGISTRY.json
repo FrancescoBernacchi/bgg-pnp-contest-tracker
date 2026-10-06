@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-06",
   "protocol": "TASK_GOVERNANCE.md",
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata.",
   "tasks": [
@@ -2084,6 +2084,52 @@
         "catalog/2025_children_family_image_sources_2026-10-05.json",
         "catalog/2025_children_family_images_2026-10-05.json"
       ]
+    },
+    {
+      "id": "TSK-0070",
+      "original_title": "2026-10-06 - MAT - Kanare Abstract",
+      "display_title": "2026-10-06 - MAT - Kanare Abstract",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - MAT - Kanare Abstract/TASK.md",
+      "category": "MAT",
+      "secondary_categories": [
+        "GPR"
+      ],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "2026-10-06: censimento 64/64 nel perimetro concluso, due piloti e verifiche; Candy Chain/Swarm limiti informativi residui distinti.",
+      "dependencies": [
+        "TSK-0019",
+        "TSK-0020",
+        "TSK-0021",
+        "TSK-0022",
+        "TSK-0023",
+        "TSK-0024",
+        "TSK-0048"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a1129f-6d87-7a83-b487-90746ab89813"
+      ],
+      "coverage": {
+        "baseline_games": 64,
+        "games_treated": 64,
+        "complete": 62,
+        "partial": 1,
+        "blocked": 1,
+        "pdf_urls_consulted": 62,
+        "new_files_acquired": 0
+      },
+      "next_action": "Eventuale ACQ Kanare selettivo separato; chiarire Candy Chain e materiale puntuale Swarm senza piattaforme o contatti automatici.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Working tree preesistente modificata; nessuna operazione Git mutativa."
+      }
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-06",
+  "coverage": {
+    "games": 64,
+    "analysis": {
+      "complete": 62,
+      "partial": 1,
+      "blocked": 1
+    },
+    "html_pages_consulted": 75,
+    "pdf_urls_consulted": 62,
+    "pdf_unique_bytes_consulted": 61,
+    "pdf_pages_consulted_url_count": 163,
+    "pdf_local_originals_reused": 3,
+    "new_pdf_files_acquired": 0,
+    "language_exclusions": {
+      "es": 2,
+      "ja": 37,
+      "zh": 1
+    }
+  },
+  "duplicate_games": 0,
+  "duplicate_consultations": 0,
+  "baseline_tables_preserved": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "originals": [
+    {
+      "game": "Pentwall",
+      "sha256": "c96cceee5b7326b7d84877321214e82c3173486656bfe84c407b08ca63481fac",
+      "unchanged": true
+    },
+    {
+      "game": "ViceVeresi",
+      "sha256": "88aa59877d6b2f28e0280bc2ede7db2f8e7d9b18f0261bccd7917df6594718da",
+      "unchanged": true
+    },
+    {
+      "game": "Chess Territorial",
+      "sha256": "7ef2766a8a47efc4eae22bd09e3738c92b2242b1d40db247ac3ce40920f5e784",
+      "unchanged": true
+    }
+  ],
+  "offline_rebuild_idempotent": true,
+  "manifest_sha256": "dd111e18a29e0a9f829c68096784b940ca2fb865269ebd1b3f49b948e1c2f45c",
+  "limits": "Verifica di integrità/copertura e riesame delle evidenze; non certificazione di licenze o completezza universale dei dati non dichiarati. Nessuna scrittura DB."
+}

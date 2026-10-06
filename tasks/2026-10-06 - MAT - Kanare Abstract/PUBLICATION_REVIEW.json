@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-06",
+  "scope": "Nuovi deliverable MAT Kanare; riepiloghi originali, metadati, attribuzioni e riferimenti, prove integrali fuori Git",
+  "files_scanned": [
+    "tasks/2026-10-06 - MAT - Kanare Abstract/COMPONENTS_AND_LIMITS.md",
+    "tasks/2026-10-06 - MAT - Kanare Abstract/INVENTORY.md",
+    "tasks/2026-10-06 - MAT - Kanare Abstract/PILOTS.md",
+    "tasks/2026-10-06 - MAT - Kanare Abstract/PUBLICATION_REVIEW.json",
+    "tasks/2026-10-06 - MAT - Kanare Abstract/TASK.md",
+    "tasks/2026-10-06 - MAT - Kanare Abstract/VERIFICATION.json",
+    ".agents/skills/kanare-material-census/SKILL.md",
+    "catalog/prepare_kanare_material_census.py",
+    "catalog/inspect_kanare_materials.py",
+    "catalog/collect_kanare_material_evidence.py",
+    "catalog/render_kanare_consultation.py",
+    "catalog/build_kanare_material_census.py",
+    "catalog/verify_kanare_material_census.py",
+    "catalog/kanare_material_census_2026-10-06.json"
+  ],
+  "findings": [],
+  "limits": "Revisione euristica e manuale, non licenza o revisione della storia preesistente; nessun commit/push."
+}

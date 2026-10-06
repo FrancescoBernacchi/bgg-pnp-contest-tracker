@@ -4,6 +4,10 @@ Ultimo aggiornamento: 2026-10-05. Fonte dello stato: repository e database opera
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
 
+## Materiali Kanare Abstract — TSK-0070
+
+Censimento del 2026-10-06 concluso nel perimetro: 64/64 giochi trattati, 62 analisi complete, Candy Chain parziale (testo 5×5 contro diagramma 8×8/48 pezzi) e Swarm bloccata informativamente (solo titolo dichiarato, nessun materiale puntuale). 75 pagine ufficiali, 62 URL PDF EN/61 contenuti binari consultati, 163 pagine contando URL; tre originali riusati, zero nuovi file acquisiti. Tutti i 141 riferimenti storici riconciliati; 37 JA/2 ES/1 ZH solo metadati. Confezioni e requisiti separati, quattro varianti aggregate ora provate puntualmente nel manifest. Skill collaudata su piloti 2+5 e restante perimetro; manutenzione collegata a TSK-0048. Fonti, conteggi e limiti: `catalog/kanare_material_census_2026-10-06.json` e `tasks/2026-10-06 - MAT - Kanare Abstract/`. Database, app, metriche e sezioni annuali A/B invariati; nessuna rigenerazione annuale necessaria. Prossimo passo: acquisizione selettiva Kanare separata o chiarimento Candy Chain/Swarm; nessun lotto già autorizzato. Incremento da committare, nessuna operazione Git eseguita.
+
 ## Censimento globale dei contest BGG
 
 Questa è la vista pertinente al task globale: comprende tutte le annualità osservate. La baseline di 305 unità è stata integrata il 2 ottobre 2026 con il nuovo Roll & Write, per un totale di 306 contest. La verifica puntuale dei thread e degli stati prudenziali storici resta aperta.
