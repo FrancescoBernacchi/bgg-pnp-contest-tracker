@@ -2125,10 +2125,10 @@
       "next_action": "Eventuale ACQ Kanare selettivo separato; chiarire Candy Chain e materiale puntuale Swarm senza piattaforme o contatti automatici.",
       "git": {
         "checked_at": "2026-10-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Working tree preesistente modificata; nessuna operazione Git mutativa."
+        "synchronization": "da_pushare",
+        "evidence": "Commit selettivo f5b3ee0ef99a6360504f5582f09bafdb002a3991 main; audit blob senza candidati, altre modifiche escluse. Push autorizzato, verifica successiva."
       }
     }
   ]
