@@ -57,3 +57,5 @@ Prossimo passo: eventuale ACQ Kanare selettivo separato per giochi con component
 ## Salvataggio Git — 2026-10-06
 
 Commit selettivo `f5b3ee0ef99a6360504f5582f09bafdb002a3991` su main, autorizzato dall’utente con «commit e push»: 22 file MAT/skill e sole integrazioni pertinenti nei documenti condivisi. Modifiche degli altri task preservate. Audit dei blob selezionati: zero candidati; audit generale: 299 candidati preesistenti esterni all’incremento, non pubblicati come nuove modifiche. Riferimento remoto uguale alla baseline prima del commit; nessun altro commit locale in uscita. Push autorizzato, da verificare dopo l’esecuzione.
+
+Push dei commit `f5b3ee0` e `23064a8` riuscito; HEAD/server/origin/main uguali a `23064a81ca586d0caa028207ab0c4bc740e4d591`, confronto 0/0. Audit di tutti i blob cambiati nei due commit in uscita: zero candidati. Nota finale registrata separatamente; altri task e materiali locali restano esclusi.

@@ -2127,8 +2127,8 @@
         "checked_at": "2026-10-06",
         "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_pushare",
-        "evidence": "Commit selettivo f5b3ee0ef99a6360504f5582f09bafdb002a3991 main; audit blob senza candidati, altre modifiche escluse. Push autorizzato, verifica successiva."
+        "synchronization": "sincronizzato",
+        "evidence": "Commit MAT f5b3ee0 e registrazione 23064a8 inviati; server/HEAD/origin/main uguali, 0/0 il 2026-10-06. Audit commit in uscita senza candidati; modifiche altrui escluse."
       }
     }
   ]
