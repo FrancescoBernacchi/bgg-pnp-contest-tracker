@@ -77,3 +77,7 @@ TSK-0070, autorizzazione esplicita: creata kanare-material-census usando skill-c
 ## Evidenza source-preanalysis — PerGioco, 2026-10-06
 
 TSK-0072 applica la procedura a un secondo contesto editoriale: 25 pagine/destinazioni, sette schede principali, URL storici con rinvii, regole pubbliche/base-variante e soluzioni con login, mapping sul nucleo multifonte. Relazione ed efficacia nel task sorgente. Inventario aggiornato; nessuna manutenzione della skill o promozione universale del comportamento PerGioco. Le condizioni dichiarate e i limiti dello strumento web sono gestibili con le istruzioni esistenti. Contenitore TSK-0048 ancora aperto, nessuna acquisizione o adozione.
+
+## Evidenza CAT PerGioco — 2026-10-06, TSK-0074
+
+Il pilota CAT applica il contratto adottato, senza estendere source-preanalysis: nessuna skill CAT multifonte dedicata nell’inventario. Efficacia CUA browser e limiti di routing registrati nel TASK.md di TSK-0074. Eventuale procedura CAT da valutare dopo altri casi; proposta non adottata né collaudata in generale. Nessuna manutenzione skill/inventario eseguita, contenitore TSK-0048 resta aperto.

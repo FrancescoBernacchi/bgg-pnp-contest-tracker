@@ -2331,8 +2331,8 @@
       "classified_at": "2026-10-06",
       "mode": "circoscritto",
       "cadence": "su_richiesta",
-      "status": "in_corso",
-      "status_basis": "2026-10-06: ripresa autorizzata in chat dedicata; preflight riuscito e PWS 1.5.0 allineato.",
+      "status": "completato",
+      "status_basis": "2026-10-06: 12/12 esiti verificati nel manifest CAT, nove ammissibili e tre con requisito non dimostrato; database invariato. Relazione e prompt successivo pronti.",
       "dependencies": [
         "TSK-0073",
         "TSK-0072"
@@ -2344,16 +2344,25 @@
       ],
       "coverage": {
         "candidate_identities": 12,
-        "censused_identities": 0,
-        "native_classification_required": true
+        "censused_identities": 12,
+        "native_classification_required": true,
+        "admitted_identities": 9,
+        "requirements_not_demonstrated": 3,
+        "not_observable": 0,
+        "imported_identities": 0,
+        "downloaded_files": 0,
+        "local_matching_candidates": 1,
+        "classification_scope": "Tutte le appartenenze osservate; nessuna esaustività globale del sito attestata."
       },
-      "next_action": "Eseguire CAT in chat dedicata sullo stesso registro, con classificazione originale.",
+      "next_action": "DAT preparatorio separato: mapping e anteprima offline, decisione prima di eventuale schema/importazione. Prompt nel task CAT; nessun successore aperto.",
       "git": {
         "checked_at": "2026-10-06",
         "local_save": "da_committare",
-        "integration": "integrato_main",
-        "synchronization": "da_verificare"
-      }
+        "integration": "da_integrare",
+        "synchronization": "da_verificare",
+        "evidence": "Deliverable presenti nella working tree main; nessun commit o push, modifiche pregresse preservate. origin/main è solo riferimento locale."
+      },
+      "verification_date": "2026-10-06"
     }
   ]
 }

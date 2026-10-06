@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-06",
+  "scope": "Solo deliverable TSK-0074 presenti, inclusi non tracciati. Non revisione globale o di commit in uscita.",
+  "files": [
+    "catalog/pergioco_pilot_2026-10-06.json",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/build_manifest.py",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/PROMPT_PROSSIMA_CHAT.md",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/PUBLICATION_REVIEW.json",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/RELAZIONE.md",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/TASK.md",
+    "tasks/2026-10-06 - CAT - Pilota PerGioco/VERIFICHE.json"
+  ],
+  "heuristic_findings": [],
+  "manual_review": "Metadati fattuali, attribuzioni per ruolo, link e sintesi originali. Nessun regolamento integrale, dump, screenshot, file o immagine di terzi. Dicitura PDF e accessi non verificati espliciti.",
+  "limits": "Controllo euristico e revisione redazionale del lotto; non certificazione dei diritti, non autorizzazione a push.",
+  "pre_commit_general_audit": {
+    "report_local": "outputs/publication-audit-pergioco-commit.json",
+    "heuristic_findings": 299,
+    "unique_paths": 30,
+    "preexisting_outgoing_commits": 0,
+    "disposition": "Percorsi pregressi estranei al commit CAT, da riesaminare separatamente; nessuna riscrittura storica. Review esatto index CAT prima del commit."
+  }
+}

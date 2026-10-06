@@ -1,0 +1,44 @@
+{
+  "task_id": "TSK-0074",
+  "date": "2026-10-06",
+  "expected_candidates": [
+    "Achi",
+    "Krypte",
+    "Abande",
+    "Abande Libre",
+    "Chomp",
+    "Itinera",
+    "Azul",
+    "Reversi",
+    "Blockade (1975)",
+    "Blockade (2001)",
+    "Beeline (1968)",
+    "Beeline (1984)"
+  ],
+  "unique_ids": 12,
+  "unique_urls": 12,
+  "explicit_outcomes": 12,
+  "admitted": 9,
+  "not_demonstrated": 3,
+  "itinera_system_count": 1,
+  "itinera_instance_count": 2,
+  "local_match_candidates": [
+    "Abande"
+  ],
+  "database_sha256_before": "1813fa05a07afc600c02ad72eb2055e1d1a9d0f64e2538661e828134a9fd55a6",
+  "database_sha256_after": "1813fa05a07afc600c02ad72eb2055e1d1a9d0f64e2538661e828134a9fd55a6",
+  "database_unchanged": true,
+  "manifest_sha256": "ab15231c9185b93b78e8896d28edc91f46d671c0bb434067a24e6e707eeef45e",
+  "checks": {
+    "exact_sample": true,
+    "12_unique_ids": true,
+    "12_unique_urls": true,
+    "all_required_metadata": true,
+    "classification_has_url_date": true,
+    "no_missing_outcome": true,
+    "count_reconciliation": true,
+    "base_variant_explicit": true,
+    "itinera_solutions_not_admission_requirement": true,
+    "database_unchanged": true
+  }
+}

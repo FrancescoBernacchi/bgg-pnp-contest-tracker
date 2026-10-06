@@ -2398,6 +2398,8 @@ TSK-0048, 2026-10-04: primi due incrementi delle skill conclusi; attivazione sis
 
 ## Registro degli aggiornamenti del cruscotto
 
+- 2026-10-06 — TSK-0074 CAT PerGioco completato nella chat dedicata, stesso registro: 12/12 candidate con esito, 9 ammissibili e 3 con requisito non dimostrato (Azul, Blockade 1975/2001). Classificazioni native e date preservate; Itinera un sistema con due schemi, soluzioni riservate; Abande matching candidato game_id 993. Manifest e relazione verificati, SQLite invariato tramite hash. Nessuna importazione/app/schema/acquisizione; A/B non rigenerate. Prossimo passo DAT preparatorio con anteprima offline, prompt pronto; decisione prima di importazione. Incremento da committare.
+
 - 2026-10-06 — TSK-0073: requisito aggiuntivo PerGioco adottato, classificazione originale da preservare nel database e nell'app con gerarchia/appartenenze/provenienza. Contratto TSK-0074 allineato; CAT resta pianificato per chat autonoma, nessuna nuova chat creata. DAT/APP ed eventuali MAT/ACQ/IMG separati. Nessuna implementazione/dato/acquisizione, A/B non rigenerate.
 
 - 2026-10-06 — TSK-0073 EPR PerGioco completato: utente include subito giochi logici, perimetro adottato con astratti/tradizionali e carta e matita. Sistema distinto da schemi/soluzioni, regole complete gratuite per titolo; sources/PERGIOCO-SCOPE.md e documenti autorevoli allineati. TSK-0074 CAT pianificato: 12 candidate, censimento ancora da eseguire. Nessuna importazione/acquisizione/modifica app-schema, metriche invariate e A/B non rigenerate. Prossimo passo: CAT pilota; incremento documentale da committare.
