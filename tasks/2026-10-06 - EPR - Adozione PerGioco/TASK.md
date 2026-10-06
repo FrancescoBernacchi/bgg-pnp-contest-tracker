@@ -41,3 +41,7 @@ Titolo cumulativo conserva preanalisi e adozione. Prossimo passo: censimento pil
 ## Integrazione requisiti e organizzazione — 2026-10-06
 
 Utente richiede classificazione originale PerGioco nel database e nell'app. Requisito promosso nel perimetro, PROJECT.md, app/README.md e contratto CAT: etichette/gerarchia/appartenenze multiple con provenienza, mapping comune separato, stato non implementato. Stato EPR completato conservato. TSK-0074 predisposto soltanto come contratto; esecuzione in chat autonoma sullo stesso ID, nessuna nuova chat creata su una domanda organizzativa. DAT/APP ed eventuali MAT/ACQ/IMG distinti, con contratti PerGioco. Nessuna skill di ricerca applicata o rilettura esterna; modifiche pregresse anche staged preservate, nessuna operazione Git mutativa.
+
+## Salvataggio Git — 2026-10-06
+
+Su richiesta utente eseguiti commit selettivo e push su main: ef4d2c4bfa4230af71d66e9fc5cf91966fa1eb04. Audit del commit in uscita senza rilievi; 299 candidati preesistenti della working tree esclusi. Push riuscito e HEAD/origin/main coincidenti. Modifiche degli altri task preservate. Il contratto CAT e pubblicato, mentre la sua esecuzione resta nel task dedicato.

@@ -34,3 +34,7 @@ Prossimo approfondimento utile: decisione EPR sul perimetro (astratti/carta e ma
 ## Verifica dell'efficacia
 
 Skill source-preanalysis applicata: rapporto singola fonte, campione, accessi, mapping e proposta verificati nel perimetro FON. Cache miss web risolti con lettura browser, senza accessi protetti; date cache/live distinte. Rinvii e titoli non uniformi sono caratteristiche della fonte già gestibili dalla procedura. Un errore iniziale di quoting PowerShell nell'apertura registro è stato corretto prima della scrittura, senza effetto sui dati: origine nel comando, non nella skill. Nessun difetto riproducibile della skill o modifica necessaria emersa. Restano non collaudati censimento integrale, PDF, traduzioni, login, implementazioni ed estrazione massiva. Secondo contesto collegato a TSK-0048 senza validità universale.
+
+## Salvataggio Git — 2026-10-06
+
+Su richiesta utente eseguiti commit selettivo e push su main: ef4d2c4bfa4230af71d66e9fc5cf91966fa1eb04. Audit del commit in uscita senza rilievi; 299 candidati preesistenti della working tree esclusi. Push riuscito e HEAD/origin/main coincidenti. Modifiche degli altri task preservate. Il contratto CAT e pubblicato, mentre la sua esecuzione resta nel task dedicato.

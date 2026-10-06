@@ -2262,11 +2262,12 @@
       ],
       "next_action": "Decisione sul perimetro, poi CAT pilota PerGioco autonomo.",
       "git": {
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "evidence": "Modifiche pregresse preservate; nessuna operazione Git mutativa.",
-        "synchronization": "da_verificare",
-        "checked_at": "2026-10-06"
+        "evidence": "Commit selettivo e push autorizzati; HEAD e origin/main coincidenti; modifiche estranee preservate.",
+        "synchronization": "remoto_verificato",
+        "checked_at": "2026-10-06",
+        "commit": "ef4d2c4bfa4230af71d66e9fc5cf91966fa1eb04"
       },
       "last_verified_at": "2026-10-06",
       "closed_at": "2026-10-06"
@@ -2302,9 +2303,11 @@
       "next_action": "Eseguire CAT pilota TSK-0074.",
       "git": {
         "checked_at": "2026-10-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare"
+        "synchronization": "remoto_verificato",
+        "commit": "ef4d2c4bfa4230af71d66e9fc5cf91966fa1eb04",
+        "evidence": "Commit selettivo e push autorizzati; HEAD e origin/main coincidenti; modifiche estranee preservate."
       },
       "title_history": [
         {
