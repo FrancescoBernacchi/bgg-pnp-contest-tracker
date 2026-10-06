@@ -2072,11 +2072,12 @@
       ],
       "next_action": "Proseguire sui 12 giochi autorizzati restanti; riesame facoltativo dei limiti login/WIP storico, nessuna nuova ACQ implicita",
       "git": {
-        "checked_at": "2026-10-05",
-        "local_save": "da_committare",
+        "checked_at": "2026-10-06",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Working tree main con modifiche pregresse; nessun commit/push autorizzato"
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "3dae102",
+        "evidence": "Commit selettivo 3dae102 e push origin/main verificati sul server 2026-10-06; attestazione salvata nel successivo commit documentale. Altre modifiche locali preservate."
       },
       "last_verified_at": "2026-10-05",
       "deliverables": [

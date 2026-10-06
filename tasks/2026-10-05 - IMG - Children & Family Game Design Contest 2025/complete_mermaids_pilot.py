@@ -84,4 +84,3 @@ def main():
     print(json.dumps(m['pilot_completion']))
 
 if __name__=='__main__': main()
-
