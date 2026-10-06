@@ -2152,10 +2152,11 @@
       ],
       "next_action": "Verifica utente e commit su richiesta",
       "git": {
-        "checked_at": "2026-10-04",
-        "local_save": "da_committare",
+        "checked_at": "2026-10-06",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare"
+        "synchronization": "allineato_origin",
+        "evidence": "Commit 21c1834412a5e88f2ed71745513d707c1781a481; push e hash origin/main verificati il 2026-10-06."
       },
       "coverage": "APP-009 implementata integralmente; dati invariati"
     },
@@ -2180,11 +2181,11 @@
       ],
       "next_action": "Verifica utente e commit su richiesta.",
       "git": {
-        "checked_at": "2026-10-04",
-        "local_save": "da_committare",
+        "checked_at": "2026-10-06",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Modifiche locali su main; nessun commit o push."
+        "synchronization": "allineato_origin",
+        "evidence": "Commit 21c1834412a5e88f2ed71745513d707c1781a481; push e hash origin/main verificati il 2026-10-06."
       },
       "coverage": "Tutte le fasi e annualità; browser desktop/mobile e casi limite verificati.",
       "current_title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
@@ -2219,13 +2220,13 @@
       "chat_ids": [
         "01a112a2-b03e-73e2-9d95-4365caa3e5e1"
       ],
-      "next_action": "Verifica utente; commit su richiesta. Supporto IMG futuro in TSK-0067.",
+      "next_action": "Verifica utente; supporto IMG futuro in TSK-0067.",
       "git": {
         "checked_at": "2026-10-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Incremento locale; molte modifiche pregresse preservate, nessuna operazione Git mutativa in questo task."
+        "synchronization": "allineato_origin",
+        "evidence": "Commit 21c1834412a5e88f2ed71745513d707c1781a481; push e hash origin/main verificati il 2026-10-06."
       },
       "coverage": "Avanzamento multifonte BGG/Kanare; quattro metriche Kanare, filtri, giochi/confezioni/schede; IMG senza selezione esplicita."
     }
