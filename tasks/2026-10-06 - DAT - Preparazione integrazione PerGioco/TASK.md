@@ -31,3 +31,7 @@ Revisione pubblicazione del nuovo incremento: soltanto metadati, DDL locale, lin
 Prossimo passo: decisione A/B e conferma del piano identità proposto. Solo dopo eventuale EPR, aprire separatamente esecuzione DAT; APP autonoma. Nessun approfondimento esterno è necessario per deliberare questa proposta; confronto Abande ulteriore da autorizzare in VER se richiesto.
 
 Follow-up documentale 2026-10-06: su richiesta utente preparato PROMPT_PROSSIMA_CHAT.md per deliberare l'opzione B in una nuova chat EPR. Nessuna chat/task EPR creati, nessuna adozione o implementazione. TSK-0075 resta completato; prompt verificato rispetto a proposta, confini e piano identità. Nessun cambiamento a copertura, stato o architettura: registro e cruscotto non richiedono un ulteriore aggiornamento.
+
+## Versionamento verificato — 2026-10-06
+
+Commit `6f3f274723adcc0d5c430179948574390d2a7bbd` su main: dieci file, preparazione DAT e prompt EPR, aggiornamenti condivisi selezionati senza includere modifiche estranee. Push origin/main riuscito e hash remoto verificato con ls-remote. Audit: zero segnalazioni nel commit in uscita; 299 segnalazioni pregresse su 30 percorsi, estranee al commit, restano da riesaminare. Database/materiali esclusi secondo .gitignore. Working tree conserva modifiche precedenti. Questa registrazione costituisce il successivo commit documentale autorizzato dalla richiesta commit e push; nessuna importazione o adozione B.

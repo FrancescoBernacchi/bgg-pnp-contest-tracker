@@ -2403,8 +2403,7 @@
         "local_save": "committato",
         "integration": "integrato_main",
         "synchronization": "remoto_verificato",
-        "evidence": "2026-10-06: commit pilota e push main riusciti; ls-remote hash identico, confronto 0/0. Esito in commit documentale successivo; modifiche pregresse escluse.",
-        "commit": "9ad9337a601a399212f3d43d761a24dec6023778"
+        "evidence": "Commit DAT 6f3f274723adcc0d5c430179948574390d2a7bbd su main; push origin riuscito, hash remoto verificato con ls-remote. Modifiche pregresse escluse; registrazione esito nel commit documentale successivo."
       },
       "verification_date": "2026-10-06",
       "events": [
