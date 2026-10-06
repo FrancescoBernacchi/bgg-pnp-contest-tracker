@@ -1,0 +1,4595 @@
+{
+  "task_id": "TSK-0077",
+  "migration": "013",
+  "logical_contract": "TSK-0076 B-v1",
+  "tables": {
+    "access_condition_links": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "access_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "condition_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "applicability_status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "condition_observations",
+          "condition_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "resource_access_observations",
+          "access_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "admission_evidence_mentions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "admission_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "mention_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "mention_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "evidence_role",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_resource_mention_observations",
+          "mention_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_resource_mentions",
+          "mention_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_admission_observations",
+          "admission_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "canonical_projection_events": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "identity_decision_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "target_game_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "target_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "name_observation_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "name_evidence_pointer",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "credit_assertion_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "relation_assertion_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "target_identity_decision_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "target_name_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "target_credit_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "relationship_to_game_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "relationship_type",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "projected_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "decision_ref",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "game_relationships",
+          "target_game_id",
+          "from_game_id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          0,
+          1,
+          "game_relationships",
+          "relationship_to_game_id",
+          "to_game_id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          0,
+          2,
+          "game_relationships",
+          "relationship_type",
+          "relationship_type",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "games",
+          "relationship_to_game_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "credit_assertions",
+          "target_credit_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          3,
+          0,
+          "game_names",
+          "target_name_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          4,
+          0,
+          "source_identity_decisions",
+          "target_identity_decision_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          5,
+          0,
+          "source_relation_assertions",
+          "relation_assertion_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          6,
+          0,
+          "source_credit_observations",
+          "credit_assertion_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          7,
+          0,
+          "source_record_observations",
+          "name_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          8,
+          0,
+          "games",
+          "target_game_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          9,
+          0,
+          "source_identity_decisions",
+          "identity_decision_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "common_classification_mappings": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "classification_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "common_concept_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "decision_ref",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "decision_status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "decided_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "rationale",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "common_classification_mappings",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_classification_observations",
+          "classification_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "condition_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "source_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "condition_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "scope_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "scope_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "condition_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "summary_original",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "page_updated_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "license_identifier",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "permission_state",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "registration_declared_free",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "newsletter_declared_free",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 24,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "condition_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "catalog_sources",
+          "source_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "instance_mention_assertions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "instance_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "mention_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "role",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "assertion_status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "cross_system_decision_ref",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "instance_mention_assertions",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_resource_mention_observations",
+          "mention_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "problem_instance_observations",
+          "instance_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "problem_instance_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "instance_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "date_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "published_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "date_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "label_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "context_locator",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "problem_instance_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "problem_instances",
+          "instance_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "problem_instances": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "instance_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "instance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "native_instance_id",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "created_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "resource_access_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "mention_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "subject_scope",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "access_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "access_normalized",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "content_observed",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "completeness_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "completeness_normalized",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "cost_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "cost_status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "amount",
+          "type": "REAL",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "currency",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "access_condition_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "playtested",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 24,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 25,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 26,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "resource_access_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_resource_mention_observations",
+          "mention_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "resource_url_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "mention_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "requested_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "final_url",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "destination_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "redirect_chain_json",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "technical_status_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "scope_checked",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "resource_url_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_resource_mention_observations",
+          "mention_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_admission_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "policy_ref",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "policy_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "requirement_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "outcome_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "outcome_normalized",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "completeness_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "assessment_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_admission_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_classification_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "label_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "kind_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "path_state",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "segment_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "segment_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "index_title_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "exhaustiveness_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_classification_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_classification_segments": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "classification_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "position",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "label_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_classification_observations",
+          "classification_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_credit_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "name_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "role_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "status_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "subject_context_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "subject_record_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "subject_label_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "party_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "resolved_person_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "resolution_decision_ref",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_credit_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "people",
+          "resolved_person_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_records",
+          "subject_record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          3,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_identity_decisions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "game_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "decision_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "decided_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "decision_ref",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "rationale",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "previous_decision_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_identity_decisions",
+          "previous_decision_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "games",
+          "game_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_record_keys": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "source_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "local_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "key_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "assigned_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "task_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "catalog_sources",
+          "source_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_record_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "event_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "payload_json",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "payload_sha256",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "schema_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "title_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "display_title_qualified",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "year_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "year_value",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "year_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "page_updated_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "development_status_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "development_status_normalized",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "coverage_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "coverage_state",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "parent_observation_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 24,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 25,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 26,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 27,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 28,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 29,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_record_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_record_observations",
+          "parent_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_record_url_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "url_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "url_role",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "request_event_key",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "predecessor_url_observation_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "redirect_position",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "destination_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "technical_status_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_record_url_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_record_url_observations",
+          "predecessor_url_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          3,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_relation_assertions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "from_record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "to_record_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "target_label_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "target_url",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "relation_type_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "relation_type_normalized",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "assertion_status",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "information_requirement",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "ownership_requirement",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "purchase_requirement",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 24,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_relation_assertions",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_records",
+          "to_record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_records",
+          "from_record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          3,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_resource_mention_observations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "mention_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "record_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "declared_url",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "resource_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "function_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "technical_form_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "language_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "declaration_state",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "context_summary",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "destination_status_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "source_url",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "observed_at",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "observed_precision",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": "'unknown'",
+          "pk": 0
+        },
+        {
+          "cid": 15,
+          "name": "unknown_reason",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 16,
+          "name": "formalized_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 17,
+          "name": "evidence_path",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 18,
+          "name": "evidence_pointer",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 19,
+          "name": "provenance_kind",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 20,
+          "name": "raw_value",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 21,
+          "name": "assessment_note",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 22,
+          "name": "mapping_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 23,
+          "name": "supersedes_id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_resource_mention_observations",
+          "supersedes_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "catalog_resources",
+          "resource_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          2,
+          0,
+          "source_record_observations",
+          "record_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          3,
+          0,
+          "source_resource_mentions",
+          "mention_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    },
+    "source_resource_mentions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "id",
+          "type": "INTEGER",
+          "notnull": 0,
+          "default": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "stable_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "record_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "mention_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "first_observation_id",
+          "type": "INTEGER",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "function_raw",
+          "type": "TEXT",
+          "notnull": 1,
+          "default": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "label_raw",
+          "type": "TEXT",
+          "notnull": 0,
+          "default": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        [
+          0,
+          0,
+          "source_record_observations",
+          "first_observation_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ],
+        [
+          1,
+          0,
+          "source_records",
+          "record_id",
+          "id",
+          "NO ACTION",
+          "RESTRICT",
+          "NONE"
+        ]
+      ]
+    }
+  },
+  "objects": [
+    [
+      "index",
+      "idx_admission_evidence_mentions_mention_id",
+      "admission_evidence_mentions",
+      "CREATE INDEX idx_admission_evidence_mentions_mention_id ON admission_evidence_mentions(mention_id)"
+    ],
+    [
+      "index",
+      "idx_admission_evidence_mentions_mention_observation_id",
+      "admission_evidence_mentions",
+      "CREATE INDEX idx_admission_evidence_mentions_mention_observation_id ON admission_evidence_mentions(mention_observation_id)"
+    ],
+    [
+      "index",
+      "idx_canonical_projection_events_identity_decision_id",
+      "canonical_projection_events",
+      "CREATE INDEX idx_canonical_projection_events_identity_decision_id ON canonical_projection_events(identity_decision_id)"
+    ],
+    [
+      "index",
+      "idx_condition_observations_source_id",
+      "condition_observations",
+      "CREATE INDEX idx_condition_observations_source_id ON condition_observations(source_id)"
+    ],
+    [
+      "index",
+      "idx_instance_mention_assertions_mention_observation_id",
+      "instance_mention_assertions",
+      "CREATE INDEX idx_instance_mention_assertions_mention_observation_id ON instance_mention_assertions(mention_observation_id)"
+    ],
+    [
+      "index",
+      "idx_problem_instance_observations_instance_id",
+      "problem_instance_observations",
+      "CREATE INDEX idx_problem_instance_observations_instance_id ON problem_instance_observations(instance_id)"
+    ],
+    [
+      "index",
+      "idx_problem_instance_observations_record_observation_id",
+      "problem_instance_observations",
+      "CREATE INDEX idx_problem_instance_observations_record_observation_id ON problem_instance_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_problem_instances_record_id",
+      "problem_instances",
+      "CREATE INDEX idx_problem_instances_record_id ON problem_instances(record_id)"
+    ],
+    [
+      "index",
+      "idx_resource_access_observations_mention_observation_id",
+      "resource_access_observations",
+      "CREATE INDEX idx_resource_access_observations_mention_observation_id ON resource_access_observations(mention_observation_id)"
+    ],
+    [
+      "index",
+      "idx_resource_url_observations_mention_observation_id",
+      "resource_url_observations",
+      "CREATE INDEX idx_resource_url_observations_mention_observation_id ON resource_url_observations(mention_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_admission_observations_record_observation_id",
+      "source_admission_observations",
+      "CREATE INDEX idx_source_admission_observations_record_observation_id ON source_admission_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_classification_observations_record_observation_id",
+      "source_classification_observations",
+      "CREATE INDEX idx_source_classification_observations_record_observation_id ON source_classification_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_credit_observations_record_observation_id",
+      "source_credit_observations",
+      "CREATE INDEX idx_source_credit_observations_record_observation_id ON source_credit_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_identity_decisions_record_id",
+      "source_identity_decisions",
+      "CREATE INDEX idx_source_identity_decisions_record_id ON source_identity_decisions(record_id)"
+    ],
+    [
+      "index",
+      "idx_source_record_keys_record_id",
+      "source_record_keys",
+      "CREATE INDEX idx_source_record_keys_record_id ON source_record_keys(record_id)"
+    ],
+    [
+      "index",
+      "idx_source_record_keys_source_id",
+      "source_record_keys",
+      "CREATE INDEX idx_source_record_keys_source_id ON source_record_keys(source_id)"
+    ],
+    [
+      "index",
+      "idx_source_record_observations_record_id",
+      "source_record_observations",
+      "CREATE INDEX idx_source_record_observations_record_id ON source_record_observations(record_id)"
+    ],
+    [
+      "index",
+      "idx_source_record_url_observations_record_id",
+      "source_record_url_observations",
+      "CREATE INDEX idx_source_record_url_observations_record_id ON source_record_url_observations(record_id)"
+    ],
+    [
+      "index",
+      "idx_source_record_url_observations_record_observation_id",
+      "source_record_url_observations",
+      "CREATE INDEX idx_source_record_url_observations_record_observation_id ON source_record_url_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_relation_assertions_record_observation_id",
+      "source_relation_assertions",
+      "CREATE INDEX idx_source_relation_assertions_record_observation_id ON source_relation_assertions(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_resource_mention_observations_mention_id",
+      "source_resource_mention_observations",
+      "CREATE INDEX idx_source_resource_mention_observations_mention_id ON source_resource_mention_observations(mention_id)"
+    ],
+    [
+      "index",
+      "idx_source_resource_mention_observations_record_observation_id",
+      "source_resource_mention_observations",
+      "CREATE INDEX idx_source_resource_mention_observations_record_observation_id ON source_resource_mention_observations(record_observation_id)"
+    ],
+    [
+      "index",
+      "idx_source_resource_mentions_record_id",
+      "source_resource_mentions",
+      "CREATE INDEX idx_source_resource_mentions_record_id ON source_resource_mentions(record_id)"
+    ],
+    [
+      "table",
+      "access_condition_links",
+      "access_condition_links",
+      "CREATE TABLE access_condition_links (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    access_observation_id INTEGER NOT NULL REFERENCES resource_access_observations(id) ON DELETE RESTRICT,\n    condition_observation_id INTEGER NOT NULL REFERENCES condition_observations(id) ON DELETE RESTRICT,\n    applicability_status TEXT NOT NULL CHECK (applicability_status IN ('declared','attested','uncertain')),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    UNIQUE (access_observation_id, condition_observation_id)\n)"
+    ],
+    [
+      "table",
+      "admission_evidence_mentions",
+      "admission_evidence_mentions",
+      "CREATE TABLE admission_evidence_mentions (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    admission_id INTEGER NOT NULL REFERENCES source_admission_observations(id) ON DELETE RESTRICT,\n    mention_id INTEGER NOT NULL REFERENCES source_resource_mentions(id) ON DELETE RESTRICT,\n    mention_observation_id INTEGER NOT NULL REFERENCES source_resource_mention_observations(id) ON DELETE RESTRICT,\n    evidence_role TEXT NOT NULL CHECK (evidence_role IS NULL OR length(trim(evidence_role)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    UNIQUE (admission_id, mention_observation_id, evidence_role)\n)"
+    ],
+    [
+      "table",
+      "canonical_projection_events",
+      "canonical_projection_events",
+      "CREATE TABLE canonical_projection_events (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    identity_decision_id INTEGER NOT NULL REFERENCES source_identity_decisions(id) ON DELETE RESTRICT,\n    target_game_id INTEGER NOT NULL REFERENCES games(id) ON DELETE RESTRICT,\n    target_kind TEXT NOT NULL CHECK (target_kind IN ('identity','name','credit','relationship')),\n    name_observation_id INTEGER NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    name_evidence_pointer TEXT,\n    credit_assertion_id INTEGER NULL REFERENCES source_credit_observations(id) ON DELETE RESTRICT,\n    relation_assertion_id INTEGER NULL REFERENCES source_relation_assertions(id) ON DELETE RESTRICT,\n    target_identity_decision_id INTEGER NULL REFERENCES source_identity_decisions(id) ON DELETE RESTRICT,\n    target_name_id INTEGER NULL REFERENCES game_names(id) ON DELETE RESTRICT,\n    target_credit_id INTEGER NULL REFERENCES credit_assertions(id) ON DELETE RESTRICT,\n    relationship_to_game_id INTEGER NULL REFERENCES games(id) ON DELETE RESTRICT,\n    relationship_type TEXT,\n    projected_at TEXT NOT NULL CHECK (projected_at IS NULL OR length(trim(projected_at)) > 0),\n    decision_ref TEXT NOT NULL CHECK (decision_ref IS NULL OR length(trim(decision_ref)) > 0),\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    CHECK((target_kind='identity' AND name_observation_id IS NULL AND credit_assertion_id IS NULL AND relation_assertion_id IS NULL AND target_name_id IS NULL AND target_credit_id IS NULL AND relationship_to_game_id IS NULL AND relationship_type IS NULL AND target_identity_decision_id IS NULL) OR (target_kind='name' AND name_observation_id IS NOT NULL AND name_evidence_pointer IS NOT NULL AND target_name_id IS NOT NULL AND credit_assertion_id IS NULL AND relation_assertion_id IS NULL AND target_credit_id IS NULL AND relationship_to_game_id IS NULL AND relationship_type IS NULL AND target_identity_decision_id IS NULL) OR (target_kind='credit' AND credit_assertion_id IS NOT NULL AND target_credit_id IS NOT NULL AND name_observation_id IS NULL AND relation_assertion_id IS NULL AND target_name_id IS NULL AND relationship_to_game_id IS NULL AND relationship_type IS NULL AND target_identity_decision_id IS NULL) OR (target_kind='relationship' AND relation_assertion_id IS NOT NULL AND target_identity_decision_id IS NOT NULL AND relationship_to_game_id IS NOT NULL AND relationship_type IS NOT NULL AND name_observation_id IS NULL AND credit_assertion_id IS NULL AND target_name_id IS NULL AND target_credit_id IS NULL)),\n    FOREIGN KEY(target_game_id,relationship_to_game_id,relationship_type) REFERENCES game_relationships(from_game_id,to_game_id,relationship_type) ON DELETE RESTRICT\n)"
+    ],
+    [
+      "table",
+      "common_classification_mappings",
+      "common_classification_mappings",
+      "CREATE TABLE common_classification_mappings (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    classification_id INTEGER NOT NULL REFERENCES source_classification_observations(id) ON DELETE RESTRICT,\n    common_concept_key TEXT NOT NULL CHECK (common_concept_key IS NULL OR length(trim(common_concept_key)) > 0),\n    decision_ref TEXT NOT NULL CHECK (decision_ref IS NULL OR length(trim(decision_ref)) > 0),\n    decision_status TEXT NOT NULL CHECK (decision_status IN ('proposed','confirmed','rejected')),\n    decided_at TEXT NOT NULL CHECK (decided_at IS NULL OR length(trim(decided_at)) > 0),\n    rationale TEXT NOT NULL CHECK (rationale IS NULL OR length(trim(rationale)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES common_classification_mappings(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "condition_observations",
+      "condition_observations",
+      "CREATE TABLE condition_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    source_id INTEGER NOT NULL REFERENCES catalog_sources(id) ON DELETE RESTRICT,\n    condition_key TEXT NOT NULL CHECK (condition_key IS NULL OR length(trim(condition_key)) > 0),\n    scope_raw TEXT NOT NULL CHECK (scope_raw IS NULL OR length(trim(scope_raw)) > 0),\n    scope_kind TEXT NOT NULL CHECK (scope_kind IS NULL OR length(trim(scope_kind)) > 0),\n    condition_url TEXT NOT NULL CHECK (condition_url IS NULL OR length(trim(condition_url)) > 0),\n    summary_original TEXT NOT NULL CHECK (summary_original IS NULL OR length(trim(summary_original)) > 0),\n    page_updated_raw TEXT,\n    license_identifier TEXT,\n    permission_state TEXT NOT NULL DEFAULT 'unknown' CHECK (permission_state IN ('unknown','declared','attested')),\n    registration_declared_free INTEGER CHECK(registration_declared_free IN (0,1)),\n    newsletter_declared_free INTEGER CHECK(newsletter_declared_free IN (0,1)),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES condition_observations(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "instance_mention_assertions",
+      "instance_mention_assertions",
+      "CREATE TABLE instance_mention_assertions (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    instance_observation_id INTEGER NOT NULL REFERENCES problem_instance_observations(id) ON DELETE RESTRICT,\n    mention_observation_id INTEGER NOT NULL REFERENCES source_resource_mention_observations(id) ON DELETE RESTRICT,\n    role TEXT NOT NULL CHECK (role IN ('appears_in','solution_for')),\n    assertion_status TEXT NOT NULL CHECK (assertion_status IS NULL OR length(trim(assertion_status)) > 0),\n    cross_system_decision_ref TEXT NULL CHECK (cross_system_decision_ref IS NULL OR length(trim(cross_system_decision_ref)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES instance_mention_assertions(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id),\n    UNIQUE (instance_observation_id, mention_observation_id, role)\n)"
+    ],
+    [
+      "table",
+      "problem_instance_observations",
+      "problem_instance_observations",
+      "CREATE TABLE problem_instance_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    instance_id INTEGER NOT NULL REFERENCES problem_instances(id) ON DELETE RESTRICT,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    date_raw TEXT,\n    published_at TEXT,\n    date_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (date_precision IN ('day','timestamp','year','unknown')),\n    label_raw TEXT,\n    context_locator TEXT NOT NULL CHECK (context_locator IS NULL OR length(trim(context_locator)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES problem_instance_observations(id) ON DELETE RESTRICT,\n    CHECK(published_at IS NULL OR (date_precision='year' AND length(published_at)=4) OR (date_precision IN ('day','timestamp') AND julianday(published_at) IS NOT NULL)),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "problem_instances",
+      "problem_instances",
+      "CREATE TABLE problem_instances (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    instance_key TEXT NOT NULL CHECK (instance_key IS NULL OR length(trim(instance_key)) > 0),\n    instance_kind TEXT NOT NULL CHECK (instance_kind IS NULL OR length(trim(instance_kind)) > 0),\n    native_instance_id TEXT NULL CHECK (native_instance_id IS NULL OR length(trim(native_instance_id)) > 0),\n    created_at TEXT NOT NULL CHECK (created_at IS NULL OR length(trim(created_at)) > 0),\n    UNIQUE (record_id, instance_key)\n)"
+    ],
+    [
+      "table",
+      "resource_access_observations",
+      "resource_access_observations",
+      "CREATE TABLE resource_access_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    mention_observation_id INTEGER NOT NULL REFERENCES source_resource_mention_observations(id) ON DELETE RESTRICT,\n    subject_scope TEXT NOT NULL CHECK (subject_scope IN ('public_content','complete_rules','components_product','online_implementation')),\n    access_raw TEXT NOT NULL CHECK (access_raw IS NULL OR length(trim(access_raw)) > 0),\n    access_normalized TEXT NOT NULL CHECK (access_normalized IS NULL OR length(trim(access_normalized)) > 0),\n    content_observed INTEGER CHECK(content_observed IN (0,1)),\n    completeness_raw TEXT,\n    completeness_normalized TEXT NOT NULL CHECK (completeness_normalized IS NULL OR length(trim(completeness_normalized)) > 0),\n    cost_raw TEXT,\n    cost_status TEXT NOT NULL DEFAULT 'unknown' CHECK (cost_status IN ('unknown','free_declared','free_observed','paid_declared','paid_observed')),\n    amount REAL CHECK(amount>=0),\n    currency TEXT,\n    access_condition_raw TEXT,\n    playtested INTEGER CHECK(playtested IN (0,1)),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES resource_access_observations(id) ON DELETE RESTRICT,\n    CHECK(amount IS NULL OR length(trim(coalesce(currency,'')))>0),\n    CHECK(cost_status NOT IN ('free_observed','free_declared') OR amount IS NULL OR amount=0),\n    CHECK(cost_status<>'free_observed' OR content_observed IS 1),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "resource_url_observations",
+      "resource_url_observations",
+      "CREATE TABLE resource_url_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    mention_observation_id INTEGER NOT NULL REFERENCES source_resource_mention_observations(id) ON DELETE RESTRICT,\n    requested_url TEXT NOT NULL CHECK (requested_url IS NULL OR length(trim(requested_url)) > 0),\n    final_url TEXT NULL CHECK (final_url IS NULL OR length(trim(final_url)) > 0),\n    destination_kind TEXT NOT NULL DEFAULT 'unknown' CHECK (destination_kind IN ('content','login','unknown')),\n    redirect_chain_json TEXT CHECK(redirect_chain_json IS NULL OR (json_valid(redirect_chain_json) AND json_type(redirect_chain_json)='array')),\n    technical_status_raw TEXT,\n    scope_checked TEXT NOT NULL CHECK (scope_checked IS NULL OR length(trim(scope_checked)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES resource_url_observations(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_admission_observations",
+      "source_admission_observations",
+      "CREATE TABLE source_admission_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    policy_ref TEXT NOT NULL CHECK (policy_ref IS NULL OR length(trim(policy_ref)) > 0),\n    policy_version TEXT NOT NULL CHECK (policy_version IS NULL OR length(trim(policy_version)) > 0),\n    requirement_key TEXT NOT NULL CHECK (requirement_key IS NULL OR length(trim(requirement_key)) > 0),\n    outcome_raw TEXT NOT NULL CHECK (outcome_raw IS NULL OR length(trim(outcome_raw)) > 0),\n    outcome_normalized TEXT NOT NULL DEFAULT 'unknown' CHECK (outcome_normalized IN ('admitted','requirement_not_demonstrated','not_observable','unknown')),\n    completeness_raw TEXT,\n    assessment_kind TEXT NOT NULL CHECK (assessment_kind IS NULL OR length(trim(assessment_kind)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_admission_observations(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_classification_observations",
+      "source_classification_observations",
+      "CREATE TABLE source_classification_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    label_raw TEXT NOT NULL CHECK (label_raw IS NULL OR length(trim(label_raw)) > 0),\n    kind_raw TEXT NOT NULL CHECK (kind_raw IS NULL OR length(trim(kind_raw)) > 0),\n    path_state TEXT NOT NULL CHECK (path_state IN ('observed','not_declared','not_observable')),\n    segment_count INTEGER NOT NULL CHECK(segment_count>=0),\n    segment_raw TEXT,\n    index_title_raw TEXT,\n    exhaustiveness_raw TEXT,\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_classification_observations(id) ON DELETE RESTRICT,\n    CHECK(path_state='observed' OR segment_count=0),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_classification_segments",
+      "source_classification_segments",
+      "CREATE TABLE source_classification_segments (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    classification_id INTEGER NOT NULL REFERENCES source_classification_observations(id) ON DELETE RESTRICT,\n    position INTEGER NOT NULL CHECK(position>=0),\n    label_raw TEXT NOT NULL CHECK (label_raw IS NULL OR length(trim(label_raw)) > 0),\n    UNIQUE (classification_id, position)\n)"
+    ],
+    [
+      "table",
+      "source_credit_observations",
+      "source_credit_observations",
+      "CREATE TABLE source_credit_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    name_raw TEXT NULL CHECK (name_raw IS NULL OR length(trim(name_raw)) > 0),\n    role_raw TEXT NOT NULL CHECK (role_raw IS NULL OR length(trim(role_raw)) > 0),\n    status_raw TEXT NOT NULL CHECK (status_raw IS NULL OR length(trim(status_raw)) > 0),\n    subject_context_raw TEXT,\n    subject_record_id INTEGER NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    subject_label_raw TEXT,\n    party_kind TEXT NOT NULL DEFAULT 'unknown' CHECK (party_kind IN ('person','organization','unknown')),\n    resolved_person_id INTEGER NULL REFERENCES people(id) ON DELETE RESTRICT,\n    resolution_decision_ref TEXT NULL CHECK (resolution_decision_ref IS NULL OR length(trim(resolution_decision_ref)) > 0),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_credit_observations(id) ON DELETE RESTRICT,\n    CHECK(name_raw IS NOT NULL OR status_raw IN ('not_declared','not_registered','unnamed')),\n    CHECK(resolved_person_id IS NULL OR (name_raw IS NOT NULL AND party_kind='person' AND resolution_decision_ref IS NOT NULL)),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_identity_decisions",
+      "source_identity_decisions",
+      "CREATE TABLE source_identity_decisions (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    game_id INTEGER NULL REFERENCES games(id) ON DELETE RESTRICT,\n    decision_kind TEXT NOT NULL CHECK (decision_kind IN ('create_new','match')),\n    status TEXT NOT NULL CHECK (status IN ('proposed','candidate','confirmed','rejected')),\n    decided_at TEXT,\n    decision_ref TEXT NOT NULL CHECK (decision_ref IS NULL OR length(trim(decision_ref)) > 0),\n    rationale TEXT NOT NULL CHECK (rationale IS NULL OR length(trim(rationale)) > 0),\n    previous_decision_id INTEGER NULL REFERENCES source_identity_decisions(id) ON DELETE RESTRICT,\n    CHECK(status='proposed' OR (game_id IS NOT NULL AND decided_at IS NOT NULL))\n)"
+    ],
+    [
+      "table",
+      "source_record_keys",
+      "source_record_keys",
+      "CREATE TABLE source_record_keys (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    source_id INTEGER NOT NULL REFERENCES catalog_sources(id) ON DELETE RESTRICT,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    local_key TEXT NOT NULL CHECK (local_key IS NULL OR length(trim(local_key)) > 0),\n    key_kind TEXT NOT NULL CHECK (key_kind IS NULL OR length(trim(key_kind)) > 0),\n    assigned_at TEXT NOT NULL CHECK (assigned_at IS NULL OR length(trim(assigned_at)) > 0),\n    task_id TEXT NOT NULL CHECK (task_id IS NULL OR length(trim(task_id)) > 0),\n    UNIQUE (source_id, local_key)\n)"
+    ],
+    [
+      "table",
+      "source_record_observations",
+      "source_record_observations",
+      "CREATE TABLE source_record_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    event_key TEXT NOT NULL CHECK (event_key IS NULL OR length(trim(event_key)) > 0),\n    payload_json TEXT NOT NULL CHECK(json_valid(payload_json) AND json_type(payload_json)='object'),\n    payload_sha256 TEXT NOT NULL CHECK(length(payload_sha256)=64 AND payload_sha256 NOT GLOB '*[^0-9a-f]*'),\n    schema_version TEXT NOT NULL CHECK (schema_version IS NULL OR length(trim(schema_version)) > 0),\n    title_raw TEXT,\n    display_title_qualified TEXT,\n    year_raw TEXT,\n    year_value INTEGER,\n    year_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (year_precision IN ('year','unknown')),\n    page_updated_raw TEXT,\n    development_status_raw TEXT,\n    development_status_normalized TEXT NOT NULL DEFAULT 'unknown' CHECK(development_status_normalized NOT IN ('admitted','requirement_not_demonstrated')),\n    coverage_kind TEXT NOT NULL CHECK (coverage_kind IS NULL OR length(trim(coverage_kind)) > 0),\n    coverage_state TEXT NOT NULL DEFAULT 'unknown' CHECK (coverage_state IN ('complete','partial','blocked','unknown')),\n    parent_observation_id INTEGER NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id),\n    UNIQUE (record_id, event_key, payload_sha256, mapping_version)\n)"
+    ],
+    [
+      "table",
+      "source_record_url_observations",
+      "source_record_url_observations",
+      "CREATE TABLE source_record_url_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    url_raw TEXT NOT NULL CHECK (url_raw IS NULL OR length(trim(url_raw)) > 0),\n    url_role TEXT NOT NULL CHECK (url_role IN ('historical','requested','final','declared')),\n    request_event_key TEXT,\n    predecessor_url_observation_id INTEGER NULL REFERENCES source_record_url_observations(id) ON DELETE RESTRICT,\n    redirect_position INTEGER CHECK(redirect_position>=0),\n    destination_kind TEXT NOT NULL DEFAULT 'unknown' CHECK (destination_kind IN ('content','login','unknown')),\n    technical_status_raw TEXT,\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_record_url_observations(id) ON DELETE RESTRICT,\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_relation_assertions",
+      "source_relation_assertions",
+      "CREATE TABLE source_relation_assertions (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    from_record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    to_record_id INTEGER NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    target_label_raw TEXT NULL CHECK (target_label_raw IS NULL OR length(trim(target_label_raw)) > 0),\n    target_url TEXT NULL CHECK (target_url IS NULL OR length(trim(target_url)) > 0),\n    relation_type_raw TEXT NOT NULL CHECK (relation_type_raw IS NULL OR length(trim(relation_type_raw)) > 0),\n    relation_type_normalized TEXT NOT NULL CHECK (relation_type_normalized IS NULL OR length(trim(relation_type_normalized)) > 0),\n    assertion_status TEXT NOT NULL CHECK (assertion_status IS NULL OR length(trim(assertion_status)) > 0),\n    information_requirement TEXT NOT NULL DEFAULT 'unknown' CHECK (information_requirement IN ('unknown','none','optional','required')),\n    ownership_requirement TEXT NOT NULL DEFAULT 'unknown' CHECK (ownership_requirement IN ('unknown','none','optional','required')),\n    purchase_requirement TEXT NOT NULL DEFAULT 'unknown' CHECK (purchase_requirement IN ('unknown','none','optional','required')),\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_relation_assertions(id) ON DELETE RESTRICT,\n    CHECK(to_record_id IS NOT NULL OR target_label_raw IS NOT NULL OR target_url IS NOT NULL),\n    CHECK(to_record_id IS NULL OR to_record_id<>from_record_id),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_resource_mention_observations",
+      "source_resource_mention_observations",
+      "CREATE TABLE source_resource_mention_observations (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    mention_id INTEGER NOT NULL REFERENCES source_resource_mentions(id) ON DELETE RESTRICT,\n    record_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    declared_url TEXT NULL CHECK (declared_url IS NULL OR length(trim(declared_url)) > 0),\n    resource_id INTEGER NULL REFERENCES catalog_resources(id) ON DELETE RESTRICT,\n    function_raw TEXT NOT NULL CHECK (function_raw IS NULL OR length(trim(function_raw)) > 0),\n    technical_form_raw TEXT,\n    language_raw TEXT,\n    declaration_state TEXT NOT NULL CHECK (declaration_state IS NULL OR length(trim(declaration_state)) > 0),\n    context_summary TEXT,\n    destination_status_raw TEXT,\n    source_url TEXT NOT NULL CHECK (source_url IS NULL OR length(trim(source_url)) > 0),\n    observed_at TEXT,\n    observed_precision TEXT NOT NULL DEFAULT 'unknown' CHECK (observed_precision IN ('day','timestamp','unknown')),\n    unknown_reason TEXT,\n    formalized_at TEXT NOT NULL CHECK (formalized_at IS NULL OR length(trim(formalized_at)) > 0),\n    evidence_path TEXT NOT NULL CHECK (evidence_path IS NULL OR length(trim(evidence_path)) > 0),\n    evidence_pointer TEXT NOT NULL CHECK (evidence_pointer IS NULL OR length(trim(evidence_pointer)) > 0),\n    provenance_kind TEXT NOT NULL CHECK (provenance_kind IN ('observed','reused','later_formalization')),\n    raw_value TEXT,\n    assessment_note TEXT,\n    mapping_version TEXT NOT NULL CHECK (mapping_version IS NULL OR length(trim(mapping_version)) > 0),\n    supersedes_id INTEGER NULL REFERENCES source_resource_mention_observations(id) ON DELETE RESTRICT,\n    CHECK ((declared_url IS NULL AND resource_id IS NULL) OR declared_url IS NOT NULL),\n    CHECK ((observed_at IS NULL AND observed_precision='unknown' AND length(trim(coalesce(unknown_reason,'')))>0) OR (observed_at IS NOT NULL AND observed_precision<>'unknown' AND julianday(observed_at) IS NOT NULL)),\n    CHECK (observed_precision<>'day' OR (length(observed_at)=10 AND date(observed_at,'+0 days')=observed_at)),\n    CHECK (observed_precision<>'timestamp' OR (instr(observed_at,'T')>0 AND (substr(observed_at,-1)='Z' OR substr(observed_at,-6,1) IN ('+','-')))),\n    CHECK (julianday(formalized_at) IS NOT NULL AND instr(formalized_at,'T')>0 AND (substr(formalized_at,-1)='Z' OR substr(formalized_at,-6,1) IN ('+','-'))),\n    CHECK (supersedes_id IS NULL OR supersedes_id<>id)\n)"
+    ],
+    [
+      "table",
+      "source_resource_mentions",
+      "source_resource_mentions",
+      "CREATE TABLE source_resource_mentions (\n    id INTEGER PRIMARY KEY,\n    stable_key TEXT NOT NULL CHECK (stable_key IS NULL OR length(trim(stable_key)) > 0) UNIQUE,\n    record_id INTEGER NOT NULL REFERENCES source_records(id) ON DELETE RESTRICT,\n    mention_key TEXT NOT NULL CHECK (mention_key IS NULL OR length(trim(mention_key)) > 0),\n    first_observation_id INTEGER NOT NULL REFERENCES source_record_observations(id) ON DELETE RESTRICT,\n    function_raw TEXT NOT NULL CHECK (function_raw IS NULL OR length(trim(function_raw)) > 0),\n    label_raw TEXT,\n    UNIQUE (record_id, mention_key)\n)"
+    ],
+    [
+      "trigger",
+      "access_condition_links_check_8",
+      "access_condition_links",
+      "CREATE TRIGGER access_condition_links_check_8 BEFORE INSERT ON access_condition_links WHEN NOT EXISTS(SELECT 1 FROM resource_access_observations a JOIN source_resource_mention_observations m ON m.id=a.mention_observation_id JOIN source_record_observations o ON o.id=m.record_observation_id JOIN source_records r ON r.id=o.record_id JOIN condition_observations c ON c.source_id=r.source_id WHERE a.id=NEW.access_observation_id AND c.id=NEW.condition_observation_id) BEGIN SELECT RAISE(ABORT,'conditions must belong to contextual source'); END"
+    ],
+    [
+      "trigger",
+      "access_condition_links_no_delete",
+      "access_condition_links",
+      "CREATE TRIGGER access_condition_links_no_delete BEFORE DELETE ON access_condition_links BEGIN SELECT RAISE(ABORT,'append-only: access_condition_links'); END"
+    ],
+    [
+      "trigger",
+      "access_condition_links_no_replace",
+      "access_condition_links",
+      "CREATE TRIGGER access_condition_links_no_replace BEFORE INSERT ON access_condition_links WHEN EXISTS(SELECT 1 FROM access_condition_links p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM access_condition_links p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM access_condition_links p WHERE p.access_observation_id IS NEW.access_observation_id AND p.condition_observation_id IS NEW.condition_observation_id) BEGIN SELECT RAISE(ABORT,'immutable key collision: access_condition_links'); END"
+    ],
+    [
+      "trigger",
+      "access_condition_links_no_update",
+      "access_condition_links",
+      "CREATE TRIGGER access_condition_links_no_update BEFORE UPDATE ON access_condition_links BEGIN SELECT RAISE(ABORT,'append-only: access_condition_links'); END"
+    ],
+    [
+      "trigger",
+      "admission_evidence_mentions_check_28",
+      "admission_evidence_mentions",
+      "CREATE TRIGGER admission_evidence_mentions_check_28 BEFORE INSERT ON admission_evidence_mentions WHEN NEW.mention_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_resource_mention_observations p WHERE p.id=NEW.mention_observation_id AND p.mention_id IS NEW.mention_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "admission_evidence_mentions_check_5",
+      "admission_evidence_mentions",
+      "CREATE TRIGGER admission_evidence_mentions_check_5 BEFORE INSERT ON admission_evidence_mentions WHEN NOT EXISTS(SELECT 1 FROM source_admission_observations a JOIN source_record_observations o ON o.id=a.record_observation_id JOIN source_resource_mentions m ON m.record_id=o.record_id WHERE a.id=NEW.admission_id AND m.id=NEW.mention_id) BEGIN SELECT RAISE(ABORT,'admission evidence requires its record context'); END"
+    ],
+    [
+      "trigger",
+      "admission_evidence_mentions_no_delete",
+      "admission_evidence_mentions",
+      "CREATE TRIGGER admission_evidence_mentions_no_delete BEFORE DELETE ON admission_evidence_mentions BEGIN SELECT RAISE(ABORT,'append-only: admission_evidence_mentions'); END"
+    ],
+    [
+      "trigger",
+      "admission_evidence_mentions_no_replace",
+      "admission_evidence_mentions",
+      "CREATE TRIGGER admission_evidence_mentions_no_replace BEFORE INSERT ON admission_evidence_mentions WHEN EXISTS(SELECT 1 FROM admission_evidence_mentions p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM admission_evidence_mentions p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM admission_evidence_mentions p WHERE p.admission_id IS NEW.admission_id AND p.mention_observation_id IS NEW.mention_observation_id AND p.evidence_role IS NEW.evidence_role) BEGIN SELECT RAISE(ABORT,'immutable key collision: admission_evidence_mentions'); END"
+    ],
+    [
+      "trigger",
+      "admission_evidence_mentions_no_update",
+      "admission_evidence_mentions",
+      "CREATE TRIGGER admission_evidence_mentions_no_update BEFORE UPDATE ON admission_evidence_mentions BEGIN SELECT RAISE(ABORT,'append-only: admission_evidence_mentions'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_check_12",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_check_12 BEFORE INSERT ON canonical_projection_events WHEN NOT EXISTS(SELECT 1 FROM source_identity_decisions d WHERE d.id=NEW.identity_decision_id AND d.status='confirmed' AND d.game_id=NEW.target_game_id) BEGIN SELECT RAISE(ABORT,'canonical projection needs confirmed identity'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_check_13",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_check_13 BEFORE INSERT ON canonical_projection_events WHEN NEW.target_kind='identity' AND NOT EXISTS(SELECT 1 FROM game_source_records g JOIN source_identity_decisions d ON d.record_id=g.source_record_id WHERE d.id=NEW.identity_decision_id AND g.game_id=NEW.target_game_id AND g.match_status='confirmed') BEGIN SELECT RAISE(ABORT,'identity projection must match canonical link'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_check_14",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_check_14 BEFORE INSERT ON canonical_projection_events WHEN NEW.target_kind='name' AND NOT EXISTS(SELECT 1 FROM source_identity_decisions d JOIN source_record_observations o ON o.record_id=d.record_id JOIN game_names n ON n.source_record_id=d.record_id WHERE d.id=NEW.identity_decision_id AND o.id=NEW.name_observation_id AND n.id=NEW.target_name_id AND n.game_id=NEW.target_game_id) BEGIN SELECT RAISE(ABORT,'name projection context differs'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_check_15",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_check_15 BEFORE INSERT ON canonical_projection_events WHEN NEW.target_kind='credit' AND NOT EXISTS(SELECT 1 FROM source_identity_decisions d JOIN source_credit_observations c JOIN source_record_observations o ON o.id=c.record_observation_id JOIN credit_assertions t ON t.person_id=c.resolved_person_id AND t.role=c.role_raw WHERE d.id=NEW.identity_decision_id AND c.id=NEW.credit_assertion_id AND o.record_id=d.record_id AND (c.subject_record_id IS NULL OR c.subject_record_id=d.record_id) AND c.subject_label_raw IS NULL AND t.id=NEW.target_credit_id AND t.game_id=NEW.target_game_id) BEGIN SELECT RAISE(ABORT,'credit projection needs resolved role and correct subject'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_check_16",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_check_16 BEFORE INSERT ON canonical_projection_events WHEN NEW.target_kind='relationship' AND NOT EXISTS(SELECT 1 FROM source_identity_decisions d JOIN source_relation_assertions a ON a.from_record_id=d.record_id JOIN source_identity_decisions td ON td.record_id=a.to_record_id WHERE d.id=NEW.identity_decision_id AND a.id=NEW.relation_assertion_id AND a.relation_type_normalized=NEW.relationship_type AND td.id=NEW.target_identity_decision_id AND td.status='confirmed' AND td.game_id=NEW.relationship_to_game_id) BEGIN SELECT RAISE(ABORT,'relationship projection requires both confirmed identities'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_no_delete",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_no_delete BEFORE DELETE ON canonical_projection_events BEGIN SELECT RAISE(ABORT,'append-only: canonical_projection_events'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_no_replace",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_no_replace BEFORE INSERT ON canonical_projection_events WHEN EXISTS(SELECT 1 FROM canonical_projection_events p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM canonical_projection_events p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: canonical_projection_events'); END"
+    ],
+    [
+      "trigger",
+      "canonical_projection_events_no_update",
+      "canonical_projection_events",
+      "CREATE TRIGGER canonical_projection_events_no_update BEFORE UPDATE ON canonical_projection_events BEGIN SELECT RAISE(ABORT,'append-only: canonical_projection_events'); END"
+    ],
+    [
+      "trigger",
+      "common_classification_mappings_check_22",
+      "common_classification_mappings",
+      "CREATE TRIGGER common_classification_mappings_check_22 BEFORE INSERT ON common_classification_mappings WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM common_classification_mappings p WHERE p.id=NEW.supersedes_id AND p.classification_id IS NEW.classification_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "common_classification_mappings_no_delete",
+      "common_classification_mappings",
+      "CREATE TRIGGER common_classification_mappings_no_delete BEFORE DELETE ON common_classification_mappings BEGIN SELECT RAISE(ABORT,'append-only: common_classification_mappings'); END"
+    ],
+    [
+      "trigger",
+      "common_classification_mappings_no_replace",
+      "common_classification_mappings",
+      "CREATE TRIGGER common_classification_mappings_no_replace BEFORE INSERT ON common_classification_mappings WHEN EXISTS(SELECT 1 FROM common_classification_mappings p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM common_classification_mappings p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: common_classification_mappings'); END"
+    ],
+    [
+      "trigger",
+      "common_classification_mappings_no_update",
+      "common_classification_mappings",
+      "CREATE TRIGGER common_classification_mappings_no_update BEFORE UPDATE ON common_classification_mappings BEGIN SELECT RAISE(ABORT,'append-only: common_classification_mappings'); END"
+    ],
+    [
+      "trigger",
+      "condition_observations_check_30",
+      "condition_observations",
+      "CREATE TRIGGER condition_observations_check_30 BEFORE INSERT ON condition_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM condition_observations p WHERE p.id=NEW.supersedes_id AND p.source_id IS NEW.source_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "condition_observations_no_delete",
+      "condition_observations",
+      "CREATE TRIGGER condition_observations_no_delete BEFORE DELETE ON condition_observations BEGIN SELECT RAISE(ABORT,'append-only: condition_observations'); END"
+    ],
+    [
+      "trigger",
+      "condition_observations_no_replace",
+      "condition_observations",
+      "CREATE TRIGGER condition_observations_no_replace BEFORE INSERT ON condition_observations WHEN EXISTS(SELECT 1 FROM condition_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM condition_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: condition_observations'); END"
+    ],
+    [
+      "trigger",
+      "condition_observations_no_update",
+      "condition_observations",
+      "CREATE TRIGGER condition_observations_no_update BEFORE UPDATE ON condition_observations BEGIN SELECT RAISE(ABORT,'append-only: condition_observations'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_check_10",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_check_10 BEFORE INSERT ON instance_mention_assertions WHEN NEW.role='solution_for' AND NOT EXISTS(SELECT 1 FROM source_resource_mention_observations m WHERE m.id=NEW.mention_observation_id AND m.function_raw='solutions') BEGIN SELECT RAISE(ABORT,'solution relation requires a solutions mention'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_check_11",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_check_11 BEFORE INSERT ON instance_mention_assertions WHEN NEW.cross_system_decision_ref IS NULL AND NOT EXISTS(SELECT 1 FROM problem_instance_observations i JOIN source_record_observations oi ON oi.id=i.record_observation_id JOIN source_resource_mention_observations m JOIN source_record_observations om ON om.id=m.record_observation_id WHERE i.id=NEW.instance_observation_id AND m.id=NEW.mention_observation_id AND oi.record_id=om.record_id) BEGIN SELECT RAISE(ABORT,'cross-system instance relation needs explicit decision'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_check_33",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_check_33 BEFORE INSERT ON instance_mention_assertions WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM instance_mention_assertions p WHERE p.id=NEW.supersedes_id AND p.instance_observation_id IS NEW.instance_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_no_delete",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_no_delete BEFORE DELETE ON instance_mention_assertions BEGIN SELECT RAISE(ABORT,'append-only: instance_mention_assertions'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_no_replace",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_no_replace BEFORE INSERT ON instance_mention_assertions WHEN EXISTS(SELECT 1 FROM instance_mention_assertions p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM instance_mention_assertions p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM instance_mention_assertions p WHERE p.instance_observation_id IS NEW.instance_observation_id AND p.mention_observation_id IS NEW.mention_observation_id AND p.role IS NEW.role) BEGIN SELECT RAISE(ABORT,'immutable key collision: instance_mention_assertions'); END"
+    ],
+    [
+      "trigger",
+      "instance_mention_assertions_no_update",
+      "instance_mention_assertions",
+      "CREATE TRIGGER instance_mention_assertions_no_update BEFORE UPDATE ON instance_mention_assertions BEGIN SELECT RAISE(ABORT,'append-only: instance_mention_assertions'); END"
+    ],
+    [
+      "trigger",
+      "problem_instance_observations_check_32",
+      "problem_instance_observations",
+      "CREATE TRIGGER problem_instance_observations_check_32 BEFORE INSERT ON problem_instance_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM problem_instance_observations p WHERE p.id=NEW.supersedes_id AND p.instance_id IS NEW.instance_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "problem_instance_observations_check_9",
+      "problem_instance_observations",
+      "CREATE TRIGGER problem_instance_observations_check_9 BEFORE INSERT ON problem_instance_observations WHEN NOT EXISTS(SELECT 1 FROM problem_instances i JOIN source_record_observations o ON o.record_id=i.record_id WHERE i.id=NEW.instance_id AND o.id=NEW.record_observation_id) BEGIN SELECT RAISE(ABORT,'instance observation owner differs'); END"
+    ],
+    [
+      "trigger",
+      "problem_instance_observations_no_delete",
+      "problem_instance_observations",
+      "CREATE TRIGGER problem_instance_observations_no_delete BEFORE DELETE ON problem_instance_observations BEGIN SELECT RAISE(ABORT,'append-only: problem_instance_observations'); END"
+    ],
+    [
+      "trigger",
+      "problem_instance_observations_no_replace",
+      "problem_instance_observations",
+      "CREATE TRIGGER problem_instance_observations_no_replace BEFORE INSERT ON problem_instance_observations WHEN EXISTS(SELECT 1 FROM problem_instance_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM problem_instance_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: problem_instance_observations'); END"
+    ],
+    [
+      "trigger",
+      "problem_instance_observations_no_update",
+      "problem_instance_observations",
+      "CREATE TRIGGER problem_instance_observations_no_update BEFORE UPDATE ON problem_instance_observations BEGIN SELECT RAISE(ABORT,'append-only: problem_instance_observations'); END"
+    ],
+    [
+      "trigger",
+      "problem_instances_no_delete",
+      "problem_instances",
+      "CREATE TRIGGER problem_instances_no_delete BEFORE DELETE ON problem_instances BEGIN SELECT RAISE(ABORT,'append-only: problem_instances'); END"
+    ],
+    [
+      "trigger",
+      "problem_instances_no_replace",
+      "problem_instances",
+      "CREATE TRIGGER problem_instances_no_replace BEFORE INSERT ON problem_instances WHEN EXISTS(SELECT 1 FROM problem_instances p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM problem_instances p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM problem_instances p WHERE p.record_id IS NEW.record_id AND p.instance_key IS NEW.instance_key) BEGIN SELECT RAISE(ABORT,'immutable key collision: problem_instances'); END"
+    ],
+    [
+      "trigger",
+      "problem_instances_no_update",
+      "problem_instances",
+      "CREATE TRIGGER problem_instances_no_update BEFORE UPDATE ON problem_instances BEGIN SELECT RAISE(ABORT,'append-only: problem_instances'); END"
+    ],
+    [
+      "trigger",
+      "resource_access_observations_check_31",
+      "resource_access_observations",
+      "CREATE TRIGGER resource_access_observations_check_31 BEFORE INSERT ON resource_access_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM resource_access_observations p WHERE p.id=NEW.supersedes_id AND p.mention_observation_id IS NEW.mention_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "resource_access_observations_check_7",
+      "resource_access_observations",
+      "CREATE TRIGGER resource_access_observations_check_7 BEFORE INSERT ON resource_access_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM resource_access_observations p WHERE p.id=NEW.supersedes_id AND p.subject_scope=NEW.subject_scope) BEGIN SELECT RAISE(ABORT,'access correction must preserve subject scope'); END"
+    ],
+    [
+      "trigger",
+      "resource_access_observations_no_delete",
+      "resource_access_observations",
+      "CREATE TRIGGER resource_access_observations_no_delete BEFORE DELETE ON resource_access_observations BEGIN SELECT RAISE(ABORT,'append-only: resource_access_observations'); END"
+    ],
+    [
+      "trigger",
+      "resource_access_observations_no_replace",
+      "resource_access_observations",
+      "CREATE TRIGGER resource_access_observations_no_replace BEFORE INSERT ON resource_access_observations WHEN EXISTS(SELECT 1 FROM resource_access_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM resource_access_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: resource_access_observations'); END"
+    ],
+    [
+      "trigger",
+      "resource_access_observations_no_update",
+      "resource_access_observations",
+      "CREATE TRIGGER resource_access_observations_no_update BEFORE UPDATE ON resource_access_observations BEGIN SELECT RAISE(ABORT,'append-only: resource_access_observations'); END"
+    ],
+    [
+      "trigger",
+      "resource_url_observations_check_29",
+      "resource_url_observations",
+      "CREATE TRIGGER resource_url_observations_check_29 BEFORE INSERT ON resource_url_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM resource_url_observations p WHERE p.id=NEW.supersedes_id AND p.mention_observation_id IS NEW.mention_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "resource_url_observations_check_6",
+      "resource_url_observations",
+      "CREATE TRIGGER resource_url_observations_check_6 BEFORE INSERT ON resource_url_observations WHEN NOT EXISTS(SELECT 1 FROM source_resource_mention_observations m WHERE m.id=NEW.mention_observation_id AND m.declared_url=NEW.requested_url) BEGIN SELECT RAISE(ABORT,'requested URL must identify the contextual mention'); END"
+    ],
+    [
+      "trigger",
+      "resource_url_observations_no_delete",
+      "resource_url_observations",
+      "CREATE TRIGGER resource_url_observations_no_delete BEFORE DELETE ON resource_url_observations BEGIN SELECT RAISE(ABORT,'append-only: resource_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "resource_url_observations_no_replace",
+      "resource_url_observations",
+      "CREATE TRIGGER resource_url_observations_no_replace BEFORE INSERT ON resource_url_observations WHEN EXISTS(SELECT 1 FROM resource_url_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM resource_url_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: resource_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "resource_url_observations_no_update",
+      "resource_url_observations",
+      "CREATE TRIGGER resource_url_observations_no_update BEFORE UPDATE ON resource_url_observations BEGIN SELECT RAISE(ABORT,'append-only: resource_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_admission_observations_check_20",
+      "source_admission_observations",
+      "CREATE TRIGGER source_admission_observations_check_20 BEFORE INSERT ON source_admission_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_admission_observations p WHERE p.id=NEW.supersedes_id AND p.record_observation_id IS NEW.record_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_admission_observations_no_delete",
+      "source_admission_observations",
+      "CREATE TRIGGER source_admission_observations_no_delete BEFORE DELETE ON source_admission_observations BEGIN SELECT RAISE(ABORT,'append-only: source_admission_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_admission_observations_no_replace",
+      "source_admission_observations",
+      "CREATE TRIGGER source_admission_observations_no_replace BEFORE INSERT ON source_admission_observations WHEN EXISTS(SELECT 1 FROM source_admission_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_admission_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_admission_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_admission_observations_no_update",
+      "source_admission_observations",
+      "CREATE TRIGGER source_admission_observations_no_update BEFORE UPDATE ON source_admission_observations BEGIN SELECT RAISE(ABORT,'append-only: source_admission_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_observations_check_21",
+      "source_classification_observations",
+      "CREATE TRIGGER source_classification_observations_check_21 BEFORE INSERT ON source_classification_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_classification_observations p WHERE p.id=NEW.supersedes_id AND p.record_observation_id IS NEW.record_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_observations_no_delete",
+      "source_classification_observations",
+      "CREATE TRIGGER source_classification_observations_no_delete BEFORE DELETE ON source_classification_observations BEGIN SELECT RAISE(ABORT,'append-only: source_classification_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_observations_no_replace",
+      "source_classification_observations",
+      "CREATE TRIGGER source_classification_observations_no_replace BEFORE INSERT ON source_classification_observations WHEN EXISTS(SELECT 1 FROM source_classification_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_classification_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_classification_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_observations_no_update",
+      "source_classification_observations",
+      "CREATE TRIGGER source_classification_observations_no_update BEFORE UPDATE ON source_classification_observations BEGIN SELECT RAISE(ABORT,'append-only: source_classification_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_segments_check_1",
+      "source_classification_segments",
+      "CREATE TRIGGER source_classification_segments_check_1 BEFORE INSERT ON source_classification_segments WHEN NOT EXISTS(SELECT 1 FROM source_classification_observations p WHERE p.id=NEW.classification_id AND p.path_state='observed' AND NEW.position<p.segment_count) OR NEW.position<>(SELECT count(*) FROM source_classification_segments WHERE classification_id=NEW.classification_id) BEGIN SELECT RAISE(ABORT,'path segments must be observed and contiguous'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_segments_no_delete",
+      "source_classification_segments",
+      "CREATE TRIGGER source_classification_segments_no_delete BEFORE DELETE ON source_classification_segments BEGIN SELECT RAISE(ABORT,'append-only: source_classification_segments'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_segments_no_replace",
+      "source_classification_segments",
+      "CREATE TRIGGER source_classification_segments_no_replace BEFORE INSERT ON source_classification_segments WHEN EXISTS(SELECT 1 FROM source_classification_segments p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_classification_segments p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM source_classification_segments p WHERE p.classification_id IS NEW.classification_id AND p.position IS NEW.position) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_classification_segments'); END"
+    ],
+    [
+      "trigger",
+      "source_classification_segments_no_update",
+      "source_classification_segments",
+      "CREATE TRIGGER source_classification_segments_no_update BEFORE UPDATE ON source_classification_segments BEGIN SELECT RAISE(ABORT,'append-only: source_classification_segments'); END"
+    ],
+    [
+      "trigger",
+      "source_credit_observations_check_34",
+      "source_credit_observations",
+      "CREATE TRIGGER source_credit_observations_check_34 BEFORE INSERT ON source_credit_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_credit_observations p WHERE p.id=NEW.supersedes_id AND p.record_observation_id IS NEW.record_observation_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_credit_observations_no_delete",
+      "source_credit_observations",
+      "CREATE TRIGGER source_credit_observations_no_delete BEFORE DELETE ON source_credit_observations BEGIN SELECT RAISE(ABORT,'append-only: source_credit_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_credit_observations_no_replace",
+      "source_credit_observations",
+      "CREATE TRIGGER source_credit_observations_no_replace BEFORE INSERT ON source_credit_observations WHEN EXISTS(SELECT 1 FROM source_credit_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_credit_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_credit_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_credit_observations_no_update",
+      "source_credit_observations",
+      "CREATE TRIGGER source_credit_observations_no_update BEFORE UPDATE ON source_credit_observations BEGIN SELECT RAISE(ABORT,'append-only: source_credit_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_identity_decisions_check_37",
+      "source_identity_decisions",
+      "CREATE TRIGGER source_identity_decisions_check_37 BEFORE INSERT ON source_identity_decisions WHEN NEW.previous_decision_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_identity_decisions p WHERE p.id=NEW.previous_decision_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_identity_decisions_no_delete",
+      "source_identity_decisions",
+      "CREATE TRIGGER source_identity_decisions_no_delete BEFORE DELETE ON source_identity_decisions BEGIN SELECT RAISE(ABORT,'append-only: source_identity_decisions'); END"
+    ],
+    [
+      "trigger",
+      "source_identity_decisions_no_replace",
+      "source_identity_decisions",
+      "CREATE TRIGGER source_identity_decisions_no_replace BEFORE INSERT ON source_identity_decisions WHEN EXISTS(SELECT 1 FROM source_identity_decisions p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_identity_decisions p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_identity_decisions'); END"
+    ],
+    [
+      "trigger",
+      "source_identity_decisions_no_update",
+      "source_identity_decisions",
+      "CREATE TRIGGER source_identity_decisions_no_update BEFORE UPDATE ON source_identity_decisions BEGIN SELECT RAISE(ABORT,'append-only: source_identity_decisions'); END"
+    ],
+    [
+      "trigger",
+      "source_record_keys_check_17",
+      "source_record_keys",
+      "CREATE TRIGGER source_record_keys_check_17 BEFORE INSERT ON source_record_keys WHEN NEW.record_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_records p WHERE p.id=NEW.record_id AND p.source_id IS NEW.source_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_keys_no_delete",
+      "source_record_keys",
+      "CREATE TRIGGER source_record_keys_no_delete BEFORE DELETE ON source_record_keys BEGIN SELECT RAISE(ABORT,'append-only: source_record_keys'); END"
+    ],
+    [
+      "trigger",
+      "source_record_keys_no_replace",
+      "source_record_keys",
+      "CREATE TRIGGER source_record_keys_no_replace BEFORE INSERT ON source_record_keys WHEN EXISTS(SELECT 1 FROM source_record_keys p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_record_keys p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM source_record_keys p WHERE p.source_id IS NEW.source_id AND p.local_key IS NEW.local_key) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_record_keys'); END"
+    ],
+    [
+      "trigger",
+      "source_record_keys_no_update",
+      "source_record_keys",
+      "CREATE TRIGGER source_record_keys_no_update BEFORE UPDATE ON source_record_keys BEGIN SELECT RAISE(ABORT,'append-only: source_record_keys'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_check_0",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_check_0 BEFORE INSERT ON source_record_observations WHEN EXISTS(SELECT 1 FROM source_record_observations p WHERE p.record_id=NEW.record_id AND p.event_key=NEW.event_key AND p.stable_key<>NEW.stable_key) AND (NEW.supersedes_id IS NULL OR NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.supersedes_id AND p.record_id=NEW.record_id AND p.event_key=NEW.event_key) OR length(trim(coalesce(NEW.assessment_note,'')))=0) BEGIN SELECT RAISE(ABORT,'changed event requires explicit correction'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_check_18",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_check_18 BEFORE INSERT ON source_record_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.supersedes_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_check_19",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_check_19 BEFORE INSERT ON source_record_observations WHEN NEW.parent_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.parent_observation_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_no_delete",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_no_delete BEFORE DELETE ON source_record_observations BEGIN SELECT RAISE(ABORT,'append-only: source_record_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_no_replace",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_no_replace BEFORE INSERT ON source_record_observations WHEN EXISTS(SELECT 1 FROM source_record_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM source_record_observations p WHERE p.record_id IS NEW.record_id AND p.event_key IS NEW.event_key AND p.payload_sha256 IS NEW.payload_sha256 AND p.mapping_version IS NEW.mapping_version) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_record_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_record_observations_no_update",
+      "source_record_observations",
+      "CREATE TRIGGER source_record_observations_no_update BEFORE UPDATE ON source_record_observations BEGIN SELECT RAISE(ABORT,'append-only: source_record_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_check_2",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_check_2 BEFORE INSERT ON source_record_url_observations WHEN NEW.predecessor_url_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_url_observations p WHERE p.id=NEW.predecessor_url_observation_id AND p.request_event_key IS NEW.request_event_key AND NEW.request_event_key IS NOT NULL AND NEW.redirect_position=p.redirect_position+1) BEGIN SELECT RAISE(ABORT,'redirect chain requires same event and contiguous steps'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_check_23",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_check_23 BEFORE INSERT ON source_record_url_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_url_observations p WHERE p.id=NEW.supersedes_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_check_24",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_check_24 BEFORE INSERT ON source_record_url_observations WHEN NEW.record_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.record_observation_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_check_25",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_check_25 BEFORE INSERT ON source_record_url_observations WHEN NEW.predecessor_url_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_url_observations p WHERE p.id=NEW.predecessor_url_observation_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_no_delete",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_no_delete BEFORE DELETE ON source_record_url_observations BEGIN SELECT RAISE(ABORT,'append-only: source_record_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_no_replace",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_no_replace BEFORE INSERT ON source_record_url_observations WHEN EXISTS(SELECT 1 FROM source_record_url_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_record_url_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_record_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_record_url_observations_no_update",
+      "source_record_url_observations",
+      "CREATE TRIGGER source_record_url_observations_no_update BEFORE UPDATE ON source_record_url_observations BEGIN SELECT RAISE(ABORT,'append-only: source_record_url_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_relation_assertions_check_35",
+      "source_relation_assertions",
+      "CREATE TRIGGER source_relation_assertions_check_35 BEFORE INSERT ON source_relation_assertions WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_relation_assertions p WHERE p.id=NEW.supersedes_id AND p.from_record_id IS NEW.from_record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_relation_assertions_check_36",
+      "source_relation_assertions",
+      "CREATE TRIGGER source_relation_assertions_check_36 BEFORE INSERT ON source_relation_assertions WHEN NEW.record_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.record_observation_id AND p.record_id IS NEW.from_record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_relation_assertions_no_delete",
+      "source_relation_assertions",
+      "CREATE TRIGGER source_relation_assertions_no_delete BEFORE DELETE ON source_relation_assertions BEGIN SELECT RAISE(ABORT,'append-only: source_relation_assertions'); END"
+    ],
+    [
+      "trigger",
+      "source_relation_assertions_no_replace",
+      "source_relation_assertions",
+      "CREATE TRIGGER source_relation_assertions_no_replace BEFORE INSERT ON source_relation_assertions WHEN EXISTS(SELECT 1 FROM source_relation_assertions p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_relation_assertions p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_relation_assertions'); END"
+    ],
+    [
+      "trigger",
+      "source_relation_assertions_no_update",
+      "source_relation_assertions",
+      "CREATE TRIGGER source_relation_assertions_no_update BEFORE UPDATE ON source_relation_assertions BEGIN SELECT RAISE(ABORT,'append-only: source_relation_assertions'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_check_27",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_check_27 BEFORE INSERT ON source_resource_mention_observations WHEN NEW.supersedes_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_resource_mention_observations p WHERE p.id=NEW.supersedes_id AND p.mention_id IS NEW.mention_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_check_3",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_check_3 BEFORE INSERT ON source_resource_mention_observations WHEN NOT EXISTS(SELECT 1 FROM source_resource_mentions m JOIN source_record_observations o ON o.record_id=m.record_id WHERE m.id=NEW.mention_id AND o.id=NEW.record_observation_id) BEGIN SELECT RAISE(ABORT,'mention and observation owners differ'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_check_4",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_check_4 BEFORE INSERT ON source_resource_mention_observations WHEN NEW.resource_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM catalog_resources r WHERE r.id=NEW.resource_id AND r.url=NEW.declared_url) BEGIN SELECT RAISE(ABORT,'resource URL must equal declared URL'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_no_delete",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_no_delete BEFORE DELETE ON source_resource_mention_observations BEGIN SELECT RAISE(ABORT,'append-only: source_resource_mention_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_no_replace",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_no_replace BEFORE INSERT ON source_resource_mention_observations WHEN EXISTS(SELECT 1 FROM source_resource_mention_observations p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_resource_mention_observations p WHERE p.id IS NEW.id) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_resource_mention_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mention_observations_no_update",
+      "source_resource_mention_observations",
+      "CREATE TRIGGER source_resource_mention_observations_no_update BEFORE UPDATE ON source_resource_mention_observations BEGIN SELECT RAISE(ABORT,'append-only: source_resource_mention_observations'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mentions_check_26",
+      "source_resource_mentions",
+      "CREATE TRIGGER source_resource_mentions_check_26 BEFORE INSERT ON source_resource_mentions WHEN NEW.first_observation_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM source_record_observations p WHERE p.id=NEW.first_observation_id AND p.record_id IS NEW.record_id) BEGIN SELECT RAISE(ABORT,'referenced owner differs or is absent'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mentions_no_delete",
+      "source_resource_mentions",
+      "CREATE TRIGGER source_resource_mentions_no_delete BEFORE DELETE ON source_resource_mentions BEGIN SELECT RAISE(ABORT,'append-only: source_resource_mentions'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mentions_no_replace",
+      "source_resource_mentions",
+      "CREATE TRIGGER source_resource_mentions_no_replace BEFORE INSERT ON source_resource_mentions WHEN EXISTS(SELECT 1 FROM source_resource_mentions p WHERE p.stable_key IS NEW.stable_key) OR EXISTS(SELECT 1 FROM source_resource_mentions p WHERE p.id IS NEW.id) OR EXISTS(SELECT 1 FROM source_resource_mentions p WHERE p.record_id IS NEW.record_id AND p.mention_key IS NEW.mention_key) BEGIN SELECT RAISE(ABORT,'immutable key collision: source_resource_mentions'); END"
+    ],
+    [
+      "trigger",
+      "source_resource_mentions_no_update",
+      "source_resource_mentions",
+      "CREATE TRIGGER source_resource_mentions_no_update BEFORE UPDATE ON source_resource_mentions BEGIN SELECT RAISE(ABORT,'append-only: source_resource_mentions'); END"
+    ]
+  ]
+}

@@ -21,3 +21,12 @@ Conservare titolo sorgente, titolo normalizzato, URL storico/finale, rinomini e 
 CAT pilota: 12 identità candidate, inventario metadati ed esiti individuali; eventuali esclusioni restano nel denominatore verificato. DAT e APP successivi separati. Nessuna importazione operativa, modifica schema/app, acquisizione file/immagini o verifica piattaforme per effetto dell'adozione. Libri e newsletter sono risorse/prodotti editoriali, non giochi ulteriori. Tornei Masters non sono classifiche di qualità dei giochi.
 
 PUBLICATION_POLICY.md governa i contenuti versionabili: sintesi originali, metadati necessari e link; materiali di terzi richiedono condizioni specifiche. Nessun cambiamento retroattivo ai dati BGG/Kanare, nessuna automazione. PWS 1.5.0.
+
+## Persistenza multifonte PerGioco — B-v1 adottata
+
+TSK-0076, 2026-10-06: architettura logica B-v1 e piano delle dodici candidate confermati; perimetro TSK-0073 invariato. Decisione e contratto in `tasks/2026-10-06 - EPR - Persistenza multifonte per PerGioco/DECISIONE.md` e `MODELLO_LOGICO.md`. Otto nuove identita previste, Abande solo matching candidato 993, tre record con requisito non dimostrato senza giochi automatici; esiti CAT 9/3 preservati. Itinera un gioco/due istanze, soluzioni separate; categorie native mantenute e mapping comune vuoto. Adottato il modello logico, non eseguita l'importazione: schema/app/database invariati; migrazione DAT, importazione e APP autonomi con autorizzazioni distinte, nessun backfill/riesame implicito.
+
+
+## Migrazione 013 operativa — TSK-0077, 2026-10-06
+
+Schema multifonte B-v1 disponibile nell'operativo, migrazione 013 autorizzata e verificata dopo adozione TSK-0076. Tutte le 21 tabelle nuove sono vuote; PerGioco resta non importato e perimetro TSK-0073/CAT 12 candidate invariato. Nessun backfill/matching o game creato, nessuna APP o acquisizione. Prossimo DAT importazione separato richiede autorizzazione, strumenti e verifiche del piano 9/3, otto nuove identita, Abande candidato 993 e tre source-only; Itinera un gioco/due istanze. Evidenze in `tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/`.

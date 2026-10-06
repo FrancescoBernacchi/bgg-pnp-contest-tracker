@@ -1,0 +1,17 @@
+{
+  "task_id": "TSK-0076",
+  "checked_at": "2026-10-06",
+  "scope": "Only new EPR documents, offline; no commit or push",
+  "files": [
+    "CASI_PILOTA.json",
+    "COMPATIBILITA_E_VALIDAZIONE.md",
+    "MODELLO_LOGICO.md",
+    "PROPOSTA.md",
+    "TASK.md",
+    "VERIFICHE.json",
+    "verify_offline.py"
+  ],
+  "heuristic_findings": [],
+  "manual_review": "Original architecture prose and necessary CAT metadata/roles/URLs/dates only; no complete rules, external dumps or media. No reuse license inferred from free access.",
+  "limits": "Not clearance for unrelated changes or outgoing history; complete publication audit required before commit/push."
+}

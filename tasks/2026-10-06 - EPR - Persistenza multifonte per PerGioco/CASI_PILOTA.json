@@ -1,0 +1,1972 @@
+{
+  "task_id": "TSK-0076",
+  "proposal_version": "B-v1",
+  "architecture_adopted": false,
+  "executed_import": false,
+  "new_external_observations": 0,
+  "source_conditions": {
+    "id": "PG-CONDITIONS-20261006",
+    "observed_at": "2026-10-06",
+    "provenance": "TSK-0072_reused",
+    "references": [
+      "https://www.pergioco.net/termini-e-condizioni.html",
+      "https://www.pergioco.net/faq.html",
+      "https://www.pergioco.net/registrazione.html",
+      "https://www.pergioco.net/newsletter.html"
+    ],
+    "summary": "Preanalisi: consultazione pubblica distinta da riuso. Copia/modifica/distribuzione limitate senza consenso; conservazione e stampa personale di estratti previste nelle condizioni osservate. Newsletter e registrazione dichiarate gratuite ma distinte; nessuna iscrizione o accesso autenticato collaudato. Gratuità HTML non attesta licenza di redistribuzione né gratuità di prodotti/materiali.",
+    "page_updated_raw": "26/09/2026",
+    "reuse_permission_for_publication": "not_attested; deliverables contain metadata and original summaries only"
+  },
+  "summary": {
+    "source_records": 12,
+    "CAT_admitted": 9,
+    "CAT_requirement_not_demonstrated": 3,
+    "proposed_new_canonical_games": 8,
+    "candidate_links_to_existing_games": 1,
+    "non_admitted_source_only": 3,
+    "Itinera_games": 1,
+    "Itinera_instances": 2,
+    "products_to_create": 0,
+    "implementations_to_create": 0
+  },
+  "classification_count": 26,
+  "mention_count": 21,
+  "distinct_declared_URLs": 16,
+  "relationship_plan_proposed": [
+    {
+      "from": "PGP-004",
+      "to_source_record": "PGP-003",
+      "type": "variant_of",
+      "state": "declared_by_source",
+      "canonical_edge": "deferred_until_Abande_identity_decision"
+    },
+    {
+      "from": "PGP-004",
+      "to_source_record": "PGP-003",
+      "type": "base_rules_information_required",
+      "resource_url": "https://www.pergioco.net/1/abande.html",
+      "requires_purchase": null,
+      "note": "Informational dependency, not a physical base game requirement"
+    }
+  ],
+  "records": [
+    {
+      "candidate_id": "PGP-001",
+      "source_record_key": "pergioco:pilot:PGP-001",
+      "title_raw": "Achi",
+      "display_title_qualified": "Achi",
+      "source_url": "https://www.pergioco.net/1/achi.html",
+      "historical_urls": [
+        "https://www.pergioco.net/achi.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": null,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [
+        "Care"
+      ],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-001",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "95db728dbf181139395799f2f914a204afb78aa9d4a9626dcf8a9cfe0f1c38c0",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [
+          {
+            "name": null,
+            "role": "designer",
+            "status": "not_declared",
+            "note": "Gioco tradizionale originario del Ghana; nessun designer individuale dichiarato.",
+            "source_url": "https://www.pergioco.net/1/achi.html",
+            "observed_at": "2026-10-06"
+          }
+        ],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "A-Aiy",
+            "Achi"
+          ],
+          "source_url": "https://www.pergioco.net/1/achi.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "giochi di allineamento",
+          "path": null,
+          "source_url": "https://www.pergioco.net/1/achi.html",
+          "observed_at": "2026-10-06",
+          "kind": "family_declared_in_text",
+          "note": "Gerarchia ulteriore non dichiarata; non inferita."
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Achi"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Preparazione, azioni e vittoria osservate nella preanalisi; HTML pubblico sufficiente.",
+        "source_url": "https://www.pergioco.net/1/achi.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-001:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/1/achi.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Variante interna a tre pedine; non nuova candidata.",
+        "Care: nome dichiarato in Senegal.",
+        "Affinità con Tapatan e variante Kurna del Mulino 3x3 dichiarata dalla fonte; nessuna fusione."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Achi",
+          "Care"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/0"
+    },
+    {
+      "candidate_id": "PGP-002",
+      "source_record_key": "pergioco:pilot:PGP-002",
+      "title_raw": "Krypte",
+      "display_title_qualified": "Krypte",
+      "source_url": "https://www.pergioco.net/3/krypte.html",
+      "historical_urls": [
+        "https://www.pergioco.net/krypte.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2016,
+      "page_updated_raw": "17/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-002",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "34771e15278fd11fd955bf7aa6b02499cd3da72c50b6b009a41f0944bd7bb156",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Marino Carpignano",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/3/krypte.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "I-K",
+            "K",
+            "Krypte"
+          ],
+          "source_url": "https://www.pergioco.net/3/krypte.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "I-J-K",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti-6.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Krypte"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Regole complete HTML italiane già osservate in TSK-0072.",
+        "source_url": "https://www.pergioco.net/3/krypte.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-002:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/3/krypte.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Attrezzatura condivisibile con Othello: nessuna dipendenza da prodotto specifico.",
+        "Somiglianze dichiarate con Forza 4x4 Spider, Othello e Forza 4; non matching."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Krypte"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/1"
+    },
+    {
+      "candidate_id": "PGP-003",
+      "source_record_key": "pergioco:pilot:PGP-003",
+      "title_raw": "Abande",
+      "display_title_qualified": "Abande",
+      "source_url": "https://www.pergioco.net/1/abande.html",
+      "historical_urls": [
+        "https://www.pergioco.net/abande.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2005,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "candidate_link_only",
+        "symbolic_game_key": null,
+        "candidate_game_id": 993,
+        "match_status": "candidate",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "b8b8e2b08f6a0fd2d55879d220e4e1814b9dd5eb848d0b6e5732d85192209f55",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Dieter Stein",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/abande.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "A-Aiy",
+            "Abande"
+          ],
+          "source_url": "https://www.pergioco.net/1/abande.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Abande"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Regole complete HTML già osservate; due alternative di tavoliere interne.",
+        "source_url": "https://www.pergioco.net/1/abande.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-003:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/1/abande.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-003:resource:2",
+          "destination": "resource_mention_proposed_or_raw_metadata",
+          "payload": {
+            "kind": "rules_pdf_mention",
+            "url": null,
+            "access": "unknown",
+            "completeness": "not_verified",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "declared": true,
+            "destination_status": "Dicitura osservata; URL utilizzabile non attestato. Nessun file aperto.",
+            "language": null,
+            "free_observed": null
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Base di Abande Libre.",
+        "Variante 1 e Variante 2: etichette interne originali, non nuove identità nel pilota.",
+        "Matching locale candidato game_id 993: titolo e designer concordanti; equivalenza delle versioni non verificata."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Abande"
+        ],
+        "matches": [
+          {
+            "game_id": 993,
+            "canonical_title": "Abande",
+            "status": "candidate",
+            "basis": "Titolo e designer concordanti con evidenza TSK-0072; nessun confronto completo tra versioni."
+          }
+        ],
+        "status": "candidate",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/2"
+    },
+    {
+      "candidate_id": "PGP-004",
+      "source_record_key": "pergioco:pilot:PGP-004",
+      "title_raw": "Abande Libre",
+      "display_title_qualified": "Abande Libre",
+      "source_url": "https://www.pergioco.net/1/abande-libre.html",
+      "historical_urls": [
+        "https://www.pergioco.net/abande-libre.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2009,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-004",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "7179b844e7b4f515d9cfdb34db8f95ca42223c1e6f19f96d5ffa5c13bc56c3c4",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Dieter Stein",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/abande-libre.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "A-Aiy",
+            "Abande Libre"
+          ],
+          "source_url": "https://www.pergioco.net/1/abande-libre.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Abande Libre"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_base_plus_variant",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Percorso gratuito base Abande più variante; rinvio alle regole base esplicito.",
+        "source_url": "https://www.pergioco.net/1/abande-libre.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-004:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/1/abande-libre.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_base_plus_variant",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-004:resource:2",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "base_rules_html",
+            "url": "https://www.pergioco.net/1/abande.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-004:resource:3",
+          "destination": "resource_mention_proposed_or_raw_metadata",
+          "payload": {
+            "kind": "rules_pdf_mention",
+            "url": null,
+            "access": "unknown",
+            "completeness": "not_verified",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "declared": true,
+            "destination_status": "Dicitura osservata; URL utilizzabile non attestato. Nessun file aperto.",
+            "language": null,
+            "free_observed": null
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Variante di Abande con regole proprie; distinta nel campione.",
+        "Dipendenza informativa dalle regole base; nessun obbligo di acquistare il gioco base attestato."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Abande Libre"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/3"
+    },
+    {
+      "candidate_id": "PGP-005",
+      "source_record_key": "pergioco:pilot:PGP-005",
+      "title_raw": "Chomp",
+      "display_title_qualified": "Chomp",
+      "source_url": "https://www.pergioco.net/a/chomp.html",
+      "historical_urls": [
+        "https://www.pergioco.net/chomp.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 1973,
+      "page_updated_raw": "25/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-005",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "5fa0a58cad1cd63ac429bb117a716389f93d8f2f223f49028ecf0753a88deef6",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "David Gale",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/a/chomp.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi con carta e matita",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Chomp"
+          ],
+          "source_url": "https://www.pergioco.net/a/chomp.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "segment": null,
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Chomp"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Regole, preparazione e termine HTML sufficienti già osservati.",
+        "source_url": "https://www.pergioco.net/a/chomp.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-005:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/a/chomp.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Dimensioni del rettangolo variabili nel sistema; nessuna ulteriore identità.",
+        "Anno e designer sono asserzioni PerGioco, senza verifica storica indipendente."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Chomp"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/4"
+    },
+    {
+      "candidate_id": "PGP-006",
+      "source_record_key": "pergioco:pilot:PGP-006",
+      "title_raw": "Itinera",
+      "display_title_qualified": "Itinera",
+      "source_url": "https://www.pergioco.net/a/itinera.html",
+      "historical_urls": [
+        "https://www.pergioco.net/itinera.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2021,
+      "page_updated_raw": "25/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-006",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "134cbe10f983dc5f38b99fb05be80f8a64598081d36e4618ba3767cdd00f77aa",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Marino Carpignano",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/a/itinera.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi logici e di induzione",
+          "path": [
+            "Giochi",
+            "Giochi logici e di induzione",
+            "Elenco alfabetico",
+            "G-L",
+            "Itinera"
+          ],
+          "source_url": "https://www.pergioco.net/a/itinera.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi logici e di induzione",
+          "path": [
+            "Giochi",
+            "Giochi logici e di induzione",
+            "Elenco alfabetico"
+          ],
+          "segment": "G-L",
+          "source_url": "https://www.pergioco.net/giochi-logici-2.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Itinera"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "sufficient_system",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "Vincoli e obiettivo pubblici sufficienti per il sistema logico; soluzione non necessaria per ammissione.",
+        "source_url": "https://www.pergioco.net/a/itinera.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-006:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/a/itinera.html",
+            "access": "public_no_login_observed",
+            "completeness": "sufficient_system",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-006:resource:2",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "problem_instances_html",
+            "url": "https://www.pergioco.net/a/itinera-diagrammi.html",
+            "access": "public_no_login_observed",
+            "completeness": "two_schemes_observed",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "instance_dates": [
+              "2021-06-18",
+              "2021-07-23"
+            ],
+            "counts_as_game": false
+          }
+        },
+        {
+          "key": "PGP-006:resource:3",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "solutions",
+            "url": "https://www.pergioco.net/a/itinera-soluzioni.php",
+            "access": "reserved_login_observed",
+            "completeness": "not_observed",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "final_url": "https://www.pergioco.net/a/imlogin.php?loginstatus=-3",
+            "counts_as_game": false,
+            "free_observed": null,
+            "note": "Registrazione/newsletter dichiarate gratuite; accesso autenticato non collaudato."
+          }
+        }
+      ],
+      "instances": [
+        {
+          "key": "PGP-006:instance:2021-06-18",
+          "published_at": "2021-06-18",
+          "source_url": "https://www.pergioco.net/a/itinera-diagrammi.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "counts_as_game": false,
+          "solution_instance_match": null
+        },
+        {
+          "key": "PGP-006:instance:2021-07-23",
+          "published_at": "2021-07-23",
+          "source_url": "https://www.pergioco.net/a/itinera-diagrammi.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "counts_as_game": false,
+          "solution_instance_match": null
+        }
+      ],
+      "relations_and_limits": [
+        "Un sistema di regole; schemi e soluzioni sono risorse/istanze.",
+        "Due problemi datati 18/06/2021 e 23/07/2021 osservati in TSK-0072."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Itinera"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/5"
+    },
+    {
+      "candidate_id": "PGP-007",
+      "source_record_key": "pergioco:pilot:PGP-007",
+      "title_raw": "Azul",
+      "display_title_qualified": "Azul",
+      "source_url": "https://www.pergioco.net/1/azul.html",
+      "historical_urls": [
+        "https://www.pergioco.net/azul.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2017,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "requirement_not_demonstrated",
+      "identity_plan_proposed": {
+        "action": "source_record_only",
+        "symbolic_game_key": null,
+        "candidate_game_id": null,
+        "match_status": null,
+        "canonical_admission": false,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "d2d732180b5825fa0352373e9c8c182d7af8dfe9df04d8ba58c59144da12f094",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Michael Kiesling",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/azul.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "Ata-Ayu",
+            "Azul"
+          ],
+          "source_url": "https://www.pergioco.net/1/azul.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Azul"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "incomplete",
+        "public_content_free": true,
+        "complete_rules_free": null,
+        "assessment": "Introduzione e rimandi; preparazione e turni dettagliati non osservati. Non attestato un regolamento completo gratuito.",
+        "source_url": "https://www.pergioco.net/1/azul.html",
+        "observed_at": "2026-10-06",
+        "provenance": "TSK-0072_reused",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-007:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "presentation_html",
+            "url": "https://www.pergioco.net/1/azul.html",
+            "access": "public_no_login_observed",
+            "completeness": "incomplete",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-007:resource:2",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "editorial_variants_html",
+            "url": "https://www.pergioco.net/1/azul-varianti.html",
+            "access": "public_no_login_observed",
+            "completeness": "not_rules_evidence",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "counts_as_candidate": false
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Etichetta editoriale Varianti: Sintra, Summer Pavilion, Queen's Garden; dipendenza/prodotto non dedotti.",
+        "Questi titoli non entrano nel denominatore del pilota."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "native_classification",
+          "resource_declarations",
+          "credit_gaps"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Azul"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/6"
+    },
+    {
+      "candidate_id": "PGP-008",
+      "source_record_key": "pergioco:pilot:PGP-008",
+      "title_raw": "Reversi",
+      "display_title_qualified": "Reversi",
+      "source_url": "https://www.pergioco.net/5/reversi.html",
+      "historical_urls": [
+        "https://www.pergioco.net/reversi.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": null,
+      "page_updated_raw": "03/10/2026",
+      "aliases_declared": [
+        "Reversino"
+      ],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-008",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "9b404af398d4528336704f7e8f2d6dc5ea423a05901874532cbfaebba3399c18",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Lewis Waterman",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/5/reversi.html",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual"
+          },
+          {
+            "name": "John W. Mollett",
+            "role": "claimed_designer",
+            "status": "disputed_by_source",
+            "source_url": "https://www.pergioco.net/5/reversi.html",
+            "observed_at": "2026-10-06"
+          },
+          {
+            "name": "Jacques & Son",
+            "role": "historical_publisher",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/5/reversi.html",
+            "observed_at": "2026-10-06"
+          },
+          {
+            "name": "Ravensburger",
+            "role": "historical_publisher",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/5/reversi.html",
+            "observed_at": "2026-10-06"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Dalla A alla Z",
+            "R-S",
+            "R",
+            "Reversi"
+          ],
+          "source_url": "https://www.pergioco.net/5/reversi.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "R-S",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti-10.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Reversi"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "HTML pubblico descrive materiale, apertura, catture, passaggio e termine: percorso completo nella scheda.",
+        "source_url": "https://www.pergioco.net/5/reversi.html",
+        "observed_at": "2026-10-06",
+        "provenance": "pilot_residual",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-008:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/5/reversi.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-008:resource:2",
+          "destination": "resource_mention_proposed_or_raw_metadata",
+          "payload": {
+            "kind": "rules_pdf_mention",
+            "url": null,
+            "access": "unknown",
+            "completeness": "not_verified",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "declared": true,
+            "destination_status": "Dicitura osservata; URL utilizzabile non attestato. Nessun file aperto.",
+            "language": null,
+            "free_observed": null
+          }
+        },
+        {
+          "key": "PGP-008:resource:3",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "historical_images_page",
+            "url": "https://www.pergioco.net/5/reversi-immagini.html",
+            "access": "public_no_login_observed",
+            "completeness": "not_rules_evidence",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "downloaded": false
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Reversino: alias dichiarato.",
+        "John W. Mollett rivendica la paternità secondo la fonte; ambiguità preservata.",
+        "Fonte considera Reversi variante di Othello, pur descrivendo la precedenza storica; nessuna inversione/fusione automatica.",
+        "Rimando ad Annexation; non nuova candidata."
+      ],
+      "evidence": {
+        "reused_from": "tasks/2026-10-06 - FON - Preanalisi PerGioco/RELAZIONE.md",
+        "original_observed_at": "2026-10-06",
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "identity",
+          "credits",
+          "rules",
+          "native_classification",
+          "resource_declarations"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Reversi",
+          "Reversino",
+          "Othello"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/7"
+    },
+    {
+      "candidate_id": "PGP-009",
+      "source_record_key": "pergioco:pilot:PGP-009",
+      "title_raw": "Blockade (1975)",
+      "display_title_qualified": "Blockade (1975)",
+      "source_url": "https://www.pergioco.net/1/blockade.html",
+      "historical_urls": [
+        "https://www.pergioco.net/blockade.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 1975,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [
+        "Cul-de-Sac"
+      ],
+      "CAT_outcome": "requirement_not_demonstrated",
+      "identity_plan_proposed": {
+        "action": "source_record_only",
+        "symbolic_game_key": null,
+        "candidate_game_id": null,
+        "match_status": null,
+        "canonical_admission": false,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "e2b52bb2366594ba22158fef4a878f9ccab2cb946e0839cf332bd99a5d08d285",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Philip Slater",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/blockade.html",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual"
+          },
+          {
+            "name": "Lakeside",
+            "role": "publisher",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/blockade.html",
+            "observed_at": "2026-10-06"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "Blo-Blu",
+            "Blockade 1975"
+          ],
+          "source_url": "https://www.pergioco.net/1/blockade.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Blockade (1975)"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "incomplete",
+        "public_content_free": true,
+        "complete_rules_free": null,
+        "assessment": "HTML descrive materiale, spostamenti sintetici e obiettivo; uso/posizionamento delle barriere non dettagliato. PDF solo dichiarato e non aperto.",
+        "source_url": "https://www.pergioco.net/1/blockade.html",
+        "observed_at": "2026-10-06",
+        "provenance": "pilot_residual",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-009:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "presentation_html",
+            "url": "https://www.pergioco.net/1/blockade.html",
+            "access": "public_no_login_observed",
+            "completeness": "incomplete",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "language": "it",
+            "free_observed": true
+          }
+        },
+        {
+          "key": "PGP-009:resource:2",
+          "destination": "resource_mention_proposed_or_raw_metadata",
+          "payload": {
+            "kind": "rules_pdf_mention",
+            "url": null,
+            "access": "unknown",
+            "completeness": "not_verified",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "declared": true,
+            "destination_status": "Dicitura osservata; URL utilizzabile non attestato. Nessun file aperto.",
+            "language": null,
+            "free_observed": null
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Cul-de-Sac: alias dichiarato.",
+        "Lakeside: editore dichiarato per la serie anni Settanta.",
+        "Fonte dichiara ispirazione di Pinko Pallino e Quoridor, senza dipendenza dal base.",
+        "Distinto da Blockade (2001) per designer, anno e materiale."
+      ],
+      "evidence": {
+        "reused_from": null,
+        "original_observed_at": null,
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "identity",
+          "credits",
+          "rules",
+          "native_classification",
+          "resource_declarations"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Blockade (1975)",
+          "Cul-de-Sac"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/8"
+    },
+    {
+      "candidate_id": "PGP-010",
+      "source_record_key": "pergioco:pilot:PGP-010",
+      "title_raw": "Blockade (2001)",
+      "display_title_qualified": "Blockade (2001)",
+      "source_url": "https://www.pergioco.net/1/blockade2.html",
+      "historical_urls": [
+        "https://www.pergioco.net/blockade2.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 2001,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "requirement_not_demonstrated",
+      "identity_plan_proposed": {
+        "action": "source_record_only",
+        "symbolic_game_key": null,
+        "candidate_game_id": null,
+        "match_status": null,
+        "canonical_admission": false,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "c01e0a16237ac41ff2f8f4fca413b9c5062f87261a9f86b4e9cbd75f671978aa",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Kristin Looney",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/blockade2.html",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "Blo-Blu",
+            "Blockade 2001"
+          ],
+          "source_url": "https://www.pergioco.net/1/blockade2.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi su tavolieri 5x5",
+          "path": null,
+          "source_url": "https://www.pergioco.net/1/blockade2.html",
+          "observed_at": "2026-10-06",
+          "kind": "page_label",
+          "note": "Appartenenza testuale osservata; nessuna gerarchia superiore inferita."
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Blockade (2001)"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "incomplete",
+        "public_content_free": true,
+        "complete_rules_free": null,
+        "assessment": "Solo introduzione: assenti preparazione operativa, azioni e conclusione. Accesso pubblico non attesta regole complete.",
+        "source_url": "https://www.pergioco.net/1/blockade2.html",
+        "observed_at": "2026-10-06",
+        "provenance": "pilot_residual",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-010:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "presentation_html",
+            "url": "https://www.pergioco.net/1/blockade2.html",
+            "access": "public_no_login_observed",
+            "completeness": "incomplete",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "John Cooper e Andrew Looney: designer di Icehouse nella menzione collegata, non di questo Blockade.",
+        "Riuso materiale Icehouse dichiarato; necessità di un prodotto commerciale non verificata.",
+        "Etichetta Giochi su tavolieri 5x5 osservata nella scheda."
+      ],
+      "evidence": {
+        "reused_from": null,
+        "original_observed_at": null,
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "identity",
+          "credits",
+          "rules",
+          "native_classification",
+          "resource_declarations"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Blockade (2001)"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/9"
+    },
+    {
+      "candidate_id": "PGP-011",
+      "source_record_key": "pergioco:pilot:PGP-011",
+      "title_raw": "Beeline",
+      "display_title_qualified": "Beeline (1968)",
+      "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+      "historical_urls": [
+        "https://www.pergioco.net/beeline-1968.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 1968,
+      "page_updated_raw": "21/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-011",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "01d7711ef84a7d4100909cf75e75066977f33ef5c25e870774dbac31c619bd7c",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "Winston N. Allen",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "B-Bla",
+            "Beeline 1968"
+          ],
+          "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Beeline (1968)"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "HTML contiene materiale, preparazione, turno, vincoli e termine: sufficiente nel pilota, senza playtest.",
+        "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+        "observed_at": "2026-10-06",
+        "provenance": "pilot_residual",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-011:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/1/beeline-1968.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Titolo indice Beeline (1968), heading Beeline: qualificatore conservato separatamente.",
+        "Omonimo del gioco 1984; fonte dichiara condivisione del nome, non identità.",
+        "Immagine con etichetta Abande: anomalia di metadati, non prova del titolo."
+      ],
+      "evidence": {
+        "reused_from": null,
+        "original_observed_at": null,
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "identity",
+          "credits",
+          "rules",
+          "native_classification",
+          "resource_declarations"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Beeline (1968)",
+          "Beeline"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/10"
+    },
+    {
+      "candidate_id": "PGP-012",
+      "source_record_key": "pergioco:pilot:PGP-012",
+      "title_raw": "Beeline",
+      "display_title_qualified": "Beeline (1984)",
+      "source_url": "https://www.pergioco.net/1/beeline.html",
+      "historical_urls": [
+        "https://www.pergioco.net/beeline-1984.html"
+      ],
+      "observed_at": "2026-10-06",
+      "CAT_formalized_at": "2026-10-06",
+      "EPR_formalized_at": "2026-10-06",
+      "year_declared": 1984,
+      "page_updated_raw": "13/09/2026",
+      "aliases_declared": [],
+      "CAT_outcome": "admitted",
+      "identity_plan_proposed": {
+        "action": "create_canonical_after_authorization",
+        "symbolic_game_key": "PGP-012",
+        "candidate_game_id": null,
+        "match_status": "confirmed_new_local_identity_proposed",
+        "canonical_admission": true,
+        "identity_equivalence_decided": false
+      },
+      "record_payload_semantic_sha256": "3801c707400fc572f79728df0cdc99f522bd433634294de1854a55ef4f08c38b",
+      "credits_and_gaps": {
+        "target": "source_record",
+        "named": [
+          {
+            "name": "John Brassell",
+            "role": "designer",
+            "status": "declared_by_source",
+            "source_url": "https://www.pergioco.net/1/beeline.html",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual"
+          },
+          {
+            "name": "Marino Carpignano",
+            "role": "site_curator_owner",
+            "status": "declared_in_FAQ",
+            "source_url": "https://www.pergioco.net/faq.html",
+            "observed_at": "2026-10-06",
+            "provenance": "TSK-0072_reused",
+            "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+          }
+        ],
+        "missing_or_unnamed": [],
+        "missing_roles": [
+          "illustrator_not_registered",
+          "page_writer_translator_not_attributed",
+          "publisher_not_registered"
+        ],
+        "person_resolution": "manual role/name review; no same-name person merge"
+      },
+      "classification_observations": [
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "A-B",
+            "B-Bla",
+            "Beeline 1984"
+          ],
+          "source_url": "https://www.pergioco.net/1/beeline.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual",
+          "kind": "breadcrumb"
+        },
+        {
+          "label": "Giochi di tavoliere astratti",
+          "path": [
+            "Giochi",
+            "Giochi di tavoliere astratti",
+            "Elenco alfabetico"
+          ],
+          "segment": "A-B",
+          "source_url": "https://www.pergioco.net/giochi-di-tavoliere-astratti.html",
+          "observed_at": "2026-10-06",
+          "kind": "index_membership",
+          "index_title": "Beeline (1984)"
+        }
+      ],
+      "common_category_mapping": [],
+      "rules_assessment": {
+        "language": "it",
+        "completeness": "complete_pilot_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment": "HTML contiene preparazione, turno, obiettivi e pareggio. Criterio di vittoria simultanea lasciato alla scelta dei giocatori dalla fonte.",
+        "source_url": "https://www.pergioco.net/1/beeline.html",
+        "observed_at": "2026-10-06",
+        "provenance": "pilot_residual",
+        "playtested": false
+      },
+      "mentions": [
+        {
+          "key": "PGP-012:resource:1",
+          "destination": "catalog_resources+source_record_link",
+          "payload": {
+            "kind": "rules_html",
+            "url": "https://www.pergioco.net/1/beeline.html",
+            "access": "public_no_login_observed",
+            "completeness": "complete_pilot_assessment",
+            "observed_at": "2026-10-06",
+            "provenance": "pilot_residual",
+            "language": "it",
+            "free_observed": true
+          }
+        }
+      ],
+      "instances": [],
+      "relations_and_limits": [
+        "Titolo indice Beeline (1984), heading Beeline: qualificatore conservato separatamente.",
+        "Regola della vittoria simultanea parametrica: registrare scelta prima di giocare.",
+        "Immagine con etichetta Abande: anomalia, non matching."
+      ],
+      "evidence": {
+        "reused_from": null,
+        "original_observed_at": null,
+        "residual_checked_at": "2026-10-06",
+        "residual_fields": [
+          "identity",
+          "credits",
+          "rules",
+          "native_classification",
+          "resource_declarations"
+        ]
+      },
+      "conditions_ref": "PG-CONDITIONS-20261006",
+      "local_matching_evidence": {
+        "checked_at": "2026-10-06",
+        "method": "Read-only exact case-insensitive games.canonical_title + game_names.name; qualified title, heading and recorded aliases; Othello also for Reversi.",
+        "queried_names": [
+          "Beeline (1984)",
+          "Beeline"
+        ],
+        "matches": [],
+        "status": "no_exact_match",
+        "limit": "Assenza di match esatto non prova assenza di equivalenti o alias non riconciliati."
+      },
+      "source_artifact": "catalog/pergioco_pilot_2026-10-06.json",
+      "source_pointer": "/records/11"
+    }
+  ]
+}

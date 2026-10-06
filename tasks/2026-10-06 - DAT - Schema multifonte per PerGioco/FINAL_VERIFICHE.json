@@ -1,0 +1,32 @@
+{
+  "task_id": "TSK-0077",
+  "date": "2026-10-06",
+  "checks": {
+    "operational_app_matches_pre_migration_backup": true,
+    "operational_schema_replay_zero_changes": true,
+    "all_legacy_tables_match_opening_baseline": true,
+    "21_new_tables_empty": true,
+    "PerGioco_source_absent": true,
+    "app_code_hashes_unchanged": true,
+    "integrity_FK_valid": true
+  },
+  "app_digest_before": "64ca7fd68f9c0fdd7acde0f34edeeb3374af34a0e71dad3c5f1da8f1c492c74f",
+  "app_digest_after": "64ca7fd68f9c0fdd7acde0f34edeeb3374af34a0e71dad3c5f1da8f1c492c74f",
+  "operational_replay": {
+    "outcome": "already_applied",
+    "target": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\database\\pnp_collection.sqlite3",
+    "catalog_rows_inserted": 0
+  },
+  "backup_sha256_verified": true,
+  "operational_sha256": "1915090b20fec26f3063f840a7356c4427b12993ca167b3cad1cc195cbf19295",
+  "imported_records": 0,
+  "APP_implemented": false,
+  "closure_checks": {
+    "registry_predecessors_and_current_completed": true,
+    "fresh_schema_matches_migration": true,
+    "schema_legacy_prefix_preserved": true,
+    "generator_deterministic": true,
+    "post_documentation_operational_hash_unchanged": true,
+    "new_increment_publication_candidates": 0
+  }
+}

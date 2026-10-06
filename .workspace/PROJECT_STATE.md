@@ -63,3 +63,12 @@ TSK-0046: estensione annuale circoscritta classifiche BGG 2024 confermata il 202
 - 2026-10-05: TSK-0065 delibera workflow IMG autonomo BGG/Kanare, `sources/IMAGE_WORKFLOW.md`, registro sigle e skill `game-image-acquisition`. Libreria immagini per gioco con originali/estratti/ai/derivati, manifest fuori binari; tassonomia, naming, estrazioni, varianti, copertura e validazione AI utente. PWS resta 1.5.0. App/schema/acquisizioni non implementati; tecniche da collaudare, fonti future non generalizzate.
 
 - 2026-10-06: TSK-0071 adotta e implementa Avanzamento multifonte con linguette BGG/Kanare e layout indipendenti. Attestazioni catalogo/ACQ storiche e manifest MAT Kanare alimentano app/source_progress.py in sola lettura; metriche 76/76, 62/64, 3/3 sul lotto e IMG senza perimetro. Nessuna migrazione SQLite, acquisizione o modifica PWS; aligned_version resta 1.5.0.
+
+## Persistenza multifonte PerGioco — B-v1 adottata
+
+- 2026-10-06: TSK-0076 delibera B-v1 e piano identita dopo conferma esplicita utente. Evoluzione logica consumer additiva del nucleo multifonte: osservazioni append-only, classificazioni native, URL/menzioni/accessi/condizioni contestuali, istanze, crediti/lacune, relazioni fonte e storia matching separati dalla proiezione canonica. Contratto in MODELLO_LOGICO.md e decisione in tasks/2026-10-06 - EPR - Persistenza multifonte per PerGioco/DECISIONE.md. Piano 12 record, otto nuove identita, Abande candidato 993, tre source-only; 9/3 CAT invariati e Itinera uno/due. Architettura deliberata, persistenza operativa ancora non implementata; nessuna migrazione/importazione/APP o retroattivita implicita. TSK-0074/0075 completati, perimetro TSK-0073 preservato. PWS aligned_version resta 1.5.0, nessuna modifica dello Standard.
+
+
+## Migrazione 013 operativa — TSK-0077, 2026-10-06
+
+- 2026-10-06: attuata architettura logica B-v1 TSK-0076 tramite DAT TSK-0077, con applicazione operativa esplicitamente autorizzata dopo verifica. Migrazione additiva 013, 21 nuove tabelle generiche vuote; righe/ID/viste/oggetti legacy preservati, schema.sql allineato per fresh install. 15 test e 12 controlli su copia, backup/restore/WAL, rollback/replay e lettura app operativa verificati. Nessun import PerGioco, backfill BGG/Kanare, game/matching nuovo, APP o acquisizione. Contratti di importazione e APP ancora da autorizzare separatamente; PWS aligned_version 1.5.0, Standard invariato.

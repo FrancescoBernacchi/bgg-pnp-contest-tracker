@@ -1,0 +1,170 @@
+{
+  "outcome": "inspection_only",
+  "installed": false,
+  "tables": {
+    "acquired_files": {
+      "count": 198,
+      "sha256": "8e38ce919c012a88dc62b04f0a702f6d86a9beac6a54875aab3f628f39c07cd9"
+    },
+    "acquisitions": {
+      "count": 46,
+      "sha256": "4789d5c0c69c533b15dafaa73711154a8c635c823a0ec7dc8263e10064d73140"
+    },
+    "archive_contents": {
+      "count": 11,
+      "sha256": "a34549a5220c1bee9320c87b93b8e1f44406977976c8c9dda45035ad630f801c"
+    },
+    "archive_extractions": {
+      "count": 2,
+      "sha256": "91e55c3a084ff1df200532c0f3732419b7c9ce495d0a63d2f00d358a14b538ea"
+    },
+    "catalog_resources": {
+      "count": 141,
+      "sha256": "6195d46fe3170daaf645abcde5bfc9e9e34b957555d1ae7d428f4c460b3a6682"
+    },
+    "catalog_sources": {
+      "count": 1,
+      "sha256": "89e422a3fdaf9b87d384fb2813920daa367cfe8f968253b1d883d2ecfb0b73a6"
+    },
+    "contest_census_observations": {
+      "count": 50,
+      "sha256": "a031503422d62054801ba0bc958b377a2c0a888f924ba95a4149947711ca9f9c"
+    },
+    "contest_checks": {
+      "count": 79,
+      "sha256": "eecce791153adfdbf59af78be6028e7fe78173bbef2a7717292d88df63bd3d4d"
+    },
+    "contest_metric_observations": {
+      "count": 129,
+      "sha256": "b725be7503021909133f64a6e389e627111dd19321d144d27262000c26cc91d6"
+    },
+    "contest_phase_history": {
+      "count": 90,
+      "sha256": "3e516022cf22f20db35a05c0c9246724d531eb410ca2eee100d782d7b4a99f23"
+    },
+    "contest_phases": {
+      "count": 97,
+      "sha256": "a940f02cc207f4f9af4fa9d71c041b5c316df4f5f9d10e08f74392fa6f8afff7"
+    },
+    "contest_series": {
+      "count": 103,
+      "sha256": "ef5fbb3727350c9e69fb14bd2ca1d8ec9b3df784a74be04086e481f286b7c388"
+    },
+    "contest_sources": {
+      "count": 436,
+      "sha256": "5f4eae7dd228db8c807eb85a370f297a5ee5ddfbfd6b47a675cde98c5f08f515"
+    },
+    "contest_status_history": {
+      "count": 44,
+      "sha256": "006348ba23153f276290147fe970d7e45cf70ca0dc032f41a4be169159d35148"
+    },
+    "contests": {
+      "count": 306,
+      "sha256": "1a8cec56107319f918092197b748487e9ba44c2a7770174499120d2794b2e3b9"
+    },
+    "credit_assertions": {
+      "count": 62,
+      "sha256": "3ac50327d7cc0127dd962424cd836278e8868732912d69b51c664f7b027177db"
+    },
+    "entries": {
+      "count": 1382,
+      "sha256": "cccd1023a4a11606db95ae3852d5122b00d7f13d4606dd4d5d9912fd26f648d0"
+    },
+    "entry_material_requirements": {
+      "count": 1513,
+      "sha256": "3dac6f95fb187dad7d1a23e24d8bd466c2a77844ce357224d06077deec7801dd"
+    },
+    "entry_material_scans": {
+      "count": 532,
+      "sha256": "a762a352e32d158799a108587ee425ef6b43987ac1ec0c6ab151193798fcc837"
+    },
+    "entry_resource_mentions": {
+      "count": 1154,
+      "sha256": "df71add14c6f6ced1ed7f69240bc9125b3684cdce4db6df6e671911bdb7147a8"
+    },
+    "entry_resource_scans": {
+      "count": 532,
+      "sha256": "3697df67e2f9279f77729f8f083c297f5ad717c80965edd10967c570e378a765"
+    },
+    "entry_status_history": {
+      "count": 1417,
+      "sha256": "b5d0097ed89aaff436597b706017587d2d7745fec45b24d9448da3ada9f47b76"
+    },
+    "entry_work_observations": {
+      "count": 1501,
+      "sha256": "4fed700112dbdee8c5e4530dce8d4400da85797b006b32130082c10f03a35a3d"
+    },
+    "game_credits": {
+      "count": 810,
+      "sha256": "7bbfede53e005dfc291646f824d01080029e0ae1484ed2f91c2ed9945ffc5f50"
+    },
+    "game_implementations": {
+      "count": 54,
+      "sha256": "cd385ad96d8ae4a71c321cd11f8a300dee9ec61dcb6cc98a1975e76d9f571e8e"
+    },
+    "game_names": {
+      "count": 40,
+      "sha256": "7fcaa0c7fe4e64ade149ad8900e9b6ab83fbee1891e2b788b8e976538485b11a"
+    },
+    "game_relationships": {
+      "count": 2,
+      "sha256": "5b40715d88188d4e54cdf62130dd668715e3775070f0b42469cb39a6854ce3d3"
+    },
+    "game_source_records": {
+      "count": 90,
+      "sha256": "7076958cd0cac76a73e0380186b8fe7b625af9b7bcedfb713a23dee325e4beb2"
+    },
+    "games": {
+      "count": 1446,
+      "sha256": "21617066d692e47832839dbce43d0fe39e2b0295e38011d2fc8c32c4bc834791"
+    },
+    "observations": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "online_platforms": {
+      "count": 10,
+      "sha256": "422dda7b21eeb17c0a499fe6c41252de7def150e03883f461397562a95c3563d"
+    },
+    "people": {
+      "count": 621,
+      "sha256": "abb88851c72aa644132787bc0dda43ed5a1ae2ce7a01923193c92a0ab50bfff6"
+    },
+    "person_names": {
+      "count": 13,
+      "sha256": "58cab6c896181a644282301693c04a4b9f7851902cda49c4d071d51becfe4948"
+    },
+    "product_games": {
+      "count": 56,
+      "sha256": "d7ba9a1d7bce1b7102e23119a8a53cd3fc153361cc1f9370c6ee14a41697e211"
+    },
+    "product_source_records": {
+      "count": 57,
+      "sha256": "a13b4c5d91b15dcd7da0513a34032fa38edc81b77f9725d876c4bc96e7d50b7c"
+    },
+    "products": {
+      "count": 39,
+      "sha256": "5e564be288eb0603a43e5d9185258b424b6cfde3844f96d0b198964e21b61767"
+    },
+    "rankings": {
+      "count": 1996,
+      "sha256": "f3a84e3d806b1d016f6f6ec3fdd8fd787c2eef4ad48a126e3f9627a74874fb00"
+    },
+    "remote_resource_observations": {
+      "count": 1242,
+      "sha256": "afd047b1e7a00e0e06a3fc0117e0160b189cf62ce4a7c2d5af49abc4a42660c3"
+    },
+    "remote_resources": {
+      "count": 1150,
+      "sha256": "47c05a6d1eac6afcd475d4436443cf869309c614ada88195cd69a4c8ad36d673"
+    },
+    "resource_links": {
+      "count": 162,
+      "sha256": "3c2e3b0b893cc330c391c91f3bef76ddfff4b3327668d8fbbc52fddf56f3388c"
+    },
+    "source_records": {
+      "count": 76,
+      "sha256": "d36984b639a8e4b8124cdeebe1e4f97bcc670a7225779798945ef35557c41365"
+    }
+  }
+}

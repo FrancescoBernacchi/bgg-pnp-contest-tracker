@@ -1,0 +1,25 @@
+{
+  "task_id": "TSK-0077",
+  "date": "2026-10-06",
+  "checked_files": [
+    "database/migrations/013_source_evidence.sql",
+    "database/schema.sql",
+    "database/build_source_evidence_migration.py",
+    "database/apply_source_evidence_migration.py",
+    "database/test_source_evidence_migration.py",
+    "database/verify_source_evidence_migration.py",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/BASELINE.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/COPY_PRE_APPLICAZIONE.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/COPY_VERIFICHE.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/FINAL_VERIFICHE.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/MAPPING_FISICO.md",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/OPERATIVO_VERIFICHE.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/PHYSICAL_MODEL.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/PUBLICATION_CHECK.json",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/TASK.md",
+    "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/TEST_RESULTS.txt"
+  ],
+  "heuristic_findings": [],
+  "manual_review": "New DDL/code, synthetic tests, original documentation and legacy counts/hash/DDL only. No game source content/media. Copies/backups remain in ignored outputs; documentation changes are original status summaries.",
+  "limits": "Unrelated changes/outgoing history not certified; full audit required before commit/push."
+}

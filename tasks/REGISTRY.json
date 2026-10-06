@@ -5,6 +5,98 @@
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata.",
   "tasks": [
     {
+      "id": "TSK-0077",
+      "original_title": "2026-10-06 - DAT - Schema multifonte per PerGioco",
+      "display_title": "2026-10-06 - DAT - Schema multifonte per PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/TASK.md",
+      "category": "DAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Migrazione 013 implementata/applicata con consenso esplicito; 15 test, 12 controlli su copia, backup/restore/WAL, legacy e app preservati, tabelle nuove vuote e replay zero delta.",
+      "dependencies": [
+        "TSK-0076"
+      ],
+      "related_tasks": [
+        "TSK-0073",
+        "TSK-0075"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a112f5-19f1-74c0-873d-c32a9b043631"
+      ],
+      "coverage": {
+        "migration": "013",
+        "imported_records": 0,
+        "operational_application_authorized": true,
+        "migration_applied": true,
+        "new_tables": 21,
+        "new_tables_empty": true,
+        "backfill_records": 0,
+        "APP_modified": false
+      },
+      "next_action": "Su richiesta autorizzare DAT importazione PerGioco separato; nessun importer o APP avviato.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "allineato_riferimento_locale"
+      },
+      "closed_at": "2026-10-06",
+      "last_verified_at": "2026-10-06"
+    },
+    {
+      "id": "TSK-0076",
+      "original_title": "2026-10-06 - EPR - Persistenza multifonte per PerGioco",
+      "display_title": "2026-10-06 - EPR - Persistenza multifonte per PerGioco",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - EPR - Persistenza multifonte per PerGioco/TASK.md",
+      "category": "EPR",
+      "secondary_categories": [
+        "DAT"
+      ],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Conferma esplicita utente di B-v1 e piano identita; decisione registrata e riferimenti autorevoli aggiornati. Nessuna implementazione/importazione.",
+      "dependencies": [
+        "TSK-0075",
+        "TSK-0073"
+      ],
+      "related_tasks": [
+        "TSK-0074"
+      ],
+      "successors": [
+        "TSK-0077"
+      ],
+      "chat_ids": [
+        "01a112f5-19f1-74c0-873d-c32a9b043631"
+      ],
+      "coverage": {
+        "preview_candidates": 12,
+        "CAT_admitted": 9,
+        "CAT_requirement_not_demonstrated": 3,
+        "proposed_new_games": 8,
+        "candidate_links": 1,
+        "architecture_adopted": true,
+        "executed_import": false
+      },
+      "next_action": "Su richiesta aprire DAT esecutivo per schema/migrazione; importazione PerGioco e APP richiedono contratti/autorizzazioni separati.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "allineato_riferimento_locale",
+        "evidence": "main...origin/main nel riferimento locale; remoto non interrogato, modifiche pregresse preservate."
+      },
+      "last_verified_at": "2026-10-06",
+      "closed_at": "2026-10-06"
+    },
+    {
       "id": "TSK-0069",
       "original_title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento delle skill",
       "display_title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento delle skill",
@@ -2384,7 +2476,9 @@
         "TSK-0074",
         "TSK-0073"
       ],
-      "successors": [],
+      "successors": [
+        "TSK-0076"
+      ],
       "chat_ids": [
         "01a112e4-6a22-75b2-8a7f-ed6e6f11bdd3"
       ],
@@ -2416,6 +2510,31 @@
           "date": "2026-10-06",
           "status": "completato",
           "evidence": "VERIFICHE.json e PROPOSTA.md; preparazione conclusa, decisioni esecutive pendenti."
+        }
+      ]
+    }
+  ],
+  "chats": [
+    {
+      "thread_id": "01a112f5-19f1-74c0-873d-c32a9b043631",
+      "previous_title": null,
+      "title": "2026-10-06 - DAT - Deliberazione e schema multifonte PerGioco",
+      "opened_at": "2026-10-06",
+      "category": "DAT",
+      "task_ids": [
+        "TSK-0076",
+        "TSK-0077"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false,
+      "title_history": [
+        {
+          "date": "2026-10-06",
+          "previous_title": "2026-10-06 - EPR - Persistenza multifonte per PerGioco",
+          "title": "2026-10-06 - DAT - Deliberazione e schema multifonte PerGioco",
+          "reason": "Avvio DAT esecutivo autorizzato; tema EPR preservato nel titolo cumulativo."
         }
       ]
     }

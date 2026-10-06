@@ -73,3 +73,7 @@ Codex deve accompagnare le operazioni Git spiegando quando sono utili e perché.
 APP-005 estende la Libreria con raggruppamento per gioco, lettori PDF/PNG/DOCX e contenuti ZIP estratti offline con hash e provenienza. Limiti e istruzioni aggiornate in `app/README.md`; esiti nel task `2026-10-03 - Libreria per gioco e visualizzatori APP-005`.
 
 Dal 2026-10-06 Avanzamento ha schede indipendenti BGG e Kanare: annualita/contest per BGG, catalogo/materiali/lotti selezionati e dettagli per gioco/confezione per Kanare. Metriche e manutenzione delle attestazioni in app/README.md; nessuna acquisizione automatica.
+
+## Migrazione 013 operativa — 2026-10-06
+
+Persistenza multifonte B-v1 implementata nello schema (TSK-0077): osservazioni storiche e prove contestuali generiche, compatibilita BGG/Kanare verificata. PerGioco resta un pilota CAT non importato; nuove tabelle vuote, app invariata. Importazione e APP sono passi separati. Decisione in TSK-0076, mapping/verifiche in `tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/`.
