@@ -25,6 +25,7 @@ L'agente deve applicare le skill locali pertinenti prima di svolgere le attivit√
 - `.workspace/PROJECT_STATE.md`: stato di inizializzazione e allineamento PWS.
 - `app/`: interfaccia locale Python/HTML/CSS/JavaScript in sola lettura; `server.py`, asset in `static/`, launcher `start.ps1`, test e guida `README.md`; include navigazione di contest, entry, risorse e classifiche, Libreria per gioco e lettori PDF/PNG/DOCX per ID registrati (`pdf_files.py`, `material_files.py`, `static/pdf-viewer.js`, `static/material-viewer.js`, PDF.js locale in `static/vendor/pdfjs/`); estrazione ZIP offline in `catalog/extract_registered_archives.py` con migrazione 011, sintesi per contest e il generatore Markdown preesistente.
 - `database/schema.sql`: modello relazionale autorevole iniziale.
+- `app/source_progress.py`: adattatori in sola lettura dell'Avanzamento multifonte; linguette BGG/Kanare, attestazioni catalogo/ACQ in `catalog/kanare_progress_scope_2026-10-06.json` e inventario MAT Kanare nel manifest dedicato. Nessuna percentuale inferita dai soli URL; nuove fonti richiedono layout e metriche propri.
 - `database/migrations/`: evoluzioni ordinate dello schema.
 - `catalog/`: manifest ed esportazioni testuali versionabili.
 - `library/`: materiali PnP acquisiti; contenuto escluso da Git.

@@ -13,6 +13,7 @@ import secrets
 import hmac
 import webbrowser
 from work_progress import enrich_work_progress, summarize_work
+from source_progress import source_progress
 from library_catalog import library_catalog
 from pdf_files import open_pdf, PDFError
 from material_files import open_material, docx_blocks, DOCX
@@ -59,7 +60,7 @@ def periodic(check):
             and not any(token in kind for token in ("baseline", "census", "consistency")))
 
 
-def catalog(db):
+def catalog(db, library_root=ROOT / 'library'):
     contests = rows(db, "SELECT * FROM v_contests_monitoring_all ORDER BY year DESC, julianday(starts_at) DESC, contest_id DESC")
     sources = rows(db, "SELECT * FROM catalog_sources ORDER BY display_name COLLATE NOCASE,id")
     if any(contest for contest in contests) and not any(source["source_key"] == "boardgamegeek" for source in sources):
@@ -70,7 +71,7 @@ def catalog(db):
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "contests": contests,
-        "progress": progress_rows(db),
+        "progress": progress_rows(db, library_root),
         "rankings": ranking_rows(db),
         "sources": sources,
         "games": game_rows(db),
@@ -166,7 +167,7 @@ def game_detail(db, game_id, library_root=ROOT / "library"):
     }
 
 
-def progress_rows(db):
+def progress_rows(db, library_root=ROOT / 'library'):
     """Indicatori del cruscotto calcolati dal catalogo, senza leggere il Markdown."""
     contests = rows(db, """SELECT c.id AS contest_id,c.year,c.name AS contest_name,c.scope_type,
         c.status_normalized,c.source_url,COUNT(DISTINCT e.id) AS entry_count,
@@ -215,7 +216,7 @@ def progress_rows(db):
             "pnp_core": scope_summary("pnp_core"),
             "adjacent": scope_summary("adjacent"),
         })
-    return {"years": years, "contests": contests}
+    return {"years": years, "contests": contests, "sources": source_progress(db, library_root=library_root)}
 
 
 def ranking_rows(db, contest_id=None, game_id=None):
@@ -444,7 +445,7 @@ class Handler(BaseHTTPRequestHandler):
                     data = next(f for f in library_catalog(db, self.server.library_root, game_id)['files'] if f['id'] == file_id)
             elif path.path == "/api/catalog":
                 with connect(self.server.database) as db:
-                    data = catalog(db)
+                    data = catalog(db, self.server.library_root)
             elif path.path == "/api/library":
                 with connect(self.server.database) as db:
                     data = library_catalog(db, self.server.library_root)

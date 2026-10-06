@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "source_key": "kanare_abstract",
+  "formalized_at": "2026-10-06",
+  "task_id": "TSK-0071",
+  "census": {
+    "verified_at": "2026-09-20",
+    "evidence": "TSK-0020",
+    "source_urls": [
+      "https://kanare-abstract.com/en/pages/games_by_kanare",
+      "https://kanare-abstract.com/en/collections/all",
+      "https://kanare-abstract.com/en/pages/online_play"
+    ],
+    "records": [
+      {
+        "id": 1,
+        "url": "https://kanare-abstract.com/en/pages/games_by_kanare",
+        "record_type": "work_index"
+      },
+      {
+        "id": 2,
+        "url": "https://kanare-abstract.com/en/collections/all",
+        "record_type": "product_catalog"
+      },
+      {
+        "id": 3,
+        "url": "https://kanare-abstract.com/en/pages/online_play",
+        "record_type": "online_play_index"
+      },
+      {
+        "id": 4,
+        "url": "https://kanare-abstract.com/en/pages/saiju",
+        "record_type": "game_page"
+      },
+      {
+        "id": 5,
+        "url": "https://kanare-abstract.com/en/pages/iago",
+        "record_type": "game_page"
+      },
+      {
+        "id": 6,
+        "url": "https://kanare-abstract.com/en/pages/borderland",
+        "record_type": "game_page"
+      },
+      {
+        "id": 7,
+        "url": "https://kanare-abstract.com/en/pages/rosenkreuz",
+        "record_type": "game_page"
+      },
+      {
+        "id": 8,
+        "url": "https://kanare-abstract.com/en/pages/lines_of_fixation",
+        "record_type": "game_page"
+      },
+      {
+        "id": 9,
+        "url": "https://kanare-abstract.com/en/pages/ripples",
+        "record_type": "game_page"
+      },
+      {
+        "id": 10,
+        "url": "https://kanare-abstract.com/en/pages/meridians",
+        "record_type": "game_page"
+      },
+      {
+        "id": 11,
+        "url": "https://kanare-abstract.com/en/pages/stairs",
+        "record_type": "game_page"
+      },
+      {
+        "id": 12,
+        "url": "https://kanare-abstract.com/en/pages/comune",
+        "record_type": "game_page"
+      },
+      {
+        "id": 13,
+        "url": "https://kanare-abstract.com/en/pages/estate",
+        "record_type": "game_page"
+      },
+      {
+        "id": 14,
+        "url": "https://kanare-abstract.com/en/pages/viceversi",
+        "record_type": "game_page"
+      },
+      {
+        "id": 15,
+        "url": "https://kanare-abstract.com/en/pages/chess-territorial",
+        "record_type": "game_page"
+      },
+      {
+        "id": 16,
+        "url": "https://kanare-abstract.com/en/pages/pentwall",
+        "record_type": "game_page"
+      },
+      {
+        "id": 17,
+        "url": "https://kanare-abstract.com/en/pages/stoic",
+        "record_type": "game_page"
+      },
+      {
+        "id": 18,
+        "url": "https://kanare-abstract.com/en/pages/stride",
+        "record_type": "game_page"
+      },
+      {
+        "id": 19,
+        "url": "https://kanare-abstract.com/en/pages/squish",
+        "record_type": "game_page"
+      },
+      {
+        "id": 20,
+        "url": "https://kanare-abstract.com/en/pages/unlace",
+        "record_type": "game_page"
+      },
+      {
+        "id": 21,
+        "url": "https://kanare-abstract.com/en/pages/skirt",
+        "record_type": "game_page"
+      },
+      {
+        "id": 22,
+        "url": "https://kanare-abstract.com/en/pages/node",
+        "record_type": "game_page"
+      },
+      {
+        "id": 23,
+        "url": "https://kanare-abstract.com/en/pages/orochi",
+        "record_type": "game_page"
+      },
+      {
+        "id": 24,
+        "url": "https://kanare-abstract.com/en/pages/sibling",
+        "record_type": "game_page"
+      },
+      {
+        "id": 25,
+        "url": "https://kanare-abstract.com/en/pages/mabi",
+        "record_type": "game_page"
+      },
+      {
+        "id": 26,
+        "url": "https://kanare-abstract.com/en/pages/tiptoe",
+        "record_type": "game_page"
+      },
+      {
+        "id": 27,
+        "url": "https://kanare-abstract.com/en/pages/apart",
+        "record_type": "game_page"
+      },
+      {
+        "id": 28,
+        "url": "https://kanare-abstract.com/en/pages/zong-heng",
+        "record_type": "game_page"
+      },
+      {
+        "id": 29,
+        "url": "https://kanare-abstract.com/en/pages/binary",
+        "record_type": "game_page"
+      },
+      {
+        "id": 30,
+        "url": "https://kanare-abstract.com/en/pages/incorrect_checkers",
+        "record_type": "game_page"
+      },
+      {
+        "id": 31,
+        "url": "https://kanare-abstract.com/en/pages/alquad",
+        "record_type": "game_page"
+      },
+      {
+        "id": 32,
+        "url": "https://kanare-abstract.com/en/pages/sight",
+        "record_type": "game_page"
+      },
+      {
+        "id": 33,
+        "url": "https://kanare-abstract.com/en/pages/collapse",
+        "record_type": "game_page"
+      },
+      {
+        "id": 34,
+        "url": "https://kanare-abstract.com/en/pages/snaketrail",
+        "record_type": "game_page"
+      },
+      {
+        "id": 35,
+        "url": "https://kanare-abstract.com/en/pages/nuts_sorting",
+        "record_type": "game_page"
+      },
+      {
+        "id": 36,
+        "url": "https://kanare-abstract.com/en/pages/fruits_platter",
+        "record_type": "game_page"
+      },
+      {
+        "id": 37,
+        "url": "https://kanare-abstract.com/en/pages/candy_chain",
+        "record_type": "game_page"
+      },
+      {
+        "id": 38,
+        "url": "https://kanare-abstract.com/en/products/lag",
+        "record_type": "product_page"
+      },
+      {
+        "id": 39,
+        "url": "https://kanare-abstract.com/en/products/onager",
+        "record_type": "product_page"
+      },
+      {
+        "id": 40,
+        "url": "https://kanare-abstract.com/en/products/carpniches",
+        "record_type": "product_page"
+      },
+      {
+        "id": 41,
+        "url": "https://kanare-abstract.com/en/products/queens_guard",
+        "record_type": "product_page"
+      },
+      {
+        "id": 42,
+        "url": "https://kanare-abstract.com/en/products/quantum-control",
+        "record_type": "product_page"
+      },
+      {
+        "id": 43,
+        "url": "https://kanare-abstract.com/en/products/circular_chess",
+        "record_type": "product_page"
+      },
+      {
+        "id": 44,
+        "url": "https://kanare-abstract.com/en/products/stacking-trilogy",
+        "record_type": "product_page"
+      },
+      {
+        "id": 45,
+        "url": "https://kanare-abstract.com/en/products/slyde",
+        "record_type": "product_page"
+      },
+      {
+        "id": 46,
+        "url": "https://kanare-abstract.com/en/products/trike",
+        "record_type": "product_page"
+      },
+      {
+        "id": 47,
+        "url": "https://kanare-abstract.com/en/products/dryad",
+        "record_type": "product_page"
+      },
+      {
+        "id": 48,
+        "url": "https://kanare-abstract.com/en/products/flower-shop",
+        "record_type": "product_page"
+      },
+      {
+        "id": 49,
+        "url": "https://kanare-abstract.com/en/products/hexentafl",
+        "record_type": "product_page"
+      },
+      {
+        "id": 50,
+        "url": "https://kanare-abstract.com/en/products/paintscape",
+        "record_type": "product_page"
+      },
+      {
+        "id": 51,
+        "url": "https://kanare-abstract.com/en/products/make-muster",
+        "record_type": "product_page"
+      },
+      {
+        "id": 52,
+        "url": "https://kanare-abstract.com/en/products/morris",
+        "record_type": "product_page"
+      },
+      {
+        "id": 53,
+        "url": "https://kanare-abstract.com/en/products/residuel",
+        "record_type": "product_page"
+      },
+      {
+        "id": 54,
+        "url": "https://kanare-abstract.com/en/products/whirlpool",
+        "record_type": "product_page"
+      },
+      {
+        "id": 55,
+        "url": "https://kanare-abstract.com/en/products/volo",
+        "record_type": "product_page"
+      },
+      {
+        "id": 56,
+        "url": "https://kanare-abstract.com/en/products/enso",
+        "record_type": "product_page"
+      },
+      {
+        "id": 57,
+        "url": "https://kanare-abstract.com/en/products/shape-chess",
+        "record_type": "product_page"
+      },
+      {
+        "id": 58,
+        "url": "https://kanare-abstract.com/en/products/tori_shogi",
+        "record_type": "product_page"
+      },
+      {
+        "id": 59,
+        "url": "https://kanare-abstract.com/en/products/iago",
+        "record_type": "product_page"
+      },
+      {
+        "id": 60,
+        "url": "https://kanare-abstract.com/en/products/estate",
+        "record_type": "product_page"
+      },
+      {
+        "id": 61,
+        "url": "https://kanare-abstract.com/en/products/comune",
+        "record_type": "product_page"
+      },
+      {
+        "id": 62,
+        "url": "https://kanare-abstract.com/en/products/saiju",
+        "record_type": "product_page"
+      },
+      {
+        "id": 63,
+        "url": "https://kanare-abstract.com/en/products/stairs",
+        "record_type": "product_page"
+      },
+      {
+        "id": 64,
+        "url": "https://kanare-abstract.com/en/products/borderland",
+        "record_type": "product_page"
+      },
+      {
+        "id": 65,
+        "url": "https://kanare-abstract.com/en/products/meridians",
+        "record_type": "product_page"
+      },
+      {
+        "id": 66,
+        "url": "https://kanare-abstract.com/en/products/lines_of_fixation",
+        "record_type": "product_page"
+      },
+      {
+        "id": 67,
+        "url": "https://kanare-abstract.com/en/products/ripples",
+        "record_type": "product_page"
+      },
+      {
+        "id": 68,
+        "url": "https://kanare-abstract.com/en/products/rosenkreuz",
+        "record_type": "product_page"
+      },
+      {
+        "id": 69,
+        "url": "https://kanare-abstract.com/en/products/colorpack",
+        "record_type": "product_page"
+      },
+      {
+        "id": 70,
+        "url": "https://kanare-abstract.com/en/products/gamediscs",
+        "record_type": "product_page"
+      },
+      {
+        "id": 71,
+        "url": "https://kanare-abstract.com/en/products/generic-board-alquerq-set",
+        "record_type": "product_page"
+      },
+      {
+        "id": 72,
+        "url": "https://kanare-abstract.com/en/products/generic_board_square",
+        "record_type": "product_page"
+      },
+      {
+        "id": 73,
+        "url": "https://kanare-abstract.com/en/products/generic_board_checkered",
+        "record_type": "product_page"
+      },
+      {
+        "id": 74,
+        "url": "https://kanare-abstract.com/en/products/generic_board_parallelo",
+        "record_type": "product_page"
+      },
+      {
+        "id": 75,
+        "url": "https://kanare-abstract.com/en/products/generic_board_hexagonal",
+        "record_type": "product_page"
+      },
+      {
+        "id": 76,
+        "url": "https://kanare-abstract.com/en/products/woodbase",
+        "record_type": "product_page"
+      }
+    ]
+  },
+  "materials_manifest": "kanare_material_census_2026-10-06.json",
+  "acquisition": {
+    "verified_at": "2026-09-21",
+    "evidence": "TSK-0023",
+    "scope": "Lotto approvato 2026-09-21: tre PDF EN, esclusi JA, immagini e implementazioni online",
+    "games": [
+      {
+        "game_id": 959,
+        "batch_key": "kanare-abstract-2026-09-21-01",
+        "approved_at": "2026-09-21",
+        "verified_at": "2026-09-21",
+        "scope": "Un PDF EN per gioco; per Pentwall include plancia stampabile",
+        "reason": "Unico titolo classificato esplicitamente Print & Play dalla fonte; regolamento e plancia stampabile nello stesso PDF",
+        "required_files": [
+          {
+            "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Pentwall_EN.pdf?v=1680000395",
+            "language_code": "en",
+            "sha256": "c96cceee5b7326b7d84877321214e82c3173486656bfe84c407b08ca63481fac",
+            "byte_size": 1499855
+          }
+        ]
+      },
+      {
+        "game_id": 957,
+        "batch_key": "kanare-abstract-2026-09-21-01",
+        "approved_at": "2026-09-21",
+        "verified_at": "2026-09-21",
+        "scope": "Un PDF EN per gioco; per Pentwall include plancia stampabile",
+        "reason": "Gioco solo-regole utilizzabile con componenti Othello/Reversi comuni; grafia ViceVersi della pagina preservata nel nome originale",
+        "required_files": [
+          {
+            "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/ViceVersi_rules_EN.pdf?v=1679584510",
+            "language_code": "en",
+            "sha256": "88aa59877d6b2f28e0280bc2ede7db2f8e7d9b18f0261bccd7917df6594718da",
+            "byte_size": 189925
+          }
+        ]
+      },
+      {
+        "game_id": 958,
+        "batch_key": "kanare-abstract-2026-09-21-01",
+        "approved_at": "2026-09-21",
+        "verified_at": "2026-09-21",
+        "scope": "Un PDF EN per gioco; per Pentwall include plancia stampabile",
+        "reason": "Gioco solo-regole utilizzabile con un normale set di scacchi; identità e provenienza confermate",
+        "required_files": [
+          {
+            "resource_url": "https://cdn.shopify.com/s/files/1/0578/3502/8664/files/Chess_Territorial_EN.pdf?v=1705179788",
+            "language_code": "en",
+            "sha256": "7ef2766a8a47efc4eae22bd09e3738c92b2242b1d40db247ac3ce40920f5e784",
+            "byte_size": 621622
+          }
+        ]
+      }
+    ]
+  }
+}

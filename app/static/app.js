@@ -195,7 +195,122 @@ function stats() {
   const dependent = data.entries.filter(e=>e.entry_kind==='dependent_variant').length;
   return `<div class="stats"><div class="stat"><span>Contest nell’archivio</span><strong>${data.contests.length}</strong><small>Edizioni catalogate</small></div><div class="stat"><span>PnP principali</span><strong>${core}</strong><small>${data.contests.length-core} contest adiacenti separati</small></div><div class="stat"><span>Entry censite</span><strong>${data.entries.length}</strong><small>Include le entry ritirate</small></div><div class="stat"><span>Varianti dipendenti</span><strong>${dependent}</strong><small>Da un gioco base</small></div></div>`;
 }
-const progressState={year:''};
+const progressState={source:'boardgamegeek',year:'',expandedYear:null};
+const kanareProgressState={query:'',view:'games',phase:'materials',status:'',ambiguity:false,expanded:new Set()};
+const workStatusNames={complete:'Completato',partial:'Parziale',blocked:'Bloccato',unknown:'Da attestare',not_applicable:'Non applicabile',not_selected:'Non selezionato'};
+const workStatus=value=>`<span class="work-status work-${esc(value)}">${esc(workStatusNames[value]||'Da attestare')}</span>`;
+function progressSources(){return data.progress.sources?.length?data.progress.sources:[{source_key:'boardgamegeek',display_name:'BGG',layout:'bgg'}];}
+function sourceTabsHtml(sources){
+  return `<div class="source-tabs" role="tablist" aria-label="Fonte dell’avanzamento">${sources.map(s=>`<a role="tab" id="progress-tab-${esc(s.source_key)}" href="#progress/${esc(s.source_key)}" data-progress-source="${esc(s.source_key)}" aria-selected="${progressState.source===s.source_key}" aria-controls="source-progress-panel" tabindex="${progressState.source===s.source_key?0:-1}">${esc(s.display_name)}</a>`).join('')}</div>`;
+}
+function renderProgress(sourceKey){
+  const tabHadFocus=!!document.activeElement?.dataset?.progressSource;
+  const sources=progressSources();
+  if(sourceKey)progressState.source=sourceKey;
+  const current=sources.find(s=>s.source_key===progressState.source)||sources[0];
+  progressState.source=current.source_key;
+  const content=current.layout==='bgg'?bggProgressHtml():current.layout==='kanare'?kanareProgressHtml(current):'<div class="empty">Il layout e le metriche di questa fonte devono essere definiti.</div>';
+  $('#main').innerHTML=heading('CRUSCOTTO','Avanzamento.','Il lavoro svolto e i prossimi passi, con un’organizzazione dedicata a ogni fonte.')+sourceTabsHtml(sources)+`<section id="source-progress-panel" role="tabpanel" aria-labelledby="progress-tab-${esc(current.source_key)}" tabindex="0">${content}</section>`;
+  document.querySelectorAll('[data-progress-source]').forEach((tab,index)=>{
+    tab.onkeydown=event=>{
+      let next;
+      if(event.key==='ArrowRight')next=(index+1)%sources.length;
+      else if(event.key==='ArrowLeft')next=(index+sources.length-1)%sources.length;
+      else if(event.key==='Home')next=0;
+      else if(event.key==='End')next=sources.length-1;
+      if(next!==undefined){event.preventDefault();progressState.source=sources[next].source_key;location.hash='progress/'+progressState.source;renderProgress();document.querySelector(`[data-progress-source="${progressState.source}"]`)?.focus();}
+    };
+  });
+  if(current.layout==='bgg')bindBggProgress();
+  if(current.layout==='kanare')bindKanareProgress(current);
+  if(tabHadFocus)document.querySelector(`[data-progress-source="${progressState.source}"]`)?.focus();
+}
+function kanareMetricHtml(m){
+  const text=m.total?`${m.value}/${m.total} · ${m.percent}%`:'—';
+  const count=m.counts;
+  return `<article class="source-metric"><button data-kanare-metric="${esc(m.phase)}" aria-label="${esc(m.name)}: ${esc(text)}. Apri il dettaglio"><span>${esc(m.name)}</span><strong>${esc(text)}</strong></button><progress class="pipeline-progress phase-${esc(m.phase)}" aria-label="${esc(m.name)}" value="${m.value}" max="${m.total||1}"></progress><p>${esc(m.scope)}</p><small>${m.reason?esc(m.reason):`Parziali: ${count.partial} · Bloccati: ${count.blocked} · Da attestare: ${count.unknown} · Non applicabili: ${count.not_applicable}`}</small><small>Verifica: ${esc(day(m.verified_at))}${m.evidence?' · '+esc(m.evidence):''}</small></article>`;
+}
+function kanareProgressHtml(s){
+  const summary=s.summary;
+  return `<div class="section-heading"><h2>Kanare</h2><span>Catalogo: ${esc(day(s.census_verified_at))} · Materiali: ${esc(day(s.materials_verified_at))}</span></div>${s.warnings.map(w=>`<div class="notice" role="status">${esc(w)}</div>`).join('')}<div class="stats kanare-stats"><div class="stat"><span>Giochi catalogati</span><strong>${summary.games}</strong><small>Identità canoniche distinte</small></div><div class="stat"><span>Schede della fonte</span><strong>${summary.records}</strong><small>Pagine gioco, prodotti e indici</small></div><div class="stat"><span>Confezioni e prodotti</span><strong>${summary.products}</strong><small>Comprendono set e accessori</small></div><button class="stat stat-action" data-kanare-identities aria-pressed="${kanareProgressState.ambiguity}"><span>Identità da chiarire</span><strong>${summary.identity_pending}</strong><small>${summary.candidate_links} associazioni candidate · Apri</small></button></div><div class="source-metrics">${s.metrics.map(kanareMetricHtml).join('')}</div><p class="source-coverage">Materiali: ${summary.selected_acquisition} giochi selezionati su ${summary.games} catalogati · ${summary.games_with_files} con file del lotto verificati. Immagini: ${summary.selected_images} giochi selezionati. Le acquisizioni misurano il completamento del perimetro approvato.</p><div class="segmented" aria-label="Organizzazione Kanare">${[['games','Giochi'],['products','Confezioni'],['records','Schede della fonte']].map(([key,name])=>`<button data-kanare-view="${key}" class="${kanareProgressState.view===key?'selected':''}" aria-pressed="${kanareProgressState.view===key}">${name}</button>`).join('')}</div><div class="filters kanare-filters"><label class="field grow">Cerca<input id="kanare-progress-search" type="search" value="${esc(kanareProgressState.query)}" placeholder="Gioco o confezione…"></label><label class="field">Fase<select id="kanare-progress-phase">${[['materials','Censimento materiali'],['acquisition','Acquisizione materiali'],['images','Acquisizione immagini']].map(([key,name])=>`<option value="${key}">${name}</option>`).join('')}</select></label><label class="field">Stato<select id="kanare-progress-status"><option value="">Tutti gli stati</option><option value="selected">Selezionati</option><option value="pending">Da completare</option>${Object.entries(workStatusNames).map(([key,name])=>`<option value="${key}">${name}</option>`).join('')}</select></label><button class="filter-reset" id="kanare-progress-reset">Azzera filtri</button></div><div id="kanare-progress-results" aria-live="polite"></div>`;
+}
+function matchingKanareGames(s){
+  const f=kanareProgressState,q=f.query.trim().toLocaleLowerCase();
+  return s.games.filter(g=>{
+    const status=g[f.phase]?.outcome||'unknown';
+    return (!q||[g.canonical_title,...g.products.map(p=>p.canonical_name)].join(' ').toLocaleLowerCase().includes(q))&&(!f.ambiguity||g.identity_pending)&&(!f.status||(f.status==='pending'?['partial','blocked','unknown'].includes(status):f.status==='selected'?status!=='not_selected':status===f.status));
+  });
+}
+function kanareGameDetails(g){
+  const m=g.materials,a=g.acquisition;
+  const requirements=m.requirements.length?`<ul>${m.requirements.map(r=>`<li>${esc(r.declaration_summary||r.quantity_raw_summary||r.normalization)}${r.supply_mode?` <small>${esc(({common:'Componenti comuni',printable:'Stampabile',specific_or_marked:'Specifico o segnato',documented_characteristics:'Caratteristiche documentate'})[r.supply_mode]||r.supply_mode)}</small>`:''}</li>`).join('')}</ul>`:'<p>Requisiti non attestati.</p>';
+  const credits=m.credits.length?m.credits.map(c=>`${esc(c.name||'Autore non registrato')} (${esc(c.role)})${c.evidence_url?' · '+externalLink(c.evidence_url,'Fonte credito'):''} · ${esc(day(c.verified_at||c.observed_at))}${c.status==='historical_declared_preserved'?' · Dichiarazione storica conservata':''}`).join('; '):'Autore non registrato';
+  const source=m.rule_evidence?`${externalLink(m.rule_evidence.url,'Regolamento ufficiale')} · ${esc(m.rule_evidence.locator)}`:m.official_pages.map(url=>externalLink(url,'Pagina ufficiale')).join(' · ');
+  const resources=m.resources.map(r=>`<li>${externalLink(r.url,`${r.kind==='rulebook'?'Regolamento':r.kind} · ${r.language||'lingua non registrata'}`)}${r.reviewed_rule?' · Regolamento consultato':r.historical_association?' · Associazione storica, non attestazione di lettura':''}</li>`).join('');
+  const packs=g.products.map(p=>`<li><strong>${esc(p.canonical_name)}</strong>${p.material_evidence?`: ${esc(p.material_evidence.declaration_summary)}<small>${esc(p.material_evidence.physical_dimensions)} · ${externalLink(p.material_evidence.source_url,'Fonte confezione')} · ${esc(day(p.material_evidence.verified_at))}</small>`:' · Componenti non attestati'}</li>`).join('');
+  return `<div class="kanare-game-detail"><h3>Requisiti del gioco</h3>${requirements}<p>${source||'Fonte puntuale non registrata'} · Verifica: ${esc(day(m.verified_at))}</p><p class="text-muted">Crediti: ${credits}. <a href="#game/${g.id}">Apri scheda e attribuzioni →</a></p>${m.limits.length?`<h3>Limiti e divergenze</h3><ul>${m.limits.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:''}${m.inferences.length?`<h3>Normalizzazioni e inferenze</h3><ul>${m.inferences.map(n=>`<li>${esc(n.summary)}</li>`).join('')}</ul>`:''}<h3>Confezioni e componenti condivisi</h3>${packs?`<ul>${packs}</ul>`:'<p>Nessuna confezione collegata.</p>'}<p class="text-muted">Le quantità della confezione sono distinte dai requisiti del gioco. Un regolamento o componente condiviso non duplica il gioco nei totali.</p><h3>Risorse dichiarate</h3>${resources?`<ul>${resources}</ul>`:'<p>Nessuna risorsa puntuale attestata.</p>'}<h3>Perimetro acquisizione</h3><p>${esc(a.scope||'Gioco non selezionato per l’acquisizione')} · ${workStatus(a.outcome)}${a.verified_at?' · Verifica: '+esc(day(a.verified_at)):''}</p>${a.required_files.length?`<p>${a.files.length}/${a.required_files.length} file concordati verificati · ${esc(a.batch_key)}</p>`:''}${a.files.map(f=>`<p><a href="#library">${esc(f.original_filename)} · ${esc(f.language_code)} · Apri Libreria →</a></p>`).join('')}<h3>Immagini</h3><p>${esc(g.images.reason)}</p></div>`;
+}
+function renderKanareResults(s){
+  const f=kanareProgressState;
+  if(f.view==='records'){
+    const q=f.query.trim().toLocaleLowerCase();
+    const records=s.records.filter(r=>(!q||`${r.title} ${r.record_type}`.toLocaleLowerCase().includes(q))&&(!f.status||(f.status==='pending'?r.outcome!=='complete':r.outcome===f.status)));
+    $('#kanare-progress-results').innerHTML=`<p class="text-muted">${records.length}/${s.records.length} schede · Denominatore del censimento catalogo; le varianti aggregate sono comprese negli indici.</p>`+table(['Scheda','Tipo','Censimento','Verifica'],records.map(r=>`<tr><td>${externalLink(r.url,r.title||'Indice della fonte')}</td><td>${esc(({game_page:'Pagina gioco',product_page:'Scheda prodotto',work_index:'Indice opere',product_catalog:'Catalogo prodotti',online_play_index:'Indice online'})[r.record_type]||r.record_type)}</td><td>${workStatus(r.outcome)}</td><td>${esc(day(r.verified_at))}</td></tr>`));
+    return;
+  }
+  const games=matchingKanareGames(s);
+  const header=`<p class="text-muted">${games.length}/${s.games.length} giochi${f.ambiguity?' · Identità da chiarire':''} · I filtri non modificano i denominatori delle barre.</p>`;
+  if(f.view==='products'){
+    const ids=new Set(games.map(g=>g.id)),q=f.query.trim().toLocaleLowerCase();
+    const filtered=!!(q||f.status||f.ambiguity);
+    const products=s.products.filter(p=>!filtered||p.game_ids.some(id=>ids.has(id))||(!f.status&&!f.ambiguity&&p.canonical_name.toLocaleLowerCase().includes(q)));
+    $('#kanare-progress-results').innerHTML=header+`<p class="text-muted">${products.length}/${s.products.length} confezioni e prodotti · Set e accessori senza giochi collegati restano visibili nella vista completa.</p>`+(products.length?table(['Confezione / prodotto','Giochi collegati','Materiali dei giochi','Componenti della confezione'],products.map(p=>{
+      const linked=s.games.filter(g=>p.game_ids.includes(g.id));
+      const complete=linked.filter(g=>g.materials.outcome==='complete').length;
+      return `<tr><td><strong>${esc(p.canonical_name)}</strong><small>${esc(p.product_kind)}</small></td><td>${linked.length?linked.map(g=>`<a href="#game/${g.id}">${esc(g.canonical_title)}</a>`).join(' · '):'Nessun gioco collegato'}</td><td>${linked.length?`${complete}/${linked.length} completi`:'—'}</td><td>${p.material_evidence?`${esc(p.material_evidence.declaration_summary)}<small>${externalLink(p.material_evidence.source_url,'Fonte')} · ${esc(day(p.material_evidence.verified_at))}</small>`:'Non attestati'}</td></tr>`;
+    })):'<div class="empty">Nessuna confezione corrispondente ai filtri.</div>');
+    return;
+  }
+  $('#kanare-progress-results').innerHTML=header+(games.length?table(['Gioco','Confezioni','Censimento materiali','Acquisizione materiali','Immagini'],games.map(g=>`<tr><td><button class="kanare-game-toggle" data-kanare-game="${g.id}" aria-expanded="${f.expanded.has(g.id)}" aria-controls="kanare-detail-${g.id}">${f.expanded.has(g.id)?'−':'+'} ${esc(g.canonical_title)}</button>${g.identity_pending?' <small class="identity-note">Identità da chiarire</small>':''}</td><td>${g.products.map(p=>esc(p.canonical_name)).join(' · ')||'—'}</td><td>${workStatus(g.materials.outcome)}<small>${esc(day(g.materials.verified_at))}</small></td><td>${workStatus(g.acquisition.outcome)}</td><td>${workStatus(g.images.outcome)}</td></tr><tr id="kanare-detail-${g.id}" ${f.expanded.has(g.id)?'':'hidden'}><td colspan="5">${kanareGameDetails(g)}</td></tr>`)):'<div class="empty">Nessun gioco corrispondente ai filtri.</div>');
+  document.querySelectorAll('[data-kanare-game]').forEach(b=>b.onclick=()=>{
+    const id=Number(b.dataset.kanareGame);f.expanded.has(id)?f.expanded.delete(id):f.expanded.add(id);
+    renderKanareResults(s);document.querySelector(`[data-kanare-game="${id}"]`)?.focus({preventScroll:true});
+  });
+}
+function bindKanareProgress(s){
+  $('#kanare-progress-phase').value=kanareProgressState.phase;
+  $('#kanare-progress-phase').disabled=kanareProgressState.view==='records';
+  $('#kanare-progress-status').value=kanareProgressState.status;
+  $('#kanare-progress-search').oninput=e=>{kanareProgressState.query=e.target.value;renderKanareResults(s);};
+  $('#kanare-progress-phase').onchange=e=>{kanareProgressState.phase=e.target.value;renderKanareResults(s);};
+  $('#kanare-progress-status').onchange=e=>{kanareProgressState.status=e.target.value;renderKanareResults(s);};
+  $('#kanare-progress-reset').onclick=()=>{Object.assign(kanareProgressState,{query:'',status:'',ambiguity:false});renderProgress();$('#kanare-progress-search')?.focus();};
+  document.querySelectorAll('[data-kanare-view]').forEach(b=>b.onclick=()=>{kanareProgressState.view=b.dataset.kanareView;kanareProgressState.status='';kanareProgressState.ambiguity=false;renderProgress();document.querySelector(`[data-kanare-view="${kanareProgressState.view}"]`)?.focus();});
+  document.querySelectorAll('[data-kanare-metric]').forEach(b=>b.onclick=()=>{
+    const phase=b.dataset.kanareMetric;Object.assign(kanareProgressState,{query:'',ambiguity:false,status:'',view:phase==='census'?'records':'games'});
+    if(phase!=='census'){kanareProgressState.phase=phase==='image'?'images':phase;kanareProgressState.status=phase==='materials'?'pending':'selected';}
+    renderProgress();$('#kanare-progress-results')?.scrollIntoView({block:'start'});$('#kanare-progress-search')?.focus({preventScroll:true});
+  });
+  $('[data-kanare-identities]').onclick=()=>{Object.assign(kanareProgressState,{view:'games',query:'',status:'',ambiguity:!kanareProgressState.ambiguity});renderProgress();$('[data-kanare-identities]')?.focus();};
+  renderKanareResults(s);
+}
+const progressColumns=()=>window.matchMedia('(max-width:520px)').matches?1:window.matchMedia('(max-width:820px)').matches?2:window.matchMedia('(max-width:1100px)').matches?3:4;
+const compactMetrics=(scopes)=>['census','ranking','materials','acquisition','image'].map((phase,i)=>{
+  const totals=scopes.map(s=>phase==='census'?s.contest_count:phase==='image'?s.entry_count:s[phase+'_total']);
+  const values=scopes.map(s=>phase==='image'?0:s[phase+'_complete_count']);
+  const unknown=totals.some((n,j)=>!Number.isFinite(n)||!Number.isFinite(values[j]));
+  const total=totals.reduce((a,n)=>a+(n||0),0),value=values.reduce((a,n)=>a+(n||0),0);
+  const excluded=scopes.reduce((a,s)=>a+(s[phase+'_not_applicable_count']||0),0);
+  const blocked=scopes.reduce((a,s)=>a+(s[phase+'_blocked_count']||0),0);
+  const partial=scopes.reduce((a,s)=>a+(s[phase+'_partial_count']||0),0);
+  const pending=unknown?null:Math.max(0,total-value-blocked-partial);
+  return {phase,name:['Censimento entry','Censimento classifica','Censimento materiali','Acquisizione materiali','Acquisizione immagini'][i],value,total,unknown,excluded,blocked,partial,pending,unimplemented:phase==='image'};
+});
+const compactPies=(year)=>compactMetrics([scopeSummary(year,'pnp_core'),scopeSummary(year,'adjacent')]).map(m=>{
+  const percent=m.unknown||!m.total?null:progressPercent(m.value,m.total);
+  const text=`${m.name}: ${m.unknown?'dati ignoti':!m.total?'non applicabile':`${m.value}/${m.total} · ${percent}%`}; ${m.excluded} non applicabili; ${m.blocked} bloccate; ${m.partial} parziali; ${m.pending??'—'} senza attestazione${m.unimplemented?'; funzione non implementata':''}`;
+  return `<span class="compact-metric" role="img" aria-label="${esc(text)}" title="${esc(text)}"><svg class="compact-pie phase-${m.phase} ${percent===null?'unknown':''}" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" class="pie-track"/><circle cx="12" cy="12" r="5" fill="none" class="pie-value" stroke-width="10" stroke-dasharray="${(percent??0)*Math.PI/10} ${10*Math.PI}" transform="rotate(-90 12 12)"/>${percent===null?'<text x="12" y="16" text-anchor="middle" font-size="14">—</text>':''}</svg><span>${percent===null?'—':percent+'%'}</span></span>`;
+}).join('');
 const progressMark=(value,total,kind='count')=>{
   const missing=value===null||value===undefined;
   const tone=missing?'unavailable':total>0&&value>=total?'done':value>0?'partial':'zero';
@@ -205,15 +320,15 @@ const progressMark=(value,total,kind='count')=>{
 const progressPercent=(value,total)=>total?Math.round(value*100/total):0;
 const pipelineRow=(labelText,value,total,tone='green')=>`<div class="pipeline-row"><div><span>${esc(labelText)}</span><strong>${value}/${total} · ${progressPercent(value,total)}%</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(labelText)}" value="${value}" max="${total||1}">${progressPercent(value,total)}%</progress></div>`;
 const workPipelineRow=(text,value,total,tone,note='')=>(total?pipelineRow(text,value||0,total,tone):`<div class="pipeline-row"><div><span>${esc(text)}</span><strong>—</strong></div><progress class="pipeline-progress ${tone}" aria-label="${esc(text)}: non applicabile o denominatore ignoto" value="0" max="1"></progress></div>`)+`<small>${esc(total ? note : 'Non applicabile / denominatore non disponibile')}${note&&!total?' · '+esc(note):''}</small>`;
-const scopePipeline=(scope,labelText,tone='green')=>{
+const scopePipeline=(scope,labelText)=>{
   const withoutRoster=scope.contests_without_entries_count??(scope.contest_count-scope.contests_with_entries_count);
   const unverifiedRoster=Math.max(0,scope.contest_count-(scope.census_complete_count||0)-withoutRoster);
   const phases=['ranking','materials','acquisition'].map((phase,i)=>{
     const partial=scope[phase+'_partial_count']||0;
     const note=`${scope[phase+'_not_applicable_count']||0} non applicabili · ${scope[phase+'_blocked_count']||0} bloccate${partial?' · '+partial+' verifiche parziali':''}${phase==='ranking'?' · '+(scope.ranked_entry_count||0)+' entry effettivamente classificate · '+withoutRoster+' contest senza roster: dipendenza aperta':''}`;
-    return workPipelineRow(['Censimento classifica','Censimento materiali','Acquisizione materiali'][i],scope[phase+'_complete_count'],scope[phase+'_total']??scope.entry_count,['blue','amber',tone][i],note);
+    return workPipelineRow(['Censimento classifica','Censimento materiali','Acquisizione materiali'][i],scope[phase+'_complete_count'],scope[phase+'_total']??scope.entry_count,'phase-'+phase,note);
   }).join('');
-  return `<section class="pipeline-scope"><div class="pipeline-scope-title"><strong>${esc(labelText)}</strong><span>${scope.entry_count} entry · ${scope.contest_count} contest</span></div>${workPipelineRow('Censimento entry',scope.census_complete_count,scope.contest_count,tone,`${scope.contests_with_entries_count} contest con entry · ${withoutRoster} senza roster${unverifiedRoster?' · '+unverifiedRoster+' roster parziali o da attestare':''}`)}${phases}${pipelineRow('Acquisizione immagini',0,scope.entry_count,tone)}<small>Funzione non ancora implementata · immagini rappresentative, distinte dai materiali PNG</small></section>`;
+  return `<section class="pipeline-scope"><div class="pipeline-scope-title"><strong>${esc(labelText)}</strong><span>${scope.entry_count} entry · ${scope.contest_count} contest</span></div>${workPipelineRow('Censimento entry',scope.census_complete_count,scope.contest_count,'phase-census',`${scope.contests_with_entries_count} contest con entry · ${withoutRoster} senza roster${unverifiedRoster?' · '+unverifiedRoster+' roster parziali o da attestare':''}`)}${phases}${pipelineRow('Acquisizione immagini',0,scope.entry_count,'phase-image')}<small>Funzione non ancora implementata · immagini rappresentative, distinte dai materiali PNG</small></section>`;
 };
 const scopeSummary=(year,scopeType)=>{
   if(year[scopeType]) return year[scopeType];
@@ -229,19 +344,38 @@ const scopeSummary=(year,scopeType)=>{
     downloaded_entry_count:contests.reduce((sum,c)=>sum+(c.downloaded_entry_count||0),0),
   };
 };
-function renderProgress() {
+function bggProgressHtml() {
   const years=data.progress.years;
   const selected=progressState.year||String(years.find(y=>y.contest_count)?.year||years[0]?.year||'');
   progressState.year=selected;
   const activeYears=years.filter(y=>y.contest_count);
   const emptyYears=years.filter(y=>!y.contest_count);
-  const annual=activeYears.map(y=>`<button class="year-pipeline ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><div class="pipeline-title"><span><strong>${y.year}</strong><small>Avanzamento separato per perimetro</small></span><b>${y.entry_count}<small> entry complessive</small></b></div>${scopePipeline(scopeSummary(y,'pnp_core'),'PnP principali')}${scopePipeline(scopeSummary(y,'adjacent'),'Adiacenti','violet')}</button>`).join('');
+  const columns=progressColumns();
+  const expandedIndex=activeYears.findIndex(y=>String(y.year)===progressState.expandedYear);
+  const annual=activeYears.map((y,index)=>{
+    const expanded=expandedIndex>=0&&Math.floor(index/columns)===Math.floor(expandedIndex/columns);
+    return `<article class="year-pipeline ${String(y.year)===selected?'selected':''}"><button class="year-toggle" data-progress-year="${y.year}" aria-expanded="${expanded}" aria-controls="year-detail-${y.year}"><span class="pipeline-title"><strong>${y.year}</strong><b>${y.entry_count} <small>entry</small></b><span aria-hidden="true">${expanded?'−':'+'}</span></span><span class="compact-metrics">${compactPies(y)}</span><span class="sr-only">${expanded?'Chiudi':'Espandi'} la riga dell’anno ${y.year}</span></button><div id="year-detail-${y.year}" ${expanded?'':'hidden'}>${scopePipeline(scopeSummary(y,'pnp_core'),'PnP principali')}${scopePipeline(scopeSummary(y,'adjacent'),'Adiacenti')}</div></article>`;
+  }).join('');
   const pending=emptyYears.map(y=>`<button class="year-pending ${String(y.year)===selected?'selected':''}" data-progress-year="${y.year}" aria-pressed="${String(y.year)===selected}"><strong>${y.year}</strong><span>Non importato</span></button>`).join('');
   const contests=data.progress.contests.filter(c=>String(c.year)===selected);
   const detail=contests.length?table(['Contest','Entry','Stati noti','Censimento classifica','Censimento materiali','Acquisizione materiali'],contests.map(c=>`<tr><td><a href="#contest/${c.contest_id}">${esc(c.contest_name)}</a><small>${esc(label(c.scope_type))} · ${esc(label(c.status_normalized))}</small></td><td><a href="#entries/contest/${c.contest_id}">${progressMark(c.entry_count,c.entry_count)}</a></td><td>${progressMark(c.known_status_count,c.entry_count,'ratio')}</td><td><a href="#rankings/${c.contest_id}">${progressMark(c.ranking_complete_count,c.ranking_total,'ratio')}</a><small>${c.ranked_entry_count} entry classificate · ${c.ranking_category_count} categorie</small></td><td><a href="#entries/contest/${c.contest_id}/read">${progressMark(c.materials_complete_count,c.materials_total,'ratio')}</a></td><td><a href="#entries/contest/${c.contest_id}/downloaded">${progressMark(c.acquisition_complete_count,c.acquisition_total,'ratio')}</a></td></tr>`)):`<div class="empty">L’annualità ${esc(selected)} non è ancora importata nel database operativo.</div>`;
-  $('#main').innerHTML=heading('CRUSCOTTO','Avanzamento per anno.','Una seconda via di accesso a contest, entry, classifiche e materiali, calcolata direttamente dal catalogo locale.')+`<div class="notice">PnP principali e contest adiacenti hanno conteggi e indicatori indipendenti. Le challenge da 24 ore appartengono agli adiacenti e non alterano più l’avanzamento dei PnP principali.</div><div class="year-pipeline-grid" aria-label="Annualità presenti nel database">${annual}</div><details class="pending-years"><summary>Annualità non ancora importate (${emptyYears.length})</summary><div class="year-pending-grid">${pending}</div></details><div class="section-heading"><h2>${esc(selected)}</h2><span>${contests.length} contest nel database · <a href="#entries/year/${esc(selected)}">Apri tutte le entry dell’anno →</a></span></div>${detail}`;
-  document.querySelectorAll('[data-progress-year]').forEach(button=>button.onclick=()=>{progressState.year=button.dataset.progressYear;renderProgress();});
+  return `<div class="section-heading"><h2>BGG · Avanzamento per anno</h2></div><div class="notice">La sintesi combina PnP principali e adiacenti; il dettaglio mantiene i due perimetri separati. Indicatori da sinistra: censimento entry, classifica, materiali, acquisizione materiali, immagini. Tratteggio e — indicano dati ignoti o non applicabili; le etichette degli indicatori riportano lo stato.</div><div class="year-pipeline-grid" aria-label="Annualità presenti nel database">${annual}</div><details class="pending-years"><summary>Annualità non ancora importate (${emptyYears.length})</summary><div class="year-pending-grid">${pending}</div></details><div class="section-heading"><h2>${esc(selected)}</h2><span>${contests.length} contest nel database · <a href="#entries/year/${esc(selected)}">Apri tutte le entry dell’anno →</a></span></div>${detail}`;
 }
+function bindBggProgress(){
+  document.querySelectorAll('[data-progress-year]').forEach(button=>button.onclick=()=>{
+    const year=button.dataset.progressYear;
+    if(button.classList.contains('year-toggle')) progressState.expandedYear=button.getAttribute('aria-expanded')==='true'?null:year;
+    progressState.year=year;renderProgress();
+    document.querySelector(`[data-progress-year="${year}"]`)?.focus({preventScroll:true});
+  });
+}
+window.addEventListener('resize',()=>{
+  if(document.querySelector('.year-toggle')){
+    const focused=document.activeElement?.dataset?.progressYear;
+    renderProgress();
+    if(focused) document.querySelector(`[data-progress-year="${focused}"]`)?.focus({preventScroll:true});
+  }
+});
 function renderContests() {
   $('#main').innerHTML = heading('SCOPRI · CONSULTA · SEGUI','Dalle idee al tavolo.','Esplora i contest di design BGG, segui le scadenze e ritrova ogni entry nel tuo archivio.') + stats() + `
     <div class="filters"><label class="field grow">Cerca un contest<input id="search" type="search" placeholder="Nome del contest…" value="${esc(filters.query)}"></label><label class="field">Stato<select id="state">${options(data.contests.map(c=>c.status_normalized),'Tutti gli stati')}</select></label><label class="field">Edizione<select id="year">${options(data.contests.map(c=>c.year),'Tutti gli anni')}</select></label></div>
@@ -473,8 +607,8 @@ async function route() {
   activePdfReader?.destroy();activePdfReader=null;
   const version=++routeVersion;
   const hash=location.hash.slice(1)||'games';
-  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(/^(pdf|png|docx)\//.test(hash)&&a.dataset.nav==='library')||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':(hash==='library'||/^(pdf|png|docx)\//.test(hash))?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'?'Avanzamento BGG':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
+  document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===hash||(hash.startsWith('progress/')&&a.dataset.nav==='progress')||(/^(pdf|png|docx)\//.test(hash)&&a.dataset.nav==='library')||(hash.startsWith('game/')&&a.dataset.nav==='games')||((hash.startsWith('rankings')||hash.startsWith('results/'))&&a.dataset.nav==='rankings')||(hash.startsWith('contest/')&&a.dataset.nav==='contests')||((hash.startsWith('entry/')||hash.startsWith('entries/'))&&a.dataset.nav==='entries');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  $('#breadcrumb').textContent=hash==='games'||hash.startsWith('game/')?'Giochi':(hash==='library'||/^(pdf|png|docx)\//.test(hash))?'Libreria':hash==='kanare'?'Kanare_Abstract':hash==='progress'||hash.startsWith('progress/')?'Avanzamento':(hash.startsWith('rankings')||hash.startsWith('results/'))?'Risultati BGG':hash.startsWith('entries')?'Entry BGG':hash==='deadlines'?'Scadenze BGG':'Contest BGG';
   try {
     if(hash==='games') renderGames();
     else if(/^pdf\/[1-9]\d*(?:\/(?:library|game\/[1-9]\d*))?$/.test(hash)) {
@@ -495,7 +629,7 @@ async function route() {
       if(version!==routeVersion)return;
       renderGameDetail(detail);
     }
-    else if(hash==='progress') renderProgress();
+    else if(hash==='progress'||/^progress\/[a-z0-9_]+$/.test(hash)) renderProgress(hash.split('/')[1]);
     else if(hash==='contests') renderContests();
     else if(/^entries(?:\/year\/\d{4}|\/contest\/[1-9]\d*(?:\/(?:read|unread|downloaded))?)?$/.test(hash)) renderEntriesRoute(hash);
     else if(hash==='deadlines') renderDeadlines();
@@ -514,5 +648,10 @@ async function route() {
 }
 $('#refresh').onclick=load;
 $('.skip').onclick=event=>{event.preventDefault();$('#main').focus();$('#main').scrollIntoView();};
-window.addEventListener('hashchange',()=>{route();$('#main').focus({preventScroll:true});});
+window.addEventListener('hashchange',async()=>{
+  const tabNavigation=!!document.activeElement?.dataset?.progressSource;
+  await route();
+  if(tabNavigation&&location.hash.startsWith('#progress/'))document.querySelector(`[data-progress-source="${progressState.source}"]`)?.focus({preventScroll:true});
+  else $('#main').focus({preventScroll:true});
+});
 load();

@@ -4,9 +4,33 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const path = require('node:path');
-const context = vm.createContext({URL,document:{querySelector:()=>({})},window:{addEventListener:()=>{}},fetch:()=>new Promise(()=>{})});
+const context = vm.createContext({URL,document:{querySelector:()=>({})},window:{addEventListener:()=>{},matchMedia:()=>({matches:false})},fetch:()=>new Promise(()=>{})});
 vm.runInContext(fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8'),context);
 const run = text => vm.runInContext(text,context);
+
+test('Avanzamento Kanare: filtri indipendenti dalla selezione e dai denominatori',()=>{
+  const source={games:[
+    {id:1,canonical_title:'Alpha',identity_pending:false,products:[{canonical_name:'Shared box'}],materials:{outcome:'complete'},acquisition:{outcome:'complete'}},
+    {id:2,canonical_title:'Beta',identity_pending:true,products:[],materials:{outcome:'partial'},acquisition:{outcome:'not_selected'}},
+    {id:3,canonical_title:'Gamma',identity_pending:false,products:[],materials:{outcome:'blocked'},acquisition:{outcome:'not_selected'}}]};
+  run(`Object.assign(kanareProgressState,{query:'',phase:'materials',status:'pending',ambiguity:false});`);
+  assert.equal(run(`matchingKanareGames(${JSON.stringify(source)}).map(g=>g.id).join(',')`),'2,3');
+  run(`Object.assign(kanareProgressState,{phase:'acquisition',status:'selected'});`);
+  assert.equal(run(`matchingKanareGames(${JSON.stringify(source)}).map(g=>g.id).join(',')`),'1');
+  run(`Object.assign(kanareProgressState,{query:'Shared box',status:''});`);
+  assert.equal(run(`matchingKanareGames(${JSON.stringify(source)}).map(g=>g.id).join(',')`),'1');
+  run(`Object.assign(kanareProgressState,{query:'',status:'',ambiguity:false});`);
+});
+
+test('Avanzamento multifonte: testi sicuri e denominatore assente distinto da zero',()=>{
+  const metric={phase:'image',name:'<script>bad</script>',total:0,value:0,percent:null,counts:{},scope:'<img>',reason:'Nessun lotto',verified_at:null};
+  const html=run(`kanareMetricHtml(${JSON.stringify(metric)})`);
+  assert.match(html,/&lt;script&gt;/);assert.ok(!html.includes('<script>'));
+  assert.match(html,/<strong>—<\/strong>/);assert.ok(!html.includes('100%'));
+  assert.match(html,/Nessun lotto/);
+  const tabs=run(`sourceTabsHtml([{source_key:'kanare_abstract',display_name:'Kanare <bad>'}])`);
+  assert.match(tabs,/role="tab"/);assert.match(tabs,/Kanare &lt;bad&gt;/);
+});
 
 test('APP-005: raggruppa acquisizioni e versioni senza perdere file filtrati',()=>{
   const files=[{id:1,game_id:7,canonical_title:'A',byte_size:10,acquired_at:'2026-10-01',original_filename:'one',acquisition_id:1},{id:2,game_id:7,canonical_title:'A',byte_size:20,acquired_at:'2026-10-03',original_filename:'two',acquisition_id:2},{id:3,game_id:8,canonical_title:'B',byte_size:25,acquired_at:'2026-10-02',original_filename:'three',acquisition_id:3}];
@@ -47,7 +71,7 @@ test('pipeline annuale separa PnP principali e adiacenti',()=>{
   const source=fs.readFileSync(path.join(__dirname,'static/app.js'),'utf8');
   assert.match(source,/Censimento entry/);
   assert.match(source,/scopePipeline\(scopeSummary\(y,'pnp_core'\),'PnP principali'\)/);
-  assert.match(source,/scopePipeline\(scopeSummary\(y,'adjacent'\),'Adiacenti','violet'\)/);
+  assert.match(source,/scopePipeline\(scopeSummary\(y,'adjacent'\),'Adiacenti'\)/);
   assert.ok(!source.includes("pipelineRow('Stati entry noti',y.known_status_count,y.entry_count)"));
 });
 test('riepilogo per perimetro funziona anche con il vecchio formato API',()=>{
@@ -341,4 +365,11 @@ test('APP-008: cinque barre, verifica negativa, immagini e denominatore zero',()
   }
   assert.match(run("workPipelineRow('Censimento classifica',0,0,'blue')"),/Non applicabile/);
   assert.ok(!run("workPipelineRow('Censimento classifica',0,0,'blue')").includes('100%'));
+});
+
+test('APP-009: aggrega denominatori, N/A e ignoti senza media percentuali',()=>{
+ const scopes=[{contest_count:2,census_complete_count:1,entry_count:10,ranking_complete_count:10,ranking_total:10},{contest_count:8,census_complete_count:8,entry_count:90,ranking_complete_count:0,ranking_total:90}];
+ const metrics=JSON.parse(run('JSON.stringify(compactMetrics('+JSON.stringify(scopes)+'))'));
+ assert.equal(metrics[0].value,9);assert.equal(metrics[0].total,10);assert.equal(metrics[1].value,10);assert.equal(metrics[1].total,100);assert.equal(metrics[2].unknown,true);assert.equal(metrics[4].value,0);
+ const na=JSON.parse(run('JSON.stringify(compactMetrics([{ranking_complete_count:0,ranking_total:0,ranking_not_applicable_count:3}]))'));assert.equal(na[1].unknown,false);assert.equal(na[1].excluded,3);assert.equal(na[1].total,0);
 });

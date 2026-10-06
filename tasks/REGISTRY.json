@@ -2130,6 +2130,104 @@
         "synchronization": "sincronizzato",
         "evidence": "Commit MAT f5b3ee0 e registrazione 23064a8 inviati; server/HEAD/origin/main uguali, 0/0 il 2026-10-06. Audit commit in uscita senza candidati; modifiche altrui escluse."
       }
+    },
+    {
+      "id": "TSK-0049",
+      "original_title": "2026-10-04 - APP - Schede annuali compatte e righe espandibili",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - APP - Schede annuali compatte e righe espandibili/TASK.md",
+      "category": "APP",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "TASK.md; 47 test frontend/PDF e browser APP-009/APP-008 superati il 2026-10-04",
+      "dependencies": [
+        "TSK-0047"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a10732-528a-74e3-8085-b209678159c5"
+      ],
+      "next_action": "Verifica utente e commit su richiesta",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      },
+      "coverage": "APP-009 implementata integralmente; dati invariati"
+    },
+    {
+      "id": "TSK-0050",
+      "original_title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
+      "opened_at": "2026-10-04",
+      "task_path": "tasks/2026-10-04 - APP - Colori coerenti degli avanzamenti/TASK.md",
+      "category": "APP",
+      "secondary_categories": [],
+      "classified_at": "2026-10-04",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Frontend e verifiche chiusi il 2026-10-04; TASK.md.",
+      "dependencies": [
+        "TSK-0049"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a107ad-0e3b-72c3-9b45-6c4fb03e5971"
+      ],
+      "next_action": "Verifica utente e commit su richiesta.",
+      "git": {
+        "checked_at": "2026-10-04",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Modifiche locali su main; nessun commit o push."
+      },
+      "coverage": "Tutte le fasi e annualità; browser desktop/mobile e casi limite verificati.",
+      "current_title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
+      "display_title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
+      "current_chat_titles": [
+        "2026-10-04 - APP - Colori coerenti degli avanzamenti"
+      ],
+      "source_summary": "APP-010: palette PnP principali condivisa fra perimetri e torte."
+    },
+    {
+      "id": "TSK-0071",
+      "original_title": "2026-10-06 - APP - Avanzamento multifonte BGG e Kanare",
+      "display_title": "2026-10-06 - APP - Avanzamento multifonte BGG e Kanare",
+      "opened_at": "2026-10-06",
+      "task_path": "tasks/2026-10-06 - APP - Avanzamento multifonte BGG e Kanare/TASK.md",
+      "category": "APP",
+      "secondary_categories": [
+        "EPR"
+      ],
+      "classified_at": "2026-10-06",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Implementazione e verifiche concluse il 2026-10-06; TASK.md e VERIFICATION.json.",
+      "dependencies": [
+        "TSK-0070",
+        "TSK-0067",
+        "TSK-0049",
+        "TSK-0050"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a112a2-b03e-73e2-9d95-4365caa3e5e1"
+      ],
+      "next_action": "Verifica utente; commit su richiesta. Supporto IMG futuro in TSK-0067.",
+      "git": {
+        "checked_at": "2026-10-06",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Incremento locale; molte modifiche pregresse preservate, nessuna operazione Git mutativa in questo task."
+      },
+      "coverage": "Avanzamento multifonte BGG/Kanare; quattro metriche Kanare, filtri, giochi/confezioni/schede; IMG senza selezione esplicita."
     }
   ]
 }

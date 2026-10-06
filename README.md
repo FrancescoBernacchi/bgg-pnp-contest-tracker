@@ -71,3 +71,5 @@ Il repository remoto privato è `FrancescoBernacchi/bgg-pnp-contest-tracker`; il
 Codex deve accompagnare le operazioni Git spiegando quando sono utili e perché. La procedura condivisa è descritta in `GIT_GUIDE.md`.
 
 APP-005 estende la Libreria con raggruppamento per gioco, lettori PDF/PNG/DOCX e contenuti ZIP estratti offline con hash e provenienza. Limiti e istruzioni aggiornate in `app/README.md`; esiti nel task `2026-10-03 - Libreria per gioco e visualizzatori APP-005`.
+
+Dal 2026-10-06 Avanzamento ha schede indipendenti BGG e Kanare: annualita/contest per BGG, catalogo/materiali/lotti selezionati e dettagli per gioco/confezione per Kanare. Metriche e manutenzione delle attestazioni in app/README.md; nessuna acquisizione automatica.

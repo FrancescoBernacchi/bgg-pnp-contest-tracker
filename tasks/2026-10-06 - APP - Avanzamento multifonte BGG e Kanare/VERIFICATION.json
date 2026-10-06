@@ -1,0 +1,155 @@
+{
+  "verified_at": "2026-10-06",
+  "task_id": "TSK-0071",
+  "source_summary": {
+    "games": 64,
+    "records": 76,
+    "products": 39,
+    "identity_pending": 15,
+    "candidate_links": 15,
+    "selected_acquisition": 3,
+    "selected_images": 0,
+    "games_with_files": 3
+  },
+  "metrics": [
+    {
+      "phase": "census",
+      "name": "Censimento catalogo",
+      "value": 76,
+      "total": 76,
+      "percent": 100,
+      "counts": {
+        "complete": 76,
+        "partial": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "not_applicable": 0
+      },
+      "verified_at": "2026-09-20",
+      "scope": "Schede native, inclusi indici e schede prodotto; varianti aggregate comprese negli indici",
+      "reason": "",
+      "evidence": "TSK-0020"
+    },
+    {
+      "phase": "materials",
+      "name": "Censimento materiali",
+      "value": 62,
+      "total": 64,
+      "percent": 97,
+      "counts": {
+        "complete": 62,
+        "partial": 1,
+        "blocked": 1,
+        "unknown": 0,
+        "not_applicable": 0
+      },
+      "verified_at": "2026-10-06",
+      "scope": "64 giochi preesistenti, fonte Kanare ufficiale; IT/EN autorizzati; nessuna acquisizione",
+      "reason": "",
+      "evidence": "TSK-0070"
+    },
+    {
+      "phase": "acquisition",
+      "name": "Acquisizione materiali",
+      "value": 3,
+      "total": 3,
+      "percent": 100,
+      "counts": {
+        "complete": 3,
+        "partial": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "not_applicable": 0
+      },
+      "verified_at": "2026-09-21",
+      "scope": "Lotto approvato 2026-09-21: tre PDF EN, esclusi JA, immagini e implementazioni online",
+      "reason": "",
+      "evidence": "TSK-0023"
+    },
+    {
+      "phase": "image",
+      "name": "Acquisizione immagini",
+      "value": 0,
+      "total": 0,
+      "percent": null,
+      "counts": {
+        "complete": 0,
+        "partial": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "not_applicable": 0
+      },
+      "verified_at": null,
+      "scope": "Giochi selezionati nel perimetro IMG",
+      "reason": "Nessun lotto IMG registrato; copertura per categorie e validazione AI dipendono dal supporto immagini",
+      "evidence": null
+    }
+  ],
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "database_sha256_at_verification": "1813fa05a07afc600c02ad72eb2055e1d1a9d0f64e2538661e828134a9fd55a6",
+  "tests": {
+    "backend": {
+      "command": "python -m unittest discover -s app -p test_*.py",
+      "passed": 59
+    },
+    "frontend": {
+      "command": "node --test app/test_frontend.cjs app/test_pdf_viewer.cjs",
+      "passed_node_tests": 42
+    },
+    "browser": {
+      "command": "node app/test_multisource_progress_browser.cjs",
+      "viewports": [
+        1400,
+        780,
+        390
+      ],
+      "passed": true,
+      "external_requests": 0,
+      "checks": [
+        "BGG before/after unchanged",
+        "source navigation and deep links",
+        "keyboard focus",
+        "phase/status filters",
+        "game details",
+        "products",
+        "source records",
+        "refresh preserving filters",
+        "no page overflow"
+      ]
+    }
+  },
+  "hash_reconciliation": {
+    "files": 3,
+    "manifest": "catalog/kanare_abstract_acquisition_batch_2026-09-21.json",
+    "scope_script": "reconcile_scope.py"
+  },
+  "visual_review": [
+    "outputs/multisource-progress/overview-1400.png",
+    "outputs/multisource-progress/overview-390.png",
+    "outputs/multisource-progress/detail-1400.png"
+  ],
+  "publication_review": {
+    "paths": [
+      "app/source_progress.py",
+      "app/test_source_progress.py",
+      "app/test_multisource_progress_browser.cjs",
+      "app/static/app.js",
+      "app/static/index.html",
+      "app/static/style.css",
+      "app/server.py",
+      "app/test_frontend.cjs",
+      "catalog/kanare_progress_scope_2026-10-06.json",
+      "tasks/2026-10-06 - APP - Avanzamento multifonte BGG e Kanare/reconcile_scope.py"
+    ],
+    "heuristic_findings": [],
+    "manual_review": "New code, synthetic fixtures, IDs, URLs and original summaries; no original game images/manuals/source dumps added. Not an audit of all previous changes/history."
+  },
+  "limits": [
+    "No IMG selection/importer: dedicated TSK-0067",
+    "HTTP compares registered verification metadata, existence and size; content hashes rechecked offline, not on every request",
+    "Future sources need their own adapter and layout",
+    "No BGG data writes or generated annual section changes",
+    "No Git mutation"
+  ]
+}
