@@ -58,14 +58,16 @@
         "phase": "brainstorming concluso; piano tre incrementi approvato",
         "implementation": "non iniziata; attende completamento task IMG contest 2025",
         "implementation_prerequisite": {
-          "task_id": null,
-          "contest": null,
+          "task_id": "TSK-0068",
+          "contest": "Children & Family Game Design Contest 2025",
           "year": 2025,
-          "basis": "Vincolo esplicito utente: completare prima il task di acquisizione immagini del contest 2025; identità da collegare quando comunicata."
+          "basis": "Perimetro comunicato dall’utente nel primo IMG 2026-10-05; attende completamento e riesame manifest",
+          "contest_id": 14
         }
       },
       "dependencies": [
-        "TSK-0065"
+        "TSK-0065",
+        "TSK-0068"
       ],
       "successors": [],
       "chat_ids": [
@@ -1467,13 +1469,13 @@
       "mode": "continuativo",
       "cadence": "su_richiesta",
       "status": "in_corso",
-      "status_basis": "Primi due incrementi conclusi il 2026-10-04; skill verificate e attivazione sistematica documentata. Contenitore continuativo aperto.",
+      "status_basis": "Contenitore continuativo; manutenzione IMG dal pilota TSK-0068 verificata offline 2026-10-05, altri incrementi storici preservati",
       "dependencies": [],
       "successors": [],
       "chat_ids": [
         "01a1071a-deb4-7e41-95b6-a65ad1c0654e"
       ],
-      "next_action": "Applicare il protocollo TSK-0069 nei nuovi incrementi; raccogliere riferimenti alle migliorie senza duplicare evidenze; collaudi preanalisi/host futuri solo nel perimetro autorizzato.",
+      "next_action": "Verificare nei prossimi giochi IMG i pattern promossi senza generalizzare geometrie o identità",
       "git": {
         "local_save": "committato",
         "evidence": "TSK-0069 e raccordo TSK-0048 salvati in c023530; push main riuscito e hash server verificato il 2026-10-05. Modifiche estranee escluse; esito in commit documentale successivo.",
@@ -2021,6 +2023,66 @@
         "evidence": "Push riuscito; ls-remote main uguale a HEAD 986dd93, confronto 0/0; annotazione successiva in commit documentale"
       },
       "last_verified_at": "2026-10-05"
+    },
+    {
+      "id": "TSK-0068",
+      "original_title": "2026-10-05 - IMG - Children & Family Game Design Contest 2025",
+      "display_title": "2026-10-05 - IMG - Children & Family Game Design Contest 2025",
+      "opened_at": "2026-10-05",
+      "task_path": "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/TASK.md",
+      "original_worktree_path": null,
+      "category": "IMG",
+      "secondary_categories": [],
+      "classified_at": "2026-10-05",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "source_summary": "Primo lotto IMG autorizzato: 14 giochi con materiali acquisiti",
+      "status": "in_corso",
+      "status_basis": "Due piloti verificati con limiti espliciti (Mermaids vs Dinosaurs e ICBRG); altri 12 giochi aperti",
+      "coverage": {
+        "contest_id": 14,
+        "series_id": 10,
+        "year": 2025,
+        "authorized_games": 14,
+        "pdf_verified": 38,
+        "original_artworks": 4,
+        "pilot_game_id": 505,
+        "research_complete": 2,
+        "adopted_component_extractions": 18,
+        "render_crop_pilot_verified": true,
+        "library_images_total": 44,
+        "pilot_cards_board_verified": true,
+        "downloaded_originals": 12,
+        "historical_files": 1,
+        "physical_library_files": 45,
+        "pilot_complete": true,
+        "extracted_images_total": 32,
+        "second_pilot_game_id": 507,
+        "second_pilot_current_images": 27,
+        "component_identities": 16
+      },
+      "dependencies": [
+        "TSK-0065"
+      ],
+      "successors": [
+        "TSK-0067"
+      ],
+      "chat_ids": [
+        "01a10d9f-971a-7480-bb69-0275f65463bb"
+      ],
+      "next_action": "Proseguire sui 12 giochi autorizzati restanti; riesame facoltativo dei limiti login/WIP storico, nessuna nuova ACQ implicita",
+      "git": {
+        "checked_at": "2026-10-05",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Working tree main con modifiche pregresse; nessun commit/push autorizzato"
+      },
+      "last_verified_at": "2026-10-05",
+      "deliverables": [
+        "catalog/2025_children_family_image_sources_2026-10-05.json",
+        "catalog/2025_children_family_images_2026-10-05.json"
+      ]
     }
   ]
 }

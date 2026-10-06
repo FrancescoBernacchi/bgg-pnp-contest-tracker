@@ -1,0 +1,41 @@
+{
+  "verified_at": "2026-10-05",
+  "kind": "offline_static",
+  "skills": [
+    {
+      "name": "bgg-contest-census",
+      "sha256": "85ec33c84919b3e6e0d93b59ae127f122fe4cfc0919a36ed6e1b78f00ec9111d"
+    },
+    {
+      "name": "bgg-contest-navigation",
+      "sha256": "439b97224357e295dfef3c0d2f520c35dbf52aa34c1bf2135ef492144db0d48a"
+    },
+    {
+      "name": "bgg-material-acquisition",
+      "sha256": "87305ac331750abbd0f7d704cafbfb809e5cb45d7fa51e74547f8fa47d62fe4a"
+    },
+    {
+      "name": "bgg-material-census",
+      "sha256": "b0c46c7544326cd33d1ea23fef8cb023cf6413513572b38a6c5817c0b1357560"
+    },
+    {
+      "name": "bgg-ranking-census",
+      "sha256": "cc127bc01543ebf4113a14fdc6c96aa0fe6c58ea54cbcd564a4479f614d56f29"
+    },
+    {
+      "name": "game-image-acquisition",
+      "sha256": "31e2d6fd0a58b1d9a177ab18a3b924395c5ccca6ef74d540cc332c05119a1bfe"
+    },
+    {
+      "name": "potential-source-discovery",
+      "sha256": "8080da24de9e7f40cbb6a99a1e30041f2f7e26a9520b83cc57740adea22ed46b"
+    },
+    {
+      "name": "source-preanalysis",
+      "sha256": "6848763e5e22a2a1d1af9848fffdbcddaf4f1d6193d8910d70e7a676a42df76b"
+    }
+  ],
+  "checked_links": 30,
+  "errors": [],
+  "official_validator": "non eseguibile: PyYAML assente; verifica equivalente dei frontmatter semplici, non parser YAML generale"
+}

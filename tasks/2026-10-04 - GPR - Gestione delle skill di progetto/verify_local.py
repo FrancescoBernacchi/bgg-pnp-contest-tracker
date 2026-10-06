@@ -48,7 +48,7 @@ for doc in [ROOT/'sources/SKILL_INVENTORY.md', TASK/'AUDIT.md']:
     for link in re.findall(r'\[[^\]]+\]\(([^)]+)\)', doc.read_text(encoding='utf-8')):
         if '://' not in link:
             checked_links += 1
-            if not (doc.parent/unquote(link)).exists():
+            if not (doc.parent/unquote(link.split('#')[0])).exists():
                 errors.append(f'{doc}: riferimento mancante {link}')
 registry = json.loads((ROOT/'tasks/REGISTRY.json').read_text(encoding='utf-8-sig'))
 assert len({t['id'] for t in registry['tasks']}) == len(registry['tasks'])

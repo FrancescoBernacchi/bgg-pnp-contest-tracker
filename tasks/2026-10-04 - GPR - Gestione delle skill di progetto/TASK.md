@@ -50,3 +50,22 @@ Verifiche del secondo incremento: verify_local.py senza errori (7 skill, 24 rife
 ## Esito Git — 2026-10-04
 
 Commit principale `d8ad1c7990383261aa2e135fe46e689929251655` su main: 25 file, skill e integrazione documentale. Push origin/main riuscito; refs/heads/main verificato sul server e coincidente con HEAD. Modifiche pregresse di classificazione/naming chat preservate e non incluse. Nessun file operativo, materiale di terzi o output incluso. Il presente esito viene salvato nel commit documentale finale; TSK-0048 resta in corso, su richiesta senza automazione.
+
+## Manutenzione IMG dal pilota TSK-0068 — 2026-10-05
+
+Richiesta esplicita utente nella chat IMG: aggiornare le skill prima dei prossimi lotti. Ripresa di questo contenitore continuativo, nessun task duplicato o nuovo scope. PWS locale/canonico 1.5.0; preflight sandbox riuscito. Proprietario .agents NOTEBOOK-OMEN\Francesco1 verificato; modificati soltanto tre file interni esistenti con apply_patch, radice/ACL preservate. Skill-creator applicata.
+
+Promossi dai risultati verificati di TSK-0068 incremento 4: setup prima della delimitazione delle sagome, celle vuote/testo raster, identità per oggetto+scala+bordi limitata al caso, dorso comune distinto dall'abbinamento fisico; rettifica versionata con file storico; riproduzioni inferiori come occorrenze; Downloads Original realmente esposto da BGG, provenienze multiple con unico file, galleria login distinta dalla sequenza pubblica osservata; limiti live Docs/ACQ, draft/Contest Ready e ruoli crediti distinti. Precisata la valutazione per uso locale concreto: assenza di licenza aperta non prova un divieto, autorizzazione utente/cache non diventano licenze dei titolari. Nessun nuovo permesso, contratto o modifica PUBLICATION_POLICY/IMAGE_WORKFLOW.
+
+Aggiornati game-image-acquisition/SKILL.md e references/{sources,extraction}.md; inventario allineato alla maturità del pilota. Base bgg-contest-navigation già instrada correttamente IMG: nessun cambiamento necessario, pattern specialistici nel riferimento IMG senza duplicazione. Geometrie/DPI/esiti del pilota non diventano algoritmi universali. Nessun helper monogioco trasferito alla skill.
+
+Validazione standard quick_validate.py tentata: PyYAML assente, stessa limitazione già nota; nessuna installazione. Audit locale esistente rieseguito con data/output dedicati: 8 skill, 30 riferimenti e frontmatter semplici verificati, nessun errore; report IMG_PILOT_SKILL_VERIFICATION_2026-10-05.json. Non validazione YAML generale né nuovo rilevamento dei siti. Whitespace verificato. Revisione rispetto alle prove del pilota e ai confini del workflow; piccoli aggiornamenti documentali, nessuna delegazione o acquisizione ulteriore.
+
+Efficacia: le istruzioni ora distinguono i due errori osservati (assunzione funzione dal solo aspetto e blocco generale per assenza licenza) dalle limitazioni reali di accesso/materiali. Prossima verifica nei giochi successivi: confermare applicabilità render/crop/deduplicazione senza trasferire geometrie. Contenitore in_corso; incremento concluso. Nessun commit/push, app/schema/database o metrica implementata modificati.
+
+
+Nota collaudo: prima esecuzione dell'audit ha segnalato falsamente il link esistente TASK_GOVERNANCE.md con ancora, perché il verificatore dell'inventario trattava il frammento come parte del nome file. Corretto il verificatore a rimuovere il frammento, come già faceva per i riferimenti delle skill; riesecuzione: 8 skill, 30 riferimenti, zero errori. Report aggiornato, nessuna modifica al link o al contratto.
+
+## Ulteriore evidenza IMG — secondo pilota, 2026-10-05
+
+TSK-0068 incremento 5 ICBRG conferma i pattern promossi: leggere assemblaggio prima del crop, render per diagrammi compositi, deduplicazione per hash con molteplici ID BGG. Caso nuovo: standee intero con regioni facce/base, due varianti grigie di scala non fuse, galleria autore lunga non attestata completa da carousel parziale. Le istruzioni già prevedono controllo geometria/contenuti e limiti di copertura: nessuna modifica skill necessaria. Prove/cause/residui nel TASK.md IMG, non duplicati in un nuovo audit; ulteriori generalizzazioni da verificare su altri documenti.

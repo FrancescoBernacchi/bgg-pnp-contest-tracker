@@ -130,3 +130,23 @@ Query SQLite in sola lettura: 1.382 entry e 1.382 game_id distinti; nessun game_
 Regole verificate tramite risultati indicizzati BGG il 2026-10-05: Traditional Deck 2026 vieta precedenti partecipazioni con possibile eccezione 24 Hour; 54-Card 2026 vieta altri contest BGG con eccezione 24 Hour. Fonti: https://boardgamegeek.com/thread/3761810/2026-traditional-deck-game-design-contest e https://boardgamegeek.com/thread/3746297/2026-54-card-game-design-contest/page/1. Apertura diretta web 403; evidenza limitata al testo indicizzato, non audit di tutte le edizioni. Applicata skill bgg-contest-navigation per consultazione puntuale, nessun censimento o rilevamento periodico.
 
 La struttura per gioco resta motivata anche da revisioni e provenienze multiple, indipendentemente dalla partecipazione a più contest. Quest'ultima è possibilità da collegare solo con evidenza, non casistica assunta frequente. Prossimo punto: identità dell'immagine, versioni e componenti.
+
+## Prerequisito identificato — 2026-10-05
+
+TSK-0068, IMG Children & Family Game Design Contest 2025: lotto autorizzato di 14 giochi già acquisiti, non intero contest. Attendere completamento e riesaminare manifest catalog/evidenze di integrità, condizioni, componenti/lati, revisioni e ricerca per categoria. Nessuna implementazione anticipata; precedenti riferimenti a identità non comunicata restano storici.
+
+## Primo manifest IMG parziale — 2026-10-05
+
+TSK-0068: catalog/2025_children_family_image_sources_2026-10-05.json verifica 38 PDF e 14 giochi; catalog/2025_children_family_images_2026-10-05.json registra quattro artwork CC0 game_id 505, copertura per categoria parziale e impedimenti. Prerequisito non concluso (ricerca 0/14): non iniziare implementazione. Relazioni componenti/lati/occorrenze e successioni materiali ancora da collaudare; condizioni BGG/composizioni da risolvere. Riesaminare questi manifest come contratto sperimentale, non schema definitivo o attestazione completa.
+
+## Manifest pilota componenti — 2026-10-05
+
+TSK-0068 ripreso con uso privato ribadito; manifest immagini ora contiene 15 PNG (4 sorgenti + 11 estratti), 9 tipi carta, dorso comune e tabellone. Occorrenze fisiche stampate distinte da contenuti e relazioni: 26 fronti, 9 dorsi nel documento, una cella vuota esclusa. Non interpretare numero dorsi stampati come numero carte totali. Condizioni private non diventano licenza pubblica; crediti designer mancanti espliciti. Ricerca del lotto non conclusa, implementazione resta in attesa.
+
+## Evidenze pilota IMG — 2026-10-05
+
+TSK-0068 ha chiuso Mermaids vs Dinosaurs nel perimetro osservabile, con limiti documentati (pagina galleria richiede login; revisione live Docs non confrontata integralmente senza nuova esportazione ACQ). Lotto ancora 1/14: prerequisito complessivo non concluso. Riesaminare catalog/2025_children_family_images_2026-10-05.json e catalog/2025_children_family_image_sources_2026-10-05.json: 17 immagini attuali, 18 file fisici incluso historical_files con tabellone v01 Superata e identità stabile v02; 10 componenti, fronti/dorso comune e occorrenze; foto Setup anche Componenti senza raddoppiare file; logo draft, foto prototipo, crediti Nico designer/uploader distinti da fotografo e autore grafico non dichiarati; occorrenza logo manuale inferiore non duplicata, assenze per categoria circoscritte. Nessun importatore/app/schema/metriche implementato da IMG.
+
+## Evidenze secondo pilota ICBRG — 2026-10-05
+
+TSK-0068 incremento 5: manifest complessivo 44 immagini attuali + 1 storico, ricerca 2/14 con limiti. ICBRG aggiunge 27 immagini: 6 file remoti distinti da 9 ID BGG deduplicati per SHA-256, 7 file componenti/6 identità (due sagome grigie con scala diversa), 9 diagrammi/setup renderizzati e 5 artwork raster nativi. Riesaminare side_regions Fronte/Retro/Base nelle strisce standee e i loro legami/occorrenze: sono stampati da assemblare, non fogli fronte/dorso. Categorie aggiuntive non moltiplicano i file. Riferimento BGG 446904 esplicitamente dichiarato nel WIP associato all'ID locale 507, nessuna identità dal nome. Designer/uploader separati da illustratore/fotografo ignoti; limiti galleria autore 117 immagini con login e vecchio WIP non risolto, dipendenze ACQ per altri PDF. Importatore/schema/metriche ancora non implementati e prerequisito lotto ancora aperto.

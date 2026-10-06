@@ -24,4 +24,4 @@ Leggi il contratto IMG del task e `sources/IMAGE_WORKFLOW.md`, riferimento autor
 
 ## Maturità
 
-Regole deliberate 2026-10-05; tecniche di estrazione automatica, navigazione IMG e deduplicazione visiva non ancora collaudate su un lotto. Registra prove/limiti e promuovi soltanto pattern dimostrati. Nessuno script di acquisizione o schema immagini è già fornito da questa skill; non inventare endpoint, tabelle o test riusciti. Sviluppo app in task APP collegato.
+Regole deliberate 2026-10-05; pilota Mermaids vs Dinosaurs verificato in TSK-0068, con prove e limiti nei riferimenti fonti/estrazione. Render+crop, occorrenze e navigazione IMG collaudati su quel caso; nessuna estrazione automatica o deduplicazione visiva generalizzata a un lotto. Registra ulteriori prove prima di trasferire geometrie o equivalenze. Nessuno script di acquisizione o schema immagini è già fornito da questa skill; non inventare endpoint, tabelle o test riusciti. Sviluppo app in task APP collegato.

@@ -14,4 +14,16 @@ Usa identità/record nativi già presenti e giochi selezionati. Mantieni ambigui
 
 Provenienza immediata e catena a monte distinte. Esiti anche senza file: Solo riferimento, Accesso impedito, Condizioni da chiarire, Esclusa con motivo; Acquisita con manifest/hash. Verifica condizioni per acquisizione, estrazione e input AI separatamente. Non amplia ricerca a web/social/video o altre fonti senza scope esplicito. Un limite tecnico non prova assenza di immagini.
 
+Distingui uso locale autorizzato dall'utente, condizioni di accesso della fonte e diritto di pubblicazione/AI. L'assenza di licenza aperta non dimostra da sola un divieto di acquisizione privata; accessibilità, cache o autorizzazione utente non sono licenze dei titolari. Valuta le restrizioni effettivamente osservate per l'uso concreto e conserva avvisi e limiti, senza un blocco generale basato sulla sola assenza di licenza.
+
 Nessuna enumerazione IMG esterna è stata collaudata in TSK-0065. Registra nel lotto reale il pattern, la prova quantitativa e i residui prima di promuovere procedure.
+
+## Pattern verificati TSK-0068 — 2026-10-05
+
+- Le pagine immagini BGG 8788093 e 8787888 espongono tramite Downloads l'opzione Original. Usa l'URL realmente esposto, verifica formato/dimensioni/bytes/hash; non costruire varianti dell'endpoint. Conserva All Rights Reserved e limiti per uso pubblico/AI.
+- La pagina galleria del profilo può richiedere login mentre le pagine immagini mostrano una sequenza pubblica numerata. Nel pilota: 4/4 immagini nella sequenza, 2 pertinenti e 2 estranee escluse. Registra separatamente impedimento della pagina e copertura della sequenza: non presumere che questa rappresenti ogni galleria o tutti i contenuti dell'autore.
+- WIP, entry GeekList e thread contest ripetono gli stessi ID immagini: un file con più provenienze. Espandi i commenti pertinenti e verifica paginazione/conteggi (pilota: 11 post WIP, 3 commenti entry, 75 post contest su 3 pagine); limita l'associazione al gioco autorizzato.
+- Un annuncio Contest Ready non prova una nuova revisione grafica; conserva designazioni draft/prototipo se non emerge una successione documentata. Uploader, designer, illustratore e fotografo restano ruoli distinti.
+- Cartelle autore collegate possono contenere solo PDF già acquisiti: enumera i file visibili senza nuovi download ACQ. Se il manuale live non è confrontabile senza nuova esportazione, dichiara che la verifica riguarda il PDF locale; non attestare identità della revisione live.
+
+Chiudi la ricerca per perimetro/data e fonti effettivamente osservate, con impedimenti e residui separati dalle assenze per categoria. Una sequenza osservata o un PDF locale non prova assenza sull'intero web. Evidenza sorgente: TSK-0068, incremento 4 e manifest immagini del pilota.
