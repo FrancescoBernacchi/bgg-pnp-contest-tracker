@@ -1,0 +1,108 @@
+{
+  "task_id": "TSK-0080",
+  "checked_at": "2026-10-08",
+  "checks": [
+    {
+      "name": "nove_candidate_confermate",
+      "passed": true
+    },
+    {
+      "name": "id_stabili_unici",
+      "passed": true
+    },
+    {
+      "name": "URL_finali_unici",
+      "passed": true
+    },
+    {
+      "name": "nessun_ricensimento_pilota",
+      "passed": true
+    },
+    {
+      "name": "indice_riconciliato_10_1_9",
+      "passed": true
+    },
+    {
+      "name": "esiti_7_2_0",
+      "passed": true
+    },
+    {
+      "name": "titoli_originali_alias_qualificazioni",
+      "passed": true
+    },
+    {
+      "name": "classificazioni_native_multiple_con_provenienza",
+      "passed": true
+    },
+    {
+      "name": "crediti_ruoli_lacune_contesti",
+      "passed": true
+    },
+    {
+      "name": "NULL_regole_incomplete_non_pagamento",
+      "passed": true
+    },
+    {
+      "name": "regole_complete_gratuite_solo_ammissibili",
+      "passed": true
+    },
+    {
+      "name": "ambiti_accesso_distinti",
+      "passed": true
+    },
+    {
+      "name": "matching_solo_candidato_o_assenza_esatta",
+      "passed": true
+    },
+    {
+      "name": "Punti_e_linee_raccolta_non_fusa_Quadratini",
+      "passed": true
+    },
+    {
+      "name": "Piattola_varianti_distinte_fuori_denominatore",
+      "passed": true
+    },
+    {
+      "name": "Labirinto_un_sistema_tre_istanze",
+      "passed": true
+    },
+    {
+      "name": "licenza_non_inferita_da_gratuita",
+      "passed": true
+    },
+    {
+      "name": "nessuna_importazione_o_acquisizione",
+      "passed": true
+    },
+    {
+      "name": "nessuna_esaustivita_sito",
+      "passed": true
+    },
+    {
+      "name": "baseline_database_app_schema_pilota_preservata",
+      "passed": true
+    },
+    {
+      "name": "id_task_unico_e_predecessori_conclusi",
+      "passed": true
+    },
+    {
+      "name": "audit_euristico_nuovi_deliverable",
+      "passed": true
+    }
+  ],
+  "passed": 22,
+  "failed": 0,
+  "manifest_sha256": "7c4d1949b650f4927479ff7b70f5d9afe285e627607303ef078f85fec497bd7b",
+  "baseline_files_checked": 286,
+  "baseline_changed_files": [],
+  "matching_records_with_exact_candidates": 0,
+  "publication_findings": [],
+  "publication_review_original_summaries_only": true,
+  "limits": [
+    "Verifiche dei dati raccolti, non playtest né verifica storica indipendente.",
+    "Matching esatto: nessun equivalente semantico garantito.",
+    "Baseline file raccolta prima della formalizzazione del manifest; non misura processi esterni concorrenti prima di quel momento.",
+    "Audit euristico non certifica diritti o liceità; nessun commit/push eseguito."
+  ]
+}

@@ -2617,6 +2617,70 @@
         "database_modified": false,
         "images_implemented": false
       }
+    },
+    {
+      "id": "TSK-0080",
+      "original_title": "2026-10-08 - CAT - Estensione censimento PerGioco",
+      "display_title": "2026-10-08 - CAT - Estensione censimento PerGioco",
+      "opened_at": "2026-10-08",
+      "task_path": "tasks/2026-10-08 - CAT - Estensione censimento PerGioco/TASK.md",
+      "category": "CAT",
+      "secondary_categories": [],
+      "classified_at": "2026-10-08",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "9/9 candidate valutate; 7 admitted, 2 requisito non dimostrato; 22 verifiche riuscite, database/app/schema/pilota invariati, nessuna importazione.",
+      "dependencies": [
+        "TSK-0073"
+      ],
+      "related_tasks": [
+        "TSK-0074",
+        "TSK-0076",
+        "TSK-0078",
+        "TSK-0079"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a11d49-b108-7742-a74a-a2353e76da26"
+      ],
+      "coverage": {
+        "candidates": 9,
+        "censused": 9,
+        "admitted": 7,
+        "requirements_not_demonstrated": 2,
+        "not_observable": 0,
+        "full_site": false,
+        "pilot_recensused": 0,
+        "imported": 0,
+        "downloaded": 0,
+        "native_classifications": 18,
+        "declared_Labirinto_instances": 3,
+        "embedded_Piattola_variants": 7,
+        "matching_records_with_exact_candidates": 0
+      },
+      "next_action": "Avviare DAT autonomo su richiesta usando PROMPT_PROSSIMO_DAT.md nel task: piano identità e collaudi su copie, conferma esplicita prima di applicazione operativa. CAT resta concluso; commit/push a cura utente, non ancora attestati.",
+      "git": {
+        "checked_at": "2026-10-08",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare",
+        "evidence": "Deliverable locali verificati su main; nessun commit/push autorizzato o eseguito in TSK-0080. Modifiche pregresse preservate; nessuna verifica server nuova."
+      },
+      "last_verified_at": "2026-10-08",
+      "closed_at": "2026-10-08",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "status": "in_corso",
+          "evidence": "Conferma esplicita lotto nove voci; contratto prima della raccolta."
+        },
+        {
+          "date": "2026-10-08",
+          "status": "completato",
+          "evidence": "Manifest/RELAZIONE.md e VERIFICHE.json: 9/9, 7/2, 22 controlli."
+        }
+      ]
     }
   ],
   "chats": [

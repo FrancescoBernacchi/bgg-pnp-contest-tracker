@@ -1,0 +1,2057 @@
+{
+  "schema_version": 1,
+  "task_id": "TSK-0080",
+  "source_key": "pergioco",
+  "observed_at": "2026-10-08",
+  "formalized_at": "2026-10-08",
+  "scope_reference": "sources/PERGIOCO-SCOPE.md + contratto TSK-0080",
+  "scope_label": "Carta e matita: nove voci residue confermate",
+  "candidate_denominator": 9,
+  "censused_count": 9,
+  "admitted_count": 7,
+  "requirements_not_demonstrated_count": 2,
+  "not_observable_count": 0,
+  "imported_count": 0,
+  "downloaded_count": 0,
+  "full_site_census": false,
+  "index_observation": {
+    "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+    "observed_at": "2026-10-08",
+    "page_updated_raw": "26/09/2026",
+    "entries": 10,
+    "previously_censused": [
+      {
+        "title": "Chomp",
+        "pilot_id": "PGP-005",
+        "task_id": "TSK-0074",
+        "recensused": false
+      }
+    ],
+    "new_candidate_count": 9,
+    "stale_web_copy_limit": "Copia web datata 28/08/2025 senza Battaglia Navale, superata per ricognizione corrente dal browser; nessuna deduzione di inserimento recente."
+  },
+  "conditions": {
+    "condition_key": "PG-CONDITIONS-20261008",
+    "url": "https://www.pergioco.net/termini-e-condizioni.html",
+    "observed_at": "2026-10-08",
+    "page_updated_raw": "26/09/2026",
+    "summary_original": "Condizioni del sito limitano copia/modifica/pubblicazione/distribuzione senza consenso; indicano conservazione sul computer e stampa di estratti per uso personale. Nessuna licenza aperta o permesso di redistribuzione attestato.",
+    "permission_state": "not_attested_for_public_redistribution",
+    "registration_declared_free": true,
+    "registration_source_url": "https://www.pergioco.net/faq.html",
+    "registration_observed_at": "2026-10-08",
+    "newsletter_declared_free": true,
+    "registration_performed": false
+  },
+  "method": {
+    "primary": "Browser corrente, lettura HTML e rinvii interni necessari; sintesi originali e metadati.",
+    "systematic_material_census": false,
+    "external_hosts_checked": false,
+    "solution_content_checked": false,
+    "classification_mapping": [],
+    "pilot_records_recensused": 0,
+    "third_party_full_evidence_committed": false,
+    "coverage_limit": "Nove voci indice, incluse raccolte/non ammissibili; sette esiti admitted non certificano sette nuove identità canoniche. Schede terze rinviate fuori lotto non censite."
+  },
+  "records": [
+    {
+      "candidate_id": "PGCM-001",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-001",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-001",
+      "candidate_title": "Battaglia Navale",
+      "title_original": "Battaglia Navale con Carta e Matita",
+      "title_normalized": "Battaglia Navale con Carta e Matita",
+      "aliases_declared": [],
+      "year_declared": null,
+      "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+      "requested_url": "https://www.pergioco.net/battaglia-navale-carta-e-matita.html",
+      "final_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": null,
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "not_declared",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Milton Bradley",
+          "role_raw": "publisher",
+          "subject_context_raw": "Edizione commerciale da tavolo citata dal 1967; non credito del sistema tradizionale.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Pierre Berloquin",
+          "role_raw": "historical_attribution_source",
+          "subject_context_raw": "Ipotesi storica riportata; non designer attestato.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Battaglia Navale"
+          ],
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Battaglia Navale",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "incomplete",
+        "public_content_free": true,
+        "complete_rules_free": null,
+        "assessment_original": "Deduzione a due con flotte nascoste e coordinate. La scheda illustra il ciclo generale ma non specifica dimensioni, composizione della flotta o vincoli di schieramento sufficienti a una configurazione operativa completa.",
+        "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "requirement_not_demonstrated",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "unknown",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "presentation_html",
+          "url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "incomplete",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [
+        {
+          "target_label_raw": "Battaglia Navale",
+          "target_url": "https://www.pergioco.net/battaglia-navale.html",
+          "relation_type_raw": "commercial_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": "Rinvio alla versione da tavolo; non equivalenza/versione confermata.",
+          "source_url": "https://www.pergioco.net/a/battaglia-navale-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "notes_original": [
+        "Attestazione italiana 1932 e commercializzazione 1967 sono contesti storici, non anno di ideazione fissato.",
+        "Varianti dimensionali e di flotta menzionate genericamente; nessuna nuova candidata."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Battaglia Navale con Carta e Matita",
+          "Battaglia Navale"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-002",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-002",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-002",
+      "candidate_title": "Engel",
+      "title_original": "Engel",
+      "title_normalized": "Engel",
+      "aliases_declared": [],
+      "year_declared": 1975,
+      "source_url": "https://www.pergioco.net/a/engel.html",
+      "requested_url": "https://www.pergioco.net/engel.html",
+      "final_url": "https://www.pergioco.net/a/engel.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": "D. Engel",
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Pierre Berloquin",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "100 Jeux de Table (1976), edizione italiana Il Centogiochi (1979).",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Engel"
+          ],
+          "source_url": "https://www.pergioco.net/a/engel.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Engel",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Gioco a due di segmenti su carta quadrettata. La scheda pubblica contiene preparazione, turno, vincoli e condizione di fine; sufficiente per il requisito CAT senza playtest.",
+        "source_url": "https://www.pergioco.net/a/engel.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/engel.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [],
+      "notes_original": [
+        "Iniziale D. preservata: nome completo non attestato.",
+        "Titolo Introduzione non implica regole incomplete."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Engel"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-003",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-003",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-003",
+      "candidate_title": "Labirinto",
+      "title_original": "Labirinto",
+      "title_normalized": "Labirinto",
+      "aliases_declared": [],
+      "year_declared": null,
+      "source_url": "https://www.pergioco.net/a/labirinto.html",
+      "requested_url": "https://www.pergioco.net/labirinto.html",
+      "final_url": "https://www.pergioco.net/a/labirinto.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "logical_rule_system",
+      "credits": [
+        {
+          "name_raw": null,
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "not_declared",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Andrea Angiolino",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "Dizionario dei Giochi (2010).",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Beniamo Sidoti",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "Nome riportato così nella scheda; non corretto né risolto automaticamente.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Zanichelli",
+          "role_raw": "reference_book_publisher",
+          "subject_context_raw": "Dizionario dei Giochi (2010).",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Labirinto"
+          ],
+          "source_url": "https://www.pergioco.net/a/labirinto.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Labirinto",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "sufficient_logical_system",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Sistema solitario di ricerca di un percorso fra entrata e uscita. Obiettivo e struttura del problema sono pubblici e sufficienti nel perimetro logico adottato; disponibilità di un diagramma giocabile attestata separatamente.",
+        "source_url": "https://www.pergioco.net/a/labirinto.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/labirinto.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "sufficient_logical_system",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        },
+        {
+          "mention_key": "diagrams",
+          "kind": "problem_instances_html",
+          "url": "https://www.pergioco.net/a/labirinto-diagrammi.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "content_observed": true,
+          "completeness": "three_named_instances_dates_observed",
+          "usable_scheme_observed": null,
+          "usability_limit": "Intestazioni/date osservate; immagine utilizzabile non attestata nello screenshot.",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        },
+        {
+          "mention_key": "solutions",
+          "kind": "solutions",
+          "url": "https://www.pergioco.net/a/labirinto-soluzioni.php",
+          "declared": true,
+          "access": "not_verified",
+          "content_observed": null,
+          "completeness": "not_observed",
+          "free_observed": null,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [
+        {
+          "instance_key": "PGCM-003:diagram:1",
+          "label_raw": "Diagramma 1",
+          "kind": "problem_instance",
+          "date_raw": "1 febbraio 2021",
+          "published_at": "2021-02-01",
+          "source_url": "https://www.pergioco.net/a/labirinto-diagrammi.html",
+          "observed_at": "2026-10-08",
+          "usable_scheme_observed": null,
+          "solution_relation": "link_in_same_named_block; destination_content_not_verified",
+          "solution_url": "https://www.pergioco.net/a/labirinto-soluzioni.php",
+          "qualification_raw": null
+        },
+        {
+          "instance_key": "PGCM-003:diagram:2",
+          "label_raw": "Diagramma 2",
+          "kind": "problem_instance",
+          "date_raw": "8 febbraio 2021",
+          "published_at": "2021-02-08",
+          "source_url": "https://www.pergioco.net/a/labirinto-diagrammi.html",
+          "observed_at": "2026-10-08",
+          "usable_scheme_observed": null,
+          "solution_relation": "link_in_same_named_block; destination_content_not_verified",
+          "solution_url": "https://www.pergioco.net/a/labirinto-soluzioni.php",
+          "qualification_raw": "Vincolo pecora/lupo dichiarato"
+        },
+        {
+          "instance_key": "PGCM-003:diagram:3",
+          "label_raw": "Diagramma 3",
+          "kind": "problem_instance",
+          "date_raw": "29 dicembre 2023",
+          "published_at": "2023-12-29",
+          "source_url": "https://www.pergioco.net/a/labirinto-diagrammi.html",
+          "observed_at": "2026-10-08",
+          "usable_scheme_observed": null,
+          "solution_relation": "link_in_same_named_block; destination_content_not_verified",
+          "solution_url": "https://www.pergioco.net/a/labirinto-soluzioni.php",
+          "qualification_raw": null
+        }
+      ],
+      "relations_and_dependencies": [],
+      "notes_original": [
+        "Tre diagrammi nominati e datati nella pagina associata; contano come istanze dichiarate, non tre giochi.",
+        "Screenshot di consultazione mostra intestazioni/date e banner editoriali, ma non un labirinto utilizzabile: usability non attestata; non equivale ad assenza permanente.",
+        "Il Diagramma 2 dichiara un vincolo narrativo aggiuntivo; conservato come qualificazione di istanza."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Labirinto"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-004",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-004",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-004",
+      "candidate_title": "Numerino",
+      "title_original": "Numerino",
+      "title_normalized": "Numerino",
+      "aliases_declared": [
+        "Bulls and Cows",
+        "Numerello",
+        "Strike & Ball",
+        "Ball & Strike"
+      ],
+      "year_declared": null,
+      "source_url": "https://www.pergioco.net/a/numerino.html",
+      "requested_url": "https://www.pergioco.net/numerino.html",
+      "final_url": "https://www.pergioco.net/a/numerino.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": null,
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "not_declared",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Mordecai Meirowitz",
+          "role_raw": "designer",
+          "subject_context_raw": "Solo Master Mind/Mastermind, adattamento citato nel 1971; non designer del Numerino tradizionale.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Invicta",
+          "role_raw": "publisher",
+          "subject_context_raw": "Solo Master Mind/Mastermind, commercializzazione citata nel 1972.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Numerino"
+          ],
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Numerino",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Deduzione a due di un codice numerico con indizi. Regole del sistema pubblico sufficienti; numero di tentativi e opzioni del codice sono parametri da concordare, non valori inventati dal catalogo.",
+        "source_url": "https://www.pergioco.net/a/numerino.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/numerino.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [
+        {
+          "target_label_raw": "Master Mind / Mastermind",
+          "target_url": "https://www.pergioco.net/mastermind.html",
+          "relation_type_raw": "adaptation_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Codice Segreto",
+          "target_url": "https://www.pergioco.net/codice-segreto.html",
+          "relation_type_raw": "see_also",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/numerino.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "notes_original": [
+        "Diffusione italiana dagli anni trenta dichiarata; nessun anno preciso di invenzione.",
+        "Alternative su cifre/simboli/lettere registrate come opzioni interne; non nuove identità."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Numerino",
+          "Bulls and Cows",
+          "Numerello",
+          "Strike & Ball",
+          "Ball & Strike"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-005",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-005",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-005",
+      "candidate_title": "Piattola",
+      "title_original": "Piattola",
+      "title_normalized": "Piattola",
+      "aliases_declared": [
+        "Morpion"
+      ],
+      "year_declared": null,
+      "source_url": "https://www.pergioco.net/a/piattola.html",
+      "requested_url": "https://www.pergioco.net/piattola.html",
+      "final_url": "https://www.pergioco.net/a/piattola.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": null,
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "not_declared",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "René Alleau",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "Guida ai Giochi (1976), originale Dictionnaire des Jeux.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Donatella Cerutti",
+          "role_raw": "reference_book_translator",
+          "subject_context_raw": "Traduzione di Dictionnaire des Jeux citata.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Pierre Berloquin",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "Il CentoGiochi / 100 Jeux de Table; date editoriali dichiarate nella pagina.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Adriana Crespi Bartolini",
+          "role_raw": "reference_book_translator",
+          "subject_context_raw": "Traduzione di 100 Jeux de Table citata.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Andrea Angiolino",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "101 Giochi con Carta e Matita (2008), fonte delle prime tre varianti; non designer attribuito.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "designer",
+          "subject_context_raw": "Solo Variante Simmetrica, esplicitamente ideata dal curatore.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Piattola"
+          ],
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Piattola",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Gioco a due di allineamenti su carta. La pagina contiene regole del base, varianti nominate e versioni solitarie; queste sono descritte separatamente nel record senza moltiplicare le nove candidate autorizzate.",
+        "source_url": "https://www.pergioco.net/a/piattola.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/piattola.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [],
+      "notes_original": [
+        "Morpion è il termine francese da cui la fonte deriva il nome; equivalenza globale non verificata.",
+        "Autori dei volumi e traduttori non diventano designer del base."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Piattola",
+          "Morpion"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment",
+      "embedded_variants": [
+        {
+          "label_raw": "Variante 1",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Variante 2",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Variante 3",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Variante a tempo",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Variante Simmetrica",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": "Marino Carpignano",
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Piattola Solitaria",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [
+            "Morpion Solitaire",
+            "Join Five"
+          ],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        },
+        {
+          "label_raw": "Piattola Solitaria per Due",
+          "kind": "variant_declared",
+          "cataloged_as_separate_candidate": false,
+          "source_url": "https://www.pergioco.net/a/piattola.html",
+          "observed_at": "2026-10-08",
+          "aliases_declared": [],
+          "designer_declared": null,
+          "admission_separately_assessed": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "PGCM-006",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-006",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-006",
+      "candidate_title": "Punti e linee",
+      "title_original": "Punti e linee",
+      "title_normalized": "Punti e linee",
+      "aliases_declared": [],
+      "year_declared": null,
+      "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+      "requested_url": "https://www.pergioco.net/punti-e-linee.html",
+      "final_url": "https://www.pergioco.net/e/punti-e-linee.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "22/09/2026",
+      "entity_kind_observed": "editorial_collection",
+      "credits": [
+        {
+          "name_raw": null,
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "not_declared",
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi logici e di induzione",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi logici e di induzione",
+            "Enigmi logici",
+            "Punti e linee"
+          ],
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Punti e linee",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "collection_without_single_system",
+        "public_content_free": true,
+        "complete_rules_free": null,
+        "assessment_original": "La destinazione è una raccolta di enigmi con rinvii a quattro titoli, non una scheda con un sistema unitario di regole. Non assegnata identità di gioco né ammissione automatica ai titoli collegati.",
+        "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "requirement_not_demonstrated",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "unknown",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "collection_index_html",
+          "url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "collection_without_single_system",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [
+        {
+          "target_label_raw": "Gioco dei 9 punti",
+          "target_url": "https://www.pergioco.net/e/gioco-dei-9-punti.html",
+          "relation_type_raw": "collection_member",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Gioco dei 16 punti",
+          "target_url": "https://www.pergioco.net/e/gioco-dei-16-punti.html",
+          "relation_type_raw": "collection_member",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Gioco dei 12 punti",
+          "target_url": "https://www.pergioco.net/e/gioco-dei-12-punti.html",
+          "relation_type_raw": "collection_member",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Stella a 7 punti",
+          "target_url": "https://www.pergioco.net/e/stella-a-7-punti.html",
+          "relation_type_raw": "collection_member",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/e/punti-e-linee.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "notes_original": [
+        "Punti e Linee è anche alias dichiarato di Quadratini: omonimia editoriale, non equivalenza provata.",
+        "Titoli collegati fuori denominatore: non censiti sistematicamente né ammessi."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Punti e linee"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-007",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-007",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-007",
+      "candidate_title": "Quadratini",
+      "title_original": "Quadratini",
+      "title_normalized": "Quadratini",
+      "aliases_declared": [
+        "Punti e Linee",
+        "Battaglia sui Quadrati",
+        "Caccia alla Volpe",
+        "Dots and Boxes",
+        "Boxes",
+        "Squares",
+        "(Game of) Dots",
+        "Dots and Dashes",
+        "Dot to Dot Grid",
+        "La Pipopipette"
+      ],
+      "year_declared": 1889,
+      "source_url": "https://www.pergioco.net/a/quadratini.html",
+      "requested_url": "https://www.pergioco.net/quadratini.html",
+      "final_url": "https://www.pergioco.net/a/quadratini.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": "François Édouard Anatole Lucas",
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Andrea Angiolino",
+          "role_raw": "reference_book_author",
+          "subject_context_raw": "101 Giochi con Carta e Matita (2008), uso del titolo Quadratini.",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Quadratini"
+          ],
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Quadratini",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Gioco a due di conquista di celle. La scheda pubblica copre preparazione, turno e termine; la particolare cornice già delimitata resta caratteristica della versione descritta, senza equivalenza universale con altri regolamenti.",
+        "source_url": "https://www.pergioco.net/a/quadratini.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/quadratini.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [
+        {
+          "target_label_raw": "Boxes",
+          "target_url": "https://www.pergioco.net/boxes.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Squaresville",
+          "target_url": "https://www.pergioco.net/squaresville.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Honeycomb",
+          "target_url": "https://www.pergioco.net/honeycomb.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Box-It",
+          "target_url": "https://www.pergioco.net/box-it.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Squares",
+          "target_url": "https://www.pergioco.net/squares.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "target_label_raw": "Punto e Linea",
+          "target_url": "https://www.pergioco.net/punto-e-linea.html",
+          "relation_type_raw": "inspired_boardgame_mentioned",
+          "assertion_status": "declared_by_source",
+          "information_requirement": "unknown",
+          "ownership_requirement": "unknown",
+          "purchase_requirement": "unknown",
+          "summary_original": null,
+          "source_url": "https://www.pergioco.net/a/quadratini.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "notes_original": [
+        "Boxes e Squares compaiono sia fra alias sia fra giochi di tavoliere ispirati: ruoli contestuali distinti, nessuna fusione.",
+        "(Game of) Dots preservato come notazione originale, non espanso in alias inventati."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Quadratini",
+          "Punti e Linee",
+          "Battaglia sui Quadrati",
+          "Caccia alla Volpe",
+          "Dots and Boxes",
+          "Boxes",
+          "Squares",
+          "(Game of) Dots",
+          "Dots and Dashes",
+          "Dot to Dot Grid",
+          "La Pipopipette"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-008",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-008",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-008",
+      "candidate_title": "Sqez",
+      "title_original": "Sqez",
+      "title_normalized": "Sqez",
+      "aliases_declared": [],
+      "year_declared": 1973,
+      "source_url": "https://www.pergioco.net/a/sqez.html",
+      "requested_url": "https://www.pergioco.net/sqez.html",
+      "final_url": "https://www.pergioco.net/a/sqez.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": "Dan Laycock",
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Sqez"
+          ],
+          "source_url": "https://www.pergioco.net/a/sqez.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Sqez",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Gioco a due di occupazione geometrica su carta. Preparazione, turno, vincoli e vittoria sono osservati nel testo pubblico; nessun playtest.",
+        "source_url": "https://www.pergioco.net/a/sqez.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/sqez.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [],
+      "notes_original": [],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Sqez"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    },
+    {
+      "candidate_id": "PGCM-009",
+      "local_record_key": "pergioco:carta-matita:20261008:PGCM-009",
+      "native_id": null,
+      "event_key": "TSK-0080:browser:20261008:PGCM-009",
+      "candidate_title": "Stripes!",
+      "title_original": "Stripes!",
+      "title_normalized": "Stripes!",
+      "aliases_declared": [],
+      "year_declared": 2016,
+      "source_url": "https://www.pergioco.net/a/stripes.html",
+      "requested_url": "https://www.pergioco.net/stripes.html",
+      "final_url": "https://www.pergioco.net/a/stripes.html",
+      "redirect_chain": null,
+      "redirect_limit": "Endpoint richiesto/finale osservati; passaggi intermedi non attestati.",
+      "observed_at": "2026-10-08",
+      "formalized_at": "2026-10-08",
+      "page_updated_raw": "25/09/2026",
+      "entity_kind_observed": "game_rule_system",
+      "credits": [
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "designer",
+          "subject_context_raw": "Sistema principale",
+          "status_raw": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": "Marino Carpignano",
+          "role_raw": "site_curator_owner",
+          "subject_context_raw": "Sito; nessuna attribuzione automatica di design/redazione/traduzione.",
+          "status_raw": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "illustrator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_writer",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "page_translator",
+          "subject_context_raw": "Scheda principale",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "name_raw": null,
+          "role_raw": "publisher",
+          "subject_context_raw": "Sistema principale; editori di volumi/prodotti citati hanno contesto distinto.",
+          "status_raw": "not_registered",
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "native_classification": [
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "breadcrumb",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico",
+            "Stripes!"
+          ],
+          "source_url": "https://www.pergioco.net/a/stripes.html",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "label": "Giochi con carta e matita",
+          "kind": "index_membership",
+          "path": [
+            "Giochi",
+            "Giochi con carta e matita",
+            "Elenco alfabetico"
+          ],
+          "index_title": "Stripes!",
+          "source_url": "https://www.pergioco.net/giochi-con-carta-e-matita.html",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "classification_exhaustiveness": "all_observed_memberships_retained; no_whole_site_exhaustiveness_claim",
+      "rules": {
+        "language": "it",
+        "completeness": "complete_CAT_assessment",
+        "public_content_free": true,
+        "complete_rules_free": true,
+        "assessment_original": "Gioco a due di strisce colorate su carta. Scheda pubblica con preparazione, azioni, vincoli, esito e punteggio; esempi illustrativi menzionati, senza estrazione delle figure.",
+        "source_url": "https://www.pergioco.net/a/stripes.html",
+        "observed_at": "2026-10-08",
+        "playtested": false
+      },
+      "outcome": "admitted",
+      "access_assessments": [
+        {
+          "subject_scope": "public_content",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "complete_rules",
+          "access": "public_no_login_observed",
+          "cost_status": "free_observed",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "components_product",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        },
+        {
+          "subject_scope": "online_implementation",
+          "access": "not_verified",
+          "cost_status": "unknown",
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "resources": [
+        {
+          "mention_key": "main_html",
+          "kind": "rules_html",
+          "url": "https://www.pergioco.net/a/stripes.html",
+          "declared": true,
+          "access": "public_no_login_observed",
+          "scope": "public_content",
+          "content_observed": true,
+          "completeness": "complete_CAT_assessment",
+          "free_observed": true,
+          "observed_at": "2026-10-08"
+        }
+      ],
+      "instances": [],
+      "relations_and_dependencies": [],
+      "notes_original": [
+        "Titolo con punto esclamativo preservato.",
+        "Refuso ripetitivo nella regola e) non normalizzato in una nuova regola; nessun effetto CAT individuato."
+      ],
+      "local_matching": {
+        "checked_at": "2026-10-08",
+        "method": "SQLite mode=ro; titolo/alias esatti case-insensitive games.canonical_title + game_names.name; URL esatti source_records. Non cerca equivalenti semantici.",
+        "queried_names": [
+          "Stripes!"
+        ],
+        "matches": [],
+        "source_url_matches": [],
+        "status": "no_exact_match",
+        "limit": "Nessuna fusione o conferma; assenza di match esatto non prova assenza di equivalenti."
+      },
+      "conditions_ref": "PG-CONDITIONS-20261008",
+      "normalizations": {
+        "title": "Identico al titolo della scheda.",
+        "dates": "Solo date editoriali esatte convertite ISO; anni di ideazione distinti."
+      },
+      "inferences": [],
+      "coverage_state": "complete_CAT_candidate_assessment"
+    }
+  ]
+}
