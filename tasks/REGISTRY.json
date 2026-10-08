@@ -2560,10 +2560,11 @@
       "next_action": "Task APP autonomo per consultazione evidenze/categorie PerGioco; eventuale VER Abande separato. Commit/push solo su richiesta.",
       "git": {
         "checked_at": "2026-10-08",
-        "local_save": "da_committare",
-        "integration": "da_integrare",
-        "synchronization": "da_verificare",
-        "evidence": "Nessun commit/push autorizzato."
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "commit": "de36af3c6648dfc048f2922a288c3acf8b782407",
+        "evidence": "14 file selezionati, audit commit in uscita zero rilievi; push main e hash ls-remote verificati. Modifiche pregresse escluse. Registrazione esito in commit documentale successivo."
       },
       "last_verified_at": "2026-10-08",
       "closed_at": "2026-10-08"
