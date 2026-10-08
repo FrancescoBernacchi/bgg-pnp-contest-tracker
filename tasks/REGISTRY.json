@@ -2659,13 +2659,14 @@
         "embedded_Piattola_variants": 7,
         "matching_records_with_exact_candidates": 0
       },
-      "next_action": "Avviare DAT autonomo su richiesta usando PROMPT_PROSSIMO_DAT.md nel task: piano identità e collaudi su copie, conferma esplicita prima di applicazione operativa. CAT resta concluso; commit/push a cura utente, non ancora attestati.",
+      "next_action": "Avviare DAT autonomo su richiesta con PROMPT_PROSSIMO_DAT.md: piano identità/collaudi su copie, conferma prima dell operativo. CAT completato e commit/push verificati.",
       "git": {
         "checked_at": "2026-10-08",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Deliverable locali verificati su main; nessun commit/push autorizzato o eseguito in TSK-0080. Modifiche pregresse preservate; nessuna verifica server nuova."
+        "synchronization": "remoto_verificato",
+        "commit": "615e1ad79e09937c0c496b434c105d9b7b8e62d9",
+        "evidence": "Commit selettivo 13 file CAT e prompt DAT, audit commit in uscita zero rilievi; push origin/main e hash ls-remote coincidenti, 0/0. Modifiche estranee preservate. Esito in successivo commit documentale."
       },
       "last_verified_at": "2026-10-08",
       "closed_at": "2026-10-08",

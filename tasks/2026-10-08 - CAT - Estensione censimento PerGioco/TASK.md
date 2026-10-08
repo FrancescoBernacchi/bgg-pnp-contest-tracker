@@ -45,3 +45,7 @@ Prossimo passo: DAT autonomo, da autorizzare separatamente, per piano identità 
 ### Handoff DAT — 2026-10-08
 
 Su richiesta utente preparato PROMPT_PROSSIMO_DAT.md per una nuova chat: sole nove candidate, piano identità e collaudi su copie; conferma esplicita prima di applicazione operativa e piano finale. CAT resta completato; nessun DAT avviato o nuova chat creata. L'utente intende eseguire commit/push del CAT; nessuna operazione Git eseguita da questo incremento. Il prompt è documentazione del prossimo passo, non autorizzazione corrente all'importazione. Nessuna variazione di copertura, dati o strumenti; cruscotto invariato.
+
+## Versionamento verificato — 2026-10-08
+
+Utente richiede «commit e push». Commit selettivo 615e1ad79e09937c0c496b434c105d9b7b8e62d9 su main: 13 file CAT, incluso prompt DAT; nei file condivisi soltanto voce TSK-0080 e due note cruscotto. Materiali/database/outputs esclusi, modifiche estranee preservate. Audit prospective e commit in uscita: zero rilievi; audit globale 299 segnalazioni su 30 percorsi pregressi esclusi, nessuna nei commit da inviare. Nessuna riscrittura della cronologia. Push origin/main riuscito, ls-remote coincide con HEAD, confronto 0/0. Patch testuale dei due file condivisi non applicabile; contenuti selezionati preparati da HEAD e inseriti nell'indice via blob, senza sovrascrivere la working tree. Questa nota e stato nel registro costituiscono il successivo incremento documentale; non anticipano il relativo hash. DAT non avviato.
