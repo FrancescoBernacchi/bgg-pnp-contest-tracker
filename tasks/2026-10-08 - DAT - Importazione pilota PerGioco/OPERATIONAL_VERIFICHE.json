@@ -1,0 +1,143 @@
+{
+  "task_id": "TSK-0078",
+  "date": "2026-10-08",
+  "authorization": "Explicit user Autorizzo, 2026-10-08, current chat",
+  "outcome": "imported_and_verified",
+  "formalized_at": "2026-10-08T19:49:52.621282+00:00",
+  "backup": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\pergioco-import-backups\\pergioco-before-20261008T194952981278.sqlite3",
+  "backup_sha256": "a8878f3b5032ae41b05cc5b2e1c03f45b86c86126f8ccdeda90953ce4f8e8101",
+  "restore_proof": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\pergioco-import-backups\\pergioco-before-20261008T194952981278-restore.sqlite3",
+  "operational_sha256_after": "78803f2580993c9c07d6a721bd2df57a94a8f7689a7b9dd102003d1a871bafca",
+  "manifest_sha256": "ab15231c9185b93b78e8896d28edc91f46d671c0bb434067a24e6e707eeef45e",
+  "mapper": "pergioco-pilot-B-v1.1",
+  "importer_sha256": "5f4287116532e4943a107fde17f8fe60b26966633dab1d7bfa34894b7cce97b6",
+  "records": [
+    {
+      "candidate_id": "PGP-001",
+      "record_id": 77,
+      "title_raw": "Achi",
+      "game_id": 1447,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-002",
+      "record_id": 78,
+      "title_raw": "Krypte",
+      "game_id": 1448,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-003",
+      "record_id": 79,
+      "title_raw": "Abande",
+      "game_id": 993,
+      "match_status": "candidate"
+    },
+    {
+      "candidate_id": "PGP-004",
+      "record_id": 80,
+      "title_raw": "Abande Libre",
+      "game_id": 1449,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-005",
+      "record_id": 81,
+      "title_raw": "Chomp",
+      "game_id": 1450,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-006",
+      "record_id": 82,
+      "title_raw": "Itinera",
+      "game_id": 1451,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-007",
+      "record_id": 83,
+      "title_raw": "Azul",
+      "game_id": null,
+      "match_status": null
+    },
+    {
+      "candidate_id": "PGP-008",
+      "record_id": 84,
+      "title_raw": "Reversi",
+      "game_id": 1452,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-009",
+      "record_id": 85,
+      "title_raw": "Blockade (1975)",
+      "game_id": null,
+      "match_status": null
+    },
+    {
+      "candidate_id": "PGP-010",
+      "record_id": 86,
+      "title_raw": "Blockade (2001)",
+      "game_id": null,
+      "match_status": null
+    },
+    {
+      "candidate_id": "PGP-011",
+      "record_id": 87,
+      "title_raw": "Beeline",
+      "game_id": 1453,
+      "match_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGP-012",
+      "record_id": 88,
+      "title_raw": "Beeline",
+      "game_id": 1454,
+      "match_status": "confirmed"
+    }
+  ],
+  "table_deltas": {
+    "access_condition_links": 292,
+    "admission_evidence_mentions": 10,
+    "canonical_projection_events": 18,
+    "catalog_resources": 16,
+    "catalog_sources": 1,
+    "condition_observations": 4,
+    "game_names": 10,
+    "game_source_records": 9,
+    "games": 8,
+    "instance_mention_assertions": 2,
+    "problem_instance_observations": 2,
+    "problem_instances": 2,
+    "resource_access_observations": 73,
+    "resource_links": 17,
+    "resource_url_observations": 17,
+    "source_admission_observations": 12,
+    "source_classification_observations": 26,
+    "source_classification_segments": 96,
+    "source_credit_observations": 62,
+    "source_identity_decisions": 9,
+    "source_record_keys": 12,
+    "source_record_observations": 12,
+    "source_record_url_observations": 24,
+    "source_records": 12,
+    "source_relation_assertions": 35,
+    "source_resource_mention_observations": 21,
+    "source_resource_mentions": 21
+  },
+  "checks": {
+    "payloads_paths_dates_admissions_identity_plan": true,
+    "foreign_keys_integrity": true,
+    "legacy_every_row_preserved": true,
+    "schema_identical": true,
+    "backup_restore_identical": true,
+    "replay_zero_delta_and_file_hash": true,
+    "existing_app_read_adapters": true
+  },
+  "replay": {
+    "outcome": "already_imported",
+    "writes": 0
+  },
+  "limits": "No new UI or claims of complete B-v1 evidence display; no external verification, person resolution, backfill, acquisition or Git operations."
+}

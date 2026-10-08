@@ -30,3 +30,7 @@ TSK-0076, 2026-10-06: architettura logica B-v1 e piano delle dodici candidate co
 ## Migrazione 013 operativa — TSK-0077, 2026-10-06
 
 Schema multifonte B-v1 disponibile nell'operativo, migrazione 013 autorizzata e verificata dopo adozione TSK-0076. Tutte le 21 tabelle nuove sono vuote; PerGioco resta non importato e perimetro TSK-0073/CAT 12 candidate invariato. Nessun backfill/matching o game creato, nessuna APP o acquisizione. Prossimo DAT importazione separato richiede autorizzazione, strumenti e verifiche del piano 9/3, otto nuove identita, Abande candidato 993 e tre source-only; Itinera un gioco/due istanze. Evidenze in `tasks/2026-10-06 - DAT - Schema multifonte per PerGioco/`.
+
+## Pilota importato — stato corrente 2026-10-08
+
+TSK-0078, 2026-10-08: dopo 26 controlli su copie e consenso esplicito utente, pilota PerGioco importato nello schema B-v1/013. Dodici record fonte 77–88, otto nuovi games 1447–1454, Abande candidato 993, Azul/Blockade 1975/2001 source-only. Esiti CAT 9/3 e classificazioni/risorse/crediti/date preservati; Itinera un gioco/due istanze e soluzioni separate, Libre senza arco canonico verso 993. Nessun backfill/rete/acquisizione/APP/schema modificato. Backup/restore, legacy completo e replay zero delta verificati in tasks/2026-10-08 - DAT - Importazione pilota PerGioco/OPERATIONAL_VERIFICHE.json. Precedenti documenti/manifest restano evidenze storiche, non lo stato operativo corrente.

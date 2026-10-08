@@ -1,0 +1,590 @@
+{
+  "task_id": "TSK-0078",
+  "date": "2026-10-08",
+  "operational_applied": false,
+  "model": "B-v1/013",
+  "mapper": "pergioco-pilot-B-v1.1",
+  "input_sha256": "ab15231c9185b93b78e8896d28edc91f46d671c0bb434067a24e6e707eeef45e",
+  "table_deltas": {
+    "access_condition_links": 292,
+    "admission_evidence_mentions": 10,
+    "canonical_projection_events": 18,
+    "catalog_resources": 16,
+    "catalog_sources": 1,
+    "condition_observations": 4,
+    "game_names": 10,
+    "game_source_records": 9,
+    "games": 8,
+    "instance_mention_assertions": 2,
+    "problem_instance_observations": 2,
+    "problem_instances": 2,
+    "resource_access_observations": 73,
+    "resource_links": 17,
+    "resource_url_observations": 17,
+    "source_admission_observations": 12,
+    "source_classification_observations": 26,
+    "source_classification_segments": 96,
+    "source_credit_observations": 62,
+    "source_identity_decisions": 9,
+    "source_record_keys": 12,
+    "source_record_observations": 12,
+    "source_record_url_observations": 24,
+    "source_records": 12,
+    "source_relation_assertions": 35,
+    "source_resource_mention_observations": 21,
+    "source_resource_mentions": 21
+  },
+  "records": [
+    {
+      "key": "pergioco:pilot:PGP-001",
+      "candidate_id": "PGP-001",
+      "title_raw": "Achi",
+      "title_qualified": "Achi",
+      "source_url": "https://www.pergioco.net/1/achi.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "95db728dbf181139395799f2f914a204afb78aa9d4a9626dcf8a9cfe0f1c38c0",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 3,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": null,
+          "role": "designer",
+          "status": "not_declared",
+          "note": "Gioco tradizionale originario del Ghana; nessun designer individuale dichiarato.",
+          "source_url": "https://www.pergioco.net/1/achi.html",
+          "observed_at": "2026-10-06"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/achi.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [
+        "Care"
+      ],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-002",
+      "candidate_id": "PGP-002",
+      "title_raw": "Krypte",
+      "title_qualified": "Krypte",
+      "source_url": "https://www.pergioco.net/3/krypte.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "34771e15278fd11fd955bf7aa6b02499cd3da72c50b6b009a41f0944bd7bb156",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": "Marino Carpignano",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/3/krypte.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/krypte.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-003",
+      "candidate_id": "PGP-003",
+      "title_raw": "Abande",
+      "title_qualified": "Abande",
+      "source_url": "https://www.pergioco.net/1/abande.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "b8b8e2b08f6a0fd2d55879d220e4e1814b9dd5eb848d0b6e5732d85192209f55",
+      "identity_action": "candidate_to_993",
+      "classification_count": 2,
+      "resource_mentions": 2,
+      "named_credits_and_gaps": [
+        {
+          "name": "Dieter Stein",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/abande.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/abande.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-004",
+      "candidate_id": "PGP-004",
+      "title_raw": "Abande Libre",
+      "title_qualified": "Abande Libre",
+      "source_url": "https://www.pergioco.net/1/abande-libre.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "7179b844e7b4f515d9cfdb34db8f95ca42223c1e6f19f96d5ffa5c13bc56c3c4",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 3,
+      "named_credits_and_gaps": [
+        {
+          "name": "Dieter Stein",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/abande-libre.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/abande-libre.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-005",
+      "candidate_id": "PGP-005",
+      "title_raw": "Chomp",
+      "title_qualified": "Chomp",
+      "source_url": "https://www.pergioco.net/a/chomp.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "5fa0a58cad1cd63ac429bb117a716389f93d8f2f223f49028ecf0753a88deef6",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": "David Gale",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/chomp.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/chomp.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-006",
+      "candidate_id": "PGP-006",
+      "title_raw": "Itinera",
+      "title_qualified": "Itinera",
+      "source_url": "https://www.pergioco.net/a/itinera.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "134cbe10f983dc5f38b99fb05be80f8a64598081d36e4618ba3767cdd00f77aa",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 3,
+      "named_credits_and_gaps": [
+        {
+          "name": "Marino Carpignano",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/a/itinera.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/itinera.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": [
+        "2021-06-18",
+        "2021-07-23"
+      ]
+    },
+    {
+      "key": "pergioco:pilot:PGP-007",
+      "candidate_id": "PGP-007",
+      "title_raw": "Azul",
+      "title_qualified": "Azul",
+      "source_url": "https://www.pergioco.net/1/azul.html",
+      "observed_at": "2026-10-06",
+      "outcome": "requirement_not_demonstrated",
+      "payload_sha256": "d2d732180b5825fa0352373e9c8c182d7af8dfe9df04d8ba58c59144da12f094",
+      "identity_action": "source_only",
+      "classification_count": 2,
+      "resource_mentions": 2,
+      "named_credits_and_gaps": [
+        {
+          "name": "Michael Kiesling",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/azul.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/azul.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-008",
+      "candidate_id": "PGP-008",
+      "title_raw": "Reversi",
+      "title_qualified": "Reversi",
+      "source_url": "https://www.pergioco.net/5/reversi.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "9b404af398d4528336704f7e8f2d6dc5ea423a05901874532cbfaebba3399c18",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 3,
+      "named_credits_and_gaps": [
+        {
+          "name": "Lewis Waterman",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/5/reversi.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual"
+        },
+        {
+          "name": "John W. Mollett",
+          "role": "claimed_designer",
+          "status": "disputed_by_source",
+          "source_url": "https://www.pergioco.net/5/reversi.html",
+          "observed_at": "2026-10-06"
+        },
+        {
+          "name": "Jacques & Son",
+          "role": "historical_publisher",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/5/reversi.html",
+          "observed_at": "2026-10-06"
+        },
+        {
+          "name": "Ravensburger",
+          "role": "historical_publisher",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/5/reversi.html",
+          "observed_at": "2026-10-06"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/reversi.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [
+        "Reversino"
+      ],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-009",
+      "candidate_id": "PGP-009",
+      "title_raw": "Blockade (1975)",
+      "title_qualified": "Blockade (1975)",
+      "source_url": "https://www.pergioco.net/1/blockade.html",
+      "observed_at": "2026-10-06",
+      "outcome": "requirement_not_demonstrated",
+      "payload_sha256": "e2b52bb2366594ba22158fef4a878f9ccab2cb946e0839cf332bd99a5d08d285",
+      "identity_action": "source_only",
+      "classification_count": 2,
+      "resource_mentions": 2,
+      "named_credits_and_gaps": [
+        {
+          "name": "Philip Slater",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/blockade.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual"
+        },
+        {
+          "name": "Lakeside",
+          "role": "publisher",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/blockade.html",
+          "observed_at": "2026-10-06"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/blockade.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [
+        "Cul-de-Sac"
+      ],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-010",
+      "candidate_id": "PGP-010",
+      "title_raw": "Blockade (2001)",
+      "title_qualified": "Blockade (2001)",
+      "source_url": "https://www.pergioco.net/1/blockade2.html",
+      "observed_at": "2026-10-06",
+      "outcome": "requirement_not_demonstrated",
+      "payload_sha256": "c01e0a16237ac41ff2f8f4fca413b9c5062f87261a9f86b4e9cbd75f671978aa",
+      "identity_action": "source_only",
+      "classification_count": 3,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": "Kristin Looney",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/blockade2.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/blockade2.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-011",
+      "candidate_id": "PGP-011",
+      "title_raw": "Beeline",
+      "title_qualified": "Beeline (1968)",
+      "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "01d7711ef84a7d4100909cf75e75066977f33ef5c25e870774dbac31c619bd7c",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": "Winston N. Allen",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/beeline-1968.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/beeline-1968.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    },
+    {
+      "key": "pergioco:pilot:PGP-012",
+      "candidate_id": "PGP-012",
+      "title_raw": "Beeline",
+      "title_qualified": "Beeline (1984)",
+      "source_url": "https://www.pergioco.net/1/beeline.html",
+      "observed_at": "2026-10-06",
+      "outcome": "admitted",
+      "payload_sha256": "3801c707400fc572f79728df0cdc99f522bd433634294de1854a55ef4f08c38b",
+      "identity_action": "create_new_confirmed",
+      "classification_count": 2,
+      "resource_mentions": 1,
+      "named_credits_and_gaps": [
+        {
+          "name": "John Brassell",
+          "role": "designer",
+          "status": "declared_by_source",
+          "source_url": "https://www.pergioco.net/1/beeline.html",
+          "observed_at": "2026-10-06",
+          "provenance": "pilot_residual"
+        },
+        {
+          "name": "Marino Carpignano",
+          "role": "site_curator_owner",
+          "status": "declared_in_FAQ",
+          "source_url": "https://www.pergioco.net/faq.html",
+          "observed_at": "2026-10-06",
+          "provenance": "TSK-0072_reused",
+          "note": "Non attribuisce automaticamente redazione/traduzione o design del gioco."
+        }
+      ],
+      "missing_credits": [
+        "illustrator_not_registered",
+        "page_writer_translator_not_attributed",
+        "publisher_not_registered"
+      ],
+      "historical_urls": [
+        "https://www.pergioco.net/beeline-1984.html"
+      ],
+      "canonical_credit_projection": false,
+      "alias_plan": [],
+      "instance_dates": []
+    }
+  ]
+}

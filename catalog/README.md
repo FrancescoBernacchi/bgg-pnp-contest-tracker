@@ -61,3 +61,9 @@ Prima di preparare dati di un workflow coperto, leggere e applicare la skill per
 ## Migrazione 013 operativa — 2026-10-06
 
 B-v1 e disponibile nello schema dopo TSK-0077, ma non esiste ancora un importer PerGioco: manifest CAT e anteprima DAT restano artefatti offline. Le anteprime historical architecture_adopted=false descrivono la preparazione originaria; decisione TSK-0076 e schema TSK-0077 sono successivi. Non importare automaticamente ne reinterpretare evidenze BGG/Kanare. Futuro DAT importazione separato: baseline per hash/versione, 12 record, 9/3 esiti, otto games nuovi/Abande candidato 993/tre source-only, replay righe e proiezioni da verificare su copia.
+
+## Pilota PerGioco importato — 2026-10-08
+
+TSK-0078, 2026-10-08: dopo 26 controlli su copie e consenso esplicito utente, pilota PerGioco importato nello schema B-v1/013. Dodici record fonte 77–88, otto nuovi games 1447–1454, Abande candidato 993, Azul/Blockade 1975/2001 source-only. Esiti CAT 9/3 e classificazioni/risorse/crediti/date preservati; Itinera un gioco/due istanze e soluzioni separate, Libre senza arco canonico verso 993. Nessun backfill/rete/acquisizione/APP/schema modificato. Backup/restore, legacy completo e replay zero delta verificati in tasks/2026-10-08 - DAT - Importazione pilota PerGioco/OPERATIONAL_VERIFICHE.json. Precedenti documenti/manifest restano evidenze storiche, non lo stato operativo corrente.
+
+Manifest CAT pergioco_pilot_2026-10-06.json immutato: imported_count originario resta storico. Stato corrente nel report operativo TSK-0078. Importer e test offline in catalog/import_pergioco_pilot.py e catalog/test_pergioco_import.py.

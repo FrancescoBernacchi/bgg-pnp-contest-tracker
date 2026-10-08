@@ -72,3 +72,5 @@ TSK-0046: estensione annuale circoscritta classifiche BGG 2024 confermata il 202
 ## Migrazione 013 operativa — TSK-0077, 2026-10-06
 
 - 2026-10-06: attuata architettura logica B-v1 TSK-0076 tramite DAT TSK-0077, con applicazione operativa esplicitamente autorizzata dopo verifica. Migrazione additiva 013, 21 nuove tabelle generiche vuote; righe/ID/viste/oggetti legacy preservati, schema.sql allineato per fresh install. 15 test e 12 controlli su copia, backup/restore/WAL, rollback/replay e lettura app operativa verificati. Nessun import PerGioco, backfill BGG/Kanare, game/matching nuovo, APP o acquisizione. Contratti di importazione e APP ancora da autorizzare separatamente; PWS aligned_version 1.5.0, Standard invariato.
+
+- 2026-10-08: TSK-0078 importa il pilota PerGioco con autorizzazione esplicita dopo collaudo: dodici record fonte, otto nuovi games, Abande candidato e tre source-only; esiti CAT 9/3, B-v1/013 invariato. Backup/restore e legacy/replay verificati; nessuna APP/acquisizione/backfill. PWS resta 1.5.0. Stato storico precedente preservato.
