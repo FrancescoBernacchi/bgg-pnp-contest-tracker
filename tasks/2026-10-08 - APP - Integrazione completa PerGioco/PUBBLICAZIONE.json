@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-08",
+  "scope": [
+    "app/source_evidence.py",
+    "app/pergioco_progress.py",
+    "app/static/source-records.js",
+    "app/test_pergioco.py",
+    "app/test_pergioco_frontend.cjs",
+    "app/test_pergioco_browser.cjs",
+    "app/server.py",
+    "app/source_progress.py",
+    "app/static/app.js",
+    "app/static/index.html",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/BASELINE.json",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/BROWSER_TESTS.txt",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/COPERTURA.md",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/PYTHON_TESTS.txt",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/TASK.md",
+    "tasks/2026-10-08 - APP - Integrazione completa PerGioco/VERIFICHE.json"
+  ],
+  "task_findings": [],
+  "manual_review": "Codice originale, fixture sintetiche e metadati/sintesi necessari. Nessun regolamento/testo integrale di terzi, screenshot o binario versionato; screenshot QA e fixture/copie in outputs esclusi da Git. File app condivisi includono modifiche pregresse: commit solo dopo revisione selettiva.",
+  "full_audit_findings": 299,
+  "full_audit_paths": 30,
+  "outgoing_commits": [],
+  "whole_repository_publication_ready": false,
+  "limits": "Audit euristico; i 299 candidati pregressi non sono risolti dal task APP e vanno riesaminati prima della relativa pubblicazione."
+}

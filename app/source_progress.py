@@ -216,8 +216,12 @@ def kanare_progress(db, evidence_root=ROOT / 'catalog', library_root=ROOT / 'lib
 
 
 def source_progress(db, **kwargs):
+    from pergioco_progress import pergioco_progress
     kanare = kanare_progress(db, **kwargs)
     result = [{'source_key': 'boardgamegeek', 'display_name': 'BGG', 'layout': 'bgg'}] + ([kanare] if kanare else [])
+    pergioco = pergioco_progress(db, evidence_root=kwargs.get('evidence_root', ROOT / 'catalog'))
+    if pergioco:
+        result.append(pergioco)
     supported = {s['source_key'] for s in result}
     result.extend({'source_key': row['source_key'], 'display_name': row['display_name'], 'layout': 'unconfigured'}
                   for row in db.execute('SELECT source_key,display_name FROM catalog_sources ORDER BY display_name')

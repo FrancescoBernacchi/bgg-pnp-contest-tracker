@@ -14,6 +14,7 @@ import hmac
 import webbrowser
 from work_progress import enrich_work_progress, summarize_work
 from source_progress import source_progress
+from source_evidence import record_summaries, source_record_detail
 from library_catalog import library_catalog
 from pdf_files import open_pdf, PDFError
 from material_files import open_material, docx_blocks, DOCX
@@ -75,6 +76,7 @@ def catalog(db, library_root=ROOT / 'library'):
         "rankings": ranking_rows(db),
         "sources": sources,
         "games": game_rows(db),
+        "source_records": record_summaries(db),
         "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
             e.status_raw,e.status_normalized,e.materials_status_normalized,e.last_verified_at,
             g.canonical_title,c.name AS contest_name,c.scope_type,c.year,
@@ -86,6 +88,27 @@ def catalog(db, library_root=ROOT / 'library'):
             FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id
             ORDER BY g.canonical_title COLLATE NOCASE,e.id"""),
     }
+
+
+def game_attributions(db, game_id):
+    """Declared credits with provenance; rejected matches are never attributed."""
+    legacy = rows(db, """SELECT p.display_name,p.bgg_username,gc.role,gc.credit_raw,
+        g.source_url,'declared' AS verification_status,g.last_verified_at AS observed_at
+        FROM game_credits gc JOIN people p ON p.id=gc.person_id
+        JOIN games g ON g.id=gc.game_id WHERE gc.game_id=?
+        ORDER BY gc.role,p.display_name COLLATE NOCASE""", (game_id,))
+    asserted = rows(db, """SELECT p.display_name,p.bgg_username,ca.role,ca.credit_raw,
+        COALESCE(sr.canonical_url,g.source_url) AS source_url,ca.verification_status,ca.observed_at
+        FROM credit_assertions ca JOIN people p ON p.id=ca.person_id
+        JOIN games g ON g.id=?
+        LEFT JOIN source_records sr ON sr.id=COALESCE(ca.evidence_record_id,ca.source_record_id)
+        WHERE ca.verification_status!='rejected' AND (
+            ca.game_id=? OR ca.source_record_id IN (
+                SELECT source_record_id FROM game_source_records WHERE game_id=? AND match_status='confirmed'
+            ) OR ca.product_id IN (SELECT product_id FROM product_games WHERE game_id=?)
+        ) ORDER BY ca.role,p.display_name COLLATE NOCASE,ca.id""", (game_id,game_id,game_id,game_id))
+    # Different roles and evidence remain separate assertions.
+    return legacy + asserted
 
 
 def game_rows(db):
@@ -103,6 +126,9 @@ def game_rows(db):
         (SELECT COUNT(*) FROM game_implementations gi WHERE gi.game_id=g.id) AS implementation_count
         FROM games g ORDER BY g.canonical_title COLLATE NOCASE,g.id""")
     for game in games:
+        game['credits'] = ', '.join(dict.fromkeys(
+            f"{c['display_name']} ({c['role']}; {c['verification_status']})"
+            for c in game_attributions(db, game['id'])))
         game["aliases"] = game["aliases"].split(chr(31)) if game["aliases"] else []
         game["source_links"] = rows(db, """SELECT cs.source_key,cs.display_name,gsr.match_status,
             sr.id AS source_record_id,sr.record_type,sr.title_raw,sr.canonical_url,
@@ -120,6 +146,7 @@ def game_rows(db):
 def game_detail(db, game_id, library_root=ROOT / "library"):
     game = one(db, "SELECT * FROM games WHERE id=?", (game_id,))
     return {
+        "credits": game_attributions(db, game_id),
         "local_materials": library_catalog(db, library_root, game_id),
         "game": game,
         "names": rows(db, """SELECT gn.*,sr.title_raw AS source_title,cs.source_key,cs.display_name AS source_name
@@ -144,7 +171,7 @@ def game_detail(db, game_id, library_root=ROOT / "library"):
             SELECT cr.*,rl.link_role,rl.is_primary,'source_record' AS attributed_via
             FROM resource_links rl JOIN catalog_resources cr ON cr.id=rl.resource_id
             JOIN game_source_records gsr ON gsr.source_record_id=rl.source_record_id
-            WHERE gsr.game_id=? AND gsr.match_status!='rejected'
+            WHERE gsr.game_id=? AND gsr.match_status='confirmed'
             UNION ALL
             SELECT cr.*,rl.link_role,rl.is_primary,'product' AS attributed_via
             FROM resource_links rl JOIN catalog_resources cr ON cr.id=rl.resource_id
@@ -414,6 +441,7 @@ class Handler(BaseHTTPRequestHandler):
                   "/pdf-viewer.js": ("pdf-viewer.js", "text/javascript; charset=utf-8"),
                   "/material-viewer.js": ("material-viewer.js", "text/javascript; charset=utf-8"),
                   "/app.js": ("app.js", "text/javascript; charset=utf-8"),
+                  "/source-records.js": ("source-records.js", "text/javascript; charset=utf-8"),
                   "/style.css": ("style.css", "text/css; charset=utf-8"),
                   "/favicon.svg": ("favicon.svg", "image/svg+xml")}
         try:
@@ -452,6 +480,11 @@ class Handler(BaseHTTPRequestHandler):
             elif match := re.fullmatch(r"/api/games/([1-9][0-9]*)", path.path):
                 with connect(self.server.database) as db:
                     data = game_detail(db, int(match.group(1)), self.server.library_root)
+            elif match := re.fullmatch(r"/api/source-records/([1-9][0-9]*)", path.path):
+                if path.query:
+                    raise ValueError('Parametri non ammessi')
+                with connect(self.server.database) as db:
+                    data = source_record_detail(db, int(match.group(1)), self.server.library_root)
             elif match := re.fullmatch(r"/api/(contests|entries)/([1-9][0-9]*)(/compare)?", path.path):
                 resource, number, comparison = match.groups()
                 with connect(self.server.database) as db:

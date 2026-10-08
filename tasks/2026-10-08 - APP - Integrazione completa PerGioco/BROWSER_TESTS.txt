@@ -1,0 +1,1 @@
+PerGioco browser: desktop/tablet/mobile, all 12 records, filters, candidates, instances, canonical links, refresh, keyboard, API errors; no external requests or page errors.

@@ -2540,7 +2540,9 @@
         "TSK-0074",
         "TSK-0075"
       ],
-      "successors": [],
+      "successors": [
+        "TSK-0079"
+      ],
       "chat_ids": [
         "01a112e4-6a22-75b2-8a7f-ed6e6f11bdd3"
       ],
@@ -2568,6 +2570,50 @@
       },
       "last_verified_at": "2026-10-08",
       "closed_at": "2026-10-08"
+    },
+    {
+      "id": "TSK-0079",
+      "original_title": "2026-10-08 - APP - Integrazione completa PerGioco",
+      "display_title": "2026-10-08 - APP - Integrazione completa PerGioco",
+      "opened_at": "2026-10-08",
+      "task_path": "tasks/2026-10-08 - APP - Integrazione completa PerGioco/TASK.md",
+      "category": "APP",
+      "secondary_categories": [],
+      "classified_at": "2026-10-08",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Matrice completa, 66 test Python distinti (65 suite iniziale + 1 nuovo, sette PerGioco finali), 47 JavaScript e QA desktop/mobile su 12 record; fixture paginata/fonte assente, hash/inventario operativo invariati.",
+      "dependencies": [
+        "TSK-0078"
+      ],
+      "related_tasks": [
+        "TSK-0067"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a11d18-7c7c-7361-a18a-bdc3e81e398d"
+      ],
+      "next_action": "Revisione e commit selettivo su autorizzazione; eventuale VER Abande separato, nessuna acquisizione automatica.",
+      "git": {
+        "checked_at": "2026-10-08",
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      },
+      "closed_at": "2026-10-08",
+      "last_verified_at": "2026-10-08",
+      "coverage": {
+        "source_records": 12,
+        "confirmed_games": 8,
+        "candidate_links": 1,
+        "source_only": 3,
+        "CAT_admitted": 9,
+        "CAT_requirement_not_demonstrated": 3,
+        "instances": 2,
+        "database_modified": false,
+        "images_implemented": false
+      }
     }
   ],
   "chats": [
