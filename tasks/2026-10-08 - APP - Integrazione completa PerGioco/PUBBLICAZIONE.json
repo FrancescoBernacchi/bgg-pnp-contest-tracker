@@ -24,5 +24,16 @@
   "full_audit_paths": 30,
   "outgoing_commits": [],
   "whole_repository_publication_ready": false,
-  "limits": "Audit euristico; i 299 candidati pregressi non sono risolti dal task APP e vanno riesaminati prima della relativa pubblicazione."
+  "limits": "Audit euristico; i 299 candidati pregressi non sono risolti dal task APP e vanno riesaminati prima della relativa pubblicazione.",
+  "release_review": {
+    "date": "2026-10-08",
+    "feature_commit": "b4a60156377d2f9b546927f41b80cace8eda7a28",
+    "outgoing_commit_findings": [],
+    "remote_hash_verified": "b4a60156377d2f9b546927f41b80cace8eda7a28",
+    "exact_staged_tests": {
+      "python": 7,
+      "javascript": 3
+    },
+    "unrelated_changes_preserved": true
+  }
 }

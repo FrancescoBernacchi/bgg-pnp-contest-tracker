@@ -100,3 +100,9 @@ Documenti autorevoli aggiornati; sezioni annuali generate non modificate perché
 Prossimo passo separato: su autorizzazione rivedere e salvare solo l’incremento coerente con commit suggerito `feat: integra PerGioco nell’app multifonte`. Eventuale VER Abande richiede task/contratto distinto; nessuna acquisizione o immagini implicite. Nessun residuo essenziale APP escluso; restano i limiti informativi esplicitati nelle schede e le fasi non autorizzate.
 
 Verifica finale supplementare: roster sintetico di 27 record, pagine 25+2 e totali stabili; avanzamento pilota invariato dai filtri/pagine; fonte assente esplicita. Rettifica su copia con supersedes/evento/motivazione conforme ai trigger 013 e conflitto di ammissione non risolto automaticamente: sette test PerGioco riusciti. Hash/inventario operativo ricontrollati invariati.
+
+## Commit e push autorizzati — 2026-10-08
+
+Su richiesta esplicita «commit e push», salvato l’incremento selettivo in `b4a60156377d2f9b546927f41b80cace8eda7a28` su `main` e inviato a `origin/main`; hash remoto verificato coincidente tramite ls-remote. Inclusi 25 file: implementazione, test, documentazione e contratto TSK-0079; incluse le sole dipendenze necessarie di attribuzione per schede canoniche e fonte. Altre modifiche pregresse preservate fuori dal commit. Nessun database, materiale o screenshot incluso.
+
+Verifica della versione esatta nell’indice: 7 test Python e 3 JavaScript riusciti, oltre al collaudo completo registrato alla chiusura; diff --cached --check pulito. Audit su tutti i contenuti del commit in uscita: zero rilievi; i 299 candidati della working tree pregressa rimangono fuori dall’incremento e non sono dichiarati risolti. Questo aggiornamento documentale registra il salvataggio e la sincronizzazione osservati; sarà incluso nel successivo commit di documentazione. Prossimo passo funzionale eventuale: VER Abande con contratto separato o altra attività esplicitamente scelta.

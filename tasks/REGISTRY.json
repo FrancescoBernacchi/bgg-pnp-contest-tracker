@@ -2594,12 +2594,15 @@
       "chat_ids": [
         "01a11d18-7c7c-7361-a18a-bdc3e81e398d"
       ],
-      "next_action": "Revisione e commit selettivo su autorizzazione; eventuale VER Abande separato, nessuna acquisizione automatica.",
+      "next_action": "Eventuale VER Abande con task e contratto separati; nessuna acquisizione automatica.",
       "git": {
         "checked_at": "2026-10-08",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare"
+        "synchronization": "sincronizzato",
+        "commit": "b4a60156377d2f9b546927f41b80cace8eda7a28",
+        "remote_verified_commit": "b4a60156377d2f9b546927f41b80cace8eda7a28",
+        "branch": "main"
       },
       "closed_at": "2026-10-08",
       "last_verified_at": "2026-10-08",
