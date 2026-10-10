@@ -97,9 +97,15 @@ Modalità iniziale: Codex genera su richiesta per giochi/categorie selezionati e
 
 Generazione direttamente nell'app: potenziale evoluzione APP separata, con integrazione AI, credenziali, costi e scrittura da progettare; non adottata nella fase iniziale.
 
-## App: requisiti approvati, non implementati
+## App: requisiti approvati e integrazione operativa
 
 Miniature principali nascondibili nelle liste; galleria per categoria con zoom/didascalia/provenienza/versione; componenti raggruppati per sottotipo e lati collegati; AI riconoscibile e proposte da validare in sezione separata; riepilogo lacune e filtri trasversali. Principale scelta esplicitamente nel catalogo, altrimenti fallback provvisorio Copertina poi Setup. La consultazione non acquisisce né genera immagini. Implementazione in task APP autonomo con modello dati e metriche da verificare; indicatore immagini attuale resta non implementato.
+
+### Decisione utente 2026-10-11 — acquisizione e visibilità nell'app
+
+Le precedenti indicazioni di mancata implementazione descrivono la fase iniziale; persistenza 014 e consultazione/avanzamento sono state implementate in TSK-0067. Da questa decisione, l'autorizzazione di un nuovo incremento IMG comprende anche l'importazione del manifest verificato nel modello operativo esistente, senza ulteriori passaggi autorizzativi. La chiusura comprende controllo delle immagini nella galleria e riconciliazione dell'avanzamento nell'app, con limiti di ricerca preservati.
+
+Usare l'importatore già implementato: verifica su copia, backup e ripristino verificati, transazione, integrità e replay senza modifiche. Registrare manifest, evidenze ed esito nel task IMG e collegare TSK-0067 come riferimento tecnico. Questo passaggio operativo non introduce un task APP né una nuova conferma per ogni lotto. Nuovi schemi/migrazioni, sviluppo app, nuovi materiali ACQ e validazione AI restano soggetti ai propri contratti. Binari/database restano locali; commit/push richiedono autorizzazione propria. La decisione riguarda i prossimi incrementi; non attesta l'importazione dei due giochi già raccolti nel manifest 2026-10-11.
 
 ## Stato e verifica
 

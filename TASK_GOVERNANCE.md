@@ -120,3 +120,7 @@ Una chat collegata a più registri espone un solo `primary_task_id`: scegliere i
 ## Correzione autorizzata degli ID iniziali - 2026-10-10
 
 Eccezione esplicita alla stabilità: setup assegnato a TSK-0001 e monitoraggio BGG a TSK-0002, correggendo il precedente ordine invertito. Riferimenti correnti e titoli aggiornati insieme; titoli precedenti e mappa datata in REGISTRY.json preservano la provenienza. Gli altri ID non cambiano; nessuna rinumerazione generale.
+
+## Importazione inclusa nei nuovi incrementi IMG — 2026-10-11
+
+Decisione utente 2026-10-11: nei prossimi incrementi IMG l’acquisizione autorizza anche importazione verificata nel modello operativo esistente e controllo di galleria/avanzamento nell’app, senza ulteriori conferme. Prove su copia, backup/ripristino, transazione e verifiche restano obbligatori. Nuovi schema/sviluppo APP, materiali ACQ, validazione AI e commit/push mantengono autorizzazioni proprie. Nessuna importazione del lotto già acquisito eseguita in questo incremento decisionale. Riferimento autorevole: sources/IMAGE_WORKFLOW.md; decisione registrata in TSK-0068.

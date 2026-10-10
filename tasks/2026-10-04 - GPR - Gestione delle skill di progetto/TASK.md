@@ -85,3 +85,9 @@ Il pilota CAT applica il contratto adottato, senza estendere source-preanalysis:
 ### Manutenzione IMG — TSK-0068, 2026-10-11
 
 Due giochi aggiuntivi: prove e rettifiche nel TASK.md sorgente. Promossi nei riferimenti IMG soltanto i pattern verificati PDF multi-foglio/quantità stampa, controllo ID pagina-download BGG e confronto foto autore hi-res con revisione. Owner .agents utente Windows verificato, root invariata, skill-creator applicata. Nessuna geometria universale, nessuna modifica contratti o DB. Verifiche statiche e limiti nel sorgente; TSK-0048 resta continuativo.
+
+## Decisione prospettica: acquisizione e importazione — 2026-10-11
+
+Decisione utente 2026-10-11: nei prossimi incrementi IMG l’acquisizione autorizza anche importazione verificata nel modello operativo esistente e controllo di galleria/avanzamento nell’app, senza ulteriori conferme. Prove su copia, backup/ripristino, transazione e verifiche restano obbligatori. Nuovi schema/sviluppo APP, materiali ACQ, validazione AI e commit/push mantengono autorizzazioni proprie. Nessuna importazione del lotto già acquisito eseguita in questo incremento decisionale. Workflow, governance, AGENTS e skill IMG aggiornati insieme. Verifica di coerenza dei riferimenti; nessuna nuova prova di importazione dichiarata, procedura operativa già collaudata in TSK-0067. Nessun nuovo commit/push.
+
+Verifica finale CUA 2026-10-11: Avanzamento BGG 2025 → Children & Family mostra 4/27 ricerche concluse con immagini, 23 non concluse (denominatore intero contest); il lotto autorizzato resta 4/14. Skill IMG/riferimento estrazione aggiornati con distinzione bounding box oggetto e porzione visibile, dopo prova su copia e operativo. Anomalia di compatibilità dei metadati, non dei binari; manifest raccolta immutato e adattamento tracciato. Efficacia verificata nei due giochi, nessuna modifica app/schema.

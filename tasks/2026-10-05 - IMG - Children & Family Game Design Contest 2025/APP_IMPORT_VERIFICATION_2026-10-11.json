@@ -1,0 +1,100 @@
+{
+  "import": {
+    "outcome": "imported",
+    "import_id": 2,
+    "manifest_sha256": "97fdd4d628bd2b6390dd0aebdb807a30da6cec82bb20881e4262c5ece9be781f",
+    "rows_added": {
+      "img_imports": 1,
+      "img_assets": 38,
+      "img_files": 45,
+      "img_asset_observations": 90,
+      "img_categories": 105,
+      "img_contexts": 90,
+      "img_provenances": 152,
+      "img_occurrences": 150,
+      "img_regions": 15,
+      "img_region_links": 30,
+      "img_components": 9,
+      "img_component_observations": 25,
+      "img_component_links": 35,
+      "img_relations": 62,
+      "img_research_observations": 2,
+      "img_category_research": 22
+    },
+    "verified_image_files": 90,
+    "verified_documents": 38,
+    "research_complete": 4,
+    "research_partial_or_unknown": 10,
+    "backup_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\image-catalog-014\\tsk0068-2026-10-11\\operational-backup\\014-before-20261010T223301334931-477da274.sqlite3",
+    "backup_sha256": "be4d0a41cac9cc5683c8a0a472d2f25b85ee23fb4fd90a8479ffb98cb026ac15",
+    "restore_proof_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\image-catalog-014\\tsk0068-2026-10-11\\operational-backup\\014-restore-proof-20261010T223301334931-477da274.sqlite3",
+    "restore_matches_backup": true,
+    "database_written": true,
+    "legacy_preserved": true,
+    "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+    "authorization": "TSK-0068: richiesta esplicita utente OK rendile visibili del 2026-10-11"
+  },
+  "replay": {
+    "outcome": "already_imported",
+    "import_id": 2,
+    "verified_image_files": 90,
+    "verified_documents": 38,
+    "rows_added": {},
+    "manifest_sha256": "97fdd4d628bd2b6390dd0aebdb807a30da6cec82bb20881e4262c5ece9be781f",
+    "migration_needed": false,
+    "legacy_preserved": true,
+    "conflicts": [],
+    "database_written": false
+  },
+  "integrity": "ok",
+  "foreign_keys": [],
+  "database_sha256": "1f4d3c0b27a093018231a14b6687ccdef33cdd2a9b9094160ec0b8828ced5a61",
+  "verified_at": "2026-10-11",
+  "game_counts": {
+    "498": {
+      "current": 16,
+      "historical": 11,
+      "research": [
+        {
+          "entry_id": 498,
+          "contest_id": 14,
+          "complete": 1,
+          "observed_at": "2026-10-11"
+        }
+      ]
+    },
+    "500": {
+      "current": 17,
+      "historical": 1,
+      "research": [
+        {
+          "entry_id": 500,
+          "contest_id": 14,
+          "complete": 1,
+          "observed_at": "2026-10-11"
+        }
+      ]
+    }
+  },
+  "ui_verified": [
+    "Poker Face: 17 adottate, apertura carta bacio riuscita",
+    "Sorry: 16 adottate, apertura tabellone completo riuscita"
+  ],
+  "manifest": "catalog/2025_children_family_images_app_2026-10-11.json",
+  "original_manifest_preserved": true,
+  "images_verified": 90,
+  "documents_verified": 38,
+  "current_images": 77,
+  "historical_files": 13,
+  "components": 25,
+  "scope_research_complete": 4,
+  "scope_games": 14,
+  "ui_progress": {
+    "contest_id": 14,
+    "complete_with_images": 4,
+    "contest_entries": 27,
+    "incomplete": 23,
+    "scope_complete": 4,
+    "scope_games": 14
+  }
+}

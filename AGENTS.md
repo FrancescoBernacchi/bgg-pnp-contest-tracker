@@ -201,3 +201,7 @@ Principale/fallback, miniature nascondibili nelle liste, tabella copertura e fil
 ## Completamenti IMG collaudati — TSK-0067, 2026-10-10
 
 Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtri indipendenti combinabili e ricerca contestuale per categoria/categorie vuote, componenti per sottotipo e avviso revisione precedente con evidenza esplicita. App sola lettura, nessuna nuova classificazione, schema/dati/originali e metriche aggregate invariati. 69 test Python mirati e tre suite browser responsive passati; report VERIFICHE_COMPLETAMENTI.json nel task. Stato in_verifica per valutazione visuale utente; TSK-0068 autonomo, nessun commit/push. Guida/metadati in app/README.md e MODELLO_E_IMPORTAZIONE.md.
+
+## Importazione inclusa nei nuovi incrementi IMG — 2026-10-11
+
+Decisione utente 2026-10-11: nei prossimi incrementi IMG l’acquisizione autorizza anche importazione verificata nel modello operativo esistente e controllo di galleria/avanzamento nell’app, senza ulteriori conferme. Prove su copia, backup/ripristino, transazione e verifiche restano obbligatori. Nuovi schema/sviluppo APP, materiali ACQ, validazione AI e commit/push mantengono autorizzazioni proprie. Nessuna importazione del lotto già acquisito eseguita in questo incremento decisionale. Riferimento autorevole: sources/IMAGE_WORKFLOW.md; decisione registrata in TSK-0068.
