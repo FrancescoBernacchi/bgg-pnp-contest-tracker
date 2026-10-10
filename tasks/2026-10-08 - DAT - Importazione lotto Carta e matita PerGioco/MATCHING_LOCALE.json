@@ -1,0 +1,124 @@
+{
+  "mode": "read_only",
+  "batch_present": 0,
+  "identity_plan": {
+    "PGCM-001": "source_only",
+    "PGCM-002": "create_new",
+    "PGCM-003": "create_new",
+    "PGCM-004": "create_new",
+    "PGCM-005": "create_new",
+    "PGCM-006": "source_only",
+    "PGCM-007": "create_new",
+    "PGCM-008": "create_new",
+    "PGCM-009": "create_new"
+  },
+  "matching": [
+    {
+      "candidate_id": "PGCM-001",
+      "queried_names": [
+        "Battaglia Navale con Carta e Matita",
+        "Battaglia Navale"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-002",
+      "queried_names": [
+        "Engel"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-003",
+      "queried_names": [
+        "Labirinto"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-004",
+      "queried_names": [
+        "Numerino",
+        "Bulls and Cows",
+        "Numerello",
+        "Strike & Ball",
+        "Ball & Strike"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-005",
+      "queried_names": [
+        "Piattola",
+        "Morpion"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-006",
+      "queried_names": [
+        "Punti e linee"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-007",
+      "queried_names": [
+        "Quadratini",
+        "Punti e Linee",
+        "Battaglia sui Quadrati",
+        "Caccia alla Volpe",
+        "Dots and Boxes",
+        "Boxes",
+        "Squares",
+        "(Game of) Dots",
+        "Dots and Dashes",
+        "Dot to Dot Grid",
+        "La Pipopipette"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-008",
+      "queried_names": [
+        "Sqez"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    },
+    {
+      "candidate_id": "PGCM-009",
+      "queried_names": [
+        "Stripes!"
+      ],
+      "exact_candidates": [],
+      "normalized_candidates": [],
+      "source_url_collisions": [],
+      "limit": "No semantic equivalence guaranteed; names are candidates only. Piattola variant names are outside canonical matching scope."
+    }
+  ],
+  "manifest_sha256": "7c4d1949b650f4927479ff7b70f5d9afe285e627607303ef078f85fec497bd7b"
+}

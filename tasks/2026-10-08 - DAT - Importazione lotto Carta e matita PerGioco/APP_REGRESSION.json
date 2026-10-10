@@ -1,0 +1,8 @@
+{
+  "tests": 66,
+  "errors": 0,
+  "failures": 0,
+  "successful": true,
+  "scope": "Existing APP tests on synthetic fixtures; no operational writes; localhost only",
+  "error_ids": []
+}

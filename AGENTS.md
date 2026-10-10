@@ -79,6 +79,10 @@ Il database SQLite è operativo e locale. Schema, migrazioni, manifest ed esport
 
 Cambiare la struttura solo quando emerge un ciclo di vita distinto o un pattern stabile. Aggiornare insieme `PROJECT.md`, questa mappa e lo stato del progetto quando una modifica architetturale diventa permanente.
 
+### Uniformità della gestione dei giochi — decisione utente 2026-10-10
+
+L'app deve gestire i giochi quanto più possibile in maniera uniforme, evitando gestioni ad hoc per singolo gioco. Preferire componenti e comportamenti generici guidati dai dati e dalle capacità effettive (istanze, varianti, raccolte, crediti contestuali, accessi). Eventuali differenziazioni funzionali sono per categorie/tipologie di giochi; non inferire classificazioni nuove per attivarle. I titoli nominati nei requisiti sono casi di verifica, non condizioni applicative basate su nome, URL o ID. Verificare la riusabilità su un altro record o fixture. Adattatori di provenienza preservano le differenze informative senza duplicare i comportamenti comuni. Decisione registrata nel passaggio APP di TSK-0081; non autorizza refactoring, riclassificazioni, schema o dati fuori dal task attivo.
+
 ## Salvaguardia del sandbox Windows Codex
 
 - Trattare `.agents`, `.git`, `.codex` e le altre directory di controllo riconosciute dal runtime come percorsi speciali. Non eliminare, rinominare o ricreare queste directory come rimedio a problemi di accesso.

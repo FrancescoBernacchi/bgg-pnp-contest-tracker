@@ -21,6 +21,8 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 
 ## Storico migrazioni
 
+- 2026-10-10: criterio APP esplicito dell'utente nel passaggio TSK-0081: gestione dei giochi quanto più uniforme possibile, senza logiche ad hoc per titolo, eventuali differenze per categorie/tipologie. Promosso in PROJECT.md/AGENTS.md e prompt APP; componenti guidati dai dati, giochi nominati come casi di verifica. Nessun refactoring, riclassificazione, modifica schema/app/dati o adozione PWS nuova; aligned_version resta 1.5.0.
+
 - 2026-10-06: TSK-0073 adotta PerGioco per un pilota dopo preanalisi TSK-0072 e richiesta di percorso passo passo. Scelta esplicita utente: includere subito giochi logici, insieme ad astratti/tradizionali e carta e matita. Sistema di regole distinto da schemi/soluzioni, ammissione individuale con regole complete gratuite; perimetro in sources/PERGIOCO-SCOPE.md. CAT distinto da importazioni, app e acquisizioni; database/schema/app invariati. Evoluzione consumer deliberata, PWS resta 1.5.0.
 
 - 2026-10-05: TSK-0069 adotta localmente la verifica breve dell’efficacia delle skill al termine degli incrementi significativi, comprese nuove riprese storiche; nessun riesame retroattivo obbligatorio delle attività concluse. Protocollo in TASK_GOVERNANCE.md, manutenzione collegata a TSK-0048 e decisione esplicita per scope/contratti/architettura. Evoluzione di governance consumer, non migrazione PWS: aligned_version resta 1.5.0 e Standard invariato.

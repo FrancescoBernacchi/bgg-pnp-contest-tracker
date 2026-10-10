@@ -1,0 +1,7 @@
+{
+  "task_id": "TSK-0081",
+  "checked_at": "2026-10-10",
+  "scanned_files": 15,
+  "findings": [],
+  "review": "Original code/summaries and necessary metadata only; binaries outside Git. No commit/push, heuristic not rights certification"
+}

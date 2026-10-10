@@ -1,0 +1,117 @@
+{
+  "task_id": "TSK-0081",
+  "verified_at": "2026-10-10",
+  "application_at": "2026-10-08T21:46:04.788098+00:00",
+  "backup_hash_verified": true,
+  "restore_hash_inventory_verified": true,
+  "integrity": "ok",
+  "foreign_key_check": [],
+  "legacy_and_pilot_all_rows_preserved": true,
+  "schema_unchanged": true,
+  "payload_hash_typed_projections_paths_verified": true,
+  "operational_records": 9,
+  "confirmed_new_games": 7,
+  "candidate_links": 0,
+  "source_only": 2,
+  "CAT_admitted": 7,
+  "CAT_requirement_not_demonstrated": 2,
+  "Labirinto_instances": 3,
+  "Piattola_variant_assertions": 7,
+  "solution_for": 0,
+  "record_game_ids": [
+    {
+      "candidate_id": "PGCM-001",
+      "record_id": 89,
+      "game_id": null,
+      "identity_status": "source_only"
+    },
+    {
+      "candidate_id": "PGCM-002",
+      "record_id": 90,
+      "game_id": 1455,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-003",
+      "record_id": 91,
+      "game_id": 1456,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-004",
+      "record_id": 92,
+      "game_id": 1457,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-005",
+      "record_id": 93,
+      "game_id": 1458,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-006",
+      "record_id": 94,
+      "game_id": null,
+      "identity_status": "source_only"
+    },
+    {
+      "candidate_id": "PGCM-007",
+      "record_id": 95,
+      "game_id": 1459,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-008",
+      "record_id": 96,
+      "game_id": 1460,
+      "identity_status": "confirmed"
+    },
+    {
+      "candidate_id": "PGCM-009",
+      "record_id": 97,
+      "game_id": 1461,
+      "identity_status": "confirmed"
+    }
+  ],
+  "table_deltas": {
+    "access_condition_links": 76,
+    "admission_evidence_mentions": 7,
+    "canonical_projection_events": 29,
+    "catalog_resources": 11,
+    "condition_observations": 2,
+    "game_names": 22,
+    "game_source_records": 7,
+    "games": 7,
+    "instance_mention_assertions": 3,
+    "problem_instance_observations": 3,
+    "problem_instances": 3,
+    "resource_access_observations": 38,
+    "resource_links": 11,
+    "resource_url_observations": 11,
+    "source_admission_observations": 9,
+    "source_classification_observations": 18,
+    "source_classification_segments": 63,
+    "source_credit_observations": 69,
+    "source_identity_decisions": 7,
+    "source_record_keys": 9,
+    "source_record_observations": 9,
+    "source_record_url_observations": 18,
+    "source_records": 9,
+    "source_relation_assertions": 20,
+    "source_resource_mention_observations": 11,
+    "source_resource_mentions": 11
+  },
+  "replay": {
+    "outcome": "already_imported",
+    "writes": 0
+  },
+  "replay_inventory_hash_unchanged": true,
+  "operational_sha256": "9f962932862d4da8c09deb73fee03aedc54e9ba1aa4606089c8976e844b59cdf",
+  "APP_reads_verified": true,
+  "APP_pilot_metrics_unchanged": true,
+  "APP_roster_records": 21,
+  "limits": [
+    "APP batch metrics/raw fields require a separate task; no external semantic equivalence assessment."
+  ]
+}

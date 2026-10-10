@@ -1,5 +1,9 @@
 # PerGioco — perimetro adottato
 
+## Stato corrente — lotto Carta e matita
+
+TSK-0081: dopo conferma esplicita del piano e applicazione, nove record PGCM importati il 2026-10-08; accettazione e chiusura 2026-10-10. Sette nuove identità locali conservative confermate, nessun nuovo matching candidato; Battaglia Navale e raccolta Punti e linee source-only, CAT 7/2 preservato. Labirinto un sistema/tre istanze senza fruibilità schema o solution_for attestati; Piattola sette varianti come asserzioni, nessun altro game/record. Legacy e pilota preservati, backup/restore e replay zero delta verificati. PerGioco complessivo 21 record (12 pilota + 9 PGCM), 15 identità locali confermate, un matching candidato storico Abande e cinque source-only; ammissione distinta dall'identità. Nessuna copertura sito intero, nuova acquisizione o modifica APP/schema. Le metriche APP del pilota restano riferite a dodici record; eventuale estensione richiede APP separato. Decisione e report in tasks/2026-10-08 - DAT - Importazione lotto Carta e matita PerGioco/. I paragrafi successivi conservano gli stati storici delle tappe precedenti.
+
 Decisione del 2026-10-06, TSK-0073: l'utente autorizza il percorso passo passo dopo la preanalisi TSK-0072 e sceglie esplicitamente di includere subito i giochi logici. Fonte editoriale adottata per un pilota; non ancora importata nel database.
 
 ## Inclusione e unità di catalogazione

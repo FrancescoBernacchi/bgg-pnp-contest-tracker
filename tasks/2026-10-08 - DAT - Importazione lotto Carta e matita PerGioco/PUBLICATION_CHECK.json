@@ -1,0 +1,8 @@
+{
+  "task_id": "TSK-0081",
+  "checked_at": "2026-10-08",
+  "scanned_files": 9,
+  "findings": [],
+  "manual_review": "Original project code and summaries, necessary factual metadata/roles and direct source URLs; no third-party full rules/images/dumps",
+  "limits": "Heuristic only; no commit/push or certification of rights"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "TSK-0081",
+  "checked_at": "2026-10-08",
+  "operational_hash_unchanged": true,
+  "operational_inventory_unchanged": true,
+  "operational_batch_records": 0,
+  "counts": {
+    "games": 1454,
+    "source_records": 88,
+    "catalog_sources": 2
+  },
+  "copy_checks": 70,
+  "APP_tests": 66,
+  "schema_tests": 15,
+  "operational_authorization": false,
+  "task_status": "in_verifica"
+}

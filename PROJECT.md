@@ -1,5 +1,10 @@
 # PnP Collection
 
+## Criterio trasversale APP — uniformità, 2026-10-10
+
+Decisione esplicita utente nel passaggio APP di TSK-0081: gestire i giochi quanto più possibile in maniera uniforme, evitando logiche ad hoc per singolo titolo. Componenti riutilizzabili guidati da dati/capacità; eventuali comportamenti diversi per categorie/tipologie di giochi, senza riclassificazioni implicite. Istanze, varianti, raccolte e crediti contestuali sono funzionalità generiche: i giochi citati nei task sono casi di accettazione, non chiavi di selezione del comportamento. Conservare provenienze e semantiche delle fonti senza duplicare il trattamento delle informazioni comuni. Criterio per sviluppi successivi, nessun refactoring generale o migrazione retroattiva autorizzati; PWS 1.5.0 invariato.
+
+
 ## Scopo
 
 Costruire un archivio locale consultabile di giochi Print and Play, iniziando dai contest di design pubblicati su BoardGameGeek. Il sistema deve aiutare a scoprire tempestivamente i giochi, conservarne le informazioni e preservare i materiali più rilevanti prima che diventino indisponibili.
