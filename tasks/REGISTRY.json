@@ -250,11 +250,11 @@
       "next_action": "Proseguire altri giochi IMG autorizzati; nuovo manifest cumulativo da riesaminare/importare separatamente in TSK-0067",
       "git": {
         "checked_at": "2026-10-11",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "incremento_locale",
-        "last_task_document_commit": "3dae102",
-        "evidence": "Nuovo incremento IMG e skill locali verificati; nessun nuovo commit/push richiesto"
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "dcbb2e6",
+        "evidence": "Commit selettivo `dcbb2e6` su main: 15 file/porzioni del lotto Poker Face/Sorry, manifest e manutenzione skill. Push origin/main riuscito; hash server dcbb2e6308e0c6281ac61025cd797748017ba95a verificato direttamente, confronto HEAD/origin/main 0 avanti e 0 indietro. Verificati 90 file immagine; audit selezione e commit in uscita senza rilievi. I 299 candidati generali riguardano altre modifiche locali escluse. Materiali e database fuori Git, altre attività preservate. Questa attestazione viene salvata nel successivo commit documentale; IMG resta aperto con dieci giochi da esplorare."
       },
       "last_verified_at": "2026-10-11",
       "deliverables": [

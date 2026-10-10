@@ -172,3 +172,7 @@ Validazione manutenzione skill: frontmatter e tre riferimenti locali verificati;
 ## Salvataggio autorizzato — 2026-10-11
 
 Su richiesta utente, preparato commit selettivo del lotto Poker Face/Sorry e manutenzione skill. Verificati 90 file immagine; binari library/outputs esclusi. Cruscotto selezionato per la sola nota IMG; modifiche delle altre attività preservate. Verifica della pubblicazione comprende tutti i commit in uscita e il confronto con il remoto.
+
+## Commit e push verificati — 2026-10-11
+
+Commit selettivo `dcbb2e6` su main: 15 file/porzioni del lotto Poker Face/Sorry, manifest e manutenzione skill. Push origin/main riuscito; hash server dcbb2e6308e0c6281ac61025cd797748017ba95a verificato direttamente, confronto HEAD/origin/main 0 avanti e 0 indietro. Verificati 90 file immagine; audit selezione e commit in uscita senza rilievi. I 299 candidati generali riguardano altre modifiche locali escluse. Materiali e database fuori Git, altre attività preservate. Questa attestazione viene salvata nel successivo commit documentale; IMG resta aperto con dieci giochi da esplorare.
