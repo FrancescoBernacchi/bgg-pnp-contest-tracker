@@ -69,3 +69,12 @@ TSK-0078, 2026-10-08: dopo 26 controlli su copie e consenso esplicito utente, pi
 Manifest CAT pergioco_pilot_2026-10-06.json immutato: imported_count originario resta storico. Stato corrente nel report operativo TSK-0078. Importer e test offline in catalog/import_pergioco_pilot.py e catalog/test_pergioco_import.py.
 
 2026-10-08 — APP TSK-0079 consulta le evidenze B-v1/013 e il manifest CAT PerGioco senza modifiche ai dati. Stato importazione da chiavi/osservazioni operative; imported_count del manifest conserva il valore storico. Roster e schede fonte distinti dai giochi, metriche in app/README.md. Nessun backfill o acquisizione.
+
+## Importazione manifest IMG — TSK-0067, 2026-10-10
+
+`import_game_images.py` è offline e generico: `--database --manifest --sources` produce anteprima senza scrivere; `--apply --authorization` richiede consenso, backup/ripristino su copia verificati e applica migrazione 014+dati in transazione. Hash/file/riferimenti verificati, conflitti senza sovrascrittura, reimportazione senza duplicati, omissioni senza cancellazioni. Ricerche complete/parziali non inferite dai file. I due manifest Children & Family 2025 sono collaudati su copie; database operativo ancora invariato. Contratto ed estensioni decisioni/principale in MODELLO_E_IMPORTAZIONE.md di TSK-0067. Input completi conservati solo nel SQLite locale, binari esclusi da Git; nessuna acquisizione/generazione/proiezione 013 automatica.
+
+
+## IMG 014 operativa — TSK-0067, 2026-10-10
+
+Dopo consenso esplicito utente, migrazione 014 e importazione dei due manifest TSK-0068 applicate con backup/ripristino su copia verificati e transazione esclusiva. Operativo ora 014: 44 immagini/45 file, 16 componenti, 15 regioni; ricerca 2 concluse/12 parziali. Legacy 009/013 completo preservato, integrità/FK valide e replay senza scrittura. `database/schema.sql` include il blocco 014 per nuove installazioni: non rieseguirlo sull'operativo. Evidenza in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/OPERATIVO_VERIFICHE.json`. Le precedenti note di attesa sono storiche. UI/API/metriche immagini ancora da implementare nei successivi incrementi; nessuna nuova acquisizione o generazione, nessun commit/push.

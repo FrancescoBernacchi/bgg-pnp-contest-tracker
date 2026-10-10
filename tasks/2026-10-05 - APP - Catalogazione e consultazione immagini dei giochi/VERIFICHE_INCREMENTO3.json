@@ -1,0 +1,95 @@
+{
+  "task_id": "TSK-0067",
+  "increment": 3,
+  "verified_at": "2026-10-10T20:24:42.405855+00:00",
+  "database_unchanged": true,
+  "database_sha256": "0210d833f51e2c55e1711b3169ac9fefcdfaba9016f8f4d009e049c3ee032304",
+  "verified_image_files": 45,
+  "verified_source_documents": 38,
+  "tests": {
+    "img": 41,
+    "image_metrics_and_selection": 8,
+    "server": 17,
+    "work_progress": 7,
+    "source_progress": 10,
+    "total_python": 83
+  },
+  "browser": {
+    "passed": true,
+    "widths": [
+      1400,
+      780,
+      390
+    ],
+    "contest_entry_total": 27,
+    "complete": 2,
+    "checks": [
+      "optional list thumbnails",
+      "game/entry coverage filters",
+      "principal provisional",
+      "coverage click filters gallery",
+      "single three-part bar and pie",
+      "12/8/80 example",
+      "no overflow",
+      "no external requests",
+      "no page errors",
+      "adjacent bar segments",
+      "fractional completion 2/509 = 0.4%",
+      "nonzero segment dimensions with original CSP",
+      "synthetic and operational mobile screenshots inspected"
+    ]
+  },
+  "gallery_regression_browser": {
+    "passed": true,
+    "widths": [
+      1400,
+      780,
+      390
+    ],
+    "pilots": 2,
+    "external_requests": [],
+    "page_errors": [],
+    "checks": [
+      "adopted counts",
+      "lazy thumbnails",
+      "zoom fit/150%",
+      "navigation keyboard/Escape",
+      "category filter",
+      "components/shared sides",
+      "assembly regions",
+      "history",
+      "partial research",
+      "AI synthetic groups",
+      "XSS text escaping",
+      "HTTP token/parameters",
+      "library regression"
+    ]
+  },
+  "contest_metrics": {
+    "contest_id": 14,
+    "entry_count": 27,
+    "image_complete_count": 2,
+    "image_with_images_count": 2,
+    "image_without_images_count": 0,
+    "image_incomplete_count": 25,
+    "image_original_entry_count": 2,
+    "image_ai_entry_count": 0
+  },
+  "code_sha256": {
+    "app/image_progress.py": "06b45858ebb8cf15a4d3dd0baaafa02593ad8aa431d4e57315ba2652136eeec1",
+    "app/work_progress.py": "94a9e37d1f8c9e2a0e02fd7acfd3e128248dbdb0ef54b58d5446da11c9fbac1d",
+    "app/game_images.py": "8057b32b59809f7f4006d93c0e8f96654f077743f7ac6e1659f11d9b5a8d04e5",
+    "app/server.py": "f810a6bafc5be1bdfa5c9264d9fc0a624a9604b60b57b22b5bc87483123a30e6",
+    "app/static/app.js": "6cc8b50ebe116cf9004adbec609d0f5adff0729b88eb44da913f32b25c43aa1d",
+    "app/static/game-images.js": "0943547675ba4f1a930e24cfe7147635ce060e6f2b54226e249009fe967639a0",
+    "app/static/style.css": "c49d0cc9335724faf2a5ade5e17b0295476e8187a659caf62034382db1dd1a7e",
+    "app/generate_project_progress.py": "fc834891738b761b9d2f074494d516d26759d71a8a23d4e037dfe36f3c849c6a",
+    "app/test_image_progress.py": "04e2aa163fd38c53911f82c2d5cc4f33b998024f6c03dec1a8fc3695d4337248",
+    "app/test_image_progress_browser.cjs": "847af43cba246e2824e425a7ebbf81a56bf98c044e56ecae96803e602b09b828"
+  },
+  "limitations": [
+    "La prova della leggibilità dei nuovi grafici con l’utente resta da svolgere.",
+    "Kanare e PerGioco conservano i propri indicatori senza perimetro IMG; non viene inventato un lotto.",
+    "Verifica hash completa al caricamento raster; i riepiloghi di presenza usano metadati/stat confinato."
+  ]
+}

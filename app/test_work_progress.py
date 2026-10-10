@@ -93,7 +93,7 @@ class WorkProgressTests(unittest.TestCase):
             generated=build_generated_section(db)
             self.assertIn('Censimento classifica',generated)
             self.assertIn('2/2 · 100%',generated)
-            self.assertIn('0% · non implementata',generated)
+            self.assertIn('0 concluse con immagini · 0 concluse senza',generated)
             db.execute('DROP TABLE entry_work_observations')
             db.execute('DROP TABLE contest_census_observations')
             self.assertEqual(self.metric(db)['ranking_complete_count'],0)

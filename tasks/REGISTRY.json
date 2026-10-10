@@ -280,11 +280,11 @@
       "classified_at": "2026-10-05",
       "mode": "circoscritto",
       "cadence": "su_richiesta",
-      "status": "in_corso",
-      "status_basis": "2026-10-10: incremento 1 autorizzato sui due piloti; schema/importatore collaudati su copie. Operativo in attesa di consenso, UI esclusa.",
+      "status": "completato",
+      "status_basis": "Chiusura richiesta dall’utente il 2026-10-10 dopo riesame visuale e uniformazione barra IMG a 6 pixel. Tre incrementi e completamenti collaudati: 69 test mirati, tre suite browser responsive e regressione finale barra; originali e dati preservati.",
       "coverage": {
-        "phase": "incremento 1 dati/importazione implementato e collaudato su copie",
-        "implementation": "migrazione 014 e importatore offline pronti; database operativo e UI invariati",
+        "phase": "incrementi e tre blocchi di completamento collaudati; chiusura approvata dall’utente il 2026-10-10",
+        "implementation": "IMG 014 operativo, consultazione schede/file, principale/liste/copertura/filtri e metriche condivise implementati; UI sola lettura",
         "implementation_prerequisite": {
           "task_id": "TSK-0068",
           "contest": "Children & Family Game Design Contest 2025",
@@ -306,7 +306,14 @@
             "change": "Conferma utente: due piloti conclusi sufficienti; non attendere gli altri dodici giochi."
           }
         ],
-        "operational_applied": false
+        "operational_applied": true,
+        "increment_2_verified": true,
+        "increment_3_verified": true,
+        "completion_blocks_verified": [
+          1,
+          2,
+          3
+        ]
       },
       "dependencies": [
         "TSK-0065",
@@ -316,14 +323,14 @@
       "chat_ids": [
         "01a10c8a-b153-7fb3-8242-cebea9edb44a"
       ],
-      "next_action": "Presentare migrazione 014 e verifiche; attendere autorizzazione utente per applicazione e importazione operative con backup. Incrementi UI separati.",
+      "next_action": "Commit selettivo dei deliverable verificati solo su richiesta. Raccolta IMG successiva autonoma in TSK-0068; generazione AI dalla UI resta evoluzione futura distinta.",
       "git": {
         "checked_at": "2026-10-10",
         "local_save": "da_committare",
         "integration": "da_integrare",
         "synchronization": "allineato_riferimento_locale",
         "last_task_document_commit": "74f2343",
-        "evidence": "Incremento 1 non committato; main allineato al riferimento locale origin/main al preflight. Remoto non verificato, nessun commit/push; altre modifiche locali preservate."
+        "evidence": "Incrementi e completamenti ancora da committare; nessun commit/push/branch. Modifiche di altri task preservate. Main allineato al riferimento locale origin/main, remoto non verificato."
       },
       "last_verified_at": "2026-10-10",
       "title_history": [

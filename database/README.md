@@ -80,3 +80,14 @@ TSK-0078, 2026-10-08: dopo 26 controlli su copie e consenso esplicito utente, pi
 Importer catalog/import_pergioco_pilot.py: sola lettura per default, applicazione con --apply/--authorization e backup/restore verificati, transazione esclusiva. Input congelato per hash CAT, nessun upsert o correzione implicita; replay verifica senza scrivere. Collaudo catalog/test_pergioco_import.py solo su copie in outputs.
 
 2026-10-08 — APP TSK-0079 consulta le evidenze B-v1/013 e il manifest CAT PerGioco senza modifiche ai dati. Stato importazione da chiavi/osservazioni operative; imported_count del manifest conserva il valore storico. Roster e schede fonte distinti dai giochi, metriche in app/README.md. Nessun backfill o acquisizione.
+
+## IMG — migrazione 014 collaudata, operativo ancora 013 (2026-10-10)
+
+TSK-0067 implementa `migrations/014_game_images.sql`: 18 tabelle additive, sei viste e storico append-only per immagini/file, categorie/provenienze/contesti, componenti/lati/regioni, ricerca/applicabilità, valutazione AI e principale. Il modello 009/013 e i dati esistenti sono preservati; nessuna conversione dei PNG ACQ. Operativo non migrato; `schema.sql` resta 013 fino alla decisione operativa.
+
+`apply_image_catalog_migration.py --database ...` ispeziona in sola lettura. `catalog/import_game_images.py` offre anteprima, verifica locale e applicazione transazionale di schema+dati con `--apply --authorization`, backup e restore su copia verificati. `test_game_images.py` collauda fixture generiche; `verify_game_images.py` verifica i manifest reali solo su copie. Pillow è necessario alla verifica immagini, nessuna rete. Contratto/mapping e report in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/MODELLO_E_IMPORTAZIONE.md` e `VERIFICHE_INCREMENTO1.json`. Applicazione operativa subordinata al consenso finale dell'utente; APP/UI separate.
+
+
+## IMG 014 operativa — TSK-0067, 2026-10-10
+
+Dopo consenso esplicito utente, migrazione 014 e importazione dei due manifest TSK-0068 applicate con backup/ripristino su copia verificati e transazione esclusiva. Operativo ora 014: 44 immagini/45 file, 16 componenti, 15 regioni; ricerca 2 concluse/12 parziali. Legacy 009/013 completo preservato, integrità/FK valide e replay senza scrittura. `database/schema.sql` include il blocco 014 per nuove installazioni: non rieseguirlo sull'operativo. Evidenza in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/OPERATIVO_VERIFICHE.json`. Le precedenti note di attesa sono storiche. UI/API/metriche immagini ancora da implementare nei successivi incrementi; nessuna nuova acquisizione o generazione, nessun commit/push.

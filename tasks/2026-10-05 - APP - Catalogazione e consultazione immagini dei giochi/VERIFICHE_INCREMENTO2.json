@@ -1,0 +1,60 @@
+{
+  "task_id": "TSK-0067",
+  "increment": 2,
+  "verified_at": "2026-10-10T19:49:40.964157+00:00",
+  "database_unchanged": true,
+  "database_sha256": "0210d833f51e2c55e1711b3169ac9fefcdfaba9016f8f4d009e049c3ee032304",
+  "manifest_unchanged": true,
+  "verified_original_image_files": 45,
+  "verified_source_documents": 38,
+  "python_img_tests": {
+    "passed": 41,
+    "persistence": 32,
+    "consultation": 9
+  },
+  "server_regression_tests": {
+    "passed": 17
+  },
+  "browser": {
+    "passed": true,
+    "widths": [
+      1400,
+      780,
+      390
+    ],
+    "pilots": 2,
+    "external_requests": [],
+    "page_errors": [],
+    "checks": [
+      "adopted counts",
+      "lazy thumbnails",
+      "zoom fit/150%",
+      "navigation keyboard/Escape",
+      "category filter",
+      "components/shared sides",
+      "assembly regions",
+      "history",
+      "partial research",
+      "AI synthetic groups",
+      "XSS text escaping",
+      "HTTP token/parameters",
+      "library regression"
+    ]
+  },
+  "code_sha256": {
+    "app/game_images.py": "8decfd95371b00f8069560b0e4aec6284bbbe70e4f449a8c43b91c5f1b4b931d",
+    "app/static/game-images.js": "0a4724e6d703f49acd5dfbb78d3042467d4c8bfe80061af8aa3d233945384afd",
+    "app/server.py": "5b58ab71c6d86986fffb159cb5fec66e5ec182074543ec0d2fa6e83c64186296",
+    "app/static/app.js": "9a3bff6ff6eebaca42c0e2e4bfa0b1a9247a56cdbb9d4a78e9ac87ddb9b4e938",
+    "app/static/index.html": "bf167fb2803c580f303d05a9bd48012e56c1dbcf80174365366112bcd0800244",
+    "app/static/style.css": "c2df1978653c8c9400d93157cc0597f77bed8cdebb9a679441830f6f5358a46b",
+    "app/test_game_images.py": "2344526110c38c487e68394406670056efa217506f6c07e767b667b7e1c18938",
+    "app/test_game_images_browser.cjs": "c92e311fd7b63610b0f0e2050f7188e386f71f39f9912ebe4c503775a95bba63"
+  },
+  "screenshots_local": "outputs/image-qa/",
+  "no_network_acquisition": true,
+  "no_real_ai_generation": true,
+  "ui_read_only": true,
+  "git_mutations_performed": false,
+  "remaining_increment": "Liste/principale-fallback/copertura e avanzamento"
+}

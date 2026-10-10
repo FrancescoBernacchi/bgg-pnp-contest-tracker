@@ -1,8 +1,10 @@
 """Metriche condivise di lavoro concluso; nessuna verifica negativa implicita."""
 import json
+from image_progress import image_summaries, image_counts
 
 
 def enrich_work_progress(db, contests):
+    images = image_summaries(db)
     tables = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
     observations = {}
     if 'entry_work_observations' in tables:
@@ -14,7 +16,7 @@ def enrich_work_progress(db, contests):
             census[row['contest_id']] = dict(row)
     for contest in contests:
         cid = contest['contest_id']
-        entries = list(db.execute('SELECT id,game_id FROM entries WHERE contest_id=?', (cid,)))
+        entries = list(db.execute('SELECT id,game_id,contest_id FROM entries WHERE contest_id=?', (cid,)))
         ids = {e['id'] for e in entries}
         if 'ranked_entry_count' not in contest:
             ranked_games = {r[0] for r in db.execute('SELECT game_id FROM rankings WHERE contest_id=?', (cid,))}
@@ -54,7 +56,7 @@ def enrich_work_progress(db, contests):
             contest[phase + '_blocked_count'] = blocked
             contest[phase + '_partial_count'] = partial
             contest[phase + '_total'] = len(entries) - excluded
-        contest['image_complete_count'] = 0
+        contest.update(image_counts(entries,images))
     return contests
 
 
@@ -66,5 +68,7 @@ def summarize_work(contests):
         for suffix in ('complete_count', 'not_applicable_count', 'blocked_count', 'partial_count', 'total'):
             key = phase + '_' + suffix
             result[key] = sum(c[key] for c in contests)
-    result['image_complete_count'] = 0
+    for suffix in ('complete_count','with_images_count','without_images_count','incomplete_count','original_entry_count','ai_entry_count'):
+        key='image_'+suffix
+        result[key]=sum(c.get(key,0) for c in contests)
     return result

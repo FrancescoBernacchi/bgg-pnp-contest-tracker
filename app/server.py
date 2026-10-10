@@ -18,6 +18,8 @@ from source_evidence import record_summaries, source_record_detail
 from library_catalog import library_catalog
 from pdf_files import open_pdf, PDFError
 from material_files import open_material, docx_blocks, DOCX
+from game_images import image_catalog, file_record, raster_response
+from image_progress import image_summaries
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,6 +64,7 @@ def periodic(check):
 
 
 def catalog(db, library_root=ROOT / 'library'):
+    images = image_summaries(db,library_root)
     contests = rows(db, "SELECT * FROM v_contests_monitoring_all ORDER BY year DESC, julianday(starts_at) DESC, contest_id DESC")
     sources = rows(db, "SELECT * FROM catalog_sources ORDER BY display_name COLLATE NOCASE,id")
     if any(contest for contest in contests) and not any(source["source_key"] == "boardgamegeek" for source in sources):
@@ -75,9 +78,10 @@ def catalog(db, library_root=ROOT / 'library'):
         "progress": progress_rows(db, library_root),
         "rankings": ranking_rows(db),
         "sources": sources,
+        "images": images,
         "games": game_rows(db),
         "source_records": record_summaries(db),
-        "entries": rows(db, """SELECT e.id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
+        "entries": rows(db, """SELECT e.id,e.game_id,e.contest_id,e.position,e.entry_kind,e.base_game_dependency,
             e.status_raw,e.status_normalized,e.materials_status_normalized,e.last_verified_at,
             g.canonical_title,c.name AS contest_name,c.scope_type,c.year,
             EXISTS(SELECT 1 FROM entry_material_scans ems WHERE ems.entry_id=e.id) AS materials_read,
@@ -442,6 +446,7 @@ class Handler(BaseHTTPRequestHandler):
                   "/material-viewer.js": ("material-viewer.js", "text/javascript; charset=utf-8"),
                   "/app.js": ("app.js", "text/javascript; charset=utf-8"),
                   "/source-records.js": ("source-records.js", "text/javascript; charset=utf-8"),
+                  "/game-images.js": ("game-images.js", "text/javascript; charset=utf-8"),
                   "/style.css": ("style.css", "text/css; charset=utf-8"),
                   "/favicon.svg": ("favicon.svg", "image/svg+xml")}
         try:
@@ -471,6 +476,21 @@ class Handler(BaseHTTPRequestHandler):
                 with connect(self.server.database) as db:
                     game_id = one(db, 'SELECT a.game_id FROM acquired_files f JOIN acquisitions a ON a.id=f.acquisition_id WHERE f.id=?', (file_id,))['game_id']
                     data = next(f for f in library_catalog(db, self.server.library_root, game_id)['files'] if f['id'] == file_id)
+            elif match := re.fullmatch(r'/api/image-files/([1-9][0-9]*)/(thumbnail|original)',path.path):
+                self.viewer_access(token=True)
+                if path.query or self.headers.get('Range'):
+                    raise PDFError(400,'parameters','Parametri immagine non ammessi.')
+                with connect(self.server.database) as db:
+                    record=file_record(db,int(match.group(1)))
+                body,mime=raster_response(self.server.library_root,record,match.group(2)=='thumbnail')
+                self.respond(200,body,mime,head)
+                return
+            elif match := re.fullmatch(r'/api/games/([1-9][0-9]*)/images',path.path):
+                self.viewer_access()
+                if path.query:raise ValueError('Parametri non ammessi')
+                with connect(self.server.database) as db:
+                    game_id=int(match.group(1));one(db,'SELECT id FROM games WHERE id=?',(game_id,))
+                    data=image_catalog(db,game_id,self.server.library_root)
             elif path.path == "/api/catalog":
                 with connect(self.server.database) as db:
                     data = catalog(db, self.server.library_root)

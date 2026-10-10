@@ -1,0 +1,74 @@
+{
+  "verified_at": "2026-10-10T15:47:52.729348+00:00",
+  "source_database_sha256": "9f962932862d4da8c09deb73fee03aedc54e9ba1aa4606089c8976e844b59cdf",
+  "operational_database_unchanged": true,
+  "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+  "input_file_sha256": {
+    "2025_children_family_images_2026-10-05.json": "b83ceab057d57081f2afa77bcfdd63bf8d38602f10cc999ba7df297eec4d5c4e",
+    "2025_children_family_image_sources_2026-10-05.json": "02c49f211ded7723018557d5346199d1609aa80bd6d8f626d8443e3f5ba0e30f"
+  },
+  "legacy_table_count": 62,
+  "legacy_row_count": 18996,
+  "legacy_inventory_sha256": "9d16b90e821d6c5c40616493ee9c2a6ae33fa9a02b39ba3a93e9964ace5e8143",
+  "legacy_definitions_and_rows_preserved": true,
+  "manifest_information_preserved": true,
+  "coverage": {
+    "complete": 2,
+    "partial_or_unknown": 12
+  },
+  "tables": {
+    "img_asset_observations": 45,
+    "img_assets": 44,
+    "img_categories": 55,
+    "img_category_research": 154,
+    "img_component_links": 26,
+    "img_component_observations": 16,
+    "img_components": 16,
+    "img_contexts": 45,
+    "img_decisions": 0,
+    "img_files": 45,
+    "img_imports": 1,
+    "img_occurrences": 111,
+    "img_primary_selections": 0,
+    "img_provenances": 96,
+    "img_region_links": 30,
+    "img_regions": 15,
+    "img_relations": 24,
+    "img_research_observations": 14
+  },
+  "backup_restore_verified": true,
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "task_id": "TSK-0067",
+  "operational_applied": false,
+  "pws_version": "1.5.0",
+  "synthetic_tests": {
+    "count": 32,
+    "outcome": "passed",
+    "command": "python database/test_game_images.py"
+  },
+  "standalone_migration": {
+    "new_tables_empty": true,
+    "replay_outcome": "already_applied"
+  },
+  "real_manifest_import": {
+    "verified_image_files": 45,
+    "verified_documents": 38,
+    "import_replay_outcome": "already_imported",
+    "replay_database_written": false,
+    "cli_preview_database_written": false
+  },
+  "code_sha256": {
+    "database/migrations/014_game_images.sql": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+    "database/image_catalog.py": "b2a30e2254c5a4e20734bd0a0335eea8ad821ba13ed219dc4f529c797ab8c019",
+    "database/apply_image_catalog_migration.py": "295aac723fe51ffbb22cd1ef7b89dad51d1a839ac471feafb87a38c4e1087b92",
+    "database/test_game_images.py": "f9d81be5d699ad7168e7e072a07134ffa0aaf9872402b313fe596bb4f91498d0",
+    "database/verify_game_images.py": "55b4f63a0987895d517450a5ca4750ba4b973013652d3fbd6e86c8618ae8bb6d",
+    "catalog/import_game_images.py": "0394411844d815d2933a453786d6e4ec2137ea96c61bf99acc087857ca120127"
+  },
+  "full_local_report": "outputs/image-catalog-014/verification-fb60bc764eca48eea53132c5565e6aae/report.json",
+  "copy_backup_sha256": "f5e532b39f9324eac6f25962f2cfa35242241e162662e4b1671016d458558a5e",
+  "next_action": "Autorizzazione utente per applicazione schema/import operativo con nuova anteprima e backup",
+  "git_mutations_performed": false,
+  "ui_changes_performed": false
+}

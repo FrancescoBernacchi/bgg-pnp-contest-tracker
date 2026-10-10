@@ -1,0 +1,107 @@
+{
+  "task_id": "TSK-0067",
+  "verified_at": "2026-10-10T21:03:42.169527+00:00",
+  "blocks": [
+    1,
+    2,
+    3
+  ],
+  "tests": {
+    "img": 41,
+    "server": 17,
+    "image_progress_and_revisions": 11,
+    "total_python_this_increment": 69
+  },
+  "browser": {
+    "completion": {
+      "passed": true,
+      "widths": [
+        1400,
+        780,
+        390
+      ],
+      "checks": [
+        "contest image indicator 2/27 and breakdown",
+        "entry-to-game image link",
+        "empty-category gallery filter",
+        "component subtype groups and filter",
+        "independent AND filters",
+        "category incomplete despite game complete",
+        "no adopted regardless research",
+        "previous material revision evidence notice",
+        "no overflow/errors/external requests"
+      ]
+    },
+    "gallery": {
+      "passed": true,
+      "widths": [
+        1400,
+        780,
+        390
+      ],
+      "pilots": 2,
+      "external_requests": [],
+      "page_errors": [],
+      "checks": [
+        "adopted counts",
+        "lazy thumbnails",
+        "zoom fit/150%",
+        "navigation keyboard/Escape",
+        "category filter",
+        "components/shared sides",
+        "assembly regions",
+        "history",
+        "partial research",
+        "AI synthetic groups",
+        "XSS text escaping",
+        "HTTP token/parameters",
+        "library regression"
+      ]
+    },
+    "lists_progress": {
+      "passed": true,
+      "widths": [
+        1400,
+        780,
+        390
+      ],
+      "contest_entry_total": 27,
+      "complete": 2,
+      "checks": [
+        "optional list thumbnails",
+        "game/entry coverage filters",
+        "principal provisional",
+        "coverage click filters gallery",
+        "single three-part bar and pie",
+        "12/8/80 example",
+        "no overflow",
+        "no external requests",
+        "no page errors"
+      ]
+    }
+  },
+  "database_unchanged": true,
+  "database_sha256": "0210d833f51e2c55e1711b3169ac9fefcdfaba9016f8f4d009e049c3ee032304",
+  "verified_image_files": 45,
+  "verified_source_documents": 38,
+  "code_sha256": {
+    "app/image_progress.py": "5f4d3745060f7e7868db17f80e08aa0953ebdb28cb5a1b8c96cbe6db0e48afef",
+    "app/game_images.py": "b125243fc22b708dcc86793eb3b78b40ef6585f1a8caed6cfd6d6689683a1d81",
+    "app/static/app.js": "7f65eb965ac1b6250ace0d89f8808d03f9419c49428ab46e1a215a6d8caec76c",
+    "app/static/game-images.js": "7b4ad249a7d5127ebc6efda911693dc38ee8470ad080c239897f25164c9d9fe4",
+    "app/static/style.css": "341573b289541cb049537eb25cb7d2278ab149a981b71654f017643cf84679d1",
+    "app/test_image_progress.py": "9e9834ab331e36b5955871b8bad805bfc782501f2d8c89730a7212b25669139a",
+    "app/test_image_completion_browser.cjs": "6317c36a48de4161c5350a1c1d610c04bad7ed04ea8ec3fb81424db3410408a8"
+  },
+  "contest_metrics": {
+    "contest_id": 14,
+    "entry_count": 27,
+    "image_complete_count": 2,
+    "image_with_images_count": 2,
+    "image_without_images_count": 0,
+    "image_incomplete_count": 25,
+    "image_original_entry_count": 2,
+    "image_ai_entry_count": 0
+  },
+  "remaining": "Valutazione visuale utente di barre/torte; nessun completamento funzionale individuato ancora pendente."
+}

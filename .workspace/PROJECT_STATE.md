@@ -86,3 +86,25 @@ TSK-0046: estensione annuale circoscritta classifiche BGG 2024 confermata il 202
 ## Consultazione PerGioco — TSK-0079, 2026-10-08
 
 Integrazione APP B-v1/013 dopo TSK-0078: roster fonte autonomo e schede per ID, ricerca/filtri su titoli/categorie/crediti, classificazioni native, accessi/condizioni/menzioni anche senza URL, istanze/relazioni, crediti e storia. Lettori e SQLite RO preservati; matching candidato non attribuisce prove al canonico. Avanzamento pilota con CAT/ammissione/importazione e identità separate, MAT/ACQ/IMG — senza perimetro. Moduli app/source_evidence.py, app/pergioco_progress.py e static/source-records.js; contratto/matrice/verifiche in tasks/2026-10-08 - APP - Integrazione completa PerGioco/. Nessuna modifica dati/schema/rete esterna; TSK-0067 autonomo, PWS 1.5.0 invariato. Dettagli e denominatori in app/README.md; stato storico preservato.
+
+## Incremento IMG su copie — 2026-10-10
+
+TSK-0067: prerequisito aggiornato esplicitamente ai due piloti conclusi TSK-0068; persistenza 014 e importatore offline collaudati. Operativo ancora 013 e UI invariata; consenso finale da acquisire prima di schema+dati operativi. Architettura additiva documentata nel task/PROJECT, nessuna nuova fonte/matching/acquisizione. PWS aligned_version/canonico 1.5.0 verificati, Standard read-only.
+
+
+## IMG 014 operativa — TSK-0067, 2026-10-10
+
+Dopo consenso esplicito utente, migrazione 014 e importazione dei due manifest TSK-0068 applicate con backup/ripristino su copia verificati e transazione esclusiva. Operativo ora 014: 44 immagini/45 file, 16 componenti, 15 regioni; ricerca 2 concluse/12 parziali. Legacy 009/013 completo preservato, integrità/FK valide e replay senza scrittura. `database/schema.sql` include il blocco 014 per nuove installazioni: non rieseguirlo sull'operativo. Evidenza in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/OPERATIVO_VERIFICHE.json`. Le precedenti note di attesa sono storiche. UI/API/metriche immagini ancora da implementare nei successivi incrementi; nessuna nuova acquisizione o generazione, nessun commit/push.
+
+
+## Consultazione IMG nelle schede — 2026-10-10, TSK-0067
+
+Incremento 2 completato: app/game_images.py e static/game-images.js espongono solo lettura per ID, galleria/zoom/miniature progressive, categorie/provenienze, componenti/lati/regioni, proposte AI e storico. Si riusano sessione/confinamento della Libreria, verificando anche hash/bytes e formati; derivati solo in memoria e originali immutati. Nessuna scrittura UI, nuova acquisizione o AI. Dati/schema/metriche invariati; app già aperta da riavviare. Verifiche nel task (41 test IMG, 17 server, browser 1400/780/390), report VERIFICHE_INCREMENTO2.json. TSK-0067 resta aperto per incremento 3 liste/principale/copertura/avanzamento; nessun commit/push.
+
+## Incremento IMG 3 — TSK-0067, 2026-10-10
+
+Principale/fallback, miniature nascondibili nelle liste, tabella copertura e filtri, metriche condivise e barra/torta uniche a tre segmenti implementate e collaudate. App e generatore usano app/image_progress.py tramite work_progress.py: ricerca conclusa per entry/contest / totale entry, immagini adottate e assenza distinte; ricerca parziale non completata dai file. Sezioni annuali rigenerate, dati/schema e 45 immagini/38 PDF immutati. Dettagli e VERIFICHE_INCREMENTO3.json nel task; app/README.md documenta uso/limiti. Task in_verifica per leggibilità visuale con utente; TSK-0068 autonomo. Nessun commit/push.
+
+## Completamenti IMG collaudati — TSK-0067, 2026-10-10
+
+Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtri indipendenti combinabili e ricerca contestuale per categoria/categorie vuote, componenti per sottotipo e avviso revisione precedente con evidenza esplicita. App sola lettura, nessuna nuova classificazione, schema/dati/originali e metriche aggregate invariati. 69 test Python mirati e tre suite browser responsive passati; report VERIFICHE_COMPLETAMENTI.json nel task. Stato in_verifica per valutazione visuale utente; TSK-0068 autonomo, nessun commit/push. Guida/metadati in app/README.md e MODELLO_E_IMPORTAZIONE.md.

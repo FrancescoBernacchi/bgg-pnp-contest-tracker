@@ -184,3 +184,20 @@ Decisione TSK-0044: applicazione retroattiva a tutti i titoli visibili del proge
 ## Persistenza immagini collaudata — TSK-0067, 2026-10-10
 
 `database/migrations/014_game_images.sql`, `database/image_catalog.py` e `catalog/import_game_images.py` preparano catalogo IMG generico e importazione offline. Modello/contratto in MODELLO_E_IMPORTAZIONE.md di TSK-0067; test/verify solo copie. Prerequisito deliberato: due piloti TSK-0068 sufficienti; altri dodici giochi restano IMG aperto. Schema operativo ancora 013; non applicare 014 né importare lotti senza autorizzazione finale. Default RO, applicazione con backup/ripristino su copia verificati e transazione; omissioni non cancellano, file/identità immutabili e decisioni append-only. Non proiettare prove nel modello 013, non convertire PNG ACQ né implementare UI per implicazione.
+
+## IMG 014 operativa — TSK-0067, 2026-10-10
+
+Dopo consenso esplicito utente, migrazione 014 e importazione dei due manifest TSK-0068 applicate con backup/ripristino su copia verificati e transazione esclusiva. Operativo ora 014: 44 immagini/45 file, 16 componenti, 15 regioni; ricerca 2 concluse/12 parziali. Legacy 009/013 completo preservato, integrità/FK valide e replay senza scrittura. `database/schema.sql` include il blocco 014 per nuove installazioni: non rieseguirlo sull'operativo. Evidenza in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/OPERATIVO_VERIFICHE.json`. Le precedenti note di attesa sono storiche. UI/API/metriche immagini ancora da implementare nei successivi incrementi; nessuna nuova acquisizione o generazione, nessun commit/push.
+
+
+## Consultazione IMG nelle schede — 2026-10-10, TSK-0067
+
+Incremento 2 completato: app/game_images.py e static/game-images.js espongono solo lettura per ID, galleria/zoom/miniature progressive, categorie/provenienze, componenti/lati/regioni, proposte AI e storico. Si riusano sessione/confinamento della Libreria, verificando anche hash/bytes e formati; derivati solo in memoria e originali immutati. Nessuna scrittura UI, nuova acquisizione o AI. Dati/schema/metriche invariati; app già aperta da riavviare. Verifiche nel task (41 test IMG, 17 server, browser 1400/780/390), report VERIFICHE_INCREMENTO2.json. TSK-0067 resta aperto per incremento 3 liste/principale/copertura/avanzamento; nessun commit/push.
+
+## Incremento IMG 3 — TSK-0067, 2026-10-10
+
+Principale/fallback, miniature nascondibili nelle liste, tabella copertura e filtri, metriche condivise e barra/torta uniche a tre segmenti implementate e collaudate. App e generatore usano app/image_progress.py tramite work_progress.py: ricerca conclusa per entry/contest / totale entry, immagini adottate e assenza distinte; ricerca parziale non completata dai file. Sezioni annuali rigenerate, dati/schema e 45 immagini/38 PDF immutati. Dettagli e VERIFICHE_INCREMENTO3.json nel task; app/README.md documenta uso/limiti. Task in_verifica per leggibilità visuale con utente; TSK-0068 autonomo. Nessun commit/push.
+
+## Completamenti IMG collaudati — TSK-0067, 2026-10-10
+
+Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtri indipendenti combinabili e ricerca contestuale per categoria/categorie vuote, componenti per sottotipo e avviso revisione precedente con evidenza esplicita. App sola lettura, nessuna nuova classificazione, schema/dati/originali e metriche aggregate invariati. 69 test Python mirati e tre suite browser responsive passati; report VERIFICHE_COMPLETAMENTI.json nel task. Stato in_verifica per valutazione visuale utente; TSK-0068 autonomo, nessun commit/push. Guida/metadati in app/README.md e MODELLO_E_IMPORTAZIONE.md.
