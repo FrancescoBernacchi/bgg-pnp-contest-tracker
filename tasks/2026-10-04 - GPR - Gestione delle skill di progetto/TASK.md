@@ -81,3 +81,7 @@ TSK-0072 applica la procedura a un secondo contesto editoriale: 25 pagine/destin
 ## Evidenza CAT PerGioco — 2026-10-06, TSK-0074
 
 Il pilota CAT applica il contratto adottato, senza estendere source-preanalysis: nessuna skill CAT multifonte dedicata nell’inventario. Efficacia CUA browser e limiti di routing registrati nel TASK.md di TSK-0074. Eventuale procedura CAT da valutare dopo altri casi; proposta non adottata né collaudata in generale. Nessuna manutenzione skill/inventario eseguita, contenitore TSK-0048 resta aperto.
+
+### Manutenzione IMG — TSK-0068, 2026-10-11
+
+Due giochi aggiuntivi: prove e rettifiche nel TASK.md sorgente. Promossi nei riferimenti IMG soltanto i pattern verificati PDF multi-foglio/quantità stampa, controllo ID pagina-download BGG e confronto foto autore hi-res con revisione. Owner .agents utente Windows verificato, root invariata, skill-creator applicata. Nessuna geometria universale, nessuna modifica contratti o DB. Verifiche statiche e limiti nel sorgente; TSK-0048 resta continuativo.

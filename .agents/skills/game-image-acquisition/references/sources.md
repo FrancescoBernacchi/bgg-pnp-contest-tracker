@@ -27,3 +27,9 @@ Nessuna enumerazione IMG esterna è stata collaudata in TSK-0065. Registra nel l
 - Cartelle autore collegate possono contenere solo PDF già acquisiti: enumera i file visibili senza nuovi download ACQ. Se il manuale live non è confrontabile senza nuova esportazione, dichiara che la verifica riguarda il PDF locale; non attestare identità della revisione live.
 
 Chiudi la ricerca per perimetro/data e fonti effettivamente osservate, con impedimenti e residui separati dalle assenze per categoria. Una sequenza osservata o un PDF locale non prova assenza sull'intero web. Evidenza sorgente: TSK-0068, incremento 4 e manifest immagini del pilota.
+
+## Verifiche aggiuntive — TSK-0068, 2026-10-11
+
+Le immagini dell’autore su una pagina itch.io direttamente collegata possono offrire foto originali più grandi delle copie BGG: nel caso Sorry! That’s My Dungeon, 1536×2048 contro 347×462. Usa i collegamenti original esposti e confronta foto e revisione, senza costruire URL. La foto del vecchio setup resta storica: alta risoluzione non la rende revisione corrente. Copie scaricate inferiori restano immutate e collegate alla migliore; la somiglianza non prova identità byte.
+
+BGG può conservare temporaneamente il contenuto dell’immagine precedente durante la navigazione. La sola presenza del pulsante Downloads non prova che la pagina richiesta sia pronta: confronta ID nel percorso, ID dichiarato nel contenuto e nome picNNNNNN dell’URL Original prima di acquisire. Nel caso verificato una lettura troppo rapida avrebbe associato ID 8652590 a un’immagine di un altro gioco; scarto rilevato prima del download, poi ID coerenti verificati singolarmente. Non usare il risultato incongruente come fonte o indovinare endpoint. Il testo del link è lowercase e può includere dimensioni/spazi: leggere il nome realmente esposto, normalizzando whitespace/case per la selezione.

@@ -1,0 +1,45 @@
+{
+  "task_id": "TSK-0068",
+  "verified_at": "2026-10-11",
+  "manifest": "catalog/2025_children_family_images_2026-10-11.json",
+  "manifest_sha256": "3c32eab75b5993fac3aaa9db485eb2cb072ad62804a77fbb91431deb6247ac55",
+  "files_verified": 90,
+  "images_current": 77,
+  "historical_files": 13,
+  "components": 25,
+  "pdf_verified": 38,
+  "new_games": [
+    498,
+    500
+  ],
+  "new_current_images": 33,
+  "new_historical_files": 12,
+  "new_physical_files": 45,
+  "remote_download_urls": 10,
+  "distinct_remote_files": 9,
+  "new_extractions": 29,
+  "research_completed": 4,
+  "scope_games": 14,
+  "database_modified": false,
+  "previous_import_manifest_preserved": true,
+  "limits": [
+    "Gallerie profilo login",
+    "Dorsi Poker non presenti",
+    "Carte Sorry non acquisite: dipendenza ACQ",
+    "Ripetizioni interne artwork eroi non enumerate per regione oltre al pannello estratto"
+  ],
+  "checks": [
+    "bytes SHA-256 format dimensioni",
+    "associazioni ID e relazioni",
+    "44 copie originali del primo manifest preservate",
+    "22 conteggi categoria nuovi giochi",
+    "corrispondenza libreria/manifest"
+  ],
+  "skill_validation": {
+    "links_checked": 3,
+    "frontmatter_static": true,
+    "official_validator_exit": 1,
+    "official_validator_limit": "Traceback (most recent call last):\n  File \"C:\\Users\\39348\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py\", line 10, in <module>\n    import yaml\nModuleNotFoundError: No module named 'yaml'\n"
+  },
+  "publication_candidate_findings": []
+}

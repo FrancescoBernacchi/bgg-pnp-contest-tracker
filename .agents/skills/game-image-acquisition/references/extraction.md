@@ -18,6 +18,14 @@ Confronta contenuti: hash file prova identità byte; similarità visiva propone 
 
 Il primo lotto deve fornire esempi reali e confronti fonte/ritagli. Nessuna soglia di similarità, DPI universale o estrazione automatica è già validata.
 
+## PDF suddivisi in fogli e quantità di stampa — TSK-0068, 2026-10-11
+
+Prima di ricomporre un componente su più pagine, verifica se ogni pagina mostra una finestra diversa dello stesso oggetto raster completo. Nel PDF locale 18 di Sorry! That’s My Dungeon, X4 contiene il tabellone intero 2000×2000: quattro estrazioni hanno lo stesso SHA-256; i quattro render mostrano porzioni traslate concordanti. L’oggetto intero conserva grafica e testo del componente senza cucire i render. Registra tutte le pagine e le trasformazioni/regioni, anche fuori MediaBox, e gli offset non nulli della pagina. La prova è specifica del documento: se gli oggetti sono frammenti, maschere o mancano elementi vettoriali, questo metodo non è sufficiente.
+
+Poker Face, PDF 20: gli otto raster nativi includono ciascuno l’intera carta e il bordo, verificati contro il render del foglio; estrazione nativa preferita al render meno risoluto. Il moltiplicatore «otto copie del foglio» è distinto dalle otto occorrenze presenti e dalle quantità richieste dalle tre modalità nel manuale. Non trasformare istruzioni di stampa in coordinate aggiuntive né inventare un dorso quando non è fornito.
+
+Per piccoli artwork adiacenti a testo, dadi o altri disegni, verifica anche un ingrandimento del contesto oltre alla contact sheet: nel pannello degli eroi alcuni crop iniziali tagliavano armi/copricapi o includevano frammenti adiacenti. Rettificati mantenendo file/versioni precedenti Superate. L’ingrandimento è una prova locale, non un aumento della risoluzione dei file adottati. Geometrie e soglie del caso non sono riutilizzabili automaticamente.
+
 ## Evidenza pilota TSK-0068 — 2026-10-05
 
 Mermaids vs Dinosaurs, file 32–34: render completo a 300 DPI seguito da crop verificato conserva bordi/testo/grafica dove l'estrazione di oggetti restituisce solo maschere o parti. La griglia 3x3 è specifica di quel PDF: pagina 3 ha una cella vuota; carte aiuto con testo raster. Duplicati verificati tramite stesso oggetto raster, stessa scala/bordo e controllo visivo; non trasferire automaticamente questa equivalenza ad altri documenti o revisioni. Un dorso comune collega tipi di carta, senza provare l'abbinamento fisico fronte/retro di ogni foglio.

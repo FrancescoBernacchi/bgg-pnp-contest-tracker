@@ -266,3 +266,7 @@ Collaudo selezione: 59 test passati sul checkout isolato delle versioni candidat
 ## Commit e push verificati — 2026-10-10
 
 Commit funzionale `a944081` su main: 39 file/porzioni IMG, persistenza/importatore e consultazione/metriche/chiusura TSK-0067. Push origin/main riuscito; hash server `a944081b3b260163e24dd75d5f8f3010097a331c` verificato direttamente, confronto HEAD/origin/main 0 avanti e 0 indietro. 59 test delle versioni selezionate passati su checkout isolato; diff --check e audit candidati/commit in uscita senza rilievi. I 299 rilievi generali rimangono in contenuti preesistenti estranei al commit, non pubblicati in questo incremento. Materiali, database e screenshot esclusi. Modifiche degli altri task preservate localmente. Questa attestazione viene salvata in un successivo commit documentale; task completato, raccolta TSK-0068 autonoma.
+
+### Nuovo manifest IMG da riesaminare — 2026-10-11
+
+TSK-0068 aggiunge Poker Face (500) e Sorry! That’s My Dungeon (498). Manifest cumulativo `catalog/2025_children_family_images_2026-10-11.json`: 77 immagini attuali/90 file con storico, 25 componenti, ricerca 4/14; verifica dedicata nel task IMG. Il precedente input 2026-10-05 resta immutato e operativo 014 non modificato. Riesaminare occurrence/print_multiplier/modalità, oggetto tabellone oltre MediaBox, foto hi-res/vecchie revisioni, artwork rettificati e crediti. Questa segnalazione non autorizza importazione o modifiche APP e non ripristina il vecchio prerequisito dell’intero lotto, superato dalla deliberazione sui due piloti.
