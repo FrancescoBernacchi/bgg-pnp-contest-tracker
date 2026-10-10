@@ -2148,12 +2148,12 @@
       ],
       "next_action": "Monitorare stati ambigui e prossime azioni; workflow immagini in successivo task EPR.",
       "git": {
-        "checked_at": "2026-10-04",
-        "local_save": "da_committare",
+        "checked_at": "2026-10-10",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "last_task_document_commit": "7cad97e",
-        "evidence": "Terzo incremento locale: rinomina delle chat e regola senza identificativi segnalazione nei titoli APP; non ancora committato."
+        "synchronization": "remoto_verificato",
+        "commit": "478616e5ba697a5ab7662dfe72cbcb969b86e173",
+        "evidence": "Commit governance 478616e e push verificati con hash server coincidente. Esito salvato in successivo commit documentale; altre modifiche locali escluse."
       },
       "display_title": "T0044-26.10.04 - GPR - Monitoraggio e classificazione dei task",
       "current_chat_titles": [

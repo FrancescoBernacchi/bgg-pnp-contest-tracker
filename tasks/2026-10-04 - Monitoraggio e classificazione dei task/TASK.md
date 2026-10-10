@@ -88,3 +88,7 @@ Verifiche: set_thread_title applicato tramite API; 49 titoli confermati integral
 ## Correzione del progressivo iniziale - 2026-10-10
 
 Autorizzazione esplicita utente allo scambio coordinato degli ID. Scope: registro, titoli visibili e riferimenti; setup ora TSK-0001 (chat creata 1788511326), monitoraggio BGG ora TSK-0002 (1788522536). Aggiornate dipendenze e collegamenti, preservando date, percorsi, descrizioni e titoli storici. Mappa della precedente assegnazione in REGISTRY.json.identity_corrections; nessuna ambiguità risolta con alias globali. Nessun commit/push autorizzato da questa correzione.
+
+## Salvataggio e pubblicazione governance - 2026-10-10
+
+Commit selettivo `478616e` su main: 14 file, convenzione Txxxx-AA.MM.GG, registro e audit delle rinomine, correzione autorizzata setup T0001/monitoraggio T0002. Push origin/main riuscito; hash server `478616e5ba697a5ab7662dfe72cbcb969b86e173` verificato direttamente. JSON/ID e git diff --check superati; controllo euristico dei file selezionati e di tutti i commit in uscita senza rilievi. Le 299 segnalazioni del controllo complessivo riguardano altri file della working tree; revisione pregressa ancora separata. Modifiche APP/DAT/acquisizioni e parti estranee dei documenti condivisi preservate localmente. Questo esito viene salvato in un successivo commit documentale; contenitore GPR continuativo aperto.
