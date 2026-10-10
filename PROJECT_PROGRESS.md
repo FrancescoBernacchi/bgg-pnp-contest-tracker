@@ -2651,3 +2651,16 @@ TSK-0067, brainstorming concluso 2026-10-05: approvati tre incrementi (dati/impo
 - 2026-10-10 — TSK-0081 DAT completato: piano confermato e nove PGCM importati 2026-10-08; accettazione operativa oggi. Record fonte 89–97, sette games 1455–1461, zero nuovi matching candidati, due source-only; CAT 7/2, tre istanze Labirinto senza solution_for e sette varianti Piattola solo asserzioni. Payload/hash/proiezioni/path/NULL e delte verificate, legacy/pilota completi e schema invariato; backup fresco/restore identici, replay zero scritture e hash/inventario invariati. Letture APP operative riuscite, 21 record PerGioco complessivi, metriche pilota ancora su 12. Fonte totale: 15 identità confermate, un candidato storico Abande, cinque source-only; nessuna copertura sito intero. A/B annuali rigenerate con generatore, dati BGG invariati. Nessuna APP/schema/acquisizione/automazione/Git modificata. Prossimo passo utile: APP autonomo per denominatori del lotto e campi raw, da autorizzare separatamente. Evidenze e decisione in tasks/2026-10-08 - DAT - Importazione lotto Carta e matita PerGioco/.
 
 - 2026-10-10 — Criterio APP confermato nel passaggio TSK-0081: gestione uniforme dei giochi tramite componenti guidati dai dati, senza logiche ad hoc per titolo; differenze al più per categorie/tipologie. PROJECT.md, AGENTS.md, stato progetto e prompt APP aggiornati; giochi del lotto come casi di verifica di funzionalità generiche. Nessuna implementazione, refactoring, dato o metrica variati; A/B non rigenerate.
+
+## Governance dei task - aggiornamento 2026-10-10
+
+TSK-0044 adotta il prefisso visibile `Txxxx-AA.MM.GG - CODICE - descrizione` e lo applica alle 76 chat utente del progetto, incluse worktree e chat archiviata. Registro con 86 ID stabili; quattro collegamenti storici formalizzati senza inferire completamento. Documentazione e storico rinomine aggiornati; percorsi e sezioni annuali generate preservati. Incremento naming verificato, documenti locali da committare; attività GPR continuativa aperta.
+
+Correzione naming del 2026-10-10: setup T0001 e monitoraggio BGG T0002; riferimenti correnti riconciliati, storia conservata. Nessuna modifica alla copertura o ai dati.
+
+
+## Stato corrente TSK-0067 — 2026-10-10
+
+Prerequisito APP aggiornato dall'utente: sufficienti i due piloti TSK-0068, raccolta degli altri dodici giochi autonoma e ancora aperta. Primo incremento dati/importazione offline implementato e collaudato su copie; migrazione 014 con 18 tabelle/sei viste, 32 test sintetici riusciti. Import reale su copia: 44 immagini/45 file, 16 componenti, 15 regioni, 96 provenienze, 111 occorrenze; preservate 62 tabelle/18.996 righe e schema legacy/013. Backup e ripristino verificati, replay senza scrittura. Ricerca 2/14 conclusa, 12 parziali/non esplorate; nessuna nuova raccolta o AI reale.
+
+Operativo ancora 013, APP/UI/metriche invariate; nessuna sezione annuale rigenerata perché non cambiano dati operativi. Task in_corso, passaggio operativo da autorizzare dopo riepilogo. Nessun commit/push. Prossima azione: consenso esplicito per schema 014 e importazione dei manifest verificati con nuova anteprima e backup. Dettagli in TSK-0067/MODELLO_E_IMPORTAZIONE.md e VERIFICHE_INCREMENTO1.json; note precedenti di attesa del lotto completo conservate come storia.

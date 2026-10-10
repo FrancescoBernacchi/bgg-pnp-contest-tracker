@@ -1,0 +1,539 @@
+{
+  "verified_at": "2026-10-04",
+  "scope": "38 chat con contenuto; 36 rinominate, 2 conformi (inclusa eccezione bootstrap). Guardian review e contenitore vuoto esclusi. Titoli API lunghi troncati: successo set_thread_title e prefisso read_thread verificati, senza affermare lettura integrale del titolo precedente.",
+  "chats": [
+    {
+      "thread_id": "01a06b95-1159-7851-afda-4f5e43bab897",
+      "previous_title": "2026-09-04 - SETUP INIZIALE PROGETTO",
+      "title": "2026-09-04 - SETUP INIZIALE PROGETTO",
+      "opened_at": "2026-09-04",
+      "category": "EPR",
+      "task_ids": [
+        "TSK-0001"
+      ],
+      "changed": false,
+      "result": "already_conformant",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a06c40-1c75-7b11-ba7e-69287b7704ad",
+      "previous_title": "2026-09-19 - censimento entry BGG 2026",
+      "title": "2026-09-04 - GPR - Monitoraggio BGG e censimento delle entry 2026",
+      "opened_at": "2026-09-04",
+      "category": "GPR",
+      "task_ids": [
+        "TSK-0002",
+        "TSK-0017"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a07b22-4a80-77f0-9578-5b7fecd98f54",
+      "previous_title": "2026-09-07 - Applicazione locale contest BGG",
+      "title": "2026-09-07 - APP - Applicazione locale contest BGG",
+      "opened_at": "2026-09-07",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0003"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a07d95-c93c-7ce0-974f-388ab6575672",
+      "previous_title": "2026-09-07 - Esplorazione contest BGG 2025 - Parte 1",
+      "title": "2026-09-07 - BGG-A - Censimento e analisi materiali BGG 2025 - Parte 1",
+      "opened_at": "2026-09-07",
+      "category": "BGG-A",
+      "task_ids": [
+        "TSK-0005"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a08ad0-08ce-7093-96db-52f58cf24b97",
+      "previous_title": "2026-09-11 - Visibilità materiali dichiarati",
+      "title": "2026-09-10 - APP - Classifiche, risorse e materiali dichiarati",
+      "opened_at": "2026-09-10",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0007",
+        "TSK-0010",
+        "TSK-0011"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a08eeb-051b-7351-95a2-1ad3744006b9",
+      "previous_title": "2026-09-11 - Esplorazione contest BGG 2025 - Parte 2",
+      "title": "2026-09-11 - MAT - Analisi materiali BGG 2025 - Parte 2",
+      "opened_at": "2026-09-11",
+      "category": "MAT",
+      "task_ids": [
+        "TSK-0009"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a08f50-837e-7683-9eb5-5c99216a82bd",
+      "previous_title": "2026-09-11 - Diagnosi sandbox Windows Codex",
+      "title": "2026-09-11 - INF - Diagnosi sandbox Windows Codex",
+      "opened_at": "2026-09-11",
+      "category": "INF",
+      "task_ids": [
+        "TSK-0008"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0a657-3c86-7e62-bc7b-8e7382a232c8",
+      "previous_title": "2026-09-15 - Cruscotto avanzamento raccolta",
+      "title": "2026-09-15 - EPR - Cruscotto avanzamento raccolta",
+      "opened_at": "2026-09-15",
+      "category": "EPR",
+      "task_ids": [
+        "TSK-0013"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0a6f4-0ff6-7e51-a275-e985dab72b54",
+      "previous_title": "2026-09-15 - Censimento globale contest PnP BGG",
+      "title": "2026-09-15 - BGG-G - Censimento globale contest PnP BGG",
+      "opened_at": "2026-09-15",
+      "category": "BGG-G",
+      "task_ids": [
+        "TSK-0012"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0b5ea-e7fb-7d40-83db-2933db1c79d5",
+      "previous_title": "2026-09-18 - Cruscotto navigabile nell’app",
+      "title": "2026-09-18 - APP - Cruscotto navigabile nell'app",
+      "opened_at": "2026-09-18",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0014"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0b64a-caa0-7bf0-beca-3653ded478da",
+      "previous_title": "2026-09-18 - Esplorazione contest BGG 2024",
+      "title": "2026-09-18 - BGG-A - Esplorazione contest BGG 2024",
+      "opened_at": "2026-09-18",
+      "category": "BGG-A",
+      "task_ids": [
+        "TSK-0015"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0badc-b3e9-7683-8b3d-d559e6692841",
+      "previous_title": "2026-09-19 - Pianificazione censimenti annuali BGG",
+      "title": "2026-09-19 - GPR - Pianificazione censimenti annuali BGG",
+      "opened_at": "2026-09-19",
+      "category": "GPR",
+      "task_ids": [],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0bea1-43ab-78f1-9abc-bb0fabf6b6cc",
+      "previous_title": "2026-09-20 - Catalogo giochi multifonte e Kanare Abstract",
+      "title": "2026-09-20 - EPR - Catalogo giochi multifonte e Kanare Abstract",
+      "opened_at": "2026-09-20",
+      "category": "EPR",
+      "task_ids": [
+        "TSK-0018"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c02b-9faa-7c13-a41e-400bed306650",
+      "previous_title": "2026-09-20 - Censimento Kanare Abstract",
+      "title": "2026-09-20 - CAT - Censimento Kanare Abstract",
+      "opened_at": "2026-09-20",
+      "category": "CAT",
+      "task_ids": [
+        "TSK-0019"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c03e-af3c-77b2-aae5-ac42bfd72f9b",
+      "previous_title": "2026-09-20 - Modello dati multifonte Kanare Abstract",
+      "title": "2026-09-20 - DAT - Modello dati multifonte Kanare Abstract",
+      "opened_at": "2026-09-20",
+      "category": "DAT",
+      "task_ids": [
+        "TSK-0022"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c05d-c25f-70c2-9278-0c36af799e1a",
+      "previous_title": "2026-09-20 - Importazione censimento Kanare Abstract",
+      "title": "2026-09-20 - DAT - Importazione censimento Kanare Abstract",
+      "opened_at": "2026-09-20",
+      "category": "DAT",
+      "task_ids": [
+        "TSK-0021"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c06f-6dda-74c1-897a-b4113ad83434",
+      "previous_title": "2026-09-20 - Completamento censimento Kanare Abstract",
+      "title": "2026-09-20 - CAT - Completamento censimento Kanare Abstract",
+      "opened_at": "2026-09-20",
+      "category": "CAT",
+      "task_ids": [
+        "TSK-0020"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c3bb-4b94-7ce0-b60b-640046187cd2",
+      "previous_title": "2026-09-21 - Verifica destinazioni Kanare Abstract",
+      "title": "2026-09-21 - VER - Verifica destinazioni Kanare Abstract",
+      "opened_at": "2026-09-21",
+      "category": "VER",
+      "task_ids": [
+        "TSK-0024"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0c3d1-0b12-7ab0-bd1a-93b8a86fa688",
+      "previous_title": "2026-09-21 - Acquisizione selettiva materiali Kanare Abstra…",
+      "title": "2026-09-21 - ACQ - Acquisizione selettiva materiali Kanare Abstract",
+      "opened_at": "2026-09-21",
+      "category": "ACQ",
+      "task_ids": [
+        "TSK-0023"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a1060d-0dda-7502-a3a3-060718e19f51",
+      "previous_title": "2026-10-04 - GPR - Monitoraggio e classificazione dei task",
+      "title": "2026-10-04 - GPR - Monitoraggio e classificazione dei task",
+      "opened_at": "2026-10-04",
+      "category": "GPR",
+      "task_ids": [
+        "TSK-0044"
+      ],
+      "changed": false,
+      "result": "already_conformant",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a105d1-1915-75a0-810d-953805cb494c",
+      "previous_title": "2026-10-04 - Formattazione DOCX APP-007",
+      "title": "2026-10-04 - APP - Formattazione DOCX",
+      "opened_at": "2026-10-04",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0042"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a102d7-a847-74d2-87c3-87047cb3cfb7",
+      "previous_title": "2026-10-03 - Registro segnalazioni app",
+      "title": "2026-10-03 - GPR - Registro segnalazioni app",
+      "opened_at": "2026-10-03",
+      "category": "GPR",
+      "task_ids": [
+        "TSK-0036"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a103c7-ec7f-7381-98c6-2932219aae67",
+      "previous_title": "2026-10-04 - APP-006 contenuti e varianti Libreria",
+      "title": "2026-10-03 - APP - Contenuti e varianti Libreria",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0041"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a103a6-980b-71d1-b906-ddb28e52e706",
+      "previous_title": "2026-10-03 - Libreria per gioco e visualizzatori APP-005",
+      "title": "2026-10-03 - APP - Libreria per gioco e visualizzatori",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0035"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a10398-d92f-7811-9575-ed5e1877005f",
+      "previous_title": "2026-10-03 - Righe compatte avanzamento BGG",
+      "title": "2026-10-03 - APP - Righe compatte avanzamento BGG",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0038"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a10389-9300-7bf3-9e09-9adc454addfe",
+      "previous_title": "2026-10-03 - Contatore giochi Kanare",
+      "title": "2026-10-03 - APP - Contatore giochi Kanare",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0032"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a1037b-5682-7f42-b876-838eb2aad3d5",
+      "previous_title": "2026-10-03 - Layout PDF per orientamento e stato segnalazio…",
+      "title": "2026-10-03 - APP - Layout PDF per orientamento",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0033"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a1036f-3e33-72d2-b79e-88a37edb8aa8",
+      "previous_title": "2026-10-03 - Categorie classifiche per contest",
+      "title": "2026-10-03 - APP - Categorie classifiche per contest",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0031"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a102a0-7d5d-7512-b941-cf5d97355bbc",
+      "previous_title": "2026-10-03 - Acquisizione materiali - Roll & Write 2025",
+      "title": "2026-10-03 - ACQ - Acquisizione materiali - Roll & Write 2025",
+      "opened_at": "2026-10-03",
+      "category": "ACQ",
+      "task_ids": [
+        "TSK-0030"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a102ed-b758-7a23-8b5f-761ace914d95",
+      "previous_title": "2026-10-03 - Ricerca e valutazione fonti giochi con regole…",
+      "title": "2026-10-03 - FON - Ricerca e valutazione fonti con regolamenti gratuiti",
+      "opened_at": "2026-10-03",
+      "category": "FON",
+      "task_ids": [
+        "TSK-0037",
+        "TSK-0039"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a1024b-ac6d-7820-b8a9-61a7685c05f6",
+      "previous_title": "2026-10-03 - Libreria locale e visualizzatore PDF nell'app",
+      "title": "2026-10-03 - APP - Libreria locale e visualizzatore PDF nell'app",
+      "opened_at": "2026-10-03",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0034",
+        "TSK-0040"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a101eb-5b91-7391-a69b-52d79200f97c",
+      "previous_title": "2026-10-03 - Acquisizione materiali - 2025 Children & Famil…",
+      "title": "2026-10-03 - ACQ - Acquisizione materiali - Children & Family Game Design Contest 2025",
+      "opened_at": "2026-10-03",
+      "category": "ACQ",
+      "task_ids": [
+        "TSK-0029"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a0fea0-9fd8-7b11-b96d-f67b02e096e0",
+      "previous_title": "2026-10-02 - Acquisizione materiali - 2026 Print and Play W…",
+      "title": "2026-10-02 - ACQ - Acquisizione materiali - Print and Play Wargame Design Contest 2026",
+      "opened_at": "2026-10-02",
+      "category": "ACQ",
+      "task_ids": [
+        "TSK-0043"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a0fe89-6504-7293-8016-a5f92c9b738c",
+      "previous_title": "2026-10-02 - Analisi materiali - 2026 Print and Play Wargam…",
+      "title": "2026-10-02 - MAT - Analisi materiali - Print and Play Wargame Design Contest 2026",
+      "opened_at": "2026-10-02",
+      "category": "MAT",
+      "task_ids": [
+        "TSK-0025"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": true
+    },
+    {
+      "thread_id": "01a0fe6e-0f97-7c22-9d58-9229de53fdf8",
+      "previous_title": "2026-10-02 - monitoraggio 2026 Wargame Design Contest",
+      "title": "2026-10-02 - BGG-M - Monitoraggio - Print and Play Wargame Design Contest 2026",
+      "opened_at": "2026-10-02",
+      "category": "BGG-M",
+      "task_ids": [
+        "TSK-0028"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "truncated_prefix_and_successful_set",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0fe4e-c1c3-7ba1-b171-0ca573381d8b",
+      "previous_title": "2026-10-02 - Censimento globale contest PnP BGG",
+      "title": "2026-10-02 - BGG-G - Censimento globale contest PnP BGG",
+      "opened_at": "2026-10-02",
+      "category": "BGG-G",
+      "task_ids": [
+        "TSK-0026"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0fdff-b006-7d83-8f90-c32d59071fd0",
+      "previous_title": "2026-10-02 - Quadro Kanare e verifica task Git",
+      "title": "2026-10-02 - GPR - Quadro Kanare e verifica task Git",
+      "opened_at": "2026-10-02",
+      "category": "GPR",
+      "task_ids": [],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    },
+    {
+      "thread_id": "01a0fe0b-7c13-7800-affe-09a7854bf91b",
+      "previous_title": "2026-10-02 - Interfaccia multifonte BGG e Kanare",
+      "title": "2026-10-02 - APP - Interfaccia multifonte BGG e Kanare",
+      "opened_at": "2026-10-02",
+      "category": "APP",
+      "task_ids": [
+        "TSK-0027"
+      ],
+      "changed": true,
+      "result": "renamed",
+      "verification": "exact",
+      "previous_title_truncated": false
+    }
+  ]
+}

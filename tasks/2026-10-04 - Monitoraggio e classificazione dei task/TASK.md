@@ -51,6 +51,40 @@ Estensione sistematica del censimento annuale alle classifiche e workflow immagi
 - Verifiche documentali superate: 44 TASK.md e 44 record, ID univoci, copertura esatta e codici validi; copia Wargame identica all'originale; git diff --check passato. Database, materiali e output esclusi. Fetch autorizzato eseguito; main e origin/main senza divergenza prima del commit. Nessun test applicativo necessario: codice e dati operativi invariati.
 - Incremento completato: commit `7cad97e` («Formalizza categorie, naming e monitoraggio dei task»), pubblicato su origin/main il 2026-10-04. Riferimento main verificato anche sul server con ls-remote; working tree pulita dopo il primo push. Registro aggiornato successivamente con esito effettivo, in un commit documentale di finalizzazione. Il contenitore TSK-0044 resta attivo e continuativo; Wargame resta sospeso.
 
+## Terzo incremento — rinomina dei titoli visibili
+
+- Richiesta: rinominare tutti i task secondo le nuove regole, senza identificativi di segnalazione nei titoli APP.
+- Scope: chat con contenuto del progetto e relativo registro; aggiornamento della regola di naming. Percorsi storici preservati; eccezione bootstrap; nessuna modifica a codice, dati operativi o contratti BGG.
+- Input: registro centrale, elenco app, metadata locali in sola lettura per recuperare ID oltre il limite dell'elenco, read_thread per confermare titoli e date di apertura.
+- Deliverable: titoli applicati tramite set_thread_title; storico prima/dopo e collegamenti chat in tasks/REGISTRY.json; evidenza di applicazione e verifica in CHAT_RENAMING.json.
+- Criteri: tutte le 38 chat con contenuto inventariate trattate; titoli con data di apertura Europe/Rome e categoria, nessun APP-NNN nei titoli APP; nomi cumulativi per chat multi-registro; chat tecniche Guardian review e contenitore vuoto esclusi perché non task utente. Nessuna modifica diretta al database interno di Codex.
+- Risultato: 36 titoli rinominati con successo; 2 già conformi, inclusa eccezione bootstrap. Read_thread riconferma 26 titoli integralmente e 12 tramite prefisso troncato coerente più esito positivo set_thread_title. Nessun errore di applicazione.
+- Ripristinate le date di apertura della chat: monitoraggio generale 4 settembre, classifiche/risorse/materiali 10 settembre e contenuti/varianti Libreria 3 ottobre. Le date dei singoli incrementi e TASK.md non vengono riscritte.
+- Registro aggiornato: 38 chat con storico prima/dopo e collegamenti osservati ai registri; 44 titoli di registro normalizzati separati dai titoli cumulativi delle chat. I 44 percorsi storici esistono ancora, senza rinomine. Tre registri non hanno un collegamento chat dimostrato e non vengono associati per deduzione.
+- Protocollo e AGENTS.md aggiornati con divieto degli identificativi di segnalazione nei titoli APP. Documentazione locale di questo incremento ancora da committare; nessun commit/push richiesto per questa rinomina.
+- Verifiche: unicità dei 38 ID chat, assenza APP-NNN nei titoli APP, percorsi storici esistenti e git diff --check superati. Codice, database e materiali invariati.
+
 ## Prossimo incremento utile
 
+## Quarto incremento — eliminazione delle etichette ridondanti
+
+- Richiesta utente: sostituire «ACQ - Acquisizione materiali -» con «ACQ -» e «MAT - Analisi materiali -» con «MAT -»; rimuovere le precedenti etichette ripetute.
+- Risultato: 11 titoli semplificati, inclusi ACQ Kanare, MAT storico 2025, BGG-M e le forme compatte BGG-G/BGG-A. Date, categorie, fonte/contest e qualificazioni storiche preservati; 38 chat totali e 44 registri invariati.
+- Applicazione: set_thread_title riuscito per tutti; read_thread verifica titolo o prefisso troncato coerente. Storico prima/dopo in REGISTRY.json; evidenza in CHAT_TITLE_SIMPLIFICATION.json. Protocollo, AGENTS.md e tabella titoli PROJECT.md aggiornati.
+- Scope esclusivamente naming/documentazione, nessuna modifica dati o acquisizione. Percorsi storici preservati. Incremento locale da committare insieme alla rinomina precedente; nessun commit/push aggiuntivo eseguito.
+
+## Prossimo incremento utile dopo le rinomine
+
 Riesaminare gli stati ambigui 2025/Kanare e monitorare il censimento 2024 nel task esistente. Definire il workflow immagini in un task EPR autonomo prima delle acquisizioni IMG; impatto applicativo in task APP collegato. Integrare progressivamente i collegamenti alle chat senza dedurre stati dal runtime.
+
+## Incremento del 2026-10-10 - ID nel prefisso dei titoli
+
+Richiesta autorizzata: aggiornare i file di progetto e tutti i titoli visibili a `Txxxx-AA.MM.GG - ...`, lasciando invariata la parte successiva alla data. Scope: governance/naming; nessuna rinomina di cartelle, modifica di dati o sviluppo APP. Criteri: ID tracciabile, descrizioni preservate, copertura delle chat storiche e archiviate, verifica dopo applicazione.
+
+Risultato: 76 chat rinominate, 86 titoli di registro aggiornati. Quattro chat storiche prive di ID ricevono TSK-0083..0086, con stato non ricostruito e percorsi non inventati. Chat con più registri espongono primary_task_id, conservando tutti i collegamenti. Evidenze e storico prima/dopo in CHAT_ID_PREFIX_2026-10-10.json e REGISTRY.json. Documenti autorevoli aggiornati: TASK_GOVERNANCE.md, AGENTS.md, PROJECT.md, sources/IMAGE_WORKFLOW.md e PROJECT_STATE.md; PWS 1.5.0 invariato.
+
+Verifiche: set_thread_title applicato tramite API; 49 titoli confermati integralmente e 27 tramite prefisso troncato coerente. La chat archiviata TSK-0085 è stata ripristinata temporaneamente per la rinomina e nuovamente archiviata. Unicità ID, prefissi per tutti gli 86 registri, descrizioni dopo il separatore, assenza di identificativi segnalazione nei titoli APP e percorsi esistenti verificati. Nessuna skill specialistica applicabile a questa modifica documentale. Incremento concluso; contenitore GPR continuativo aperto. Documenti locali da committare; nessun commit/push eseguito. Prossimo passo utile: commit selettivo della governance, distinto dai deliverable DAT/APP.
+
+## Correzione del progressivo iniziale - 2026-10-10
+
+Autorizzazione esplicita utente allo scambio coordinato degli ID. Scope: registro, titoli visibili e riferimenti; setup ora TSK-0001 (chat creata 1788511326), monitoraggio BGG ora TSK-0002 (1788522536). Aggiornate dipendenze e collegamenti, preservando date, percorsi, descrizioni e titoli storici. Mappa della precedente assegnazione in REGISTRY.json.identity_corrections; nessuna ambiguità risolta con alias globali. Nessun commit/push autorizzato da questa correzione.

@@ -6,8 +6,8 @@ Decisioni deliberate nel brainstorming TSK-0065, 2026-10-05. Riferimento autorev
 
 Raccogliere tutte le immagini disponibili e utili nel perimetro esplorato per riconoscimento visivo, estetica e comprensione pratica del gioco. La selezione per l'app avviene dopo la raccolta; non limitare la raccolta a tre immagini.
 
-- BGG: task `YYYY-MM-DD - IMG - NOME CONTEST AAAA`, un solo contest e anno, incrementi per uno o più giochi esplicitamente inclusi. Ammesso un singolo gioco senza completare tutto il contest.
-- Kanare: task `YYYY-MM-DD - IMG - Kanare Abstract`, con giochi esplicitamente inclusi.
+- BGG: task `Txxxx-AA.MM.GG - IMG - NOME CONTEST AAAA`, un solo contest e anno, incrementi per uno o più giochi esplicitamente inclusi. Ammesso un singolo gioco senza completare tutto il contest.
+- Kanare: task `Txxxx-AA.MM.GG - IMG - Kanare Abstract`, con giochi esplicitamente inclusi.
 - Fonti future: definire il contratto e l'unità di lavoro dopo valutazione della specifica fonte; il modello Kanare non è generalizzato.
 - IMG è autonomo rispetto ai cinque workflow BGG esistenti: non estende roster annuali, MAT, ACQ o monitoraggi. I PNG stampabili come materiali originali restano ACQ; ritagli/catalogazione visiva dei componenti appartengono a IMG.
 - Non scaricare nuovi manuali o pacchetti PnP per aggirare ACQ: estrarre da materiali già acquisiti nel perimetro o collegare un successivo task ACQ autorizzato.

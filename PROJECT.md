@@ -50,11 +50,11 @@ Le attività BGG di censimento, materiali e monitoraggio appartengono a uno solo
 
 | Tipo standard | Unità di lavoro | Contenuto | Esclusioni obbligatorie | Titolo del task |
 |---|---|---|---|---|
-| **Censimento globale contest** | Tutti gli anni | Identità del contest, serie, anno, stato originale e normalizzato, fonte BGG e data | Entry, WIP, risorse, materiali e download | `YYYY-MM-DD - BGG-G - Censimento globale contest PnP BGG` |
-| **Censimento annuale entry** | Un solo anno | Contest dell'anno e roster completo delle entry: titolo, autore, stato, posizione, URL e appartenenza | Lettura dei WIP, censimento di risorse o requisiti materiali, verifica degli host e download | `YYYY-MM-DD - BGG-A - Esplorazione contest BGG AAAA` |
-| **Analisi materiali del contest** | Un solo contest | WIP delle entry, collegamenti dichiarati, risorse e requisiti materiali osservabili nel perimetro stabilito | Apertura o verifica degli host esterni, download e lavoro su altri contest | `YYYY-MM-DD - MAT - Analisi materiali - NOME CONTEST AAAA` |
-| **Acquisizione materiali del contest** | Un solo contest | Selezione delle entry, verifica di liceità e condizioni, controllo degli host, download, manifest, hash e versioni | Acquisizioni trasversali a più contest o a un'intera annualità | `YYYY-MM-DD - ACQ - Acquisizione materiali - NOME CONTEST AAAA` |
-| **Monitoraggio del contest** | Un solo contest | Snapshot periodico di stato, fasi, roster e metriche secondo il calendario | Nuovo censimento storico, analisi dei materiali e download | `YYYY-MM-DD - BGG-M - Monitoraggio - NOME CONTEST AAAA` |
+| **Censimento globale contest** | Tutti gli anni | Identità del contest, serie, anno, stato originale e normalizzato, fonte BGG e data | Entry, WIP, risorse, materiali e download | `Txxxx-AA.MM.GG - BGG-G - Contest PnP BGG` |
+| **Censimento annuale entry** | Un solo anno | Contest dell'anno e roster completo delle entry: titolo, autore, stato, posizione, URL e appartenenza | Lettura dei WIP, censimento di risorse o requisiti materiali, verifica degli host e download | `Txxxx-AA.MM.GG - BGG-A - Contest BGG AAAA` |
+| **Analisi materiali del contest** | Un solo contest | WIP delle entry, collegamenti dichiarati, risorse e requisiti materiali osservabili nel perimetro stabilito | Apertura o verifica degli host esterni, download e lavoro su altri contest | `Txxxx-AA.MM.GG - MAT - NOME CONTEST AAAA` |
+| **Acquisizione materiali del contest** | Un solo contest | Selezione delle entry, verifica di liceità e condizioni, controllo degli host, download, manifest, hash e versioni | Acquisizioni trasversali a più contest o a un'intera annualità | `Txxxx-AA.MM.GG - ACQ - NOME CONTEST AAAA` |
+| **Monitoraggio del contest** | Un solo contest | Snapshot periodico di stato, fasi, roster e metriche secondo il calendario | Nuovo censimento storico, analisi dei materiali e download | `Txxxx-AA.MM.GG - BGG-M - NOME CONTEST AAAA` |
 
 Il passaggio normale è: censimento globale → censimento annuale delle entry → analisi materiali per singolo contest → acquisizione per lo stesso singolo contest. Il monitoraggio è un flusso ricorrente parallelo, attivato dal calendario per i contest che lo richiedono. L'acquisizione non è automatica dopo l'analisi: richiede selezione esplicita e verifica delle condizioni applicabili.
 

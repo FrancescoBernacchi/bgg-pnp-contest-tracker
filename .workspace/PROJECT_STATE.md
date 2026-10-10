@@ -21,6 +21,12 @@ Il repository GitHub privato `FrancescoBernacchi/bgg-pnp-contest-tracker` conser
 
 ## Storico migrazioni
 
+- 2026-10-10: TSK-0044, nuova convenzione dei titoli visibili `Txxxx-AA.MM.GG - CODICE - descrizione`, retroattiva per tutte le chat del progetto su autorizzazione esplicita. ID stabili nel registro, descrizioni e percorsi storici preservati; governance locale, PWS 1.5.0 invariato.
+
+- 2026-10-04: su richiesta esplicita, applicata retroattivamente la nuova convenzione ai titoli visibili di tutte le 38 chat con contenuto osservate nel progetto; 36 rinominate, bootstrap e chat corrente già conformi. Eliminati identificativi di segnalazione dai titoli APP; date di apertura delle chat distinte dalle date degli incrementi locali. Storico prima/dopo registrato, percorsi originali invariati, nessuna modifica PWS o workflow BGG.
+
+- 2026-10-10: correzione autorizzata TSK-0044: TSK-0001 identifica il setup, TSK-0002 il monitoraggio BGG. Scambiati riferimenti correnti senza rinominare percorsi; mappa prima/dopo nel registro. PWS 1.5.0 invariato.
+
 - 2026-10-10: criterio APP esplicito dell'utente nel passaggio TSK-0081: gestione dei giochi quanto più uniforme possibile, senza logiche ad hoc per titolo, eventuali differenze per categorie/tipologie. Promosso in PROJECT.md/AGENTS.md e prompt APP; componenti guidati dai dati, giochi nominati come casi di verifica. Nessun refactoring, riclassificazione, modifica schema/app/dati o adozione PWS nuova; aligned_version resta 1.5.0.
 
 - 2026-10-06: TSK-0073 adotta PerGioco per un pilota dopo preanalisi TSK-0072 e richiesta di percorso passo passo. Scelta esplicita utente: includere subito giochi logici, insieme ad astratti/tradizionali e carta e matita. Sistema di regole distinto da schemi/soluzioni, ammissione individuale con regole complete gratuite; perimetro in sources/PERGIOCO-SCOPE.md. CAT distinto da importazioni, app e acquisizioni; database/schema/app invariati. Evoluzione consumer deliberata, PWS resta 1.5.0.

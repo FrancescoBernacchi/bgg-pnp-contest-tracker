@@ -1,0 +1,1163 @@
+{
+  "date": "2026-10-10",
+  "scope": "Chat utente di questo progetto, incluse worktree e archiviate; escluse chat tecniche Guardian e subagent.",
+  "rows": [
+    {
+      "id": "01a06b95-1159-7851-afda-4f5e43bab897",
+      "title": "2026-09-04 - SETUP INIZIALE PROGETTO",
+      "createdAt": 1788511326,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-04 - SETUP INIZIALE PROGETTO",
+      "new_title": "T0001-26.09.04 - SETUP INIZIALE PROGETTO",
+      "primary_task_id": "TSK-0001",
+      "task_ids": [
+        "TSK-0001"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0001-26.09.04 - SETUP INIZIALE PROGETTO"
+    },
+    {
+      "id": "01a06c40-1c75-7b11-ba7e-69287b7704ad",
+      "title": "2026-09-04 - GPR - Monitoraggio BGG e censimento delle entr…",
+      "createdAt": 1788522536,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-04 - GPR - Monitoraggio BGG e censimento delle entr…",
+      "new_title": "T0002-26.09.04 - GPR - Monitoraggio BGG e censimento delle entr…",
+      "primary_task_id": "TSK-0002",
+      "task_ids": [
+        "TSK-0002",
+        "TSK-0017"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0002-26.09.04 - GPR - Monitoraggio BGG e censimento delle…"
+    },
+    {
+      "id": "01a07b22-4a80-77f0-9578-5b7fecd98f54",
+      "title": "2026-09-07 - APP - Applicazione locale contest BGG",
+      "createdAt": 1788772240,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-07 - APP - Applicazione locale contest BGG",
+      "new_title": "T0003-26.09.07 - APP - Applicazione locale contest BGG",
+      "primary_task_id": "TSK-0003",
+      "task_ids": [
+        "TSK-0003"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0003-26.09.07 - APP - Applicazione locale contest BGG"
+    },
+    {
+      "id": "01a07d95-c93c-7ce0-974f-388ab6575672",
+      "title": "2026-10-04 - BGG-A - Censimento entry BGG 2025",
+      "createdAt": 1788813363,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - BGG-A - Censimento entry BGG 2025",
+      "new_title": "T0005-26.10.04 - BGG-A - Censimento entry BGG 2025",
+      "primary_task_id": "TSK-0005",
+      "task_ids": [
+        "TSK-0005"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0005-26.10.04 - BGG-A - Censimento entry BGG 2025"
+    },
+    {
+      "id": "01a08ad0-08ce-7093-96db-52f58cf24b97",
+      "title": "2026-09-10 - APP - Classifiche, risorse e materiali dichiar…",
+      "createdAt": 1789035284,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-10 - APP - Classifiche, risorse e materiali dichiar…",
+      "new_title": "T0007-26.09.10 - APP - Classifiche, risorse e materiali dichiar…",
+      "primary_task_id": "TSK-0007",
+      "task_ids": [
+        "TSK-0007",
+        "TSK-0010",
+        "TSK-0011"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0007-26.09.10 - APP - Classifiche, risorse e materiali dic…"
+    },
+    {
+      "id": "01a08eeb-051b-7351-95a2-1ad3744006b9",
+      "title": "2026-09-11 - MAT - BGG 2025 - Parte 2",
+      "createdAt": 1789104162,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-11 - MAT - BGG 2025 - Parte 2",
+      "new_title": "T0009-26.09.11 - MAT - BGG 2025 - Parte 2",
+      "primary_task_id": "TSK-0009",
+      "task_ids": [
+        "TSK-0009"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0009-26.09.11 - MAT - BGG 2025 - Parte 2"
+    },
+    {
+      "id": "01a08f50-837e-7683-9eb5-5c99216a82bd",
+      "title": "2026-09-11 - INF - Diagnosi sandbox Windows Codex",
+      "createdAt": 1789110813,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-11 - INF - Diagnosi sandbox Windows Codex",
+      "new_title": "T0008-26.09.11 - INF - Diagnosi sandbox Windows Codex",
+      "primary_task_id": "TSK-0008",
+      "task_ids": [
+        "TSK-0008"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0008-26.09.11 - INF - Diagnosi sandbox Windows Codex"
+    },
+    {
+      "id": "01a0a657-3c86-7e62-bc7b-8e7382a232c8",
+      "title": "2026-09-15 - EPR - Cruscotto avanzamento raccolta",
+      "createdAt": 1789499820,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-15 - EPR - Cruscotto avanzamento raccolta",
+      "new_title": "T0013-26.09.15 - EPR - Cruscotto avanzamento raccolta",
+      "primary_task_id": "TSK-0013",
+      "task_ids": [
+        "TSK-0013"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0013-26.09.15 - EPR - Cruscotto avanzamento raccolta"
+    },
+    {
+      "id": "01a0a6f4-0ff6-7e51-a275-e985dab72b54",
+      "title": "2026-09-15 - BGG-G - Contest PnP BGG",
+      "createdAt": 1789507407,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-15 - BGG-G - Contest PnP BGG",
+      "new_title": "T0012-26.09.15 - BGG-G - Contest PnP BGG",
+      "primary_task_id": "TSK-0012",
+      "task_ids": [
+        "TSK-0012"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0012-26.09.15 - BGG-G - Contest PnP BGG"
+    },
+    {
+      "id": "01a0b5ea-e7fb-7d40-83db-2933db1c79d5",
+      "title": "2026-09-18 - APP - Cruscotto navigabile nell'app",
+      "createdAt": 1789758466,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-18 - APP - Cruscotto navigabile nell'app",
+      "new_title": "T0014-26.09.18 - APP - Cruscotto navigabile nell'app",
+      "primary_task_id": "TSK-0014",
+      "task_ids": [
+        "TSK-0014"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0014-26.09.18 - APP - Cruscotto navigabile nell'app"
+    },
+    {
+      "id": "01a0b64a-caa0-7bf0-beca-3653ded478da",
+      "title": "2026-09-18 - BGG-A - Contest BGG 2024",
+      "createdAt": 1789764749,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-18 - BGG-A - Contest BGG 2024",
+      "new_title": "T0015-26.09.18 - BGG-A - Contest BGG 2024",
+      "primary_task_id": "TSK-0015",
+      "task_ids": [
+        "TSK-0015"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0015-26.09.18 - BGG-A - Contest BGG 2024"
+    },
+    {
+      "id": "01a0badc-b3e9-7683-8b3d-d559e6692841",
+      "title": "2026-09-19 - GPR - Pianificazione censimenti annuali BGG",
+      "createdAt": 1789841421,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-19 - GPR - Pianificazione censimenti annuali BGG",
+      "new_title": "T0083-26.09.19 - GPR - Pianificazione censimenti annuali BGG",
+      "primary_task_id": "TSK-0083",
+      "task_ids": [
+        "TSK-0083"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0083-26.09.19 - GPR - Pianificazione censimenti annuali BGG"
+    },
+    {
+      "id": "01a0bea1-43ab-78f1-9abc-bb0fabf6b6cc",
+      "title": "2026-09-20 - EPR - Catalogo giochi multifonte e Kanare Abst…",
+      "createdAt": 1789904634,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-20 - EPR - Catalogo giochi multifonte e Kanare Abst…",
+      "new_title": "T0018-26.09.20 - EPR - Catalogo giochi multifonte e Kanare Abst…",
+      "primary_task_id": "TSK-0018",
+      "task_ids": [
+        "TSK-0018"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0018-26.09.20 - EPR - Catalogo giochi multifonte e Kanare…"
+    },
+    {
+      "id": "01a0c02b-9faa-7c13-a41e-400bed306650",
+      "title": "2026-09-20 - CAT - Censimento Kanare Abstract",
+      "createdAt": 1789930479,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-20 - CAT - Censimento Kanare Abstract",
+      "new_title": "T0019-26.09.20 - CAT - Censimento Kanare Abstract",
+      "primary_task_id": "TSK-0019",
+      "task_ids": [
+        "TSK-0019"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0019-26.09.20 - CAT - Censimento Kanare Abstract"
+    },
+    {
+      "id": "01a0c03e-af3c-77b2-aae5-ac42bfd72f9b",
+      "title": "2026-09-20 - DAT - Modello dati multifonte Kanare Abstract",
+      "createdAt": 1789931728,
+      "cwd": "C:\\Users\\39348\\.codex\\worktrees\\c95f\\Progetto PnP Collection",
+      "previous_title": "2026-09-20 - DAT - Modello dati multifonte Kanare Abstract",
+      "new_title": "T0022-26.09.20 - DAT - Modello dati multifonte Kanare Abstract",
+      "primary_task_id": "TSK-0022",
+      "task_ids": [
+        "TSK-0022"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0022-26.09.20 - DAT - Modello dati multifonte Kanare Abstr…"
+    },
+    {
+      "id": "01a0c05d-c25f-70c2-9278-0c36af799e1a",
+      "title": "2026-09-20 - DAT - Importazione censimento Kanare Abstract",
+      "createdAt": 1789933765,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-20 - DAT - Importazione censimento Kanare Abstract",
+      "new_title": "T0021-26.09.20 - DAT - Importazione censimento Kanare Abstract",
+      "primary_task_id": "TSK-0021",
+      "task_ids": [
+        "TSK-0021"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0021-26.09.20 - DAT - Importazione censimento Kanare Abstr…"
+    },
+    {
+      "id": "01a0c06f-6dda-74c1-897a-b4113ad83434",
+      "title": "2026-09-20 - CAT - Completamento censimento Kanare Abstract",
+      "createdAt": 1789934923,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-20 - CAT - Completamento censimento Kanare Abstract",
+      "new_title": "T0020-26.09.20 - CAT - Completamento censimento Kanare Abstract",
+      "primary_task_id": "TSK-0020",
+      "task_ids": [
+        "TSK-0020"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0020-26.09.20 - CAT - Completamento censimento Kanare Abst…"
+    },
+    {
+      "id": "01a0c3bb-4b94-7ce0-b60b-640046187cd2",
+      "title": "2026-09-21 - VER - Verifica destinazioni Kanare Abstract",
+      "createdAt": 1789990226,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-21 - VER - Verifica destinazioni Kanare Abstract",
+      "new_title": "T0024-26.09.21 - VER - Verifica destinazioni Kanare Abstract",
+      "primary_task_id": "TSK-0024",
+      "task_ids": [
+        "TSK-0024"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0024-26.09.21 - VER - Verifica destinazioni Kanare Abstract"
+    },
+    {
+      "id": "01a0c3d1-0b12-7ab0-bd1a-93b8a86fa688",
+      "title": "2026-09-21 - ACQ - Kanare Abstract",
+      "createdAt": 1789991652,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-09-21 - ACQ - Kanare Abstract",
+      "new_title": "T0023-26.09.21 - ACQ - Kanare Abstract",
+      "primary_task_id": "TSK-0023",
+      "task_ids": [
+        "TSK-0023"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0023-26.09.21 - ACQ - Kanare Abstract"
+    },
+    {
+      "id": "01a0fdff-b006-7d83-8f90-c32d59071fd0",
+      "title": "2026-10-02 - GPR - Quadro Kanare e verifica task Git",
+      "createdAt": 1790967787,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - GPR - Quadro Kanare e verifica task Git",
+      "new_title": "T0084-26.10.02 - GPR - Quadro Kanare e verifica task Git",
+      "primary_task_id": "TSK-0084",
+      "task_ids": [
+        "TSK-0084"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0084-26.10.02 - GPR - Quadro Kanare e verifica task Git"
+    },
+    {
+      "id": "01a0fe0b-7c13-7800-affe-09a7854bf91b",
+      "title": "2026-10-02 - APP - Interfaccia multifonte BGG e Kanare",
+      "createdAt": 1790968560,
+      "cwd": "C:\\Users\\39348\\.codex\\worktrees\\105e\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - APP - Interfaccia multifonte BGG e Kanare",
+      "new_title": "T0027-26.10.02 - APP - Interfaccia multifonte BGG e Kanare",
+      "primary_task_id": "TSK-0027",
+      "task_ids": [
+        "TSK-0027"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0027-26.10.02 - APP - Interfaccia multifonte BGG e Kanare"
+    },
+    {
+      "id": "01a0fe4e-c1c3-7ba1-b171-0ca573381d8b",
+      "title": "2026-10-02 - BGG-G - Contest PnP BGG",
+      "createdAt": 1790972969,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - BGG-G - Contest PnP BGG",
+      "new_title": "T0026-26.10.02 - BGG-G - Contest PnP BGG",
+      "primary_task_id": "TSK-0026",
+      "task_ids": [
+        "TSK-0026"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0026-26.10.02 - BGG-G - Contest PnP BGG"
+    },
+    {
+      "id": "01a0fe6e-0f97-7c22-9d58-9229de53fdf8",
+      "title": "2026-10-02 - BGG-M - Print and Play Wargame Design Contest…",
+      "createdAt": 1790975021,
+      "cwd": "C:\\Users\\39348\\.codex\\worktrees\\3ec2\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - BGG-M - Print and Play Wargame Design Contest…",
+      "new_title": "T0028-26.10.02 - BGG-M - Print and Play Wargame Design Contest…",
+      "primary_task_id": "TSK-0028",
+      "task_ids": [
+        "TSK-0028"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0028-26.10.02 - BGG-M - Print and Play Wargame Design Cont…"
+    },
+    {
+      "id": "01a0fe89-6504-7293-8016-a5f92c9b738c",
+      "title": "2026-10-02 - MAT - Print and Play Wargame Design Contest 20…",
+      "createdAt": 1790976812,
+      "cwd": "C:\\Users\\39348\\.codex\\worktrees\\17df\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - MAT - Print and Play Wargame Design Contest 20…",
+      "new_title": "T0025-26.10.02 - MAT - Print and Play Wargame Design Contest 20…",
+      "primary_task_id": "TSK-0025",
+      "task_ids": [
+        "TSK-0025"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0025-26.10.02 - MAT - Print and Play Wargame Design Contes…"
+    },
+    {
+      "id": "01a0fea0-9fd8-7b11-b96d-f67b02e096e0",
+      "title": "2026-10-02 - ACQ - Print and Play Wargame Design Contest 20…",
+      "createdAt": 1790978334,
+      "cwd": "C:\\Users\\39348\\.codex\\worktrees\\52fb\\Progetto PnP Collection",
+      "previous_title": "2026-10-02 - ACQ - Print and Play Wargame Design Contest 20…",
+      "new_title": "T0043-26.10.02 - ACQ - Print and Play Wargame Design Contest 20…",
+      "primary_task_id": "TSK-0043",
+      "task_ids": [
+        "TSK-0043"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0043-26.10.02 - ACQ - Print and Play Wargame Design Contes…"
+    },
+    {
+      "id": "01a101eb-5b91-7391-a69b-52d79200f97c",
+      "title": "2026-10-03 - ACQ - Children & Family Game Design Contest 20…",
+      "createdAt": 1791033564,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - ACQ - Children & Family Game Design Contest 20…",
+      "new_title": "T0029-26.10.03 - ACQ - Children & Family Game Design Contest 20…",
+      "primary_task_id": "TSK-0029",
+      "task_ids": [
+        "TSK-0029"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0029-26.10.03 - ACQ - Children & Family Game Design Contes…"
+    },
+    {
+      "id": "01a1024b-ac6d-7820-b8a9-61a7685c05f6",
+      "title": "2026-10-03 - APP - Libreria locale e visualizzatore PDF nel…",
+      "createdAt": 1791039876,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Libreria locale e visualizzatore PDF nel…",
+      "new_title": "T0034-26.10.03 - APP - Libreria locale e visualizzatore PDF nel…",
+      "primary_task_id": "TSK-0034",
+      "task_ids": [
+        "TSK-0034",
+        "TSK-0040"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0034-26.10.03 - APP - Libreria locale e visualizzatore PDF…"
+    },
+    {
+      "id": "01a102a0-7d5d-7512-b941-cf5d97355bbc",
+      "title": "2026-10-03 - ACQ - Roll & Write 2025",
+      "createdAt": 1791045434,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - ACQ - Roll & Write 2025",
+      "new_title": "T0030-26.10.03 - ACQ - Roll & Write 2025",
+      "primary_task_id": "TSK-0030",
+      "task_ids": [
+        "TSK-0030"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0030-26.10.03 - ACQ - Roll & Write 2025"
+    },
+    {
+      "id": "01a102d7-a847-74d2-87c3-87047cb3cfb7",
+      "title": "2026-10-03 - GPR - Registro segnalazioni app",
+      "createdAt": 1791049050,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - GPR - Registro segnalazioni app",
+      "new_title": "T0036-26.10.03 - GPR - Registro segnalazioni app",
+      "primary_task_id": "TSK-0036",
+      "task_ids": [
+        "TSK-0036"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0036-26.10.03 - GPR - Registro segnalazioni app"
+    },
+    {
+      "id": "01a102ed-b758-7a23-8b5f-761ace914d95",
+      "title": "2026-10-03 - FON - Ricerca e valutazione fonti con regolame…",
+      "createdAt": 1791050495,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - FON - Ricerca e valutazione fonti con regolame…",
+      "new_title": "T0037-26.10.03 - FON - Ricerca e valutazione fonti con regolame…",
+      "primary_task_id": "TSK-0037",
+      "task_ids": [
+        "TSK-0037",
+        "TSK-0039"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0037-26.10.03 - FON - Ricerca e valutazione fonti con rego…"
+    },
+    {
+      "id": "01a1036f-3e33-72d2-b79e-88a37edb8aa8",
+      "title": "2026-10-03 - APP - Categorie classifiche per contest",
+      "createdAt": 1791058984,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Categorie classifiche per contest",
+      "new_title": "T0031-26.10.03 - APP - Categorie classifiche per contest",
+      "primary_task_id": "TSK-0031",
+      "task_ids": [
+        "TSK-0031"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0031-26.10.03 - APP - Categorie classifiche per contest"
+    },
+    {
+      "id": "01a1037b-5682-7f42-b876-838eb2aad3d5",
+      "title": "2026-10-03 - APP - Layout PDF per orientamento",
+      "createdAt": 1791059777,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Layout PDF per orientamento",
+      "new_title": "T0033-26.10.03 - APP - Layout PDF per orientamento",
+      "primary_task_id": "TSK-0033",
+      "task_ids": [
+        "TSK-0033"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0033-26.10.03 - APP - Layout PDF per orientamento"
+    },
+    {
+      "id": "01a10389-9300-7bf3-9e09-9adc454addfe",
+      "title": "2026-10-03 - APP - Contatore giochi Kanare",
+      "createdAt": 1791060710,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Contatore giochi Kanare",
+      "new_title": "T0032-26.10.03 - APP - Contatore giochi Kanare",
+      "primary_task_id": "TSK-0032",
+      "task_ids": [
+        "TSK-0032"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0032-26.10.03 - APP - Contatore giochi Kanare"
+    },
+    {
+      "id": "01a10398-d92f-7811-9575-ed5e1877005f",
+      "title": "2026-10-03 - APP - Righe compatte avanzamento BGG",
+      "createdAt": 1791061711,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Righe compatte avanzamento BGG",
+      "new_title": "T0038-26.10.03 - APP - Righe compatte avanzamento BGG",
+      "primary_task_id": "TSK-0038",
+      "task_ids": [
+        "TSK-0038"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0038-26.10.03 - APP - Righe compatte avanzamento BGG"
+    },
+    {
+      "id": "01a103a6-980b-71d1-b906-ddb28e52e706",
+      "title": "2026-10-03 - APP - Libreria per gioco e visualizzatori",
+      "createdAt": 1791062611,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Libreria per gioco e visualizzatori",
+      "new_title": "T0035-26.10.03 - APP - Libreria per gioco e visualizzatori",
+      "primary_task_id": "TSK-0035",
+      "task_ids": [
+        "TSK-0035"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0035-26.10.03 - APP - Libreria per gioco e visualizzatori"
+    },
+    {
+      "id": "01a103c7-ec7f-7381-98c6-2932219aae67",
+      "title": "2026-10-03 - APP - Contenuti e varianti Libreria",
+      "createdAt": 1791064796,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-03 - APP - Contenuti e varianti Libreria",
+      "new_title": "T0041-26.10.03 - APP - Contenuti e varianti Libreria",
+      "primary_task_id": "TSK-0041",
+      "task_ids": [
+        "TSK-0041"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0041-26.10.03 - APP - Contenuti e varianti Libreria"
+    },
+    {
+      "id": "01a105d1-1915-75a0-810d-953805cb494c",
+      "title": "2026-10-04 - APP - Formattazione DOCX",
+      "createdAt": 1791098952,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - APP - Formattazione DOCX",
+      "new_title": "T0042-26.10.04 - APP - Formattazione DOCX",
+      "primary_task_id": "TSK-0042",
+      "task_ids": [
+        "TSK-0042"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0042-26.10.04 - APP - Formattazione DOCX"
+    },
+    {
+      "id": "01a1060d-0dda-7502-a3a3-060718e19f51",
+      "title": "2026-10-04 - GPR - Monitoraggio e classificazione dei task",
+      "createdAt": 1791102881,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - GPR - Monitoraggio e classificazione dei task",
+      "new_title": "T0044-26.10.04 - GPR - Monitoraggio e classificazione dei task",
+      "primary_task_id": "TSK-0044",
+      "task_ids": [
+        "TSK-0044"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0044-26.10.04 - GPR - Monitoraggio e classificazione dei t…"
+    },
+    {
+      "id": "01a10694-e681-7d93-9cbb-53cdbe34464f",
+      "title": "2026-10-04 - BGG-A - Classifiche BGG 2025",
+      "createdAt": 1791111784,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - BGG-A - Classifiche BGG 2025",
+      "new_title": "T0045-26.10.04 - BGG-A - Classifiche BGG 2025",
+      "primary_task_id": "TSK-0045",
+      "task_ids": [
+        "TSK-0045"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0045-26.10.04 - BGG-A - Classifiche BGG 2025"
+    },
+    {
+      "id": "01a1069c-78b1-7042-bfad-2bd049fb50bd",
+      "title": "2026-10-04 - BGG-A - Contest BGG 2024",
+      "createdAt": 1791112280,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - BGG-A - Contest BGG 2024",
+      "new_title": "T0015-26.10.04 - BGG-A - Contest BGG 2024",
+      "primary_task_id": "TSK-0015",
+      "task_ids": [
+        "TSK-0015"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0015-26.10.04 - BGG-A - Contest BGG 2024"
+    },
+    {
+      "id": "01a106c3-8e8e-7c20-b431-764b602a28c7",
+      "title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
+      "createdAt": 1791114841,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - BGG-A - Classifiche BGG 2024",
+      "new_title": "T0046-26.10.04 - BGG-A - Classifiche BGG 2024",
+      "primary_task_id": "TSK-0046",
+      "task_ids": [
+        "TSK-0046"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0046-26.10.04 - BGG-A - Classifiche BGG 2024"
+    },
+    {
+      "id": "01a106e7-0978-7b20-a795-ab8654dbea44",
+      "title": "2026-10-04 - APP - Barre di completamento del lavoro",
+      "createdAt": 1791117166,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - APP - Barre di completamento del lavoro",
+      "new_title": "T0047-26.10.04 - APP - Barre di completamento del lavoro",
+      "primary_task_id": "TSK-0047",
+      "task_ids": [
+        "TSK-0047"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0047-26.10.04 - APP - Barre di completamento del lavoro"
+    },
+    {
+      "id": "01a1071a-deb4-7e41-95b6-a65ad1c0654e",
+      "title": "2026-10-04 - GPR - Gestione delle skill di progetto",
+      "createdAt": 1791120564,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - GPR - Gestione delle skill di progetto",
+      "new_title": "T0048-26.10.04 - GPR - Gestione delle skill di progetto",
+      "primary_task_id": "TSK-0048",
+      "task_ids": [
+        "TSK-0048"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0048-26.10.04 - GPR - Gestione delle skill di progetto"
+    },
+    {
+      "id": "01a10732-528a-74e3-8085-b209678159c5",
+      "title": "2026-10-04 - APP - Schede annuali compatte e righe espandib…",
+      "createdAt": 1791122100,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - APP - Schede annuali compatte e righe espandib…",
+      "new_title": "T0049-26.10.04 - APP - Schede annuali compatte e righe espandib…",
+      "primary_task_id": "TSK-0049",
+      "task_ids": [
+        "TSK-0049"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0049-26.10.04 - APP - Schede annuali compatte e righe espa…"
+    },
+    {
+      "id": "01a107ad-0e3b-72c3-9b45-6c4fb03e5971",
+      "title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
+      "createdAt": 1791130144,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - APP - Colori coerenti degli avanzamenti",
+      "new_title": "T0050-26.10.04 - APP - Colori coerenti degli avanzamenti",
+      "primary_task_id": "TSK-0050",
+      "task_ids": [
+        "TSK-0050"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0050-26.10.04 - APP - Colori coerenti degli avanzamenti"
+    },
+    {
+      "id": "01a10824-ae7a-7761-854f-8fa1d95576d4",
+      "title": "2026-10-04 - MAT - 9-Card Nanogame 2025",
+      "createdAt": 1791137984,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - MAT - 9-Card Nanogame 2025",
+      "new_title": "T0051-26.10.04 - MAT - 9-Card Nanogame 2025",
+      "primary_task_id": "TSK-0051",
+      "task_ids": [
+        "TSK-0051"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0051-26.10.04 - MAT - 9-Card Nanogame 2025"
+    },
+    {
+      "id": "01a10868-8a8c-7361-bc56-0e1198290528",
+      "title": "2026-10-04 - EPR - Fasi dei contest e approfondimento WIP",
+      "createdAt": 1791142431,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - EPR - Fasi dei contest e approfondimento WIP",
+      "new_title": "T0052-26.10.04 - EPR - Fasi dei contest e approfondimento WIP",
+      "primary_task_id": "TSK-0052",
+      "task_ids": [
+        "TSK-0052"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0052-26.10.04 - EPR - Fasi dei contest e approfondimento W…"
+    },
+    {
+      "id": "01a10ad4-27e9-7ad3-a5a0-3a8a5843fd4c",
+      "title": "2026-10-05 - MAT - 54-Card Game Design Contest 2025",
+      "createdAt": 1791183038,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 54-Card Game Design Contest 2025",
+      "new_title": "T0053-26.10.05 - MAT - 54-Card Game Design Contest 2025",
+      "primary_task_id": "TSK-0053",
+      "task_ids": [
+        "TSK-0053"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0053-26.10.05 - MAT - 54-Card Game Design Contest 2025"
+    },
+    {
+      "id": "01a10ae7-edd6-7071-8103-6cd960ad49b1",
+      "title": "2026-10-05 - MAT - Solitaire Print and Play Contest 2025",
+      "createdAt": 1791184334,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - Solitaire Print and Play Contest 2025",
+      "new_title": "T0054-26.10.05 - MAT - Solitaire Print and Play Contest 2025",
+      "primary_task_id": "TSK-0054",
+      "task_ids": [
+        "TSK-0054"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0054-26.10.05 - MAT - Solitaire Print and Play Contest 2025"
+    },
+    {
+      "id": "01a10b57-4d7f-74d1-a712-70ccab94080b",
+      "title": "2026-10-05 - MAT - Traditional Deck Game Design Contest 2025",
+      "createdAt": 1791191633,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - Traditional Deck Game Design Contest 2025",
+      "new_title": "T0055-26.10.05 - MAT - Traditional Deck Game Design Contest 2025",
+      "primary_task_id": "TSK-0055",
+      "task_ids": [
+        "TSK-0055"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "prefix_verified",
+      "verified_title": "T0055-26.10.05 - MAT - Traditional Deck Game Design Contest…"
+    },
+    {
+      "id": "01a10b6d-e52c-71e3-8b7a-fabfc3ef5559",
+      "title": "2026-10-05 - MAT - Two-Player Print and Play Game Design Co…",
+      "createdAt": 1791193113,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - Two-Player Print and Play Game Design Co…",
+      "new_title": "T0056-26.10.05 - MAT - Two-Player Print and Play Game Design Co…",
+      "primary_task_id": "TSK-0056",
+      "task_ids": [
+        "TSK-0056"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0056-26.10.05 - MAT - Two-Player Print and Play Game Desig…"
+    },
+    {
+      "id": "01a10b8d-8cb1-7112-9d89-dafc1cd2c803",
+      "title": "2026-10-05 - MAT - Wargame Print and Play Design Contest 20…",
+      "createdAt": 1791195188,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - Wargame Print and Play Design Contest 20…",
+      "new_title": "T0057-26.10.05 - MAT - Wargame Print and Play Design Contest 20…",
+      "primary_task_id": "TSK-0057",
+      "task_ids": [
+        "TSK-0057"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0057-26.10.05 - MAT - Wargame Print and Play Design Contes…"
+    },
+    {
+      "id": "01a10c1a-f886-7ce2-a2b9-721f51bb0ebe",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge GUARD 2025",
+      "createdAt": 1791204456,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge GUARD 2025",
+      "new_title": "T0058-26.10.05 - MAT - 24 Hour Design Challenge GUARD 2025",
+      "primary_task_id": "TSK-0058",
+      "task_ids": [
+        "TSK-0058"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0058-26.10.05 - MAT - 24 Hour Design Challenge GUARD 2025"
+    },
+    {
+      "id": "01a10c23-c0df-7ec3-9b0d-75476489e72a",
+      "title": "2026-10-05 - GPR - Challenge 24h 2025, GitHub pubblico e di…",
+      "createdAt": 1791205032,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - GPR - Challenge 24h 2025, GitHub pubblico e di…",
+      "new_title": "T0059-26.10.05 - GPR - Challenge 24h 2025, GitHub pubblico e di…",
+      "primary_task_id": "TSK-0059",
+      "task_ids": [
+        "TSK-0059",
+        "TSK-0066"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0059-26.10.05 - GPR - Challenge 24h 2025, GitHub pubblico…"
+    },
+    {
+      "id": "01a10c28-4ecb-7821-81ee-f2f1bc1a8511",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge GREEN 2025",
+      "createdAt": 1791205330,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge GREEN 2025",
+      "new_title": "T0061-26.10.05 - MAT - 24 Hour Design Challenge GREEN 2025",
+      "primary_task_id": "TSK-0061",
+      "task_ids": [
+        "TSK-0061"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0061-26.10.05 - MAT - 24 Hour Design Challenge GREEN 2025"
+    },
+    {
+      "id": "01a10c28-7a2d-7e70-985a-168461ffb5b3",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge PAD 2025",
+      "createdAt": 1791205341,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge PAD 2025",
+      "new_title": "T0062-26.10.05 - MAT - 24 Hour Design Challenge PAD 2025",
+      "primary_task_id": "TSK-0062",
+      "task_ids": [
+        "TSK-0062"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0062-26.10.05 - MAT - 24 Hour Design Challenge PAD 2025"
+    },
+    {
+      "id": "01a10c28-a297-75e0-bc9f-93baf93dd31e",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge PATCH 2025",
+      "createdAt": 1791205352,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge PATCH 2025",
+      "new_title": "T0063-26.10.05 - MAT - 24 Hour Design Challenge PATCH 2025",
+      "primary_task_id": "TSK-0063",
+      "task_ids": [
+        "TSK-0063"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0063-26.10.05 - MAT - 24 Hour Design Challenge PATCH 2025"
+    },
+    {
+      "id": "01a10c28-c9e5-7e01-ba24-9f8763ff6d03",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge ANKS 2025",
+      "createdAt": 1791205362,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge ANKS 2025",
+      "new_title": "T0064-26.10.05 - MAT - 24 Hour Design Challenge ANKS 2025",
+      "primary_task_id": "TSK-0064",
+      "task_ids": [
+        "TSK-0064"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0064-26.10.05 - MAT - 24 Hour Design Challenge ANKS 2025"
+    },
+    {
+      "id": "01a10c29-46b5-7680-88be-77004f94c855",
+      "title": "2026-10-05 - MAT - 24 Hour Design Challenge REVEAL 2025",
+      "createdAt": 1791205394,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - MAT - 24 Hour Design Challenge REVEAL 2025",
+      "new_title": "T0060-26.10.05 - MAT - 24 Hour Design Challenge REVEAL 2025",
+      "primary_task_id": "TSK-0060",
+      "task_ids": [
+        "TSK-0060"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0060-26.10.05 - MAT - 24 Hour Design Challenge REVEAL 2025"
+    },
+    {
+      "id": "01a10c2b-114b-7b90-9dda-2955446e7f05",
+      "title": "2026-10-05 - EPR - Immagini dei giochi e integrazione nell'…",
+      "createdAt": 1791205511,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - EPR - Immagini dei giochi e integrazione nell'…",
+      "new_title": "T0065-26.10.05 - EPR - Immagini dei giochi e integrazione nell'…",
+      "primary_task_id": "TSK-0065",
+      "task_ids": [
+        "TSK-0065"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0065-26.10.05 - EPR - Immagini dei giochi e integrazione n…"
+    },
+    {
+      "id": "01a10c8a-b153-7fb3-8242-cebea9edb44a",
+      "title": "2026-10-05 - APP - Catalogazione e consultazione immagini d…",
+      "createdAt": 1791211778,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - APP - Catalogazione e consultazione immagini d…",
+      "new_title": "T0067-26.10.05 - APP - Catalogazione e consultazione immagini d…",
+      "primary_task_id": "TSK-0067",
+      "task_ids": [
+        "TSK-0067"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0067-26.10.05 - APP - Catalogazione e consultazione immagi…"
+    },
+    {
+      "id": "01a10d9f-971a-7480-bb69-0275f65463bb",
+      "title": "2026-10-05 - IMG - Children & Family Game Design Contest 20…",
+      "createdAt": 1791229925,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - IMG - Children & Family Game Design Contest 20…",
+      "new_title": "T0068-26.10.05 - IMG - Children & Family Game Design Contest 20…",
+      "primary_task_id": "TSK-0068",
+      "task_ids": [
+        "TSK-0068"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0068-26.10.05 - IMG - Children & Family Game Design Contes…"
+    },
+    {
+      "id": "01a10da4-4938-7b03-8d90-1553e989f89a",
+      "title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento…",
+      "createdAt": 1791230233,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-05 - EPR - Verifica dell’efficacia e miglioramento…",
+      "new_title": "T0069-26.10.05 - EPR - Verifica dell’efficacia e miglioramento…",
+      "primary_task_id": "TSK-0069",
+      "task_ids": [
+        "TSK-0069"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0069-26.10.05 - EPR - Verifica dell’efficacia e migliorame…"
+    },
+    {
+      "id": "01a1129f-6d87-7a83-b487-90746ab89813",
+      "title": "2026-10-06 - MAT - Kanare Abstract",
+      "createdAt": 1791313800,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - MAT - Kanare Abstract",
+      "new_title": "T0070-26.10.06 - MAT - Kanare Abstract",
+      "primary_task_id": "TSK-0070",
+      "task_ids": [
+        "TSK-0070"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0070-26.10.06 - MAT - Kanare Abstract"
+    },
+    {
+      "id": "01a112a2-b03e-73e2-9d95-4365caa3e5e1",
+      "title": "2026-10-06 - APP - Avanzamento multifonte BGG e Kanare",
+      "createdAt": 1791314014,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - APP - Avanzamento multifonte BGG e Kanare",
+      "new_title": "T0071-26.10.06 - APP - Avanzamento multifonte BGG e Kanare",
+      "primary_task_id": "TSK-0071",
+      "task_ids": [
+        "TSK-0071"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0071-26.10.06 - APP - Avanzamento multifonte BGG e Kanare"
+    },
+    {
+      "id": "01a112a8-cda7-79e2-8d36-d8fb6cc59cea",
+      "title": "2026-10-06 - EPR - Preanalisi e adozione PerGioco",
+      "createdAt": 1791314415,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - EPR - Preanalisi e adozione PerGioco",
+      "new_title": "T0073-26.10.06 - EPR - Preanalisi e adozione PerGioco",
+      "primary_task_id": "TSK-0073",
+      "task_ids": [
+        "TSK-0072",
+        "TSK-0073",
+        "TSK-0074"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0073-26.10.06 - EPR - Preanalisi e adozione PerGioco"
+    },
+    {
+      "id": "01a112d6-cd21-7202-aaac-3fb038838d78",
+      "title": "2026-10-06 - CAT - Pilota PerGioco",
+      "createdAt": 1791317429,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - CAT - Pilota PerGioco",
+      "new_title": "T0074-26.10.06 - CAT - Pilota PerGioco",
+      "primary_task_id": "TSK-0074",
+      "task_ids": [
+        "TSK-0074"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0074-26.10.06 - CAT - Pilota PerGioco"
+    },
+    {
+      "id": "01a112e4-6a22-75b2-8a7f-ed6e6f11bdd3",
+      "title": "2026-10-06 - DAT - Preparazione e importazione pilota PerGi…",
+      "createdAt": 1791318321,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - DAT - Preparazione e importazione pilota PerGi…",
+      "new_title": "T0075-26.10.06 - DAT - Preparazione e importazione pilota PerGi…",
+      "primary_task_id": "TSK-0075",
+      "task_ids": [
+        "TSK-0075",
+        "TSK-0078"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0075-26.10.06 - DAT - Preparazione e importazione pilota P…"
+    },
+    {
+      "id": "01a112f5-19f1-74c0-873d-c32a9b043631",
+      "title": "2026-10-06 - DAT - Deliberazione e schema multifonte PerGio…",
+      "createdAt": 1791319415,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - DAT - Deliberazione e schema multifonte PerGio…",
+      "new_title": "T0077-26.10.06 - DAT - Deliberazione e schema multifonte PerGio…",
+      "primary_task_id": "TSK-0077",
+      "task_ids": [
+        "TSK-0077",
+        "TSK-0076"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0077-26.10.06 - DAT - Deliberazione e schema multifonte Pe…"
+    },
+    {
+      "id": "01a11d18-7c7c-7361-a18a-bdc3e81e398d",
+      "title": "2026-10-08 - APP - Integrazione completa PerGioco",
+      "createdAt": 1791492443,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-08 - APP - Integrazione completa PerGioco",
+      "new_title": "T0079-26.10.08 - APP - Integrazione completa PerGioco",
+      "primary_task_id": "TSK-0079",
+      "task_ids": [
+        "TSK-0079"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0079-26.10.08 - APP - Integrazione completa PerGioco"
+    },
+    {
+      "id": "01a11d49-b108-7742-a74a-a2353e76da26",
+      "title": "2026-10-08 - CAT - Estensione censimento PerGioco",
+      "createdAt": 1791492731,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-08 - CAT - Estensione censimento PerGioco",
+      "new_title": "T0080-26.10.08 - CAT - Estensione censimento PerGioco",
+      "primary_task_id": "TSK-0080",
+      "task_ids": [
+        "TSK-0080"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0080-26.10.08 - CAT - Estensione censimento PerGioco"
+    },
+    {
+      "id": "01a11d66-fdb7-73f1-9b14-85c0183ff430",
+      "title": "2026-10-08 - DAT - Importazione lotto Carta e matita PerGio…",
+      "createdAt": 1791494651,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-08 - DAT - Importazione lotto Carta e matita PerGio…",
+      "new_title": "T0081-26.10.08 - DAT - Importazione lotto Carta e matita PerGio…",
+      "primary_task_id": "TSK-0081",
+      "task_ids": [
+        "TSK-0081"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0081-26.10.08 - DAT - Importazione lotto Carta e matita Pe…"
+    },
+    {
+      "id": "01a12633-dda7-7ec2-9eac-02eccff3de0b",
+      "title": "2026-10-10 - APP - Consultazione e avanzamento Carta e mati…",
+      "createdAt": 1791642295,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-10 - APP - Consultazione e avanzamento Carta e mati…",
+      "new_title": "T0082-26.10.10 - APP - Consultazione e avanzamento Carta e mati…",
+      "primary_task_id": "TSK-0082",
+      "task_ids": [
+        "TSK-0082"
+      ],
+      "observed_title_may_be_truncated": true,
+      "verification": "prefix_verified",
+      "verified_title": "T0082-26.10.10 - APP - Consultazione e avanzamento Carta e…"
+    },
+    {
+      "id": "01a10878-0a69-75a2-816e-3387836e877f",
+      "title": "2026-10-04 - GPR - Ripresa censimento adiacenti BGG 2024",
+      "createdAt": 1791143447,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - GPR - Ripresa censimento adiacenti BGG 2024",
+      "new_title": "T0085-26.10.04 - GPR - Ripresa censimento adiacenti BGG 2024",
+      "primary_task_id": "TSK-0085",
+      "task_ids": [
+        "TSK-0085"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0085-26.10.04 - GPR - Ripresa censimento adiacenti BGG 2024"
+    },
+    {
+      "id": "01a111c0-8aa5-7ea1-92f8-b0337cbd91e0",
+      "title": "2026-10-06 - GPR - Hub delle chat laterali",
+      "createdAt": 1791299193,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-06 - GPR - Hub delle chat laterali",
+      "new_title": "T0086-26.10.06 - GPR - Hub delle chat laterali",
+      "primary_task_id": "TSK-0086",
+      "task_ids": [
+        "TSK-0086"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0086-26.10.06 - GPR - Hub delle chat laterali"
+    },
+    {
+      "id": "01a1081c-85d8-7893-8ca4-a69aa5c55849",
+      "title": "2026-10-04 - BGG-A - Classifiche adiacenti BGG 2025",
+      "createdAt": 1791137449,
+      "cwd": "C:\\PROGETTI CODEX\\Progetto PnP Collection",
+      "previous_title": "2026-10-04 - BGG-A - Classifiche adiacenti BGG 2025",
+      "new_title": "T0045-26.10.04 - BGG-A - Classifiche adiacenti BGG 2025",
+      "primary_task_id": "TSK-0045",
+      "task_ids": [
+        "TSK-0045"
+      ],
+      "observed_title_may_be_truncated": false,
+      "verification": "exact",
+      "verified_title": "T0045-26.10.04 - BGG-A - Classifiche adiacenti BGG 2025"
+    }
+  ],
+  "result": {
+    "chat_count": 76,
+    "exact": 49,
+    "prefix_verified": 27,
+    "failures": 0,
+    "archived_chat_restored_to_original_state": true
+  }
+}

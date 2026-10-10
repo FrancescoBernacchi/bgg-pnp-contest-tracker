@@ -15,7 +15,7 @@ Riconciliazione tecnica locale APP-008, non rilevamento BGG. Screenshot dell'ute
 
 Il 2026 non viene forzato al 100%: Roll & Write è un contest aggiunto il 2026-10-02 ancora senza roster; Bad Comet conserva la rilevazione selettiva/parziale originaria, non un censimento completo dell'intero contest. Le sei challenge senza roster del 2024 e 2025 rimangono dipendenza. Gli snapshot completi dei contest aperti sono datati: non garantiscono l'assenza di future nuove entry.
 
-Riferimenti roster: TSK-0015 e `sources/2024-CORE-ROSTER-COMPLETION.md` (10 principali; Solomode in TASK.md), TSK-0017 e i check nominali precedenti in TSK-0001; snapshot Wargame post-chiusura TSK-0028. Date originali preservate nelle attestazioni, formalizzazione successiva dichiarata nelle note.
+Riferimenti roster: TSK-0015 e `sources/2024-CORE-ROSTER-COMPLETION.md` (10 principali; Solomode in TASK.md), TSK-0017 e i check nominali precedenti in TSK-0002; snapshot Wargame post-chiusura TSK-0028. Date originali preservate nelle attestazioni, formalizzazione successiva dichiarata nelle note.
 
 Risultati 2026: In-Hand, 9-Card, Children & Family e Solomode hanno baseline di risultati completate e documentate; esiti completi/assenti riferiti esclusivamente alle liste pubblicate censite. Two-Player conserva i podi: 12 osservazioni di entry parziali, senza negativi per le restanti 33. Una prima formalizzazione tecnica di queste 12 entry come complete è stata corretta nello stesso incremento tramite osservazioni successive append-only, senza modificare i risultati storici. Stato `complete` del contest e semplice assenza di rankings non certificano mai da soli la verifica delle classifiche.
 
