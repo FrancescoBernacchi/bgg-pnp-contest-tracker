@@ -252,11 +252,11 @@
       "next_action": "Proseguire sui dieci giochi autorizzati restanti con importazione verificata e controllo app inclusi",
       "git": {
         "checked_at": "2026-10-11",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "incremento_locale",
-        "last_task_document_commit": "dcbb2e6",
-        "evidence": "Commit/push b6f1fcc preservati; successiva decisione di importazione inclusa e importazione operativa 2026-10-11 verificate localmente"
+        "synchronization": "remoto_verificato",
+        "last_task_document_commit": "d63f019",
+        "evidence": "Commit selettivo `d63f019` su main: 13 file/porzioni con decisione importazione inclusa in IMG, manifest operativo adattato, evidenza di importazione e avanzamento 4/27. Push origin/main riuscito; hash server d63f019a4fea29a0878706f820afb69975a6496d verificato, confronto HEAD/origin/main 0/0. Audit dei file selezionati e di tutti i commit in uscita senza rilievi; 299 candidati generali in altre modifiche locali escluse. Immagini/database fuori Git; altre attività preservate. Questa attestazione è salvata nel successivo commit documentale."
       },
       "last_verified_at": "2026-10-11",
       "deliverables": [
