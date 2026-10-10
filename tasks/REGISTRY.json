@@ -323,14 +323,15 @@
       "chat_ids": [
         "01a10c8a-b153-7fb3-8242-cebea9edb44a"
       ],
-      "next_action": "Commit selettivo dei deliverable verificati solo su richiesta. Raccolta IMG successiva autonoma in TSK-0068; generazione AI dalla UI resta evoluzione futura distinta.",
+      "next_action": "Nessun lavoro residuo nel perimetro APP concordato. TSK-0068 prosegue autonomamente; generazione AI dalla UI eventuale evoluzione futura distinta.",
       "git": {
         "checked_at": "2026-10-10",
-        "local_save": "da_committare",
-        "integration": "da_integrare",
-        "synchronization": "allineato_riferimento_locale",
-        "last_task_document_commit": "74f2343",
-        "evidence": "Incrementi e completamenti ancora da committare; nessun commit/push/branch. Modifiche di altri task preservate. Main allineato al riferimento locale origin/main, remoto non verificato."
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "sincronizzato",
+        "last_task_document_commit": "a944081",
+        "evidence": "Commit IMG a944081 su main, 39 file selezionati; push riuscito e hash server a944081b3b260163e24dd75d5f8f3010097a331c verificato, HEAD/origin/main allineati. Altre modifiche locali preservate. Attestazione salvata nel successivo commit documentale.",
+        "last_implementation_commit": "a944081"
       },
       "last_verified_at": "2026-10-10",
       "title_history": [
@@ -348,6 +349,14 @@
           "synchronization": "da_pushare",
           "last_task_document_commit": "74f2343",
           "evidence": "74f2343 salva quattro documenti/sole aggiunte TSK-0067; indice vuoto, main ahead 1 su riferimento locale origin/main, nessun push/remoto verificato. Attestazione post-commit in TASK/registro ancora locale da committare; altre modifiche preservate."
+        },
+        {
+          "checked_at": "2026-10-10",
+          "local_save": "da_committare",
+          "integration": "da_integrare",
+          "synchronization": "allineato_riferimento_locale",
+          "last_task_document_commit": "74f2343",
+          "evidence": "Incrementi e completamenti ancora da committare; nessun commit/push/branch. Modifiche di altri task preservate. Main allineato al riferimento locale origin/main, remoto non verificato."
         }
       ]
     },

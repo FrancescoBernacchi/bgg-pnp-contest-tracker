@@ -2689,3 +2689,7 @@ Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtr
 ## Chiusura TSK-0067 — 2026-10-10
 
 Task completato su richiesta dell’utente dopo il riesame visuale; barra IMG uniformata a 6 pixel e regressione browser desktop/tablet/mobile superata. Persistenza/importazione offline e consultazione immagini, componenti, storico, principale, copertura, filtri e avanzamento consegnati e verificati. Nessun cambio ai conteggi o alle sezioni annuali generate in questa chiusura. TSK-0068 resta aperto e indipendente; generazione AI dalla UI evoluzione futura. Deliverable locali da committare selettivamente su richiesta, nessun commit/push eseguito.
+
+## Commit e push verificati — 2026-10-10
+
+Commit funzionale `a944081` su main: 39 file/porzioni IMG, persistenza/importatore e consultazione/metriche/chiusura TSK-0067. Push origin/main riuscito; hash server `a944081b3b260163e24dd75d5f8f3010097a331c` verificato direttamente, confronto HEAD/origin/main 0 avanti e 0 indietro. 59 test delle versioni selezionate passati su checkout isolato; diff --check e audit candidati/commit in uscita senza rilievi. I 299 rilievi generali rimangono in contenuti preesistenti estranei al commit, non pubblicati in questo incremento. Materiali, database e screenshot esclusi. Modifiche degli altri task preservate localmente. Questa attestazione viene salvata in un successivo commit documentale; task completato, raccolta TSK-0068 autonoma.
