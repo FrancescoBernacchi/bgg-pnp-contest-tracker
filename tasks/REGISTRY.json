@@ -2755,10 +2755,10 @@
       "next_action": "Eventuale APP separato: denominatori lotto Carta e matita e campi assessment_original/usability/qualificazioni/alias delle varianti. Nessun avvio automatico o Git.",
       "git": {
         "checked_at": "2026-10-10",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Incremento locale su main, modifiche precedenti preservate; nessun commit/push autorizzato o eseguito, remoto non ricontrollato."
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit b773c767aabdf4e8401642c0a4e45f71646a9f0b su main; push origin verificato il 2026-10-10. Modifiche estranee preservate."
       },
       "last_verified_at": "2026-10-10",
       "events": [

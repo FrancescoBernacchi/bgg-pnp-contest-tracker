@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-10",
+  "branch": "main",
+  "commit": "b773c767aabdf4e8401642c0a4e45f71646a9f0b",
+  "push_verified": true,
+  "outgoing_commits_reviewed": [
+    "b773c767aabdf4e8401642c0a4e45f71646a9f0b"
+  ],
+  "publication_findings_outgoing": [],
+  "working_tree_baseline_findings": 299,
+  "scope": "TSK-0081 e criterio APP uniforme; modifiche estranee preservate; database, backup e materiali esclusi"
+}

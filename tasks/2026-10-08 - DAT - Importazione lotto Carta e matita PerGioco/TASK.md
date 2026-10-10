@@ -48,3 +48,8 @@ Prossimo approfondimento utile: APP autonomo per includere il lotto Carta e mati
 Ulteriore indicazione esplicita utente: gestione quanto più uniforme possibile, senza logiche ad hoc per singolo gioco, al più per categorie. Registrata in PROJECT.md/AGENTS.md e nel prompt APP: titoli del lotto come casi di accettazione di componenti generici, riusabilità verificata su altri dati, nessun ramo applicativo per nome/URL/ID. Nessuna implementazione o refactoring eseguiti; DAT resta completato.
 
 Su richiesta dell'utente predisposto PROMPT_PROSSIMO_APP.md: incrementi su denominatori dei due lotti e consultazione dei campi contestuali già persistiti, con matrice/test/QA e SQLite RO. Registro ricontrollato: TSK-0079 concluso, TSK-0067 aperto soltanto per immagini e fuori perimetro, nessun APP duplicato osservato. Questo è un allegato di passaggio del DAT completato: nessuna riapertura, nuovo ID, chat o implementazione APP avviati. PWS 1.5.0 allineato, modifiche Git preesistenti preservate; nessuna skill specialistica pertinente alla sola preparazione offline del prompt.
+
+
+## Commit e push — 2026-10-10
+
+Autorizzazione esplicita utente. Commit b773c767aabdf4e8401642c0a4e45f71646a9f0b su main inviato a origin e verificato sul remoto. Revisione dei contenuti di tutti i commit in uscita senza segnalazioni; modifiche locali estranee preservate. Database, backup e materiali esclusi. Evidenza in GIT_VERIFICHE.json.
