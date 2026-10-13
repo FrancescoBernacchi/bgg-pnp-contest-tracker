@@ -1,0 +1,43 @@
+{
+  "task_id": "TSK-0068",
+  "paused_at": "2026-10-13",
+  "reason": "Richiesta esplicita utente: sospendere per riservare crediti ad altra attività",
+  "game_ids": [
+    487,
+    491,
+    493,
+    496,
+    501,
+    506
+  ],
+  "baseline_manifest": "catalog/2025_children_family_images_2026-10-13.json",
+  "baseline_adopted_images": 196,
+  "baseline_physical_files": 221,
+  "baseline_scope_complete": 8,
+  "new_six_imported": false,
+  "local_work_directory": "outputs/img-six-2026-10-13",
+  "completed": [
+    "PWS/sandbox/Git/skill preflight",
+    "38 PDF bytes/hash verificati",
+    "Inventario e render dei PDF sei giochi",
+    "WIP completi sei giochi; osservazioni locali",
+    "Original URL BGG controllati e raccolti, download parziali idempotenti",
+    "TGC e portfolio Slowpoke esplorati, condizioni personali TGC sezione 16 verificate",
+    "Estrazioni native/vector candidate; 95 crop Isles verificati in contact sheet"
+  ],
+  "pending": [
+    "Correggere template Chipmunk in img_six_select_local.py da 27-6-R93 (Grey) a 27-6-R85 (Chipmunk), verificare altri template e quantità; nessun candidato di questo script ancora adottato",
+    "Carte orizzontali Isles nei candidate PNG sono capovolte: rotation -90 va corretta a +90; selected-isles.json non ancora creato. Rerender da sorgente o ruotare i soli derivati di lavoro, non originali",
+    "Non fondere tessere Isles pagine 11/12: due hanno modifiche visibili (Speed Demon/Boggart); Wanted 3 VP e 5 VP sono diversi. Duplicati e occorrenze da riconciliare dopo confronto",
+    "Completare BGG Allmende: 8798094 raccolto; 8842091/8822341/8822340 pendenti. Galleria OneTableGames 41 immagini, 2 Allmende; 8835179 Isles pertinente, 8832313 ICBRG fuori incremento (solo riferimento)",
+    "Squirelly WIP immagini completate; ulteriori pertinenti pagina galleria 72: 8955489 e 8954354/8954353/8954352 da verificare/acquisire. Pagine 1/71/72 osservate; generale 215 pagine non enumerata integralmente",
+    "Slowpoke pagina gioco 438526 collegata da Linktree: galleria 17 immagini enumerate in slowpoke-game-gallery.json; originali ancora da acquisire",
+    "Rerun idempotente img_six_download.py per URL già verificati; external-downloads.json esistente, aggiungere ultima wix-sleepover.json con URL esposto dopo la prima esecuzione",
+    "Verificare token intero Squirrelly 50 occorrenze, dorsi e associazioni; trim delle sole guide stampabili nei raster, preservando componenti e coordinate",
+    "Completare componenti/artwork/icone/diagrammi dai PDF, fonti collegate e residui",
+    "Manifest finale nuovo nome (non sovrascrivere baseline o snapshot importati), prove su copia/backup/replay e importazione inclusa autorizzazione",
+    "Verifica app e copertura, manutenzione skill collaudata con skill-creator, registro/cruscotto/TASK; nessun commit/push autorizzato"
+  ],
+  "scope_exception": "Immagini BGG 8479506/8479508/8479510 scaricate come candidate da titoli generici risultano pagine manuale: escluse da IMG/app, non utilizzarle per estrazioni; conservate come evidenza locale nei soli outputs. Errore già comunicato all’utente. Non acquisire ulteriori manuali/PnP.",
+  "browser_note": "IAB tab 4 BGG, tab 5 fonti esterne, tab 3 app locale 8766. Rileggere documentazione e stato alla ripresa. Usare downloads.json su disco come registro autorevole, non affidarsi a binding REPL mutabili tra chiamate. Helper sixCapture legge registro locale e verifica picID prima di salvarlo."
+}

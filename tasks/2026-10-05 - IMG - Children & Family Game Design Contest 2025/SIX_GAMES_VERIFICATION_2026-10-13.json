@@ -1,0 +1,365 @@
+{
+  "task_id": "TSK-0068",
+  "verified_at": "2026-10-13",
+  "manifest": "catalog/2025_children_family_images_final_2026-10-13.json",
+  "manifest_sha256": "cb023fdbe6ad9a8349da0cca5466061750df2980db82eeaa328933914f1df209",
+  "source_manifest": "catalog/2025_children_family_image_sources_2026-10-05.json",
+  "trial_final": {
+    "manifest_sha256": "57811779d4ae6f0d86f1420e1188ed56469ca0e8b5ffaeac59616ee6a32adc13",
+    "preview": {
+      "outcome": "preview",
+      "import_id": 8,
+      "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+      "rows_added": {
+        "img_imports": 1,
+        "img_files": 5,
+        "img_asset_observations": 12,
+        "img_categories": 12,
+        "img_contexts": 12,
+        "img_provenances": 12,
+        "img_occurrences": 171,
+        "img_relations": 6
+      },
+      "verified_image_files": 766,
+      "verified_documents": 38,
+      "research_complete": 14,
+      "research_partial_or_unknown": 0,
+      "migration_needed": false,
+      "legacy_preserved": true,
+      "conflicts": [],
+      "would_outcome": "imported",
+      "database_written": false
+    },
+    "result": {
+      "outcome": "imported",
+      "import_id": 8,
+      "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+      "rows_added": {
+        "img_imports": 1,
+        "img_files": 5,
+        "img_asset_observations": 12,
+        "img_categories": 12,
+        "img_contexts": 12,
+        "img_provenances": 12,
+        "img_occurrences": 171,
+        "img_relations": 6
+      },
+      "verified_image_files": 766,
+      "verified_documents": 38,
+      "research_complete": 14,
+      "research_partial_or_unknown": 0,
+      "backup_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\trial-final-backups\\014-before-20261013T190815549964-09ea23b2.sqlite3",
+      "backup_sha256": "cb43868c15bb8644bf9911eaa48fe2b17338d231f7b74dfd06f323ea7a3c9541",
+      "restore_proof_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\trial-final-backups\\014-restore-proof-20261013T190815549964-09ea23b2.sqlite3",
+      "restore_matches_backup": true,
+      "database_written": true,
+      "legacy_preserved": true,
+      "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+      "authorization": "TSK-0068 rettifiche QA su copia: dorsi, titolo e coordinate reali gettoni"
+    },
+    "replay": {
+      "outcome": "already_imported",
+      "import_id": 8,
+      "verified_image_files": 766,
+      "verified_documents": 38,
+      "rows_added": {},
+      "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+      "migration_needed": false,
+      "legacy_preserved": true,
+      "conflicts": [],
+      "database_written": false
+    },
+    "baseline_trial_evidence": "Prova iniziale nuova copia e ulteriori osservazioni correttive, vecchi file preservati"
+  },
+  "operational_preview": {
+    "outcome": "preview",
+    "import_id": 7,
+    "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+    "rows_added": {
+      "img_imports": 1,
+      "img_assets": 539,
+      "img_files": 545,
+      "img_asset_observations": 766,
+      "img_categories": 804,
+      "img_contexts": 766,
+      "img_provenances": 1079,
+      "img_occurrences": 1469,
+      "img_regions": 27,
+      "img_region_links": 42,
+      "img_components": 342,
+      "img_component_observations": 454,
+      "img_component_links": 701,
+      "img_relations": 120,
+      "img_research_observations": 6,
+      "img_category_research": 66,
+      "img_primary_selections": 5
+    },
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "research_complete": 14,
+    "research_partial_or_unknown": 0,
+    "migration_needed": false,
+    "legacy_preserved": true,
+    "conflicts": [],
+    "would_outcome": "imported",
+    "database_written": false
+  },
+  "operational_import": {
+    "outcome": "imported",
+    "import_id": 7,
+    "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+    "rows_added": {
+      "img_imports": 1,
+      "img_assets": 539,
+      "img_files": 545,
+      "img_asset_observations": 766,
+      "img_categories": 804,
+      "img_contexts": 766,
+      "img_provenances": 1079,
+      "img_occurrences": 1469,
+      "img_regions": 27,
+      "img_region_links": 42,
+      "img_components": 342,
+      "img_component_observations": 454,
+      "img_component_links": 701,
+      "img_relations": 120,
+      "img_research_observations": 6,
+      "img_category_research": 66,
+      "img_primary_selections": 5
+    },
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "research_complete": 14,
+    "research_partial_or_unknown": 0,
+    "backup_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\operational-final-backups\\014-before-20261013T191427357225-f2656c77.sqlite3",
+    "backup_sha256": "c8639e97839c2841c0403e3f1fe16671853e509dcdfd6178ecfca992997aba5d",
+    "restore_proof_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\operational-final-backups\\014-restore-proof-20261013T191427357225-f2656c77.sqlite3",
+    "restore_matches_backup": true,
+    "database_written": true,
+    "legacy_preserved": true,
+    "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+    "authorization": "TSK-0068 utente: completa ultimi6 giochi e riprendi2026-10-13; importazione/visibilità incluse per decisione2026-10-11"
+  },
+  "replay": {
+    "outcome": "already_imported",
+    "import_id": 7,
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "rows_added": {},
+    "manifest_sha256": "ce9337866c9147a0566a865bf6e545371d53f70386302af3bc858dc7da0f1f77",
+    "migration_needed": false,
+    "legacy_preserved": true,
+    "conflicts": [],
+    "database_written": false
+  },
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "legacy_preserved": true,
+  "new_games_adopted_images": {
+    "487": 100,
+    "491": 71,
+    "493": 113,
+    "496": 100,
+    "501": 64,
+    "506": 43
+  },
+  "current_images_total": 687,
+  "historical_image_files_total": 79,
+  "imported_image_files_verified": 766,
+  "unimported_originals_verified": [
+    {
+      "source_original_id": "SRC-506-8822340",
+      "game_id": 506,
+      "relative_path": "library/immagini/506__Allmende/originali/Allmende__CF-2025__Dettaglio__BGG-Galleria__004__original-v01.png",
+      "format": "PNG",
+      "width": 9848,
+      "height": 7386,
+      "bytes": 43217,
+      "sha256": "33310331256f940528934d5a62b8f6da554ba93c98876e8128ba82b9e304db8d",
+      "source_url": "https://boardgamegeek.com/image/8822340",
+      "asset_url": "https://cf.geekdo-images.com/y7XXAz0xDkbsxlvk5T91VA__original/img/965utXs7_XZCWgg9c7QmjFAVj6I=/0x0/filters:format(png)/pic8822340.png",
+      "acquired_at": "2026-10-13",
+      "import_status": "Originale immutato fuori importazione014: oltre limite40MP; derivato completo importabile collegato",
+      "title": "Allmende",
+      "asset_title": "Schema della griglia opzionale Allmende, originale73MP",
+      "category": "Diagramma",
+      "provenance": [
+        {
+          "label": "BGG-Galleria",
+          "source_url": "https://boardgamegeek.com/image/8822340",
+          "asset_url": "https://cf.geekdo-images.com/y7XXAz0xDkbsxlvk5T91VA__original/img/965utXs7_XZCWgg9c7QmjFAVj6I=/0x0/filters:format(png)/pic8822340.png",
+          "observed_at": "2026-10-13"
+        },
+        {
+          "label": "BGG-WIP",
+          "source_url": "https://boardgamegeek.com/thread/3487174",
+          "observed_at": "2026-10-13",
+          "role": "Fonte a monte direttamente collegata"
+        }
+      ],
+      "credits": [
+        {
+          "name": "Markus H",
+          "role": "Designer",
+          "source_url": "https://boardgamegeek.com/thread/3487174",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "name": "Wildcard Six",
+          "role": "Uploader BGG; fotografo non dedotto",
+          "source_url": "https://boardgamegeek.com/image/8822340",
+          "verified_at": "2026-10-13"
+        }
+      ],
+      "conditions": {
+        "status": "Uso locale privato IMG autorizzato",
+        "source_url": "https://boardgamegeek.com/image/8822340",
+        "checked_at": "2026-10-13",
+        "license": "Diritti riservati salvo indicazione specifica della fonte",
+        "rights_scope": "Consultazione privata ed estrazione fedele; nessuna redistribuzione o input AI",
+        "publication_allowed": false
+      },
+      "immutable_original": true,
+      "app_preview_image_id": "IMG-506-0004",
+      "original_filename": "pic8822340.png"
+    }
+  ],
+  "physical_files_verified": 767,
+  "source_pdf_files_verified": 38,
+  "components": 454,
+  "scope_research_complete": 14,
+  "scope_games": 14,
+  "contest_progress": {
+    "image_complete_count": 14,
+    "image_with_images_count": 14,
+    "image_without_images_count": 0,
+    "image_incomplete_count": 13,
+    "image_original_entry_count": 14,
+    "image_ai_entry_count": 0
+  },
+  "contest_entries": 27,
+  "whole_contest_complete": false,
+  "ui_verified": true,
+  "no_commit_or_push": true,
+  "collection_manifest": "catalog/2025_children_family_images_complete_2026-10-13.json",
+  "metadata_trial": {
+    "outcome": "imported",
+    "import_id": 9,
+    "manifest_sha256": "833e5b5b1a1eb99b973f020ff4b15fe4b913cd6ed54973199490276c68a0e13a",
+    "rows_added": {
+      "img_imports": 1,
+      "img_asset_observations": 3,
+      "img_categories": 3,
+      "img_contexts": 3,
+      "img_provenances": 4,
+      "img_occurrences": 2,
+      "img_component_observations": 10,
+      "img_component_links": 18,
+      "img_research_observations": 5,
+      "img_category_research": 55
+    },
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "research_complete": 14,
+    "research_partial_or_unknown": 0,
+    "backup_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\metadata-trial-backups\\014-before-20261013T202150487518-133f93a3.sqlite3",
+    "backup_sha256": "9d3d404dd42222475ab9a4f093db777b25ffe4c22a23db78f84b2885ff600abb",
+    "restore_proof_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\metadata-trial-backups\\014-restore-proof-20261013T202150487518-133f93a3.sqlite3",
+    "restore_matches_backup": true,
+    "database_written": true,
+    "legacy_preserved": true,
+    "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+    "authorization": "TSK-0068 correzione metadati su copia, nessuna modifica binari"
+  },
+  "metadata_trial_replay": {
+    "outcome": "already_imported",
+    "import_id": 9,
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "rows_added": {},
+    "manifest_sha256": "833e5b5b1a1eb99b973f020ff4b15fe4b913cd6ed54973199490276c68a0e13a",
+    "migration_needed": false,
+    "legacy_preserved": true,
+    "conflicts": [],
+    "database_written": false
+  },
+  "metadata_operational": {
+    "outcome": "imported",
+    "import_id": 8,
+    "manifest_sha256": "833e5b5b1a1eb99b973f020ff4b15fe4b913cd6ed54973199490276c68a0e13a",
+    "rows_added": {
+      "img_imports": 1,
+      "img_asset_observations": 3,
+      "img_categories": 3,
+      "img_contexts": 3,
+      "img_provenances": 4,
+      "img_occurrences": 2,
+      "img_component_observations": 10,
+      "img_component_links": 18,
+      "img_research_observations": 5,
+      "img_category_research": 55
+    },
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "research_complete": 14,
+    "research_partial_or_unknown": 0,
+    "backup_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\metadata-operational-backups\\014-before-20261013T202253237844-404e1969.sqlite3",
+    "backup_sha256": "217bb7cb78f29b3c9ab6f65cd8abacca7e8835eb161ebd3aa5da4a28eaa80772",
+    "restore_proof_path": "C:\\PROGETTI CODEX\\Progetto PnP Collection\\outputs\\img-six-2026-10-13\\metadata-operational-backups\\014-restore-proof-20261013T202253237844-404e1969.sqlite3",
+    "restore_matches_backup": true,
+    "database_written": true,
+    "legacy_preserved": true,
+    "migration_sha256": "c86b7a41011f26abb4259186f1cb5ba3ca8bf2d34a49b24d7167f077fd91bf83",
+    "authorization": "TSK-0068 chiusura sei giochi: metadati non inferiti, importazione inclusa2026-10-11"
+  },
+  "metadata_operational_replay": {
+    "outcome": "already_imported",
+    "import_id": 8,
+    "verified_image_files": 766,
+    "verified_documents": 38,
+    "rows_added": {},
+    "manifest_sha256": "833e5b5b1a1eb99b973f020ff4b15fe4b913cd6ed54973199490276c68a0e13a",
+    "migration_needed": false,
+    "legacy_preserved": true,
+    "conflicts": [],
+    "database_written": false
+  },
+  "ui_verification": {
+    "games": [
+      {
+        "gid": 506,
+        "count": 43
+      },
+      {
+        "gid": 491,
+        "count": 71,
+        "text": "71 adottate · 0 risultati AI fuori dalla raccolta adottata · 1 file nello storico"
+      },
+      {
+        "gid": 493,
+        "count": 113,
+        "text": "113 adottate · 0 risultati AI fuori dalla raccolta adottata · 22 file nello storico"
+      },
+      {
+        "gid": 496,
+        "count": 100,
+        "text": "100 adottate · 0 risultati AI fuori dalla raccolta adottata · 11 file nello storico"
+      },
+      {
+        "gid": 501,
+        "count": 64,
+        "text": "64 adottate · 0 risultati AI fuori dalla raccolta adottata · 8 file nello storico"
+      }
+    ],
+    "good_breeding": {
+      "adopted": 100,
+      "viewer": "Dorso comune v02, PNG777×1071 decodificato, SHA-256 corrispondente"
+    },
+    "contest": "14/27 ricerche concluse con immagini,13 non concluse dopo Rileggi database",
+    "evidence_paths": [
+      "outputs/img-six-2026-10-13/ui-six-checked.json",
+      "outputs/img-six-2026-10-13/ui-good-back-v02.png"
+    ]
+  },
+  "skill_effectiveness": "IMG/BGG/PDF/skill-creator: rettifiche orientamento/bande, occorrenze50 dal render, varianti con testo diverso e metadati non inferiti; riferimenti aggiornati"
+}

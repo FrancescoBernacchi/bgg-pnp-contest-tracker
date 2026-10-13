@@ -1,5 +1,13 @@
 # Estrazione da materiali acquisiti
 
+## Ulteriori prove TSK-0068 — 2026-10-12
+
+Peng Wins e Submarine Adventure: oggetti raster delle carte complete confrontati con tutti i fogli; un dorso comune collega più carte e conserva ogni occorrenza, senza una copia per fronte. Nel manuale Submarine, la conversione iniziale RGBA→RGB perdeva alpha e rendeva nero lo sfondo di dado/pesce/granchio. Il render ricompone correttamente il contesto, ma il successivo controllo ha verificato raster nativi RGBA completi 300×300, preferiti preservando la trasparenza originale. Confrontare oggetto nativo e render; usare il render come fallback se maschere, testo o vettori non sono già composti. Non attribuire all'originale un difetto introdotto dalla conversione.
+
+Panic Picasso: le carte sono testo/vettori, senza oggetti raster; render a 300 DPI e ritaglio entro i confini verificati conservano parole, numeri e bordo. I tre gettoni hanno due facce adiacenti da incollare: un'immagine intera per gettone, regioni Fronte/Retro collegate e quantità fisica uno. I simboli cibo Peng sono crop completi sopra il valore numerico, non frammenti di carta. Geometrie specifiche dei PDF locali, nessuna griglia o DPI universali.
+
+QA nel visualizzatore dei gettoni: un crop leggermente interno alle guide può tranciare lo stroke del cerchio. Confrontare anche bounding box delle curve e spessore del tratto; il confine geometrico della curva non include necessariamente tutto lo stroke. Rettificati i tre gettoni in v02, v01 preservate Superate. Quando una guida coincide con il contorno, privilegiare l'integrità del componente e dichiarare la guida residua anziché asportare il bordo; nessuna pulizia grafica implicita. Verifica nel contesto e ingrandita, non soltanto in miniatura.
+
 Leggi i materiali pertinenti con skill PDF/documenti quando applicabili; gli originali restano immutabili. Non acquisire nuovi pacchetti come scorciatoia per IMG. Mantieni pagine/render di lavoro nei percorsi locali esclusi da Git.
 
 ## Selezione
@@ -34,3 +42,17 @@ Il setup chiarisce che i tre elementi inferiori sono spazi carte del tabellone. 
 ### Compatibilità delle coordinate con l'importatore 014 — TSK-0068, 2026-10-11
 
 Il tabellone Sorry è un oggetto integrale collocato oltre i margini su quattro pagine; pdfplumber restituisce bounding box anche negative. Il validatore 014 richiede rettangoli positivi. Per le occorrenze operative registrare l'intersezione visibile con la pagina in punti, traslata rispetto all'angolo superiore sinistro della MediaBox; preservare separatamente bounding box originale dell'oggetto, bounding box pagina e descrizione del sistema di riferimento. Non attribuire alla regione visibile il significato di oggetto completo. Se occorre un adattamento, conservare il manifest di raccolta immutato e collegare il manifest operativo con SHA-256. Caso verificato su copia e operativo; nessuna modifica del file immagine o cucitura dei fogli.
+
+## Verifiche sei giochi TSK-0068 — 2026-10-13
+
+Enumerare i raster restituiti da pypdf non dimostra che siano tutti visibili: risorse condivise possono essere inutilizzate o coperte da un composito opaco. In Isles PDF14, oggetti delle pagine precedenti/successive erano sotto la pagina finale; estrazioni dal composito visibile, confrontate con tutti i render. Conservare oggetto e coordinate della fonte effettivamente dipinta, senza catalogare livelli nascosti come componenti correnti.
+
+Un raster dipinto può ancora essere soltanto una banda: il logo Squirrelly del PDF29 era suddiviso tra immagini contigue. La prima estrazione R22 era incompleta, rettificata da render intero in v02; il logo BGG completo 3664×1657 resta preferito alla copia render inferiore. Le righe di gettoni PDF28 contengono frammenti sovrapposti di righe adiacenti: 50 facce e bounding box verificate sul render completo, non dal numero di XObject. Il raster nativo scelto contiene un cerchio intero, bordo incluso. Nessuna soglia di segmentazione universale.
+
+L’orientamento del foglio non è l’orientamento di ogni faccia. Good Breeding: i fronti e i dorsi nel gutterfold richiedono rotazioni opposte; cinque dorsi v02 correggono il verso, v01 preservate. Isles: carte orizzontali inizialmente capovolte, orientate contro il testo prima dell’adozione. Verificare separatamente fronti, retro, aiutanti e quantità, anche dopo una rotazione apparentemente uniforme.
+
+Confrontare anche varianti inferiori: Allmende printer-friendly contiene due ruoli con punteggi diversi dal colore. Recuperati come varianti con successione incerta, non esclusi per la sola qualità. In Squirrelly 54/108 sono formati paralleli e alcune carte speciali cambiano testo/simboli; le equivalenze visive verificate mantengono quantità per formato, senza sommare mazzi alternativi. Due tessere Isles p11/p12 hanno modifiche e Wanted 3/5VP sono distinti. Somiglianza, colore e date non provano equivalenza.
+
+Per componenti su due fogli, le plance Robots sono quattro coppie sinistra/destra: ricomposizione di raster interi senza ridisegno, entrambe le pagine/regioni tracciate. Tracker energia e salute usano due carte sovrapposte: non trattarle come fronte e dorso. Collegare le facce dei moltiplicatori soltanto con istruzioni/layout/colore concordanti, non con la sola posizione nella lista.
+
+Un originale PNG della griglia Allmende misura 9848×7386 e supera il limite implementato di40MP. Originale immutato, ID sorgente/metadati/hash nel manifest; anteprima intera ridotta in derivati e importata, relazione al sorgente conservata. Non ridurre l’originale né cambiare schema/app per aggirare un limite: attestare distintamente conservazione del binario e consultabilità del derivato.

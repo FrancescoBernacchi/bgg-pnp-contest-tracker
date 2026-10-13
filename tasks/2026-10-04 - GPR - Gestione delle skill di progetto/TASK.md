@@ -91,3 +91,15 @@ Due giochi aggiuntivi: prove e rettifiche nel TASK.md sorgente. Promossi nei rif
 Decisione utente 2026-10-11: nei prossimi incrementi IMG l’acquisizione autorizza anche importazione verificata nel modello operativo esistente e controllo di galleria/avanzamento nell’app, senza ulteriori conferme. Prove su copia, backup/ripristino, transazione e verifiche restano obbligatori. Nuovi schema/sviluppo APP, materiali ACQ, validazione AI e commit/push mantengono autorizzazioni proprie. Nessuna importazione del lotto già acquisito eseguita in questo incremento decisionale. Workflow, governance, AGENTS e skill IMG aggiornati insieme. Verifica di coerenza dei riferimenti; nessuna nuova prova di importazione dichiarata, procedura operativa già collaudata in TSK-0067. Nessun nuovo commit/push.
 
 Verifica finale CUA 2026-10-11: Avanzamento BGG 2025 → Children & Family mostra 4/27 ricerche concluse con immagini, 23 non concluse (denominatore intero contest); il lotto autorizzato resta 4/14. Skill IMG/riferimento estrazione aggiornati con distinzione bounding box oggetto e porzione visibile, dopo prova su copia e operativo. Anomalia di compatibilità dei metadati, non dei binari; manifest raccolta immutato e adattamento tracciato. Efficacia verificata nei due giochi, nessuna modifica app/schema.
+
+### Prove IMG quattro giochi — TSK-0068, 2026-10-12
+
+Riferimenti IMG aggiornati per maschere composte, render vettoriale, gettoni a due facce, accessi galleria rilevati per sessione, origine AI della fonte distinta da generazione nel task. Evidenze e limiti nel task IMG; otto giochi esplorati, nessuna generalizzazione geometrica. Validazione statica/riferimenti; PyYAML assente come limite del validatore ufficiale preesistente. Root .agents invariata, nessuna manutenzione ACL.
+
+### Rettifica tecnica e verifica efficacia — 2026-10-13
+
+TSK-0068: confronto nativo/render ha individuato perdita alpha nella conversione RGBA→RGB. Aggiornato riferimento estrazione: preferire raster nativo completo con alpha originale; render come fallback per composizione mancante. Gettoni verificati ingranditi con stroke completo e versioni precedenti preservate. Deduplicazione visiva titolo Ice mantiene hash distinti e entrambe provenienze, senza inferire revisione materiale. Efficacia positiva con queste correzioni; nessuna soglia automatica o nuova geometria generalizzata. Root .agents invariata.
+
+## Manutenzione IMG dai sei giochi TSK-0068 — 2026-10-13
+
+Skill-creator applicata a entrypoint/riferimenti IMG: risorse occluse/bande, orientamento per faccia, gettoni dal render, versioni inferiori con contenuto unico, quantità per formato, crediti/didascalie e condizioni per fonte, originali oltre limite app. Prove specifiche in TSK-0068/SIX_GAMES_VERIFICATION_2026-10-13.json,14 giochi; nessuna soglia universale o cambio di contratto/architettura. .agents proprietario utente verificato, radice/ACL invariate; check statico dei riferimenti/frontmatter, PyYAML non disponibile per validatore ufficiale. Efficacia: rilevate e rettificate bande/versi incompleti e metadati di assenza/revisione non attestati. Nessun Git.

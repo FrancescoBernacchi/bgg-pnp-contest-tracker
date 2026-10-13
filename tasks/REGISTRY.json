@@ -212,33 +212,37 @@
       "mode": "circoscritto",
       "cadence": "su_richiesta",
       "source_summary": "Primo lotto IMG autorizzato: 14 giochi con materiali acquisiti",
-      "status": "in_corso",
-      "status_basis": "Quattro giochi verificati nel perimetro osservabile con limiti; altri dieci aperti",
+      "status": "sospeso",
+      "status_basis": "Decisione utente 2026-10-13: lotto 14/14 concluso; estensione ai restanti 13 sospesa in attesa ACQ TSK-0029.",
       "coverage": {
         "contest_id": 14,
         "series_id": 10,
         "year": 2025,
         "authorized_games": 14,
         "pdf_verified": 38,
-        "original_artworks": 4,
+        "original_artworks": 54,
         "pilot_game_id": 505,
-        "research_complete": 4,
-        "adopted_component_extractions": 18,
+        "research_complete": 14,
+        "adopted_component_extractions": 472,
         "render_crop_pilot_verified": true,
-        "library_images_total": 77,
+        "library_images_total": 687,
         "pilot_cards_board_verified": true,
-        "downloaded_originals": 16,
-        "historical_files": 13,
-        "physical_library_files": 90,
+        "downloaded_originals": 123,
+        "historical_files": 79,
+        "physical_library_files": 767,
         "pilot_complete": true,
-        "extracted_images_total": 61,
+        "extracted_images_total": 563,
         "second_pilot_game_id": 507,
         "second_pilot_current_images": 27,
-        "component_identities": 25,
-        "current_manifest": "catalog/2025_children_family_images_2026-10-11.json",
-        "operational_import_game_count": 4,
-        "operational_current_images": 77,
-        "operational_manifest": "catalog/2025_children_family_images_app_2026-10-11.json"
+        "component_identities": 454,
+        "current_manifest": "catalog/2025_children_family_images_final_2026-10-13.json",
+        "operational_import_game_count": 14,
+        "operational_current_images": 687,
+        "operational_manifest": "catalog/2025_children_family_images_final_2026-10-13.json",
+        "adopted_derivatives": 1,
+        "contest_image_progress": "14/27",
+        "whole_contest_complete": false,
+        "unimported_originals": 1
       },
       "dependencies": [
         "TSK-0065"
@@ -249,23 +253,31 @@
       "chat_ids": [
         "01a10d9f-971a-7480-bb69-0275f65463bb"
       ],
-      "next_action": "Proseguire sui dieci giochi autorizzati restanti con importazione verificata e controllo app inclusi",
+      "next_action": "Attendere completamento ACQ TSK-0029 dei restanti giochi; poi riprendere IMG con riconciliazione identità, manifest materiali e condizioni. Lotto iniziale 14/14 concluso, contest 14/27.",
       "git": {
-        "checked_at": "2026-10-11",
-        "local_save": "committato",
+        "checked_at": "2026-10-13",
+        "local_save": "da_committare",
         "integration": "integrato_main",
-        "synchronization": "remoto_verificato",
+        "synchronization": "incremento_locale",
         "last_task_document_commit": "d63f019",
-        "evidence": "Commit selettivo `d63f019` su main: 13 file/porzioni con decisione importazione inclusa in IMG, manifest operativo adattato, evidenza di importazione e avanzamento 4/27. Push origin/main riuscito; hash server d63f019a4fea29a0878706f820afb69975a6496d verificato, confronto HEAD/origin/main 0/0. Audit dei file selezionati e di tutti i commit in uscita senza rilievi; 299 candidati generali in altre modifiche locali escluse. Immagini/database fuori Git; altre attività preservate. Questa attestazione è salvata nel successivo commit documentale."
+        "evidence": "Lotto14 giochi verificato/importato, skill e documentazione aggiornate; nessun commit/push del completamento"
       },
-      "last_verified_at": "2026-10-11",
+      "last_verified_at": "2026-10-13",
       "deliverables": [
         "catalog/2025_children_family_image_sources_2026-10-05.json",
         "catalog/2025_children_family_images_2026-10-05.json",
         "catalog/2025_children_family_images_2026-10-11.json",
         "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/TWO_GAMES_VERIFICATION_2026-10-11.json",
         "catalog/2025_children_family_images_app_2026-10-11.json",
-        "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/APP_IMPORT_VERIFICATION_2026-10-11.json"
+        "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/APP_IMPORT_VERIFICATION_2026-10-11.json",
+        "catalog/2025_children_family_images_2026-10-12.json",
+        "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/FOUR_GAMES_VERIFICATION_2026-10-12.json",
+        "catalog/2025_children_family_images_verified_2026-10-12.json",
+        "catalog/2025_children_family_images_final_2026-10-12.json",
+        "catalog/2025_children_family_images_2026-10-13.json",
+        "catalog/2025_children_family_images_final_2026-10-13.json",
+        "tasks/2026-10-05 - IMG - Children & Family Game Design Contest 2025/SIX_GAMES_VERIFICATION_2026-10-13.json",
+        "catalog/2025_children_family_images_complete_2026-10-13.json"
       ],
       "title_history": [
         {
@@ -273,7 +285,49 @@
           "previous_title": "2026-10-05 - IMG - Children & Family Game Design Contest 2025",
           "reason": "Nuova convenzione del prefisso; percorsi storici preservati."
         }
-      ]
+      ],
+      "coverage_history": [
+        {
+          "checked_at": "2026-10-13",
+          "basis": "Baseline operativa8/14 precedente chiusura",
+          "coverage": {
+            "contest_id": 14,
+            "series_id": 10,
+            "year": 2025,
+            "authorized_games": 14,
+            "pdf_verified": 38,
+            "original_artworks": 4,
+            "pilot_game_id": 505,
+            "research_complete": 8,
+            "adopted_component_extractions": 18,
+            "render_crop_pilot_verified": true,
+            "library_images_total": 196,
+            "pilot_cards_board_verified": true,
+            "downloaded_originals": 27,
+            "historical_files": 25,
+            "physical_library_files": 221,
+            "pilot_complete": true,
+            "extracted_images_total": 169,
+            "second_pilot_game_id": 507,
+            "second_pilot_current_images": 27,
+            "component_identities": 112,
+            "current_manifest": "catalog/2025_children_family_images_2026-10-13.json",
+            "operational_import_game_count": 8,
+            "operational_current_images": 196,
+            "operational_manifest": "catalog/2025_children_family_images_2026-10-13.json"
+          }
+        }
+      ],
+      "completed_at": "2026-10-13",
+      "operational_state": "sospeso",
+      "scope_extension_2026_10_13": {
+        "decision": "Estensione IMG ai restanti 13 giochi del contest dopo il completamento della loro acquisizione materiali in TSK-0029. Nessuna acquisizione nuova in questo incremento.",
+        "dependency": "TSK-0029",
+        "completed_batch": 14,
+        "contest_total": 27,
+        "remaining": 13,
+        "basis": "Decisione esplicita utente nella chat TSK-0068; ACQ non è prerequisito generale del workflow IMG."
+      }
     },
     {
       "id": "TSK-0067",
