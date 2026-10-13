@@ -1,0 +1,3074 @@
+{
+  "batch_key": "bgg-2025-nine-card-ranked-2026-10-13",
+  "approved_at": "2026-10-13",
+  "verified_at": "2026-10-14",
+  "contest_id": 13,
+  "selection": [
+    {
+      "entry_id": 396,
+      "game_id": 396,
+      "title": "9 RIP",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3454676",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3454676",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "Vova Semeniv @ftd86",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 398,
+      "game_id": 398,
+      "title": "All Amongst Cats and Pigeons",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3469230",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3469230",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "@pillowbyte",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 401,
+      "game_id": 401,
+      "title": "Bullet Run",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3450478",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3450478",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "Lucas Breneman @Brene_mail",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 403,
+      "game_id": 403,
+      "title": "Dragons Horde",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3439500",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3439500",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "@J_wiz",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 404,
+      "game_id": 404,
+      "title": "Dung Beetles",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3453315",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3453315",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "fernando marecos @ecoabismo",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 406,
+      "game_id": 406,
+      "title": "Fall of the Republic",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3463372",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3463372",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "@Bumblepie",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 408,
+      "game_id": 408,
+      "title": "FOR9E",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3449728",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3449728",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "Dmytro Bespalov @dimabespalov",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 412,
+      "game_id": 412,
+      "title": "Grate Sword",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3459079",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3459079",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": "Joachim Emilio Antonio @OfficeTurtle",
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 416,
+      "game_id": 416,
+      "title": "Into the Arcanum",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3440248",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3440248",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 420,
+      "game_id": 420,
+      "title": "Lola High Up in the Ocean",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3456714",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3456714",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 421,
+      "game_id": 421,
+      "title": "Math Knight",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3436938",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3436938",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 422,
+      "game_id": 422,
+      "title": "Mutineer",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477856",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3477856",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 428,
+      "game_id": 428,
+      "title": "Orangutan Rescue Duet",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3475151",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3475151",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 429,
+      "game_id": 429,
+      "title": "Particular Pigeons",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3466979",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3466979",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 437,
+      "game_id": 437,
+      "title": "Skyward Parcel",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3453464",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3453464",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 447,
+      "game_id": 447,
+      "title": "Three Buccaneers",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3466260",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3466260",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 449,
+      "game_id": 449,
+      "title": "Tower of Babel",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3474024",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3474024",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 452,
+      "game_id": 452,
+      "title": "Veggie Patch",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3452530",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3452530",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    },
+    {
+      "entry_id": 455,
+      "game_id": 455,
+      "title": "Word Flower",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3473382",
+      "credits": [],
+      "credits_status": "design_roles_not_catalogued",
+      "credits_source": "https://boardgamegeek.com/thread/3473382",
+      "credits_note": "Autore del post WIP storico conservato separatamente dai ruoli designer/illustratore/editore; lacune dei ruoli esplicite.",
+      "wip_post_author": null,
+      "wip_post_author_evidence_date": "2026-10-04"
+    }
+  ],
+  "languages": [
+    "it",
+    "en"
+  ],
+  "purpose": "Copia personale, nessuna redistribuzione",
+  "items": [
+    {
+      "game_title": "Bullet Run",
+      "game_id": 401,
+      "entry_id": 401,
+      "remote_resource_id": 422,
+      "resource_url": "https://drive.google.com/file/d/1GYFMMknfGr9yzRpjQKEhuwLhJflG9aML/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3450478",
+      "final_url": "https://drive.usercontent.google.com/download?id=1GYFMMknfGr9yzRpjQKEhuwLhJflG9aML&export=download",
+      "original_filename": "BulletRun_9CardSheet_v2.pdf",
+      "relative_path": "bgg/2025-nine-card/401__bullet-run/originals/2026-10-13/BulletRun_9CardSheet_v2.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 23331554,
+      "sha256": "c9a02fd0401f2f983b1dbc45679594067b869b21e200cf48bafb26d3ca45348c",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        422
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:58:42.905Z"
+    },
+    {
+      "game_title": "Bullet Run",
+      "game_id": 401,
+      "entry_id": 401,
+      "remote_resource_id": 423,
+      "resource_url": "https://drive.google.com/file/d/1U_AwzqstYtyJBDBRnkrCosWbUjqiuNs4/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3450478",
+      "final_url": "https://drive.usercontent.google.com/download?id=1U_AwzqstYtyJBDBRnkrCosWbUjqiuNs4&export=download",
+      "original_filename": "BulletRun-Rules_v2.pdf",
+      "relative_path": "bgg/2025-nine-card/401__bullet-run/originals/2026-10-13/BulletRun-Rules_v2.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 13292475,
+      "sha256": "8c6ce96e9dff28fc0e247193b037dcc2e17787925b4aedaa4d4ea98437fe6756",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        423
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:58:48.812Z"
+    },
+    {
+      "game_title": "Bullet Run",
+      "game_id": 401,
+      "entry_id": 401,
+      "remote_resource_id": 424,
+      "resource_url": "https://drive.google.com/file/d/1_N8WEsbP-bi_QVvSPy1I14GxmuvX78O-/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3450478",
+      "final_url": "https://drive.usercontent.google.com/download?id=1_N8WEsbP-bi_QVvSPy1I14GxmuvX78O-&export=download",
+      "original_filename": "BulletRunGame_LowInk.pdf",
+      "relative_path": "bgg/2025-nine-card/401__bullet-run/originals/2026-10-13/BulletRunGame_LowInk.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 9880499,
+      "sha256": "5324fe4429cb2946e82bd2d57a0172598313b36ddf744dbed9e3bc4514c52ea7",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        424
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:58:53.317Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 398,
+      "resource_url": "https://docs.google.com/document/d/1PdFHrttoqVY1SZPAfBGZi0KKZ7nDWX1UiddzpRGiSXk/edit?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://doc-0o-20-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/tcn2pcql9rdtskkjj9338es2d0/1791928755000/113883469771539046470/*/1PdFHrttoqVY1SZPAfBGZi0KKZ7nDWX1UiddzpRGiSXk?format=pdf",
+      "original_filename": "Копія \"9GRIP - A Board Game of Mafia Confrontation - contest version\" - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Копія _9GRIP - A Board Game of Mafia Confrontation - contest version_ - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 85560,
+      "sha256": "ac2f4495ae72b769b339459167b46527b43df654bfbc1d6184251c590f869f91",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        398,
+        400
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:16.734Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 399,
+      "resource_url": "https://docs.google.com/document/d/1tykZBVIVCy5IIBafx956VPudIIfA0_hXJZHXfQd50Rw/edit?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://doc-08-20-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/a5hmeersmu01vgmm7bojj5al7k/1791928755000/113883469771539046470/*/1tykZBVIVCy5IIBafx956VPudIIfA0_hXJZHXfQd50Rw?format=pdf",
+      "original_filename": "9GRIP - A Board Game of Mafia Confrontation 3.0 - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/9GRIP - A Board Game of Mafia Confrontation 3.0 - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 85781,
+      "sha256": "843c2fb8c81ba8c03966e8845227decb17336fcba09527b6e3e65a62ae19c3c2",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        399,
+        400
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:18.898Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 401,
+      "resource_url": "https://drive.google.com/file/d/10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://drive.usercontent.google.com/download?id=10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH&export=download",
+      "original_filename": "Box 9RIP 2.0.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Box 9RIP 2.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 13198102,
+      "sha256": "081f3ca852200ed7dc109a59ec4203286ae1a1314bb5c56ef7433ac18aa19d14",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        400,
+        401
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:23.955Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 403,
+      "resource_url": "https://drive.google.com/file/d/1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://drive.usercontent.google.com/download?id=1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or&export=download",
+      "original_filename": "Cards 9RIP print 3.0 small.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Cards 9RIP print 3.0 small.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 579996,
+      "sha256": "16f3285f82f4a500e55f54904addfc90d69625a5c6a3208cba637de948786864",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        400,
+        403
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:26.055Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 402,
+      "resource_url": "https://drive.google.com/file/d/1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://drive.usercontent.google.com/download?id=1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM&export=download",
+      "original_filename": "Cards 9RIP print 4.0 small.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Cards 9RIP print 4.0 small.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 17000646,
+      "sha256": "3e02afe53dc136d3c8555fa79433efb626dda916304b87b10abbb2f17b993ba4",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        400,
+        402
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:31.732Z"
+    },
+    {
+      "game_title": "All Amongst Cats and Pigeons",
+      "game_id": 398,
+      "entry_id": 398,
+      "remote_resource_id": 411,
+      "resource_url": "https://drive.google.com/file/d/1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3469230",
+      "final_url": "https://drive.usercontent.google.com/download?id=1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg&export=download",
+      "original_filename": "Cards All Among Cats & Pigeons.pdf",
+      "relative_path": "bgg/2025-nine-card/398__all-amongst-cats-and-pigeons/originals/2026-10-13/Cards All Among Cats & Pigeons.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1005827,
+      "sha256": "d828b53df8c754e79ea9b8cb77883a0a292df02047e598188427cd55b373d6ad",
+      "version_raw": "v1.0",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        408,
+        411
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:47.948Z"
+    },
+    {
+      "game_title": "All Amongst Cats and Pigeons",
+      "game_id": 398,
+      "entry_id": 398,
+      "remote_resource_id": 409,
+      "resource_url": "https://drive.google.com/file/d/19wevJkh1XEyphqRxoHuekp5goRoix_G4/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3469230",
+      "final_url": "https://drive.usercontent.google.com/download?id=19wevJkh1XEyphqRxoHuekp5goRoix_G4&export=download",
+      "original_filename": "Rulebook All Amongst Cats and Pigeons v.1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/398__all-amongst-cats-and-pigeons/originals/2026-10-13/Rulebook All Amongst Cats and Pigeons v.1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 949388,
+      "sha256": "e5aa49049a183a55ecd201ba7bf5059f660ff27f89500ee88c6469147790b28f",
+      "version_raw": "v1.0",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        408,
+        409
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:51.431Z"
+    },
+    {
+      "game_title": "Dragons Horde",
+      "game_id": 403,
+      "entry_id": 403,
+      "remote_resource_id": 427,
+      "resource_url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3439500",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MIZReb-gaCP1s2QdFJcI2YRqa7EJ99kh&export=download",
+      "original_filename": "Dragon's_Horde_Rulebook_Demo.pdf",
+      "relative_path": "bgg/2025-nine-card/403__dragons-horde/originals/2026-10-13/Dragon's_Horde_Rulebook_Demo.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 410035,
+      "sha256": "36e19bf11e6c96ed22997b0f91549711f9719b722d8c3d8f6634119b17daea29",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-13",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        427
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T21:59:59.865Z"
+    },
+    {
+      "game_title": "Dragons Horde",
+      "game_id": 403,
+      "entry_id": 403,
+      "remote_resource_id": 427,
+      "resource_url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3439500",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ww9v0LF-O0nqvBkpPz5lx204aXrWa_mk&export=download",
+      "original_filename": "Pnp_Demo.pdf",
+      "relative_path": "bgg/2025-nine-card/403__dragons-horde/originals/2026-10-13/Pnp_Demo.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 232690,
+      "sha256": "25279db0a7c2194c378eb53be1a3cbc2632195d6a55c3e7e805595193f4ae848",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        427
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:01.677Z"
+    },
+    {
+      "game_title": "Dung Beetles",
+      "game_id": 404,
+      "entry_id": 404,
+      "remote_resource_id": 428,
+      "resource_url": "https://docs.google.com/document/d/1dLZjKY_oEt3KM2Rpp8uovDH2eoGo-sc9NOY1r9EDf1w/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453315",
+      "final_url": "https://doc-08-9c-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/8plqvhcq30hbg78ip8c14mgblc/1791928800000/108048439269356657856/*/1dLZjKY_oEt3KM2Rpp8uovDH2eoGo-sc9NOY1r9EDf1w?format=pdf",
+      "original_filename": "DUNG BEETLES 3.0 - Rulebook - Designed by Fernando Marecos - 2025-9-card-nanogame-print-and-play-design-contest - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/404__dung-beetles/originals/2026-10-13/DUNG BEETLES 3.0 - Rulebook - Designed by Fernando Marecos - 2025-9-card-nanogame-print-and-play-design-contest - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 4574859,
+      "sha256": "ca165cab7d3e267addadd4b375a915d8336715db891083345dba50c756475387",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        428
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:07.478Z"
+    },
+    {
+      "game_title": "Dung Beetles",
+      "game_id": 404,
+      "entry_id": 404,
+      "remote_resource_id": 429,
+      "resource_url": "https://drive.google.com/file/d/1zstpTFxlYnSfhcjoKQ7_rIjA842t_riM/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453315",
+      "final_url": "https://drive.usercontent.google.com/download?id=1zstpTFxlYnSfhcjoKQ7_rIjA842t_riM&export=download",
+      "original_filename": "DUNG BEETLES - 1A4 double sided - Designed by Fernando Marecos - V2.2 - 2025-9-card-nanogame-print-and-play-design-contest.pdf",
+      "relative_path": "bgg/2025-nine-card/404__dung-beetles/originals/2026-10-13/DUNG BEETLES - 1A4 double sided - Designed by Fernando Marecos - V2.2 - 2025-9-card-nanogame-print-and-play-design-contest.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 4213061,
+      "sha256": "7469c8ac66f33f85acb773c6645857e1ea1d2d62ba7c0109a0bceb6d94e5d46a",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        429
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:10.799Z"
+    },
+    {
+      "game_title": "Fall of the Republic",
+      "game_id": 406,
+      "entry_id": 406,
+      "remote_resource_id": 432,
+      "resource_url": "https://docs.google.com/document/d/1GgrwJ8Hm__EALgu85Qz7zxNLoiptCyqVT_S_IwlxwvI/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3463372",
+      "final_url": "https://doc-0o-8k-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/190fkbh0vnj3qe49qi95u17d4o/1791928810000/111819195022275226249/*/1GgrwJ8Hm__EALgu85Qz7zxNLoiptCyqVT_S_IwlxwvI?format=pdf",
+      "original_filename": "Fall of the Republic - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/406__fall-of-the-republic/originals/2026-10-13/Fall of the Republic - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 3471514,
+      "sha256": "db3cfc65a110b821c80f9a608144dee17180cb46e97f367a9870fe2f3484ecb4",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 10,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        432
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:14.957Z"
+    },
+    {
+      "game_title": "Fall of the Republic",
+      "game_id": 406,
+      "entry_id": 406,
+      "remote_resource_id": 433,
+      "resource_url": "https://drive.google.com/file/d/1tuD2dHvwlyo8Eks4nWhC5ekdKNRuCWmE/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3463372",
+      "final_url": "https://drive.usercontent.google.com/download?id=1tuD2dHvwlyo8Eks4nWhC5ekdKNRuCWmE&export=download",
+      "original_filename": "fall-of-the-republic-pnp.pdf",
+      "relative_path": "bgg/2025-nine-card/406__fall-of-the-republic/originals/2026-10-13/fall-of-the-republic-pnp.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2238849,
+      "sha256": "07d808735b064470248a5a6d24d869a1be2270d249b8a279bbb3a0d2b89a1ef7",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        433
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:19.352Z"
+    },
+    {
+      "game_title": "FOR9E",
+      "game_id": 408,
+      "entry_id": 408,
+      "remote_resource_id": 435,
+      "resource_url": "https://drive.google.com/file/d/1L6eP9fUsuHpLlquY7z730BdthMFEwxVC/view",
+      "source_url": "https://boardgamegeek.com/thread/3449728",
+      "final_url": "https://drive.usercontent.google.com/download?id=1L6eP9fUsuHpLlquY7z730BdthMFEwxVC&export=download",
+      "original_filename": "Cards FOR9E print 1.1.pdf",
+      "relative_path": "bgg/2025-nine-card/408__for9e/originals/2026-10-13/Cards FOR9E print 1.1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 82015708,
+      "sha256": "37431c3d3500660ee31013d0bf75d38ca20597754c68790340a0ea8610a302d5",
+      "version_raw": "v 1.1",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        435
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:00:40.207Z"
+    },
+    {
+      "game_title": "FOR9E",
+      "game_id": 408,
+      "entry_id": 408,
+      "remote_resource_id": 436,
+      "resource_url": "https://drive.google.com/file/d/1rpAu8R7T5iszaBdT2Ty6J8Iw5CVC5l-x/view",
+      "source_url": "https://boardgamegeek.com/thread/3449728",
+      "final_url": "https://drive.usercontent.google.com/download?id=1rpAu8R7T5iszaBdT2Ty6J8Iw5CVC5l-x&export=download",
+      "original_filename": "Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/408__for9e/originals/2026-10-13/Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 3959259,
+      "sha256": "f4635f89a417fa76628340331d64c7adbe595bd1e62bd8450014b7132fb6e7ff",
+      "version_raw": "v 1.1",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        436
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:02.761Z"
+    },
+    {
+      "game_title": "Grate Sword",
+      "game_id": 412,
+      "entry_id": 412,
+      "remote_resource_id": 453,
+      "resource_url": "https://drive.google.com/file/d/1VUvPHOvBreaCYIgXP-xjX15ork28SJMP/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3459079",
+      "final_url": "https://drive.usercontent.google.com/download?id=1VUvPHOvBreaCYIgXP-xjX15ork28SJMP&export=download",
+      "original_filename": "Grate Sword v1.09 Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/412__grate-sword/originals/2026-10-13/Grate Sword v1.09 Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 805080,
+      "sha256": "315e403ada15f18ba5859d2e3ddfec2040774b2f826109fc18ddaeb647c50725",
+      "version_raw": "v1.09",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        453
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:08.339Z"
+    },
+    {
+      "game_title": "Grate Sword",
+      "game_id": 412,
+      "entry_id": 412,
+      "remote_resource_id": 454,
+      "resource_url": "https://drive.google.com/file/d/1kyf9jHuuOWcCH4N9k-68twtLUjqa4_V3/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3459079",
+      "final_url": "https://drive.usercontent.google.com/download?id=1kyf9jHuuOWcCH4N9k-68twtLUjqa4_V3&export=download",
+      "original_filename": "Grate Sword v1.09.pdf",
+      "relative_path": "bgg/2025-nine-card/412__grate-sword/originals/2026-10-13/Grate Sword v1.09.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 592880,
+      "sha256": "ef8e7893676d101a6775ab62858e2537e5b19303b0d1266fb04742f7cf8145a6",
+      "version_raw": "v1.09",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        454
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:11.787Z"
+    },
+    {
+      "game_title": "Into the Arcanum",
+      "game_id": 416,
+      "entry_id": 416,
+      "remote_resource_id": 464,
+      "resource_url": "https://drive.google.com/file/d/1IeaM5PoEG7XkVphxYsIrJ6tpbxfb4yDP/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440248",
+      "final_url": "https://drive.usercontent.google.com/download?id=1IeaM5PoEG7XkVphxYsIrJ6tpbxfb4yDP&export=download",
+      "original_filename": "Into the Arcanum Rulebook 1.2 FULL COLOR.pdf",
+      "relative_path": "bgg/2025-nine-card/416__into-the-arcanum/originals/2026-10-13/Into the Arcanum Rulebook 1.2 FULL COLOR.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 15631171,
+      "sha256": "234b547781cb9f2ee17cd7d8d0ef4ee71ad933e29ecf4ca1dfdef3ce2b392b0b",
+      "version_raw": "Version 1.2",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 12,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        464
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:19.546Z"
+    },
+    {
+      "game_title": "Into the Arcanum",
+      "game_id": 416,
+      "entry_id": 416,
+      "remote_resource_id": 465,
+      "resource_url": "https://drive.google.com/file/d/1KZzS7oGcaPozUYt-e0XF23_lPP41ikQa/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440248",
+      "final_url": "https://drive.usercontent.google.com/download?id=1KZzS7oGcaPozUYt-e0XF23_lPP41ikQa&export=download",
+      "original_filename": "Into the Arcanum 1_2 FULL COLOR.pdf",
+      "relative_path": "bgg/2025-nine-card/416__into-the-arcanum/originals/2026-10-13/Into the Arcanum 1_2 FULL COLOR.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 4418398,
+      "sha256": "18b55876b31a8975fb88dd0c4e0ff016eb42bb0948e95c5edf72f4a228e47044",
+      "version_raw": "Version 1.2",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        465
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:24.451Z"
+    },
+    {
+      "game_title": "Into the Arcanum",
+      "game_id": 416,
+      "entry_id": 416,
+      "remote_resource_id": 466,
+      "resource_url": "https://drive.google.com/file/d/1W9aPdddh2CcmLlj76xP9yxgeqeNK0veN/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440248",
+      "final_url": "https://drive.usercontent.google.com/download?id=1W9aPdddh2CcmLlj76xP9yxgeqeNK0veN&export=download",
+      "original_filename": "Into the Arcanum 1_2 LOW INK.pdf",
+      "relative_path": "bgg/2025-nine-card/416__into-the-arcanum/originals/2026-10-13/Into the Arcanum 1_2 LOW INK.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 786916,
+      "sha256": "81641e4a668e04536edeec04c524020d418752a684061b85915a034407a5538e",
+      "version_raw": "Version 1.2",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        466
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:28.920Z"
+    },
+    {
+      "game_title": "Into the Arcanum",
+      "game_id": 416,
+      "entry_id": 416,
+      "remote_resource_id": 467,
+      "resource_url": "https://drive.google.com/file/d/1ejPkiKu-KNKbE1AisxE13NtLROKjy6GX/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440248",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ejPkiKu-KNKbE1AisxE13NtLROKjy6GX&export=download",
+      "original_filename": "Into the Arcanum Rulebook 1.2 LOW INK.pdf",
+      "relative_path": "bgg/2025-nine-card/416__into-the-arcanum/originals/2026-10-13/Into the Arcanum Rulebook 1.2 LOW INK.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 14155129,
+      "sha256": "dbd598b7bd396143ecb69d363d62a473905d823b84557f054166252e41d0c84f",
+      "version_raw": "Version 1.2",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 12,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        467
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:35.999Z"
+    },
+    {
+      "game_title": "Lola High Up in the Ocean",
+      "game_id": 420,
+      "entry_id": 420,
+      "remote_resource_id": 474,
+      "resource_url": "https://drive.google.com/drive/folders/1BbddWznHuD3IDVmP2zE9XydR5BYiaR50?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3456714",
+      "final_url": "https://drive.usercontent.google.com/download?id=1VAb3ARUWCsKBOLocMsT8Urqe4JKgV6MJ&export=download",
+      "original_filename": "Lola_Cards_1-3_low-ink.pdf",
+      "relative_path": "bgg/2025-nine-card/420__lola-high-up-in-the-ocean/originals/2026-10-13/Lola_Cards_1-3_low-ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1462264,
+      "sha256": "5869ff360d525cb447843e0026c65b6986e4cfccf99deac250017cccbac89677",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        474
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:40.438Z"
+    },
+    {
+      "game_title": "Lola High Up in the Ocean",
+      "game_id": 420,
+      "entry_id": 420,
+      "remote_resource_id": 474,
+      "resource_url": "https://drive.google.com/drive/folders/1BbddWznHuD3IDVmP2zE9XydR5BYiaR50?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3456714",
+      "final_url": "https://drive.usercontent.google.com/download?id=1oh4BPb6yYC8lpxWg194Wy16tCK_hoOPf&export=download",
+      "original_filename": "Lola_Cards_1-3.pdf",
+      "relative_path": "bgg/2025-nine-card/420__lola-high-up-in-the-ocean/originals/2026-10-13/Lola_Cards_1-3.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 3885741,
+      "sha256": "c5fb0b6ae44b0bf69669d4a957c80f2819265a2b3b583c0bc45da97f7fc7aba4",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        474
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:44.539Z"
+    },
+    {
+      "game_title": "Lola High Up in the Ocean",
+      "game_id": 420,
+      "entry_id": 420,
+      "remote_resource_id": 474,
+      "resource_url": "https://drive.google.com/drive/folders/1BbddWznHuD3IDVmP2zE9XydR5BYiaR50?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3456714",
+      "final_url": "https://drive.usercontent.google.com/download?id=1VVSn4bgJGz3MUdGx8Cs3iVZIU-RTtskH&export=download",
+      "original_filename": "Lola_Rules_1-3.pdf",
+      "relative_path": "bgg/2025-nine-card/420__lola-high-up-in-the-ocean/originals/2026-10-13/Lola_Rules_1-3.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 12858291,
+      "sha256": "944031f29f1a49537a08c9c0f9c26c1bf5f038c488c319755c265c86a9e6eb77",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        474
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:49.504Z"
+    },
+    {
+      "game_title": "Math Knight",
+      "game_id": 421,
+      "entry_id": 421,
+      "remote_resource_id": 476,
+      "resource_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436938",
+      "final_url": "https://drive.usercontent.google.com/download?id=1bKV8bTXSqRJzMxUrPAldJKXXyoW2k_el&export=download",
+      "original_filename": "how to craft.pdf",
+      "relative_path": "bgg/2025-nine-card/421__math-knight/originals/2026-10-13/how to craft.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 7928014,
+      "sha256": "82cee7a899292cae5a7e5c45beaf1f5de9f8343c4ae28f2c379d4f5b6701a634",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        476
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:01:53.673Z"
+    },
+    {
+      "game_title": "Math Knight",
+      "game_id": 421,
+      "entry_id": 421,
+      "remote_resource_id": 476,
+      "resource_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436938",
+      "final_url": "https://drive.usercontent.google.com/download?id=1AL7y7KwVWw6qYzXJPw1Laayq1qyIg5ig&export=download",
+      "original_filename": "MATH KNIGHT RULES v4.pdf",
+      "relative_path": "bgg/2025-nine-card/421__math-knight/originals/2026-10-13/MATH KNIGHT RULES v4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 37736430,
+      "sha256": "623e96cd82304ceeca1c9a87433d869f67aeb4e07bbb712b5f51db6fd4f6702d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 10,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        476
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:01.556Z"
+    },
+    {
+      "game_title": "Math Knight",
+      "game_id": 421,
+      "entry_id": 421,
+      "remote_resource_id": 476,
+      "resource_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436938",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ek1MMHmrVQ2WCr4zyrXXgQovNPcUQo24&export=download",
+      "original_filename": "math knight tuck box.pdf",
+      "relative_path": "bgg/2025-nine-card/421__math-knight/originals/2026-10-13/math knight tuck box.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2029868,
+      "sha256": "78372a740175465fbfd862aa7bf2ca0295061e2fbdc7b50c3e13dceac58db558",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        476
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:03.588Z"
+    },
+    {
+      "game_title": "Math Knight",
+      "game_id": 421,
+      "entry_id": 421,
+      "remote_resource_id": 476,
+      "resource_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436938",
+      "final_url": "https://drive.usercontent.google.com/download?id=11khuf6cEnGWIkxLk5H6D7wZKGyF50-wk&export=download",
+      "original_filename": "Math Knight V2 (3x3) A4.pdf",
+      "relative_path": "bgg/2025-nine-card/421__math-knight/originals/2026-10-13/Math Knight V2 (3x3) A4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 15886493,
+      "sha256": "d1eda87ff289932046065a2443c6fa6578a5169be5d5c445f3aa9b802ab46eba",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        476
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:08.683Z"
+    },
+    {
+      "game_title": "Math Knight",
+      "game_id": 421,
+      "entry_id": 421,
+      "remote_resource_id": 476,
+      "resource_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436938",
+      "final_url": "https://drive.usercontent.google.com/download?id=1OQkvQqyPrFrFIEjAbmzzZD-wTjQBPbSJ&export=download",
+      "original_filename": "Math Knight V2 (Gutter Fold) A4.pdf",
+      "relative_path": "bgg/2025-nine-card/421__math-knight/originals/2026-10-13/Math Knight V2 (Gutter Fold) A4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 6746197,
+      "sha256": "a5ba502cdf2d94822faaa13685123f0db4156728273ded06138788da4acf81da",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        476
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:11.580Z"
+    },
+    {
+      "game_title": "Mutineer",
+      "game_id": 422,
+      "entry_id": 422,
+      "remote_resource_id": 478,
+      "resource_url": "https://drive.google.com/file/d/12EFYrPWLLwclU8i-xWRSiSmppcFyuKjI/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477856",
+      "final_url": "https://drive.usercontent.google.com/download?id=12EFYrPWLLwclU8i-xWRSiSmppcFyuKjI&export=download",
+      "original_filename": "Mutineer (Cards).pdf",
+      "relative_path": "bgg/2025-nine-card/422__mutineer/originals/2026-10-13/Mutineer (Cards).pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1779108,
+      "sha256": "692af6721027771282b225f8640a5b80fbfc93affd91f7aa5ded3f83a62a51c8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        478
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:13.382Z"
+    },
+    {
+      "game_title": "Mutineer",
+      "game_id": 422,
+      "entry_id": 422,
+      "remote_resource_id": 479,
+      "resource_url": "https://drive.google.com/file/d/1esuchwy32Ke55ba3oV-TAm28dgf_2Au1/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477856",
+      "final_url": "https://drive.usercontent.google.com/download?id=1esuchwy32Ke55ba3oV-TAm28dgf_2Au1&export=download",
+      "original_filename": "Mutineer (Rules).pdf",
+      "relative_path": "bgg/2025-nine-card/422__mutineer/originals/2026-10-13/Mutineer (Rules).pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1592579,
+      "sha256": "c8eb9488364840ba41f59acde5e32df0cb11711feb14a00d0e97cc35e8a9acd0",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        479
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:17.025Z"
+    },
+    {
+      "game_title": "Orangutan Rescue Duet",
+      "game_id": 428,
+      "entry_id": 428,
+      "remote_resource_id": 494,
+      "resource_url": "https://docs.google.com/document/d/1vWmhp9WVvCX12pEtNuczpiexwsKSrX0b84DvnGtZ2_E/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3475151",
+      "final_url": "https://doc-04-ao-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/l1udkdl9sek53vblr2u11h9n78/1791928935000/101770065295236747448/*/1vWmhp9WVvCX12pEtNuczpiexwsKSrX0b84DvnGtZ2_E?format=pdf",
+      "original_filename": "Orangutan Rescue Duet - Overview and Rules - 3-11-25 - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/428__orangutan-rescue-duet/originals/2026-10-13/Orangutan Rescue Duet - Overview and Rules - 3-11-25 - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2475575,
+      "sha256": "52f3e4db9a72478be55af9482e64c8774dea5f7559d40b5fad6f8e6145316eef",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        494
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:20.405Z"
+    },
+    {
+      "game_title": "Orangutan Rescue Duet",
+      "game_id": 428,
+      "entry_id": 428,
+      "remote_resource_id": 495,
+      "resource_url": "https://drive.google.com/file/d/1dZl5XBMN2gUyFTJ1f12Gvb6SxnmMKvjy/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3475151",
+      "final_url": "https://drive.usercontent.google.com/download?id=1dZl5XBMN2gUyFTJ1f12Gvb6SxnmMKvjy&export=download",
+      "original_filename": "Orangutan Rescue Duet - PNP Cards - Flip and Print - Inkjet - Full Color.pdf",
+      "relative_path": "bgg/2025-nine-card/428__orangutan-rescue-duet/originals/2026-10-13/Orangutan Rescue Duet - PNP Cards - Flip and Print - Inkjet - Full Color.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 4147408,
+      "sha256": "53b62bb616306badf9dd14c726bec9c6d266f9260ee580dd7c217762f6c26aa5",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        495
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:24.201Z"
+    },
+    {
+      "game_title": "Particular Pigeons",
+      "game_id": 429,
+      "entry_id": 429,
+      "remote_resource_id": 497,
+      "resource_url": "https://docs.google.com/document/d/19aqqmxVA1x5uIK3hwBjmjeUaRnSKGwH5zyw45EFdbFE/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3466979",
+      "final_url": "https://doc-00-0c-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/k5k2j9qdetva3b7rq1dsbnh3v0/1791928945000/112582537475127863464/*/19aqqmxVA1x5uIK3hwBjmjeUaRnSKGwH5zyw45EFdbFE?format=pdf",
+      "original_filename": "Particular Pigeons Reference Sheet - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/429__particular-pigeons/originals/2026-10-13/Particular Pigeons Reference Sheet - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 87360,
+      "sha256": "5a37c7c83235c78d0a46f9bf063fcf6775afa4f57c0d652506b677fde1e4533c",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        497
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:26.178Z"
+    },
+    {
+      "game_title": "Particular Pigeons",
+      "game_id": 429,
+      "entry_id": 429,
+      "remote_resource_id": 498,
+      "resource_url": "https://docs.google.com/document/d/1ISZqDaR_sCS3epO39IZpHSR1LDOlIxQYhoGjpwzXs7k/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3466979",
+      "final_url": "https://doc-08-0c-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/c7ochmf95ego6jltl26nm50dn4/1791928945000/112582537475127863464/*/1ISZqDaR_sCS3epO39IZpHSR1LDOlIxQYhoGjpwzXs7k?format=pdf",
+      "original_filename": "Particular Pigeons Rules v1.0 - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/429__particular-pigeons/originals/2026-10-13/Particular Pigeons Rules v1.0 - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 527305,
+      "sha256": "cc43b9471584ad448d43833f589b68ec3b3c25ac1a992991d07c73778cc2206c",
+      "version_raw": "v1.0",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 13,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "source_remote_resource_ids": [
+        498
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:30.609Z"
+    },
+    {
+      "game_title": "Particular Pigeons",
+      "game_id": 429,
+      "entry_id": 429,
+      "remote_resource_id": 499,
+      "resource_url": "https://drive.google.com/file/d/1WaTHl-xvQqjdtoDdjkVo3xJqa4ZBDZDr/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3466979",
+      "final_url": "https://drive.usercontent.google.com/download?id=1WaTHl-xvQqjdtoDdjkVo3xJqa4ZBDZDr&export=download",
+      "original_filename": "Particular Pigeons Main Cards_v1.1.pdf",
+      "relative_path": "bgg/2025-nine-card/429__particular-pigeons/originals/2026-10-13/Particular Pigeons Main Cards_v1.1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2743851,
+      "sha256": "f9833d1530fae2f088b4293700182f11f2e4e4dc95bc361a47d3dfe8b283b054",
+      "version_raw": "v1.1",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        499
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:33.943Z"
+    },
+    {
+      "game_title": "Skyward Parcel",
+      "game_id": 437,
+      "entry_id": 437,
+      "remote_resource_id": 511,
+      "resource_url": "https://drive.google.com/drive/folders/1buVyoIiu9ENUrTxm01xHJssVwIBESiTs?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453464",
+      "final_url": "https://drive.usercontent.google.com/download?id=1zXLvWHd4e6UpnPfyswRgO4InqctvkxNn&export=download",
+      "original_filename": "PnP EN.pdf",
+      "relative_path": "bgg/2025-nine-card/437__skyward-parcel/originals/2026-10-13/PnP EN.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1947498,
+      "sha256": "576f5658313e8a7f465a9758ce4f662647749d744b61ab46d208f02e4ea9038d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        511
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:37.421Z"
+    },
+    {
+      "game_title": "Skyward Parcel",
+      "game_id": 437,
+      "entry_id": 437,
+      "remote_resource_id": 511,
+      "resource_url": "https://drive.google.com/drive/folders/1buVyoIiu9ENUrTxm01xHJssVwIBESiTs?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453464",
+      "final_url": "https://drive.usercontent.google.com/download?id=1OHw4bhDJIl3aVL14w64y6jHNX-5SB8YQ&export=download",
+      "original_filename": "Skyward Parcel - EN.pdf",
+      "relative_path": "bgg/2025-nine-card/437__skyward-parcel/originals/2026-10-13/Skyward Parcel - EN.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 897882,
+      "sha256": "a5d7ed75719ae4fce60c003721e962e549107f9910c375a80048e7943b117351",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        511
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:42.282Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 531,
+      "resource_url": "https://drive.google.com/file/d/16NNGvEQ3FE-zmvN1SMTQmuZsOz9JIXvP/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=16NNGvEQ3FE-zmvN1SMTQmuZsOz9JIXvP&export=download",
+      "original_filename": "Tower of Babel Cards 1_0.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Cards 1_0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2453991,
+      "sha256": "a880335031325a9e411f33314722a349d7e8caa6566740c27899f92fe24da5c4",
+      "version_raw": "Version 1.0",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        531
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:49.049Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 532,
+      "resource_url": "https://drive.google.com/file/d/1DIZj2dKZUrUvhpSuavnnJDnPBfi0VIZN/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=1DIZj2dKZUrUvhpSuavnnJDnPBfi0VIZN&export=download",
+      "original_filename": "Tower of Babel Rules 1_0.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Rules 1_0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 80808,
+      "sha256": "1785bb1273459149af52376bc67903d7776ec08ece8b398b97adb1a3fc17e18f",
+      "version_raw": "Version 1.0",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        532
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:51.818Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 533,
+      "resource_url": "https://drive.google.com/file/d/1Dpj2T1ceq7BVA8g4dyRWiY7UpE_6Ig-T/view",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Dpj2T1ceq7BVA8g4dyRWiY7UpE_6Ig-T&export=download",
+      "original_filename": "Tower of Babel Cards FINAL Low Ink.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Cards FINAL Low Ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 5336177,
+      "sha256": "88ebfc3d1284a329d1dde1fd2dd50bf30bc09b0e8955c59e9062e4c6fd707889",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        533
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:04.547Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 534,
+      "resource_url": "https://drive.google.com/file/d/1Yiqgq88HzHOm6GM6OynKv9M_dcIe0fOd/view",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Yiqgq88HzHOm6GM6OynKv9M_dcIe0fOd&export=download",
+      "original_filename": "Tower of Babel Rules FINAL Low Ink.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Rules FINAL Low Ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2937994,
+      "sha256": "e0c4a5fe9692e69129c831c5b5a1b370046bcbc48be0f1c56f269e7817793710",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 8,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        534
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:12.043Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 535,
+      "resource_url": "https://drive.google.com/file/d/1cdaUb0gtQdxPLe3NlfgiL-M7BdNJdEL4/view",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=1cdaUb0gtQdxPLe3NlfgiL-M7BdNJdEL4&export=download",
+      "original_filename": "Tower of Babel Rules FINAL Full Color.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Rules FINAL Full Color.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 16386070,
+      "sha256": "b31d3a50e8a957c84b524f50733a82089ba69a8bba38fe4ad9d08ec1a56a378d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 8,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        535
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:25.676Z"
+    },
+    {
+      "game_title": "Tower of Babel",
+      "game_id": 449,
+      "entry_id": 449,
+      "remote_resource_id": 536,
+      "resource_url": "https://drive.google.com/file/d/1r2rvW0P7nlOAurA10EdHKXvopwT7ekjQ/view",
+      "source_url": "https://boardgamegeek.com/thread/3474024",
+      "final_url": "https://drive.usercontent.google.com/download?id=1r2rvW0P7nlOAurA10EdHKXvopwT7ekjQ&export=download",
+      "original_filename": "Tower of Babel Cards FINAL Full Color.pdf",
+      "relative_path": "bgg/2025-nine-card/449__tower-of-babel/originals/2026-10-13/Tower of Babel Cards FINAL Full Color.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 8709579,
+      "sha256": "16b1e1fdbefd60a8bf08b9620216d1637491e84d6106bb062111b66e5ba18e40",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        536
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:37.733Z"
+    },
+    {
+      "game_title": "Veggie Patch",
+      "game_id": 452,
+      "entry_id": 452,
+      "remote_resource_id": 546,
+      "resource_url": "https://drive.google.com/drive/folders/1cvu6QrpanLq-PnuZMaYaRgf9YFv1lG3B?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3452530",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ugMzPQ88qE5g30AyTWF7rBvcauHxVeSV&export=download",
+      "original_filename": "Veggie Patch rules booklet v3.0.pdf",
+      "relative_path": "bgg/2025-nine-card/452__veggie-patch/originals/2026-10-13/Veggie Patch rules booklet v3.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 980673,
+      "sha256": "bb30dcad23427c2dcdc9a4939c7ebb5afd43849581dc82ef2f34af055aea1979",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        546
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:42.844Z"
+    },
+    {
+      "game_title": "Veggie Patch",
+      "game_id": 452,
+      "entry_id": 452,
+      "remote_resource_id": 546,
+      "resource_url": "https://drive.google.com/drive/folders/1cvu6QrpanLq-PnuZMaYaRgf9YFv1lG3B?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3452530",
+      "final_url": "https://drive.usercontent.google.com/download?id=1nPrNApr49EWvas13ZNCMBKYuuCyx-ur1&export=download",
+      "original_filename": "Veggie Patch_v3.0 less ink.pdf",
+      "relative_path": "bgg/2025-nine-card/452__veggie-patch/originals/2026-10-13/Veggie Patch_v3.0 less ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2097378,
+      "sha256": "5deffb6f15f7950341547703974f5ef7ac4704f423a2a7d478f56905a494722a",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        546
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:50.587Z"
+    },
+    {
+      "game_title": "Veggie Patch",
+      "game_id": 452,
+      "entry_id": 452,
+      "remote_resource_id": 546,
+      "resource_url": "https://drive.google.com/drive/folders/1cvu6QrpanLq-PnuZMaYaRgf9YFv1lG3B?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3452530",
+      "final_url": "https://drive.usercontent.google.com/download?id=1XmuX5NSWbMHid2l5CH8Cqhi_3k2rFNc7&export=download",
+      "original_filename": "Veggie Patch_v3.0.pdf",
+      "relative_path": "bgg/2025-nine-card/452__veggie-patch/originals/2026-10-13/Veggie Patch_v3.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2390907,
+      "sha256": "a04d91de47a9000684a7e35740b0ba60e7b487de2f9ffe32b7f8f1cbf84eb032",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        546
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:03:57.730Z"
+    },
+    {
+      "game_title": "Word Flower",
+      "game_id": 455,
+      "entry_id": 455,
+      "remote_resource_id": 552,
+      "resource_url": "https://drive.google.com/drive/folders/13ogaWs_UZAKOZjIClRd7E4yFZNmeIjtU?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3473382",
+      "final_url": "https://drive.usercontent.google.com/download?id=1JVKQ8EPmq4ARXg-KKPDvZJrMt5IbiJ4Y&export=download",
+      "original_filename": "word-flower-cards-0314.pdf",
+      "relative_path": "bgg/2025-nine-card/455__word-flower/originals/2026-10-13/word-flower-cards-0314.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 902027,
+      "sha256": "9f619565b608ae1195ee6794b29c8044eaed29818953a1c52a6d390a1c37d1ba",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        552
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:04:02.705Z"
+    },
+    {
+      "game_title": "Word Flower",
+      "game_id": 455,
+      "entry_id": 455,
+      "remote_resource_id": 552,
+      "resource_url": "https://drive.google.com/drive/folders/13ogaWs_UZAKOZjIClRd7E4yFZNmeIjtU?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3473382",
+      "final_url": "https://drive.usercontent.google.com/download?id=19hsxS83fVNMkXCF3EWDcLbBPsrAmgCQt&export=download",
+      "original_filename": "word-flower-low-ink-cards-0314.pdf",
+      "relative_path": "bgg/2025-nine-card/455__word-flower/originals/2026-10-13/word-flower-low-ink-cards-0314.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 612679,
+      "sha256": "129a3cf97911d32a4659f551af63848e22e02e85769013457823a61e8179a168",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        552
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:04:04.642Z"
+    },
+    {
+      "game_title": "Word Flower",
+      "game_id": 455,
+      "entry_id": 455,
+      "remote_resource_id": 552,
+      "resource_url": "https://drive.google.com/drive/folders/13ogaWs_UZAKOZjIClRd7E4yFZNmeIjtU?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3473382",
+      "final_url": "https://drive.usercontent.google.com/download?id=12yHp9Cl8dAL7Y4NEC84p-7blWYJc2YUE&export=download",
+      "original_filename": "Word Flower Rules v0414.pdf",
+      "relative_path": "bgg/2025-nine-card/455__word-flower/originals/2026-10-14/Word Flower Rules v0414.pdf",
+      "media_type": "image/jpeg",
+      "byte_size": 182119,
+      "sha256": "01f5a9cfeb253ef528474453b27d72ba35fd5976d2c83a2285ad15d2539f0ef5",
+      "version_raw": "v0414",
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Originale JPEG offerto pubblicamente nella cartella dichiarata; estensione PDF originale preservata. Copia personale, nessuna redistribuzione.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        552
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:05:15.486Z"
+    },
+    {
+      "game_title": "Dragons Horde",
+      "game_id": 403,
+      "entry_id": 403,
+      "remote_resource_id": 427,
+      "resource_url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3439500",
+      "final_url": "https://doc-0s-9k-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/el8i3dpemjt8rbmsk8f7es6sdg/1791929115000/106779309327174819064/*/1JsP__-QwJd119vnE_64PsV8tmAEr52_KBN41gffGDAk?format=pdf",
+      "original_filename": "Demo Edition Notes.pdf",
+      "relative_path": "bgg/2025-nine-card/403__dragons-horde/originals/2026-10-13/Demo Edition Notes.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 23381,
+      "sha256": "b1b18328a36be8e580a9c4b3ad1664cfe9567862288533470d4a32e8707b8298",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_host_pdf_export",
+      "source_remote_resource_ids": [
+        427
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:05:16.517Z"
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 400,
+      "resource_url": "https://drive.google.com/drive/folders/1kg0jUgD8QszQC6w3FFNEaVQKEyWQmLxC",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MM4mwYyeLAxcGfBl2QG2AD1_Lyix9zEf&export=download&confirm=t",
+      "original_filename": "Cards 9RIP print 3.0.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Cards 9RIP print 3.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 188987900,
+      "sha256": "cdcfee91bc6ebd225febcb18417661462fdf3a08a1333871e0eb10b9c6c7a5f8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member_standard_large_file_confirmation",
+      "source_remote_resource_ids": [
+        400
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:05:43.648Z",
+      "transfer_note": "Modulo pubblico standard Google; parametro transitorio uuid conservato solo nelle prove locali."
+    },
+    {
+      "game_title": "9 RIP",
+      "game_id": 396,
+      "entry_id": 396,
+      "remote_resource_id": 400,
+      "resource_url": "https://drive.google.com/drive/folders/1kg0jUgD8QszQC6w3FFNEaVQKEyWQmLxC",
+      "source_url": "https://boardgamegeek.com/thread/3454676",
+      "final_url": "https://drive.usercontent.google.com/download?id=1HOCdVRIqm1c48JQOYHqG9kO20_953jaK&export=download&confirm=t",
+      "original_filename": "Cards and CHip PnP.pdf",
+      "relative_path": "bgg/2025-nine-card/396__9-rip/originals/2026-10-13/Cards and CHip PnP.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 218525519,
+      "sha256": "91085db188fbe5a18e26e6582d8dd27c493ccfc55ec60a884eef599c6a0a24fb",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member_standard_large_file_confirmation",
+      "source_remote_resource_ids": [
+        400
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:06:15.879Z",
+      "transfer_note": "Modulo pubblico standard Google; parametro transitorio uuid conservato solo nelle prove locali."
+    }
+  ],
+  "resource_observations": [
+    {
+      "remote_resource_id": 422,
+      "entry_id": 401,
+      "url": "https://drive.google.com/file/d/1GYFMMknfGr9yzRpjQKEhuwLhJflG9aML/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "BulletRun_9CardSheet_v2.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1GYFMMknfGr9yzRpjQKEhuwLhJflG9aML&export=download",
+          "status": "acquired",
+          "sha256": "c9a02fd0401f2f983b1dbc45679594067b869b21e200cf48bafb26d3ca45348c"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "BulletRun_9CardSheet_v2.pdf",
+      "final_url": "https://drive.google.com/file/d/1GYFMMknfGr9yzRpjQKEhuwLhJflG9aML/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 423,
+      "entry_id": 401,
+      "url": "https://drive.google.com/file/d/1U_AwzqstYtyJBDBRnkrCosWbUjqiuNs4/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "BulletRun-Rules_v2.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1U_AwzqstYtyJBDBRnkrCosWbUjqiuNs4&export=download",
+          "status": "acquired",
+          "sha256": "8c6ce96e9dff28fc0e247193b037dcc2e17787925b4aedaa4d4ea98437fe6756"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "BulletRun-Rules_v2.pdf",
+      "final_url": "https://drive.google.com/file/d/1U_AwzqstYtyJBDBRnkrCosWbUjqiuNs4/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 424,
+      "entry_id": 401,
+      "url": "https://drive.google.com/file/d/1_N8WEsbP-bi_QVvSPy1I14GxmuvX78O-/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "BulletRunGame_LowInk.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1_N8WEsbP-bi_QVvSPy1I14GxmuvX78O-&export=download",
+          "status": "acquired",
+          "sha256": "5324fe4429cb2946e82bd2d57a0172598313b36ddf744dbed9e3bc4514c52ea7"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "BulletRunGame_LowInk.pdf",
+      "final_url": "https://drive.google.com/file/d/1_N8WEsbP-bi_QVvSPy1I14GxmuvX78O-/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 398,
+      "entry_id": 396,
+      "url": "https://docs.google.com/document/d/1PdFHrttoqVY1SZPAfBGZi0KKZ7nDWX1UiddzpRGiSXk/edit?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Копія \"9GRIP - A Board Game of Mafia Confrontation - contest version\" - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1PdFHrttoqVY1SZPAfBGZi0KKZ7nDWX1UiddzpRGiSXk/export?format=pdf",
+          "status": "acquired",
+          "sha256": "ac2f4495ae72b769b339459167b46527b43df654bfbc1d6184251c590f869f91"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Копія \"9GRIP - A Board Game of Mafia Confrontation - contest version\" - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1PdFHrttoqVY1SZPAfBGZi0KKZ7nDWX1UiddzpRGiSXk/edit?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 399,
+      "entry_id": 396,
+      "url": "https://docs.google.com/document/d/1tykZBVIVCy5IIBafx956VPudIIfA0_hXJZHXfQd50Rw/edit?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "9GRIP - A Board Game of Mafia Confrontation 3.0 - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1tykZBVIVCy5IIBafx956VPudIIfA0_hXJZHXfQd50Rw/export?format=pdf",
+          "status": "acquired",
+          "sha256": "843c2fb8c81ba8c03966e8845227decb17336fcba09527b6e3e65a62ae19c3c2"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "9GRIP - A Board Game of Mafia Confrontation 3.0 - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1tykZBVIVCy5IIBafx956VPudIIfA0_hXJZHXfQd50Rw/edit?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 400,
+      "entry_id": 396,
+      "url": "https://drive.google.com/drive/folders/1kg0jUgD8QszQC6w3FFNEaVQKEyWQmLxC",
+      "status": "available",
+      "files": [
+        {
+          "name": "Box 9RIP 2.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH&export=download",
+          "status": "acquired",
+          "sha256": "081f3ca852200ed7dc109a59ec4203286ae1a1314bb5c56ef7433ac18aa19d14"
+        },
+        {
+          "name": "Cards 9RIP print 3.0 small.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or&export=download",
+          "status": "acquired",
+          "sha256": "16f3285f82f4a500e55f54904addfc90d69625a5c6a3208cba637de948786864"
+        },
+        {
+          "name": "Cards 9RIP print 3.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MM4mwYyeLAxcGfBl2QG2AD1_Lyix9zEf&export=download&confirm=t&uuid=25bdc9cc-6d02-4735-a4c0-e81307645778",
+          "status": "acquired",
+          "reason": "Risposta non PDF; nessuna conversione o salvataggio implicito",
+          "sha256": "cdcfee91bc6ebd225febcb18417661462fdf3a08a1333871e0eb10b9c6c7a5f8"
+        },
+        {
+          "name": "Cards 9RIP print 4.0 small.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM&export=download",
+          "status": "acquired",
+          "sha256": "3e02afe53dc136d3c8555fa79433efb626dda916304b87b10abbb2f17b993ba4"
+        },
+        {
+          "name": "Cards and CHip PnP.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1HOCdVRIqm1c48JQOYHqG9kO20_953jaK&export=download&confirm=t&uuid=76f13f21-f559-4056-9ac3-e856fab4da93",
+          "status": "acquired",
+          "reason": "Risposta non PDF; nessuna conversione o salvataggio implicito",
+          "sha256": "91085db188fbe5a18e26e6582d8dd27c493ccfc55ec60a884eef599c6a0a24fb"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "9GRIP",
+      "final_url": "https://drive.google.com/drive/folders/1kg0jUgD8QszQC6w3FFNEaVQKEyWQmLxC",
+      "folder_files": {
+        "10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH": "Box 9RIP 2.0.pdf",
+        "1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or": "Cards 9RIP print 3.0 small.pdf",
+        "1MM4mwYyeLAxcGfBl2QG2AD1_Lyix9zEf": "Cards 9RIP print 3.0.pdf",
+        "1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM": "Cards 9RIP print 4.0 small.pdf",
+        "1HOCdVRIqm1c48JQOYHqG9kO20_953jaK": "Cards and CHip PnP.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 401,
+      "entry_id": 396,
+      "url": "https://drive.google.com/file/d/10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Box 9RIP 2.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH&export=download",
+          "status": "acquired",
+          "sha256": "081f3ca852200ed7dc109a59ec4203286ae1a1314bb5c56ef7433ac18aa19d14"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Box 9RIP 2.0.pdf",
+      "final_url": "https://drive.google.com/file/d/10A1MCg0QHFFh2YKGtbMwXSz-YDU8fHxH/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 402,
+      "entry_id": 396,
+      "url": "https://drive.google.com/file/d/1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Cards 9RIP print 4.0 small.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM&export=download",
+          "status": "acquired",
+          "sha256": "3e02afe53dc136d3c8555fa79433efb626dda916304b87b10abbb2f17b993ba4"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Cards 9RIP print 4.0 small.pdf",
+      "final_url": "https://drive.google.com/file/d/1EZB8Ewr8JvdeFFLUMXphU03m__pc1OlM/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 403,
+      "entry_id": 396,
+      "url": "https://drive.google.com/file/d/1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Cards 9RIP print 3.0 small.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or&export=download",
+          "status": "acquired",
+          "sha256": "16f3285f82f4a500e55f54904addfc90d69625a5c6a3208cba637de948786864"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Cards 9RIP print 3.0 small.pdf",
+      "final_url": "https://drive.google.com/file/d/1NN_PoTJw9DE9FUqcy1bkcQlwGcON83Or/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 404,
+      "entry_id": 396,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3454941481",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 405,
+      "entry_id": 396,
+      "url": "https://youtube.com/watch?v=d9zFiDZGdyM",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 408,
+      "entry_id": 398,
+      "url": "https://drive.google.com/drive/folders/1WpLzt-5Zx6uIb-sSjwi0G7db1ak6ubxP?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Cards All Among Cats & Pigeons.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg&export=download",
+          "status": "acquired",
+          "sha256": "d828b53df8c754e79ea9b8cb77883a0a292df02047e598188427cd55b373d6ad"
+        },
+        {
+          "name": "Rulebook All Amongst Cats and Pigeons v.1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=19wevJkh1XEyphqRxoHuekp5goRoix_G4&export=download",
+          "status": "acquired",
+          "sha256": "e5aa49049a183a55ecd201ba7bf5059f660ff27f89500ee88c6469147790b28f"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "All Amongst Cats & Pigeons",
+      "final_url": "https://drive.google.com/drive/folders/1WpLzt-5Zx6uIb-sSjwi0G7db1ak6ubxP?usp=drive_link",
+      "folder_files": {
+        "1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg": "Cards All Among Cats & Pigeons.pdf",
+        "19wevJkh1XEyphqRxoHuekp5goRoix_G4": "Rulebook All Amongst Cats and Pigeons v.1.0.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 409,
+      "entry_id": 398,
+      "url": "https://drive.google.com/file/d/19wevJkh1XEyphqRxoHuekp5goRoix_G4/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Rulebook All Amongst Cats and Pigeons v.1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=19wevJkh1XEyphqRxoHuekp5goRoix_G4&export=download",
+          "status": "acquired",
+          "sha256": "e5aa49049a183a55ecd201ba7bf5059f660ff27f89500ee88c6469147790b28f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Rulebook All Amongst Cats and Pigeons v.1.0.pdf",
+      "final_url": "https://drive.google.com/file/d/19wevJkh1XEyphqRxoHuekp5goRoix_G4/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 410,
+      "entry_id": 398,
+      "url": "https://drive.google.com/file/d/1Ok6rCjHoQR_FOZkIpvwfF-W2UMM2F7g1/view?usp=drive_link",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 411,
+      "entry_id": 398,
+      "url": "https://drive.google.com/file/d/1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Cards All Among Cats & Pigeons.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg&export=download",
+          "status": "acquired",
+          "sha256": "d828b53df8c754e79ea9b8cb77883a0a292df02047e598188427cd55b373d6ad"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Cards All Among Cats & Pigeons.pdf",
+      "final_url": "https://drive.google.com/file/d/1k4vJDO8fMMGd5E9XoSjao2eOZ9qlqHcg/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 412,
+      "entry_id": 398,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3441679491",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 427,
+      "entry_id": 403,
+      "url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Dragon's_Horde_Rulebook_Demo.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MIZReb-gaCP1s2QdFJcI2YRqa7EJ99kh&export=download",
+          "status": "acquired",
+          "sha256": "36e19bf11e6c96ed22997b0f91549711f9719b722d8c3d8f6634119b17daea29"
+        },
+        {
+          "name": "Pnp_Demo.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ww9v0LF-O0nqvBkpPz5lx204aXrWa_mk&export=download",
+          "status": "acquired",
+          "sha256": "25279db0a7c2194c378eb53be1a3cbc2632195d6a55c3e7e805595193f4ae848"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Dragon's Hoard Demo",
+      "final_url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "folder_files": {
+        "1MIZReb-gaCP1s2QdFJcI2YRqa7EJ99kh": "Dragon's_Horde_Rulebook_Demo.pdf",
+        "1ww9v0LF-O0nqvBkpPz5lx204aXrWa_mk": "Pnp_Demo.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14",
+      "game_edition": "demo",
+      "note": "Demo verificata nelle note: una configurazione contro 256 del gioco completo."
+    },
+    {
+      "remote_resource_id": 428,
+      "entry_id": 404,
+      "url": "https://docs.google.com/document/d/1dLZjKY_oEt3KM2Rpp8uovDH2eoGo-sc9NOY1r9EDf1w/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "DUNG BEETLES 3.0 - Rulebook - Designed by Fernando Marecos - 2025-9-card-nanogame-print-and-play-design-contest - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1dLZjKY_oEt3KM2Rpp8uovDH2eoGo-sc9NOY1r9EDf1w/export?format=pdf",
+          "status": "acquired",
+          "sha256": "ca165cab7d3e267addadd4b375a915d8336715db891083345dba50c756475387"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "DUNG BEETLES 3.0 - Rulebook - Designed by Fernando Marecos - 2025-9-card-nanogame-print-and-play-design-contest - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1dLZjKY_oEt3KM2Rpp8uovDH2eoGo-sc9NOY1r9EDf1w/edit?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 429,
+      "entry_id": 404,
+      "url": "https://drive.google.com/file/d/1zstpTFxlYnSfhcjoKQ7_rIjA842t_riM/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "DUNG BEETLES - 1A4 double sided - Designed by Fernando Marecos - V2.2 - 2025-9-card-nanogame-print-and-play-design-contest.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1zstpTFxlYnSfhcjoKQ7_rIjA842t_riM&export=download",
+          "status": "acquired",
+          "sha256": "7469c8ac66f33f85acb773c6645857e1ea1d2d62ba7c0109a0bceb6d94e5d46a"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "DUNG BEETLES - 1A4 double sided - Designed by Fernando Marecos - V2.2 - 2025-9-card-nanogame-print-and-play-design-contest.pdf",
+      "final_url": "https://drive.google.com/file/d/1zstpTFxlYnSfhcjoKQ7_rIjA842t_riM/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 430,
+      "entry_id": 404,
+      "url": "https://tabletopia.com/games/dung-beetle-5zamsi/play-now",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 432,
+      "entry_id": 406,
+      "url": "https://docs.google.com/document/d/1GgrwJ8Hm__EALgu85Qz7zxNLoiptCyqVT_S_IwlxwvI/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Fall of the Republic - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1GgrwJ8Hm__EALgu85Qz7zxNLoiptCyqVT_S_IwlxwvI/export?format=pdf",
+          "status": "acquired",
+          "sha256": "db3cfc65a110b821c80f9a608144dee17180cb46e97f367a9870fe2f3484ecb4"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Fall of the Republic - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1GgrwJ8Hm__EALgu85Qz7zxNLoiptCyqVT_S_IwlxwvI/edit?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 433,
+      "entry_id": 406,
+      "url": "https://drive.google.com/file/d/1tuD2dHvwlyo8Eks4nWhC5ekdKNRuCWmE/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "fall-of-the-republic-pnp.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1tuD2dHvwlyo8Eks4nWhC5ekdKNRuCWmE&export=download",
+          "status": "acquired",
+          "sha256": "07d808735b064470248a5a6d24d869a1be2270d249b8a279bbb3a0d2b89a1ef7"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "fall-of-the-republic-pnp.pdf",
+      "final_url": "https://drive.google.com/file/d/1tuD2dHvwlyo8Eks4nWhC5ekdKNRuCWmE/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 435,
+      "entry_id": 408,
+      "url": "https://drive.google.com/file/d/1L6eP9fUsuHpLlquY7z730BdthMFEwxVC/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Cards FOR9E print 1.1.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1L6eP9fUsuHpLlquY7z730BdthMFEwxVC&export=download",
+          "status": "acquired",
+          "sha256": "37431c3d3500660ee31013d0bf75d38ca20597754c68790340a0ea8610a302d5"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Cards FOR9E print 1.1.pdf",
+      "final_url": "https://drive.google.com/file/d/1L6eP9fUsuHpLlquY7z730BdthMFEwxVC/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 436,
+      "entry_id": 408,
+      "url": "https://drive.google.com/file/d/1rpAu8R7T5iszaBdT2Ty6J8Iw5CVC5l-x/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Rules.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1rpAu8R7T5iszaBdT2Ty6J8Iw5CVC5l-x&export=download",
+          "status": "acquired",
+          "sha256": "f4635f89a417fa76628340331d64c7adbe595bd1e62bd8450014b7132fb6e7ff"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Rules.pdf",
+      "final_url": "https://drive.google.com/file/d/1rpAu8R7T5iszaBdT2Ty6J8Iw5CVC5l-x/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 437,
+      "entry_id": 408,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3428245774",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 453,
+      "entry_id": 412,
+      "url": "https://drive.google.com/file/d/1VUvPHOvBreaCYIgXP-xjX15ork28SJMP/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Grate Sword v1.09 Rules.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1VUvPHOvBreaCYIgXP-xjX15ork28SJMP&export=download",
+          "status": "acquired",
+          "sha256": "315e403ada15f18ba5859d2e3ddfec2040774b2f826109fc18ddaeb647c50725"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Grate Sword v1.09 Rules.pdf",
+      "final_url": "https://drive.google.com/file/d/1VUvPHOvBreaCYIgXP-xjX15ork28SJMP/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 454,
+      "entry_id": 412,
+      "url": "https://drive.google.com/file/d/1kyf9jHuuOWcCH4N9k-68twtLUjqa4_V3/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Grate Sword v1.09.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1kyf9jHuuOWcCH4N9k-68twtLUjqa4_V3&export=download",
+          "status": "acquired",
+          "sha256": "ef8e7893676d101a6775ab62858e2537e5b19303b0d1266fb04742f7cf8145a6"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Grate Sword v1.09.pdf",
+      "final_url": "https://drive.google.com/file/d/1kyf9jHuuOWcCH4N9k-68twtLUjqa4_V3/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 455,
+      "entry_id": 412,
+      "url": "https://youtu.be/ZWK6M9xhFF4",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 464,
+      "entry_id": 416,
+      "url": "https://drive.google.com/file/d/1IeaM5PoEG7XkVphxYsIrJ6tpbxfb4yDP/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Into the Arcanum Rulebook 1.2 FULL COLOR.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1IeaM5PoEG7XkVphxYsIrJ6tpbxfb4yDP&export=download",
+          "status": "acquired",
+          "sha256": "234b547781cb9f2ee17cd7d8d0ef4ee71ad933e29ecf4ca1dfdef3ce2b392b0b"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Into the Arcanum Rulebook 1.2 FULL COLOR.pdf",
+      "final_url": "https://drive.google.com/file/d/1IeaM5PoEG7XkVphxYsIrJ6tpbxfb4yDP/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 465,
+      "entry_id": 416,
+      "url": "https://drive.google.com/file/d/1KZzS7oGcaPozUYt-e0XF23_lPP41ikQa/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Into the Arcanum 1_2 FULL COLOR.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1KZzS7oGcaPozUYt-e0XF23_lPP41ikQa&export=download",
+          "status": "acquired",
+          "sha256": "18b55876b31a8975fb88dd0c4e0ff016eb42bb0948e95c5edf72f4a228e47044"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Into the Arcanum 1_2 FULL COLOR.pdf",
+      "final_url": "https://drive.google.com/file/d/1KZzS7oGcaPozUYt-e0XF23_lPP41ikQa/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 466,
+      "entry_id": 416,
+      "url": "https://drive.google.com/file/d/1W9aPdddh2CcmLlj76xP9yxgeqeNK0veN/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Into the Arcanum 1_2 LOW INK.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1W9aPdddh2CcmLlj76xP9yxgeqeNK0veN&export=download",
+          "status": "acquired",
+          "sha256": "81641e4a668e04536edeec04c524020d418752a684061b85915a034407a5538e"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Into the Arcanum 1_2 LOW INK.pdf",
+      "final_url": "https://drive.google.com/file/d/1W9aPdddh2CcmLlj76xP9yxgeqeNK0veN/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 467,
+      "entry_id": 416,
+      "url": "https://drive.google.com/file/d/1ejPkiKu-KNKbE1AisxE13NtLROKjy6GX/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Into the Arcanum Rulebook 1.2 LOW INK.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ejPkiKu-KNKbE1AisxE13NtLROKjy6GX&export=download",
+          "status": "acquired",
+          "sha256": "dbd598b7bd396143ecb69d363d62a473905d823b84557f054166252e41d0c84f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Into the Arcanum Rulebook 1.2 LOW INK.pdf",
+      "final_url": "https://drive.google.com/file/d/1ejPkiKu-KNKbE1AisxE13NtLROKjy6GX/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 473,
+      "entry_id": 420,
+      "url": "https://boardgamegeek.com/thread/3456714/article/45619543#45619543",
+      "status": "reference_only",
+      "reason": "Regole nel post BGG; nessun file originale dichiarato. File della cartella verificati separatamente.",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 474,
+      "entry_id": 420,
+      "url": "https://drive.google.com/drive/folders/1BbddWznHuD3IDVmP2zE9XydR5BYiaR50?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Lola_Cards_1-3_low-ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1VAb3ARUWCsKBOLocMsT8Urqe4JKgV6MJ&export=download",
+          "status": "acquired",
+          "sha256": "5869ff360d525cb447843e0026c65b6986e4cfccf99deac250017cccbac89677"
+        },
+        {
+          "name": "Lola_Cards_1-3.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1oh4BPb6yYC8lpxWg194Wy16tCK_hoOPf&export=download",
+          "status": "acquired",
+          "sha256": "c5fb0b6ae44b0bf69669d4a957c80f2819265a2b3b583c0bc45da97f7fc7aba4"
+        },
+        {
+          "name": "Lola_Rules_1-3.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1VVSn4bgJGz3MUdGx8Cs3iVZIU-RTtskH&export=download",
+          "status": "acquired",
+          "sha256": "944031f29f1a49537a08c9c0f9c26c1bf5f038c488c319755c265c86a9e6eb77"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Lola_High_up_in_the_Ocean",
+      "final_url": "https://drive.google.com/drive/folders/1BbddWznHuD3IDVmP2zE9XydR5BYiaR50?usp=sharing",
+      "folder_files": {
+        "1VAb3ARUWCsKBOLocMsT8Urqe4JKgV6MJ": "Lola_Cards_1-3_low-ink.pdf",
+        "1oh4BPb6yYC8lpxWg194Wy16tCK_hoOPf": "Lola_Cards_1-3.pdf",
+        "1VVSn4bgJGz3MUdGx8Cs3iVZIU-RTtskH": "Lola_Rules_1-3.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 475,
+      "entry_id": 420,
+      "url": "https://playingcards.io/rxpjyz",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 476,
+      "entry_id": 421,
+      "url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "how to craft.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1bKV8bTXSqRJzMxUrPAldJKXXyoW2k_el&export=download",
+          "status": "acquired",
+          "sha256": "82cee7a899292cae5a7e5c45beaf1f5de9f8343c4ae28f2c379d4f5b6701a634"
+        },
+        {
+          "name": "MATH KNIGHT RULES v4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1AL7y7KwVWw6qYzXJPw1Laayq1qyIg5ig&export=download",
+          "status": "acquired",
+          "sha256": "623e96cd82304ceeca1c9a87433d869f67aeb4e07bbb712b5f51db6fd4f6702d"
+        },
+        {
+          "name": "math knight tuck box.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ek1MMHmrVQ2WCr4zyrXXgQovNPcUQo24&export=download",
+          "status": "acquired",
+          "sha256": "78372a740175465fbfd862aa7bf2ca0295061e2fbdc7b50c3e13dceac58db558"
+        },
+        {
+          "name": "Math Knight V2 (3x3) A4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=11khuf6cEnGWIkxLk5H6D7wZKGyF50-wk&export=download",
+          "status": "acquired",
+          "sha256": "d1eda87ff289932046065a2443c6fa6578a5169be5d5c445f3aa9b802ab46eba"
+        },
+        {
+          "name": "Math Knight V2 (Gutter Fold) A4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1OQkvQqyPrFrFIEjAbmzzZD-wTjQBPbSJ&export=download",
+          "status": "acquired",
+          "sha256": "a5ba502cdf2d94822faaa13685123f0db4156728273ded06138788da4acf81da"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "MATH KIGHT ENTRY",
+      "final_url": "https://drive.google.com/drive/folders/1RYJnM3J2wDkxYfngWIenI8lEONBxkzdd?usp=sharing",
+      "folder_files": {
+        "1bKV8bTXSqRJzMxUrPAldJKXXyoW2k_el": "how to craft.pdf",
+        "1AL7y7KwVWw6qYzXJPw1Laayq1qyIg5ig": "MATH KNIGHT RULES v4.pdf",
+        "1ek1MMHmrVQ2WCr4zyrXXgQovNPcUQo24": "math knight tuck box.pdf",
+        "11khuf6cEnGWIkxLk5H6D7wZKGyF50-wk": "Math Knight V2 (3x3) A4.pdf",
+        "1OQkvQqyPrFrFIEjAbmzzZD-wTjQBPbSJ": "Math Knight V2 (Gutter Fold) A4.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 477,
+      "entry_id": 421,
+      "url": "https://youtube.com/watch?v=NoP1MyV-kAg",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 478,
+      "entry_id": 422,
+      "url": "https://drive.google.com/file/d/12EFYrPWLLwclU8i-xWRSiSmppcFyuKjI/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Mutineer (Cards).pdf",
+          "url": "https://drive.usercontent.google.com/download?id=12EFYrPWLLwclU8i-xWRSiSmppcFyuKjI&export=download",
+          "status": "acquired",
+          "sha256": "692af6721027771282b225f8640a5b80fbfc93affd91f7aa5ded3f83a62a51c8"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Mutineer (Cards).pdf",
+      "final_url": "https://drive.google.com/file/d/12EFYrPWLLwclU8i-xWRSiSmppcFyuKjI/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 479,
+      "entry_id": 422,
+      "url": "https://drive.google.com/file/d/1esuchwy32Ke55ba3oV-TAm28dgf_2Au1/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Mutineer (Rules).pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1esuchwy32Ke55ba3oV-TAm28dgf_2Au1&export=download",
+          "status": "acquired",
+          "sha256": "c8eb9488364840ba41f59acde5e32df0cb11711feb14a00d0e97cc35e8a9acd0"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Mutineer (Rules).pdf",
+      "final_url": "https://drive.google.com/file/d/1esuchwy32Ke55ba3oV-TAm28dgf_2Au1/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 480,
+      "entry_id": 422,
+      "url": "https://playingcards.io/7qjhgh",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 481,
+      "entry_id": 422,
+      "url": "https://playingcards.io/z9kxv8",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 482,
+      "entry_id": 422,
+      "url": "https://youtube.com/watch?v=m81DyUR9LTE",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 494,
+      "entry_id": 428,
+      "url": "https://docs.google.com/document/d/1vWmhp9WVvCX12pEtNuczpiexwsKSrX0b84DvnGtZ2_E/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Orangutan Rescue Duet - Overview and Rules - 3-11-25 - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1vWmhp9WVvCX12pEtNuczpiexwsKSrX0b84DvnGtZ2_E/export?format=pdf",
+          "status": "acquired",
+          "sha256": "52f3e4db9a72478be55af9482e64c8774dea5f7559d40b5fad6f8e6145316eef"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Orangutan Rescue Duet - Overview and Rules - 3-11-25 - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1vWmhp9WVvCX12pEtNuczpiexwsKSrX0b84DvnGtZ2_E/edit?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 495,
+      "entry_id": 428,
+      "url": "https://drive.google.com/file/d/1dZl5XBMN2gUyFTJ1f12Gvb6SxnmMKvjy/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Orangutan Rescue Duet - PNP Cards - Flip and Print - Inkjet - Full Color.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1dZl5XBMN2gUyFTJ1f12Gvb6SxnmMKvjy&export=download",
+          "status": "acquired",
+          "sha256": "53b62bb616306badf9dd14c726bec9c6d266f9260ee580dd7c217762f6c26aa5"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Orangutan Rescue Duet - PNP Cards - Flip and Print - Inkjet - Full Color.pdf",
+      "final_url": "https://drive.google.com/file/d/1dZl5XBMN2gUyFTJ1f12Gvb6SxnmMKvjy/view?usp=drive_link",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 496,
+      "entry_id": 428,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3439575164",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 497,
+      "entry_id": 429,
+      "url": "https://docs.google.com/document/d/19aqqmxVA1x5uIK3hwBjmjeUaRnSKGwH5zyw45EFdbFE/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Particular Pigeons Reference Sheet - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/19aqqmxVA1x5uIK3hwBjmjeUaRnSKGwH5zyw45EFdbFE/export?format=pdf",
+          "status": "acquired",
+          "sha256": "5a37c7c83235c78d0a46f9bf063fcf6775afa4f57c0d652506b677fde1e4533c"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Particular Pigeons Reference Sheet - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/19aqqmxVA1x5uIK3hwBjmjeUaRnSKGwH5zyw45EFdbFE/edit?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 498,
+      "entry_id": 429,
+      "url": "https://docs.google.com/document/d/1ISZqDaR_sCS3epO39IZpHSR1LDOlIxQYhoGjpwzXs7k/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Particular Pigeons Rules v1.0 - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/1ISZqDaR_sCS3epO39IZpHSR1LDOlIxQYhoGjpwzXs7k/export?format=pdf",
+          "status": "acquired",
+          "sha256": "cc43b9471584ad448d43833f589b68ec3b3c25ac1a992991d07c73778cc2206c"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Particular Pigeons Rules v1.0 - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/1ISZqDaR_sCS3epO39IZpHSR1LDOlIxQYhoGjpwzXs7k/edit?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 499,
+      "entry_id": 429,
+      "url": "https://drive.google.com/file/d/1WaTHl-xvQqjdtoDdjkVo3xJqa4ZBDZDr/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Particular Pigeons Main Cards_v1.1.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1WaTHl-xvQqjdtoDdjkVo3xJqa4ZBDZDr&export=download",
+          "status": "acquired",
+          "sha256": "f9833d1530fae2f088b4293700182f11f2e4e4dc95bc361a47d3dfe8b283b054"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Particular Pigeons Main Cards_v1.1.pdf",
+      "final_url": "https://drive.google.com/file/d/1WaTHl-xvQqjdtoDdjkVo3xJqa4ZBDZDr/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 511,
+      "entry_id": 437,
+      "url": "https://drive.google.com/drive/folders/1buVyoIiu9ENUrTxm01xHJssVwIBESiTs?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "PnP EN.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1zXLvWHd4e6UpnPfyswRgO4InqctvkxNn&export=download",
+          "status": "acquired",
+          "sha256": "576f5658313e8a7f465a9758ce4f662647749d744b61ab46d208f02e4ea9038d"
+        },
+        {
+          "name": "PnP SK.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1u6vm92LAe3jcSreRY2k9GgrPFQmesZav&export=download",
+          "status": "excluded",
+          "sha256": "1f15777cbf5ba59ff8f2445eef8af6773de6e6908ea276857a0129af405af73e",
+          "reason": "Slovacco fuori perimetro; trasferito prima della verifica lingua, preservato localmente e separato dai file del lotto."
+        },
+        {
+          "name": "Skyward Parcel - EN.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1OHw4bhDJIl3aVL14w64y6jHNX-5SB8YQ&export=download",
+          "status": "acquired",
+          "sha256": "a5d7ed75719ae4fce60c003721e962e549107f9910c375a80048e7943b117351"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Skyward Parcel",
+      "final_url": "https://drive.google.com/drive/folders/1buVyoIiu9ENUrTxm01xHJssVwIBESiTs?usp=sharing",
+      "folder_files": {
+        "1zXLvWHd4e6UpnPfyswRgO4InqctvkxNn": "PnP EN.pdf",
+        "1u6vm92LAe3jcSreRY2k9GgrPFQmesZav": "PnP SK.pdf",
+        "1OHw4bhDJIl3aVL14w64y6jHNX-5SB8YQ": "Skyward Parcel - EN.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 531,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/16NNGvEQ3FE-zmvN1SMTQmuZsOz9JIXvP/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Cards 1_0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=16NNGvEQ3FE-zmvN1SMTQmuZsOz9JIXvP&export=download",
+          "status": "acquired",
+          "sha256": "a880335031325a9e411f33314722a349d7e8caa6566740c27899f92fe24da5c4"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Cards 1_0.pdf",
+      "final_url": "https://drive.google.com/file/d/16NNGvEQ3FE-zmvN1SMTQmuZsOz9JIXvP/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 532,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/1DIZj2dKZUrUvhpSuavnnJDnPBfi0VIZN/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Rules 1_0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1DIZj2dKZUrUvhpSuavnnJDnPBfi0VIZN&export=download",
+          "status": "acquired",
+          "sha256": "1785bb1273459149af52376bc67903d7776ec08ece8b398b97adb1a3fc17e18f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Rules 1_0.pdf",
+      "final_url": "https://drive.google.com/file/d/1DIZj2dKZUrUvhpSuavnnJDnPBfi0VIZN/view?usp=sharing",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 533,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/1Dpj2T1ceq7BVA8g4dyRWiY7UpE_6Ig-T/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Cards FINAL Low Ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Dpj2T1ceq7BVA8g4dyRWiY7UpE_6Ig-T&export=download",
+          "status": "acquired",
+          "sha256": "88ebfc3d1284a329d1dde1fd2dd50bf30bc09b0e8955c59e9062e4c6fd707889"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Cards FINAL Low Ink.pdf",
+      "final_url": "https://drive.google.com/file/d/1Dpj2T1ceq7BVA8g4dyRWiY7UpE_6Ig-T/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 534,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/1Yiqgq88HzHOm6GM6OynKv9M_dcIe0fOd/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Rules FINAL Low Ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Yiqgq88HzHOm6GM6OynKv9M_dcIe0fOd&export=download",
+          "status": "acquired",
+          "sha256": "e0c4a5fe9692e69129c831c5b5a1b370046bcbc48be0f1c56f269e7817793710"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Rules FINAL Low Ink.pdf",
+      "final_url": "https://drive.google.com/file/d/1Yiqgq88HzHOm6GM6OynKv9M_dcIe0fOd/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 535,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/1cdaUb0gtQdxPLe3NlfgiL-M7BdNJdEL4/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Rules FINAL Full Color.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1cdaUb0gtQdxPLe3NlfgiL-M7BdNJdEL4&export=download",
+          "status": "acquired",
+          "sha256": "b31d3a50e8a957c84b524f50733a82089ba69a8bba38fe4ad9d08ec1a56a378d"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Rules FINAL Full Color.pdf",
+      "final_url": "https://drive.google.com/file/d/1cdaUb0gtQdxPLe3NlfgiL-M7BdNJdEL4/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 536,
+      "entry_id": 449,
+      "url": "https://drive.google.com/file/d/1r2rvW0P7nlOAurA10EdHKXvopwT7ekjQ/view",
+      "status": "available",
+      "files": [
+        {
+          "name": "Tower of Babel Cards FINAL Full Color.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1r2rvW0P7nlOAurA10EdHKXvopwT7ekjQ&export=download",
+          "status": "acquired",
+          "sha256": "16b1e1fdbefd60a8bf08b9620216d1637491e84d6106bb062111b66e5ba18e40"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tower of Babel Cards FINAL Full Color.pdf",
+      "final_url": "https://drive.google.com/file/d/1r2rvW0P7nlOAurA10EdHKXvopwT7ekjQ/view",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 546,
+      "entry_id": 452,
+      "url": "https://drive.google.com/drive/folders/1cvu6QrpanLq-PnuZMaYaRgf9YFv1lG3B?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Veggie Patch rules booklet v3.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ugMzPQ88qE5g30AyTWF7rBvcauHxVeSV&export=download",
+          "status": "acquired",
+          "sha256": "bb30dcad23427c2dcdc9a4939c7ebb5afd43849581dc82ef2f34af055aea1979"
+        },
+        {
+          "name": "Veggie Patch_v3.0 less ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1nPrNApr49EWvas13ZNCMBKYuuCyx-ur1&export=download",
+          "status": "acquired",
+          "sha256": "5deffb6f15f7950341547703974f5ef7ac4704f423a2a7d478f56905a494722a"
+        },
+        {
+          "name": "Veggie Patch_v3.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1XmuX5NSWbMHid2l5CH8Cqhi_3k2rFNc7&export=download",
+          "status": "acquired",
+          "sha256": "a04d91de47a9000684a7e35740b0ba60e7b487de2f9ffe32b7f8f1cbf84eb032"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Veggie Patch",
+      "final_url": "https://drive.google.com/drive/folders/1cvu6QrpanLq-PnuZMaYaRgf9YFv1lG3B?usp=sharing",
+      "folder_files": {
+        "1ugMzPQ88qE5g30AyTWF7rBvcauHxVeSV": "Veggie Patch rules booklet v3.0.pdf",
+        "1nPrNApr49EWvas13ZNCMBKYuuCyx-ur1": "Veggie Patch_v3.0 less ink.pdf",
+        "1XmuX5NSWbMHid2l5CH8Cqhi_3k2rFNc7": "Veggie Patch_v3.0.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 552,
+      "entry_id": 455,
+      "url": "https://drive.google.com/drive/folders/13ogaWs_UZAKOZjIClRd7E4yFZNmeIjtU?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Word Flower Rules v0414.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=12yHp9Cl8dAL7Y4NEC84p-7blWYJc2YUE&export=download",
+          "status": "acquired",
+          "reason": "Estensione originale PDF, formato reale JPEG verificato",
+          "sha256": "01f5a9cfeb253ef528474453b27d72ba35fd5976d2c83a2285ad15d2539f0ef5",
+          "media_type": "image/jpeg"
+        },
+        {
+          "name": "word-flower-cards-0314.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1JVKQ8EPmq4ARXg-KKPDvZJrMt5IbiJ4Y&export=download",
+          "status": "acquired",
+          "sha256": "9f619565b608ae1195ee6794b29c8044eaed29818953a1c52a6d390a1c37d1ba"
+        },
+        {
+          "name": "word-flower-low-ink-cards-0314.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=19hsxS83fVNMkXCF3EWDcLbBPsrAmgCQt&export=download",
+          "status": "acquired",
+          "sha256": "129a3cf97911d32a4659f551af63848e22e02e85769013457823a61e8179a168"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Word Flower",
+      "final_url": "https://drive.google.com/drive/folders/13ogaWs_UZAKOZjIClRd7E4yFZNmeIjtU?usp=sharing",
+      "folder_files": {
+        "12yHp9Cl8dAL7Y4NEC84p-7blWYJc2YUE": "Word Flower Rules v0414.pdf",
+        "1JVKQ8EPmq4ARXg-KKPDvZJrMt5IbiJ4Y": "word-flower-cards-0314.pdf",
+        "19hsxS83fVNMkXCF3EWDcLbBPsrAmgCQt": "word-flower-low-ink-cards-0314.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-10-14"
+    },
+    {
+      "remote_resource_id": 553,
+      "entry_id": 455,
+      "url": "https://playingcards.io/jkr69g",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-10-14"
+    }
+  ],
+  "page_audits": [
+    {
+      "id": 400,
+      "pdfCount": 5,
+      "docsCount": 2,
+      "subfolders": 0,
+      "date": "2026-10-13"
+    },
+    {
+      "id": 408,
+      "pdfCount": 2,
+      "excludedPcio": 2,
+      "subfolders": 0,
+      "date": "2026-10-13"
+    },
+    {
+      "id": 427,
+      "pdfCount": 2,
+      "docsCount": 1,
+      "subfolders": 0,
+      "date": "2026-10-13",
+      "note": "Demo attuale; note da esportare"
+    },
+    {
+      "id": 474,
+      "pdfCount": 3,
+      "subfolders": 0,
+      "date": "2026-10-14"
+    },
+    {
+      "id": 476,
+      "pdfCount": 5,
+      "subfolders": 0,
+      "date": "2026-10-14"
+    },
+    {
+      "id": 511,
+      "pdfCount": 3,
+      "includedPdfCount": 2,
+      "excludedLanguages": [
+        "sk"
+      ],
+      "subfolders": 0,
+      "date": "2026-10-14"
+    },
+    {
+      "id": 546,
+      "pdfCount": 3,
+      "subfolders": 0,
+      "date": "2026-10-14"
+    },
+    {
+      "id": 552,
+      "pdfCount": 2,
+      "imageNamedPdfCount": 1,
+      "subfolders": 0,
+      "date": "2026-10-14"
+    }
+  ],
+  "entry_outcomes": [
+    {
+      "entry_id": 396,
+      "game_id": 396,
+      "title": "9 RIP",
+      "files": 7,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 398,
+      "game_id": 398,
+      "title": "All Amongst Cats and Pigeons",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 401,
+      "game_id": 401,
+      "title": "Bullet Run",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 403,
+      "game_id": 403,
+      "title": "Dragons Horde",
+      "files": 3,
+      "outcome": "partial",
+      "notes": "Tutti i file pubblici della demo acquisiti; edizione completa non acquisita."
+    },
+    {
+      "entry_id": 404,
+      "game_id": 404,
+      "title": "Dung Beetles",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 406,
+      "game_id": 406,
+      "title": "Fall of the Republic",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 408,
+      "game_id": 408,
+      "title": "FOR9E",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 412,
+      "game_id": 412,
+      "title": "Grate Sword",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 416,
+      "game_id": 416,
+      "title": "Into the Arcanum",
+      "files": 4,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 420,
+      "game_id": 420,
+      "title": "Lola High Up in the Ocean",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 421,
+      "game_id": 421,
+      "title": "Math Knight",
+      "files": 5,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 422,
+      "game_id": 422,
+      "title": "Mutineer",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 428,
+      "game_id": 428,
+      "title": "Orangutan Rescue Duet",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 429,
+      "game_id": 429,
+      "title": "Particular Pigeons",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 437,
+      "game_id": 437,
+      "title": "Skyward Parcel",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 447,
+      "game_id": 447,
+      "title": "Three Buccaneers",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Baseline MAT: primo post originale non osservabile, nessuna risorsa acquisibile censita."
+    },
+    {
+      "entry_id": 449,
+      "game_id": 449,
+      "title": "Tower of Babel",
+      "files": 6,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 452,
+      "game_id": 452,
+      "title": "Veggie Patch",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    },
+    {
+      "entry_id": 455,
+      "game_id": 455,
+      "title": "Word Flower",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Risorse stampabili IT/EN dichiarate nella baseline MAT ed enumerate disponibili acquisite; online/video esclusi."
+    }
+  ],
+  "excluded_files": [
+    {
+      "game_title": "Skyward Parcel",
+      "game_id": 437,
+      "entry_id": 437,
+      "remote_resource_id": 511,
+      "resource_url": "https://drive.google.com/drive/folders/1buVyoIiu9ENUrTxm01xHJssVwIBESiTs?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453464",
+      "final_url": "https://drive.usercontent.google.com/download?id=1u6vm92LAe3jcSreRY2k9GgrPFQmesZav&export=download",
+      "original_filename": "PnP SK.pdf",
+      "relative_path": "bgg/2025-nine-card/437__skyward-parcel/originals/2026-10-13/PnP SK.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1939564,
+      "sha256": "1f15777cbf5ba59ff8f2445eef8af6773de6e6908ea276857a0129af405af73e",
+      "version_raw": null,
+      "language_code": "sk",
+      "language_status": "verified_content_and_first_page_render",
+      "pages": 3,
+      "status": "excluded_language",
+      "acquired_at": "2026-10-14",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        511
+      ],
+      "selection_reason": "Entry con piazzamento ufficiale del contest 13; lotto approvato il 2026-10-13",
+      "transferred_at": "2026-10-13T22:02:40.206Z"
+    }
+  ],
+  "acquired_at": "2026-10-14",
+  "date_note": "Task e autorizzazione 2026-10-13; acquisizione proseguita oltre mezzanotte. Percorsi datati 2026-10-13 identificano il lotto, transferred_at attesta il trasferimento effettivo.",
+  "skill_effectiveness": {
+    "workflow": "bgg-material-acquisition",
+    "result": "effective_with_limits",
+    "evidence": "Otto cartelle confrontate nel browser; estensione PDF ingannevole verificata su Word Flower; trasferimenti voluminosi via modulo standard; esclusioni online e lingua separate. Parser HTML non basta per attestare completezza né formato.",
+    "improvement": "Pattern candidato registrato nel task; nessuna modifica skill senza manutenzione autorizzata."
+  }
+}

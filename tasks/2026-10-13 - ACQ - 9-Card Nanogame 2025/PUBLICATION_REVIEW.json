@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-14",
+  "policy": "PUBLICATION_POLICY.md",
+  "scope": "TSK-0087 selective commit; all outgoing commits reviewed",
+  "preexisting_outgoing_commits": 0,
+  "baseline_heuristic_findings": 299,
+  "baseline_paths": 30,
+  "baseline_content": "Identical to origin/main after normalizing LF/CRLF; outside new changes; historical review remains TSK-0066.",
+  "selected_heuristic_findings": 0,
+  "excluded": "Operational database, acquired game files, backups, source HTML/text dumps and screenshots remain local and ignored.",
+  "rights_review": "Only factual metadata, short labels needed to identify resources, source links, project-authored summaries and original code. No third-party game content redistribution. Credits and roles not catalogued remain explicit.",
+  "limits": "Heuristic result is not legal clearance for historical content or acquired materials."
+}

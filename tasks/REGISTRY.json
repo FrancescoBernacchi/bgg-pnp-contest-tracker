@@ -1,9 +1,51 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-10",
+  "updated_at": "2026-10-14",
   "protocol": "TASK_GOVERNANCE.md",
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata. Rinomina del 2026-10-04: 38 chat con contenuto osservate anche oltre il limite dell elenco; titoli nel campo chats, separati da date e percorsi dei 44 registri locali. Apertura TSK-0045 il 2026-10-04: contenitore continuativo classifiche 2025, estensione annuale deliberata. Audit naming 2026-10-10: 86 registri e 76 chat utente del progetto verificate, incluse worktree e unica chat archiviata del progetto. Quattro collegamenti storici formalizzati senza inferire stato; chat tecniche Guardian e subagent escluse.",
   "tasks": [
+    {
+      "id": "TSK-0087",
+      "original_title": "2026-10-13 - ACQ - 9-Card Nanogame 2025",
+      "display_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025",
+      "opened_at": "2026-10-13",
+      "task_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+      "category": "ACQ",
+      "secondary_categories": [],
+      "classified_at": "2026-10-13",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Lotto classificati concluso: 56 file per 18 giochi registrati dopo OK utente; demo parziale e blocco documentati, verifiche DB/app superate.",
+      "dependencies": [
+        "TSK-0051"
+      ],
+      "chat_ids": [
+        "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
+      ],
+      "next_action": "Su richiesta: recupero mirato Three Buccaneers oppure selezione non classificati nello stesso contest; commit selettivo da autorizzare.",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "integrato_main",
+        "synchronization": "da_verificare"
+      },
+      "verified_at": "2026-10-14",
+      "coverage": {
+        "selected_entries": 19,
+        "games_with_files": 18,
+        "complete": 17,
+        "partial_demo": 1,
+        "blocked": 1,
+        "files": 56,
+        "pdf": 55,
+        "jpeg": 1,
+        "operational_import": true,
+        "verified_at": "2026-10-14",
+        "contest_acquisition_complete": 17,
+        "contest_acquisition_denominator": 93
+      },
+      "closed_at": "2026-10-14"
+    },
     {
       "id": "TSK-0077",
       "original_title": "2026-10-06 - DAT - Schema multifonte per PerGioco",

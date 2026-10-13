@@ -1,0 +1,59 @@
+[
+  {
+    "id": 400,
+    "pdfCount": 5,
+    "docsCount": 2,
+    "subfolders": 0,
+    "date": "2026-10-13"
+  },
+  {
+    "id": 408,
+    "pdfCount": 2,
+    "excludedPcio": 2,
+    "subfolders": 0,
+    "date": "2026-10-13"
+  },
+  {
+    "id": 427,
+    "pdfCount": 2,
+    "docsCount": 1,
+    "subfolders": 0,
+    "date": "2026-10-13",
+    "note": "Demo attuale; note da esportare"
+  },
+  {
+    "id": 474,
+    "pdfCount": 3,
+    "subfolders": 0,
+    "date": "2026-10-14"
+  },
+  {
+    "id": 476,
+    "pdfCount": 5,
+    "subfolders": 0,
+    "date": "2026-10-14"
+  },
+  {
+    "id": 511,
+    "pdfCount": 3,
+    "includedPdfCount": 2,
+    "excludedLanguages": [
+      "sk"
+    ],
+    "subfolders": 0,
+    "date": "2026-10-14"
+  },
+  {
+    "id": 546,
+    "pdfCount": 3,
+    "subfolders": 0,
+    "date": "2026-10-14"
+  },
+  {
+    "id": 552,
+    "pdfCount": 2,
+    "imageNamedPdfCount": 1,
+    "subfolders": 0,
+    "date": "2026-10-14"
+  }
+]
