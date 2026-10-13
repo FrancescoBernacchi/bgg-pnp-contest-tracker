@@ -2738,3 +2738,7 @@ TSK-0068: lotto iniziale concluso 14/14, 687 immagini adottate; copertura contes
 ### ACQ classificati 9-Card 2025 operativo e concluso — 2026-10-14
 
 TSK-0087 completato dopo consenso utente: 18 acquisizioni, 56 file (55 PDF e 1 JPEG), 19 esiti. 17 completi, Dragons Horde demo parziale, Three Buccaneers bloccato. Backup/ripristino e transazione esclusiva verificati; integrità/FK valide, replay RO senza scritture. Libreria browser: 18 giochi/56 file presenti; Avanzamento ACQ del contest 17/93. A/B rigenerate dal database operativo. Nessun commit/push; prossimo lotto o recupero solo su richiesta.
+
+### Salvataggio ACQ 9-Card verificato — 2026-10-14
+
+TSK-0087: commit dati 7de8de8 su main e push origin/main verificati sul server. 16 file selettivi, soli metadati/runner/documentazione; nessun binario di gioco o database pubblicato. Zero rilievi sui nuovi contenuti, riesame storico distinto. Modifiche locali estranee preservate.

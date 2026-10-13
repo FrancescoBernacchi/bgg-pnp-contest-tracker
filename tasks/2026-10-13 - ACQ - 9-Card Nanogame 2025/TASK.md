@@ -64,3 +64,7 @@ Prossimo incremento utile, su richiesta: recupero mirato Three Buccaneers entro 
 ## Commit e push autorizzati — 2026-10-14
 
 L’utente richiede «commit e push». Fetch origin eseguito: main e origin/main senza divergenze e nessun commit preesistente in uscita. Preparazione selettiva: solo TSK-0087, manifest, runner/verifiche e 19 celle del cruscotto ottenute dal confronto generato prima/dopo registrazione; altre modifiche locali preservate. Audit completo eseguito: 299 segnalazioni euristiche su 30 percorsi preesistenti, tutti identici a origin/main; non fanno parte del nuovo incremento. Audit dei 15 file selezionati: zero rilievi. Materiali, database, copie/backup, testo integrale e screenshot esclusi. Report dettagliati locali in outputs/nine-card-git-2026-10-14/. Questo controllo non certifica la liceità della storia pregressa, che resta nel riesame TSK-0066.
+
+## Salvataggio e pubblicazione verificati — 2026-10-14
+
+Commit dati 7de8de814c23f6fb893aa204cc681a2f27beec89 su main: 16 file, solo incremento TSK-0087. Push origin/main riuscito; ls-remote conferma lo stesso SHA su GitHub. Audit di tutti i commit in uscita: un commit, zero rilievi nuovi; 299 candidati storici su 30 percorsi già nel remoto, contenuti invariati dopo normalizzazione LF/CRLF. Indice senza errori whitespace; materiali/database/output esclusi. Modifiche degli altri task preservate nella working tree. La registrazione di questo esito costituisce un successivo commit documentale, senza attribuirgli anticipatamente un hash.

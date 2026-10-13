@@ -23,11 +23,14 @@
       "chat_ids": [
         "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
       ],
-      "next_action": "Su richiesta: recupero mirato Three Buccaneers oppure selezione non classificati nello stesso contest; commit selettivo da autorizzare.",
+      "next_action": "Su richiesta: recupero mirato Three Buccaneers oppure selezione non classificati nello stesso contest.",
       "git": {
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare"
+        "synchronization": "remoto_verificato",
+        "checked_at": "2026-10-14",
+        "last_data_commit": "7de8de814c23f6fb893aa204cc681a2f27beec89",
+        "evidence": "Commit selettivo 16 file e push verificati con ls-remote; questa attestazione documentale segue il salvataggio dati. Modifiche estranee preservate."
       },
       "verified_at": "2026-10-14",
       "coverage": {
