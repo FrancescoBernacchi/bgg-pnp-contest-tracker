@@ -24,13 +24,15 @@
       "chat_ids": [
         "01a13bf3-7a3d-76c1-b07d-3e72b9752314"
       ],
-      "next_action": "Su richiesta: incremento IMG per nuove fonti o giochi ulteriori; commit selettivo da proporre.",
+      "next_action": "Su richiesta: incremento IMG per nuove fonti o giochi ulteriori; lotto dati salvato e sincronizzato.",
       "verified_at": "2026-10-14",
       "git": {
-        "local_save": "da_committare",
-        "integration": "non_applicabile",
-        "synchronization": "non_applicabile",
-        "checked_at": "2026-10-14"
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "checked_at": "2026-10-15",
+        "last_data_commit": "b1c6342be3c1d38adbf2d1faf192de76cea9bce2",
+        "evidence": "Commit selettivo 22 file e push origin/main verificati con ls-remote e confronto 0/0; modifiche estranee preservate. Attestazione documentale successiva al commit dati."
       },
       "coverage": {
         "games": 17,
