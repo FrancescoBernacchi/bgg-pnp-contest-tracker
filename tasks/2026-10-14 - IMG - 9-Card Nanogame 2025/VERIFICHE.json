@@ -1,0 +1,199 @@
+{
+  "checked_at": "2026-10-14",
+  "task_id": "TSK-0088",
+  "summary": {
+    "remote_original_files": 175,
+    "catalogued_images": 506,
+    "adopted": 499,
+    "not_adopted": 7,
+    "extracted": 336,
+    "components": 164,
+    "games": 17,
+    "by_game": {
+      "396": {
+        "images": 26,
+        "adopted": 24
+      },
+      "398": {
+        "images": 27,
+        "adopted": 27
+      },
+      "401": {
+        "images": 33,
+        "adopted": 33
+      },
+      "404": {
+        "images": 65,
+        "adopted": 65
+      },
+      "406": {
+        "images": 33,
+        "adopted": 31
+      },
+      "408": {
+        "images": 25,
+        "adopted": 25
+      },
+      "412": {
+        "images": 26,
+        "adopted": 26
+      },
+      "416": {
+        "images": 34,
+        "adopted": 34
+      },
+      "420": {
+        "images": 22,
+        "adopted": 22
+      },
+      "421": {
+        "images": 37,
+        "adopted": 36
+      },
+      "422": {
+        "images": 28,
+        "adopted": 28
+      },
+      "428": {
+        "images": 24,
+        "adopted": 23
+      },
+      "429": {
+        "images": 29,
+        "adopted": 29
+      },
+      "437": {
+        "images": 26,
+        "adopted": 26
+      },
+      "449": {
+        "images": 14,
+        "adopted": 14
+      },
+      "452": {
+        "images": 33,
+        "adopted": 33
+      },
+      "455": {
+        "images": 24,
+        "adopted": 23
+      }
+    }
+  },
+  "copy_import_verified": true,
+  "backup_restore_verified": true,
+  "integrity": "ok",
+  "foreign_keys": "ok",
+  "schema_unchanged": true,
+  "legacy_preserved": true,
+  "prior_img_rows_preserved": true,
+  "replay_without_writes": true,
+  "import_id": 9,
+  "manifest_sha256": "bcecb070603460b1159e37c449f267121f62ea8c747bd80ad7a1e98d22e55948",
+  "galleries": {
+    "396": {
+      "files": 26,
+      "components": 15,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "398": {
+      "files": 27,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "401": {
+      "files": 33,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "404": {
+      "files": 65,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "406": {
+      "files": 33,
+      "components": 12,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "408": {
+      "files": 25,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "412": {
+      "files": 26,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "416": {
+      "files": 34,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "420": {
+      "files": 22,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "421": {
+      "files": 37,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "422": {
+      "files": 28,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "428": {
+      "files": 24,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "429": {
+      "files": 29,
+      "components": 11,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "437": {
+      "files": 26,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "449": {
+      "files": 14,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "452": {
+      "files": 33,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    },
+    "455": {
+      "files": 24,
+      "components": 9,
+      "all_local_ready": true,
+      "research_observations": 1
+    }
+  },
+  "private_evidence_directory": "outputs/tsk0088",
+  "browser_verification": "outputs/tsk0088/browser-app-verified.json"
+}

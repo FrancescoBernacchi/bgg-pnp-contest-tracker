@@ -5,6 +5,45 @@
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata. Rinomina del 2026-10-04: 38 chat con contenuto osservate anche oltre il limite dell elenco; titoli nel campo chats, separati da date e percorsi dei 44 registri locali. Apertura TSK-0045 il 2026-10-04: contenitore continuativo classifiche 2025, estensione annuale deliberata. Audit naming 2026-10-10: 86 registri e 76 chat utente del progetto verificate, incluse worktree e unica chat archiviata del progetto. Quattro collegamenti storici formalizzati senza inferire stato; chat tecniche Guardian e subagent escluse.",
   "tasks": [
     {
+      "id": "TSK-0088",
+      "original_title": "2026-10-14 - IMG - 9-Card Nanogame 2025",
+      "display_title": "T0088-26.10.14 - IMG - 9-Card Nanogame 2025",
+      "opened_at": "2026-10-14",
+      "task_path": "tasks/2026-10-14 - IMG - 9-Card Nanogame 2025/TASK.md",
+      "category": "IMG",
+      "secondary_categories": [],
+      "classified_at": "2026-10-14",
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "17 giochi conclusi nel perimetro osservato con limiti; 506 immagini importate, 499 adottate; copia/backup/replay/app verificati.",
+      "dependencies": [
+        "TSK-0087",
+        "TSK-0067"
+      ],
+      "chat_ids": [
+        "01a13bf3-7a3d-76c1-b07d-3e72b9752314"
+      ],
+      "next_action": "Su richiesta: incremento IMG per nuove fonti o giochi ulteriori; commit selettivo da proporre.",
+      "verified_at": "2026-10-14",
+      "git": {
+        "local_save": "da_committare",
+        "integration": "non_applicabile",
+        "synchronization": "non_applicabile",
+        "checked_at": "2026-10-14"
+      },
+      "coverage": {
+        "games": 17,
+        "remote_originals": 175,
+        "extracted": 336,
+        "catalogued_images": 506,
+        "adopted": 499,
+        "not_adopted": 7,
+        "components": 164,
+        "operational_import": true
+      }
+    },
+    {
       "id": "TSK-0087",
       "original_title": "2026-10-13 - ACQ - 9-Card Nanogame 2025",
       "display_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025",

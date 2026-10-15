@@ -1,5 +1,9 @@
 # Cruscotto di avanzamento della raccolta
 
+## IMG 9-Card Nanogame 2025 — TSK-0088, apertura 2026-10-14
+
+Lotto concluso per i 17 giochi con ACQ completa in TSK-0087; demo Dragons Horde e Three Buccaneers esclusi. Verificati 53 documenti/198 pagine PDF e 37 pagine WIP, con gallerie e limiti nel manifest. 175 originali trasferiti e 336 estrazioni: 506 immagini catalogate dopo deduplicazione, 499 adottate e 7 non adottate; 164 record componente/lati. Ricerca conclusa nel perimetro dichiarato per 17 giochi, senza attestare completezza universale. Importazione 014 su copia e operativo verificata con backup/ripristino, legacy e IMG pregressi preservati, replay senza scrittura e app verificata. Nessuna nuova AI/PnP o modifica schema/app. Registro e risultati: `tasks/2026-10-14 - IMG - 9-Card Nanogame 2025/`. Prossimo passo soltanto su richiesta; incremento da committare selettivamente.
+
 Ultimo aggiornamento: 2026-10-05. Fonte dello stato: repository e database operativo locale; censimenti materiali 54-Card e Solitaire 2025 verificati il 2026-10-05. Ultimo controllo periodico BGG registrato: 2026-10-02.
 
 Questo documento è il quadro operativo autorevole dell'avanzamento complessivo del progetto. Riassume cosa è coperto, cosa è ancora incompleto e quale sia il prossimo passo utile; non sostituisce il database, i registri di provenienza, il calendario dei controlli o i `TASK.md`.
@@ -98,7 +102,7 @@ Le metriche di lavoro coincidono con l'app, separate dagli indicatori di presenz
 |   |     Censimento classifica | 69/69 · 100% · 0 N/A · 0 bloccate · 17 entry classificate · 11 categorie | 94/94 · 100% · 0 N/A · 0 bloccate · 19 entry classificate · 11 categorie | — | — |
 |   |     Censimento materiali | 0/69 · 0% · 0 N/A · 0 bloccate | 89/94 · 95% · 0 N/A · 5 bloccate | — | — |
 |   |     Acquisizione materiali | 0/69 · 0% · 0 N/A · 0 bloccate | 17/93 · 18% · 1 N/A · 1 bloccate · 1 verifiche parziali | — | — |
-|   |     Acquisizione immagini | 0/69 · 0% · 0 concluse con immagini · 0 concluse senza · 69 non concluse | 0/94 · 0% · 0 concluse con immagini · 0 concluse senza · 94 non concluse | — | — |
+|   |     Acquisizione immagini | 0/69 · 0% · 0 concluse con immagini · 0 concluse senza · 69 non concluse | 17/94 · 18.1% · 17 concluse con immagini · 0 concluse senza · 77 non concluse | — | — |
 | 31 | **[Bad Comet Cozy Game Design Contest](https://boardgamegeek.com/thread/3683796/submissions-closed-2026-bad-comet-cozy-game-design)** |   |   |   |   |
 |   |     Stati entry | 🟡 contest_ready 2, components_available 1, playtest_ready 1, unknown 1 | — | — | — |
 |   |     Censimento entry | 0/1 contest attestati · 5 entry | — | — | — |
