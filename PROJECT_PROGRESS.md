@@ -2788,3 +2788,7 @@ Riconciliato ElementaBrawl come titolo unico: rinominato473, Elementa alias stor
 ### 2026-11-06 — TSK-0099, consolidamento ElementaBrawl e richieste GeekMail
 
 Duplicato474 ritirato dal catalogo corrente tramite relazione verificata474→473, tutte le righe storiche main conservate e vecchi ID risolti a473. Proiezione RO generica app/generatore senza migrazione, collaudata su altro record e cicli rigettati. ACQ70/92,22residui (19bloccati/3parziali); MAT89/93 e IMG17/93. Nessun nuovo download: corretti soltanto denominatori. Copia/backup/ripristino/replay/integrità/FK e17test server riusciti, A/B rigenerate. Quattro GeekMail per cinque giochi inviate e confermate: ForestTip, OceanPath/StandofSupremacy insieme, Slayer, Tralim. TSK0098:11richieste/9giochi, automazione aggiornata ACTIVE con lettura delle sole risposte registrate; prima scadenza13novembre09Europe/Rome, risveglio giornaliero e recupero arretrati alla prima esecuzione utile, nessuna garanzia al boot. Ultime due bozze inviate dopo revisione esplicita; futuri messaggi da mostrare prima. Prove GeekMail/ID solo locali, nessuna risposta o permesso presunto. Nessun Git.
+
+### 2026-11-06 — Salvataggio selettivo verificato
+
+Commit6264a2b su main e push origin/main verificato sul server:87file pertinenti ACQ9Card/MAT/identità/DAT0099/registro0098. Nessun originale acquisito, database, screenshot o IDGeekMail pubblicato; zero rilievi nei commit in uscita, modifiche estranee preservate. Attestazione documentale successiva al commit dati.

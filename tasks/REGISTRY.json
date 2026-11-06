@@ -66,12 +66,12 @@
       ],
       "next_action": "Risposte proprietari gestite daTSK0098: setteDrive e quattroGeekMail. Nessun consolidamento Brawl residuo o invio duplicato.",
       "git": {
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
+        "synchronization": "remoto_verificato",
         "checked_at": "2026-11-06",
-        "last_data_commit": "7de8de814c23f6fb893aa204cc681a2f27beec89",
-        "evidence": "Primo lotto storicamente salvato/pushato; lotti successivi e finale locali verificati, nessuna nuova operazione Git autorizzata."
+        "last_data_commit": "6264a2b0fb12b5bff8b70642825919481aa0eed2",
+        "evidence": "Commit selettivo6264a2b,87file; push e refs/heads/main verificati sul server il2026-11-06. Attestazione documentale successiva, modifiche estranee preservate."
       },
       "verified_at": "2026-11-06",
       "coverage": {
@@ -846,11 +846,12 @@
       "next_action": null,
       "git": {
         "checked_at": "2026-11-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
         "synchronization": "remoto_verificato",
         "last_task_document_commit": "3cd53db",
-        "evidence": "Incremento sequenziale verificato locale; nessuna nuova operazione Git, salvataggi precedenti storici preservati."
+        "evidence": "Commit selettivo6264a2b,87file; push e refs/heads/main verificati sul server il2026-11-06. Attestazione documentale successiva, modifiche estranee preservate.",
+        "last_data_commit": "6264a2b0fb12b5bff8b70642825919481aa0eed2"
       },
       "display_title": "T0005-26.09.07 - BGG-A - Censimento entry BGG 2025",
       "current_chat_titles": [
@@ -2793,10 +2794,11 @@
       "next_action": "Materiali89/93 nel catalogo corrente dopo consolidamento474; risposte proprietari in0098, nessun nuovo controllo ordinario.",
       "git": {
         "checked_at": "2026-11-06",
-        "local_save": "da_committare",
+        "local_save": "committato",
         "integration": "integrato_main",
-        "synchronization": "da_verificare",
-        "evidence": "Incremento sequenziale verificato locale; nessuna nuova operazione Git, salvataggi precedenti storici preservati."
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit selettivo6264a2b,87file; push e refs/heads/main verificati sul server il2026-11-06. Attestazione documentale successiva, modifiche estranee preservate.",
+        "last_data_commit": "6264a2b0fb12b5bff8b70642825919481aa0eed2"
       },
       "title_history": [
         {
@@ -4313,10 +4315,11 @@
       "next_action": "Prima verifica dovuta 2026-11-13 ore09Europe/Rome per11richieste; heartbeat giornaliero recupera arretrati alla prima esecuzione utile. Futuri invii richiedono revisione preventiva utente.",
       "git": {
         "checked_at": "2026-11-06",
-        "local_save": "da_committare",
-        "integration": "da_verificare",
-        "synchronization": "da_verificare",
-        "evidence": "Nessuna operazione Git; modifiche pregresse preservate."
+        "local_save": "committato",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "evidence": "Commit selettivo6264a2b,87file; push e refs/heads/main verificati sul server il2026-11-06. Attestazione documentale successiva, modifiche estranee preservate.",
+        "last_data_commit": "6264a2b0fb12b5bff8b70642825919481aa0eed2"
       },
       "coverage": "11 richieste / 9 giochi",
       "automation_id": "verifica-accessi-ai-materiali-pnp",
@@ -4352,8 +4355,12 @@
       ],
       "verified_at": "2026-11-06",
       "git": {
-        "local_save": "da_committare",
-        "evidence": "Nessuna nuova operazione Git"
+        "local_save": "committato",
+        "evidence": "Commit selettivo6264a2b,87file; push e refs/heads/main verificati sul server il2026-11-06. Attestazione documentale successiva, modifiche estranee preservate.",
+        "integration": "integrato_main",
+        "synchronization": "remoto_verificato",
+        "checked_at": "2026-11-06",
+        "last_data_commit": "6264a2b0fb12b5bff8b70642825919481aa0eed2"
       },
       "closed_at": "2026-11-06",
       "next_action": null
