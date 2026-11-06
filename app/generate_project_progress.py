@@ -10,6 +10,7 @@ import sqlite3
 from collections import defaultdict
 from pathlib import Path
 from work_progress import enrich_work_progress
+from catalog_identity import install_current_projection
 
 
 START_MARKER = "<!-- BEGIN GENERATED ANNUAL PROGRESS -->"
@@ -155,6 +156,7 @@ def bullet(done: int, total: int, partial: int = 0) -> str:
 
 def build_generated_section(db: sqlite3.Connection) -> str:
     db.row_factory = sqlite3.Row
+    install_current_projection(db)
     census_path = Path(__file__).resolve().parents[1] / "catalog" / "bgg_contest_census_titles.json"
     census_titles = {int(year): titles for year, titles in
                      json.loads(census_path.read_text(encoding="utf-8")).items()}

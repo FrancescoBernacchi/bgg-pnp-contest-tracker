@@ -1,0 +1,18 @@
+{
+  "stage": "identity",
+  "verified_at": "2026-11-06T15:23:12.569Z",
+  "copy": "passed",
+  "backup_restore": "full_fingerprint_equal",
+  "legacy": "all_preserved_except_game473_title_verification_date",
+  "changed_tables": [
+    "game_names",
+    "games",
+    "observations"
+  ],
+  "idempotent_replay": "zero_writes",
+  "operational": "exclusive_transaction_matches_copy",
+  "integrity": "ok",
+  "foreign_keys": [],
+  "manifest_sha256": "a3414b7a5dc1a1db33fdd3f50c3e05f51535f4fc8ae8991236b941239ede4a1d",
+  "backup": "outputs\\nine-card-sequential-recovery-2026-11-06\\identity-baseline.sqlite3"
+}

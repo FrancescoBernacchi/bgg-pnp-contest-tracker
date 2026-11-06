@@ -1,0 +1,3 @@
+import importlib.util
+from pathlib import Path
+s=importlib.util.spec_from_file_location('s',Path(__file__).with_name('supplement_batch2.py'));supp=importlib.util.module_from_spec(s);s.loader.exec_module(supp);a=supp.a;row=next(r for r in a.SEL['resources'] if r['id']==504);url='https://drive.usercontent.google.com/download?id=1ntAnAOgtdRZVjcFXq98CxpFGe28Ju0wp&export=download';data,final,h=a.fetch(url);assert data.startswith(b'%PDF-');supp.store(data,'Quick Dishes rules and gameplay  v5.docx.pdf',row,final,'application/pdf','folder_member_observed_browser');a.persist();print('Quick rules acquired')

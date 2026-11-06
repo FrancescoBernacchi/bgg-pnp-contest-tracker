@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-11-06",
+  "requests": 7,
+  "games": 4,
+  "distinct_urls": 7,
+  "source_matches": 7,
+  "local_screenshots_existing": [
+    483,
+    469,
+    470,
+    471,
+    485,
+    486
+  ],
+  "flip_dungeon_evidence": "user report; exact request date unknown",
+  "due_simulations": {
+    "2026-11-06": 0,
+    "2026-11-13": 7,
+    "2026-11-16": 7
+  },
+  "automation": {
+    "id": "verifica-accessi-ai-materiali-pnp",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "daily_local_time": "09:00",
+    "target_thread_id": "01a1b0fe-2594-7733-acfd-cc182422d1bc",
+    "verified_by": "automation_update view and persisted configuration read"
+  },
+  "remote_checks_today": 0,
+  "downloads": 0,
+  "limitations": [
+    "Future scheduler delivery and silence not tested",
+    "No guaranteed startup trigger",
+    "Authenticated account availability at future runs unknown"
+  ]
+}

@@ -9,5 +9,23 @@
   "selected_heuristic_findings": 0,
   "excluded": "Operational database, acquired game files, backups, source HTML/text dumps and screenshots remain local and ignored.",
   "rights_review": "Only factual metadata, short labels needed to identify resources, source links, project-authored summaries and original code. No third-party game content redistribution. Credits and roles not catalogued remain explicit.",
-  "limits": "Heuristic result is not legal clearance for historical content or acquired materials."
+  "limits": "Heuristic result is not legal clearance for historical content or acquired materials.",
+  "increments": [
+    {
+      "verified_at": "2026-11-06",
+      "scope": "ACQ batches2/3/final, Chrome/sequential recovery, MAT/identity, DAT0099, access registry0098",
+      "policy": "PUBLICATION_POLICY.md",
+      "candidate_audit_findings": 0,
+      "personal_messages": "Only own authored requests; received content and private message IDs excluded",
+      "binaries": "No acquired file/database/screenshot/DOM dump included",
+      "shared_files": "Selected hunks; generated 9-Card2025 cells selected automatically from generator output, unrelated annuals preserved",
+      "history": "origin/main..HEAD empty before commit; audit all outgoing commits again before push",
+      "licenses": "No redistribution of game content claimed; metadata/URLs/original summaries only",
+      "baseline_findings": {
+        "count": 299,
+        "paths": 30,
+        "assessment": "All flagged files byte/line-ending equivalent to HEAD and already on origin/main; no new or modified flagged content selected. Historical remediation distinct, no rewrite authorized."
+      }
+    }
+  ]
 }

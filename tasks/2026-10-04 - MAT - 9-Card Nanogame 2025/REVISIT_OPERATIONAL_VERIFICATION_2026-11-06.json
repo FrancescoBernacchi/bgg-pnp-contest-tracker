@@ -1,0 +1,18 @@
+{
+  "applied_at": "2026-11-06",
+  "authorization": "TSK-0051-user-next-MAT-step-2026-11-06",
+  "manifest_sha256": "8c1ee2894a15ddfb2525beb385d94847f8ad9aaa1fdee671ed7a521f0418f0ba",
+  "inserted": {
+    "entry_material_scans": 12,
+    "entry_resource_scans": 12,
+    "entry_work_observations": 12
+  },
+  "backup": "outputs\\nine-card-mat-revisit-2026-11-06\\before-20261106T123515Z.sqlite3",
+  "backup_sha256": "ed5f75df4807b3906dea7d3833b1bbb5ebd2732d869398b3714a98968a12b5e4",
+  "backup_restore": "full_fingerprint_equal",
+  "operational_matches_tested_copy": true,
+  "integrity": "ok",
+  "foreign_keys": [],
+  "unrelated_tables": "all_unchanged",
+  "legacy_rows": "all_preserved"
+}

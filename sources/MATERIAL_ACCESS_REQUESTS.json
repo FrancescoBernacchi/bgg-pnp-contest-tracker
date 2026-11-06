@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "task_id": "TSK-0098",
+  "updated_at": "2026-11-06",
+  "timezone": "Europe/Rome",
+  "account_policy": "Solo alias nel registro pubblico; indirizzo non conservato qui. Alias bgg_utente_principale: sessione BGG verificata durante gli invii; ID dei messaggi soltanto nella prova locale ignorata da Git.",
+  "scope": "URL già richiesti e sole conversazioni GeekMail registrate; nessun download, nuovo messaggio o sollecito automatico.",
+  "schedule": {
+    "remote_check_interval_days": 7,
+    "wakeup": "daily_09_local",
+    "first_due_at": "2026-11-13T09:00:00+01:00",
+    "offline_recovery": "Alla prima esecuzione effettiva, controllare gli scaduti una sola volta; nessuna garanzia di esecuzione al boot.",
+    "automation_id": "verifica-accessi-ai-materiali-pnp"
+  },
+  "requests": [
+    {
+      "request_id": "ACCESS-0001",
+      "contest_id": 13,
+      "entry_id": 407,
+      "game_title": "Flip Dungeon",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 434,
+      "url": "https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp=sharing",
+      "requested_at": null,
+      "request_date_precision": "Data esatta non nota; invio personale dichiarato dall’utente il 2026-11-06",
+      "account_alias": "google_utente_principale",
+      "requested_role": null,
+      "message": null,
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0001-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "user_reported_request_sent",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": null,
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0002",
+      "contest_id": 13,
+      "entry_id": 423,
+      "game_title": "Nine Tails",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 483,
+      "url": "https://drive.google.com/drive/folders/1MYZowfUKAP3Org3Wjrzg9hJygqHfk6qE?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for Nine Tails, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0002-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/nine-tails-sent.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0003",
+      "contest_id": 13,
+      "entry_id": 418,
+      "game_title": "Let's Have a Wedding",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 469,
+      "url": "https://drive.google.com/file/d/16V9tFMWo-3Yovi_R26PSt0KBZxFB0aJI/view?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for Let's Have a Wedding, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0003-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/request-469.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0004",
+      "contest_id": 13,
+      "entry_id": 418,
+      "game_title": "Let's Have a Wedding",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 470,
+      "url": "https://drive.google.com/file/d/1IjthopDA8iVJ6EH5osxbxGhfS_vkGtkT/view?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for Let's Have a Wedding, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0004-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/request-470.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0005",
+      "contest_id": 13,
+      "entry_id": 418,
+      "game_title": "Let's Have a Wedding",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 471,
+      "url": "https://drive.google.com/file/d/1auO5wIxH5NYcf9K80T7RYGqNHSHlrp__/view?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for Let's Have a Wedding, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0005-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/request-471.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0006",
+      "contest_id": 13,
+      "entry_id": 424,
+      "game_title": "No More Dragons",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 485,
+      "url": "https://drive.google.com/file/d/1DFdVa9BQfenjFYBiAetLX_Huf8KzeTJg/view?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for No More Dragons, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0006-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/request-485.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0007",
+      "contest_id": 13,
+      "entry_id": 424,
+      "game_title": "No More Dragons",
+      "credits": "Crediti non riprodotti nel registro gestionale; consultare la scheda catalogo collegata per entry_id.",
+      "remote_resource_id": 486,
+      "url": "https://drive.google.com/file/d/1JZXLkDlTpLSK1fZdN4udrdx89balSKj_/view?usp=sharing",
+      "requested_at": "2026-11-06",
+      "request_date_precision": "giorno; orario non registrato",
+      "account_alias": "google_utente_principale",
+      "requested_role": "viewer",
+      "message": "Hello! I’d like to download the Print and Play files for No More Dragons, entered in the 2025 BGG 9-Card Nanogame Contest, for personal use. Could you please grant me viewer access or share an updated download link? Thank you!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio richiesta dichiarato dall’utente / confermato UI; nessuna concessione verificata.",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "events": [
+        {
+          "event_id": "ACCESS-0007-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "request_sent_ui_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-access-requests-2026-11-06/request-486.png",
+          "outcome": "Richiesta inviata; concessione non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0008",
+      "channel": "bgg_geekmail",
+      "contest_id": 13,
+      "entry_id": 409,
+      "entry_ids": [
+        409
+      ],
+      "game_title": "Forest Tip",
+      "remote_resource_id": null,
+      "url": "https://boardgamegeek.com/geekmail",
+      "recipient_username": "Hobbyistcollective",
+      "subject": "Forest Tip - updated Print and Play download link?",
+      "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+      "account_alias": "bgg_utente_principale",
+      "requested_role": null,
+      "requested_at": "2026-11-06",
+      "request_date_precision": "day; UI Outbox confirmed, no timezone inferred from relative date",
+      "message": "Hello Michael,\n\nI’d like to download the Print and Play files for Forest Tip, your entry in the 2025 BGG 9-Card Nanogame Contest, for personal use. The Google Drive folder linked in your WIP currently appears unavailable.\n\nWould you be willing to share an updated download link for the rules and printable cards, if they are still available?\n\nWIP: https://boardgamegeek.com/thread/3477855\n\nThank you for your time!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio e copia Outbox confermati; nessuna risposta verificata",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "credits": "Crediti e fonti dei giochi nelle schede per entry_ids; username indica destinatario, nessun ruolo inventato.",
+      "events": [
+        {
+          "event_id": "ACCESS-0008-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "geekmail_sent_outbox_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-geekmail-2026-11-06/forest-tip-sent.png",
+          "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+          "outcome": "Messaggio inviato; risposta non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0009",
+      "channel": "bgg_geekmail",
+      "contest_id": 13,
+      "entry_id": 426,
+      "entry_ids": [
+        426,
+        442
+      ],
+      "game_title": "Ocean Path / Stand of Supremacy",
+      "remote_resource_id": null,
+      "url": "https://boardgamegeek.com/geekmail",
+      "recipient_username": "kironcentauro",
+      "subject": "Ocean Path and Stand of Supremacy - updated PnP links?",
+      "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+      "account_alias": "bgg_utente_principale",
+      "requested_role": null,
+      "requested_at": "2026-11-06",
+      "request_date_precision": "day; UI Outbox confirmed, no timezone inferred from relative date",
+      "message": "Hello Felipe,\n\nI’d like to download the Print and Play files for Ocean Path and Stand of Supremacy, your entries in the 2025 BGG 9-Card Nanogame Contest, for personal use. The Google Drive files linked in the two WIP threads currently appear unavailable.\n\nWould you be willing to share updated links for the English rules and printable components, if they are still available?\n\nOcean Path: https://boardgamegeek.com/thread/3442893\nStand of Supremacy: https://boardgamegeek.com/thread/3449049\n\nThank you for your time!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio e copia Outbox confermati; nessuna risposta verificata",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "credits": "Crediti e fonti dei giochi nelle schede per entry_ids; username indica destinatario, nessun ruolo inventato.",
+      "events": [
+        {
+          "event_id": "ACCESS-0009-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "geekmail_sent_outbox_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-geekmail-2026-11-06/ocean-stand-sent.png",
+          "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+          "outcome": "Messaggio inviato; risposta non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0010",
+      "channel": "bgg_geekmail",
+      "contest_id": 13,
+      "entry_id": 438,
+      "entry_ids": [
+        438
+      ],
+      "game_title": "Slayer",
+      "remote_resource_id": null,
+      "url": "https://boardgamegeek.com/geekmail",
+      "recipient_username": "luckycard",
+      "subject": "Slayer Pocket Edition - updated Print and Play download link?",
+      "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+      "account_alias": "bgg_utente_principale",
+      "requested_role": null,
+      "requested_at": "2026-11-06",
+      "request_date_precision": "day; UI Outbox confirmed, no timezone inferred from relative date",
+      "message": "Hello Camilo,\n\nI’d like to download the Print and Play files for Slayer Pocket Edition, your entry in the 2025 BGG 9-Card Nanogame Contest, for personal use. The Google Drive folder linked in your WIP currently appears unavailable, and I couldn’t find replacement files on the website linked from your profile hub.\n\nWould you be willing to share an updated link for the English rules and printable cards, if they are still available?\n\nWIP: https://boardgamegeek.com/thread/3472477\n\nThank you for your time!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio e copia Outbox confermati; nessuna risposta verificata",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "credits": "Crediti e fonti dei giochi nelle schede per entry_ids; username indica destinatario, nessun ruolo inventato.",
+      "events": [
+        {
+          "event_id": "ACCESS-0010-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "geekmail_sent_outbox_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-geekmail-2026-11-06/slayer-sent.png",
+          "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+          "outcome": "Messaggio inviato; risposta non verificata"
+        }
+      ]
+    },
+    {
+      "request_id": "ACCESS-0011",
+      "channel": "bgg_geekmail",
+      "contest_id": 13,
+      "entry_id": 450,
+      "entry_ids": [
+        450
+      ],
+      "game_title": "Tralim",
+      "remote_resource_id": null,
+      "url": "https://boardgamegeek.com/geekmail",
+      "recipient_username": "Stattis",
+      "subject": "Tralim - updated rules and low-ink card links?",
+      "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+      "account_alias": "bgg_utente_principale",
+      "requested_role": null,
+      "requested_at": "2026-11-06",
+      "request_date_precision": "day; UI Outbox confirmed, no timezone inferred from relative date",
+      "message": "Hello Frank,\n\nI’m interested in Tralim, your entry in the 2025 BGG 9-Card Nanogame Contest, and would like the files for personal Print and Play use. I was able to download the standard card sheet, but the rules and low-ink card links in your WIP currently appear unavailable.\n\nWould you be willing to share updated links for those two files, if they are still available?\n\nWIP: https://boardgamegeek.com/thread/3468551\n\nThank you for your time!",
+      "status": "requested_pending_verification",
+      "last_verified_at": "2026-11-06",
+      "last_verification_scope": "Invio e copia Outbox confermati; nessuna risposta verificata",
+      "next_check_at": "2026-11-13T09:00:00+01:00",
+      "acquisition_task_id": "TSK-0087",
+      "credits": "Crediti e fonti dei giochi nelle schede per entry_ids; username indica destinatario, nessun ruolo inventato.",
+      "events": [
+        {
+          "event_id": "ACCESS-0011-E001",
+          "recorded_at": "2026-11-06",
+          "kind": "geekmail_sent_outbox_confirmed",
+          "source_task": "TSK-0087",
+          "source_path": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/TASK.md",
+          "evidence_local": "outputs/nine-card-geekmail-2026-11-06/tralim-sent.png",
+          "conversation_details_local": "outputs/nine-card-geekmail-2026-11-06/messages-review.json",
+          "outcome": "Messaggio inviato; risposta non verificata"
+        }
+      ]
+    }
+  ]
+}

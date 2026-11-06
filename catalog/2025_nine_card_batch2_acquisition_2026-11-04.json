@@ -1,0 +1,2855 @@
+{
+  "batch_key": "bgg-2025-nine-card-batch2-2026-11-04",
+  "approved_at": "2026-11-04",
+  "verified_at": "2026-11-04",
+  "contest_id": 13,
+  "selection": [
+    {
+      "entry_id": 393,
+      "game_id": 393,
+      "title": "20 Dice",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479228",
+      "wip_post_author": "Levi Gray @Captain_MelonLord",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 394,
+      "game_id": 394,
+      "title": "7 PIONEERS",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477202",
+      "wip_post_author": "Marco Franchin @Tugofgames",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 395,
+      "game_id": 395,
+      "title": "9 Days of Kyiv",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3446532",
+      "wip_post_author": "@gagnradr",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 397,
+      "game_id": 397,
+      "title": "9th Maze",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3438996",
+      "wip_post_author": "KaQu Kal @kaqu",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 399,
+      "game_id": 399,
+      "title": "Buddy System",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3449122",
+      "wip_post_author": "Ryan Shaffer @ryanshaffer",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 400,
+      "game_id": 400,
+      "title": "Bug Brain",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3441992",
+      "wip_post_author": "Tim Patrick @toady2000",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 402,
+      "game_id": 402,
+      "title": "Calling Card Warriors",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3475937",
+      "wip_post_author": "@JestemZbychu",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 405,
+      "game_id": 405,
+      "title": "Echoing Howls",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3449028",
+      "wip_post_author": "Yuko Y @UdaAC3S_",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 407,
+      "game_id": 407,
+      "title": "Flip Dungeon",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479370",
+      "wip_post_author": "@drawanyth",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 409,
+      "game_id": 409,
+      "title": "Forest Tip",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477855",
+      "wip_post_author": "Michael Donnelly @Hobbyistcollective",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 410,
+      "game_id": 410,
+      "title": "Fruit Sort Company",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479222",
+      "wip_post_author": "Levi Gray @Captain_MelonLord",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 411,
+      "game_id": 411,
+      "title": "Gems Make Goblin Kings",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3473847",
+      "wip_post_author": "G. Bartjes @geoffrey69",
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 413,
+      "game_id": 413,
+      "title": "Haunted Hunting Grounds",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3475192",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 414,
+      "game_id": 414,
+      "title": "Hydra Wrangler",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3439122",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 415,
+      "game_id": 415,
+      "title": "If Only Fireflies Exist",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477927",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 417,
+      "game_id": 417,
+      "title": "Kodokuna: The Lone Hermit",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3447990",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 418,
+      "game_id": 418,
+      "title": "Let's Have a Wedding",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477894",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 424,
+      "game_id": 424,
+      "title": "No More Dragons",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3446445",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 426,
+      "game_id": 426,
+      "title": "Ocean Path",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3442893",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 430,
+      "game_id": 430,
+      "title": "Passcode",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3453394",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 432,
+      "game_id": 432,
+      "title": "Quick Dishes",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3461354",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 433,
+      "game_id": 433,
+      "title": "Rapid Words",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3443351",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 434,
+      "game_id": 434,
+      "title": "Risky Riches",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479685",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 435,
+      "game_id": 435,
+      "title": "Royal Courier",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3436550",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 436,
+      "game_id": 436,
+      "title": "SagaSaurus: Dino Duel",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3471323",
+      "selection_role": "replacement_candidate",
+      "wip_post_author": null,
+      "credit_source_date": "2026-10-04",
+      "credit_role": "wip_post_author",
+      "credit_limit": "Non equiparato a designer, illustratore o editore; altri ruoli non censiti."
+    }
+  ],
+  "languages": [
+    "it",
+    "en"
+  ],
+  "purpose": "Copia personale, nessuna redistribuzione",
+  "items": [
+    {
+      "game_title": "20 Dice",
+      "game_id": 393,
+      "entry_id": 393,
+      "remote_resource_id": 388,
+      "resource_url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/edit",
+      "source_url": "https://boardgamegeek.com/thread/3479228",
+      "final_url": "https://doc-0g-2o-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/ijtdtdhh5qeoq7so0ici7eqil4/1793829680000/109837450797380285615/*/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj?format=pdf",
+      "original_filename": "20 Dice v2.docx - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/20 Dice v2.docx - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 223636,
+      "sha256": "02e7a76eb13d830514cfb9ea4129ca93db547553013469be940f6a0e8137a23a",
+      "version_raw": "v1.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 10,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        388
+      ],
+      "transferred_at": "2026-11-04T22:01:24.739Z"
+    },
+    {
+      "game_title": "20 Dice",
+      "game_id": 393,
+      "entry_id": 393,
+      "remote_resource_id": 389,
+      "resource_url": "https://drive.google.com/file/d/1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479228",
+      "final_url": "https://drive.usercontent.google.com/download?id=1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb&export=download",
+      "original_filename": "v1.1 20 Dice Gamejam Cards PDF.pdf",
+      "relative_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/v1.1 20 Dice Gamejam Cards PDF.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 73057,
+      "sha256": "85ff166acb8e32232d32ec5ef872098bfc1e7d113785f7715e00043c94a9917f",
+      "version_raw": "v1.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        389
+      ],
+      "transferred_at": "2026-11-04T22:01:27.082Z"
+    },
+    {
+      "game_title": "20 Dice",
+      "game_id": 393,
+      "entry_id": 393,
+      "remote_resource_id": 390,
+      "resource_url": "https://drive.google.com/file/d/1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479228",
+      "final_url": "https://drive.usercontent.google.com/download?id=1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ&export=download",
+      "original_filename": "v1.3 20 Dice Gamejam Cards PDF.pdf",
+      "relative_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/v1.3 20 Dice Gamejam Cards PDF.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 113446,
+      "sha256": "e468a54a24891473fef69b8384f585cdc4a1e9f091b9f329fa94ebf7b44034a3",
+      "version_raw": "v2.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        390
+      ],
+      "transferred_at": "2026-11-04T22:01:29.236Z"
+    },
+    {
+      "game_title": "7 PIONEERS",
+      "game_id": 394,
+      "entry_id": 394,
+      "remote_resource_id": 391,
+      "resource_url": "https://drive.google.com/file/d/1EcNI6yE0JEuAPmjfj_2YObZUOaS9ks9Y/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477202",
+      "final_url": "https://drive.usercontent.google.com/download?id=1EcNI6yE0JEuAPmjfj_2YObZUOaS9ks9Y&export=download",
+      "original_filename": "7 pioneers rules 14-4.pdf",
+      "relative_path": "bgg/2025-nine-card/394__7-pioneers/originals/2026-11-04/7 pioneers rules 14-4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 653096,
+      "sha256": "4220277bb481e422122723f1c9e6b64d7fd18d82a854510b5b5bcd042f3802c5",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        391
+      ],
+      "transferred_at": "2026-11-04T22:01:31.479Z"
+    },
+    {
+      "game_title": "7 PIONEERS",
+      "game_id": 394,
+      "entry_id": 394,
+      "remote_resource_id": 392,
+      "resource_url": "https://drive.google.com/file/d/1Kh5qszxeC8O_e07OamdZtSTcGunMFJca/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477202",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Kh5qszxeC8O_e07OamdZtSTcGunMFJca&export=download",
+      "original_filename": "7 Pioneers CARDS 14_4.pdf",
+      "relative_path": "bgg/2025-nine-card/394__7-pioneers/originals/2026-11-04/7 Pioneers CARDS 14_4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1022818,
+      "sha256": "100a2ec8e2ee3787f9ebfdca191b7afc445d0b2172ce1a0af57c2854933c7ba9",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        392
+      ],
+      "transferred_at": "2026-11-04T22:01:33.802Z"
+    },
+    {
+      "game_title": "Buddy System",
+      "game_id": 399,
+      "entry_id": 399,
+      "remote_resource_id": 413,
+      "resource_url": "https://drive.google.com/file/d/16EmZIXhtaAbFD9vhud06VoXh_pnL4jZ8/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3449122",
+      "final_url": "https://drive.usercontent.google.com/download?id=16EmZIXhtaAbFD9vhud06VoXh_pnL4jZ8&export=download",
+      "original_filename": "Buddy System - Full Art with Text - v1.4 03/22/25.pdf",
+      "relative_path": "bgg/2025-nine-card/399__buddy-system/originals/2026-11-04/Buddy System - Full Art with Text - v1.4 03_22_25.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 3937655,
+      "sha256": "8d77b7a394926fdd8c05da4e7178b45eda4b3328bfb26c8a86dc09db7dd5f36b",
+      "version_raw": "v1.4",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        413
+      ],
+      "transferred_at": "2026-11-04T22:01:40.007Z"
+    },
+    {
+      "game_title": "Buddy System",
+      "game_id": 399,
+      "entry_id": 399,
+      "remote_resource_id": 414,
+      "resource_url": "https://drive.google.com/file/d/1MwLReMQeHcbBB489uzsVKqCnLa7NugBT/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3449122",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MwLReMQeHcbBB489uzsVKqCnLa7NugBT&export=download",
+      "original_filename": "Buddy System - Rules - v1.4 03/29/25.pdf",
+      "relative_path": "bgg/2025-nine-card/399__buddy-system/originals/2026-11-04/Buddy System - Rules - v1.4 03_29_25.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 271933,
+      "sha256": "a47ec9ef8ccef4aeb79a19b3002d3eefadc83645586cb1ab4fe535cd942d477c",
+      "version_raw": "v1.4",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        414
+      ],
+      "transferred_at": "2026-11-04T22:01:43.068Z"
+    },
+    {
+      "game_title": "Buddy System",
+      "game_id": 399,
+      "entry_id": 399,
+      "remote_resource_id": 415,
+      "resource_url": "https://drive.google.com/file/d/1_G2Od-zRrjYbS5Ut1BBXWJis7AvXmVaD/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3449122",
+      "final_url": "https://drive.usercontent.google.com/download?id=1_G2Od-zRrjYbS5Ut1BBXWJis7AvXmVaD&export=download",
+      "original_filename": "Buddy System - Low-Ink Cards - v1.4 03/22/25.pdf",
+      "relative_path": "bgg/2025-nine-card/399__buddy-system/originals/2026-11-04/Buddy System - Low-Ink Cards - v1.4 03_22_25.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 473495,
+      "sha256": "bbd3c83c60bcdb61bb5805aecca525722b37e37f8f9269d50387ed1b04091812",
+      "version_raw": "v1.4",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        415
+      ],
+      "transferred_at": "2026-11-04T22:01:45.868Z"
+    },
+    {
+      "game_title": "Bug Brain",
+      "game_id": 400,
+      "entry_id": 400,
+      "remote_resource_id": 417,
+      "resource_url": "https://drive.google.com/file/d/13LpoD9hlsRG2gK0xoQg6iep9pF7BnCoP/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3441992",
+      "final_url": "https://drive.usercontent.google.com/download?id=13LpoD9hlsRG2gK0xoQg6iep9pF7BnCoP&export=download",
+      "original_filename": "BB.pdf",
+      "relative_path": "bgg/2025-nine-card/400__bug-brain/originals/2026-11-04/BB.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2235212,
+      "sha256": "7245eaafb6cd35faadefa827a18d32adeaee1b2ae7d110a70afc0fb53ff9b878",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        417
+      ],
+      "transferred_at": "2026-11-04T22:01:49.981Z"
+    },
+    {
+      "game_title": "Bug Brain",
+      "game_id": 400,
+      "entry_id": 400,
+      "remote_resource_id": 418,
+      "resource_url": "https://drive.google.com/file/d/1_9neaPWNsLPA3SmFiG4PoHdXlU_AnfSM/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3441992",
+      "final_url": "https://drive.usercontent.google.com/download?id=1_9neaPWNsLPA3SmFiG4PoHdXlU_AnfSM&export=download",
+      "original_filename": "layout.pdf",
+      "relative_path": "bgg/2025-nine-card/400__bug-brain/originals/2026-11-04/layout.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 33783,
+      "sha256": "5142f3f4c199fe64cce5e26eb65ad701826907c87f9a4252111213117c161c2a",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        418
+      ],
+      "transferred_at": "2026-11-04T22:01:52.117Z"
+    },
+    {
+      "game_title": "Bug Brain",
+      "game_id": 400,
+      "entry_id": 400,
+      "remote_resource_id": 419,
+      "resource_url": "https://drive.google.com/file/d/1c_jfdV2QYFjEq_EHmkixoyY_rKSa0HQx/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3441992",
+      "final_url": "https://drive.usercontent.google.com/download?id=1c_jfdV2QYFjEq_EHmkixoyY_rKSa0HQx&export=download",
+      "original_filename": "rules 2a.pdf",
+      "relative_path": "bgg/2025-nine-card/400__bug-brain/originals/2026-11-04/rules 2a.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 74297,
+      "sha256": "822e30ef6bbd3c5dce0990d6245df8be8adb35357b8ed838bbc3a1dcd9d0d6f8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        419
+      ],
+      "transferred_at": "2026-11-04T22:01:54.874Z"
+    },
+    {
+      "game_title": "Bug Brain",
+      "game_id": 400,
+      "entry_id": 400,
+      "remote_resource_id": 420,
+      "resource_url": "https://drive.google.com/file/d/1j73qBmUFXoqWP0uuGu5Ji7IMvIm5JgIR/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3441992",
+      "final_url": "https://drive.usercontent.google.com/download?id=1j73qBmUFXoqWP0uuGu5Ji7IMvIm5JgIR&export=download",
+      "original_filename": "BBlow.pdf",
+      "relative_path": "bgg/2025-nine-card/400__bug-brain/originals/2026-11-04/BBlow.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 57804,
+      "sha256": "981efb2f416ffbb8f87da26d424a338af7833787d55d6f059451c085ae88d78c",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        420
+      ],
+      "transferred_at": "2026-11-04T22:01:57.271Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 442,
+      "resource_url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/edit",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://doc-0s-2o-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/6cugq92vkthr94fjiepqo7kkvc/1793829720000/109837450797380285615/*/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc?format=pdf",
+      "original_filename": "Gamejam Rules Fruit Sort Company.docx - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/Gamejam Rules Fruit Sort Company.docx - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 135239,
+      "sha256": "64adc236ca2ac30edcf1ecc98820cfac94d7536330f6fac0427a54942b94694d",
+      "version_raw": "v1.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        442
+      ],
+      "transferred_at": "2026-11-04T22:02:04.588Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 443,
+      "resource_url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/edit?usp=sharing&ouid=109837450797380285615&rtpof=true&sd=true",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://doc-14-2o-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/n5r17i7vignk24fl87alsnf6go/1793829725000/109837450797380285615/*/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f?format=pdf",
+      "original_filename": "3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 150321,
+      "sha256": "6958405a52abfefff7fa6334a1bd4843eac2934fea8ab4453662d0ea08c2ffdd",
+      "version_raw": "v2.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 7,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        443
+      ],
+      "transferred_at": "2026-11-04T22:02:07.418Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 444,
+      "resource_url": "https://drive.google.com/file/d/16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://drive.usercontent.google.com/download?id=16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU&export=download",
+      "original_filename": "9 Cards Fruit Sort Company.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/9 Cards Fruit Sort Company.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 116306,
+      "sha256": "5fd2e66cf2afcde40db7210a5dfddd481f273fa5e5a560185f9c4f9e8db2e507",
+      "version_raw": "v1.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        444
+      ],
+      "transferred_at": "2026-11-04T22:02:09.596Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 445,
+      "resource_url": "https://drive.google.com/file/d/18LipPlWmVTpVud2-L0z0n9guBlsUoOIf/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://drive.usercontent.google.com/download?id=18LipPlWmVTpVud2-L0z0n9guBlsUoOIf&export=download",
+      "original_filename": "3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 76218,
+      "sha256": "015d3657c5cd2768c94d744487013e1b09ff051ab9ec835f1a4e239e3a79e949",
+      "version_raw": "v2.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        445
+      ],
+      "transferred_at": "2026-11-04T22:02:11.969Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 446,
+      "resource_url": "https://drive.google.com/file/d/18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://drive.usercontent.google.com/download?id=18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir&export=download",
+      "original_filename": "3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 79096,
+      "sha256": "04372667386842d3ef0f9e35d8ad8349d19e7e7a4e887206ce4ccb58cc665d37",
+      "version_raw": "v2.1",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        446
+      ],
+      "transferred_at": "2026-11-04T22:02:14.234Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 447,
+      "resource_url": "https://drive.google.com/file/d/1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://drive.usercontent.google.com/download?id=1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G&export=download",
+      "original_filename": "v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 78789,
+      "sha256": "5c5906fd3418c03df2fb9f0ae59c946f23b73c301fd1978e413f482d92b23931",
+      "version_raw": "v2.2",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        447
+      ],
+      "transferred_at": "2026-11-04T22:02:16.291Z"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 448,
+      "resource_url": "https://drive.google.com/file/d/1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://drive.usercontent.google.com/download?id=1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX&export=download",
+      "original_filename": "v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 63359,
+      "sha256": "0e07dae01219b5fd22c54ff22f82915100a4acae00d65492fbd6b759df7c5210",
+      "version_raw": "v2.2",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        448
+      ],
+      "transferred_at": "2026-11-04T22:02:18.296Z"
+    },
+    {
+      "game_title": "Haunted Hunting Grounds",
+      "game_id": 413,
+      "entry_id": 413,
+      "remote_resource_id": 456,
+      "resource_url": "https://drive.google.com/drive/folders/1U2fNPbNWUDYCfwlTrx4-e7ZdtNpD8gFo?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3475192",
+      "final_url": "https://drive.usercontent.google.com/download?id=1cFPtiW_B5IZYXvz7T8iNu1JbLvyE9Tpf&export=download",
+      "original_filename": "HHG 9Card Template Ver2 .pdf",
+      "relative_path": "bgg/2025-nine-card/413__haunted-hunting-grounds/originals/2026-11-04/HHG 9Card Template Ver2 .pdf",
+      "media_type": "application/pdf",
+      "byte_size": 8517717,
+      "sha256": "8b34eaab88ea3471e533e8ece0c97d07ae026fd5e231529b212b1432acd50930",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        456
+      ],
+      "transferred_at": "2026-11-04T22:02:28.295Z"
+    },
+    {
+      "game_title": "Haunted Hunting Grounds",
+      "game_id": 413,
+      "entry_id": 413,
+      "remote_resource_id": 456,
+      "resource_url": "https://drive.google.com/drive/folders/1U2fNPbNWUDYCfwlTrx4-e7ZdtNpD8gFo?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3475192",
+      "final_url": "https://drive.usercontent.google.com/download?id=1R5phis5CYlKC6VN5yD2f8wZ58_TtyTs3&export=download",
+      "original_filename": "HHG Rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/413__haunted-hunting-grounds/originals/2026-11-04/HHG Rulebook.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 8032268,
+      "sha256": "9083e7c8020c93d0c03bafcfe80b9e3261439e92a37bcd6d824cb768572d3765",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 18,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        456
+      ],
+      "transferred_at": "2026-11-04T22:02:33.832Z"
+    },
+    {
+      "game_title": "Hydra Wrangler",
+      "game_id": 414,
+      "entry_id": 414,
+      "remote_resource_id": 457,
+      "resource_url": "https://docs.google.com/presentation/d/1UytpJ7kJsp_nob8wyQej668vazurp_hBs2IF793y9ds/edit?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3439122",
+      "final_url": "https://doc-14-0k-slides.googleusercontent.com/export/qe00smc254ipa26ih18b7a6ugk/0uc6cqklppfn2vacs4g4pi5uao/1793829755000/110644153586248366013/*/1UytpJ7kJsp_nob8wyQej668vazurp_hBs2IF793y9ds?exportFormat=pdf",
+      "original_filename": "Hydra Wrangler v2.01 Rules - Presentazioni Google.pdf",
+      "relative_path": "bgg/2025-nine-card/414__hydra-wrangler/originals/2026-11-04/Hydra Wrangler v2.01 Rules - Presentazioni Google.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 287221,
+      "sha256": "df86038aa05ef76905d4452e171206a07919150556f678354c230c73518daeb4",
+      "version_raw": "v2.01",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        457
+      ],
+      "transferred_at": "2026-11-04T22:02:39.122Z"
+    },
+    {
+      "game_title": "Hydra Wrangler",
+      "game_id": 414,
+      "entry_id": 414,
+      "remote_resource_id": 458,
+      "resource_url": "https://drive.google.com/file/d/1dQvDloDt3HqbblfDPrDfYjJ2_gHiSsqq/view?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3439122",
+      "final_url": "https://drive.usercontent.google.com/download?id=1dQvDloDt3HqbblfDPrDfYjJ2_gHiSsqq&export=download",
+      "original_filename": "Hydra Wrangler v2.00 Full Color.pdf",
+      "relative_path": "bgg/2025-nine-card/414__hydra-wrangler/originals/2026-11-04/Hydra Wrangler v2.00 Full Color.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 59000,
+      "sha256": "455d6c13cddadbb339af4fe7c6be24ac1f3939ac97b1cbfb939cb0cbb531709f",
+      "version_raw": "v2.01",
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        458
+      ],
+      "transferred_at": "2026-11-04T22:02:41.319Z"
+    },
+    {
+      "game_title": "If Only Fireflies Exist",
+      "game_id": 415,
+      "entry_id": 415,
+      "remote_resource_id": 460,
+      "resource_url": "https://drive.google.com/drive/folders/1qpiAfD3PKcHygDVcHUXW9tQuz5RUzrY7?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477927",
+      "final_url": "https://drive.usercontent.google.com/download?id=10nLgvcm_sRHef9OB0zUUc9l3CjDJfWez&export=download",
+      "original_filename": "If Only Fireflies Exist v04.pdf",
+      "relative_path": "bgg/2025-nine-card/415__if-only-fireflies-exist/originals/2026-11-04/If Only Fireflies Exist v04.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1120522,
+      "sha256": "3025976674ed6f3146937f5d66b3029358bfd2ca66812bae0adc149d4698f928",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        460
+      ],
+      "transferred_at": "2026-11-04T22:02:47.961Z"
+    },
+    {
+      "game_title": "If Only Fireflies Exist",
+      "game_id": 415,
+      "entry_id": 415,
+      "remote_resource_id": 460,
+      "resource_url": "https://drive.google.com/drive/folders/1qpiAfD3PKcHygDVcHUXW9tQuz5RUzrY7?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477927",
+      "final_url": "https://drive.usercontent.google.com/download?id=1liJ78xQchF3k0IcsG33MXN1DWokGGqr6&export=download",
+      "original_filename": "Rulebook Fireflies v0.4 (2).pdf",
+      "relative_path": "bgg/2025-nine-card/415__if-only-fireflies-exist/originals/2026-11-04/Rulebook Fireflies v0.4 (2).pdf",
+      "media_type": "application/pdf",
+      "byte_size": 565802,
+      "sha256": "fdd83215604624c7f5957c707be53d25cb0828261639dba3fe502ec76dd436ad",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        460
+      ],
+      "transferred_at": "2026-11-04T22:02:50.855Z"
+    },
+    {
+      "game_title": "Kodokuna: The Lone Hermit",
+      "game_id": 417,
+      "entry_id": 417,
+      "remote_resource_id": 468,
+      "resource_url": "https://drive.google.com/drive/u/0/folders/1bKnkJJh2C4hfCcgjDarOhLwdApuO_XT7",
+      "source_url": "https://boardgamegeek.com/thread/3447990",
+      "final_url": "https://drive.usercontent.google.com/download?id=1z32vTWwM24fxbhQ3Fooh7Tr68SgKNpxL&export=download",
+      "original_filename": "High Ink.pdf",
+      "relative_path": "bgg/2025-nine-card/417__kodokuna-the-lone-hermit/originals/2026-11-04/High Ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 63039,
+      "sha256": "3948b98e1db381102bac6226b2c65637f7cd0884db9466295de6b725cd9b1efc",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        468
+      ],
+      "transferred_at": "2026-11-04T22:02:53.221Z"
+    },
+    {
+      "game_title": "Kodokuna: The Lone Hermit",
+      "game_id": 417,
+      "entry_id": 417,
+      "remote_resource_id": 468,
+      "resource_url": "https://drive.google.com/drive/u/0/folders/1bKnkJJh2C4hfCcgjDarOhLwdApuO_XT7",
+      "source_url": "https://boardgamegeek.com/thread/3447990",
+      "final_url": "https://drive.usercontent.google.com/download?id=1xUyBuD7JupzqpU67_5Bztl-BiDRefV54&export=download",
+      "original_filename": "Low Ink.pdf",
+      "relative_path": "bgg/2025-nine-card/417__kodokuna-the-lone-hermit/originals/2026-11-04/Low Ink.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 59320,
+      "sha256": "545320f8481e62322efdec14bcab6c9453eb93ca341c859fcc0db668999abac6",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        468
+      ],
+      "transferred_at": "2026-11-04T22:02:54.623Z"
+    },
+    {
+      "game_title": "Kodokuna: The Lone Hermit",
+      "game_id": 417,
+      "entry_id": 417,
+      "remote_resource_id": 468,
+      "resource_url": "https://drive.google.com/drive/u/0/folders/1bKnkJJh2C4hfCcgjDarOhLwdApuO_XT7",
+      "source_url": "https://boardgamegeek.com/thread/3447990",
+      "final_url": "https://drive.usercontent.google.com/download?id=1-X9x6eFGs7-pxLIgZCayLR4wmYeGvv_N&export=download",
+      "original_filename": "Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/417__kodokuna-the-lone-hermit/originals/2026-11-04/Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 56038,
+      "sha256": "a5006f6ee73ee91265631cc4093659e238dc6dcee72546b1dcb02cee6ef012c1",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        468
+      ],
+      "transferred_at": "2026-11-04T22:02:56.670Z"
+    },
+    {
+      "game_title": "9 Days of Kyiv",
+      "game_id": 395,
+      "entry_id": 395,
+      "remote_resource_id": 394,
+      "resource_url": "https://www.dropbox.com/scl/fi/enxgc1vnobc9y2m6dvotu/9-Days-of-Kyiv-1.0.pdf?rlkey=6hufwdjyw2wf8o9x6mq7olbb2&st=mrh4gv32&dl=0",
+      "source_url": "https://boardgamegeek.com/thread/3446532",
+      "final_url": "https://uc190f49a2808cd1979ef20bd307.dl.dropboxusercontent.com/cd/0/get/DLU2x0Lke7bkkmjatAt4epl-oYn5tve4wP_MMGQFIwleo0mOrBma0khZ7mYif2dPPZ9Ln5Zgm17I0UCIra-g3zGBEDDRtxWVbhTNpzGpuPZ5WIvaspFIPQroZ-zZpVBlboxS_qbJRxFY-CqB7erV9MCx/file?dl=1",
+      "original_filename": "9-Days-of-Kyiv-1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/395__9-days-of-kyiv/originals/2026-11-04/9-Days-of-Kyiv-1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 465372,
+      "sha256": "8206fe73618f1372222ecac189271285b3c3af5de81c2eacd6aa9da32912af3e",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        394,
+        397
+      ],
+      "transferred_at": "2026-11-04T22:09:41.750Z"
+    },
+    {
+      "game_title": "9 Days of Kyiv",
+      "game_id": 395,
+      "entry_id": 395,
+      "remote_resource_id": 396,
+      "resource_url": "https://www.dropbox.com/scl/fi/gtkysx1mtulxc8bwjj8bk/9-Days-Cards-1.0.pdf?rlkey=bh6b4ubj7kpn6lky52qdzqfts&st=t43hddrs&dl=0",
+      "source_url": "https://boardgamegeek.com/thread/3446532",
+      "final_url": "https://uc283d75805918eabcf5b7c262c2.dl.dropboxusercontent.com/cd/0/get/DLW6ljAyg95YPxekGJr8MNAG15DhdDjy8IZ-dMdITBGGqwauOqlmUninEK_wrqmVflmZv5qSvcxUMifzuk0fNQdz47Ai5HSx8GIgn3QWACmB6ttn8ArSFEef-TOoWgvgO2YnBjmSIpFxjzr8y8LfJ4C0/file?dl=1",
+      "original_filename": "9-Days-Cards-1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/395__9-days-of-kyiv/originals/2026-11-04/9-Days-Cards-1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 987399,
+      "sha256": "1dc5d101f0eec5af6a851969716d71c4762a17566f857fc8474c8a702828b558",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        396,
+        397
+      ],
+      "transferred_at": "2026-11-04T22:09:43.285Z"
+    },
+    {
+      "game_title": "Echoing Howls",
+      "game_id": 405,
+      "entry_id": 405,
+      "remote_resource_id": 431,
+      "resource_url": "https://www.dropbox.com/scl/fo/xgq5ftc115dxlkde2mcyd/AOW3x4D2TVPFGs0ktX0JbMY?rlkey=jkndzymdfw27avqoqlegqfb4x&st=zuhm9qlt&dl=0",
+      "source_url": "https://boardgamegeek.com/thread/3449028",
+      "final_url": "https://uc4353ecd4e19192cbbeaab2bbc7.dl.dropboxusercontent.com/zip_download_get/CuvG1MuqUuy3drIagztneyAqdo5dEYe1BoEsLSPcCdk86j2f17jfOkDvJVSRYLo9jZk8b7Ars-r8jY1RD6oakFJvINmnGaWlTCcEUPr5GSwELA",
+      "original_filename": "Echoing Howls - shared folder.zip",
+      "relative_path": "bgg/2025-nine-card/405__echoing-howls/originals/2026-11-04/Echoing Howls - shared folder.zip",
+      "media_type": "application/zip",
+      "byte_size": 3597806,
+      "sha256": "c837afb8cd78f5ce7995e24618fa555b031e84314cd5e67bc405d2c6802a9628",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "host_folder_archive_en_verified",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        431
+      ],
+      "transferred_at": "2026-11-04T22:09:47.329Z"
+    },
+    {
+      "game_title": "Gems Make Goblin Kings",
+      "game_id": 411,
+      "entry_id": 411,
+      "remote_resource_id": 451,
+      "resource_url": "https://www.dropbox.com/scl/fo/0qqcpi03ej790clexzq2z/ANsZ1FAMZtl7vju95RoFK-Y?rlkey=hcsvbr0t50li8xs3i5hwycgr1&st=eqzlfopv&dl=0",
+      "source_url": "https://boardgamegeek.com/thread/3473847",
+      "final_url": "https://ucdcb49eee5c3ec0f051220fe6e4.dl.dropboxusercontent.com/zip_download_get/Cusutyu39VVe4fAwXs_HgxWPkRr9KU-rd73CuJ31YKAXQpsGshiL8ADuE1wTcZOOGSDb7YmwCXnZnmFmUBThq3TR6ICZd0Mhg2_20mUDhO_MLA",
+      "original_filename": "Gems Make Goblin Kings - shared folder.zip",
+      "relative_path": "bgg/2025-nine-card/411__gems-make-goblin-kings/originals/2026-11-04/Gems Make Goblin Kings - shared folder.zip",
+      "media_type": "application/zip",
+      "byte_size": 1675900,
+      "sha256": "ebf3bf25900bff51d531e9b1dae2b9f73532a89f32084ff94184246de7233c3b",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "host_folder_archive_en_verified",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        451
+      ],
+      "transferred_at": "2026-11-04T22:09:49.650Z"
+    },
+    {
+      "game_title": "Calling Card Warriors",
+      "game_id": 402,
+      "entry_id": 402,
+      "remote_resource_id": 425,
+      "resource_url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "source_url": "https://boardgamegeek.com/thread/3475937",
+      "final_url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "original_filename": "CCW-RULES.pdf",
+      "relative_path": "bgg/2025-nine-card/402__calling-card-warriors/originals/2026-11-04/CCW-RULES.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 194515,
+      "sha256": "97d0022e431917ed24c7b41840f8a6ebad34e8b875d67b8aa08509ecd6f19fc2",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_itch_download_signed_url_local_only",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        425
+      ],
+      "transferred_at": "2026-11-04T22:10:53.309Z"
+    },
+    {
+      "game_title": "Calling Card Warriors",
+      "game_id": 402,
+      "entry_id": 402,
+      "remote_resource_id": 425,
+      "resource_url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "source_url": "https://boardgamegeek.com/thread/3475937",
+      "final_url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "original_filename": "CCW-CARDS.pdf",
+      "relative_path": "bgg/2025-nine-card/402__calling-card-warriors/originals/2026-11-04/CCW-CARDS.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1028368,
+      "sha256": "b41a50cf4f07978181dff109bff5bf6d2bdd86c7f9149935b569ddd9f3bcbffd",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_itch_download",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        425
+      ],
+      "transferred_at": "2026-11-04T22:10:53.320Z"
+    },
+    {
+      "game_title": "Passcode",
+      "game_id": 430,
+      "entry_id": 430,
+      "remote_resource_id": 500,
+      "resource_url": "https://drive.google.com/drive/folders/1f9SB0roMVcu9A3-18HV3uO3gAZE5Mnhl?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3453394",
+      "final_url": "https://drive.usercontent.google.com/download?id=10swm5eRFRQGqqErI3gE-1_EaO2rK2kGf&export=download",
+      "original_filename": "Passcode.pdf",
+      "relative_path": "bgg/2025-nine-card/430__passcode/originals/2026-11-04/Passcode.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 496193,
+      "sha256": "20ae89407f36ac0ea6334004b121b62a9e2ea1235982a6bd3a73bc487b5f1ae8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        500
+      ],
+      "transferred_at": "2026-11-04T22:11:59.074Z"
+    },
+    {
+      "game_title": "Quick Dishes",
+      "game_id": 432,
+      "entry_id": 432,
+      "remote_resource_id": 504,
+      "resource_url": "https://drive.google.com/drive/folders/1PEUXIXNhEI8SANaYFYl0xE3iUCM9EOlx?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3461354",
+      "final_url": "https://drive.usercontent.google.com/download?id=1dKeN_wKLCcLmdfg3eYZmDSSJs8I5SYL2&export=download",
+      "original_filename": "Quick_Dishes_Card.pdf",
+      "relative_path": "bgg/2025-nine-card/432__quick-dishes/originals/2026-11-04/Quick_Dishes_Card.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 386952,
+      "sha256": "9791943579caf7e9d73e0e5c64300c70de484a9793f84733a022dcc90227411e",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        504
+      ],
+      "transferred_at": "2026-11-04T22:12:01.373Z"
+    },
+    {
+      "game_title": "Rapid Words",
+      "game_id": 433,
+      "entry_id": 433,
+      "remote_resource_id": 505,
+      "resource_url": "https://drive.google.com/drive/folders/1aQTr6vgXex3ktNPhgYN0AFScx2la5_as",
+      "source_url": "https://boardgamegeek.com/thread/3443351",
+      "final_url": "https://drive.usercontent.google.com/download?id=10c7O2tiVwZh77ugdkSNLbfByPSgy5o33&export=download",
+      "original_filename": "ENG_RapidWords v2.2.pdf",
+      "relative_path": "bgg/2025-nine-card/433__rapid-words/originals/2026-11-04/ENG_RapidWords v2.2.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2143061,
+      "sha256": "7ea7bc6653d4b63c5896327dbc502ef8d2fd2f8549b2d471ab4b171da437fab1",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 10,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        505
+      ],
+      "transferred_at": "2026-11-04T22:12:04.976Z"
+    },
+    {
+      "game_title": "Risky Riches",
+      "game_id": 434,
+      "entry_id": 434,
+      "remote_resource_id": 507,
+      "resource_url": "https://drive.google.com/file/d/1M6on1vgfI3b_j5isL2D5guDTaGyuGROS/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479685",
+      "final_url": "https://drive.usercontent.google.com/download?id=1M6on1vgfI3b_j5isL2D5guDTaGyuGROS&export=download",
+      "original_filename": "Risky_Riches_v1.pdf",
+      "relative_path": "bgg/2025-nine-card/434__risky-riches/originals/2026-11-04/Risky_Riches_v1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 843615,
+      "sha256": "f7a6624cb94409fd33b8f08f32cfdbf9116355aee1dd7ef7c8f12ad3c0ce3da2",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 7,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        507
+      ],
+      "transferred_at": "2026-11-04T22:12:10.512Z"
+    },
+    {
+      "game_title": "Royal Courier",
+      "game_id": 435,
+      "entry_id": 435,
+      "remote_resource_id": 509,
+      "resource_url": "https://drive.google.com/drive/folders/1mgNNVzrf60f4MivHyhZYkjC_fbC8pfN5?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436550",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ghWP2h9SqG-VUinweNqxwoRkyMGO62Xu&export=download",
+      "original_filename": "Royal Courier cards.pdf",
+      "relative_path": "bgg/2025-nine-card/435__royal-courier/originals/2026-11-04/Royal Courier cards.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 232090,
+      "sha256": "357a873c408d9866f4c919d02db8b80b564538fd1f1afb9ac88a3ad93a5c0a7c",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        509
+      ],
+      "transferred_at": "2026-11-04T22:13:46.807Z"
+    },
+    {
+      "game_title": "Royal Courier",
+      "game_id": 435,
+      "entry_id": 435,
+      "remote_resource_id": 509,
+      "resource_url": "https://drive.google.com/drive/folders/1mgNNVzrf60f4MivHyhZYkjC_fbC8pfN5?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3436550",
+      "final_url": "https://drive.usercontent.google.com/download?id=1H14SkqLO8kqM5voN_wmt8nquFhk4doDW&export=download",
+      "original_filename": "Rules for Royal Courier update 3/28/2026.docx",
+      "relative_path": "bgg/2025-nine-card/435__royal-courier/originals/2026-11-04/Rules for Royal Courier update 3-28-2026.docx",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 196745,
+      "sha256": "735257c6c046fa7fbb7b4f7ba95d6cd7b2c44947b5bf322ea840a19971161446",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "folder_member_observed_browser",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        509
+      ],
+      "transferred_at": "2026-11-04T22:14:48.824Z"
+    },
+    {
+      "game_title": "SagaSaurus: Dino Duel",
+      "game_id": 436,
+      "entry_id": 436,
+      "remote_resource_id": 510,
+      "resource_url": "https://drive.google.com/drive/folders/1ew2vRq_Uo4ZYZz68BO5azmyuzTU-B-Pj",
+      "source_url": "https://boardgamegeek.com/thread/3471323",
+      "final_url": "https://drive.usercontent.google.com/download?id=18V6fPAutdJQg_MsuwyYL5hLR06rhHXMf&export=download",
+      "original_filename": "SagaSaurus Rules",
+      "relative_path": "bgg/2025-nine-card/436__sagasaurus-dino-duel/originals/2026-11-04/SagaSaurus Rules",
+      "media_type": "application/pdf",
+      "byte_size": 787194,
+      "sha256": "1e17a9e8638226466ce64788445b254429423751a6e7b4fbefa79d0d2fa638c1",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "folder_member_observed_browser",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        510
+      ],
+      "transferred_at": "2026-11-04T22:14:50.261Z"
+    },
+    {
+      "game_title": "SagaSaurus: Dino Duel",
+      "game_id": 436,
+      "entry_id": 436,
+      "remote_resource_id": 510,
+      "resource_url": "https://drive.google.com/drive/folders/1ew2vRq_Uo4ZYZz68BO5azmyuzTU-B-Pj",
+      "source_url": "https://boardgamegeek.com/thread/3471323",
+      "final_url": "https://drive.usercontent.google.com/download?id=17eIJ0JuQxPfMniEAJMFcO6q8g5Ms-kkp&export=download",
+      "original_filename": "Dino cards",
+      "relative_path": "bgg/2025-nine-card/436__sagasaurus-dino-duel/originals/2026-11-04/Dino cards",
+      "media_type": "application/pdf",
+      "byte_size": 1494403,
+      "sha256": "94d23fed40bb7ec0841baa20ed1d696bcaf68c400b90e126575f9fe0fab7b221",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "folder_member_observed_browser",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        510
+      ],
+      "transferred_at": "2026-11-04T22:14:52.810Z"
+    },
+    {
+      "game_title": "SagaSaurus: Dino Duel",
+      "game_id": 436,
+      "entry_id": 436,
+      "remote_resource_id": 510,
+      "resource_url": "https://drive.google.com/drive/folders/1ew2vRq_Uo4ZYZz68BO5azmyuzTU-B-Pj",
+      "source_url": "https://boardgamegeek.com/thread/3471323",
+      "final_url": "https://drive.usercontent.google.com/download?id=17AV-tONRb5wp0Po25WwaO-pqYb73-iP1&export=download",
+      "original_filename": "Dino Cards Low ink",
+      "relative_path": "bgg/2025-nine-card/436__sagasaurus-dino-duel/originals/2026-11-04/Dino Cards Low ink",
+      "media_type": "application/pdf",
+      "byte_size": 294438,
+      "sha256": "af3e5d68ba1efc8d7d08c44a4024a905a22c35bfdbe32c2719e0399597109995",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "folder_member_observed_browser",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        510
+      ],
+      "transferred_at": "2026-11-04T22:14:55.043Z"
+    },
+    {
+      "game_title": "Quick Dishes",
+      "game_id": 432,
+      "entry_id": 432,
+      "remote_resource_id": 504,
+      "resource_url": "https://drive.google.com/drive/folders/1PEUXIXNhEI8SANaYFYl0xE3iUCM9EOlx?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3461354",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ntAnAOgtdRZVjcFXq98CxpFGe28Ju0wp&export=download",
+      "original_filename": "Quick Dishes rules and gameplay  v5.docx.pdf",
+      "relative_path": "bgg/2025-nine-card/432__quick-dishes/originals/2026-11-04/Quick Dishes rules and gameplay  v5.docx.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 38711,
+      "sha256": "68e35221a152906be8a2c7f733ca3498f954bc63aea2dc3216bd1ee1b2d6e4a8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "content_review_and_rendered_first_page_or_docx_xml",
+      "status": "acquired",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "folder_member_observed_browser",
+      "selection_reason": "Ulteriori 17 giochi completi dello stesso contest richiesti 2026-11-04, con sostituzioni esplicite dei candidati bloccati",
+      "source_remote_resource_ids": [
+        504
+      ],
+      "transferred_at": "2026-11-04T22:15:42.080Z"
+    }
+  ],
+  "resource_observations": [
+    {
+      "remote_resource_id": 387,
+      "entry_id": 393,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EU3PjiuwHIJFiU1wMlX3JIoBbtMuaYZ2Jti5QpKWM-j83A?e=0zC0KM",
+      "status": "partial",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 403: Forbidden",
+      "observed_at": "2026-11-04",
+      "browser_available": true,
+      "note": "Documento consultabile, comando Scarica una copia azionato, nessun originale ricevuto; nessun successo inferito."
+    },
+    {
+      "remote_resource_id": 388,
+      "entry_id": 393,
+      "url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/edit",
+      "status": "available",
+      "files": [
+        {
+          "name": "20 Dice v2.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "02e7a76eb13d830514cfb9ea4129ca93db547553013469be940f6a0e8137a23a"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "20 Dice v2.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/edit",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 389,
+      "entry_id": 393,
+      "url": "https://drive.google.com/file/d/1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "v1.1 20 Dice Gamejam Cards PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "85ff166acb8e32232d32ec5ef872098bfc1e7d113785f7715e00043c94a9917f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v1.1 20 Dice Gamejam Cards PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 390,
+      "entry_id": 393,
+      "url": "https://drive.google.com/file/d/1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "v1.3 20 Dice Gamejam Cards PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "e468a54a24891473fef69b8384f585cdc4a1e9f091b9f329fa94ebf7b44034a3"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v1.3 20 Dice Gamejam Cards PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 391,
+      "entry_id": 394,
+      "url": "https://drive.google.com/file/d/1EcNI6yE0JEuAPmjfj_2YObZUOaS9ks9Y/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "7 pioneers rules 14-4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1EcNI6yE0JEuAPmjfj_2YObZUOaS9ks9Y&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "4220277bb481e422122723f1c9e6b64d7fd18d82a854510b5b5bcd042f3802c5"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "7 pioneers rules 14-4.pdf",
+      "final_url": "https://drive.google.com/file/d/1EcNI6yE0JEuAPmjfj_2YObZUOaS9ks9Y/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 392,
+      "entry_id": 394,
+      "url": "https://drive.google.com/file/d/1Kh5qszxeC8O_e07OamdZtSTcGunMFJca/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "7 Pioneers CARDS 14_4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Kh5qszxeC8O_e07OamdZtSTcGunMFJca&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "100a2ec8e2ee3787f9ebfdca191b7afc445d0b2172ce1a0af57c2854933c7ba9"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "7 Pioneers CARDS 14_4.pdf",
+      "final_url": "https://drive.google.com/file/d/1Kh5qszxeC8O_e07OamdZtSTcGunMFJca/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 393,
+      "entry_id": 394,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3449600870",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 394,
+      "entry_id": 395,
+      "url": "https://www.dropbox.com/scl/fi/enxgc1vnobc9y2m6dvotu/9-Days-of-Kyiv-1.0.pdf?rlkey=6hufwdjyw2wf8o9x6mq7olbb2&st=mrh4gv32&dl=0",
+      "status": "available",
+      "files": [
+        {
+          "name": "9-Days-of-Kyiv-1.0.pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "8206fe73618f1372222ecac189271285b3c3af5de81c2eacd6aa9da32912af3e"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Dropbox - 9 Days of Kyiv 1.0.pdf - Simplify your life",
+      "final_url": "https://www.dropbox.com/scl/fi/enxgc1vnobc9y2m6dvotu/9-Days-of-Kyiv-1.0.pdf?rlkey=6hufwdjyw2wf8o9x6mq7olbb2&st=mrh4gv32&dl=0",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 395,
+      "entry_id": 395,
+      "url": "https://www.dropbox.com/scl/fi/gdpj1z282qjzdthxzhi1b/9-Tage-von-Kiew-1.0.pdf?rlkey=t7h21t9ppeokzn8s1u4agswt0&st=m321jxym&dl=0",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 396,
+      "entry_id": 395,
+      "url": "https://www.dropbox.com/scl/fi/gtkysx1mtulxc8bwjj8bk/9-Days-Cards-1.0.pdf?rlkey=bh6b4ubj7kpn6lky52qdzqfts&st=t43hddrs&dl=0",
+      "status": "available",
+      "files": [
+        {
+          "name": "9-Days-Cards-1.0.pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "1dc5d101f0eec5af6a851969716d71c4762a17566f857fc8474c8a702828b558"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Dropbox",
+      "final_url": "https://www.dropbox.com/scl/fi/gtkysx1mtulxc8bwjj8bk/9-Days-Cards-1.0.pdf?rlkey=bh6b4ubj7kpn6lky52qdzqfts&st=t43hddrs&dl=0",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 397,
+      "entry_id": 395,
+      "url": "https://www.dropbox.com/scl/fo/e6u52g973ykhrdlhcvkxo/AHuOlT1Ow57-JgnsMxDfUKI?rlkey=j509khantg55xrpcj7aqw729g&st=18m38y8r&dl=0",
+      "status": "available",
+      "files": [
+        {
+          "name": "9 Days of Kyiv - shared folder.zip",
+          "status": "acquired_pending_language_review",
+          "sha256": "f9977132afc1fc3c0d8d1179120da640cce58cd4383a9143cdac2c85a501b18a"
+        }
+      ],
+      "enumeration": "complete_archive_inventory",
+      "page_title": "Dropbox",
+      "final_url": "https://www.dropbox.com/scl/fo/e6u52g973ykhrdlhcvkxo/AHuOlT1Ow57-JgnsMxDfUKI?rlkey=j509khantg55xrpcj7aqw729g&st=18m38y8r&dl=0",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "archive_members": [
+        {
+          "path": "9 Days - Cards 1.0.pdf",
+          "byte_size": 987399
+        },
+        {
+          "path": "9 Days of Kyiv 1.0.pdf",
+          "byte_size": 465372
+        },
+        {
+          "path": "9 Tage von Kiew 1.0.pdf",
+          "byte_size": 487804
+        }
+      ],
+      "observed_at": "2026-11-04",
+      "note": "Inventario completo archivio: due membri EN riconciliati per hash con PDF singoli; un membro DE escluso. Archivio misto non importato."
+    },
+    {
+      "remote_resource_id": 406,
+      "entry_id": 397,
+      "url": "https://drive.proton.me/urls/KV13MGKK0G#ZYoOvKPHSGes",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "page_title": "Proton Drive",
+      "final_url": "https://drive.proton.me/urls/KV13MGKK0G#ZYoOvKPHSGes",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "observed_at": "2026-11-04",
+      "note": "Cartella Proton consultabile con Archive e due PDF v3; download con scansione annullato dal flusso browser. Nessun file ricevuto, nessuna completezza dichiarata."
+    },
+    {
+      "remote_resource_id": 407,
+      "entry_id": 397,
+      "url": "https://screentop.gg/@kaqukal/9thMaze",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 413,
+      "entry_id": 399,
+      "url": "https://drive.google.com/file/d/16EmZIXhtaAbFD9vhud06VoXh_pnL4jZ8/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Buddy System - Full Art with Text - v1.4 03/22/25.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=16EmZIXhtaAbFD9vhud06VoXh_pnL4jZ8&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "8d77b7a394926fdd8c05da4e7178b45eda4b3328bfb26c8a86dc09db7dd5f36b"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Buddy System - Full Art with Text - v1.4 03/22/25.pdf",
+      "final_url": "https://drive.google.com/file/d/16EmZIXhtaAbFD9vhud06VoXh_pnL4jZ8/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 414,
+      "entry_id": 399,
+      "url": "https://drive.google.com/file/d/1MwLReMQeHcbBB489uzsVKqCnLa7NugBT/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Buddy System - Rules - v1.4 03/29/25.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MwLReMQeHcbBB489uzsVKqCnLa7NugBT&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "a47ec9ef8ccef4aeb79a19b3002d3eefadc83645586cb1ab4fe535cd942d477c"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Buddy System - Rules - v1.4 03/29/25.pdf",
+      "final_url": "https://drive.google.com/file/d/1MwLReMQeHcbBB489uzsVKqCnLa7NugBT/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 415,
+      "entry_id": 399,
+      "url": "https://drive.google.com/file/d/1_G2Od-zRrjYbS5Ut1BBXWJis7AvXmVaD/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Buddy System - Low-Ink Cards - v1.4 03/22/25.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1_G2Od-zRrjYbS5Ut1BBXWJis7AvXmVaD&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "bbd3c83c60bcdb61bb5805aecca525722b37e37f8f9269d50387ed1b04091812"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Buddy System - Low-Ink Cards - v1.4 03/22/25.pdf",
+      "final_url": "https://drive.google.com/file/d/1_G2Od-zRrjYbS5Ut1BBXWJis7AvXmVaD/view?usp=drive_link",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 416,
+      "entry_id": 399,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3418530474",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 417,
+      "entry_id": 400,
+      "url": "https://drive.google.com/file/d/13LpoD9hlsRG2gK0xoQg6iep9pF7BnCoP/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "BB.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=13LpoD9hlsRG2gK0xoQg6iep9pF7BnCoP&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "7245eaafb6cd35faadefa827a18d32adeaee1b2ae7d110a70afc0fb53ff9b878"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "BB.pdf",
+      "final_url": "https://drive.google.com/file/d/13LpoD9hlsRG2gK0xoQg6iep9pF7BnCoP/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 418,
+      "entry_id": 400,
+      "url": "https://drive.google.com/file/d/1_9neaPWNsLPA3SmFiG4PoHdXlU_AnfSM/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "layout.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1_9neaPWNsLPA3SmFiG4PoHdXlU_AnfSM&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "5142f3f4c199fe64cce5e26eb65ad701826907c87f9a4252111213117c161c2a"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "layout.pdf",
+      "final_url": "https://drive.google.com/file/d/1_9neaPWNsLPA3SmFiG4PoHdXlU_AnfSM/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 419,
+      "entry_id": 400,
+      "url": "https://drive.google.com/file/d/1c_jfdV2QYFjEq_EHmkixoyY_rKSa0HQx/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "rules 2a.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1c_jfdV2QYFjEq_EHmkixoyY_rKSa0HQx&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "822e30ef6bbd3c5dce0990d6245df8be8adb35357b8ed838bbc3a1dcd9d0d6f8"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "rules 2a.pdf",
+      "final_url": "https://drive.google.com/file/d/1c_jfdV2QYFjEq_EHmkixoyY_rKSa0HQx/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 420,
+      "entry_id": 400,
+      "url": "https://drive.google.com/file/d/1j73qBmUFXoqWP0uuGu5Ji7IMvIm5JgIR/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "BBlow.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1j73qBmUFXoqWP0uuGu5Ji7IMvIm5JgIR&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "981efb2f416ffbb8f87da26d424a338af7833787d55d6f059451c085ae88d78c"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "BBlow.pdf",
+      "final_url": "https://drive.google.com/file/d/1j73qBmUFXoqWP0uuGu5Ji7IMvIm5JgIR/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 421,
+      "entry_id": 400,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411480175",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 425,
+      "entry_id": 402,
+      "url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "status": "available",
+      "files": [],
+      "enumeration": "complete_browser_listing",
+      "page_title": "CALLING CARD WARRIORS by JestemZbychu",
+      "final_url": "https://jestemzbychu.itch.io/calling-card-warriors",
+      "reason": "Due file gratuiti, nessun pagamento o account",
+      "file_names": [
+        "CCW-CARDS.pdf",
+        "CCW-RULES.pdf"
+      ],
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 426,
+      "entry_id": 402,
+      "url": "https://tabletopia.com/games/calling-card-warriors-888t7h/play-now",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 431,
+      "entry_id": 405,
+      "url": "https://www.dropbox.com/scl/fo/xgq5ftc115dxlkde2mcyd/AOW3x4D2TVPFGs0ktX0JbMY?rlkey=jkndzymdfw27avqoqlegqfb4x&st=zuhm9qlt&dl=0",
+      "status": "available",
+      "files": [
+        {
+          "name": "Echoing Howls - shared folder.zip",
+          "status": "acquired_pending_language_review",
+          "sha256": "c837afb8cd78f5ce7995e24618fa555b031e84314cd5e67bc405d2c6802a9628"
+        }
+      ],
+      "enumeration": "complete_archive_inventory",
+      "page_title": "Dropbox - Echoing Howls (9-card Contest) - Simplify your life",
+      "final_url": "https://www.dropbox.com/scl/fo/xgq5ftc115dxlkde2mcyd/AOW3x4D2TVPFGs0ktX0JbMY?rlkey=jkndzymdfw27avqoqlegqfb4x&st=zuhm9qlt&dl=0",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "archive_members": [
+        {
+          "path": "Echoing Howls Rulebook (v.04).pdf",
+          "byte_size": 2582250
+        },
+        {
+          "path": "Echoing Howls Game Sheets (v.04).pdf",
+          "byte_size": 419197
+        },
+        {
+          "path": "Echoing Howls Game Sheets BW (v.04).pdf",
+          "byte_size": 595695
+        }
+      ],
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 434,
+      "entry_id": 407,
+      "url": "https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp=sharing",
+      "status": "restricted",
+      "files": [],
+      "enumeration": "not_applicable",
+      "page_title": "Google Drive: Sign-in",
+      "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp%3Dsharing&followup=https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp%3Dsharing&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1798979530:1793829720303817",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 438,
+      "entry_id": 409,
+      "url": "https://drive.google.com/drive/folders/12cmd_FFwIoY5vx26ntuOOZwMyUvtcEaQ?usp=drive_link",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 439,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EQin9nGlJGpFgRRPqehrBu4BxtcEX3P2aC43ERH3VzvfOQ?e=mvDr9f",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 403: Forbidden",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 440,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/Ec8VgIOXPBFLuWvGHnTICbIBLK6KuvBUtiETW7No_Z3AfQ?e=uahZfG",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 403: Forbidden",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 441,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EcoopZZk8XxOgnGCYf-_J3MB6X8cF0BltChCni7xe5vmnA?e=s6lENQ",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 403: Forbidden",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 442,
+      "entry_id": 410,
+      "url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/edit",
+      "status": "available",
+      "files": [
+        {
+          "name": "Gamejam Rules Fruit Sort Company.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "64adc236ca2ac30edcf1ecc98820cfac94d7536330f6fac0427a54942b94694d"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Gamejam Rules Fruit Sort Company.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/edit",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 443,
+      "entry_id": 410,
+      "url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/edit?usp=sharing&ouid=109837450797380285615&rtpof=true&sd=true",
+      "status": "available",
+      "files": [
+        {
+          "name": "3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "6958405a52abfefff7fa6334a1bd4843eac2934fea8ab4453662d0ea08c2ffdd"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/edit?usp=sharing&ouid=109837450797380285615&rtpof=true&sd=true",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 444,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "9 Cards Fruit Sort Company.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "5fd2e66cf2afcde40db7210a5dfddd481f273fa5e5a560185f9c4f9e8db2e507"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "9 Cards Fruit Sort Company.pdf",
+      "final_url": "https://drive.google.com/file/d/16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 445,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/18LipPlWmVTpVud2-L0z0n9guBlsUoOIf/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=18LipPlWmVTpVud2-L0z0n9guBlsUoOIf&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "015d3657c5cd2768c94d744487013e1b09ff051ab9ec835f1a4e239e3a79e949"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+      "final_url": "https://drive.google.com/file/d/18LipPlWmVTpVud2-L0z0n9guBlsUoOIf/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 446,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "04372667386842d3ef0f9e35d8ad8349d19e7e7a4e887206ce4ccb58cc665d37"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 447,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "5c5906fd3418c03df2fb9f0ae59c946f23b73c301fd1978e413f482d92b23931"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+      "final_url": "https://drive.google.com/file/d/1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 448,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0e07dae01219b5fd22c54ff22f82915100a4acae00d65492fbd6b759df7c5210"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+      "final_url": "https://drive.google.com/file/d/1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 449,
+      "entry_id": 410,
+      "url": "https://playingcards.io/4nb538",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 450,
+      "entry_id": 410,
+      "url": "https://playingcards.io/7t4n4c",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 451,
+      "entry_id": 411,
+      "url": "https://www.dropbox.com/scl/fo/0qqcpi03ej790clexzq2z/ANsZ1FAMZtl7vju95RoFK-Y?rlkey=hcsvbr0t50li8xs3i5hwycgr1&st=eqzlfopv&dl=0",
+      "status": "available",
+      "files": [
+        {
+          "name": "Gems Make Goblin Kings - shared folder.zip",
+          "status": "acquired_pending_language_review",
+          "sha256": "ebf3bf25900bff51d531e9b1dae2b9f73532a89f32084ff94184246de7233c3b"
+        }
+      ],
+      "enumeration": "complete_archive_inventory",
+      "page_title": "Dropbox - 9cd2025-english - Simplify your life",
+      "final_url": "https://www.dropbox.com/scl/fo/0qqcpi03ej790clexzq2z/ANsZ1FAMZtl7vju95RoFK-Y?rlkey=hcsvbr0t50li8xs3i5hwycgr1&st=eqzlfopv&dl=0",
+      "reason": "Destinazione non gestita; verifica browser necessaria",
+      "archive_members": [
+        {
+          "path": "GMGK-Envelope.pdf",
+          "byte_size": 116253
+        },
+        {
+          "path": "GMGK-Cards_EN-0402.pdf",
+          "byte_size": 618525
+        },
+        {
+          "path": "GMGK-Rules_EN-0404.pdf",
+          "byte_size": 940552
+        }
+      ],
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 452,
+      "entry_id": 411,
+      "url": "https://www.dropbox.com/scl/fo/4bnxcc0w7flnyu9enq38y/ANXVUGPVpYBxh-y1nfVUKAY?rlkey=3rlsjo494pm3xy065bwhvaj74&st=oc37i8vw&dl=0",
+      "status": "excluded",
+      "files": [],
+      "enumeration": "not_applicable",
+      "page_title": "Dropbox - 9cd2025-deutsch - Simplify your life",
+      "final_url": "https://www.dropbox.com/scl/fo/4bnxcc0w7flnyu9enq38y/ANXVUGPVpYBxh-y1nfVUKAY?rlkey=3rlsjo494pm3xy065bwhvaj74&st=oc37i8vw&dl=0",
+      "reason": "Cartella dichiarata deutsch: lingua tedesca fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 456,
+      "entry_id": 413,
+      "url": "https://drive.google.com/drive/folders/1U2fNPbNWUDYCfwlTrx4-e7ZdtNpD8gFo?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "HHG 9Card Template Ver2 .pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1cFPtiW_B5IZYXvz7T8iNu1JbLvyE9Tpf&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "8b34eaab88ea3471e533e8ece0c97d07ae026fd5e231529b212b1432acd50930"
+        },
+        {
+          "name": "HHG Rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1R5phis5CYlKC6VN5yD2f8wZ58_TtyTs3&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "9083e7c8020c93d0c03bafcfe80b9e3261439e92a37bcd6d824cb768572d3765"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "2025 9 Card Contest",
+      "final_url": "https://drive.google.com/drive/folders/1U2fNPbNWUDYCfwlTrx4-e7ZdtNpD8gFo?usp=drive_link",
+      "folder_files": {
+        "1cFPtiW_B5IZYXvz7T8iNu1JbLvyE9Tpf": "HHG 9Card Template Ver2 .pdf",
+        "1R5phis5CYlKC6VN5yD2f8wZ58_TtyTs3": "HHG Rulebook.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 457,
+      "entry_id": 414,
+      "url": "https://docs.google.com/presentation/d/1UytpJ7kJsp_nob8wyQej668vazurp_hBs2IF793y9ds/edit?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Hydra Wrangler v2.01 Rules - Presentazioni Google.pdf",
+          "url": "https://docs.google.com/presentation/d/1UytpJ7kJsp_nob8wyQej668vazurp_hBs2IF793y9ds/export/pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "df86038aa05ef76905d4452e171206a07919150556f678354c230c73518daeb4"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Hydra Wrangler v2.01 Rules - Presentazioni Google",
+      "final_url": "https://docs.google.com/presentation/d/1UytpJ7kJsp_nob8wyQej668vazurp_hBs2IF793y9ds/edit?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 458,
+      "entry_id": 414,
+      "url": "https://drive.google.com/file/d/1dQvDloDt3HqbblfDPrDfYjJ2_gHiSsqq/view?usp=drive_link",
+      "status": "available",
+      "files": [
+        {
+          "name": "Hydra Wrangler v2.00 Full Color.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1dQvDloDt3HqbblfDPrDfYjJ2_gHiSsqq&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "455d6c13cddadbb339af4fe7c6be24ac1f3939ac97b1cbfb939cb0cbb531709f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Hydra Wrangler v2.00 Full Color.pdf",
+      "final_url": "https://drive.google.com/file/d/1dQvDloDt3HqbblfDPrDfYjJ2_gHiSsqq/view?usp=drive_link",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 459,
+      "entry_id": 414,
+      "url": "https://youtu.be/UI6qm7Mq2NQ",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 460,
+      "entry_id": 415,
+      "url": "https://drive.google.com/drive/folders/1qpiAfD3PKcHygDVcHUXW9tQuz5RUzrY7?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "If Only Fireflies Exist v04.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10nLgvcm_sRHef9OB0zUUc9l3CjDJfWez&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "3025976674ed6f3146937f5d66b3029358bfd2ca66812bae0adc149d4698f928"
+        },
+        {
+          "name": "Rulebook Fireflies v0.4 (2).pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1liJ78xQchF3k0IcsG33MXN1DWokGGqr6&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "fdd83215604624c7f5957c707be53d25cb0828261639dba3fe502ec76dd436ad"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Fireflies at BGG",
+      "final_url": "https://drive.google.com/drive/folders/1qpiAfD3PKcHygDVcHUXW9tQuz5RUzrY7?usp=sharing",
+      "folder_files": {
+        "10nLgvcm_sRHef9OB0zUUc9l3CjDJfWez": "If Only Fireflies Exist v04.pdf",
+        "1liJ78xQchF3k0IcsG33MXN1DWokGGqr6": "Rulebook Fireflies v0.4 (2).pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 461,
+      "entry_id": 415,
+      "url": "https://playingcards.io/2ug9eq",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 462,
+      "entry_id": 415,
+      "url": "https://playingcards.io/9zx7st",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 463,
+      "entry_id": 415,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3460378190",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 468,
+      "entry_id": 417,
+      "url": "https://drive.google.com/drive/u/0/folders/1bKnkJJh2C4hfCcgjDarOhLwdApuO_XT7",
+      "status": "available",
+      "files": [
+        {
+          "name": "High Ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1z32vTWwM24fxbhQ3Fooh7Tr68SgKNpxL&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "3948b98e1db381102bac6226b2c65637f7cd0884db9466295de6b725cd9b1efc"
+        },
+        {
+          "name": "Low Ink.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1xUyBuD7JupzqpU67_5Bztl-BiDRefV54&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "545320f8481e62322efdec14bcab6c9453eb93ca341c859fcc0db668999abac6"
+        },
+        {
+          "name": "Rules.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1-X9x6eFGs7-pxLIgZCayLR4wmYeGvv_N&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "a5006f6ee73ee91265631cc4093659e238dc6dcee72546b1dcb02cee6ef012c1"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Kodokuna: The Lone Hermit",
+      "final_url": "https://drive.google.com/drive/folders/1bKnkJJh2C4hfCcgjDarOhLwdApuO_XT7",
+      "folder_files": {
+        "1z32vTWwM24fxbhQ3Fooh7Tr68SgKNpxL": "High Ink.pdf",
+        "1xUyBuD7JupzqpU67_5Bztl-BiDRefV54": "Low Ink.pdf",
+        "1-X9x6eFGs7-pxLIgZCayLR4wmYeGvv_N": "Rules.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 469,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/16V9tFMWo-3Yovi_R26PSt0KBZxFB0aJI/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 470,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/1IjthopDA8iVJ6EH5osxbxGhfS_vkGtkT/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 471,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/1auO5wIxH5NYcf9K80T7RYGqNHSHlrp__/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 485,
+      "entry_id": 424,
+      "url": "https://drive.google.com/file/d/1DFdVa9BQfenjFYBiAetLX_Huf8KzeTJg/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 486,
+      "entry_id": 424,
+      "url": "https://drive.google.com/file/d/1JZXLkDlTpLSK1fZdN4udrdx89balSKj_/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 489,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/14x-GZ_uJ-Z7N8XVfP0OmRXElKON9QlMf/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 490,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1O-XR2p6HvGvPcgxCObcRpBhY96z-fmfT/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 491,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1RWUmYkpUsUh0wEFV5h__iepx7qlc-hnq/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 492,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1lMcYsRvWkE4cW4xQrKTFnJpRkZqrPQlz/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 500,
+      "entry_id": 430,
+      "url": "https://drive.google.com/drive/folders/1f9SB0roMVcu9A3-18HV3uO3gAZE5Mnhl?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Passcode.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10swm5eRFRQGqqErI3gE-1_EaO2rK2kGf&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "20ae89407f36ac0ea6334004b121b62a9e2ea1235982a6bd3a73bc487b5f1ae8"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Passcode - 9-Card Contest files",
+      "final_url": "https://drive.google.com/drive/folders/1f9SB0roMVcu9A3-18HV3uO3gAZE5Mnhl?usp=sharing",
+      "folder_files": {
+        "10swm5eRFRQGqqErI3gE-1_EaO2rK2kGf": "Passcode.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 501,
+      "entry_id": 430,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3419879219",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 504,
+      "entry_id": 432,
+      "url": "https://drive.google.com/drive/folders/1PEUXIXNhEI8SANaYFYl0xE3iUCM9EOlx?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Quick_Dishes_Card.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1dKeN_wKLCcLmdfg3eYZmDSSJs8I5SYL2&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "9791943579caf7e9d73e0e5c64300c70de484a9793f84733a022dcc90227411e"
+        },
+        {
+          "name": "Quick Dishes rules and gameplay  v5.docx.pdf",
+          "status": "acquired"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Quick dishes",
+      "final_url": "https://drive.google.com/drive/folders/1PEUXIXNhEI8SANaYFYl0xE3iUCM9EOlx?usp=sharing",
+      "folder_files": {
+        "1ntAnAOgtdRZVjcFXq98CxpFGe28Ju0wp": "Quick Dishes rules and gameplay v5.docx",
+        "1dKeN_wKLCcLmdfg3eYZmDSSJs8I5SYL2": "Quick_Dishes_Card.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 505,
+      "entry_id": 433,
+      "url": "https://drive.google.com/drive/folders/1aQTr6vgXex3ktNPhgYN0AFScx2la5_as",
+      "status": "available",
+      "files": [
+        {
+          "name": "ENG_RapidWords v2.2.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10c7O2tiVwZh77ugdkSNLbfByPSgy5o33&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "7ea7bc6653d4b63c5896327dbc502ef8d2fd2f8549b2d471ab4b171da437fab1"
+        },
+        {
+          "name": "ESP_RapidWords V2.2.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1bCMWf_nsZNqL_hWx7Eh9QBzxiPq4Hapg&export=download",
+          "status": "excluded",
+          "sha256": "6673ba9c0805bf50331e1602b1efe21093285fbd8e17fb3d0f5be2b10f3ca1e1",
+          "reason": "Lingua ES fuori perimetro"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Rapid Words",
+      "final_url": "https://drive.google.com/drive/folders/1aQTr6vgXex3ktNPhgYN0AFScx2la5_as",
+      "folder_files": {
+        "10c7O2tiVwZh77ugdkSNLbfByPSgy5o33": "ENG_RapidWords v2.2.pdf",
+        "1bCMWf_nsZNqL_hWx7Eh9QBzxiPq4Hapg": "ESP_RapidWords V2.2.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 506,
+      "entry_id": 433,
+      "url": "https://playingcards.io/eysjmm",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 507,
+      "entry_id": 434,
+      "url": "https://drive.google.com/file/d/1M6on1vgfI3b_j5isL2D5guDTaGyuGROS/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Risky_Riches_v1.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1M6on1vgfI3b_j5isL2D5guDTaGyuGROS&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "f7a6624cb94409fd33b8f08f32cfdbf9116355aee1dd7ef7c8f12ad3c0ce3da2"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Risky_Riches_v1.pdf",
+      "final_url": "https://drive.google.com/file/d/1M6on1vgfI3b_j5isL2D5guDTaGyuGROS/view?usp=sharing",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 508,
+      "entry_id": 434,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3440149660",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro",
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 509,
+      "entry_id": 435,
+      "url": "https://drive.google.com/drive/folders/1mgNNVzrf60f4MivHyhZYkjC_fbC8pfN5?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "Rules for Royal Courier update 3/28/2026.docx",
+          "status": "excluded",
+          "reason": "Non PDF o lingua/tipo fuori perimetro"
+        },
+        {
+          "name": "Royal Courier cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ghWP2h9SqG-VUinweNqxwoRkyMGO62Xu&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "357a873c408d9866f4c919d02db8b80b564538fd1f1afb9ac88a3ad93a5c0a7c"
+        },
+        {
+          "name": "Rules for Royal Courier update 3-28-2026.docx",
+          "status": "acquired_pending_language_review",
+          "sha256": "735257c6c046fa7fbb7b4f7ba95d6cd7b2c44947b5bf322ea840a19971161446"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "Royal Courier Update",
+      "final_url": "https://drive.google.com/drive/folders/1mgNNVzrf60f4MivHyhZYkjC_fbC8pfN5?usp=sharing",
+      "folder_files": {
+        "1H14SkqLO8kqM5voN_wmt8nquFhk4doDW": "Rules for Royal Courier update 3/28/2026.docx",
+        "1ghWP2h9SqG-VUinweNqxwoRkyMGO62Xu": "Royal Courier cards.pdf"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    },
+    {
+      "remote_resource_id": 510,
+      "entry_id": 436,
+      "url": "https://drive.google.com/drive/folders/1ew2vRq_Uo4ZYZz68BO5azmyuzTU-B-Pj",
+      "status": "available",
+      "files": [
+        {
+          "name": "SagaSaurus Rules",
+          "status": "acquired_pending_language_review",
+          "sha256": "1e17a9e8638226466ce64788445b254429423751a6e7b4fbefa79d0d2fa638c1"
+        },
+        {
+          "name": "Dino cards",
+          "status": "acquired_pending_language_review",
+          "sha256": "94d23fed40bb7ec0841baa20ed1d696bcaf68c400b90e126575f9fe0fab7b221"
+        },
+        {
+          "name": "Dino Cards Low ink",
+          "status": "acquired_pending_language_review",
+          "sha256": "af3e5d68ba1efc8d7d08c44a4024a905a22c35bfdbe32c2719e0399597109995"
+        }
+      ],
+      "enumeration": "complete_browser_reconciled",
+      "page_title": "9 card con",
+      "final_url": "https://drive.google.com/drive/folders/1ew2vRq_Uo4ZYZz68BO5azmyuzTU-B-Pj",
+      "folder_files": {
+        "18V6fPAutdJQg_MsuwyYL5hLR06rhHXMf": "SagaSaurus Rules",
+        "17eIJ0JuQxPfMniEAJMFcO6q8g5Ms-kkp": "Dino cards",
+        "17AV-tONRb5wp0Po25WwaO-pqYb73-iP1": "Dino Cards Low ink"
+      },
+      "subfolders": {},
+      "observed_at": "2026-11-04"
+    }
+  ],
+  "page_audits": [
+    {
+      "id": 456,
+      "files": 2,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 460,
+      "files": 2,
+      "excluded_pcio": 1,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 468,
+      "files": 3,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 500,
+      "files": 1,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 504,
+      "files": 2,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 505,
+      "files": 1,
+      "excluded_es": 1,
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 509,
+      "files": 2,
+      "types": [
+        "pdf",
+        "docx"
+      ],
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": 510,
+      "files": 3,
+      "note": "PDF senza estensione",
+      "method": "browser_full_listing_reconciled",
+      "subfolders": 0,
+      "verified_at": "2026-11-04"
+    }
+  ],
+  "entry_outcomes": [
+    {
+      "entry_id": 393,
+      "game_id": 393,
+      "title": "20 Dice",
+      "files": 3,
+      "outcome": "partial",
+      "notes": "Materiali storici/componenti acquisiti; regolamenti finali OneDrive consultabili nel browser ma trasferimento non ottenuto."
+    },
+    {
+      "entry_id": 394,
+      "game_id": 394,
+      "title": "7 PIONEERS",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 395,
+      "game_id": 395,
+      "title": "9 Days of Kyiv",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 397,
+      "game_id": 397,
+      "title": "9th Maze",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 399,
+      "game_id": 399,
+      "title": "Buddy System",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 400,
+      "game_id": 400,
+      "title": "Bug Brain",
+      "files": 4,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 402,
+      "game_id": 402,
+      "title": "Calling Card Warriors",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 405,
+      "game_id": 405,
+      "title": "Echoing Howls",
+      "files": 1,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 407,
+      "game_id": 407,
+      "title": "Flip Dungeon",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 409,
+      "game_id": 409,
+      "title": "Forest Tip",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 410,
+      "game_id": 410,
+      "title": "Fruit Sort Company",
+      "files": 7,
+      "outcome": "partial",
+      "notes": "Materiali storici/componenti acquisiti; regolamenti finali OneDrive consultabili nel browser ma trasferimento non ottenuto."
+    },
+    {
+      "entry_id": 411,
+      "game_id": 411,
+      "title": "Gems Make Goblin Kings",
+      "files": 1,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 413,
+      "game_id": 413,
+      "title": "Haunted Hunting Grounds",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 414,
+      "game_id": 414,
+      "title": "Hydra Wrangler",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 415,
+      "game_id": 415,
+      "title": "If Only Fireflies Exist",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 417,
+      "game_id": 417,
+      "title": "Kodokuna: The Lone Hermit",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 418,
+      "game_id": 418,
+      "title": "Let's Have a Wedding",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 424,
+      "game_id": 424,
+      "title": "No More Dragons",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 426,
+      "game_id": 426,
+      "title": "Ocean Path",
+      "files": 0,
+      "outcome": "blocked",
+      "notes": "Risorse dichiarate non acquisite: accesso riservato, riferimento non disponibile o impedimento tecnico documentato nel manifest."
+    },
+    {
+      "entry_id": 430,
+      "game_id": 430,
+      "title": "Passcode",
+      "files": 1,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 432,
+      "game_id": 432,
+      "title": "Quick Dishes",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 433,
+      "game_id": 433,
+      "title": "Rapid Words",
+      "files": 1,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 434,
+      "game_id": 434,
+      "title": "Risky Riches",
+      "files": 1,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 435,
+      "game_id": 435,
+      "title": "Royal Courier",
+      "files": 2,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    },
+    {
+      "entry_id": 436,
+      "game_id": 436,
+      "title": "SagaSaurus: Dino Duel",
+      "files": 3,
+      "outcome": "complete",
+      "notes": "Tutte le risorse stampabili EN nel perimetro dichiarato disponibili acquisite; video, implementazioni e lingue escluse separati."
+    }
+  ],
+  "target_complete_games": 17,
+  "original_selection_count": 17,
+  "replacement_candidates": 8,
+  "scope_note": "25 tentativi su un solo contest per completare 17 giochi; 8 residui separati. Nessuna selezione annuale o IMG.",
+  "acquired_at": "2026-11-04",
+  "excluded_files": [
+    {
+      "game_title": "9 Days of Kyiv",
+      "game_id": 395,
+      "entry_id": 395,
+      "remote_resource_id": 397,
+      "resource_url": "https://www.dropbox.com/scl/fo/e6u52g973ykhrdlhcvkxo/AHuOlT1Ow57-JgnsMxDfUKI?rlkey=j509khantg55xrpcj7aqw729g&st=18m38y8r&dl=0",
+      "source_url": "https://boardgamegeek.com/thread/3446532",
+      "final_url": "https://uce2beb0c373b9c178927c595479.dl.dropboxusercontent.com/zip_download_get/CutV1Q-2ERnqdCGWhrK6w87UsfJGOMvyU-9flAZYtfis519cpLxA3xPg3Er0adAjOBLJIwrmExUwya4w7RgUJkuJF5x50PBY27TlQ6rSP-2pyg",
+      "original_filename": "9 Days of Kyiv - shared folder.zip",
+      "relative_path": "bgg/2025-nine-card/395__9-days-of-kyiv/originals/2026-11-04/9 Days of Kyiv - shared folder.zip",
+      "media_type": "application/zip",
+      "byte_size": 1941157,
+      "sha256": "f9977132afc1fc3c0d8d1179120da640cce58cd4383a9143cdac2c85a501b18a",
+      "version_raw": null,
+      "language_code": "und",
+      "language_status": "pending_review",
+      "status": "excluded",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "host_folder_archive",
+      "reason": "Archivio misto con DE: originale preservato solo come evidenza locale; file IT/EN acquisiti separatamente."
+    },
+    {
+      "game_title": "Rapid Words",
+      "game_id": 433,
+      "entry_id": 433,
+      "remote_resource_id": 505,
+      "resource_url": "https://drive.google.com/drive/folders/1aQTr6vgXex3ktNPhgYN0AFScx2la5_as",
+      "source_url": "https://boardgamegeek.com/thread/3443351",
+      "final_url": "https://drive.usercontent.google.com/download?id=1bCMWf_nsZNqL_hWx7Eh9QBzxiPq4Hapg&export=download",
+      "original_filename": "ESP_RapidWords V2.2.pdf",
+      "relative_path": "bgg/2025-nine-card/433__rapid-words/originals/2026-11-04/ESP_RapidWords V2.2.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1586128,
+      "sha256": "6673ba9c0805bf50331e1602b1efe21093285fbd8e17fb3d0f5be2b10f3ca1e1",
+      "version_raw": null,
+      "language_code": "und",
+      "language_status": "pending_review",
+      "pages": 11,
+      "status": "excluded",
+      "acquired_at": "2026-11-04",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "reason": "Spagnolo fuori perimetro; originale preservato, escluso dal catalogo operativo."
+    }
+  ]
+}

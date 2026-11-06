@@ -1,0 +1,3043 @@
+{
+  "batch_key": "bgg-2025-nine-card-final-2026-11-06",
+  "approved_at": "2026-11-06",
+  "verified_at": "2026-11-06",
+  "contest_id": 13,
+  "selection": [
+    {
+      "entry_id": 393,
+      "game_id": 393,
+      "title": "20 Dice",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479228",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "partial",
+      "wip_post_author": "Levi Gray @Captain_MelonLord",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 397,
+      "game_id": 397,
+      "title": "9th Maze",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3438996",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "KaQu Kal @kaqu",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 403,
+      "game_id": 403,
+      "title": "Dragons Horde",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3439500",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "partial",
+      "wip_post_author": "@J_wiz",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 407,
+      "game_id": 407,
+      "title": "Flip Dungeon",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479370",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "@drawanyth",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 409,
+      "game_id": 409,
+      "title": "Forest Tip",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477855",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Michael Donnelly @Hobbyistcollective",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 410,
+      "game_id": 410,
+      "title": "Fruit Sort Company",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479222",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "partial",
+      "wip_post_author": "Levi Gray @Captain_MelonLord",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 418,
+      "game_id": 418,
+      "title": "Let's Have a Wedding",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477894",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 423,
+      "game_id": 423,
+      "title": "Nine Tails",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3457895",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 424,
+      "game_id": 424,
+      "title": "No More Dragons",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3446445",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 426,
+      "game_id": 426,
+      "title": "Ocean Path",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3442893",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 438,
+      "game_id": 438,
+      "title": "Slayer",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3472477",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 442,
+      "game_id": 442,
+      "title": "Stand of Supremacy",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3449049",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 445,
+      "game_id": 445,
+      "title": "The King of Arcades",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3478326",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 447,
+      "game_id": 447,
+      "title": "Three Buccaneers",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3466260",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "blocked",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 450,
+      "game_id": 450,
+      "title": "Tralim",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3468551",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "partial",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 456,
+      "game_id": 456,
+      "title": "Daily Dungeon",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3443671",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 457,
+      "game_id": 457,
+      "title": "Dice Production",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479765",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 458,
+      "game_id": 458,
+      "title": "Titolo non indicato (entry ritirata 3)",
+      "wip_thread_url": null,
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 459,
+      "game_id": 459,
+      "title": "HMS Ulven",
+      "wip_thread_url": null,
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 461,
+      "game_id": 461,
+      "title": "Main Line Mayhem",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479751",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 462,
+      "game_id": 462,
+      "title": "Network with an Octopuse",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479008",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 463,
+      "game_id": 463,
+      "title": "Psychodynamic Fronts",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479778",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 464,
+      "game_id": 464,
+      "title": "Red Is Hungry",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3452360",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": "partial",
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 466,
+      "game_id": 466,
+      "title": "Three-Legged Race",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3475750",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 467,
+      "game_id": 467,
+      "title": "Titolo non indicato (entry ritirata 12)",
+      "wip_thread_url": null,
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 468,
+      "game_id": 468,
+      "title": "UHBC - Containment Breach",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3475125",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 473,
+      "game_id": 473,
+      "title": "Elementa",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3476068",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 474,
+      "game_id": 474,
+      "title": "Brawl",
+      "wip_thread_url": null,
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 476,
+      "game_id": 476,
+      "title": "Monster Restaurant",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3461857",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 477,
+      "game_id": 477,
+      "title": "Primary Colors",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3478441",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 478,
+      "game_id": 478,
+      "title": "Soda Wars",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3441059",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 479,
+      "game_id": 479,
+      "title": "Space Traders",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479556",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 480,
+      "game_id": 480,
+      "title": "SPLAT!",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479036",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 481,
+      "game_id": 481,
+      "title": "Surround the King",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3458414",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 482,
+      "game_id": 482,
+      "title": "Weird Spells",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479202",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 483,
+      "game_id": 483,
+      "title": "Yattactics",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3479781",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 484,
+      "game_id": 484,
+      "title": "Puebleando",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3477928",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 485,
+      "game_id": 485,
+      "title": "Submerge",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3462494",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    },
+    {
+      "entry_id": 486,
+      "game_id": 486,
+      "title": "The Corridor",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3440241",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    }
+  ],
+  "languages": [
+    "it",
+    "en"
+  ],
+  "purpose": "Copia personale, nessuna redistribuzione",
+  "items": [
+    {
+      "game_title": "Elementa",
+      "game_id": 473,
+      "entry_id": 473,
+      "remote_resource_id": 571,
+      "resource_url": "https://drive.google.com/drive/folders/1DP3vyWz7UI1_zjS77_88kZUJxpyOgXXC?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3476068",
+      "final_url": "https://drive.usercontent.google.com/download?id=1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ&export=download",
+      "original_filename": "ElementaBrawl Rulebook v1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/473__elementa/originals/2026-11-06-final/ElementaBrawl Rulebook v1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 298156,
+      "sha256": "bbb3fc9e7359c07efef1443987854ae60ec4a1edd592b43536bba28a9fd60766",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 13,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        571,
+        572
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:51:24.353164+00:00"
+    },
+    {
+      "game_title": "Elementa",
+      "game_id": 473,
+      "entry_id": 473,
+      "remote_resource_id": 571,
+      "resource_url": "https://drive.google.com/drive/folders/1DP3vyWz7UI1_zjS77_88kZUJxpyOgXXC?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3476068",
+      "final_url": "https://drive.usercontent.google.com/download?id=1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB&export=download",
+      "original_filename": "ElementaBrawl_FullColor_v1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/473__elementa/originals/2026-11-06-final/ElementaBrawl_FullColor_v1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1391100,
+      "sha256": "e87699ca189c94e97622658a5ed96aaffd2991f2b0fc04448a5126bfbe190714",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        571,
+        573
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:51:26.571973+00:00"
+    },
+    {
+      "game_title": "Elementa",
+      "game_id": 473,
+      "entry_id": 473,
+      "remote_resource_id": 571,
+      "resource_url": "https://drive.google.com/drive/folders/1DP3vyWz7UI1_zjS77_88kZUJxpyOgXXC?usp=drive_link",
+      "source_url": "https://boardgamegeek.com/thread/3476068",
+      "final_url": "https://drive.usercontent.google.com/download?id=1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs&export=download",
+      "original_filename": "ElementaBrawl_LowInk_v1.0.pdf",
+      "relative_path": "bgg/2025-nine-card/473__elementa/originals/2026-11-06-final/ElementaBrawl_LowInk_v1.0.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 145691,
+      "sha256": "0ee6eca3796a2179459bd056778f559b5e7177f8fc46ee30747407ff4998a69b",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        571,
+        574
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:51:27.996128+00:00"
+    },
+    {
+      "game_title": "Monster Restaurant",
+      "game_id": 476,
+      "entry_id": 476,
+      "remote_resource_id": 576,
+      "resource_url": "https://drive.google.com/drive/folders/1zMVmyC8WCc6brplrmRYFtPAZrFnfCOO7?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3461857",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MuePNLLO2seYSgbwf29Jeqjb_7nkSYvh&export=download",
+      "original_filename": "CARDS - Monster Restaurant.pdf",
+      "relative_path": "bgg/2025-nine-card/476__monster-restaurant/originals/2026-11-06-final/CARDS - Monster Restaurant.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1846029,
+      "sha256": "98ebb198997370f4e3e67fecee6c9009ad6702924857c1f2ba97995b2192befc",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        576
+      ],
+      "transferred_at": "2026-11-06T07:51:37.694636+00:00"
+    },
+    {
+      "game_title": "Monster Restaurant",
+      "game_id": 476,
+      "entry_id": 476,
+      "remote_resource_id": 576,
+      "resource_url": "https://drive.google.com/drive/folders/1zMVmyC8WCc6brplrmRYFtPAZrFnfCOO7?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3461857",
+      "final_url": "https://drive.usercontent.google.com/download?id=1XZRDzgngh84xJ1JZfMhehm0BPubk-OHH&export=download",
+      "original_filename": "RULES - Monster Restaurant.pdf",
+      "relative_path": "bgg/2025-nine-card/476__monster-restaurant/originals/2026-11-06-final/RULES - Monster Restaurant.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 295846,
+      "sha256": "4707d15e5a45b75ac28660bd7ab5d2601afaa9816c0d58c119196798f427205c",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        576
+      ],
+      "transferred_at": "2026-11-06T07:51:40.078989+00:00"
+    },
+    {
+      "game_title": "Primary Colors",
+      "game_id": 477,
+      "entry_id": 477,
+      "remote_resource_id": 578,
+      "resource_url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "source_url": "https://boardgamegeek.com/thread/3478441",
+      "final_url": "https://drive.usercontent.google.com/download?id=1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ&export=download",
+      "original_filename": "cards.pdf",
+      "relative_path": "bgg/2025-nine-card/477__primary-colors/originals/2026-11-06-final/cards.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 26607881,
+      "sha256": "1488f2fa1b707be86e0a8ffb7b2f634c4c943c931a4fe4f6f5209f8b272e3d75",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        578,
+        580
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:51:48.350879+00:00"
+    },
+    {
+      "game_title": "Primary Colors",
+      "game_id": 477,
+      "entry_id": 477,
+      "remote_resource_id": 578,
+      "resource_url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "source_url": "https://boardgamegeek.com/thread/3478441",
+      "final_url": "https://drive.usercontent.google.com/download?id=1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97&export=download",
+      "original_filename": "rulebook-digital.pdf",
+      "relative_path": "bgg/2025-nine-card/477__primary-colors/originals/2026-11-06-final/rulebook-digital.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2050787,
+      "sha256": "0b19a24487b004487e2c7d4a938e3c6bb85c6e2f0290a94b89ce09fffcf6221f",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 5,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "source_remote_resource_ids": [
+        578,
+        579
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:51:50.652490+00:00"
+    },
+    {
+      "game_title": "Primary Colors",
+      "game_id": 477,
+      "entry_id": 477,
+      "remote_resource_id": 578,
+      "resource_url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "source_url": "https://boardgamegeek.com/thread/3478441",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Wc5lvdf3YxUJilbK7vBMOu5JF02l1yaq&export=download",
+      "original_filename": "rulebook-for-print.pdf",
+      "relative_path": "bgg/2025-nine-card/477__primary-colors/originals/2026-11-06-final/rulebook-for-print.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 3926092,
+      "sha256": "4922fd0e44d0b88b0974181342d697868aebb936fcffe47f7a7d0c8f835949aa",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        578
+      ],
+      "transferred_at": "2026-11-06T07:51:53.410536+00:00"
+    },
+    {
+      "game_title": "Primary Colors",
+      "game_id": 477,
+      "entry_id": 477,
+      "remote_resource_id": 578,
+      "resource_url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "source_url": "https://boardgamegeek.com/thread/3478441",
+      "final_url": "https://drive.usercontent.google.com/download?id=1FmHdMyM1k5lxfojNdOytTg8o71Xq_D9-&export=download",
+      "original_filename": "rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/477__primary-colors/originals/2026-11-06-final/rulebook.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2507939,
+      "sha256": "f18e2ab6566ea4e82e3ec3fda624f0222107bbef21feeaedaef73e6ec8074a39",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 8,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        578
+      ],
+      "transferred_at": "2026-11-06T07:51:55.934782+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 582,
+      "resource_url": "https://drive.google.com/file/d/1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K&export=download",
+      "original_filename": "cards.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/cards.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1915807,
+      "sha256": "f4602ebeddceacdc25754e9d9f3ffcee192722492975ef1ce80769c1cb11a423",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        581,
+        582
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:52:09.936305+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 583,
+      "resource_url": "https://drive.google.com/file/d/1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW&export=download",
+      "original_filename": "rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1224343,
+      "sha256": "6252310190936b1ff320c8ee7002eb55d476af91226ffe6b51d71b9d852c8a6a",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 12,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "source_remote_resource_ids": [
+        581,
+        583
+      ],
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "transferred_at": "2026-11-06T07:52:13.422485+00:00"
+    },
+    {
+      "game_title": "Space Traders",
+      "game_id": 479,
+      "entry_id": 479,
+      "remote_resource_id": 584,
+      "resource_url": "https://drive.google.com/file/d/1lEidsVmBDCH9imeYHZ-PJLjUulk9YYXZ/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479556",
+      "final_url": "https://drive.usercontent.google.com/download?id=1lEidsVmBDCH9imeYHZ-PJLjUulk9YYXZ&export=download",
+      "original_filename": "Space Traders Nano Components.pdf",
+      "relative_path": "bgg/2025-nine-card/479__space-traders/originals/2026-11-06-final/Space Traders Nano Components.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 7217839,
+      "sha256": "ad27621ccebdcc53073b46c94e5dafe98655721d91255b9a57da440b58f1a3f8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        584
+      ],
+      "transferred_at": "2026-11-06T07:52:17.730056+00:00"
+    },
+    {
+      "game_title": "Space Traders",
+      "game_id": 479,
+      "entry_id": 479,
+      "remote_resource_id": 585,
+      "resource_url": "https://drive.google.com/file/d/1tD6elXAEpaUYkIbQQAzu69UgrSDfn86_/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479556",
+      "final_url": "https://drive.usercontent.google.com/download?id=1tD6elXAEpaUYkIbQQAzu69UgrSDfn86_&export=download",
+      "original_filename": "Space Traders Nano - Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/479__space-traders/originals/2026-11-06-final/Space Traders Nano - Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 188709,
+      "sha256": "33f4f18df3a516f5312a96fdae8294489b354f7b45feb6f0912387b2265c27c3",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 3,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        585
+      ],
+      "transferred_at": "2026-11-06T07:52:20.282713+00:00"
+    },
+    {
+      "game_title": "SPLAT!",
+      "game_id": 480,
+      "entry_id": 480,
+      "remote_resource_id": 586,
+      "resource_url": "https://drive.google.com/file/d/1N_GuoBqwT_ybH-Erh5RXR7rtfytHMmur/view?usp=drivesdk",
+      "source_url": "https://boardgamegeek.com/thread/3479036",
+      "final_url": "https://drive.usercontent.google.com/download?id=1N_GuoBqwT_ybH-Erh5RXR7rtfytHMmur&export=download",
+      "original_filename": "SPLAT.pdf",
+      "relative_path": "bgg/2025-nine-card/480__splat/originals/2026-11-06-final/SPLAT.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 302339,
+      "sha256": "178e6c8bdc96d7dcaba3c31a45d4376bfe288182f1858b0a096eb01441a4cb8d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        586
+      ],
+      "transferred_at": "2026-11-06T07:52:22.326260+00:00"
+    },
+    {
+      "game_title": "Surround the King",
+      "game_id": 481,
+      "entry_id": 481,
+      "remote_resource_id": 588,
+      "resource_url": "https://drive.google.com/drive/folders/1sk-kq0FE29dtt0_1whbSc6X2vlXVZwtr",
+      "source_url": "https://boardgamegeek.com/thread/3458414",
+      "final_url": "https://drive.usercontent.google.com/download?id=1NSTTGXZJCA6zLQpRF2urkW3FS2c2sGVG&export=download",
+      "original_filename": "StK-CardsBack-Night.pdf",
+      "relative_path": "bgg/2025-nine-card/481__surround-the-king/originals/2026-11-06-final/StK-CardsBack-Night.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 302238,
+      "sha256": "b73d40458570551c61396e05c9451890bca3e54635bca409299c3b3a6243a41b",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        588
+      ],
+      "transferred_at": "2026-11-06T07:52:24.545996+00:00"
+    },
+    {
+      "game_title": "Surround the King",
+      "game_id": 481,
+      "entry_id": 481,
+      "remote_resource_id": 588,
+      "resource_url": "https://drive.google.com/drive/folders/1sk-kq0FE29dtt0_1whbSc6X2vlXVZwtr",
+      "source_url": "https://boardgamegeek.com/thread/3458414",
+      "final_url": "https://drive.usercontent.google.com/download?id=10RxZcko01zBhsj_MoICWJswaQE1UiCXs&export=download",
+      "original_filename": "StK-CardsFront-Day.pdf",
+      "relative_path": "bgg/2025-nine-card/481__surround-the-king/originals/2026-11-06-final/StK-CardsFront-Day.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 249850,
+      "sha256": "32129fb18347b4cdc8c1fc8fa2694e1862493efee62876920a2aba9380130854",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        588
+      ],
+      "transferred_at": "2026-11-06T07:52:26.190030+00:00"
+    },
+    {
+      "game_title": "Surround the King",
+      "game_id": 481,
+      "entry_id": 481,
+      "remote_resource_id": 588,
+      "resource_url": "https://drive.google.com/drive/folders/1sk-kq0FE29dtt0_1whbSc6X2vlXVZwtr",
+      "source_url": "https://boardgamegeek.com/thread/3458414",
+      "final_url": "https://drive.usercontent.google.com/download?id=1rMO9HXrd-RW0FGljdjTisCr0DjMv-wdN&export=download",
+      "original_filename": "StK-Rules-v1.pdf",
+      "relative_path": "bgg/2025-nine-card/481__surround-the-king/originals/2026-11-06-final/StK-Rules-v1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 80349,
+      "sha256": "0a5d5e345a154f1804a850ce9dfd2c3433300c865946a76ce50862d855247158",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        588
+      ],
+      "transferred_at": "2026-11-06T07:52:27.522328+00:00"
+    },
+    {
+      "game_title": "Weird Spells",
+      "game_id": 482,
+      "entry_id": 482,
+      "remote_resource_id": 589,
+      "resource_url": "https://drive.google.com/file/d/1d_BEfeUa1tNMdNANULLu7qX2cZDTLcvK/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479202",
+      "final_url": "https://drive.usercontent.google.com/download?id=1d_BEfeUa1tNMdNANULLu7qX2cZDTLcvK&export=download",
+      "original_filename": "Weird Spells Cards [1.0].pdf",
+      "relative_path": "bgg/2025-nine-card/482__weird-spells/originals/2026-11-06-final/Weird Spells Cards [1.0].pdf",
+      "media_type": "application/pdf",
+      "byte_size": 39477,
+      "sha256": "19f477cf2c8e91549faec11a276c4a5291c9a891f9893bc049556d13726bc26d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        589
+      ],
+      "transferred_at": "2026-11-06T07:52:30.369058+00:00"
+    },
+    {
+      "game_title": "Yattactics",
+      "game_id": 483,
+      "entry_id": 483,
+      "remote_resource_id": 590,
+      "resource_url": "https://drive.google.com/file/d/1GAMffwNu3n5IOvZ47njo2UWy6zGcNsEv/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479781",
+      "final_url": "https://drive.usercontent.google.com/download?id=1GAMffwNu3n5IOvZ47njo2UWy6zGcNsEv&export=download",
+      "original_filename": "Yattactics cards.pdf",
+      "relative_path": "bgg/2025-nine-card/483__yattactics/originals/2026-11-06-final/Yattactics cards.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 20812,
+      "sha256": "ac970c4cce1626f341ae13cb998589b44e273d9ee2d61d8effd88759bbbb96fa",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 1,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "declared_file",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        590
+      ],
+      "transferred_at": "2026-11-06T07:52:32.200663+00:00"
+    },
+    {
+      "game_title": "Puebleando",
+      "game_id": 484,
+      "entry_id": 484,
+      "remote_resource_id": 592,
+      "resource_url": "https://drive.google.com/drive/folders/1mAAP_A7l7bdkC4A0vx_5PM7pQ-3Lbcds?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477928",
+      "final_url": "https://drive.usercontent.google.com/download?id=1wjaizrmDWAxi1fZXsB65YfVis5l9s4og&export=download",
+      "original_filename": "Rules Puebleando (4).pdf",
+      "relative_path": "bgg/2025-nine-card/484__puebleando/originals/2026-11-06-final/Rules Puebleando (4).pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1755428,
+      "sha256": "0f08d4ae06a6ff5c91d72cf013a334a07fb04014b99e1efb2b7fe913dcf0061d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        592
+      ],
+      "transferred_at": "2026-11-06T07:52:36.905189+00:00"
+    },
+    {
+      "game_title": "Puebleando",
+      "game_id": 484,
+      "entry_id": 484,
+      "remote_resource_id": 592,
+      "resource_url": "https://drive.google.com/drive/folders/1mAAP_A7l7bdkC4A0vx_5PM7pQ-3Lbcds?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3477928",
+      "final_url": "https://drive.usercontent.google.com/download?id=1SxOZGegQlf9MuijcTgcAd8Ql4pR4QN56&export=download",
+      "original_filename": "V3 EN Puebleando.pdf",
+      "relative_path": "bgg/2025-nine-card/484__puebleando/originals/2026-11-06-final/V3 EN Puebleando.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 22555917,
+      "sha256": "f26a50e4ac5d2ad98a8400dfed147dffc78313b1eb944431ce0c3850bf6801f4",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        592
+      ],
+      "transferred_at": "2026-11-06T07:52:44.108761+00:00"
+    },
+    {
+      "game_title": "Submerge",
+      "game_id": 485,
+      "entry_id": 485,
+      "remote_resource_id": 593,
+      "resource_url": "https://drive.google.com/drive/folders/1vcssYzESREjeh8lwrGQPRtupVb8wjl_F?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3462494",
+      "final_url": "https://drive.usercontent.google.com/download?id=1PNfsbQfLyj8yJWelNxGDp_610xvCKMek&export=download",
+      "original_filename": "SubMerge.PnP.v0.4.pdf",
+      "relative_path": "bgg/2025-nine-card/485__submerge/originals/2026-11-06-final/SubMerge.PnP.v0.4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 141161,
+      "sha256": "30758ff05f03f91b87b72a691c6e2816f3f9c6c497818701752f3e7d862f84a8",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        593
+      ],
+      "transferred_at": "2026-11-06T07:52:46.626043+00:00"
+    },
+    {
+      "game_title": "The Corridor",
+      "game_id": 486,
+      "entry_id": 486,
+      "remote_resource_id": 594,
+      "resource_url": "https://drive.google.com/drive/folders/1m-aYRf1gQHDnXgcdA0crrcrUTugB2VyU?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440241",
+      "final_url": "https://drive.usercontent.google.com/download?id=1BN4sXc6ZRF-NeXKPmh7hEMMTKV3agb96&export=download",
+      "original_filename": "TheCorridor.PnP.v0.5.pdf",
+      "relative_path": "bgg/2025-nine-card/486__the-corridor/originals/2026-11-06-final/TheCorridor.PnP.v0.5.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 131258,
+      "sha256": "91b2dc3f54ac77e47d2e8f9affda89e1471b8bfe403f0a00ceec0895ab946d75",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "folder_member",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        594
+      ],
+      "transferred_at": "2026-11-06T07:52:48.974218+00:00"
+    },
+    {
+      "game_title": "20 Dice",
+      "game_id": 393,
+      "entry_id": 393,
+      "remote_resource_id": 387,
+      "resource_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EU3PjiuwHIJFiU1wMlX3JIoBbtMuaYZ2Jti5QpKWM-j83A?e=0zC0KM",
+      "source_url": "https://boardgamegeek.com/thread/3479228",
+      "final_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EU3PjiuwHIJFiU1wMlX3JIoBbtMuaYZ2Jti5QpKWM-j83A?e=0zC0KM",
+      "original_filename": "20 Dice v2.1.pdf",
+      "relative_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-06-final/20 Dice v2.1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 246370,
+      "sha256": "33e4dd0840bfd45e1c57d17d9f970eea6542d05055773c24c370efad825d76fa",
+      "version_raw": "v2.1",
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_word_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        387
+      ],
+      "transferred_at": "2026-11-06T09:17:26.744603+00:00",
+      "pages": 10
+    },
+    {
+      "game_title": "Yattactics",
+      "game_id": 483,
+      "entry_id": 483,
+      "remote_resource_id": 591,
+      "resource_url": "https://drive.google.com/file/d/1GolkHdqPRwGclRkFY3jbzOIDTrxtOWsi/view?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3479781",
+      "final_url": "https://drive.usercontent.google.com/download?id=1GolkHdqPRwGclRkFY3jbzOIDTrxtOWsi&export=download",
+      "original_filename": "yattactics.txt",
+      "relative_path": "bgg/2025-nine-card/483__yattactics/originals/2026-11-06-final/yattactics.txt",
+      "media_type": "text/plain",
+      "byte_size": 3111,
+      "sha256": "f88760ac7a9b4b5591c7db5f7b4c555fd67fbbf56fd36de3b34500cc06c14601",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "declared_rules_text",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        591
+      ],
+      "transferred_at": "2026-11-06T09:17:28.167460+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1gsURBXcPoeNEM20PfjTa6Ij9CJ96SW2b&export=download",
+      "original_filename": "cards.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/cards__d0e3f9cd62d2.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 319386,
+      "sha256": "d0e3f9cd62d22c626f1fe1239ba880f6346de4f55ff3d907a57671564270dd09",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 2,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:30.911347+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1nrQdOGCPU_l3jw87VNTrsdUL1oeh8PLp&export=download",
+      "original_filename": "rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook__2aa5cb2cc1f1.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2913853,
+      "sha256": "2aa5cb2cc1f1b8e9e7db14e0acdaac9958d494d257574c6c0351527a03c20abf",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 8,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:33.698274+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1sCXSPAqf1siC5uSWRjPKTkCxvLU1p3tO&export=download",
+      "original_filename": "rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook__d0b4c4993deb.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 2912221,
+      "sha256": "d0b4c4993deb3f010f7aaacad6586195673f10c360e3e77ecd019860bbaf72d0",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 8,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:36.968081+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1EO2z8mSewdRuUH-FBqTnWcNjfN8BHSSk&export=download",
+      "original_filename": "rulebook-digital.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook-digital.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 526347,
+      "sha256": "64981df1c3de74432b37bc8c1754c50dc2b325e6e2bdc7f2ab39a845294c92a4",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 7,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:43.726119+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1W_tfxh2kNgm_7DU6aIRc6qALyo6MWGIO&export=download",
+      "original_filename": "rulebook-for-print.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook-for-print.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1031733,
+      "sha256": "13cbf4f725649014dfb7aef99759030e924c0419c96c1cf5d4267ef7474d9365",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:46.500323+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MGMr9VNVzI2rpSsYBnCVfXfSKfAw8F8f&export=download",
+      "original_filename": "rulebook.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook__dd21828ffcf9.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1225231,
+      "sha256": "dd21828ffcf956d9152f8b632ac3a665facace54bfc0efda5f8af55c68ecd528",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 12,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:49.013594+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=1qCa8PydczVdA_JzKtXie-FMS1namIG67&export=download",
+      "original_filename": "rulebook-digital.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook-digital__0d120537887e.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1772694,
+      "sha256": "0d120537887ed645e84bde860030c036c3e2518850e5739df3c2d65ba2cebb79",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 7,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:52.182115+00:00"
+    },
+    {
+      "game_title": "Soda Wars",
+      "game_id": 478,
+      "entry_id": 478,
+      "remote_resource_id": 581,
+      "resource_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "source_url": "https://boardgamegeek.com/thread/3441059",
+      "final_url": "https://drive.usercontent.google.com/download?id=13QbXgWi_cYK0KHsGPaJ-GvbhYIF7Tt4g&export=download",
+      "original_filename": "rulebook-for-print.pdf",
+      "relative_path": "bgg/2025-nine-card/478__soda-wars/originals/2026-11-06-final/rulebook-for-print__9490302ff674.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1036539,
+      "sha256": "9490302ff6747e015f02c9e070d532ea684556acc87fb274b63d858fac4f0f9d",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "offered_previous_version",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        581
+      ],
+      "transferred_at": "2026-11-06T09:17:55.088289+00:00"
+    },
+    {
+      "game_title": "Submerge",
+      "game_id": 485,
+      "entry_id": 485,
+      "remote_resource_id": 593,
+      "resource_url": "https://drive.google.com/drive/folders/1vcssYzESREjeh8lwrGQPRtupVb8wjl_F?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3462494",
+      "final_url": "https://doc-0g-34-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/hlpien6990ion7i53u6u6p1ppo/1793956815000/104312942791582244140/*/1sNgYtTZzYT6XLFCssPYF3_-nkOmAe1rp9gKgFjCAAZU?format=pdf",
+      "original_filename": "SubMerge.Rules.v0.4.pdf",
+      "relative_path": "bgg/2025-nine-card/485__submerge/originals/2026-11-06-final/SubMerge.Rules.v0.4.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 589944,
+      "sha256": "109a1bd6ad604410022a0a418f880e2de06438825142467a66b694d1c440c716",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 4,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        593
+      ],
+      "transferred_at": "2026-11-06T09:20:22.403212+00:00"
+    },
+    {
+      "game_title": "The Corridor",
+      "game_id": 486,
+      "entry_id": 486,
+      "remote_resource_id": 594,
+      "resource_url": "https://drive.google.com/drive/folders/1m-aYRf1gQHDnXgcdA0crrcrUTugB2VyU?usp=sharing",
+      "source_url": "https://boardgamegeek.com/thread/3440241",
+      "final_url": "https://doc-04-34-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/rfkh1bggrbdr1v3daetm86bsek/1793956820000/104312942791582244140/*/1Vbres6sUcQ4PA8vZsIDh0lMTH_FKfHqtqdS-qwZJuqk?format=pdf",
+      "original_filename": "TheCorridor.Rules.v0.6.pdf",
+      "relative_path": "bgg/2025-nine-card/486__the-corridor/originals/2026-11-06-final/TheCorridor.Rules.v0.6.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 1680304,
+      "sha256": "d8134d74338ff0d2700fec98c79ed9f3737436071cbd47b57463012cb383f594",
+      "version_raw": null,
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "pages": 6,
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Offerta pubblica tramite destinazione dichiarata nel WIP autore; download pubblico verificato. Copia personale; nessuna licenza aperta o redistribuzione attestata.",
+      "scope": "host_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        594
+      ],
+      "transferred_at": "2026-11-06T09:20:25.208491+00:00"
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 439,
+      "resource_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EQin9nGlJGpFgRRPqehrBu4BxtcEX3P2aC43ERH3VzvfOQ?e=mvDr9f",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EQin9nGlJGpFgRRPqehrBu4BxtcEX3P2aC43ERH3VzvfOQ?e=mvDr9f",
+      "original_filename": "v2.4 Fruit Sort Company Gamejam Rules (1).pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-06-final/v2.4 Fruit Sort Company Gamejam Rules (1).pdf",
+      "media_type": "application/pdf",
+      "byte_size": 825441,
+      "sha256": "bc2367b386216ac7fdb93fdddf885a3419b7859ec92c3aae307cefb7e9369098",
+      "version_raw": "v2.4",
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_word_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        439
+      ],
+      "transferred_at": "2026-11-06T09:22:28.888911+00:00",
+      "pages": 12
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 440,
+      "resource_url": "https://1drv.ms/w/c/4e3a50fc4a975050/Ec8VgIOXPBFLuWvGHnTICbIBLK6KuvBUtiETW7No_Z3AfQ?e=uahZfG",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://1drv.ms/w/c/4e3a50fc4a975050/Ec8VgIOXPBFLuWvGHnTICbIBLK6KuvBUtiETW7No_Z3AfQ?e=uahZfG",
+      "original_filename": "v2.3 Fruit Sort Company Gamejam Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-06-final/v2.3 Fruit Sort Company Gamejam Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 761756,
+      "sha256": "f41ce198c41cbe75c71519285e98789f523b32c3dd82e7bd06fa63f7c5b75bf8",
+      "version_raw": "v2.2",
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_word_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        440
+      ],
+      "transferred_at": "2026-11-06T09:22:28.894928+00:00",
+      "pages": 12
+    },
+    {
+      "game_title": "Fruit Sort Company",
+      "game_id": 410,
+      "entry_id": 410,
+      "remote_resource_id": 441,
+      "resource_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EcoopZZk8XxOgnGCYf-_J3MB6X8cF0BltChCni7xe5vmnA?e=s6lENQ",
+      "source_url": "https://boardgamegeek.com/thread/3479222",
+      "final_url": "https://1drv.ms/w/c/4e3a50fc4a975050/EcoopZZk8XxOgnGCYf-_J3MB6X8cF0BltChCni7xe5vmnA?e=s6lENQ",
+      "original_filename": "v2.3 SAVED Fruit Sort Company Gamejam Rules.pdf",
+      "relative_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-06-final/v2.3 SAVED Fruit Sort Company Gamejam Rules.pdf",
+      "media_type": "application/pdf",
+      "byte_size": 764444,
+      "sha256": "b794e89530051c4ccbff899cc4a1f3cbe1f408cf1da4600408634ed22e307fc7",
+      "version_raw": "v2.3",
+      "language_code": "en",
+      "language_status": "English rules/text or compatible language-independent components; rendered first page reviewed",
+      "status": "acquired",
+      "acquired_at": "2026-11-06",
+      "usage_conditions": "Originale offerto pubblicamente dall’autore tramite host dichiarato nel WIP; copia personale, nessuna redistribuzione attestata.",
+      "scope": "official_word_pdf_export",
+      "selection_reason": "Completamento di tutti i residui autorizzato il 2026-11-06",
+      "source_remote_resource_ids": [
+        441
+      ],
+      "transferred_at": "2026-11-06T09:22:28.904517+00:00",
+      "pages": 12
+    }
+  ],
+  "resource_observations": [
+    {
+      "remote_resource_id": 387,
+      "entry_id": 393,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EU3PjiuwHIJFiU1wMlX3JIoBbtMuaYZ2Jti5QpKWM-j83A?e=0zC0KM",
+      "status": "available",
+      "files": [
+        {
+          "name": "20 Dice v2.1.pdf",
+          "sha256": "33e4dd0840bfd45e1c57d17d9f970eea6542d05055773c24c370efad825d76fa"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "reason": "403 del canale HTTP diretto risolto tramite File/Esporta/Scarica PDF ufficiale Word, file presente e verificato; nessun aggiramento."
+    },
+    {
+      "remote_resource_id": 388,
+      "entry_id": 393,
+      "url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/edit",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "20 Dice v2.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "02e7a76eb13d830514cfb9ea4129ca93db547553013469be940f6a0e8137a23a"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "20 Dice v2.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/11PiUnm4Ik1XOOgdN0HxVuq2U2R3ysPcj/edit"
+    },
+    {
+      "remote_resource_id": 389,
+      "entry_id": 393,
+      "url": "https://drive.google.com/file/d/1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "v1.1 20 Dice Gamejam Cards PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "85ff166acb8e32232d32ec5ef872098bfc1e7d113785f7715e00043c94a9917f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v1.1 20 Dice Gamejam Cards PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/1BoPScv1PC8p-EWMw7YEj7qn3F5gxguYb/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 390,
+      "entry_id": 393,
+      "url": "https://drive.google.com/file/d/1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "v1.3 20 Dice Gamejam Cards PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "e468a54a24891473fef69b8384f585cdc4a1e9f091b9f329fa94ebf7b44034a3"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v1.3 20 Dice Gamejam Cards PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/1IJyfr0KnA_bUTxrPVWTGxJsyssj5qHsJ/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 406,
+      "entry_id": 397,
+      "url": "https://drive.proton.me/urls/KV13MGKK0G#ZYoOvKPHSGes",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "complete_browser_root_and_archive",
+      "page_title": "Proton Drive",
+      "final_url": "https://drive.proton.me/urls/KV13MGKK0G#ZYoOvKPHSGes",
+      "reason": "Proton: inventari radice/Archive osservati, download UI segnala completamento ma nessun file presente localmente. Nessuna acquisizione attestata; RulesDraft senza comando download.",
+      "local_files": 0
+    },
+    {
+      "remote_resource_id": 407,
+      "entry_id": 397,
+      "url": "https://screentop.gg/@kaqukal/9thMaze",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 427,
+      "entry_id": 403,
+      "url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Dragon's_Horde_Rulebook_Demo.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MIZReb-gaCP1s2QdFJcI2YRqa7EJ99kh&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "36e19bf11e6c96ed22997b0f91549711f9719b722d8c3d8f6634119b17daea29"
+        },
+        {
+          "name": "Pnp_Demo.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ww9v0LF-O0nqvBkpPz5lx204aXrWa_mk&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "25279db0a7c2194c378eb53be1a3cbc2632195d6a55c3e7e805595193f4ae848"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Dragon's Hoard Demo",
+      "final_url": "https://drive.google.com/drive/folders/1TB6idujyUqp32GEFPu_MeEawCyaM0k0Y?usp=sharing",
+      "folder_files": {
+        "1MIZReb-gaCP1s2QdFJcI2YRqa7EJ99kh": "Dragon's_Horde_Rulebook_Demo.pdf",
+        "1ww9v0LF-O0nqvBkpPz5lx204aXrWa_mk": "Pnp_Demo.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 434,
+      "entry_id": 407,
+      "url": "https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp=sharing",
+      "status": "restricted",
+      "files": [],
+      "enumeration": "not_applicable",
+      "page_title": "Google Drive: Sign-in",
+      "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp%3Dsharing&followup=https://drive.google.com/drive/folders/18WJbo0tSqi05bKvX6MnQhpjZ7fF5CDVo?usp%3Dsharing&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1695154354:1793951450250583"
+    },
+    {
+      "remote_resource_id": 438,
+      "entry_id": 409,
+      "url": "https://drive.google.com/drive/folders/12cmd_FFwIoY5vx26ntuOOZwMyUvtcEaQ?usp=drive_link",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 439,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EQin9nGlJGpFgRRPqehrBu4BxtcEX3P2aC43ERH3VzvfOQ?e=mvDr9f",
+      "status": "available",
+      "files": [
+        {
+          "name": "v2.4 Fruit Sort Company Gamejam Rules (1).pdf",
+          "sha256": "bc2367b386216ac7fdb93fdddf885a3419b7859ec92c3aae307cefb7e9369098"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "reason": "403 del canale HTTP diretto risolto tramite File/Esporta/Scarica PDF ufficiale Word, file presente e verificato; nessun aggiramento."
+    },
+    {
+      "remote_resource_id": 440,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/Ec8VgIOXPBFLuWvGHnTICbIBLK6KuvBUtiETW7No_Z3AfQ?e=uahZfG",
+      "status": "available",
+      "files": [
+        {
+          "name": "v2.3 Fruit Sort Company Gamejam Rules.pdf",
+          "sha256": "f41ce198c41cbe75c71519285e98789f523b32c3dd82e7bd06fa63f7c5b75bf8"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "reason": "403 del canale HTTP diretto risolto tramite File/Esporta/Scarica PDF ufficiale Word, file presente e verificato; nessun aggiramento."
+    },
+    {
+      "remote_resource_id": 441,
+      "entry_id": 410,
+      "url": "https://1drv.ms/w/c/4e3a50fc4a975050/EcoopZZk8XxOgnGCYf-_J3MB6X8cF0BltChCni7xe5vmnA?e=s6lENQ",
+      "status": "available",
+      "files": [
+        {
+          "name": "v2.3 SAVED Fruit Sort Company Gamejam Rules.pdf",
+          "sha256": "b794e89530051c4ccbff899cc4a1f3cbe1f408cf1da4600408634ed22e307fc7"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "reason": "403 del canale HTTP diretto risolto tramite File/Esporta/Scarica PDF ufficiale Word, file presente e verificato; nessun aggiramento."
+    },
+    {
+      "remote_resource_id": 442,
+      "entry_id": 410,
+      "url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/edit",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Gamejam Rules Fruit Sort Company.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "64adc236ca2ac30edcf1ecc98820cfac94d7536330f6fac0427a54942b94694d"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Gamejam Rules Fruit Sort Company.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/16l9Pq3GJ7x8UERWleNO0eNuj_LTkIrjc/edit"
+    },
+    {
+      "remote_resource_id": 443,
+      "entry_id": 410,
+      "url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/edit?usp=sharing&ouid=109837450797380285615&rtpof=true&sd=true",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google.pdf",
+          "url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/export?format=pdf",
+          "status": "acquired_pending_language_review",
+          "sha256": "6958405a52abfefff7fa6334a1bd4843eac2934fea8ab4453662d0ea08c2ffdd"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google",
+      "final_url": "https://docs.google.com/document/d/17tMBl0vDEA3h_pT8zqWKUSqYKbDI3j_f/edit?usp=sharing&ouid=109837450797380285615&rtpof=true&sd=true"
+    },
+    {
+      "remote_resource_id": 444,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "9 Cards Fruit Sort Company.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "5fd2e66cf2afcde40db7210a5dfddd481f273fa5e5a560185f9c4f9e8db2e507"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "9 Cards Fruit Sort Company.pdf",
+      "final_url": "https://drive.google.com/file/d/16x5osNY7e3RSoYvCUslI0iqjZgJ4sQvU/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 445,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/18LipPlWmVTpVud2-L0z0n9guBlsUoOIf/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=18LipPlWmVTpVud2-L0z0n9guBlsUoOIf&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "015d3657c5cd2768c94d744487013e1b09ff051ab9ec835f1a4e239e3a79e949"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+      "final_url": "https://drive.google.com/file/d/18LipPlWmVTpVud2-L0z0n9guBlsUoOIf/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 446,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "04372667386842d3ef0f9e35d8ad8349d19e7e7a4e887206ce4ccb58cc665d37"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+      "final_url": "https://drive.google.com/file/d/18RV_uL5LNPiEH0QQj_SHez3NQmU7PWir/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 447,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "5c5906fd3418c03df2fb9f0ae59c946f23b73c301fd1978e413f482d92b23931"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+      "final_url": "https://drive.google.com/file/d/1BDoG2mo93v6gnwmG6mKKf3CcOrHzg58G/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 448,
+      "entry_id": 410,
+      "url": "https://drive.google.com/file/d/1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0e07dae01219b5fd22c54ff22f82915100a4acae00d65492fbd6b759df7c5210"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+      "final_url": "https://drive.google.com/file/d/1BJvGZWRgAcMQsen0OYQpzJfEwFaCVWcX/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 449,
+      "entry_id": 410,
+      "url": "https://playingcards.io/4nb538",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 450,
+      "entry_id": 410,
+      "url": "https://playingcards.io/7t4n4c",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 469,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/16V9tFMWo-3Yovi_R26PSt0KBZxFB0aJI/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "remote_resource_id": 470,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/1IjthopDA8iVJ6EH5osxbxGhfS_vkGtkT/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "remote_resource_id": 471,
+      "entry_id": 418,
+      "url": "https://drive.google.com/file/d/1auO5wIxH5NYcf9K80T7RYGqNHSHlrp__/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "remote_resource_id": 483,
+      "entry_id": 423,
+      "url": "https://drive.google.com/drive/folders/1MYZowfUKAP3Org3Wjrzg9hJygqHfk6qE?usp=sharing",
+      "status": "restricted",
+      "files": [],
+      "enumeration": "not_applicable",
+      "page_title": "Google Drive: Sign-in",
+      "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.google.com/drive/folders/1MYZowfUKAP3Org3Wjrzg9hJygqHfk6qE?usp%3Dsharing&followup=https://drive.google.com/drive/folders/1MYZowfUKAP3Org3Wjrzg9hJygqHfk6qE?usp%3Dsharing&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1512835542:1793951469693321"
+    },
+    {
+      "remote_resource_id": 484,
+      "entry_id": 423,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3407128788",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 485,
+      "entry_id": 424,
+      "url": "https://drive.google.com/file/d/1DFdVa9BQfenjFYBiAetLX_Huf8KzeTJg/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "remote_resource_id": 486,
+      "entry_id": 424,
+      "url": "https://drive.google.com/file/d/1JZXLkDlTpLSK1fZdN4udrdx89balSKj_/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "remote_resource_id": 489,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/14x-GZ_uJ-Z7N8XVfP0OmRXElKON9QlMf/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 490,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1O-XR2p6HvGvPcgxCObcRpBhY96z-fmfT/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 491,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1RWUmYkpUsUh0wEFV5h__iepx7qlc-hnq/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 492,
+      "entry_id": 426,
+      "url": "https://drive.google.com/file/d/1lMcYsRvWkE4cW4xQrKTFnJpRkZqrPQlz/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 512,
+      "entry_id": 438,
+      "url": "https://drive.google.com/drive/folders/1oLIMmXE0YW79dmZgSeMVxsc6v9szljKc?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 513,
+      "entry_id": 438,
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3439696608",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 514,
+      "entry_id": 438,
+      "url": "https://youtube.com/watch?v=7UWtkwXvl1Q",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 515,
+      "entry_id": 438,
+      "url": "https://youtube.com/watch?v=Q_ZfxD4TYkU",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 519,
+      "entry_id": 442,
+      "url": "https://drive.google.com/file/d/1AL7GjRQn2YXBnY0rUg-5viOi94wFLycx/view?usp=drive_link",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 520,
+      "entry_id": 442,
+      "url": "https://drive.google.com/file/d/1gu2z3vWK9v_PZQlKPK2DgHMigtWxHk3v/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 521,
+      "entry_id": 442,
+      "url": "https://drive.google.com/file/d/1xHAhuWa1HC3uiIFTohHRc5XduimzqZUs/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 537,
+      "entry_id": 450,
+      "url": "https://drive.google.com/file/d/11IT3Le61KPnrNi11sDpodeOep75E6n-A/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 538,
+      "entry_id": 450,
+      "url": "https://drive.google.com/file/d/152IME5wkcY6o73kST5FT9Fw4j3iH_JO7/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Tralim Cards v4.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=152IME5wkcY6o73kST5FT9Fw4j3iH_JO7&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "752f10ff4581912b1fc82e7a175dfc68524ca7d80fcde86d49d91e68872237fa"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Tralim Cards v4.0.pdf",
+      "final_url": "https://drive.google.com/file/d/152IME5wkcY6o73kST5FT9Fw4j3iH_JO7/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 539,
+      "entry_id": 450,
+      "url": "https://drive.google.com/file/d/1580-6ce6R4fO-dLb6xoSGz3hxNgGS20w/view?usp=sharing",
+      "status": "blocked",
+      "files": [],
+      "enumeration": "not_applicable",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "remote_resource_id": 540,
+      "entry_id": 450,
+      "url": "https://youtube.com/watch?v=I8L5UlWibZU",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 558,
+      "entry_id": 464,
+      "url": "https://drive.google.com/drive/folders/1uAg_ayT0o78BeEEhDnHpJ1L1kV3RGGWb?usp=drive_link",
+      "status": "partial",
+      "files": [],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Red is hungry - pcio",
+      "final_url": "https://drive.google.com/drive/folders/1uAg_ayT0o78BeEEhDnHpJ1L1kV3RGGWb?usp=drive_link",
+      "folder_files": {},
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 559,
+      "entry_id": 464,
+      "url": "https://playingcards.io/sgqurf",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 571,
+      "entry_id": 473,
+      "url": "https://drive.google.com/drive/folders/1DP3vyWz7UI1_zjS77_88kZUJxpyOgXXC?usp=drive_link",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "ElementaBrawl Rulebook v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "bbb3fc9e7359c07efef1443987854ae60ec4a1edd592b43536bba28a9fd60766"
+        },
+        {
+          "name": "ElementaBrawl_FullColor_v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "e87699ca189c94e97622658a5ed96aaffd2991f2b0fc04448a5126bfbe190714"
+        },
+        {
+          "name": "ElementaBrawl_LowInk_v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0ee6eca3796a2179459bd056778f559b5e7177f8fc46ee30747407ff4998a69b"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "ElementaBrawl",
+      "final_url": "https://drive.google.com/drive/folders/1DP3vyWz7UI1_zjS77_88kZUJxpyOgXXC?usp=drive_link",
+      "folder_files": {
+        "1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ": "ElementaBrawl Rulebook v1.0.pdf",
+        "1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB": "ElementaBrawl_FullColor_v1.0.pdf",
+        "1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs": "ElementaBrawl_LowInk_v1.0.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 572,
+      "entry_id": 473,
+      "url": "https://drive.google.com/file/d/1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ/view?usp=drive_link",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "ElementaBrawl Rulebook v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "bbb3fc9e7359c07efef1443987854ae60ec4a1edd592b43536bba28a9fd60766"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "ElementaBrawl Rulebook v1.0.pdf",
+      "final_url": "https://drive.google.com/file/d/1KKgEqY70xHaaFVe0-yqG0ErqawMyxcGJ/view?usp=drive_link"
+    },
+    {
+      "remote_resource_id": 573,
+      "entry_id": 473,
+      "url": "https://drive.google.com/file/d/1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB/view?usp=drive_link",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "ElementaBrawl_FullColor_v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "e87699ca189c94e97622658a5ed96aaffd2991f2b0fc04448a5126bfbe190714"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "ElementaBrawl_FullColor_v1.0.pdf",
+      "final_url": "https://drive.google.com/file/d/1PBCDy5CCG-aiqcfCPY8thJy9zhcI_nVB/view?usp=drive_link"
+    },
+    {
+      "remote_resource_id": 574,
+      "entry_id": 473,
+      "url": "https://drive.google.com/file/d/1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs/view?usp=drive_link",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "ElementaBrawl_LowInk_v1.0.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0ee6eca3796a2179459bd056778f559b5e7177f8fc46ee30747407ff4998a69b"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "ElementaBrawl_LowInk_v1.0.pdf",
+      "final_url": "https://drive.google.com/file/d/1tNWbs4wHvUJlQp5L1x_gWLVbkEGe7uDs/view?usp=drive_link"
+    },
+    {
+      "remote_resource_id": 576,
+      "entry_id": 476,
+      "url": "https://drive.google.com/drive/folders/1zMVmyC8WCc6brplrmRYFtPAZrFnfCOO7?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "CARDS - Monster Restaurant.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MuePNLLO2seYSgbwf29Jeqjb_7nkSYvh&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "98ebb198997370f4e3e67fecee6c9009ad6702924857c1f2ba97995b2192befc"
+        },
+        {
+          "name": "RULES - Monster Restaurant.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1XZRDzgngh84xJ1JZfMhehm0BPubk-OHH&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "4707d15e5a45b75ac28660bd7ab5d2601afaa9816c0d58c119196798f427205c"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Monster Restaurant Entry",
+      "final_url": "https://drive.google.com/drive/folders/1zMVmyC8WCc6brplrmRYFtPAZrFnfCOO7?usp=sharing",
+      "folder_files": {
+        "1MuePNLLO2seYSgbwf29Jeqjb_7nkSYvh": "CARDS - Monster Restaurant.pdf",
+        "1XZRDzgngh84xJ1JZfMhehm0BPubk-OHH": "RULES - Monster Restaurant.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 577,
+      "entry_id": 476,
+      "url": "https://youtu.be/t8C-cuhLsaw",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 578,
+      "entry_id": 477,
+      "url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "1488f2fa1b707be86e0a8ffb7b2f634c4c943c931a4fe4f6f5209f8b272e3d75"
+        },
+        {
+          "name": "rulebook-digital.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0b19a24487b004487e2c7d4a938e3c6bb85c6e2f0290a94b89ce09fffcf6221f"
+        },
+        {
+          "name": "rulebook-for-print.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Wc5lvdf3YxUJilbK7vBMOu5JF02l1yaq&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "4922fd0e44d0b88b0974181342d697868aebb936fcffe47f7a7d0c8f835949aa"
+        },
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1FmHdMyM1k5lxfojNdOytTg8o71Xq_D9-&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "f18e2ab6566ea4e82e3ec3fda624f0222107bbef21feeaedaef73e6ec8074a39"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Primary Colors - 2025 9 card pnp contest",
+      "final_url": "https://drive.google.com/drive/folders/1XLtEA8vhPw_x-9if_zMtZbvunoni1ViD",
+      "folder_files": {
+        "1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ": "cards.pdf",
+        "1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97": "rulebook-digital.pdf",
+        "1Wc5lvdf3YxUJilbK7vBMOu5JF02l1yaq": "rulebook-for-print.pdf",
+        "1FmHdMyM1k5lxfojNdOytTg8o71Xq_D9-": "rulebook.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 579,
+      "entry_id": 477,
+      "url": "https://drive.google.com/file/d/1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "rulebook-digital.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0b19a24487b004487e2c7d4a938e3c6bb85c6e2f0290a94b89ce09fffcf6221f"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "rulebook-digital.pdf",
+      "final_url": "https://drive.google.com/file/d/1ikfS6yygYluX7PnIe4lQDfTfw_nh2g97/edit"
+    },
+    {
+      "remote_resource_id": 580,
+      "entry_id": 477,
+      "url": "https://drive.google.com/file/d/1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "1488f2fa1b707be86e0a8ffb7b2f634c4c943c931a4fe4f6f5209f8b272e3d75"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "cards.pdf",
+      "final_url": "https://drive.google.com/file/d/1oGgyI34j7Sry-D7Ow3-6fYk4l25KsyqJ/edit"
+    },
+    {
+      "remote_resource_id": 581,
+      "entry_id": 478,
+      "url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "status": "partial",
+      "files": [],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Soda Wars - 2025 9 card pnp contest",
+      "final_url": "https://drive.google.com/drive/folders/1J28pVDToIVKSx5PQRUHbYqwWE4wx3TwH",
+      "folder_files": {},
+      "subfolders": {
+        "1k3M2_caM9yQ6HzbATp-qoG5b0t-hn8d6": "v2025-01-14",
+        "1B-EhcTSt8OLz0c5HVy_P-8Sd6kEB_Dx-": "v2025-01-17",
+        "1psbKl8QTHS4-Ec7YedcMd5eOTvnb_qDF": "v2025-02-05",
+        "1yUcqSCJzLGd7vPOmqsV-u65gZkpZw1kN": "v2025-02-26"
+      },
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 582,
+      "entry_id": 478,
+      "url": "https://drive.google.com/file/d/1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "f4602ebeddceacdc25754e9d9f3ffcee192722492975ef1ce80769c1cb11a423"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "cards.pdf",
+      "final_url": "https://drive.google.com/file/d/1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K/edit"
+    },
+    {
+      "remote_resource_id": 583,
+      "entry_id": 478,
+      "url": "https://drive.google.com/file/d/1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "6252310190936b1ff320c8ee7002eb55d476af91226ffe6b51d71b9d852c8a6a"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "rulebook.pdf",
+      "final_url": "https://drive.google.com/file/d/1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW/edit"
+    },
+    {
+      "remote_resource_id": 584,
+      "entry_id": 479,
+      "url": "https://drive.google.com/file/d/1lEidsVmBDCH9imeYHZ-PJLjUulk9YYXZ/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Space Traders Nano Components.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1lEidsVmBDCH9imeYHZ-PJLjUulk9YYXZ&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "ad27621ccebdcc53073b46c94e5dafe98655721d91255b9a57da440b58f1a3f8"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Space Traders Nano Components.pdf",
+      "final_url": "https://drive.google.com/file/d/1lEidsVmBDCH9imeYHZ-PJLjUulk9YYXZ/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 585,
+      "entry_id": 479,
+      "url": "https://drive.google.com/file/d/1tD6elXAEpaUYkIbQQAzu69UgrSDfn86_/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Space Traders Nano - Rules.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1tD6elXAEpaUYkIbQQAzu69UgrSDfn86_&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "33f4f18df3a516f5312a96fdae8294489b354f7b45feb6f0912387b2265c27c3"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Space Traders Nano - Rules.pdf",
+      "final_url": "https://drive.google.com/file/d/1tD6elXAEpaUYkIbQQAzu69UgrSDfn86_/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 586,
+      "entry_id": 480,
+      "url": "https://drive.google.com/file/d/1N_GuoBqwT_ybH-Erh5RXR7rtfytHMmur/view?usp=drivesdk",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "SPLAT.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1N_GuoBqwT_ybH-Erh5RXR7rtfytHMmur&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "178e6c8bdc96d7dcaba3c31a45d4376bfe288182f1858b0a096eb01441a4cb8d"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "SPLAT.pdf",
+      "final_url": "https://drive.google.com/file/d/1N_GuoBqwT_ybH-Erh5RXR7rtfytHMmur/view?usp=drivesdk"
+    },
+    {
+      "remote_resource_id": 587,
+      "entry_id": 480,
+      "url": "https://youtube.com/watch?v=JwCFa7n06QM",
+      "status": "excluded",
+      "reason": "Video o implementazione online fuori perimetro"
+    },
+    {
+      "remote_resource_id": 588,
+      "entry_id": 481,
+      "url": "https://drive.google.com/drive/folders/1sk-kq0FE29dtt0_1whbSc6X2vlXVZwtr",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "StK-CardsBack-Night.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1NSTTGXZJCA6zLQpRF2urkW3FS2c2sGVG&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "b73d40458570551c61396e05c9451890bca3e54635bca409299c3b3a6243a41b"
+        },
+        {
+          "name": "StK-CardsFront-Day.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=10RxZcko01zBhsj_MoICWJswaQE1UiCXs&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "32129fb18347b4cdc8c1fc8fa2694e1862493efee62876920a2aba9380130854"
+        },
+        {
+          "name": "StK-Rules-v1.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1rMO9HXrd-RW0FGljdjTisCr0DjMv-wdN&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0a5d5e345a154f1804a850ce9dfd2c3433300c865946a76ce50862d855247158"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "SurroundTheKing",
+      "final_url": "https://drive.google.com/drive/folders/1sk-kq0FE29dtt0_1whbSc6X2vlXVZwtr",
+      "folder_files": {
+        "1NSTTGXZJCA6zLQpRF2urkW3FS2c2sGVG": "StK-CardsBack-Night.pdf",
+        "10RxZcko01zBhsj_MoICWJswaQE1UiCXs": "StK-CardsFront-Day.pdf",
+        "1rMO9HXrd-RW0FGljdjTisCr0DjMv-wdN": "StK-Rules-v1.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 589,
+      "entry_id": 482,
+      "url": "https://drive.google.com/file/d/1d_BEfeUa1tNMdNANULLu7qX2cZDTLcvK/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Weird Spells Cards [1.0].pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1d_BEfeUa1tNMdNANULLu7qX2cZDTLcvK&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "19f477cf2c8e91549faec11a276c4a5291c9a891f9893bc049556d13726bc26d"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Weird Spells Cards [1.0].pdf",
+      "final_url": "https://drive.google.com/file/d/1d_BEfeUa1tNMdNANULLu7qX2cZDTLcvK/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 590,
+      "entry_id": 483,
+      "url": "https://drive.google.com/file/d/1GAMffwNu3n5IOvZ47njo2UWy6zGcNsEv/view?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Yattactics cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1GAMffwNu3n5IOvZ47njo2UWy6zGcNsEv&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "ac970c4cce1626f341ae13cb998589b44e273d9ee2d61d8effd88759bbbb96fa"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "Yattactics cards.pdf",
+      "final_url": "https://drive.google.com/file/d/1GAMffwNu3n5IOvZ47njo2UWy6zGcNsEv/view?usp=sharing"
+    },
+    {
+      "remote_resource_id": 591,
+      "entry_id": 483,
+      "url": "https://drive.google.com/file/d/1GolkHdqPRwGclRkFY3jbzOIDTrxtOWsi/view?usp=sharing",
+      "status": "available",
+      "files": [
+        {
+          "name": "yattactics.txt",
+          "url": "https://drive.usercontent.google.com/download?id=1GolkHdqPRwGclRkFY3jbzOIDTrxtOWsi&export=download",
+          "status": "not_acquired",
+          "reason": "Risposta non PDF; nessuna conversione o salvataggio implicito"
+        }
+      ],
+      "enumeration": "not_applicable",
+      "page_title": "yattactics.txt",
+      "final_url": "https://drive.google.com/file/d/1GolkHdqPRwGclRkFY3jbzOIDTrxtOWsi/view?usp=sharing",
+      "reason": "Originale TXT acquisito e letto in inglese"
+    },
+    {
+      "remote_resource_id": 592,
+      "entry_id": 484,
+      "url": "https://drive.google.com/drive/folders/1mAAP_A7l7bdkC4A0vx_5PM7pQ-3Lbcds?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "Rules Puebleando (4).pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1wjaizrmDWAxi1fZXsB65YfVis5l9s4og&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0f08d4ae06a6ff5c91d72cf013a334a07fb04014b99e1efb2b7fe913dcf0061d"
+        },
+        {
+          "name": "V3 EN Puebleando.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1SxOZGegQlf9MuijcTgcAd8Ql4pR4QN56&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "f26a50e4ac5d2ad98a8400dfed147dffc78313b1eb944431ce0c3850bf6801f4"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "Puebleando PnP game",
+      "final_url": "https://drive.google.com/drive/folders/1mAAP_A7l7bdkC4A0vx_5PM7pQ-3Lbcds?usp=sharing",
+      "folder_files": {
+        "1wjaizrmDWAxi1fZXsB65YfVis5l9s4og": "Rules Puebleando (4).pdf",
+        "1SxOZGegQlf9MuijcTgcAd8Ql4pR4QN56": "V3 EN Puebleando.pdf"
+      },
+      "subfolders": {},
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 593,
+      "entry_id": 485,
+      "url": "https://drive.google.com/drive/folders/1vcssYzESREjeh8lwrGQPRtupVb8wjl_F?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "SubMerge.PnP.v0.4.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1PNfsbQfLyj8yJWelNxGDp_610xvCKMek&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "30758ff05f03f91b87b72a691c6e2816f3f9c6c497818701752f3e7d862f84a8"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "SubMerge",
+      "final_url": "https://drive.google.com/drive/folders/1vcssYzESREjeh8lwrGQPRtupVb8wjl_F?usp=sharing",
+      "folder_files": {
+        "1PNfsbQfLyj8yJWelNxGDp_610xvCKMek": "SubMerge.PnP.v0.4.pdf"
+      },
+      "subfolders": {},
+      "reason": "PDF PnP e regolamento Google Docs senza estensione osservati; esportazione PDF ufficiale acquisita.",
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    },
+    {
+      "remote_resource_id": 594,
+      "entry_id": 486,
+      "url": "https://drive.google.com/drive/folders/1m-aYRf1gQHDnXgcdA0crrcrUTugB2VyU?usp=sharing",
+      "status": "downloaded_pending_review",
+      "files": [
+        {
+          "name": "TheCorridor.PnP.v0.5.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1BN4sXc6ZRF-NeXKPmh7hEMMTKV3agb96&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "91b2dc3f54ac77e47d2e8f9affda89e1471b8bfe403f0a00ceec0895ab946d75"
+        }
+      ],
+      "enumeration": "complete_browser_comparison",
+      "page_title": "The Corridor",
+      "final_url": "https://drive.google.com/drive/folders/1m-aYRf1gQHDnXgcdA0crrcrUTugB2VyU?usp=sharing",
+      "folder_files": {
+        "1BN4sXc6ZRF-NeXKPmh7hEMMTKV3agb96": "TheCorridor.PnP.v0.5.pdf"
+      },
+      "subfolders": {},
+      "reason": "PDF PnP e regolamento Google Docs senza estensione osservati; esportazione PDF ufficiale acquisita.",
+      "enumeration_evidence": "tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json"
+    }
+  ],
+  "page_audits": [
+    {
+      "remote_resource_id": 581,
+      "url": "https://drive.google.com/drive/folders/1k3M2_caM9yQ6HzbATp-qoG5b0t-hn8d6",
+      "folder_files": {
+        "1gsURBXcPoeNEM20PfjTa6Ij9CJ96SW2b": "cards.pdf",
+        "1nrQdOGCPU_l3jw87VNTrsdUL1oeh8PLp": "rulebook.pdf"
+      },
+      "subfolders": {},
+      "files": [
+        {
+          "name": "cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1gsURBXcPoeNEM20PfjTa6Ij9CJ96SW2b&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "d0e3f9cd62d22c626f1fe1239ba880f6346de4f55ff3d907a57671564270dd09"
+        },
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1nrQdOGCPU_l3jw87VNTrsdUL1oeh8PLp&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "2aa5cb2cc1f1b8e9e7db14e0acdaac9958d494d257574c6c0351527a03c20abf"
+        }
+      ]
+    },
+    {
+      "remote_resource_id": 581,
+      "url": "https://drive.google.com/drive/folders/1B-EhcTSt8OLz0c5HVy_P-8Sd6kEB_Dx-",
+      "folder_files": {
+        "1sCXSPAqf1siC5uSWRjPKTkCxvLU1p3tO": "rulebook.pdf"
+      },
+      "subfolders": {},
+      "files": [
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1sCXSPAqf1siC5uSWRjPKTkCxvLU1p3tO&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "d0b4c4993deb3f010f7aaacad6586195673f10c360e3e77ecd019860bbaf72d0"
+        }
+      ]
+    },
+    {
+      "remote_resource_id": 581,
+      "url": "https://drive.google.com/drive/folders/1psbKl8QTHS4-Ec7YedcMd5eOTvnb_qDF",
+      "folder_files": {
+        "1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K": "cards.pdf",
+        "1EO2z8mSewdRuUH-FBqTnWcNjfN8BHSSk": "rulebook-digital.pdf",
+        "1W_tfxh2kNgm_7DU6aIRc6qALyo6MWGIO": "rulebook-for-print.pdf",
+        "1MGMr9VNVzI2rpSsYBnCVfXfSKfAw8F8f": "rulebook.pdf"
+      },
+      "subfolders": {},
+      "files": [
+        {
+          "name": "cards.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1Opca5DSR0Yrr9gyFU1JpLhCBwbcw5--K&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "f4602ebeddceacdc25754e9d9f3ffcee192722492975ef1ce80769c1cb11a423"
+        },
+        {
+          "name": "rulebook-digital.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1EO2z8mSewdRuUH-FBqTnWcNjfN8BHSSk&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "64981df1c3de74432b37bc8c1754c50dc2b325e6e2bdc7f2ab39a845294c92a4"
+        },
+        {
+          "name": "rulebook-for-print.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1W_tfxh2kNgm_7DU6aIRc6qALyo6MWGIO&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "13cbf4f725649014dfb7aef99759030e924c0419c96c1cf5d4267ef7474d9365"
+        },
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1MGMr9VNVzI2rpSsYBnCVfXfSKfAw8F8f&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "dd21828ffcf956d9152f8b632ac3a665facace54bfc0efda5f8af55c68ecd528"
+        }
+      ]
+    },
+    {
+      "remote_resource_id": 581,
+      "url": "https://drive.google.com/drive/folders/1yUcqSCJzLGd7vPOmqsV-u65gZkpZw1kN",
+      "folder_files": {
+        "1qCa8PydczVdA_JzKtXie-FMS1namIG67": "rulebook-digital.pdf",
+        "13QbXgWi_cYK0KHsGPaJ-GvbhYIF7Tt4g": "rulebook-for-print.pdf",
+        "1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW": "rulebook.pdf"
+      },
+      "subfolders": {},
+      "files": [
+        {
+          "name": "rulebook-digital.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1qCa8PydczVdA_JzKtXie-FMS1namIG67&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "0d120537887ed645e84bde860030c036c3e2518850e5739df3c2d65ba2cebb79"
+        },
+        {
+          "name": "rulebook-for-print.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=13QbXgWi_cYK0KHsGPaJ-GvbhYIF7Tt4g&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "9490302ff6747e015f02c9e070d532ea684556acc87fb274b63d858fac4f0f9d"
+        },
+        {
+          "name": "rulebook.pdf",
+          "url": "https://drive.usercontent.google.com/download?id=1qqPE8P2AeQ56kJbz6_CVLcmdesO3-ATW&export=download",
+          "status": "acquired_pending_language_review",
+          "sha256": "6252310190936b1ff320c8ee7002eb55d476af91226ffe6b51d71b9d852c8a6a"
+        }
+      ]
+    }
+  ],
+  "entry_outcomes": [
+    {
+      "entry_id": 393,
+      "game_id": 393,
+      "title": "20 Dice",
+      "outcome": "complete",
+      "files": 1,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 397,
+      "game_id": 397,
+      "title": "9th Maze",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Proton: inventari radice/Archive osservati, download UI segnala completamento ma nessun file presente localmente. Nessuna acquisizione attestata; RulesDraft senza comando download."
+    },
+    {
+      "entry_id": 403,
+      "game_id": 403,
+      "title": "Dragons Horde",
+      "outcome": "partial",
+      "files": 0,
+      "notes": "Demo già acquisita riverificata, una configurazione rispetto al completo; nessun pacchetto completo offerto dalla destinazione dichiarata."
+    },
+    {
+      "entry_id": 407,
+      "game_id": 407,
+      "title": "Flip Dungeon",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Drive richiede autorizzazione del proprietario anche con account connesso."
+    },
+    {
+      "entry_id": 409,
+      "game_id": 409,
+      "title": "Forest Tip",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Cartella dichiarata ancora HTTP 404."
+    },
+    {
+      "entry_id": 410,
+      "game_id": 410,
+      "title": "Fruit Sort Company",
+      "outcome": "complete",
+      "files": 3,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 418,
+      "game_id": 418,
+      "title": "Let's Have a Wedding",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Tutti i tre riferimenti dichiarati ancora HTTP 401."
+    },
+    {
+      "entry_id": 423,
+      "game_id": 423,
+      "title": "Nine Tails",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Drive richiede autorizzazione del proprietario anche con account connesso."
+    },
+    {
+      "entry_id": 424,
+      "game_id": 424,
+      "title": "No More Dragons",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Entrambi i riferimenti dichiarati ancora HTTP 401."
+    },
+    {
+      "entry_id": 426,
+      "game_id": 426,
+      "title": "Ocean Path",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Tutti i quattro riferimenti dichiarati ancora HTTP 404."
+    },
+    {
+      "entry_id": 438,
+      "game_id": 438,
+      "title": "Slayer",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Cartella dichiarata ancora HTTP 404; TTS/video esclusi."
+    },
+    {
+      "entry_id": 442,
+      "game_id": 442,
+      "title": "Stand of Supremacy",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Tutti i tre riferimenti dichiarati ancora HTTP 404."
+    },
+    {
+      "entry_id": 445,
+      "game_id": 445,
+      "title": "The King of Arcades",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 447,
+      "game_id": 447,
+      "title": "Three Buccaneers",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Dipendenza MAT: primo post originale non osservabile nella baseline; nessun URL acquisibile censito, non è assenza dimostrata."
+    },
+    {
+      "entry_id": 450,
+      "game_id": 450,
+      "title": "Tralim",
+      "outcome": "partial",
+      "files": 0,
+      "notes": "Carte v4.0 già acquisite e riverificate; gli altri due riferimenti restituiscono ancora 404."
+    },
+    {
+      "entry_id": 456,
+      "game_id": 456,
+      "title": "Daily Dungeon",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 457,
+      "game_id": 457,
+      "title": "Dice Production",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 458,
+      "game_id": 458,
+      "title": "Titolo non indicato (entry ritirata 3)",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Dipendenza MAT: entry ritirata senza titolo/WIP individuato nella baseline; nessuna ricerca roster nuova in ACQ."
+    },
+    {
+      "entry_id": 459,
+      "game_id": 459,
+      "title": "HMS Ulven",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Dipendenza MAT: WIP HMS Ulven non individuato nella baseline."
+    },
+    {
+      "entry_id": 461,
+      "game_id": 461,
+      "title": "Main Line Mayhem",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 462,
+      "game_id": 462,
+      "title": "Network with an Octopuse",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 463,
+      "game_id": 463,
+      "title": "Psychodynamic Fronts",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 464,
+      "game_id": 464,
+      "title": "Red Is Hungry",
+      "outcome": "partial",
+      "files": 0,
+      "notes": "Regole già acquisite; destinazione PCIO senza componente stampabile dichiarato, implementazione esclusa."
+    },
+    {
+      "entry_id": 466,
+      "game_id": 466,
+      "title": "Three-Legged Race",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 467,
+      "game_id": 467,
+      "title": "Titolo non indicato (entry ritirata 12)",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Dipendenza MAT: entry ritirata senza titolo/WIP individuato nella baseline."
+    },
+    {
+      "entry_id": 468,
+      "game_id": 468,
+      "title": "UHBC - Containment Breach",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato."
+    },
+    {
+      "entry_id": 473,
+      "game_id": 473,
+      "title": "Elementa",
+      "outcome": "complete",
+      "files": 3,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati. Pacchetto ElementaBrawl associato ai remote_resources preesistenti di Elementa; identità Brawl non modificata né completata per inferenza."
+    },
+    {
+      "entry_id": 474,
+      "game_id": 474,
+      "title": "Brawl",
+      "outcome": "blocked",
+      "files": 0,
+      "notes": "Dipendenza identità/MAT: frammento Brawl distinto non attestato; scissione ElementaBrawl non riconciliata in ACQ."
+    },
+    {
+      "entry_id": 476,
+      "game_id": 476,
+      "title": "Monster Restaurant",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 477,
+      "game_id": 477,
+      "title": "Primary Colors",
+      "outcome": "complete",
+      "files": 4,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 478,
+      "game_id": 478,
+      "title": "Soda Wars",
+      "outcome": "complete",
+      "files": 10,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 479,
+      "game_id": 479,
+      "title": "Space Traders",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 480,
+      "game_id": 480,
+      "title": "SPLAT!",
+      "outcome": "complete",
+      "files": 1,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 481,
+      "game_id": 481,
+      "title": "Surround the King",
+      "outcome": "complete",
+      "files": 3,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 482,
+      "game_id": 482,
+      "title": "Weird Spells",
+      "outcome": "complete",
+      "files": 1,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 483,
+      "game_id": 483,
+      "title": "Yattactics",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 484,
+      "game_id": 484,
+      "title": "Puebleando",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 485,
+      "game_id": 485,
+      "title": "Submerge",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    },
+    {
+      "entry_id": 486,
+      "game_id": 486,
+      "title": "The Corridor",
+      "outcome": "complete",
+      "files": 2,
+      "notes": "Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati."
+    }
+  ],
+  "reused_existing_files": [
+    {
+      "entry_id": 393,
+      "remote_resource_id": 388,
+      "sha256": "02e7a76eb13d830514cfb9ea4129ca93db547553013469be940f6a0e8137a23a",
+      "registered_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/20 Dice v2.docx - Documenti Google.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 393,
+      "remote_resource_id": 389,
+      "sha256": "85ff166acb8e32232d32ec5ef872098bfc1e7d113785f7715e00043c94a9917f",
+      "registered_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/v1.1 20 Dice Gamejam Cards PDF.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 393,
+      "remote_resource_id": 390,
+      "sha256": "e468a54a24891473fef69b8384f585cdc4a1e9f091b9f329fa94ebf7b44034a3",
+      "registered_path": "bgg/2025-nine-card/393__20-dice/originals/2026-11-04/v1.3 20 Dice Gamejam Cards PDF.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 403,
+      "remote_resource_id": 427,
+      "sha256": "36e19bf11e6c96ed22997b0f91549711f9719b722d8c3d8f6634119b17daea29",
+      "registered_path": "bgg/2025-nine-card/403__dragons-horde/originals/2026-10-13/Dragon's_Horde_Rulebook_Demo.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 403,
+      "remote_resource_id": 427,
+      "sha256": "25279db0a7c2194c378eb53be1a3cbc2632195d6a55c3e7e805595193f4ae848",
+      "registered_path": "bgg/2025-nine-card/403__dragons-horde/originals/2026-10-13/Pnp_Demo.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 442,
+      "sha256": "64adc236ca2ac30edcf1ecc98820cfac94d7536330f6fac0427a54942b94694d",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/Gamejam Rules Fruit Sort Company.docx - Documenti Google.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 443,
+      "sha256": "6958405a52abfefff7fa6334a1bd4843eac2934fea8ab4453662d0ea08c2ffdd",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Scoring Fixes Gamejam Rules Fruit Sort Company v2.docx - Documenti Google.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 444,
+      "sha256": "5fd2e66cf2afcde40db7210a5dfddd481f273fa5e5a560185f9c4f9e8db2e507",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/9 Cards Fruit Sort Company.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 445,
+      "sha256": "015d3657c5cd2768c94d744487013e1b09ff051ab9ec835f1a4e239e3a79e949",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Solitaire 9 Color Cards - Fruit Sort Company.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 446,
+      "sha256": "04372667386842d3ef0f9e35d8ad8349d19e7e7a4e887206ce4ccb58cc665d37",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/3-20-25 Solitaire 9 Black and White Cards - Fruit Sort Company PDF.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 447,
+      "sha256": "5c5906fd3418c03df2fb9f0ae59c946f23b73c301fd1978e413f482d92b23931",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/v2.2 Color Fruit Sort Company 9 Cards Printout.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 410,
+      "remote_resource_id": 448,
+      "sha256": "0e07dae01219b5fd22c54ff22f82915100a4acae00d65492fbd6b759df7c5210",
+      "registered_path": "bgg/2025-nine-card/410__fruit-sort-company/originals/2026-11-04/v2.2 Low Ink Fruit Sort Company 9 Cards Printout.pdf",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "entry_id": 450,
+      "remote_resource_id": 538,
+      "sha256": "752f10ff4581912b1fc82e7a175dfc68524ca7d80fcde86d49d91e68872237fa",
+      "registered_path": "bgg/2025-nine-card/450__tralim/originals/2026-11-06/Tralim Cards v4.0.pdf",
+      "verified_at": "2026-11-06"
+    }
+  ],
+  "acquired_at": "2026-11-06",
+  "scope_note": "Tutti i 39 residui applicabili; gratuito IT/EN regole/componenti, nessun MAT nuovo/riconciliazione identità/IMG/schema/APP/Git",
+  "baseline_materials_date": "2026-10-04",
+  "verification": {
+    "checked_at": "2026-11-06",
+    "files": 38,
+    "pdf": 37,
+    "txt": 1,
+    "rendered_pdf_documents": 37,
+    "contact_sheets": 4,
+    "hashes_and_sizes": "all_match",
+    "text_rules": "English verified; originals unchanged",
+    "reused_existing_files": 13
+  }
+}

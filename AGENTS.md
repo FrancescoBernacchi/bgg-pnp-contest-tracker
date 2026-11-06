@@ -205,3 +205,7 @@ Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtr
 ## Importazione inclusa nei nuovi incrementi IMG — 2026-10-11
 
 Decisione utente 2026-10-11: nei prossimi incrementi IMG l’acquisizione autorizza anche importazione verificata nel modello operativo esistente e controllo di galleria/avanzamento nell’app, senza ulteriori conferme. Prove su copia, backup/ripristino, transazione e verifiche restano obbligatori. Nuovi schema/sviluppo APP, materiali ACQ, validazione AI e commit/push mantengono autorizzazioni proprie. Nessuna importazione del lotto già acquisito eseguita in questo incremento decisionale. Riferimento autorevole: sources/IMAGE_WORKFLOW.md; decisione registrata in TSK-0068.
+
+## Consolidamento duplicati verificati — TSK-0099, 2026-11-06
+
+app/catalog_identity.py proietta il catalogo corrente da relazioni game_relationships duplicate_of verificate, con viste TEMP nelle connessioni RO app/generatore. Nessuna cancellazione o migrazione; main conserva storia e ID, vecchi collegamenti risolvono il superstite. Non usare main per conteggi correnti né dedurre duplicati da titolo uguale. Cicli/conflitti sono errori. Fonte/data/nota e verifica su copia/backup/replay obbligatorie per nuove rettifiche; nessuna estensione automatica ad altri casi. PWS1.5.0 invariato; relazione/dettagli nel task0099 e PROJECT.md.

@@ -1,11 +1,13 @@
 """Metriche condivise di lavoro concluso; nessuna verifica negativa implicita."""
 import json
+from catalog_identity import retired_entry_ids
 from image_progress import image_summaries, image_counts
 
 
 def enrich_work_progress(db, contests):
     images = image_summaries(db)
     tables = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+    retired_ids = retired_entry_ids(db)
     observations = {}
     if 'entry_work_observations' in tables:
         for row in db.execute('SELECT * FROM entry_work_observations ORDER BY julianday(observed_at),id'):
@@ -23,7 +25,7 @@ def enrich_work_progress(db, contests):
             contest['ranked_entry_count'] = sum(e['game_id'] in ranked_games for e in entries)
         roster = census.get(cid)
         contest['census_complete_count'] = int(bool(roster and roster['outcome'] == 'complete'
-            and set(json.loads(roster['entry_ids_json'])) == ids))
+            and set(json.loads(roster['entry_ids_json'])) - retired_ids == ids))
         for phase in ('ranking', 'materials', 'acquisition'):
             complete = excluded = blocked = partial = 0
             for entry in entries:

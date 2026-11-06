@@ -13,6 +13,7 @@ import secrets
 import hmac
 import webbrowser
 from work_progress import enrich_work_progress, summarize_work
+from catalog_identity import install_current_projection, canonical_game_id, canonical_entry_id
 from source_progress import source_progress
 from source_evidence import record_summaries, source_record_detail
 from library_catalog import library_catalog
@@ -39,6 +40,7 @@ def connect(database: Path):
     connection = sqlite3.connect(database.resolve().as_uri() + "?mode=ro", uri=True, timeout=3)
     connection.row_factory = sqlite3.Row
     try:
+        install_current_projection(connection)
         connection.execute("PRAGMA query_only=ON")
         connection.execute("BEGIN")  # snapshot coerente per tutta la richiesta
         yield connection
@@ -148,6 +150,7 @@ def game_rows(db):
 
 
 def game_detail(db, game_id, library_root=ROOT / "library"):
+    game_id = canonical_game_id(db, game_id)
     game = one(db, "SELECT * FROM games WHERE id=?", (game_id,))
     return {
         "credits": game_attributions(db, game_id),
@@ -285,6 +288,7 @@ def contest_detail(db, contest_id):
 
 
 def entry_detail(db, entry_id):
+    entry_id = canonical_entry_id(db, entry_id)
     entry = one(db, """SELECT e.*,g.canonical_title,g.summary,c.name AS contest_name,c.scope_type
         FROM entries e JOIN games g ON g.id=e.game_id JOIN contests c ON c.id=e.contest_id WHERE e.id=?""", (entry_id,))
     resources = rows(db, """SELECT r.*,m.label_raw,m.content_role,m.is_primary,

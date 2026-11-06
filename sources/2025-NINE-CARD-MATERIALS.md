@@ -108,3 +108,11 @@ Le etichette, gli estratti originali e le menzioni ripetute sono nel dataset EVI
 | 486 | [The Corridor](https://boardgamegeek.com/thread/3440241) | complete / observed | 1 | 2 |  |
 
 Prossimo passo: riconciliazione roster ElementaBrawl in attività distinta; eventuale ACQ per questo singolo contest e giochi selezionati, con verifica host/condizioni. Nessun monitoraggio ordinario del contest concluso.
+
+## Riesame mirato 2026-11-06 — TSK-0051
+
+Dodici residui ricontrollati: otto primi post completi ancora senza URL materiali, Three Buccaneers introduzione esplicitamente eliminata, tre WIP non individuati. Nessun nuovo URL acquisibile/requisito variato; copertura MAT 89/94 e ACQ 68/93 invariati. Candidato Triplicity dall’annuncio di ritiro J Mayer @agentdynamo, con discrepanza rispetto al credito storico della seconda N/A (entry 467): nessuna correzione roster/identità in MAT. Prove, limiti e fonti nel manifest catalog/2025_nine_card_mat_revisit_2026-11-06.json e nel REVISIT_REPORT_2026-11-06.md di TSK-0051.
+
+## Integrazione mirata autorizzata — 2026-11-06
+
+Tredici WIP approfonditi oltre il primo post come supplemento distinto TSK0051. Nessun sostituto per quattro riferimenti rimossi e Tralim. King of Arcades: verifica dei sei originali autore BGG rule01-05/card dimostra regolamento EN e tavola nove carte dichiarate PnPready; corretto il falso negativo precedente con scansione/menzioni/osservazioni append-only, esclusioni storiche preservate. Sei PNG acquisiti nel task0087, nessuna immagine rappresentativa IMG. ElementaBrawl confermato titolo unico nel roster/WIP,473 rinominato,474 frammento tecnico preservato in attesa di consolidamento distinto. Manifest catalog/2025_nine_card_sequential_recovery_2026-11-06.json e rapporto nel task0087; fonti/date/crediti e limiti lì espliciti. MAT89/94 invariato; ACQ70/93 operativo include ancora frammento474 nel denominatore.

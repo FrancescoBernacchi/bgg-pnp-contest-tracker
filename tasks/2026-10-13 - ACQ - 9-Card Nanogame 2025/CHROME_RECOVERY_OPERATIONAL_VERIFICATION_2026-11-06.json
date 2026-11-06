@@ -1,0 +1,18 @@
+{
+  "applied_at": "2026-11-06",
+  "authorization": "TSK-0087-user-external-browser-2026-11-06",
+  "backup": "outputs\\nine-card-chrome-recovery-2026-11-06\\operational-before-20261106T125719Z.sqlite3",
+  "backup_sha256": "0814e89188f833041278c51ce71e16f87580a0cae69066cddc32a3f1927c9def",
+  "backup_restore": "verified_full_fingerprint",
+  "inserted": {
+    "acquisitions": 1,
+    "acquired_files": 10,
+    "entry_work_observations": 9
+  },
+  "exclusive_transaction": "committed",
+  "operational_matches_tested_copy": true,
+  "replay": "read_only_exact_fingerprint",
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "manifest_sha256": "59c16c583b75aae593bfe6c4eb917833ba9ec37800450047c87c8dcdd4704b37"
+}

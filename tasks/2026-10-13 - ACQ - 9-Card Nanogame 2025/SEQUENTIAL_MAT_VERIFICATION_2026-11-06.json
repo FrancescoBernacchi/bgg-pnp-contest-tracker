@@ -1,0 +1,20 @@
+{
+  "stage": "mat",
+  "verified_at": "2026-11-06T15:23:12.569Z",
+  "copy": "passed",
+  "backup_restore": "full_fingerprint_equal",
+  "legacy": "all_rows_preserved",
+  "changed_tables": [
+    "entry_resource_mentions",
+    "entry_resource_scans",
+    "observations",
+    "remote_resource_observations",
+    "remote_resources"
+  ],
+  "idempotent_replay": "zero_writes",
+  "operational": "exclusive_transaction_matches_copy",
+  "integrity": "ok",
+  "foreign_keys": [],
+  "manifest_sha256": "a3414b7a5dc1a1db33fdd3f50c3e05f51535f4fc8ae8991236b941239ede4a1d",
+  "backup": "outputs\\nine-card-sequential-recovery-2026-11-06\\mat-baseline.sqlite3"
+}

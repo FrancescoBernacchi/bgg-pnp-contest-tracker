@@ -340,3 +340,7 @@ Principale/fallback, miniature nascondibili nelle liste, tabella copertura e fil
 ## Completamenti IMG collaudati — TSK-0067, 2026-10-10
 
 Implementati i tre blocchi del riesame: indicatore per contest/link entry, filtri indipendenti combinabili e ricerca contestuale per categoria/categorie vuote, componenti per sottotipo e avviso revisione precedente con evidenza esplicita. App sola lettura, nessuna nuova classificazione, schema/dati/originali e metriche aggregate invariati. 69 test Python mirati e tre suite browser responsive passati; report VERIFICHE_COMPLETAMENTI.json nel task. Stato in_verifica per valutazione visuale utente; TSK-0068 autonomo, nessun commit/push. Guida/metadati in app/README.md e MODELLO_E_IMPORTAZIONE.md.
+
+### Consolidamento logico duplicati verificati — TSK-0099, 2026-11-06
+
+Le relazioni esistenti game_relationships con relationship_type=duplicate_of e verification_status=verified ritirano la sola copia dal catalogo corrente senza cancellare dati storici. app/catalog_identity.py prepara viste TEMP coerenti di games/entries e viste contest nelle connessioni RO app/generatore prima di query_only; database main e schema invariati. Vecchi ID risolvono al superstite, cicli/conflitti rigettati. Le attestazioni roster confrontano set storici proiettati escludendo soltanto entry di duplicati verificati. Nessun ricalcolo retroattivo degli snapshot originali. Prove e primo caso ElementaBrawl in TSK0099, riusabilità collaudata su fixture distinta.

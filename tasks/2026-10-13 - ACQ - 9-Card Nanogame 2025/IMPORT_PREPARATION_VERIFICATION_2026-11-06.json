@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-11-06",
+  "operational_database": "unchanged",
+  "files": 59,
+  "games_with_files": 22,
+  "entry_outcomes": 25,
+  "first_pass_changes": 106,
+  "replay_changes": 0,
+  "changed_tables": [
+    "acquired_files",
+    "acquisitions",
+    "entry_work_observations"
+  ],
+  "legacy_rows": "all_preserved",
+  "backup_restore": "full_fingerprint_equal",
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "manifest_sha256": "0548e8187f788692c8fe1065396e1748949f4524a56f726a49831c326a68555b"
+}

@@ -1,0 +1,592 @@
+{
+  "task_ids": [
+    "TSK-0005",
+    "TSK-0051",
+    "TSK-0087"
+  ],
+  "contest_id": 13,
+  "approved_at": "2026-11-06",
+  "verified_at": "2026-11-06T15:23:12.569Z",
+  "scope": "Riconciliazione ElementaBrawl, approfondimento mirato post successivi, poi ACQ gratuita IT/EN; nessun invio o controllo permessi T0098",
+  "identity": {
+    "game_id": 473,
+    "canonical_title": "ElementaBrawl",
+    "technical_fragment_game_id": 474,
+    "roster_url": "https://boardgamegeek.com/thread/3436343/article/45443446#45443446",
+    "roster_withdrawn_position": 18,
+    "roster_title": "ElementaBrawl",
+    "roster_designer": "Michael",
+    "author_profile": "https://boardgamegeek.com/profile/Duaneski",
+    "wip_url": "https://boardgamegeek.com/thread/3476068",
+    "original_post": "https://boardgamegeek.com/thread/3476068/article/45782275#45782275",
+    "finding": "Single published entry/game; local Elementa/Brawl split is import artifact. Preserve record474 and all original rows; no second acquisition or completion inferred. Definitive duplicate-record retirement requires separate data consolidation."
+  },
+  "entries": [
+    {
+      "entry_id": 442,
+      "title": "Stand of Supremacy",
+      "source_url": "https://boardgamegeek.com/thread/3449049",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 26,
+      "pages_observed": 2,
+      "author": [
+        {
+          "text": "Felipe Llanos",
+          "url": "/profile/kironcentauro"
+        },
+        {
+          "text": "@kironcentauro",
+          "url": "/profile/kironcentauro"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3449049/article/45553832#45553832",
+        "https://boardgamegeek.com/thread/3449049/article/45565689#45565689",
+        "https://boardgamegeek.com/thread/3449049/article/45583055#45583055",
+        "https://boardgamegeek.com/thread/3449049/article/45583892#45583892",
+        "https://boardgamegeek.com/thread/3449049/article/45586169#45586169",
+        "https://boardgamegeek.com/thread/3449049/article/45586175#45586175",
+        "https://boardgamegeek.com/thread/3449049/article/45597747#45597747",
+        "https://boardgamegeek.com/thread/3449049/article/45602934#45602934",
+        "https://boardgamegeek.com/thread/3449049/article/45603700#45603700",
+        "https://boardgamegeek.com/thread/3449049/article/45635647#45635647",
+        "https://boardgamegeek.com/thread/3449049/article/45635682#45635682",
+        "https://boardgamegeek.com/thread/3449049/article/45635692#45635692",
+        "https://boardgamegeek.com/thread/3449049/article/45649631#45649631",
+        "https://boardgamegeek.com/thread/3449049/article/45654343#45654343",
+        "https://boardgamegeek.com/thread/3449049/article/45788063#45788063",
+        "https://boardgamegeek.com/thread/3449049/article/45788082#45788082",
+        "https://boardgamegeek.com/thread/3449049/article/45789405#45789405",
+        "https://boardgamegeek.com/thread/3449049/article/45842470#45842470",
+        "https://boardgamegeek.com/thread/3449049/article/45842852#45842852",
+        "https://boardgamegeek.com/thread/3449049/article/45844200#45844200",
+        "https://boardgamegeek.com/thread/3449049/article/45985602#45985602",
+        "https://boardgamegeek.com/thread/3449049/article/45989490#45989490",
+        "https://boardgamegeek.com/thread/3449049/article/46000738#46000738",
+        "https://boardgamegeek.com/thread/3449049/article/46000739#46000739",
+        "https://boardgamegeek.com/thread/3449049/article/46021964#46021964",
+        "https://boardgamegeek.com/thread/3449049/article/46026299#46026299"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Ventisei post su due pagine: aggiornamenti regole e playtest; nessun URL sostitutivo per i tre file rimossi."
+    },
+    {
+      "entry_id": 409,
+      "title": "Forest Tip",
+      "source_url": "https://boardgamegeek.com/thread/3477855",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 8,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Michael Donnelly",
+          "url": "/profile/Hobbyistcollective"
+        },
+        {
+          "text": "@Hobbyistcollective",
+          "url": "/profile/Hobbyistcollective"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3477855/article/45799178#45799178",
+        "https://boardgamegeek.com/thread/3477855/article/45944074#45944074",
+        "https://boardgamegeek.com/thread/3477855/article/45944389#45944389",
+        "https://boardgamegeek.com/thread/3477855/article/45946145#45946145",
+        "https://boardgamegeek.com/thread/3477855/article/45946149#45946149",
+        "https://boardgamegeek.com/thread/3477855/article/46019729#46019729",
+        "https://boardgamegeek.com/thread/3477855/article/46025676#46025676",
+        "https://boardgamegeek.com/thread/3477855/article/46033278#46033278"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Otto post: feedback e risposte autore, nessun collegamento sostitutivo; disegni omaggio di terzi esclusi dai materiali autore."
+    },
+    {
+      "entry_id": 426,
+      "title": "Ocean Path",
+      "source_url": "https://boardgamegeek.com/thread/3442893",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 22,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Felipe Llanos",
+          "url": "/profile/kironcentauro"
+        },
+        {
+          "text": "@kironcentauro",
+          "url": "/profile/kironcentauro"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3442893/article/45504041#45504041",
+        "https://boardgamegeek.com/thread/3442893/article/45504044#45504044",
+        "https://boardgamegeek.com/thread/3442893/article/45504046#45504046",
+        "https://boardgamegeek.com/thread/3442893/article/45528278#45528278",
+        "https://boardgamegeek.com/thread/3442893/article/45553809#45553809",
+        "https://boardgamegeek.com/thread/3442893/article/45556808#45556808",
+        "https://boardgamegeek.com/thread/3442893/article/45571994#45571994",
+        "https://boardgamegeek.com/thread/3442893/article/45576397#45576397",
+        "https://boardgamegeek.com/thread/3442893/article/45576505#45576505",
+        "https://boardgamegeek.com/thread/3442893/article/45576510#45576510",
+        "https://boardgamegeek.com/thread/3442893/article/45576610#45576610",
+        "https://boardgamegeek.com/thread/3442893/article/45577859#45577859",
+        "https://boardgamegeek.com/thread/3442893/article/45586027#45586027",
+        "https://boardgamegeek.com/thread/3442893/article/45586152#45586152",
+        "https://boardgamegeek.com/thread/3442893/article/45586235#45586235",
+        "https://boardgamegeek.com/thread/3442893/article/45597433#45597433",
+        "https://boardgamegeek.com/thread/3442893/article/45602903#45602903",
+        "https://boardgamegeek.com/thread/3442893/article/45630047#45630047",
+        "https://boardgamegeek.com/thread/3442893/article/46026235#46026235",
+        "https://boardgamegeek.com/thread/3442893/article/46033217#46033217",
+        "https://boardgamegeek.com/thread/3442893/article/46074848#46074848",
+        "https://boardgamegeek.com/thread/3442893/article/46079744#46079744"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Ventidue post: aggiornamenti e chiarimenti, nessun URL sostitutivo; riferimenti ad altri giochi di playtest esclusi."
+    },
+    {
+      "entry_id": 438,
+      "title": "Slayer",
+      "source_url": "https://boardgamegeek.com/thread/3472477",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 18,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "camilo leiva cardenas",
+          "url": "/profile/luckycard"
+        },
+        {
+          "text": "@luckycard",
+          "url": "/profile/luckycard"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3472477/article/45752318#45752318",
+        "https://boardgamegeek.com/thread/3472477/article/45752670#45752670",
+        "https://boardgamegeek.com/thread/3472477/article/45752702#45752702",
+        "https://boardgamegeek.com/thread/3472477/article/45753462#45753462",
+        "https://boardgamegeek.com/thread/3472477/article/45753950#45753950",
+        "https://boardgamegeek.com/thread/3472477/article/45754919#45754919",
+        "https://boardgamegeek.com/thread/3472477/article/45755019#45755019",
+        "https://boardgamegeek.com/thread/3472477/article/45755212#45755212",
+        "https://boardgamegeek.com/thread/3472477/article/45755530#45755530",
+        "https://boardgamegeek.com/thread/3472477/article/45757476#45757476",
+        "https://boardgamegeek.com/thread/3472477/article/45757990#45757990",
+        "https://boardgamegeek.com/thread/3472477/article/45758048#45758048",
+        "https://boardgamegeek.com/thread/3472477/article/45763155#45763155",
+        "https://boardgamegeek.com/thread/3472477/article/46006443#46006443",
+        "https://boardgamegeek.com/thread/3472477/article/46067117#46067117",
+        "https://boardgamegeek.com/thread/3472477/article/46079978#46079978",
+        "https://boardgamegeek.com/thread/3472477/article/46082444#46082444",
+        "https://boardgamegeek.com/thread/3472477/article/46086056#46086056"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Diciotto post: correzioni e FAQ, sempre stesso Drive; hub autore Linktree porta a is-006.framer.ai/page#slayer-pocket, scheda senza download; TTS/video esclusi."
+    },
+    {
+      "entry_id": 450,
+      "title": "Tralim",
+      "source_url": "https://boardgamegeek.com/thread/3468551",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 10,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Frank Swannack",
+          "url": "/profile/Stattis"
+        },
+        {
+          "text": "@Stattis",
+          "url": "/profile/Stattis"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3468551/article/45720744#45720744",
+        "https://boardgamegeek.com/thread/3468551/article/45749108#45749108",
+        "https://boardgamegeek.com/thread/3468551/article/45749583#45749583",
+        "https://boardgamegeek.com/thread/3468551/article/45789250#45789250",
+        "https://boardgamegeek.com/thread/3468551/article/45798336#45798336",
+        "https://boardgamegeek.com/thread/3468551/article/45949988#45949988",
+        "https://boardgamegeek.com/thread/3468551/article/45954214#45954214",
+        "https://boardgamegeek.com/thread/3468551/article/47079542#47079542",
+        "https://boardgamegeek.com/thread/3468551/article/47083143#47083143",
+        "https://boardgamegeek.com/thread/3468551/article/47106277#47106277"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Dieci post: stesso Rules/Cards/Low Ink, aggiornamenti fino a gennaio senza nuovi URL; carte v4 già acquisite, due file rimossi restano mancanti."
+    },
+    {
+      "entry_id": 456,
+      "title": "Daily Dungeon",
+      "source_url": "https://boardgamegeek.com/thread/3443671",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 7,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Aaron Snoswell",
+          "url": "/profile/aaronsnoswell"
+        },
+        {
+          "text": "@aaronsnoswell",
+          "url": "/profile/aaronsnoswell"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3443671/article/45510013#45510013",
+        "https://boardgamegeek.com/thread/3443671/article/45510015#45510015",
+        "https://boardgamegeek.com/thread/3443671/article/45512961#45512961",
+        "https://boardgamegeek.com/thread/3443671/article/45513480#45513480",
+        "https://boardgamegeek.com/thread/3443671/article/45516312#45516312",
+        "https://boardgamegeek.com/thread/3443671/article/45525266#45525266",
+        "https://boardgamegeek.com/thread/3443671/article/45541039#45541039"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Sette post: idee e sviluppo procedurale, nessun file o URL di materiale pubblicato."
+    },
+    {
+      "entry_id": 445,
+      "title": "The King of Arcades",
+      "source_url": "https://boardgamegeek.com/thread/3478326",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 5,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "张 怡杰",
+          "url": "/profile/hanjiong"
+        },
+        {
+          "text": "@hanjiong",
+          "url": "/profile/hanjiong"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+        "https://boardgamegeek.com/thread/3478326/article/45803759#45803759",
+        "https://boardgamegeek.com/thread/3478326/article/45923855#45923855",
+        "https://boardgamegeek.com/thread/3478326/article/45933319#45933319",
+        "https://boardgamegeek.com/thread/3478326/article/45933945#45933945"
+      ],
+      "outcome": "printable_resources_verified",
+      "summary": "Cinque post; richiesta del playtester di due file separati senza successiva risposta. Ispezione originali BGG rule01-05 e card: regolamento EN e tavola nove carte; regole esplicitano PnP ready. Correzione esclusione storica, non risorsa dedotta da immagine decorativa."
+    },
+    {
+      "entry_id": 457,
+      "title": "Dice Production",
+      "source_url": "https://boardgamegeek.com/thread/3479765",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 1,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Jeremiah Brammer",
+          "url": "/profile/jeremiahbrammer"
+        },
+        {
+          "text": "@jeremiahbrammer",
+          "url": "/profile/jeremiahbrammer"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3479765/article/45813598#45813598"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Un post, idea ritirata; nessun aggiornamento o file."
+    },
+    {
+      "entry_id": 461,
+      "title": "Main Line Mayhem",
+      "source_url": "https://boardgamegeek.com/thread/3479751",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 1,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "@rkshelton21",
+          "url": "/profile/rkshelton21"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3479751/article/45813495#45813495"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Un post, Rules e Cards restano Pending Edit, nessun URL."
+    },
+    {
+      "entry_id": 462,
+      "title": "Network with an Octopuse",
+      "source_url": "https://boardgamegeek.com/thread/3479008",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 2,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Danny H",
+          "url": "/profile/nkid"
+        },
+        {
+          "text": "@nkid",
+          "url": "/profile/nkid"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3479008/article/45808666#45808666",
+        "https://boardgamegeek.com/thread/3479008/article/45808707#45808707"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Due post, descrizione e ispirazione; nessun materiale offerto."
+    },
+    {
+      "entry_id": 463,
+      "title": "Psychodynamic Fronts",
+      "source_url": "https://boardgamegeek.com/thread/3479778",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 1,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "@AtrumImago",
+          "url": "/profile/AtrumImago"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3479778/article/45813645#45813645"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Un post di idea, nessun materiale offerto."
+    },
+    {
+      "entry_id": 466,
+      "title": "Three-Legged Race",
+      "source_url": "https://boardgamegeek.com/thread/3475750",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 1,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "Ryan Shaffer",
+          "url": "/profile/ryanshaffer"
+        },
+        {
+          "text": "@ryanshaffer",
+          "url": "/profile/ryanshaffer"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3475750/article/45779055#45779055"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Un post di idea, nessun materiale offerto; menzione regole quattro pagine non equivale a file disponibile."
+    },
+    {
+      "entry_id": 468,
+      "title": "UHBC - Containment Breach",
+      "source_url": "https://boardgamegeek.com/thread/3475125",
+      "coverage": "targeted_full_wip_supplement",
+      "posts_observed": 4,
+      "pages_observed": 1,
+      "author": [
+        {
+          "text": "@UncannyFeeling",
+          "url": "/profile/UncannyFeeling"
+        }
+      ],
+      "post_sources": [
+        "https://boardgamegeek.com/thread/3475125/article/45774315#45774315",
+        "https://boardgamegeek.com/thread/3475125/article/45774317#45774317",
+        "https://boardgamegeek.com/thread/3475125/article/45774318#45774318",
+        "https://boardgamegeek.com/thread/3475125/article/45774319#45774319"
+      ],
+      "outcome": "no_replacement_material_link_found",
+      "summary": "Quattro post, tre segnaposto riservati; Rules e PnP restano trattini senza URL."
+    }
+  ],
+  "new_resources": [
+    {
+      "image_id": 8813275,
+      "caption": "rule 01",
+      "page": "https://boardgamegeek.com/image/8813275",
+      "url": "https://cf.geekdo-images.com/Kui9YCgpFbYhsOZLSIiyHw__original/img/1dygkUeHzjqa6B_Pe_Rt9cAiHsM=/0x0/filters:format(png)/pic8813275.png"
+    },
+    {
+      "image_id": 8813276,
+      "caption": "rule 02",
+      "page": "https://boardgamegeek.com/image/8813276/hanjiong",
+      "url": "https://cf.geekdo-images.com/UedJ28ptYomBGathF3QIQQ__original/img/dhAUmPeuk8DPC5rZJ53WaNTSMoE=/0x0/filters:format(png)/pic8813276.png",
+      "original_label": "original (2480 x 3508)"
+    },
+    {
+      "image_id": 8813277,
+      "caption": "rule 03",
+      "page": "https://boardgamegeek.com/image/8813277/hanjiong",
+      "url": "https://cf.geekdo-images.com/Z-Q-h75xC06vSCQsKF42yA__original/img/mJETzQTn7L2_30L7mJWOmPt-BtQ=/0x0/filters:format(png)/pic8813277.png",
+      "original_label": "original (2480 x 3508)"
+    },
+    {
+      "image_id": 8813279,
+      "caption": "rule 04",
+      "page": "https://boardgamegeek.com/image/8813279/hanjiong",
+      "url": "https://cf.geekdo-images.com/y39sjg3Dj5CBdFKqeUh8XQ__original/img/xA9MJPZfyxx1rrO8CoG4Io5kKnA=/0x0/filters:format(png)/pic8813279.png",
+      "original_label": "original (2480 x 3508)"
+    },
+    {
+      "image_id": 8813280,
+      "caption": "rule 05",
+      "page": "https://boardgamegeek.com/image/8813280/hanjiong",
+      "url": "https://cf.geekdo-images.com/JIOZ3R1b76vHW5zFI5D4DA__original/img/S42KsLVWflM6fOhU0M4D-G1aGfM=/0x0/filters:format(png)/pic8813280.png",
+      "original_label": "original (2480 x 3508)"
+    },
+    {
+      "image_id": 8813281,
+      "caption": "card",
+      "page": "https://boardgamegeek.com/image/8813281/hanjiong",
+      "url": "https://cf.geekdo-images.com/6LF4_r1bjDOy-y-a4fS6YQ__original/img/gz6fz6H_FHC8BBK2PDo9ZnyFTC0=/0x0/filters:format(png)/pic8813281.png",
+      "original_label": "original (2480 x 3508)"
+    }
+  ],
+  "items": [
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813275",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/Kui9YCgpFbYhsOZLSIiyHw__original/img/1dygkUeHzjqa6B_Pe_Rt9cAiHsM=/0x0/filters:format(png)/pic8813275.png",
+      "original_filename": "pic8813275.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813275.png",
+      "media_type": "image/png",
+      "byte_size": 384132,
+      "sha256": "01862f953e257031733f9886dbfcd40f41f0914edda3774603e684dea189bb14",
+      "version_raw": "BGG image 8813275; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "rule 01",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.575Z"
+    },
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813276/hanjiong",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/UedJ28ptYomBGathF3QIQQ__original/img/dhAUmPeuk8DPC5rZJ53WaNTSMoE=/0x0/filters:format(png)/pic8813276.png",
+      "original_filename": "pic8813276.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813276.png",
+      "media_type": "image/png",
+      "byte_size": 670666,
+      "sha256": "5f47a0cf7500d0dbfab8f0e3fe2d145be95effea99c5703b6b5a3bd03e52743c",
+      "version_raw": "BGG image 8813276; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "rule 02",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.579Z"
+    },
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813277/hanjiong",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/Z-Q-h75xC06vSCQsKF42yA__original/img/mJETzQTn7L2_30L7mJWOmPt-BtQ=/0x0/filters:format(png)/pic8813277.png",
+      "original_filename": "pic8813277.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813277.png",
+      "media_type": "image/png",
+      "byte_size": 463345,
+      "sha256": "bd7cc94cbbead0a6aa71b1cc5aac49df2ba42b66b6616f45f94915a0d640527d",
+      "version_raw": "BGG image 8813277; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "rule 03",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.583Z"
+    },
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813279/hanjiong",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/y39sjg3Dj5CBdFKqeUh8XQ__original/img/xA9MJPZfyxx1rrO8CoG4Io5kKnA=/0x0/filters:format(png)/pic8813279.png",
+      "original_filename": "pic8813279.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813279.png",
+      "media_type": "image/png",
+      "byte_size": 416074,
+      "sha256": "99d99edb86816489c031781e2c04ddd32ff27471ed9d8554fd5e6006661c4989",
+      "version_raw": "BGG image 8813279; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "rule 04",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.587Z"
+    },
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813280/hanjiong",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/JIOZ3R1b76vHW5zFI5D4DA__original/img/S42KsLVWflM6fOhU0M4D-G1aGfM=/0x0/filters:format(png)/pic8813280.png",
+      "original_filename": "pic8813280.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813280.png",
+      "media_type": "image/png",
+      "byte_size": 270816,
+      "sha256": "5d77ab3c54b0d4f57eb3af642d3c76acb7940918b4bba866dd338779fd71c7d0",
+      "version_raw": "BGG image 8813280; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "rule 05",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.590Z"
+    },
+    {
+      "game_id": 445,
+      "entry_id": 445,
+      "game_title": "The King of Arcades",
+      "resource_url": "https://boardgamegeek.com/image/8813281/hanjiong",
+      "source_url": "https://boardgamegeek.com/thread/3478326/article/45803714#45803714",
+      "final_url": "https://cf.geekdo-images.com/6LF4_r1bjDOy-y-a4fS6YQ__original/img/gz6fz6H_FHC8BBK2PDo9ZnyFTC0=/0x0/filters:format(png)/pic8813281.png",
+      "original_filename": "pic8813281.png",
+      "relative_path": "bgg/2025-nine-card/445__the-king-of-arcades/originals/2026-11-06-recovery/pic8813281.png",
+      "media_type": "image/png",
+      "byte_size": 642296,
+      "sha256": "9a415221fe74d220099f1577b38c1ceb24bc6c0b60d726184a00bc1f83fbc45b",
+      "version_raw": "BGG image 8813281; uploaded 2025-04-06",
+      "language_code": "en",
+      "label": "card",
+      "scope": "author_rule_pages_and_print_ready_card_sheet",
+      "usage_conditions": "Immagini pubblicate dall’autore nel WIP, regole indicano PnP ready; originali offerti dal menu Downloads BGG. Copia personale locale; All rights reserved, nessuna redistribuzione/licenza aperta attestata.",
+      "transferred_at": "2026-11-06T15:23:12.595Z"
+    }
+  ],
+  "entry_outcomes": [
+    {
+      "entry_id": 445,
+      "game_id": 445,
+      "title": "The King of Arcades",
+      "outcome": "complete",
+      "files": 6,
+      "notes": "Cinque pagine numerate complete delle regole EN e foglio nove carte PnP dell’autore, originali 2480x3508 verificati; copertina/promozione escluse. Baseline no URL corretta dopo verifica del contenuto."
+    }
+  ],
+  "acquired_at": "2026-11-06",
+  "batch_key": "bgg-2025-nine-card-sequential-recovery-2026-11-06",
+  "purpose": "Recupero sequenziale autorizzato: King of Arcades con materiali autore BGG; nessuna redistribuzione",
+  "selection": [
+    {
+      "entry_id": 445,
+      "game_id": 445,
+      "title": "The King of Arcades",
+      "wip_thread_url": "https://boardgamegeek.com/thread/3478326",
+      "entry_url": "https://boardgamegeek.com/thread/3436343/2025-9-card-nanogame-print-and-play-design-contest",
+      "previous_outcome": null,
+      "wip_post_author": "Non osservabile",
+      "credit_role": "wip_post_author",
+      "credit_source_date": "2026-10-04",
+      "credit_gap": "Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "applied_at": "2026-11-06",
+  "authorization": "TSK-0087-user-all-remaining-2026-11-06",
+  "backup": "outputs\\nine-card-final-2026-11-06\\operational-before-20261106T092610Z.sqlite3",
+  "backup_sha256": "be20a4f0acd17f87b6852c4791842b44e8386186eebbb000e349e1fb09c956c3",
+  "backup_restore": "verified_full_fingerprint",
+  "inserted": {
+    "acquisitions": 14,
+    "acquired_files": 38,
+    "entry_work_observations": 39
+  },
+  "exclusive_transaction": "committed",
+  "operational_matches_tested_copy": true,
+  "replay": "read_only_exact_fingerprint",
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "manifest_sha256": "d087ed9f67f9da761e949fd6ee91ed48a1ec7c83e6f63ce6f7b689ee985fd4c5"
+}

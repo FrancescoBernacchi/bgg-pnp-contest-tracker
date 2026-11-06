@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-11-06",
+  "method": "Confronto inventario nel browser CUA con HTML dei soli file osservabili; nessuna licenza di redistribuzione presunta",
+  "audits": [
+    {
+      "resource_id": 487,
+      "count": 3,
+      "subfolders": []
+    },
+    {
+      "resource_id": 493,
+      "count": 4,
+      "subfolders": [
+        "Old Rules And Cards"
+      ],
+      "previous_version_count": 3,
+      "previous_url": "https://drive.google.com/drive/folders/1I1aImwidcZqs5uzdx7DfWoo8cIgNHfG-",
+      "excluded": [
+        "Oppidum Rules ES.pdf (2 versioni)"
+      ]
+    },
+    {
+      "resource_id": 516,
+      "count": 3,
+      "subfolders": []
+    },
+    {
+      "resource_id": 517,
+      "count": 2,
+      "subfolders": []
+    },
+    {
+      "resource_id": 518,
+      "count": 2,
+      "subfolders": [
+        "Previous Versions"
+      ],
+      "previous_version_count": 2,
+      "previous_url": "https://drive.google.com/drive/folders/1cUZiQCvtqMxOyOzvN_cZBtpJ7MN1v744"
+    },
+    {
+      "resource_id": 522,
+      "count": 3,
+      "subfolders": []
+    },
+    {
+      "resource_id": 551,
+      "count": 3,
+      "subfolders": []
+    },
+    {
+      "resource_id": 554,
+      "count": 4,
+      "subfolders": [],
+      "included": [
+        "2 PDF",
+        "Labyrinth Nine printing instruction.txt"
+      ],
+      "excluded": [
+        "labyrinth-nine-0127.pcio"
+      ]
+    },
+    {
+      "resource_id": 558,
+      "count": 2,
+      "subfolders": [],
+      "included": [
+        "Rules - Red is hungry (pcio), Google Docs PDF export"
+      ],
+      "excluded": [
+        "red-is-hungry.pcio"
+      ],
+      "limitation": "Nessun componente stampabile dichiarato nella cartella osservata"
+    },
+    {
+      "resource_id": 560,
+      "count": 4,
+      "subfolders": []
+    },
+    {
+      "resource_id": 570,
+      "count": 4,
+      "subfolders": [],
+      "excluded": [
+        "Cotton Candy Stampede.pcio"
+      ]
+    },
+    {
+      "resource_id": 575,
+      "included": [
+        "Kat Suka rules.pdf",
+        "pnp katsuka.pdf"
+      ],
+      "excluded": [
+        "JPG illustrazioni e sorgenti PSD; intero subtree Psd/clanes"
+      ],
+      "enumeration": "Pacchetto PnP/regole completo; asset sorgente/IMG esclusi senza scaricarli"
+    },
+    {
+      "resource_id": 472,
+      "count": 4,
+      "included": [
+        "Cards.pdf",
+        "Rules EN.pdf",
+        "Point and turn Track.pdf"
+      ],
+      "excluded": [
+        "Regras PT BR.pdf"
+      ],
+      "conditions": "Name your own price → No thanks → download ufficiale; nessun account/email/pagamento"
+    }
+  ]
+}

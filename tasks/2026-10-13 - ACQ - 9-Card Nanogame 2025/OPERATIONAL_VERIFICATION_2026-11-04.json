@@ -1,0 +1,18 @@
+{
+  "applied_at": "2026-11-04",
+  "authorization": "TSK-0087-user-complete17-2026-11-04",
+  "backup": "outputs\\nine-card-acq-2026-11-04\\operational-before-20261104T221832Z.sqlite3",
+  "backup_sha256": "94f0f111663601eb65f5e90ba8ad68fbb21eb3bcb7594b70d1f642b9c102fba8",
+  "backup_restore": "verified_full_fingerprint",
+  "inserted": {
+    "acquisitions": 19,
+    "acquired_files": 44,
+    "entry_work_observations": 25
+  },
+  "exclusive_transaction": "committed",
+  "operational_matches_tested_copy": true,
+  "replay": "read_only_exact_fingerprint",
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "manifest_sha256": "675ef5b8d3035c8e74f68b39b22959d2ce65fb48b23a9a0b8b3d6bde545f1a7f"
+}

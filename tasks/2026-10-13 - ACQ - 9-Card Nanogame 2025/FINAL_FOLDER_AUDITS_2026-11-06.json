@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-11-06",
+  "method": "Confronto browser CUA dei file osservabili con inventari HTML e formati reali; interi dump conservati soltanto negli output locali",
+  "audits": [
+    {
+      "resource_id": 571,
+      "pdf": 3,
+      "subfolders": [],
+      "identity_note": "ElementaBrawl: nessuna riconciliazione dei due record locali"
+    },
+    {
+      "resource_id": 576,
+      "pdf": 2,
+      "subfolders": []
+    },
+    {
+      "resource_id": 578,
+      "pdf": 4,
+      "subfolders": []
+    },
+    {
+      "resource_id": 581,
+      "subfolders": [
+        "v2025-01-14",
+        "v2025-01-17",
+        "v2025-02-05",
+        "v2025-02-26"
+      ],
+      "subfolder_pdf_counts": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "all_subfolders_enumerated": true
+    },
+    {
+      "resource_id": 588,
+      "pdf": 3,
+      "excluded": [
+        "PlayingCards.io - StK.pcio"
+      ],
+      "subfolders": []
+    },
+    {
+      "resource_id": 592,
+      "pdf": 2,
+      "subfolders": []
+    },
+    {
+      "resource_id": 593,
+      "pdf": 1,
+      "google_docs": [
+        "SubMerge.Rules.v0.4"
+      ],
+      "subfolders": []
+    },
+    {
+      "resource_id": 594,
+      "pdf": 1,
+      "google_docs": [
+        "TheCorridor.Rules.v0.6"
+      ],
+      "subfolders": []
+    },
+    {
+      "resource_id": 406,
+      "root_pdf": 2,
+      "subfolder": "Archive",
+      "archive_pdf": 7,
+      "proton_docs": [
+        "RulesDraft (nessun comando download)"
+      ],
+      "local_files": 0,
+      "limitation": "UI completato senza file salvati localmente; nessuna acquisizione attestata"
+    },
+    {
+      "resource_id": 427,
+      "note": "Demo storica stessa firma/hash: riutilizzata, nessun completo nuovo"
+    },
+    {
+      "resource_id": 558,
+      "note": "Regole Google Docs e PCIO già osservati; no nuovi stampabili"
+    }
+  ]
+}

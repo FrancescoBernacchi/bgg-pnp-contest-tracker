@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-11-06",
+  "requests": 11,
+  "games": 9,
+  "new_requests": [
+    "ACCESS-0008",
+    "ACCESS-0009",
+    "ACCESS-0010",
+    "ACCESS-0011"
+  ],
+  "sent_confirmed": 4,
+  "private_message_ids": "stored_only_in_ignored_local_evidence",
+  "unique_ids": true,
+  "due_now": 0,
+  "due_first_weekly_check": 11,
+  "first_due_at": "2026-11-13T09:00:00+01:00",
+  "automation_id": "verifica-accessi-ai-materiali-pnp",
+  "automation_status": "ACTIVE",
+  "rrule_preserved": true,
+  "target_thread_preserved": true,
+  "replies_checked": 0
+}

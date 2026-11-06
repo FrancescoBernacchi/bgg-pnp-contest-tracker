@@ -1,0 +1,52 @@
+{
+  "task_id": "TSK-0005",
+  "entry_id": 467,
+  "game_id": 467,
+  "contest_id": 13,
+  "verified_at": "2026-11-06",
+  "canonical_title": "Triplicity",
+  "designer": {
+    "display_name": "J Mayer",
+    "bgg_username": "@agentdynamo",
+    "profile_url": "https://boardgamegeek.com/profile/agentdynamo"
+  },
+  "roster": {
+    "url": "https://boardgamegeek.com/thread/3436343/article/45443446#45443446",
+    "raw_title": "N/A",
+    "withdrawn_position": 12,
+    "entry_position": 75,
+    "column_lengths": [
+      30,
+      30
+    ],
+    "previous_row": {
+      "title": "Three-Legged Race",
+      "designer": "Ryan Shaffer"
+    },
+    "designer": "J Mayer"
+  },
+  "announcement": {
+    "url": "https://boardgamegeek.com/thread/3436343/article/45813595#45813595",
+    "displayed_date": "2025-03-17",
+    "title": "Triplicity: A 9-card print and play zodiac duel",
+    "reference_status": "link_to_deleted_destination",
+    "wip_url": null
+  },
+  "withdrawal": {
+    "url": "https://boardgamegeek.com/thread/3436343/article/45896192#45896192",
+    "displayed_date": "2025-04-02",
+    "author": "J Mayer @agentdynamo"
+  },
+  "historical_correction": "Ryan Shaffer attribution in MAT EVIDENCE.json belongs to preceding roster row; no existing operational credit removed. Raw N/A and technical placeholder preserved.",
+  "exclusions": [
+    "MAT",
+    "ACQ",
+    "IMG",
+    "downloads",
+    "schema",
+    "app",
+    "mergers",
+    "Git"
+  ],
+  "outcome": "identity_verified_wip_destination_deleted"
+}

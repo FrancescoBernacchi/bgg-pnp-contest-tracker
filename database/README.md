@@ -79,7 +79,9 @@ TSK-0078, 2026-10-08: dopo 26 controlli su copie e consenso esplicito utente, pi
 
 Importer catalog/import_pergioco_pilot.py: sola lettura per default, applicazione con --apply/--authorization e backup/restore verificati, transazione esclusiva. Input congelato per hash CAT, nessun upsert o correzione implicita; replay verifica senza scrivere. Collaudo catalog/test_pergioco_import.py solo su copie in outputs.
 
+
 2026-10-08 — APP TSK-0079 consulta le evidenze B-v1/013 e il manifest CAT PerGioco senza modifiche ai dati. Stato importazione da chiavi/osservazioni operative; imported_count del manifest conserva il valore storico. Roster e schede fonte distinti dai giochi, metriche in app/README.md. Nessun backfill o acquisizione.
+
 
 ## IMG — migrazione 014 collaudata, operativo ancora 013 (2026-10-10)
 
@@ -91,3 +93,7 @@ TSK-0067 implementa `migrations/014_game_images.sql`: 18 tabelle additive, sei v
 ## IMG 014 operativa — TSK-0067, 2026-10-10
 
 Dopo consenso esplicito utente, migrazione 014 e importazione dei due manifest TSK-0068 applicate con backup/ripristino su copia verificati e transazione esclusiva. Operativo ora 014: 44 immagini/45 file, 16 componenti, 15 regioni; ricerca 2 concluse/12 parziali. Legacy 009/013 completo preservato, integrità/FK valide e replay senza scrittura. `database/schema.sql` include il blocco 014 per nuove installazioni: non rieseguirlo sull'operativo. Evidenza in `tasks/2026-10-05 - APP - Catalogazione e consultazione immagini dei giochi/OPERATIVO_VERIFICHE.json`. Le precedenti note di attesa sono storiche. UI/API/metriche immagini ancora da implementare nei successivi incrementi; nessuna nuova acquisizione o generazione, nessun commit/push.
+
+## Duplicati catalogo — modello esistente, nessuna nuova migrazione
+
+TSK0099 usa game_relationships duplicate_of/verified, dependency_requirement none, con nota/fonte/data e osservazione append-only. Database main conserva integralmente copie e storia. Conteggi correnti richiedono la proiezione RO app/catalog_identity.py; SQL su main restituisce intenzionalmente anche lo storico. Non eliminare record per allineare i conteggi. Consolidamento474→473 autorizzato e verificato; altri casi richiedono prove specifiche, conflitti/cicli non consentiti.

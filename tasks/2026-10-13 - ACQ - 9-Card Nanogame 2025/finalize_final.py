@@ -1,0 +1,29 @@
+import json,hashlib
+from pathlib import Path
+from datetime import datetime,timezone
+ROOT=Path(__file__).resolve().parents[2];TASK=Path(__file__).parent;MAN=ROOT/'catalog/2025_nine_card_final_acquisition_2026-11-06.json';m=json.loads(MAN.read_text(encoding='utf8'));assert not m.get('verification'), 'Finalized manifest is immutable; create a new increment';sel=json.loads((TASK/'SELECTION_FINAL_2026-11-06.json').read_text(encoding='utf8'));ev=json.loads((ROOT/'tasks/2026-10-04 - MAT - 9-Card Nanogame 2025/EVIDENCE.json').read_text(encoding='utf8'));qa=json.loads((ROOT/'outputs/nine-card-final-2026-11-06/qa-index.json').read_text())
+m.update(selection=sel['entries'],acquired_at='2026-11-06',scope_note='Tutti i 39 residui applicabili; gratuito IT/EN regole/componenti, nessun MAT nuovo/riconciliazione identità/IMG/schema/APP/Git',baseline_materials_date='2026-10-04')
+for x in m['items']:
+ p=ROOT/'library'/x['relative_path'];data=p.read_bytes();assert len(data)==x['byte_size'] and hashlib.sha256(data).hexdigest()==x['sha256'];x.update(status='acquired',language_code='en',language_status='English rules/text or compatible language-independent components; rendered first page reviewed',selection_reason='Completamento di tutti i residui autorizzato il 2026-11-06',source_remote_resource_ids=x.get('source_remote_resource_ids',[x['remote_resource_id']]),transferred_at=datetime.fromtimestamp(p.stat().st_mtime,timezone.utc).isoformat());q=next((q for q in qa if q['relative_path']==x['relative_path']),None)
+ if q:x['pages']=q['pages']
+complete={393,410,473,476,477,478,479,480,481,482,483,484,485,486}
+partial={403:'Demo già acquisita riverificata, una configurazione rispetto al completo; nessun pacchetto completo offerto dalla destinazione dichiarata.',450:'Carte v4.0 già acquisite e riverificate; gli altri due riferimenti restituiscono ancora 404.',464:'Regole già acquisite; destinazione PCIO senza componente stampabile dichiarato, implementazione esclusa.'}
+reason={397:'Proton: inventari radice/Archive osservati, download UI segnala completamento ma nessun file presente localmente. Nessuna acquisizione attestata; RulesDraft senza comando download.',407:'Drive richiede autorizzazione del proprietario anche con account connesso.',423:'Drive richiede autorizzazione del proprietario anche con account connesso.',409:'Cartella dichiarata ancora HTTP 404.',418:'Tutti i tre riferimenti dichiarati ancora HTTP 401.',424:'Entrambi i riferimenti dichiarati ancora HTTP 401.',426:'Tutti i quattro riferimenti dichiarati ancora HTTP 404.',438:'Cartella dichiarata ancora HTTP 404; TTS/video esclusi.',442:'Tutti i tre riferimenti dichiarati ancora HTTP 404.',447:'Dipendenza MAT: primo post originale non osservabile nella baseline; nessun URL acquisibile censito, non è assenza dimostrata.',458:'Dipendenza MAT: entry ritirata senza titolo/WIP individuato nella baseline; nessuna ricerca roster nuova in ACQ.',459:'Dipendenza MAT: WIP HMS Ulven non individuato nella baseline.',467:'Dipendenza MAT: entry ritirata senza titolo/WIP individuato nella baseline.',474:'Dipendenza identità/MAT: frammento Brawl distinto non attestato; scissione ElementaBrawl non riconciliata in ACQ.'}
+m['entry_outcomes']=[]
+for e in m['selection']:
+ eid=e['entry_id'];v=next((v for v in ev['entries'] if v.get('entry_id')==eid),{});e.update(wip_post_author=(v.get('h') or 'Non osservabile').split(';')[0],credit_role='wip_post_author',credit_source_date='2026-10-04',credit_gap='Designer/illustratore/editore non inferiti dal nome del post; altri ruoli non censiti.')
+ if eid in complete:outcome='complete';note='Tutti i file IT/EN dichiarati e offerti nel perimetro acquisiti e verificati; esclusioni/inventari documentati.'
+ elif eid in partial:outcome='partial';note=partial[eid]
+ else:outcome='blocked';note=reason.get(eid,'Nessun URL di file dichiarato nella baseline MAT completa del primo post (resource_listing_status=none_declared, 2026-10-04). Requisiti materiali presenti non equivalgono a file offerti. Dipendenza da nuovo approfondimento MAT separato; nessun nuovo censimento effettuato.')
+ if eid==473:note+=' Pacchetto ElementaBrawl associato ai remote_resources preesistenti di Elementa; identità Brawl non modificata né completata per inferenza.'
+ m['entry_outcomes'].append(dict(entry_id=eid,game_id=e['game_id'],title=e['title'],outcome=outcome,files=len([x for x in m['items'] if x['entry_id']==eid]),notes=note))
+for o in m['resource_observations']:
+ rid=o['remote_resource_id']
+ if rid in (387,439,440,441):o.update(status='available',reason='403 del canale HTTP diretto risolto tramite File/Esporta/Scarica PDF ufficiale Word, file presente e verificato; nessun aggiramento.',files=[dict(name=x['original_filename'],sha256=x['sha256']) for x in m['items'] if x['remote_resource_id']==rid])
+ if rid==591:o.update(status='available',reason='Originale TXT acquisito e letto in inglese')
+ if rid in (593,594):o['reason']='PDF PnP e regolamento Google Docs senza estensione osservati; esportazione PDF ufficiale acquisita.'
+ if rid==406:o.update(status='blocked',reason=reason[397],enumeration='complete_browser_root_and_archive',local_files=0)
+ if o.get('enumeration')=='partial_html':o.update(enumeration='complete_browser_comparison',enumeration_evidence='tasks/2026-10-13 - ACQ - 9-Card Nanogame 2025/FINAL_FOLDER_AUDITS_2026-11-06.json')
+m['verification']=dict(checked_at='2026-11-06',files=38,pdf=37,txt=1,rendered_pdf_documents=37,contact_sheets=4,hashes_and_sizes='all_match',text_rules='English verified; originals unchanged',reused_existing_files=len(m['reused_existing_files']))
+assert len(m['entry_outcomes'])==39 and sum(e['outcome']=='complete' for e in m['entry_outcomes'])==14
+MAN.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('38 file, 14 completi, 3 parziali, 22 bloccati')

@@ -161,3 +161,25 @@ Il 10 settembre 2026 sono stati analizzati i primi post renderizzati di tutte le
 L'estensione annuale è stata circoscritta ai sei contest adiacenti privi di roster nel database. I post ufficiali renderizzati in una sessione BGG autenticata hanno fornito 45 entry: GUARD 6, REVEAL 6, GREEN 8, PAD 5, PATCH 12 e `_ _ _ ANKS` 8. Per ogni riga sono stati conservati titolo, autore dichiarato, ordine e URL del post roster. Non sono state aperte le pagine individuali delle entry e non sono state raccolte classifiche, WIP o risorse.
 
 Il dataset riproducibile è `catalog/2025-24h-challenge-rosters-2026-10-04.json`; l'importatore offline idempotente è `catalog/import_2025_24h_challenge_rosters.py`. La prova su copia e l'applicazione al database operativo confermano 45 nuove entry, sei attestazioni `complete`, nessuna classifica e nessuna scansione materiali. `PRAGMA integrity_check` restituisce `ok` e `PRAGMA foreign_key_check` non segnala violazioni. Il perimetro adiacente 2025 raggiunge così **8/8 contest verificati e 125 entry**; il totale annuale sale a 509 entry.
+
+## Rettifica circoscritta entry 467 — apertura 2026-11-06
+
+L’utente conferma la riconciliazione della seconda voce N/A del 9-Card Nanogame 2025 con Triplicity/J Mayer, proposta dopo il riesame MAT TSK-0051 nella chat ACQ TSK-0087. Ripresa TSK-0005 per incremento di rettifica roster 2025, singola entry 467 del contest 13; nessun nuovo censimento annuale o verifica di altri contest. Obiettivo: verificare associazione pubblicata, titolo e autore, chiarire attribuzione storica Ryan Shaffer, cercare soltanto URL WIP da roster/annunci e fallback senza analizzarne contenuto/materiali. Eventuale rettifica su modello esistente soltanto dopo copia/idempotenza/collisioni/backup/ripristino/integrità, con vecchio titolo e osservazioni preservati. Nessuna fusione, rimozione entry, altro ruolo inventato, MAT/ACQ/IMG/schema/APP/Git o monitoraggio. Criteri: identità conclusa o residuo esplicito, dati/fonti/date riproducibili e verificate, A/B e registri aggiornati.
+
+Client autore Codex desktop; working tree preesistente preservata, lettura/git runtime riusciti, nessun handoff/lock locale oltre PROJECT_STATE.md. PWS aligned 1.5.0 rispetto al canonico 1.8.0, mantenuto come già deliberato; nessuna migrazione. Skill base BGG e procedura roster annuale rilette, playbook consultato. Chat primaria TSK-0087 con MAT collegato, titolo cumulativo da aggiornare senza sostituire la storia.
+
+### Chiusura rettifica entry 467 — 2026-11-06
+
+Completata: Triplicity/J Mayer @agentdynamo confermati da colonne roster e annunci originali. Destinazione WIP eliminata, URL non osservabile; nessun materiale acquisito. Manifest e rapporto ENTRY467_REPORT_2026-11-06.md documentano prove, correzione della nota Ryan Shaffer, conservazione N/A e segnaposto, verifiche su copia, idempotenza, backup/ripristino, integrità/FK, replay RO e app. A/B rigenerate e PROJECT_PROGRESS aggiornato prima di questa chiusura. Nessun altro dato o schema modificato; ACQ 68/93 invariato.
+
+Client autore Codex desktop. Titolo precedente verificato: T0087-26.10.13 - ACQ - 9-Card Nanogame 2025 e recupero MAT. Titolo applicato tramite set_thread_title e confermato: T0087-26.10.13 - ACQ - 9-Card Nanogame 2025, recupero MAT e identità. Primary TSK-0087, collegamenti TSK-0051/0005 preservati; percorsi storici invariati.
+
+Efficacia skill: procedura annuale/base BGG efficace; allineamento di colonne complete e contributi pubblici dell’autore risolvono identità senza leggere WIP/materiali. Pattern candidato TSK-0048 nel rapporto; nessuna modifica skill. Prossima attività distinta: recupero mirato dei limiti tecnici host nel contratto ACQ, se richiesto. Nessun commit/push eseguito.
+
+## Riconciliazione Elementa/Brawl — apertura 2026-11-06
+
+Utente approva sequenza completa proposta. Prima unità: verificare split locale Elementa 473/Brawl474 rispetto alla singola riga ElementaBrawl; fonti roster/annunci autore. Preservare storia, niente cancellazioni/fusioni implicite o nuovi giochi. Documentare soluzione operativa sul modello esistente se provata, copia/backup/replay prima di mutazioni.
+
+### Chiusura riconciliazione ElementaBrawl — 2026-11-06
+
+Roster ritirate riga18 e WIP3476068 concordano su un solo titolo ElementaBrawl di Michael @Duaneski. Gioco473 rinominato con Elementa alias storico e titolo fonte verificato; osservazioni su473/474 documentano split errato. Record474 preservato: nessuna fusione/cancellazione o completamento ACQ inventato; consolidamento tecnico con impatto sui denominatori distinto. Copia/collisioni/backup/ripristino/transazione esclusiva/integrità/FK/replay RO riusciti. Manifest sequenziale catalog e rapporto SEQUENTIAL_RECOVERY_REPORT_2026-11-06.md nel task0087. A/B e cruscotto aggiornati prima di questa chiusura. Client Codex desktop, titolo cumulativo chat primaria0087 già applicato/verificato e pertinente invariato. Skill base BGG efficace, colonne complete e WIP autore confermano singola identità; nessuna skill modificata. Nessun Git.

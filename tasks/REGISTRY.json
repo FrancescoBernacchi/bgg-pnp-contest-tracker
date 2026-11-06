@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-11-06",
   "protocol": "TASK_GOVERNANCE.md",
   "scope_note": "44 registri osservati, incluso corrente e Wargame sospeso copiato con originale immutato. Non censimento integrale delle chat archiviate. Stati normalizzati da sezioni dei TASK.md, da riesaminare se ambigui; classificazione retroattiva datata. Rinomina del 2026-10-04: 38 chat con contenuto osservate anche oltre il limite dell elenco; titoli nel campo chats, separati da date e percorsi dei 44 registri locali. Apertura TSK-0045 il 2026-10-04: contenitore continuativo classifiche 2025, estensione annuale deliberata. Audit naming 2026-10-10: 86 registri e 76 chat utente del progetto verificate, incluse worktree e unica chat archiviata del progetto. Quattro collegamenti storici formalizzati senza inferire stato; chat tecniche Guardian e subagent escluse.",
   "tasks": [
@@ -56,24 +56,24 @@
       "classified_at": "2026-10-13",
       "mode": "circoscritto",
       "cadence": "su_richiesta",
-      "status": "completato",
-      "status_basis": "Lotto classificati concluso: 56 file per 18 giochi registrati dopo OK utente; demo parziale e blocco documentati, verifiche DB/app superate.",
+      "status": "bloccato",
+      "status_basis": "ACQ70/92 dopo consolidamento duplicato verificato,22residui reali; quattroGeekMail inviate, nessuna nuova acquisizione.",
       "dependencies": [
         "TSK-0051"
       ],
       "chat_ids": [
         "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
       ],
-      "next_action": "Su richiesta: recupero mirato Three Buccaneers oppure selezione non classificati nello stesso contest.",
+      "next_action": "Risposte proprietari gestite daTSK0098: setteDrive e quattroGeekMail. Nessun consolidamento Brawl residuo o invio duplicato.",
       "git": {
-        "local_save": "committato",
+        "local_save": "da_committare",
         "integration": "integrato_main",
-        "synchronization": "remoto_verificato",
-        "checked_at": "2026-10-14",
+        "synchronization": "da_verificare",
+        "checked_at": "2026-11-06",
         "last_data_commit": "7de8de814c23f6fb893aa204cc681a2f27beec89",
-        "evidence": "Commit selettivo 16 file e push verificati con ls-remote; questa attestazione documentale segue il salvataggio dati. Modifiche estranee preservate."
+        "evidence": "Primo lotto storicamente salvato/pushato; lotti successivi e finale locali verificati, nessuna nuova operazione Git autorizzata."
       },
-      "verified_at": "2026-10-14",
+      "verified_at": "2026-11-06",
       "coverage": {
         "selected_entries": 19,
         "games_with_files": 18,
@@ -84,11 +84,149 @@
         "pdf": 55,
         "jpeg": 1,
         "operational_import": true,
-        "verified_at": "2026-10-14",
-        "contest_acquisition_complete": 17,
-        "contest_acquisition_denominator": 93
+        "verified_at": "2026-11-06",
+        "contest_acquisition_complete": 70,
+        "contest_acquisition_denominator": 92,
+        "previous_increment": {
+          "selected_entries": 19,
+          "games_with_files": 18,
+          "complete": 17,
+          "partial_demo": 1,
+          "blocked": 1,
+          "files": 56,
+          "pdf": 55,
+          "jpeg": 1,
+          "operational_import": true,
+          "verified_at": "2026-10-14",
+          "contest_acquisition_complete": 17,
+          "contest_acquisition_denominator": 93
+        },
+        "latest_increment": {
+          "date": "2026-11-06",
+          "scope": "sequential_targeted_recovery",
+          "mat_entries": 13,
+          "complete": 1,
+          "files": 6,
+          "png": 6,
+          "games_with_files": 1,
+          "operational_import": true
+        },
+        "remaining_applicable": 22,
+        "total_contest_files": 213,
+        "total_contest_games_with_files": 73,
+        "increment_history": [
+          {
+            "date": "2026-11-04",
+            "requested_complete": 17,
+            "complete": 17,
+            "partial": 2,
+            "blocked": 6,
+            "attempts": 25,
+            "files": 44,
+            "games_with_files": 19,
+            "operational_import": true
+          },
+          {
+            "date": "2026-11-06",
+            "requested_complete": 20,
+            "complete": 20,
+            "partial": 2,
+            "blocked": 3,
+            "attempts": 25,
+            "files": 59,
+            "games_with_files": 22,
+            "pdf": 57,
+            "zip": 1,
+            "txt": 1,
+            "operational_import": true
+          },
+          {
+            "date": "2026-11-06",
+            "scope": "all_remaining",
+            "requested_entries": 39,
+            "complete": 14,
+            "partial": 3,
+            "blocked": 22,
+            "files": 38,
+            "pdf": 37,
+            "txt": 1,
+            "games_with_files": 14,
+            "operational_import": true
+          },
+          {
+            "date": "2026-11-06",
+            "scope": "external_chrome_host_recovery",
+            "requested_entries": 9,
+            "complete": 1,
+            "blocked": 8,
+            "files": 10,
+            "pdf": 9,
+            "docx": 1,
+            "games_with_files": 1,
+            "operational_import": true
+          }
+        ],
+        "all_applicable_have_acquisition_outcome": true,
+        "previous_raw_denominator": {
+          "date": "2026-11-06",
+          "complete": 70,
+          "total": 93,
+          "remaining": 23,
+          "reason": "Historical import split Brawl, preserved"
+        }
       },
-      "closed_at": "2026-10-14"
+      "increment_history": [
+        {
+          "date": "2026-11-04",
+          "event": "reopened",
+          "selected_entries": 17,
+          "pws_decision": "maintain_1.5.0"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "reopened",
+          "requested_complete": 20,
+          "pws_decision": "maintain_1.5.0"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "reopened_all_remaining",
+          "selected_entries": 39
+        },
+        {
+          "date": "2026-11-06",
+          "event": "external_browser_recovery_completed",
+          "complete": 1,
+          "files": 10,
+          "report": "CHROME_RECOVERY_REPORT_2026-11-06.md"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "access_requests_sent",
+          "resource_ids": [
+            483,
+            469,
+            470,
+            471,
+            485,
+            486
+          ],
+          "user_sent_game": "Flip Dungeon",
+          "acquisition_counts": "unchanged_69_of_93"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "sequential_recovery_completed",
+          "report": "SEQUENTIAL_RECOVERY_REPORT_2026-11-06.md",
+          "complete": 1,
+          "files": 6
+        }
+      ],
+      "related_tasks": [
+        "TSK-0051",
+        "TSK-0098",
+        "TSK-0099"
+      ]
     },
     {
       "id": "TSK-0077",
@@ -684,33 +822,35 @@
       "cadence": "su_richiesta",
       "source_summary": "Censimento annuale 2025 completato: roster PnP 9/9 e adiacenti 8/8; materiali storici separati nei task MAT",
       "status": "completato",
-      "status_basis": "Incremento del 2026-10-04: sei challenge adiacenti verificate, 45 entry importate; annualità attestata 9/9 PnP e 8/8 adiacenti.",
+      "status_basis": "ElementaBrawl unico titolo, consolidamento logicoTSK0099 concluso; historymain preservata, roster corrente2025=508entry.",
       "coverage": {
         "year": 2025,
         "pnp_core": {
           "contests": "9/9",
-          "entries": 384
+          "entries": 383
         },
         "adjacent": {
           "contests": "8/8",
           "entries": 125
         },
-        "total_entries": 509,
-        "verified_at": "2026-10-04"
+        "total_entries": 508,
+        "verified_at": "2026-11-06",
+        "note": "Current projection excludes verified import duplicate474; all historical main rows retained."
       },
       "dependencies": [],
       "successors": [],
       "chat_ids": [
-        "01a07d95-c93c-7ce0-974f-388ab6575672"
+        "01a07d95-c93c-7ce0-974f-388ab6575672",
+        "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
       ],
       "next_action": null,
       "git": {
-        "checked_at": "2026-10-04",
-        "local_save": "committato",
+        "checked_at": "2026-11-06",
+        "local_save": "da_committare",
         "integration": "integrato_main",
         "synchronization": "remoto_verificato",
         "last_task_document_commit": "3cd53db",
-        "evidence": "TASK.md presente su main; push 7cad97e riuscito e refs/heads/main verificato sul server il 2026-10-04. Verifica del documento, non certificazione di tutti i deliverable."
+        "evidence": "Incremento sequenziale verificato locale; nessuna nuova operazione Git, salvataggi precedenti storici preservati."
       },
       "display_title": "T0005-26.09.07 - BGG-A - Censimento entry BGG 2025",
       "current_chat_titles": [
@@ -722,7 +862,42 @@
           "previous_title": "2026-09-07 - BGG-A - Censimento entry BGG 2025",
           "reason": "Nuova convenzione del prefisso; percorsi storici preservati."
         }
-      ]
+      ],
+      "increment_history": [
+        {
+          "date": "2026-11-06",
+          "event": "reopened",
+          "scope": "reconcile_entry_467_contest_13",
+          "previous_status": "completato"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "completed",
+          "scope": "reconcile_entry_467_contest_13",
+          "report": "ENTRY467_REPORT_2026-11-06.md"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "completed",
+          "scope": "ElementaBrawl_identity_reconciliation_preserve_fragment",
+          "evidence": "catalog/2025_nine_card_sequential_recovery_2026-11-06.json"
+        }
+      ],
+      "verified_at": "2026-11-06",
+      "closed_at": "2026-11-06",
+      "coverage_historical_before_duplicate_consolidation": {
+        "year": 2025,
+        "pnp_core": {
+          "contests": "9/9",
+          "entries": 384
+        },
+        "adjacent": {
+          "contests": "8/8",
+          "entries": 125
+        },
+        "total_entries": 509,
+        "verified_at": "2026-10-04"
+      }
     },
     {
       "id": "TSK-0006",
@@ -2584,7 +2759,7 @@
       "mode": "circoscritto",
       "cadence": "su_richiesta",
       "status": "completato",
-      "status_basis": "94 esiti MAT verificati: 89 completi, 5 blocchi espliciti; SQLite/API/browser controllati.",
+      "status_basis": "Tredici WIP mirati letti oltre primo post su consenso: sei immagini operative di King of Arcades riconciliate; altri casi senza nuovi riferimenti. Baseline storiche preservate.",
       "coverage": {
         "contest_id": 13,
         "local_entries": 94,
@@ -2593,25 +2768,36 @@
         "blocked": 5,
         "resource_entries": 80,
         "resources": 208,
-        "requirements": 414
+        "requirements": 414,
+        "latest_increment": {
+          "date": "2026-11-06",
+          "entries": 12,
+          "complete": 8,
+          "blocked": 4,
+          "new_resource_urls": 0,
+          "changed_requirements": 0,
+          "identity_candidates": 1,
+          "identity_changes": 0
+        }
       },
       "dependencies": [
         "Riconciliazione roster ElementaBrawl: 473/474",
-        "WIP mancanti per 458,459,467; post originale 447 non osservabile"
+        "WIP mancanti per 458,459,467; post originale 447 non osservabile",
+        "Riconciliazione entry 467: credito storico Ryan Shaffer vs roster J Mayer @agentdynamo, candidato Triplicity da annuncio 45896192"
       ],
       "successors": [],
       "chat_ids": [
-        "01a10824-ae7a-7761-854f-8fa1d95576d4"
+        "01a10824-ae7a-7761-854f-8fa1d95576d4",
+        "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
       ],
-      "next_action": "Riconciliare roster ElementaBrawl in incremento distinto; eventuale ACQ singolo contest dopo selezione giochi.",
+      "next_action": "Materiali89/93 nel catalogo corrente dopo consolidamento474; risposte proprietari in0098, nessun nuovo controllo ordinario.",
       "git": {
-        "checked_at": "2026-10-04",
+        "checked_at": "2026-11-06",
         "local_save": "da_committare",
         "integration": "integrato_main",
         "synchronization": "da_verificare",
-        "evidence": "Working tree preesistente modificata; nessuna operazione Git."
+        "evidence": "Incremento sequenziale verificato locale; nessuna nuova operazione Git, salvataggi precedenti storici preservati."
       },
-      "closed_at": "2026-10-04",
       "title_history": [
         {
           "date": "2026-10-10",
@@ -2619,7 +2805,38 @@
           "reason": "Nuova convenzione del prefisso; percorsi storici preservati."
         }
       ],
-      "display_title": "T0051-26.10.04 - MAT - 9-Card Nanogame 2025"
+      "display_title": "T0051-26.10.04 - MAT - 9-Card Nanogame 2025",
+      "increment_history": [
+        {
+          "date": "2026-11-06",
+          "event": "reopened",
+          "entry_ids": [
+            445,
+            447,
+            456,
+            457,
+            458,
+            459,
+            461,
+            462,
+            463,
+            466,
+            467,
+            468
+          ],
+          "author_client": "Codex desktop",
+          "source_task": "TSK-0087",
+          "previous_closed_at": "2026-10-04"
+        },
+        {
+          "date": "2026-11-06",
+          "event": "completed",
+          "scope": "targeted_full_wip_supplement_13_entries",
+          "evidence": "catalog/2025_nine_card_sequential_recovery_2026-11-06.json"
+        }
+      ],
+      "verified_at": "2026-11-06",
+      "closed_at": "2026-11-06"
     },
     {
       "id": "TSK-0052",
@@ -4072,6 +4289,74 @@
           "reason": "Nuova convenzione del prefisso; percorsi storici preservati."
         }
       ]
+    },
+    {
+      "id": "TSK-0098",
+      "original_title": "2026-11-06 - GPR - Registro richieste di accesso ai materiali",
+      "display_title": "T0098-26.11.06 - GPR - Registro richieste di accesso ai materiali",
+      "opened_at": "2026-11-06",
+      "task_path": "tasks/2026-11-06 - GPR - Registro richieste di accesso ai materiali/TASK.md",
+      "category": "GPR",
+      "secondary_categories": [],
+      "classified_at": "2026-11-06",
+      "mode": "continuativo",
+      "cadence": "periodica",
+      "status": "in_corso",
+      "status_basis": "Registro esteso con quattro GeekMail confermate per cinque giochi; automazione ACTIVE aggiornata alle sole risposte pertinenti, nessun nuovo controllo remoto oggi.",
+      "dependencies": [
+        "TSK-0087"
+      ],
+      "successors": [],
+      "chat_ids": [
+        "01a1b0fe-2594-7733-acfd-cc182422d1bc"
+      ],
+      "next_action": "Prima verifica dovuta 2026-11-13 ore09Europe/Rome per11richieste; heartbeat giornaliero recupera arretrati alla prima esecuzione utile. Futuri invii richiedono revisione preventiva utente.",
+      "git": {
+        "checked_at": "2026-11-06",
+        "local_save": "da_committare",
+        "integration": "da_verificare",
+        "synchronization": "da_verificare",
+        "evidence": "Nessuna operazione Git; modifiche pregresse preservate."
+      },
+      "coverage": "11 richieste / 9 giochi",
+      "automation_id": "verifica-accessi-ai-materiali-pnp",
+      "increment_history": [
+        {
+          "date": "2026-11-06",
+          "event": "geekmail_scope_extended",
+          "requests_added": 4,
+          "games_added": 5,
+          "automation_updated": true
+        }
+      ]
+    },
+    {
+      "id": "TSK-0099",
+      "original_title": "2026-11-06 - DAT - Consolidamento duplicati del catalogo",
+      "display_title": "T0099-26.11.06 - DAT - Consolidamento duplicati del catalogo",
+      "opened_at": "2026-11-06",
+      "task_path": "tasks/2026-11-06 - DAT - Consolidamento duplicati del catalogo/TASK.md",
+      "category": "DAT",
+      "secondary_categories": [
+        "APP"
+      ],
+      "mode": "circoscritto",
+      "cadence": "su_richiesta",
+      "status": "completato",
+      "status_basis": "Consolidamento logico operativo e proiezione RO verificati, storia intatta, 17test app e fixture distinta riusciti; ACQ70/92.",
+      "dependencies": [
+        "TSK-0005"
+      ],
+      "chat_ids": [
+        "01a13738-e44c-7b73-8bf9-a8aff84ffdab"
+      ],
+      "verified_at": "2026-11-06",
+      "git": {
+        "local_save": "da_committare",
+        "evidence": "Nessuna nuova operazione Git"
+      },
+      "closed_at": "2026-11-06",
+      "next_action": null
     }
   ],
   "chats": [
@@ -5832,6 +6117,54 @@
       "primary_task_id": "TSK-0045",
       "verification": "exact",
       "title_verified_at": "2026-10-10"
+    },
+    {
+      "thread_id": "01a13738-e44c-7b73-8bf9-a8aff84ffdab",
+      "primary_task_id": "TSK-0087",
+      "task_ids": [
+        "TSK-0087",
+        "TSK-0051",
+        "TSK-0005",
+        "TSK-0099"
+      ],
+      "category": "ACQ",
+      "title": "T0087-26.10.13 - ACQ - 9-Card 2025, MAT, identità e richieste",
+      "previous_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025, recupero MAT e identità",
+      "title_verified_at": "2026-11-06",
+      "result": "renamed",
+      "verification": "set_thread_title_confirmed",
+      "title_history": [
+        {
+          "date": "2026-11-06",
+          "previous_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025",
+          "title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025 e recupero MAT",
+          "reason": "Incremento MAT autorizzato, storia ACQ e primary_task_id preservati"
+        },
+        {
+          "date": "2026-11-06",
+          "previous_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025 e recupero MAT",
+          "title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025, recupero MAT e identità",
+          "reason": "Rettifica roster TSK-0005 autorizzata; primary ACQ e MAT preservati"
+        },
+        {
+          "date": "2026-11-06",
+          "previous_title": "T0087-26.10.13 - ACQ - 9-Card Nanogame 2025, recupero MAT e identità",
+          "title": "T0087-26.10.13 - ACQ - 9-Card 2025, MAT, identità e richieste",
+          "reason": "Consolidamento DAT0099 e richiesteGeekMail0098 autorizzati; storiaACQ/MAT/identità preservata"
+        }
+      ]
+    },
+    {
+      "thread_id": "01a1b0fe-2594-7733-acfd-cc182422d1bc",
+      "task_ids": [
+        "TSK-0098"
+      ],
+      "primary_task_id": "TSK-0098",
+      "opened_at": "2026-11-06",
+      "category": "GPR",
+      "title": "T0098-26.11.06 - GPR - Registro richieste di accesso ai materiali",
+      "verification": "exact",
+      "title_verified_at": "2026-11-06"
     }
   ],
   "naming_convention": "Txxxx-AA.MM.GG - CODICE - descrizione",

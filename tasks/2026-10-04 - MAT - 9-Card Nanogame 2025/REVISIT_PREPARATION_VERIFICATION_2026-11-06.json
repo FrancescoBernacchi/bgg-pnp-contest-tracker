@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-11-06",
+  "manifest_sha256": "8c1ee2894a15ddfb2525beb385d94847f8ad9aaa1fdee671ed7a521f0418f0ba",
+  "entries": 12,
+  "first_pass_changes": 36,
+  "replay_changes": 0,
+  "changed_tables": [
+    "entry_material_scans",
+    "entry_resource_scans",
+    "entry_work_observations"
+  ],
+  "legacy_rows": "all_preserved",
+  "identity_roster_resources_requirements_acquisition_images": "unchanged",
+  "backup_restore": "full_fingerprint_equal",
+  "integrity": "ok",
+  "foreign_keys": []
+}
